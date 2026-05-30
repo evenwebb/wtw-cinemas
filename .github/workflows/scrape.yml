@@ -1,0 +1,130 @@
+name: Scrape Cinema Calendar
+
+on:
+  schedule:
+    - cron: "0 9 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: scrape-cinema
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v4
+        with:
+          enable-cache: true
+          cache-dependency-glob: requirements.txt
+
+      - name: Install dependencies
+        run: uv pip install --system -r requirements.txt
+
+      - name: Restore scraper caches
+        uses: actions/cache@v4
+        with:
+          path: |
+            .film_cache.json
+            .tmdb_cache.json
+            .release_history.json
+            .scrape_fingerprint
+          key: scraper-cache-${{ github.run_id }}
+          restore-keys: |
+            scraper-cache-
+
+      - name: Run scraper
+        id: scraped
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          SCRAPER_RUN_ATTEMPTS: ${{ vars.SCRAPER_RUN_ATTEMPTS || '2' }}
+        run: |
+          ATTEMPTS=$SCRAPER_RUN_ATTEMPTS
+          for i in $(seq 1 $ATTEMPTS); do
+            echo "::group::Attempt $i of $ATTEMPTS"
+            if python cinema_scraper.py; then
+              echo "SCRAPER_OK=true" >> "$GITHUB_OUTPUT"
+              echo "::endgroup::"
+              exit 0
+            fi
+            echo "::endgroup::"
+            if [ "$i" -lt "$ATTEMPTS" ]; then
+              SLEEP=$((i * 30))
+              echo "Attempt $i failed — retrying in ${SLEEP}s..."
+              sleep "$SLEEP"
+            fi
+          done
+          echo "SCRAPER_OK=false" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push changes
+        if: steps.scraped.outputs.SCRAPER_OK == 'true'
+        env:
+          GIT_AUTHOR_NAME: "github-actions[bot]"
+          GIT_AUTHOR_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com"
+          GIT_COMMITTER_NAME: "github-actions[bot]"
+          GIT_COMMITTER_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com"
+        run: |
+          if [ -d docs ]; then git add docs/; fi
+          for f in .film_cache.json .tmdb_cache.json .release_history.json .scrape_fingerprint; do
+            if [ -f "$f" ]; then git add "$f"; fi
+          done
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            FOUND=0
+            for f in docs/wtw-*.ics; do
+              if [ -f "$f" ]; then
+                FOUND=$((FOUND + $(grep -c 'BEGIN:VEVENT' "$f" 2>/dev/null || echo 0)))
+              fi
+            done
+            PAGES=$(ls docs/films/*.html 2>/dev/null | wc -l)
+            CINEMAS=$(ls docs/*.html 2>/dev/null | grep -v index | wc -l)
+            git commit -m "Update: ${FOUND} premieres, ${PAGES} film pages, ${CINEMAS} cinema pages — $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
+
+      - name: Report failure
+        if: steps.scraped.outputs.SCRAPER_OK != 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const createIssue = process.env.CREATE_FAILURE_ISSUE === 'true' || '${{ vars.CREATE_FAILURE_ISSUE }}' === 'true';
+            if (!createIssue) return;
+
+            const label = 'scraper-failure';
+            const title = `Scraper run failed — ${new Date().toISOString().slice(0, 10)}`;
+            const body = `The daily scraper run failed after ${{ vars.SCRAPER_RUN_ATTEMPTS || 2 }} attempt(s).\n\nCheck the [workflow run](${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}) for details.`;
+
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              labels: label,
+              state: 'open',
+              per_page: 5,
+            });
+
+            const existing = issues.find(i => i.title.startsWith('Scraper run failed'));
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body: `Repeated failure — ${new Date().toISOString()}\n\n${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+                labels: [label],
+              });
+            }

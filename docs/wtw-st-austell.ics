@@ -1,0 +1,418 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//WTW Cinemas//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+X-WR-CALNAME:WTW St Austell Movie Premieres
+X-WR-CALDESC:Upcoming movie premieres at WTW Cinemas St Austell
+X-WR-TIMEZONE:Europe/London
+BEGIN:VEVENT
+UID:19ad60ecb9da18e3cf60cebf7c7f6b2fadb6b535@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260606
+SUMMARY:Masters Of The Universe @ WTW St Austell
+DESCRIPTION:Masters Of The Universe (2h 21min)\n★★★★☆\nAction\, Fantasy\, S
+ cience Fiction\n\nAfter being separated for 15 years\, the Sword of Power 
+ leads Prince Adam back to Eternia\, where he discovers his home shattered 
+ under the fiendish rule of Skeletor. To save his family and his world\, Ad
+ am must join forces with his closest allies\, Teela and Duncan/Man-At-Arms
+ \, and embrace his true destiny as He-Man — the most powerful man in the u
+ niverse.\n\nStarring: Nicholas Galitzine\, Camila Mendes\, Alison Brie\, J
+ ames Purefoy\, Morena Baccarin\, Jóhannes Haukur Jóhannesson\n\nFilm relea
+ se at WTW Cinemas St Austell\nBook tickets: https://wtwcinemas.co.uk/film/
+ masters-of-the-universe/?screen=st-austell\n\nFilm details: https://evenwe
+ bb.github.io/wtw-cinemas/films/masters-of-the-universe.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/masters-of-the-universe/?screen=st-austel
+ l
+END:VEVENT
+BEGIN:VEVENT
+UID:20b49e5a9e8fdd08dce44a007592d3a465a12f9a@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260606
+SUMMARY:Scary Movie @ WTW St Austell
+DESCRIPTION:Scary Movie\nComedy\, Horror\n\nTwenty-six years after outrunni
+ ng a suspiciously familiar masked killer\, the Core Four are back in the k
+ iller's crosshairs and no horror movie IP is safe.\n\nStarring: Marlon Way
+ ans\, Shawn Wayans\, Anna Faris\, Regina Hall\, Damon Wayans Jr.\, Gregg W
+ ayans\n\nFilm release at WTW Cinemas St Austell\nBook tickets: https://wtw
+ cinemas.co.uk/film/scary-movie/?screen=st-austell\n\nFilm details: https:/
+ /evenwebb.github.io/wtw-cinemas/films/scary-movie.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/scary-movie/?screen=st-austell
+END:VEVENT
+BEGIN:VEVENT
+UID:5fd0084d38ebe28bba12c307b3007fc89176cf65@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20260612
+DTEND;VALUE=DATE:20260613
+SUMMARY:Disclosure Day @ WTW St Austell
+DESCRIPTION:Disclosure Day (2h 30min)\nMystery\, Science Fiction\, Thriller
+ \n\nIf you found out we weren’t alone\, if someone showed you\, proved it 
+ to you\, would that frighten you?\n\nStarring: Emily Blunt\, Josh O'Connor
+ \, Colin Firth\, Eve Hewson\, Colman Domingo\, Wyatt Russell\n\nFilm relea
+ se at WTW Cinemas St Austell\nBook tickets: https://wtwcinemas.co.uk/film/
+ disclosure-day/?screen=st-austell\n\nFilm details: https://evenwebb.github
+ .io/wtw-cinemas/films/disclosure-day.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/disclosure-day/?screen=st-austell
+END:VEVENT
+BEGIN:VEVENT
+UID:401542e1df59f2a534d6a21047a261476dd4d8ad@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20260619
+DTEND;VALUE=DATE:20260620
+SUMMARY:Toy Story 5 @ WTW St Austell
+DESCRIPTION:Toy Story 5\nAnimation\, Family\, Comedy\, Adventure\n\nWhen Bo
+ nnie receives a Lilypad tablet as a gift and becomes obsessed\, Buzz\, Woo
+ dy\, Jessie and the rest of the gang's jobs become exponentially harder wh
+ en they have to go head to head with the all-new threat to playtime.\n\nSt
+ arring: Tom Hanks\, Tim Allen\, Joan Cusack\, Greta Lee\, Conan O'Brien\, 
+ Craig Robinson\n\nFilm release at WTW Cinemas St Austell\nBook tickets: ht
+ tps://wtwcinemas.co.uk/film/toy-story-5/?screen=st-austell\n\nFilm details
+ : https://evenwebb.github.io/wtw-cinemas/films/toy-story-5.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/toy-story-5/?screen=st-austell
+END:VEVENT
+BEGIN:VEVENT
+UID:8e6c22f8ebc85629e7827fc4d86a8c741d99c8b7@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20260626
+DTEND;VALUE=DATE:20260627
+SUMMARY:Supergirl: Woman Of Tomorrow @ WTW St Austell
+DESCRIPTION:Supergirl: Woman Of Tomorrow\nAction\, Adventure\, Science Fict
+ ion\n\nWhen an unexpected and ruthless adversary strikes too close to home
+ \, Kara Zor-El\, aka Supergirl\, reluctantly joins forces with an unlikely
+  companion on an epic\, interstellar journey of vengeance and justice.\n\n
+ Starring: Milly Alcock\, Matthias Schoenaerts\, Eve Ridley\, David Krumhol
+ tz\, Emily Beecham\, Jason Momoa\n\nFilm release at WTW Cinemas St Austell
+ \nBook tickets: https://wtwcinemas.co.uk/film/supergirl-woman-of-tomorrow/
+ ?screen=st-austell\n\nFilm details: https://evenwebb.github.io/wtw-cinemas
+ /films/supergirl-woman-of-tomorrow.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/supergirl-woman-of-tomorrow/?screen=st-au
+ stell
+END:VEVENT
+BEGIN:VEVENT
+UID:1e5cf82cb4572c0fc7edf42db50edc1b559f60fa@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20260626
+DTEND;VALUE=DATE:20260627
+SUMMARY:Jackass: Best And Last @ WTW St Austell
+DESCRIPTION:Jackass: Best And Last\nAction\, Comedy\, Documentary\n\nThe 5t
+ h and final installment to Jackass franchise where the crew go on one last
+  insane crusade.\n\nStarring: Johnny Knoxville\, Steve-O\, Chris Pontius\,
+  Jason 'Wee Man' Acuña\, Dave England\, Preston Lacy\n\nFilm release at WT
+ W Cinemas St Austell\nBook tickets: https://wtwcinemas.co.uk/film/jackass-
+ best-and-last/?screen=st-austell\n\nFilm details: https://evenwebb.github.
+ io/wtw-cinemas/films/jackass-best-and-last.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/jackass-best-and-last/?screen=st-austell
+END:VEVENT
+BEGIN:VEVENT
+UID:fa226b8fe486b251822c9e4d7f991b0141c479b6@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260704
+SUMMARY:Minions & Monsters @ WTW St Austell
+DESCRIPTION:Minions & Monsters\nAdventure\, Animation\, Comedy\, Family\, F
+ antasy\n\nThis is the rambunctious\, ridiculous and totally true story of 
+ how the Minions conquered Hollywood\, became movie stars\, lost everything
+ \, unleashed monsters onto the world and then banded together to try and s
+ ave the planet from the mayhem they had just created.\n\nStarring: Pierre 
+ Coffin\, Trey Parker\, Allison Janney\, Christoph Waltz\, Jeff Bridges\, J
+ esse Eisenberg\n\nFilm release at WTW Cinemas St Austell\nBook tickets: ht
+ tps://wtwcinemas.co.uk/film/minions-3/?screen=st-austell\n\nFilm details: 
+ https://evenwebb.github.io/wtw-cinemas/films/minions-monsters.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/minions-3/?screen=st-austell
+END:VEVENT
+BEGIN:VEVENT
+UID:9dad8859ec0e363f57824c956388fc19d87b951f@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20260710
+DTEND;VALUE=DATE:20260711
+SUMMARY:Moana @ WTW St Austell
+DESCRIPTION:Moana\nFamily\, Fantasy\, Comedy\, Adventure\n\nMoana answers t
+ he Ocean's call and\, for the first time\, voyages beyond the reef of her 
+ island of Motunui with the infamous demigod Maui on an unforgettable journ
+ ey to restore prosperity to her people.\n\nStarring: Catherine Laga‘aia\, 
+ Dwayne Johnson\, Rena Owen\, John Tui\, Frankie Adams\n\nFilm release at W
+ TW Cinemas St Austell\nBook tickets: https://wtwcinemas.co.uk/film/moana/?
+ screen=st-austell\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/
+ films/moana.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/moana/?screen=st-austell
+END:VEVENT
+BEGIN:VEVENT
+UID:7219c289211183b99333a62eb495c2b98c6cdb23@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20260718
+SUMMARY:The Odyssey @ WTW St Austell
+DESCRIPTION:The Odyssey (2h 59min)\nAdventure\, Action\, Fantasy\n\nOdysseu
+ s\, the legendary King of Ithaca\, embarks on a long and perilous journey 
+ home following the Trojan War. Throughout his voyage\, he is forced to con
+ front the whims of gods\, mythological monsters\, and trials that stretch 
+ both his cunning and his humanity to the breaking point.\n\nStarring: Matt
+  Damon\, Tom Holland\, Anne Hathaway\, Robert Pattinson\, Lupita Nyong'o\,
+  Charlize Theron\n\nFilm release at WTW Cinemas St Austell\nBook tickets: 
+ https://wtwcinemas.co.uk/film/the-odyssey/?screen=st-austell\n\nFilm detai
+ ls: https://evenwebb.github.io/wtw-cinemas/films/the-odyssey.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/the-odyssey/?screen=st-austell
+END:VEVENT
+BEGIN:VEVENT
+UID:b06e6e037139a22bda22a7af855f4fa99bd618d2@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260801
+SUMMARY:Spider-Man: Brand New Day @ WTW St Austell
+DESCRIPTION:Spider-Man: Brand New Day\nScience Fiction\, Action\, Adventure
+ \n\nFour years have passed since the events of No Way Home\, and Peter is 
+ now an adult living entirely alone\, having voluntarily erased himself fro
+ m the lives and memories of those he loves. Crime-fighting in a New York t
+ hat no longer knows his name\, he's devoted himself entirely to protecting
+  his city — a full-time Spider-Man — but as the demands on him intensify\,
+  the pressure sparks a surprising physical evolution that threatens his ex
+ istence\, even as a strange new pattern of crimes gives rise to one of the
+  most powerful threats he has ever faced.\n\nStarring: Tom Holland\, Zenda
+ ya\, Sadie Sink\, Jacob Batalon\, Jon Bernthal\, Tramell Tillman\n\nFilm r
+ elease at WTW Cinemas St Austell\nBook tickets: https://wtwcinemas.co.uk/f
+ ilm/spider-man-brand-new-day/?screen=st-austell\n\nFilm details: https://e
+ venwebb.github.io/wtw-cinemas/films/spider-man-brand-new-day.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/spider-man-brand-new-day/?screen=st-auste
+ ll
+END:VEVENT
+BEGIN:VEVENT
+UID:56ffeae93cc321bb8db300960ebf75a689699036@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260808
+SUMMARY:Paw Patrol: The Dino Movie @ WTW St Austell
+DESCRIPTION:Paw Patrol: The Dino Movie\nAdventure\, Animation\, Comedy\, Fa
+ mily\n\nThe PAW Patrol pups crash land on an uncharted tropical island fil
+ led with dinosaurs after their ship gets caught in a mysterious storm. The
+ y meet Rex\, a pup who has been stranded on the island for years and has b
+ ecome an expert in all things dino-related. When the Patrol’s archrival\, 
+ Mayor Humdinger\, begins recklessly mining in hopes of exploiting the isla
+ nd for its natural resources\, he inadvertently causes a huge\, dormant vo
+ lcano to erupt. The pups are thrown into a series of high-stakes\, dino-si
+ zed rescues bigger than anything they’ve done before\, as they must stop H
+ umdinger before everything on the island goes extinct.\n\nStarring: Carter
+  Young\, Hayden Chamberlen\, Mckenna Grace\, Rain Janjua\, Henry Bolan\, L
+ ucien Duncan-Reid\n\nFilm release at WTW Cinemas St Austell\nBook tickets:
+  https://wtwcinemas.co.uk/film/paw-patrol-the-dino-movie/?screen=st-austel
+ l\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/paw-patrol
+ -the-dino-movie.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/paw-patrol-the-dino-movie/?screen=st-aust
+ ell
+END:VEVENT
+BEGIN:VEVENT
+UID:eaa4b314980e7bd235933fd5cd4d8f88dba01a32@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260815
+SUMMARY:The End Of Oak Street @ WTW St Austell
+DESCRIPTION:The End Of Oak Street\nScience Fiction\, Mystery\, Thriller\n\n
+ After a mysterious cosmic event rips Oak Street from suburbia and transpor
+ ts their neighborhood to someplace unknown\, a family soon discovers that 
+ their very survival depends on them sticking together as they navigate the
+ ir now unrecognizable surroundings.\n\nStarring: Anne Hathaway\, Ewan McGr
+ egor\, Christian Convery\, Maisy Stella\, Jordan Alexa Davis\, P.J. Byrne\
+ n\nFilm release at WTW Cinemas St Austell\nBook tickets: https://wtwcinema
+ s.co.uk/film/the-end-of-oak-street/?screen=st-austell\n\nFilm details: htt
+ ps://evenwebb.github.io/wtw-cinemas/films/the-end-of-oak-street.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/the-end-of-oak-street/?screen=st-austell
+END:VEVENT
+BEGIN:VEVENT
+UID:c3ac5a37b8611a6df1fb8f93c2a8ec10a45e426b@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260912
+SUMMARY:Pressure @ WTW St Austell
+DESCRIPTION:Pressure (1h 40min)\n★★★★☆\nThriller\, History\, War\n\nIn the 
+ tense 72 hours before D-Day\, and the fate of the free world hanging in th
+ e balance\, General Dwight D. Eisenhower and Captain James Stagg face an i
+ mpossible choice—launch the largest and most dangerous seaborne invasion i
+ n history or risk losing the war altogether.\n\nStarring: Andrew Scott\, B
+ rendan Fraser\, Kerry Condon\, Chris Messina\, Damian Lewis\, Con O'Neill\
+ n\nFilm release at WTW Cinemas St Austell\nBook tickets: https://wtwcinema
+ s.co.uk/film/pressure/?screen=st-austell\n\nFilm details: https://evenwebb
+ .github.io/wtw-cinemas/films/pressure.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/pressure/?screen=st-austell
+END:VEVENT
+BEGIN:VEVENT
+UID:d3ae5f0361417d0a7ae9e8d6e90786ef5a91c158@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:Shaun The Sheep: The Beast Of Mossy Bottom @ WTW St Austell
+DESCRIPTION:Shaun The Sheep: The Beast Of Mossy Bottom\nFamily\, Comedy\, A
+ dventure\, Animation\n\nThe residents of Mossy Bottom Farm looking forward
+  to Halloween – until the clumsy Farmer trashes the flock’s beloved pumpki
+ n patch! When Shaun turns mad scientist to fix the problem\, things rapidl
+ y spiral out of control. With the Farmer missing and a wild beast roaming 
+ the woods of Mossingham\, all the ingredients are in place for a monstrous
+ ly fun family adventure.\n\nStarring: Justin Fletcher\, John Sparkes\, Kat
+ e Harbour\n\nFilm release at WTW Cinemas St Austell\nBook tickets: https:/
+ /wtwcinemas.co.uk/film/shaun-the-sheep-the-beast-of-mossy-bottom/?screen=s
+ t-austell\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/sh
+ aun-the-sheep-the-beast-of-mossy-bottom.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/shaun-the-sheep-the-beast-of-mossy-bottom
+ /?screen=st-austell
+END:VEVENT
+BEGIN:VEVENT
+UID:b13ee67f7bad29098f8ce6b1314d70f9f3063ccd@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Street Fighter @ WTW St Austell
+DESCRIPTION:Street Fighter\nAction\, Comedy\, Fantasy\n\nIn 1993\, estrange
+ d Street Fighters Ryu and Ken Masters are thrown back into combat when the
+  mysterious Chun-Li recruits them for the next World Warrior Tournament: a
+  brutal clash of fists\, fate\, and fury. But behind this battle royale li
+ es a deadly conspiracy that forces them to face off against each other and
+  the demons of their past. And if they don't\, it's GAME OVER!\n\nStarring
+ : Andrew Koji\, Noah Centineo\, Callina Liang\, David Dastmalchian\, Joe A
+ noa'i\, Cody Rhodes\n\nFilm release at WTW Cinemas St Austell\nBook ticket
+ s: https://wtwcinemas.co.uk/film/street-fighter/?screen=st-austell\n\nFilm
+  details: https://evenwebb.github.io/wtw-cinemas/films/street-fighter.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/street-fighter/?screen=st-austell
+END:VEVENT
+BEGIN:VEVENT
+UID:7aba37234345639a7fe35246acaf2eafd28e0d9f@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Digger @ WTW St Austell
+DESCRIPTION:Digger (1h 46min)\nComedy\, Drama\n\nThe most powerful man in t
+ he world embarks on a frantic mission to prove he is humanity's saviour be
+ fore the disaster he’s unleashed destroys everything.\n\nStarring: Tom Cru
+ ise\, Sandra Hüller\, John Goodman\, Riz Ahmed\, Jesse Plemons\, Sophie Wi
+ lde\n\nFilm release at WTW Cinemas St Austell\nBook tickets: https://wtwci
+ nemas.co.uk/film/digger/?screen=st-austell\n\nFilm details: https://evenwe
+ bb.github.io/wtw-cinemas/films/digger.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/digger/?screen=st-austell
+END:VEVENT
+BEGIN:VEVENT
+UID:bfec474c81c21b230aa7a0d5598e3d37437e50e2@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Dr Seuss’ The Cat in the Hat @ WTW St Austell
+DESCRIPTION:Dr Seuss’ The Cat in the Hat (24 min)\n★★★☆☆\nTV Movie\, Animat
+ ion\, Family\n\nIn a marvelously animated version of one of the most belov
+ ed of all Dr. Seuss tales\, two youngsters find themselves at home with no
+ thing to do on a rainy afternoon. But when the magical\, mischievous Cat i
+ n the Hat arrives on the scene\, they're all cat-apulted into a day of rou
+ sing\, romping\, outlandish antics they - and you - will never forget!\n\n
+ Starring: Allan Sherman\, Daws Butler\, Pamelyn Ferdin\, Tony Frazier\, Gl
+ oria Camacho\, Thurl Ravenscroft\n\nFilm release at WTW Cinemas St Austell
+ \nBook tickets: https://wtwcinemas.co.uk/film/the-cat-in-the-hat/?screen=s
+ t-austell\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/dr
+ -seuss-the-cat-in-the-hat.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/the-cat-in-the-hat/?screen=st-austell
+END:VEVENT
+BEGIN:VEVENT
+UID:98059c5ca8546bda98f42fedb0b7ffb7a6256df8@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Wild Horse Nine @ WTW St Austell
+DESCRIPTION:Wild Horse Nine\nComedy\, Crime\, Thriller\n\nShortly before th
+ e 1973 Chilean coup\, CIA agents Chris and Lee are dispatched from Santiag
+ o to Easter Island by their bureau chief\, MJ. Amongst the Island's iconic
+  statues\, and as the longtime partners wrestle with their dark pasts and 
+ present conspiracies\, Chris's newfound bond with a pair of rebellious stu
+ dents threatens to send everyone’s trip to this remote paradise sideways.\
+ n\nStarring: John Malkovich\, Sam Rockwell\, Steve Buscemi\, Parker Posey\
+ , Tom Waits\, Mariana Di Girolamo\n\nFilm release at WTW Cinemas St Austel
+ l\nBook tickets: https://wtwcinemas.co.uk/film/wild-horse-nine/?screen=st-
+ austell\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/wild
+ -horse-nine.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/wild-horse-nine/?screen=st-austell
+END:VEVENT
+BEGIN:VEVENT
+UID:18940699591037c594ab8c5d6f64c6315b5c552c@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:The Hunger Games: Sunrise On The Reaping @ WTW St Austell
+DESCRIPTION:The Hunger Games: Sunrise On The Reaping\nScience Fiction\, Act
+ ion\, Adventure\n\nReturn to the world of Panem 24 years before the events
+  of The Hunger Games\, starting on the morning of the reaping of the 50th 
+ Hunger Games\, also known as the Second Quarter Quell.\n\nStarring: Joseph
+  Zada\, Mckenna Grace\, Jesse Plemons\, Elle Fanning\, Ralph Fiennes\, May
+ a Hawke\n\nFilm release at WTW Cinemas St Austell\nBook tickets: https://w
+ twcinemas.co.uk/film/the-hunger-games-sunrise-on-the-reaping/?screen=st-au
+ stell\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/the-hu
+ nger-games-sunrise-on-the-reaping.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/the-hunger-games-sunrise-on-the-reaping/?
+ screen=st-austell
+END:VEVENT
+BEGIN:VEVENT
+UID:a3429ddc51e5126b829da05f42bbbecf07e8a055@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Focker-In-Law @ WTW St Austell
+DESCRIPTION:Focker-In-Law\nComedy\, Romance\n\nHenry\, son of Greg and Pam 
+ Focker\, faces family chaos when he decides to marry a strong-willed woman
+  who appears to be his complete mismatch.\n\nStarring: Robert De Niro\, Be
+ n Stiller\, Ariana Grande\, Owen Wilson\, Blythe Danner\, Teri Polo\n\nFil
+ m release at WTW Cinemas St Austell\nBook tickets: https://wtwcinemas.co.u
+ k/film/focker-in-law/?screen=st-austell\n\nFilm details: https://evenwebb.
+ github.io/wtw-cinemas/films/focker-in-law.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/focker-in-law/?screen=st-austell
+END:VEVENT
+BEGIN:VEVENT
+UID:a5d11ff1696299cae0c6d0119cc0a9f6fb1e290c@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:Avengers: Doomsday @ WTW St Austell
+DESCRIPTION:Avengers: Doomsday\nScience Fiction\, Action\, Adventure\n\nBel
+ oved heroes from three distinct universes are set on a deadly collision co
+ urse and face an existential threat unlike anything they've ever encounter
+ ed.\n\nStarring: Robert Downey Jr.\, Chris Evans\, Chris Hemsworth\, Pedro
+  Pascal\, Paul Rudd\, Anthony Mackie\n\nFilm release at WTW Cinemas St Aus
+ tell\nBook tickets: https://wtwcinemas.co.uk/film/avengers-doomsday/?scree
+ n=st-austell\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films
+ /avengers-doomsday.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/avengers-doomsday/?screen=st-austell
+END:VEVENT
+BEGIN:VEVENT
+UID:a44963c9510324bcd09521491aef9bf3b8638c2a@wtw-cinemas
+DTSTAMP:20260530T205901Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:Dune: Part Three @ WTW St Austell
+DESCRIPTION:Dune: Part Three\nAction\, Adventure\, Science Fiction\n\nAs Em
+ peror\, Paul Atreides grapples with the consequences of his rise to power 
+ as political conspiracies and a galaxy-spanning holy war threaten the futu
+ re he alone can foresee.\n\nStarring: Timothée Chalamet\, Zendaya\, Jason 
+ Momoa\, Florence Pugh\, Rebecca Ferguson\, Isaach de Bankolé\n\nFilm relea
+ se at WTW Cinemas St Austell\nBook tickets: https://wtwcinemas.co.uk/film/
+ dune-part-three/?screen=st-austell\n\nFilm details: https://evenwebb.githu
+ b.io/wtw-cinemas/films/dune-part-three.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/film/dune-part-three/?screen=st-austell
+END:VEVENT
+END:VCALENDAR
