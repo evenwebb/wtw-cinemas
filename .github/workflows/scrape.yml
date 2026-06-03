@@ -27,7 +27,9 @@ jobs:
           cache-dependency-glob: requirements.txt
 
       - name: Install dependencies
-        run: uv pip install --system -r requirements.txt
+        run: |
+          uv venv
+          uv pip install --python .venv/bin/python -r requirements.txt
 
       - name: Restore scraper caches
         uses: actions/cache@v4
@@ -50,7 +52,7 @@ jobs:
           ATTEMPTS=$SCRAPER_RUN_ATTEMPTS
           for i in $(seq 1 $ATTEMPTS); do
             echo "::group::Attempt $i of $ATTEMPTS"
-            if python cinema_scraper.py; then
+            if .venv/bin/python cinema_scraper.py; then
               echo "SCRAPER_OK=true" >> "$GITHUB_OUTPUT"
               echo "::endgroup::"
               exit 0
