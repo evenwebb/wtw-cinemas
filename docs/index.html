@@ -19,7 +19,7 @@
 :root{--bg:#09090d;--surface:#13131c;--surface-2:#1a1a26;--border:rgba(192,132,252,0.18);--text:#e8edf2;--text-muted:#8b9db5;--cyan:#22d3ee;--purple:#c084fc;--accent:#22d3ee;--accent-dim:rgba(34,211,238,0.12);--accent-glow:rgba(34,211,238,0.2);--amber:#f59e0b;--radius:16px;--radius-sm:10px;--transition:0.2s ease}
 *,::before,::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:2rem}
-body{font-family:'Space Grotesk',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh;-webkit-font-smoothing:antialiased}
+body{padding-top:42px;font-family:'Space Grotesk',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh;-webkit-font-smoothing:antialiased}
 @keyframes pageIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .page{animation:pageIn 0.4s ease-out}
 .bg-mesh{position:fixed;inset:0;overflow:hidden;background:radial-gradient(ellipse 80% 60% at 50% -20%,var(--accent-dim) 0%,transparent 50%),radial-gradient(ellipse 50% 40% at 80% 90%,rgba(192,132,252,0.06) 0%,transparent 50%);pointer-events:none;z-index:0}
@@ -176,13 +176,15 @@ footer a:hover{color:var(--purple)}
 #coming-soon.poster-view .fc-info{display:none}
 #coming-soon.poster-view .fc-poster img{border-radius:12px}
 /* Calendar promo banner */
-.calendar-promo{display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.85rem 1.25rem;background:linear-gradient(135deg,rgba(34,211,238,0.12),rgba(192,132,252,0.1));border:1px solid rgba(34,211,238,0.2);border-radius:14px;text-decoration:none;margin-bottom:2rem;transition:border-color var(--transition),box-shadow var(--transition)}
-.calendar-promo:hover{border-color:var(--accent);box-shadow:0 4px 20px var(--accent-glow)}
-.promo-icon{font-size:1.2rem}
-.promo-text{font-size:0.88rem;font-weight:500;color:var(--text);flex:1;text-align:center}
-.promo-cta{font-size:0.78rem;font-weight:600;color:#0a0a10;background:linear-gradient(135deg,var(--cyan),var(--purple));padding:0.4rem 1rem;border-radius:100px;white-space:nowrap;animation:bounce-down 1.5s infinite}
+.calendar-promo{display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.55rem 1rem;background:linear-gradient(135deg,rgba(34,211,238,0.18),rgba(192,132,252,0.14));border-bottom:1px solid rgba(34,211,238,0.25);text-decoration:none;margin:0;position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:0}
+.calendar-promo:hover{border-bottom-color:var(--accent);box-shadow:0 2px 15px var(--accent-glow)}
+.promo-icon{font-size:1.2rem;flex-shrink:0}
+.promo-text{font-weight:500;color:var(--text);flex:1;text-align:center}
+.promo-text-full{font-size:0.88rem}
+.promo-text-short{font-size:0.82rem;display:none}
+.promo-cta{font-size:0.72rem;font-weight:600;color:#0a0a10;background:linear-gradient(135deg,var(--cyan),var(--purple));padding:0.35rem 0.85rem;border-radius:100px;white-space:nowrap;animation:bounce-down 1.5s infinite;flex-shrink:0}
 @keyframes bounce-down{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
-@media(max-width:479px){.calendar-promo{padding:0.7rem 1rem;gap:0.4rem}.promo-text{font-size:0.8rem}}
+@media(max-width:600px){.calendar-promo{padding:0.45rem 0.75rem;gap:0.4rem}.promo-text-full{display:none}.promo-text-short{display:inline}.promo-cta{font-size:0.68rem;padding:0.3rem 0.7rem}}
 /* Calendar CTA section */
 .calendar-cta{background:linear-gradient(160deg,rgba(34,211,238,0.08) 0%,rgba(192,132,252,0.1) 50%,rgba(34,211,238,0.04) 100%);border:1px solid rgba(34,211,238,0.2);border-radius:18px;padding:1.5rem;text-align:center;margin:3rem 0 2rem;position:relative;overflow:hidden}
 .calendar-cta::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent),var(--purple),var(--accent),transparent)}
@@ -237,7 +239,8 @@ footer a:hover{color:var(--purple)}
 
     <a href="#subscribe" class="calendar-promo">
       <span class="promo-icon">📅</span>
-      <span class="promo-text">Get new film premieres added to your phone calendar automatically</span>
+      <span class="promo-text promo-text-full">Get new film premieres added to your phone calendar automatically</span>
+      <span class="promo-text promo-text-short">Add premieres to your calendar</span>
       <span class="promo-cta">Set up now ↓</span>
     </a>
 
