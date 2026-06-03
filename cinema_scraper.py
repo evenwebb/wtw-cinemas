@@ -41,7 +41,7 @@ ICAL_LINE_LENGTH = 75
 ICAL_NEWLINE = "\r\n"
 CALENDAR_TIMEZONE = os.getenv("CALENDAR_TIMEZONE", "Europe/London")
 OUTPUT_DIR = "docs"
-WTW_BASE_URL = "https://wtwcinemas.co.uk"
+WTW_BASE_URL = "https://www.merlincinemas.co.uk"
 RELEASE_HISTORY_PATH = ".release_history.json"
 RELEASE_HISTORY_MAX_DAYS = 730
 CACHE_FILE = ".film_cache.json"
@@ -57,13 +57,73 @@ MAX_SYNOPSIS_LENGTH = 500
 SYNOPSIS_SKIP_TERMS = ["cookie", "privacy", "terms", "wheelchair", "audio description"]
 MAX_WORKERS = min(4, os.cpu_count() or 4)
 
-DATE_PATTERN = re.compile(r"Expected:\s*(\d{1,2})\s+([A-Za-z]+)\s+(\d{4})")
-ALT_DATE_PATTERN = re.compile(
-    r"Expected at WTW Cinemas from the (\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]+)"
-)
+DATE_PATTERN = re.compile(r"(?:Released|Showing)\s+(?:on\s+)?(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]+)")
+ALT_DATE_PATTERN = re.compile(r"(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]+)")
 RUNTIME_RE = re.compile(r"(\d+)\s*(?:minutes?|mins?)", re.IGNORECASE)
 FILM_LINK_RE = re.compile(r"/film/")
 TITLE_CLEAN_RE = re.compile(r"\s*\([^)]*\)$")
+
+# Merlin special screening suffixes — stripped before TMDb search
+MERLIN_TITLE_CLEAN = [
+    (re.compile(r"\s+Toddler Cinema$", re.IGNORECASE), ""),
+    (re.compile(r"\s+Double Bill$", re.IGNORECASE), ""),
+    (re.compile(r"\s+Triple Bill$", re.IGNORECASE), ""),
+    (re.compile(r"\s*[-–]\s*Toddler Cinema$", re.IGNORECASE), ""),
+    (re.compile(r"\s*[-–]\s*Kids Club$", re.IGNORECASE), ""),
+    (re.compile(r"\s*[-–]\s*Silver Screen$", re.IGNORECASE), ""),
+    (re.compile(r"\s*[-–]\s*Mini Movie Deal$", re.IGNORECASE), ""),
+    (re.compile(r"\s*[-–]\s*Parent & Baby$", re.IGNORECASE), ""),
+    (re.compile(r"\s+Parent & Baby$", re.IGNORECASE), ""),
+    (re.compile(r"\s+Parent And Baby$", re.IGNORECASE), ""),
+    (re.compile(r"\s*[-–]\s*Autism Friendly$", re.IGNORECASE), ""),
+    (re.compile(r"\s+Autism Friendly$", re.IGNORECASE), ""),
+    (re.compile(r"\s*[-–]\s*Event Cinema$", re.IGNORECASE), ""),
+    (re.compile(r"\s+Event Cinema$", re.IGNORECASE), ""),
+    (re.compile(r"\s+with Q&A$", re.IGNORECASE), ""),
+    (re.compile(r"\s+with Q and A$", re.IGNORECASE), ""),
+    (re.compile(r"\s*[-–]\s*with Q&A$", re.IGNORECASE), ""),
+    (re.compile(r"\s*[-–]\s*Silver Screen$", re.IGNORECASE), ""),
+    (re.compile(r"\s+Silver Screen$", re.IGNORECASE), ""),
+    (re.compile(r"\s*[-–]\s*Super Saver$", re.IGNORECASE), ""),
+    (re.compile(r"\s+Super Saver$", re.IGNORECASE), ""),
+    (re.compile(r"\s*[-–]\s*Autism Friendly$", re.IGNORECASE), ""),
+    (re.compile(r"^NT Live:\s*", re.IGNORECASE), ""),
+    (re.compile(r"^RBO \d{4}-\d{2}:\s*", re.IGNORECASE), ""),
+]
+
+# Screening labels for display — derived from pattern names
+_SCREENING_LABEL_MAP = {
+    "Toddler Cinema": "Toddler Cinema", "Kids Club": "Kids Club",
+    "Silver Screen": "Silver Screen", "Mini Movie Deal": "Mini Movie Deal",
+    "Parent & Baby": "Parent & Baby", "Parent And Baby": "Parent & Baby",
+    "Autism Friendly": "Autism Friendly", "Event Cinema": "Event Cinema",
+    "Super Saver": "Super Saver", "Double Bill": "Double Bill",
+    "Triple Bill": "Triple Bill",
+    "with Q&A": "Q&A", "with Q and A": "Q&A",
+}
+
+def extract_screening_label(title: str):
+    """Return (cleaned_title, screening_label) for a Merlin film title.
+    Matches against MERLIN_TITLE_CLEAN patterns and returns the
+    corresponding friendly label for UI display."""
+    for pattern, _ in MERLIN_TITLE_CLEAN:
+        m = pattern.search(title)
+        if m:
+            cleaned = pattern.sub("", title).strip()
+            # Derive label from the pattern name
+            for key, label in _SCREENING_LABEL_MAP.items():
+                if key.lower() in m.group(0).lower():
+                    return cleaned, label
+            return cleaned, ""
+    return title, ""
+
+# Non-film events to skip TMDb enrichment entirely
+MERLIN_SKIP_TMDB = [
+    "live nation", "tribute", "comedy club", "pantomime", "panto",
+    "psychic", "candlelit", "on tour", "presented by", "choir", "orchestra",
+    "theatre company", "pride", "adults only",
+]
+
 # Strip anniversary / special-edition suffixes before TMDb search so
 # "Shrek - 25th Anniversary" resolves to the original film
 TMDB_SEARCH_STRIP_RE = re.compile(
@@ -111,6 +171,16 @@ CINEMA_ADDRESSES = {
     "newquay": "Lighthouse+Cinema+Newquay",
     "wadebridge": "Regal+Cinema+Wadebridge",
     "truro": "Plaza+Cinema+Truro",
+}
+# Cinema coordinates for geolocation
+CINEMA_COORDS = {
+    "bodmin": (50.466, -4.718),
+    "helston": (50.102, -5.274),
+    "falmouth": (50.155, -5.067),
+    "redruth": (50.233, -5.226),
+    "st-ives": (50.210, -5.490),
+    "penzance-savoy": (50.118, -5.538),
+    "penzance-ritz": (50.118, -5.536),
 }
 
 # Health check minimums (env-configurable)
@@ -420,7 +490,18 @@ def extract_films(
         if not h2:
             continue
 
-        title = TITLE_CLEAN_RE.sub("", h2.get_text(strip=True))
+        raw_title = h2.get_text(strip=True)
+        # Extract BBFC from cert span (e.g., <span class="cert cert--12A">)
+        cert_span = li.select_one(".cert")
+        bbfc_rating = ""
+        if cert_span:
+            for cls in cert_span.get("class", []):
+                if cls.startswith("cert--"):
+                    bbfc_rating = cls.replace("cert--", "").upper()
+                    if bbfc_rating == "TBC":
+                        bbfc_rating = ""
+                    break
+        title = TITLE_CLEAN_RE.sub("", raw_title)
 
         p = td.find("p")
         if not p:
@@ -437,6 +518,7 @@ def extract_films(
             key = (release_date, title, cinema_name, film_url)
             if key not in seen:
                 film_details = fetch_film_details(film_url, cache, session)
+                film_details["bbfc"] = bbfc_rating
                 films.append((release_date, title, cinema_name, film_url, film_details))
                 seen.add(key)
                 logger.info("  %s - %s (%s)", title, release_date, cinema_name)
@@ -591,7 +673,14 @@ def enrich_film_tmdb(
 ) -> Dict[str, Any]:
     """Fetch TMDb metadata for a film. Returns genres, rating, director, cast, poster_url, trailer_url."""
     search_title = TMDB_SEARCH_STRIP_RE.sub("", TITLE_CLEAN_RE.sub("", film_title)).strip()
+    # Apply Merlin-specific title cleaning
+    for pattern, replacement in MERLIN_TITLE_CLEAN:
+        search_title = pattern.sub(replacement, search_title).strip()
     if not search_title:
+        return {}
+    # Skip TMDb enrichment for non-film live events
+    tl = search_title.lower()
+    if any(skip in tl for skip in MERLIN_SKIP_TMDB):
         return {}
     key = _tmdb_cache_key(film_title)
 
@@ -643,12 +732,32 @@ def enrich_film_tmdb(
             {"api_key": api_key, "query": search_title, "language": "en-GB"},
         )
         results = (sr.get("results") or [])
-        if not results:
-            with _tmdb_cache_lock:
-                cache[key] = empty_result
-            return {}
 
         chosen = _pick_best_tmdb_result(results, search_title)
+
+        # Progressive fallback: strip unknown screening suffixes word by word.
+        # Merlin may add "Toddler Cinema", "Kids Club", "Special Event" etc.
+        # that our known-pattern list doesn't catch. Drop up to 3 trailing
+        # words and re-search until TMDb gives a solid match.
+        if not chosen:
+            words = search_title.split()
+            max_drop = min(6, len(words) - 1)
+            for drop in range(1, max_drop + 1):
+                shorter = " ".join(words[:-drop]).rstrip(":,-.&")
+                if not shorter or len(shorter) < 2:
+                    continue
+                logger.info("TMDb fallback: trying %r → %r", search_title, shorter)
+                time.sleep(TMDB_DELAY_SEC)
+                sr2 = _tmdb_get(
+                    "https://api.themoviedb.org/3/search/movie",
+                    {"api_key": api_key, "query": shorter, "language": "en-GB"},
+                )
+                r2 = (sr2.get("results") or [])
+                candidate = _pick_best_tmdb_result(r2, shorter)
+                if candidate and candidate.get("id"):
+                    chosen = candidate
+                    break
+
         if not chosen or not chosen.get("id"):
             with _tmdb_cache_lock:
                 cache[key] = empty_result
@@ -717,7 +826,7 @@ def enrich_film_tmdb(
             "poster_url": poster_url,
             "poster_large_url": poster_large_url,
             "backdrop_url": backdrop_url,
-            "runtime": f"{runtime_tmdb} min" if runtime_tmdb else "",
+            "runtime": f"{runtime_tmdb} min" if runtime_tmdb > 1 else "",
             "trailer_url": trailer_url,
             "imdb_id": imdb_id,
         }
@@ -889,7 +998,7 @@ def make_ics_event(
         f"DTSTAMP:{dtstamp}",
         f"DTSTART;VALUE=DATE:{release_date.strftime('%Y%m%d')}",
         f"DTEND;VALUE=DATE:{dtend.strftime('%Y%m%d')}",
-        escape_and_fold_ical_text(f"{film_title} @ WTW {cinema_name}", "SUMMARY:"),
+        escape_and_fold_ical_text(f"{film_title} @ Merlin {cinema_name}", "SUMMARY:"),
         escape_and_fold_ical_text(description, "DESCRIPTION:"),
         escape_and_fold_ical_text(f"WTW Cinemas {cinema_name}", "LOCATION:"),
     ]
@@ -907,7 +1016,7 @@ _SHARED_CSS = """
 :root{--bg:#09090d;--surface:#13131c;--surface-2:#1a1a26;--border:rgba(192,132,252,0.18);--text:#e8edf2;--text-muted:#8b9db5;--cyan:#22d3ee;--purple:#c084fc;--accent:#22d3ee;--accent-dim:rgba(34,211,238,0.12);--accent-glow:rgba(34,211,238,0.2);--amber:#f59e0b;--radius:16px;--radius-sm:10px;--transition:0.2s ease}
 *,::before,::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:2rem}
-body{font-family:'Space Grotesk',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh;-webkit-font-smoothing:antialiased}
+body{padding-top:42px;font-family:'Space Grotesk',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh;-webkit-font-smoothing:antialiased}
 @keyframes pageIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .page{animation:pageIn 0.4s ease-out}
 .bg-mesh{position:fixed;inset:0;overflow:hidden;background:radial-gradient(ellipse 80% 60% at 50% -20%,var(--accent-dim) 0%,transparent 50%),radial-gradient(ellipse 50% 40% at 80% 90%,rgba(192,132,252,0.06) 0%,transparent 50%);pointer-events:none;z-index:0}
@@ -1007,6 +1116,8 @@ CSS = _SHARED_CSS + """
 .ns-poster-wrap img{width:100%;height:100%;object-fit:cover;display:block}
 .ns-poster-wrap .ns-no-poster{width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;font-size:0.75rem;color:var(--text-muted);padding:0.5rem;background:linear-gradient(135deg,var(--accent-dim),rgba(192,132,252,0.06))}
 .ns-title{display:block;padding:0.5rem 0.6rem;font-size:0.78rem;font-weight:600;color:var(--text);line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ns-event-tag{display:block;font-size:0.62rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;padding:0.1rem 0.6rem 0.4rem;text-align:center}
+.ns-event-tag.rbo{color:#f87171}.ns-event-tag.nt-live{color:var(--accent)}.ns-event-tag.toddler-cinema{color:var(--amber)}.ns-event-tag.double-bill{color:var(--purple)}.ns-event-tag.q-a{color:#fb923c}
 @media(max-width:479px){.ns-title{padding:0.4rem;font-size:0.72rem}}
 .film-card-full{display:grid;grid-template-columns:90px 1fr;gap:1rem;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.25rem;transition:border-color var(--transition),transform var(--transition)}
 @media(min-width:480px){.film-card-full{grid-template-columns:130px 1fr;gap:1.5rem;padding:1.5rem}}
@@ -1023,9 +1134,19 @@ CSS = _SHARED_CSS + """
 .film-card-full .fc-info h3 a{color:var(--text);text-decoration:none}
 .film-card-full .fc-info h3 a:hover{color:var(--accent)}
 .new-badge{display:inline-block;font-size:0.62rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;padding:0.15rem 0.45rem;border-radius:100px;background:linear-gradient(135deg,var(--amber),#f59e0b);color:#0a0a10;vertical-align:middle;margin-left:0.3rem}
+.screening-badge{display:inline-block;font-size:0.62rem;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;padding:0.15rem 0.5rem;border-radius:100px;background:rgba(192,132,252,0.15);color:var(--purple);vertical-align:middle;margin-left:0.3rem}
+.fc-screening-banner{font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:0.35rem 1rem;margin:-1.25rem -1.25rem 0.75rem -1.25rem;border-radius:12px 12px 0 0;text-align:center}
+.fc-screening-banner.rbo{background:linear-gradient(135deg,rgba(248,113,113,0.2),rgba(248,113,113,0.06));color:#f87171;border-bottom:1px solid rgba(248,113,113,0.2)}
+.fc-screening-banner.nt-live{background:linear-gradient(135deg,rgba(34,211,238,0.15),rgba(34,211,238,0.04));color:var(--accent);border-bottom:1px solid rgba(34,211,238,0.2)}
+.fc-screening-banner.toddler-cinema{background:linear-gradient(135deg,rgba(251,191,36,0.18),rgba(251,191,36,0.05));color:var(--amber);border-bottom:1px solid rgba(251,191,36,0.2)}
+.fc-screening-banner.double-bill{background:linear-gradient(135deg,rgba(192,132,252,0.18),rgba(192,132,252,0.05));color:var(--purple);border-bottom:1px solid rgba(192,132,252,0.2)}
+.fc-screening-banner.q-a{background:linear-gradient(135deg,rgba(251,146,60,0.2),rgba(251,146,60,0.06));color:#fb923c;border-bottom:1px solid rgba(251,146,60,0.2)}
+@media(min-width:480px){.fc-screening-banner{margin:-1.5rem -1.5rem 0.75rem -1.5rem}}
+@media(min-width:768px){.fc-screening-banner{margin:-1.75rem -1.75rem 0.75rem -1.75rem}}
 .film-card-full .fc-meta{display:flex;flex-wrap:wrap;gap:0.35rem 0.85rem;font-size:0.82rem;color:var(--text-muted);align-items:center}
 .film-card-full .fc-meta .stars{color:var(--amber);font-size:0.82rem;letter-spacing:0.05em}
 .film-card-full .fc-meta .genres{color:var(--purple);font-weight:500}
+.film-card-full .fc-meta .cert-badge{display:inline-block;font-size:0.7rem;font-weight:700;padding:0.1rem 0.4rem;border-radius:3px;background:rgba(34,211,238,0.12);color:var(--accent)}
 .film-card-full .fc-meta .showing-date{color:var(--accent);font-weight:600}
 .film-card-full .fc-synopsis{font-size:0.88rem;color:var(--text-muted);line-height:1.6;margin-top:0.25rem}
 @media(max-width:479px){.film-card-full .fc-synopsis{-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;display:-webkit-box}}
@@ -1067,13 +1188,15 @@ CSS = _SHARED_CSS + """
 #coming-soon.poster-view .fc-info{display:none}
 #coming-soon.poster-view .fc-poster img{border-radius:12px}
 /* Calendar promo banner */
-.calendar-promo{display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.85rem 1.25rem;background:linear-gradient(135deg,rgba(34,211,238,0.12),rgba(192,132,252,0.1));border:1px solid rgba(34,211,238,0.2);border-radius:14px;text-decoration:none;margin-bottom:2rem;transition:border-color var(--transition),box-shadow var(--transition)}
-.calendar-promo:hover{border-color:var(--accent);box-shadow:0 4px 20px var(--accent-glow)}
-.promo-icon{font-size:1.2rem}
-.promo-text{font-size:0.88rem;font-weight:500;color:var(--text);flex:1;text-align:center}
-.promo-cta{font-size:0.78rem;font-weight:600;color:#0a0a10;background:linear-gradient(135deg,var(--cyan),var(--purple));padding:0.4rem 1rem;border-radius:100px;white-space:nowrap;animation:bounce-down 1.5s infinite}
+.calendar-promo{display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.55rem 1rem;background:linear-gradient(135deg,rgba(34,211,238,0.18),rgba(192,132,252,0.14));border-bottom:1px solid rgba(34,211,238,0.25);text-decoration:none;margin:0;position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:0}
+.calendar-promo:hover{border-bottom-color:var(--accent);box-shadow:0 2px 15px var(--accent-glow)}
+.promo-icon{font-size:1.2rem;flex-shrink:0}
+.promo-text{font-weight:500;color:var(--text);flex:1;text-align:center}
+.promo-text-full{font-size:0.88rem}
+.promo-text-short{font-size:0.82rem;display:none}
+.promo-cta{font-size:0.72rem;font-weight:600;color:#0a0a10;background:linear-gradient(135deg,var(--cyan),var(--purple));padding:0.35rem 0.85rem;border-radius:100px;white-space:nowrap;animation:bounce-down 1.5s infinite;flex-shrink:0}
 @keyframes bounce-down{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
-@media(max-width:479px){.calendar-promo{padding:0.7rem 1rem;gap:0.4rem}.promo-text{font-size:0.8rem}}
+@media(max-width:600px){.calendar-promo{padding:0.45rem 0.75rem;gap:0.4rem}.promo-text-full{display:none}.promo-text-short{display:inline}.promo-cta{font-size:0.68rem;padding:0.3rem 0.7rem}}
 /* Calendar CTA section */
 .calendar-cta{background:linear-gradient(160deg,rgba(34,211,238,0.08) 0%,rgba(192,132,252,0.1) 50%,rgba(34,211,238,0.04) 100%);border:1px solid rgba(34,211,238,0.2);border-radius:18px;padding:1.5rem;text-align:center;margin:3rem 0 2rem;position:relative;overflow:hidden}
 .calendar-cta::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent),var(--purple),var(--accent),transparent)}
@@ -1125,6 +1248,7 @@ def build_index_html(
     films_by_cinema: Dict[str, List],
     stats: Optional[Dict[str, int]] = None,
     now_showing_live: Optional[List[Dict[str, Any]]] = None,
+    special_events: Optional[List[Dict[str, Any]]] = None,
     new_slugs: Optional[set] = None,
 ) -> str:
     """Generate the GitHub Pages index.html - film-discovery-first layout."""
@@ -1157,7 +1281,7 @@ def build_index_html(
     cinema_names = list(enabled_cinemas.values())
 
     # ── Cinema filter pills ──────────────────────────────────────────────────
-    filter_html = '<button type="button" class="active" data-cinema="all">All cinemas</button>\n'
+    filter_html = '<button type="button" class="active" data-cinema="all">All</button>\n'
     for cid, info in enabled_cinemas.items():
         filter_html += f'        <button type="button" data-cinema="{cid}">{info["name"]}</button>\n'
 
@@ -1169,15 +1293,21 @@ def build_index_html(
         rating = d.get("vote_average")
         genres = sorted(set(d.get("genres") or []))
         overview = d.get("overview") or d.get("synopsis") or ""
-        bbfc = _extract_bbfc(f["title"])
+        bbfc = d.get("bbfc") or _extract_bbfc(f["title"])
         slug = f["slug"]
         cinemas_dict = f.get("cinemas", {})  # cname -> (furl, rd)
         cinema_names = sorted(cinemas_dict.keys())
-        cinema_slugs = [cn.lower().replace(" ", "-") for cn in cinema_names]
+        # Map cinema display names to the IDs used in filter buttons
+        _name_to_id = {v["name"]: k for k, v in enabled_cinemas.items()}
+        _name_to_id = {v["name"]: k for k, v in enabled_cinemas.items()}
+        _name_to_subdomain = {v["name"]: v.get("subdomain", k) for k, v in enabled_cinemas.items()}
+        cinema_slugs = [_name_to_id.get(cn, cn.lower().replace(" ", "-")) for cn in cinema_names]
         cinemas_data = ",".join(cinema_slugs)
 
         stars = _stars_from_rating(rating) if rating is not None else ""
         meta_parts = []
+        if bbfc:
+            meta_parts.append(f'<span class="cert cert--{bbfc.lower()}" title="{_esc(bbfc)}"></span>')
         if runtime:
             meta_parts.append(f"<span>{runtime}</span>")
         if stars:
@@ -1189,9 +1319,11 @@ def build_index_html(
             f'<a href="films/{slug}.html"><img src="{_esc(poster)}" alt="" loading="lazy" decoding="async"></a>'
             if poster else f'<a href="films/{slug}.html"><div class="no-poster-sm">🎬</div></a>'
         )
-        cert = _cert_span(bbfc)
+        scrn_badge = f' <span class="screening-badge">{_esc(d.get("screening",""))}</span>' if d.get("screening") else ""
+        banner_class = d.get("screening","").lower().replace(" ","-").replace("&","") if d.get("screening") else ""
+        scrn_banner = f'<div class="fc-screening-banner {_esc(banner_class)}">{_esc(d.get("screening",""))}</div>\n' if d.get("screening") else ""
 
-        # Group cinemas by date for wtw-whats-on style display
+        # Group cinemas by date for merlin style display
         showings_by_date: Dict[date, List[tuple]] = {}
         for cname, (furl, rd) in cinemas_dict.items():
             showings_by_date.setdefault(rd, []).append((cname, furl))
@@ -1200,7 +1332,7 @@ def build_index_html(
             cinemas_on_date = sorted(showings_by_date[rd])
             rd_str = rd.strftime("%a %d %b")
             cinema_spans = " ".join(
-                f'<a href="{WTW_BASE_URL + furl if furl.startswith("/") else furl}" class="showing-cinema-link" target="_blank" rel="noopener">{cname}</a>'
+                f'<a href="{f"https://wtwcinemas.co.uk{furl}" if furl.startswith("/") else furl}" class="showing-cinema-link" target="_blank" rel="noopener">{cname}</a>'
                 for cname, furl in cinemas_on_date
             )
             showing_lines.append(
@@ -1213,9 +1345,10 @@ def build_index_html(
 
         return (
             f'<article class="film-card-full" data-date="{f["release_date"].isoformat()}" data-cinemas="{_esc(cinemas_data)}">\n'
+            + scrn_banner +
             f'  <div class="fc-poster">{poster_html}</div>\n'
             f'  <div class="fc-info">\n'
-            f'    <h3><a href="films/{slug}.html">{_esc(f["title"])}{cert}{" <span class=\"new-badge\">New</span>" if new_slugs and slug in new_slugs else ""}</a></h3>\n'
+            f'    <h3><a href="films/{slug}.html">{_esc(f["title"])}{" <span class=\"new-badge\">New</span>" if new_slugs and slug in new_slugs else ""}{scrn_badge}</a></h3>\n'
             f'    <div class="fc-meta">\n'
             + meta_html +
             f'    </div>\n'
@@ -1231,10 +1364,35 @@ def build_index_html(
     coming_cards = "\n".join(_film_card(f) for f in coming_soon)
 
     # ── Now Showing poster grid (from whats-on data) ──────────────────────────
+    # ── Special Events section ────────────────────────────────────────────
+    special_events_html = ""
+    if special_events:
+        se_cards = []
+        for se in special_events:
+            poster = se.get("poster") or ""
+            slug = se["slug"]
+            title = se["title"]
+            screening = se.get("screening", "")
+            banner_class = screening.lower().replace(" ", "-").replace("&", "")
+            se_cards.append(
+                f'<a href="films/{slug}.html" class="ns-poster-card">\n'
+                f'  <div class="ns-poster-wrap">{f"<img src=\"{_esc(poster)}\">" if poster else f"<div class=\"ns-no-poster\">{_esc(title[:30])}</div>"}</div>\n'
+                f'  <span class="ns-title">{_esc(title)}</span>\n'
+                f'  <span class="ns-event-tag {_esc(banner_class)}">{_esc(screening)}</span>\n'
+                f'</a>'
+            )
+        special_events_html = (
+            f'    <section class="film-section" id="special-events">\n'
+            f'      <div class="section-header"><h2>Special Events</h2><span class="count">{len(se_cards)} events</span></div>\n'
+            f'      <div class="ns-poster-grid">\n' + "\n".join(se_cards) + f'\n      </div>\n'
+            f'    </section>\n\n'
+        )
+
     now_showing_grid = ""
     if now_showing_live:
         poster_cards = []
         list_cards = []
+        seen_slugs = set(f["slug"] for f in (special_events or []))
         for nf in now_showing_live[:60]:  # cap at 60 for performance
             poster = nf.get("poster") or ""
             slug = nf["slug"]
@@ -1350,7 +1508,8 @@ def build_index_html(
         calendar_promo = (
             '    <a href="#subscribe" class="calendar-promo">\n'
             '      <span class="promo-icon">📅</span>\n'
-            '      <span class="promo-text">Get new film premieres added to your phone calendar automatically</span>\n'
+            '      <span class="promo-text promo-text-full">Get new film premieres added to your phone calendar automatically</span>\n'
+            '      <span class="promo-text promo-text-short">Add premieres to your calendar</span>\n'
             '      <span class="promo-cta">Set up now ↓</span>\n'
             '    </a>\n\n'
         )
@@ -1413,13 +1572,14 @@ def build_index_html(
         f'        {filter_html}'
         '    </div>\n\n'
         + now_showing_grid
+        + special_events_html
         + coming_html
         + empty_html
         + calendar_cta +
         '    <footer role="contentinfo">\n'
         '      <p class="footer-disclaimer">An open source fan-made project. Calendars update when new premieres are added. Not affiliated with WTW Cinemas.</p>\n'
         '      <div class="footer-links">\n'
-        '        <a href="https://wtwcinemas.co.uk/">WTW Cinemas</a>\n'
+        '        <a href="https://www.merlincinemas.co.uk/">WTW Cinemas</a>\n'
         '        <span aria-hidden="true">·</span>\n'
         '        <a href="https://github.com/evenwebb/wtw-cinemas">Source</a>\n'
         '        <span aria-hidden="true">·</span>\n'
@@ -1502,7 +1662,7 @@ def build_index_html(
         '  // Nearest cinema highlight\n'
         '  (function(){\n'
         '    var cinemas={'
-        + ",".join(f'"{c["name"]}":{{lat:{c["lat"]},lng:{c["lng"]}}}' for c in [{"name":"St Austell","lat":50.338,"lng":-4.795},{"name":"Newquay","lat":50.414,"lng":-5.075},{"name":"Wadebridge","lat":50.517,"lng":-4.835},{"name":"Truro","lat":50.263,"lng":-5.051}])
+        + ",".join(f'"{c["name"]}":{{lat:{c["lat"]},lng:{c["lng"]}}}' for c in [{"name":"bodmin","lat":50.466,"lng":-4.718},{"name":"helston","lat":50.102,"lng":-5.274},{"name":"falmouth","lat":50.155,"lng":-5.067},{"name":"redruth","lat":50.233,"lng":-5.226},{"name":"st-ives","lat":50.210,"lng":-5.490},{"name":"penzance-savoy","lat":50.118,"lng":-5.538},{"name":"penzance-ritz","lat":50.118,"lng":-5.536}])
         + '};\n'
         '    if(!navigator.geolocation)return;\n'
         '    navigator.geolocation.getCurrentPosition(function(pos){\n'
@@ -1530,7 +1690,7 @@ def build_index_html(
         '    var toggle=document.getElementById(toggleId);\n'
         '    var section=document.getElementById(sectionId);\n'
         '    if(!toggle||!section)return;\n'
-        '    var storageKey="wtw-view-"+sectionId;\n'
+        '    var storageKey="merlin-view-"+sectionId;\n'
         '    var isPoster=section.classList.contains("poster-view");\n'
         '    if(localStorage.getItem(storageKey)==="cards"){\n'
         '      section.classList.remove("poster-view");\n'
@@ -1612,7 +1772,7 @@ def build_cinema_page(
         '<!DOCTYPE html>\n<html lang="en">\n<head>\n'
         '  <meta charset="utf-8">\n'
         '  <meta name="viewport" content="width=device-width, initial-scale=1">\n'
-        f'  <title>What\'s on at WTW {cinema_info["name"]}</title>\n'
+        f'  <title>What\'s on at Merlin {cinema_info["name"]}</title>\n'
         f'  <meta name="description" content="Now showing and coming soon at WTW Cinemas {cinema_info["name"]}.">\n'
         '  <link rel="canonical" href="https://evenwebb.github.io/wtw-cinemas/">\n'
         '  <link rel="icon" href="data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><text y=\'.9em\' font-size=\'90\'>🎬</text></svg>">\n'
@@ -1636,9 +1796,9 @@ def build_cinema_page(
         '</head>\n<body>\n'
         '  <div class="bg-mesh" aria-hidden="true"></div>\n'
         '  <div class="page">\n'
-        '    <a href="./" class="back-btn">← All cinemas</a>\n'
+        '    <a href="./" class="back-btn">← All</a>\n'
         f'    <header class="cinema-hero">\n'
-        f'      <h1>WTW {cinema_info["name"]}</h1>\n'
+        f'      <h1>Merlin {cinema_info["name"]}</h1>\n'
         f'      <p>Subscribe: <a href="wtw-{cinema_id}.ics" type="text/calendar" download>iCal feed</a></p>\n'
         f'      <a href="{maps_url}" class="map-link" target="_blank" rel="noopener">📍 View on map</a>\n'
         f'    </header>\n'
@@ -1672,6 +1832,8 @@ def _extract_bbfc(title: str) -> str:
 
 def _download_cert_images(session: Optional[requests.Session] = None) -> None:
     """Download BBFC cert images to docs/certs/ for local serving."""
+    if not WTW_CERT_BASE:
+        return  # Merlin uses inline cert images, no remote download needed
     s = session or _session()
     Path(CERTS_DIR).mkdir(parents=True, exist_ok=True)
     for rating, filename in CERT_IMAGES.items():
@@ -1746,8 +1908,8 @@ def _cert_span(rating: str) -> str:
     """HTML span for BBFC cert badge using local image."""
     if not rating or rating.upper() not in CERT_IMAGES:
         return ""
-    r = rating.upper()
-    return f'<span class="cert cert--{r}" aria-label="Rated {r}" title="Rated {r}"></span>'
+    r = rating.lower().replace(" ", "")
+    return f'<span class="cert cert--{r}" aria-label="Rated {rating.upper()}" title="Rated {rating.upper()}"></span>'
 
 
 FILM_CSS = _SHARED_CSS + """
@@ -1756,7 +1918,7 @@ body{position:relative}
 @media(min-width:640px){.page{padding:2.5rem 2rem 5rem}}
 .back-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1.1rem;background:var(--surface);border:1px solid var(--border);border-radius:100px;color:var(--text-muted);text-decoration:none;font-weight:500;font-size:0.85rem;margin-bottom:2rem;transition:all var(--transition)}
 .back-btn:hover{color:var(--accent);border-color:var(--accent);background:var(--accent-dim)}
-.film-layout{display:grid;grid-template-columns:1fr;gap:2rem;margin-bottom:2.5rem;position:relative}
+.film-layout{display:grid;grid-template-columns:1fr;gap:2rem;margin-bottom:2.5rem;position:relative;padding-top:42px}@media(min-width:600px){body{padding-top:48px}}
 @media(min-width:680px){.film-layout{grid-template-columns:280px 1fr;align-items:start}}
 .poster{width:100%;max-width:280px;margin:0 auto;position:relative;z-index:1}
 @media(min-width:680px){.poster{margin:0}}
@@ -1769,6 +1931,9 @@ body{position:relative}
 .film-info .genres{color:var(--purple);font-weight:500}
 .film-info .rating-pill{background:var(--accent-dim);color:var(--accent);padding:0.2rem 0.65rem;border-radius:100px;font-weight:600;font-size:0.82rem}
 .film-info .synopsis{font-size:0.95rem;line-height:1.75;color:var(--text-muted);margin-bottom:1.25rem;padding:1.25rem;background:var(--surface);border-radius:12px;border:1px solid var(--border)}
+.screening-info{background:linear-gradient(135deg,rgba(34,211,238,0.08),rgba(192,132,252,0.06));border:1px solid rgba(34,211,238,0.2);border-radius:12px;padding:1rem 1.25rem;margin-bottom:1.25rem}
+.screening-info-label{display:inline-block;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent);background:var(--accent-dim);padding:0.25rem 0.65rem;border-radius:100px;margin-bottom:0.6rem}
+.screening-info p{font-size:0.88rem;color:var(--text);margin:0;line-height:1.6}
 .film-info .crew{margin-bottom:1rem}
 .film-info .crew p{font-size:0.88rem;color:var(--text-muted);padding:0.55rem 0;border-bottom:1px solid var(--border)}
 .film-info .crew p:last-child{border-bottom:none}
@@ -1836,11 +2001,16 @@ tr.nearest-cinema-row td:first-child{border-left:3px solid var(--accent)}
 @media(min-width:600px){.cinema-table .table-book-btn{font-size:0.78rem;padding:0.4rem 0.9rem}}
 .cinema-table .table-book-btn:hover{transform:scale(1.04);box-shadow:0 4px 15px var(--accent-glow)}
 .cert{display:inline-block;width:28px;height:28px;background-position:center;background-repeat:no-repeat;background-size:contain;vertical-align:middle;margin-left:0.4rem}
-.cert--U{background-image:url(../certs/cert-u.png)}
-.cert--PG{background-image:url(../certs/cert-pg.png)}
-.cert--12A{background-image:url(../certs/cert-12a.png)}
+.cert--u{background-image:url(../certs/cert-u.png)}
+.cert--pg{background-image:url(../certs/cert-pg.png)}
+.cert--12a{background-image:url(../certs/cert-12a.png)}
+.cert--12{background-image:url(../certs/cert-12.png)}
 .cert--15{background-image:url(../certs/cert-15.png)}
 .cert--18{background-image:url(../certs/cert-18.png)}
+.backdrop-wrap{position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;overflow:hidden;opacity:0.15;pointer-events:none}
+.backdrop-wrap::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,16,0.7) 0%,rgba(10,10,16,0.9) 100%)}
+.backdrop-img{width:100%;height:100%;object-fit:cover}
+@media(max-width:680px){.backdrop-wrap{position:relative;height:200px;opacity:0.2}}
 .backdrop-wrap{position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;overflow:hidden}
 .backdrop-wrap::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,16,0.65) 0%,rgba(10,10,16,0.85) 100%)}
 .backdrop-img{width:100%;height:100%;object-fit:cover}
@@ -1865,21 +2035,44 @@ def build_film_page(
 ) -> str:
     """Generate a dedicated HTML page for a single film."""
     poster = film_details.get("poster_url") or ""
+    poster_large = film_details.get("poster_large_url") or poster
+    backdrop_url = film_details.get("backdrop_url") or ""
+    backdrop_html = f'<div class="backdrop-wrap"><img src="{_esc(backdrop_url)}" alt="" class="backdrop-img" loading="lazy" decoding="async"></div>\n' if backdrop_url else ""
     trailer = film_details.get("trailer_url") or ""
     embed_url = _youtube_embed_url(trailer)
-    overview = film_details.get("overview") or film_details.get("synopsis") or "Synopsis coming soon."
+    scr_html = f' <span class="screening-badge">{_esc(film_details.get("screening", ""))}</span>' if film_details.get("screening") else ""
+    screening_label = film_details.get("screening") or ""
+    feature_text = film_details.get("screening_feature") or ""
+    overview = film_details.get("overview") or film_details.get("synopsis")
+    if not overview:
+        screening = film_details.get("screening", "")
+        if screening == "RBO":
+            overview = "Royal Ballet & Opera broadcast — a world-class production from the Royal Opera House, Covent Garden, screened live at this cinema."
+        elif screening == "NT Live":
+            overview = "National Theatre Live broadcast — exceptional British theatre captured live and screened at this cinema."
+        elif screening:
+            overview = f"A special {screening} event at WTW Cinemas. Check the showtimes below for dates and booking."
+        else:
+            # Check if this is a known non-film event (live band, tribute, comedy etc.)
+            tl = film_title.lower()
+            if any(s in tl for s in MERLIN_SKIP_TMDB):
+                overview = "A live event at WTW Cinemas. Check the showtimes below for dates, times, and booking."
+            else:
+                overview = "Synopsis coming soon."
     runtime = _format_runtime_display(film_details.get("runtime") or "")
     rating = film_details.get("vote_average")
     genres = sorted(set(film_details.get("genres") or []))
     director = film_details.get("director") or ""
     cast = film_details.get("cast") or ""
-    bbfc = _extract_bbfc(film_title)
+    bbfc = film_details.get("bbfc") or _extract_bbfc(film_title)
     imdb_id = film_details.get("imdb_id", "")
 
     stars = _stars_from_rating(rating) if rating is not None else ""
     rating_text = f"{rating:.1f}/10" if rating is not None else ""
 
     meta_parts = []
+    if bbfc:
+        meta_parts.append(f'<span class="cert cert--{bbfc.lower()}" title="{_esc(bbfc)}"></span>')
     if runtime:
         meta_parts.append(f"<span>{runtime}</span>")
     if stars:
@@ -1889,6 +2082,7 @@ def build_film_page(
     if genres:
         meta_parts.append(f'<span class="genres">{", ".join(genres)}</span>')
 
+    poster_large_src = f"../{poster_large}" if poster_large.startswith("posters/") else poster_large
     poster_src = f"../{poster}" if poster.startswith("posters/") else poster
     poster_large = film_details.get("poster_large_url") or poster
     poster_large_src = f"../{poster_large}" if poster_large.startswith("posters/") else poster_large
@@ -1923,7 +2117,7 @@ def build_film_page(
             cinema_name = st['cinema_name']
             cinema_slug = cinema_name.lower().replace(" ", "-")
             cinema_set.add(cinema_name)
-            cinema_label = f"WTW {cinema_name}"
+            cinema_label = f"Merlin {cinema_name}"
             time_str = st.get("time", "")
             screen_num = st.get("screen", 1)
             booking_url = st.get("booking_url", "")
@@ -1955,17 +2149,17 @@ def build_film_page(
             )
     else:
         # Fall back to coming-soon release dates
-        showings_by_date: Dict[date, List[Tuple[str, str]]] = {}
+        showings_by_date: Dict[date, List[Tuple[str, str, str]]] = {}
         for cname, furl, rdate, cid in sorted(cinemas, key=lambda x: x[2]):
-            showings_by_date.setdefault(rdate, []).append((cname, furl))
+            showings_by_date.setdefault(rdate, []).append((cname, furl, cid))
         for rd in sorted(showings_by_date.keys()):
             cinemas_on_date = sorted(showings_by_date[rd])
             rd_short = rd.strftime("%a %d %b")
-            for cname, furl in cinemas_on_date:
+            for cname, furl, cid in cinemas_on_date:
                 booking_url = WTW_BASE_URL + furl if furl.startswith("/") else furl
                 table_rows.append(
                     f'<tr><td class="date-cell">{rd_short}</td>'
-                    f'<td class="cinema-cell">WTW {cname}</td>'
+                    f'<td class="cinema-cell">Merlin {cname}</td>'
                     f'<td class="book-cell"><a href="{_esc(booking_url)}" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>'
                 )
 
@@ -2144,7 +2338,7 @@ def build_film_page(
         '    <div class="film-layout">\n'
         f'      <div class="poster">{poster_html}</div>\n'
         '      <div class="film-info">\n'
-        f'        <h1>{_esc(film_title)} {_cert_span(bbfc)}</h1>\n'
+        f'        <h1>{_esc(film_title)} {_cert_span(bbfc)}{scr_html}</h1>\n'
         f'        <div class="meta">{"".join(meta_parts)}</div>\n'
         f'        <div class="synopsis">{_esc(overview)}</div>\n'
         f'        <div class="links">\n'
@@ -2163,7 +2357,7 @@ def build_film_page(
         '    <footer>\n'
         '      <p>An open source fan-made project. Not affiliated with WTW Cinemas.</p>\n'
         '      <div style="margin-top:0.75rem">\n'
-        '        <a href="https://wtwcinemas.co.uk/">WTW Cinemas</a>\n'
+        '        <a href="https://www.merlincinemas.co.uk/">WTW Cinemas</a>\n'
         '        <span aria-hidden="true"> · </span>\n'
         '        <a href="../">All premieres</a>\n'
         '      </div>\n'
@@ -2366,7 +2560,7 @@ def main() -> None:
         logger.info("TMDb enrichment done: %d coming-soon + %d whats-on unique films",
                      len(unique_by_key), len(whats_on_unique))
     else:
-        logger.info("TMDB_API_KEY not set; WTW-only data")
+        logger.info("TMDB_API_KEY not set; Merlin-only data")
 
     if not all_films:
         logger.warning("No films found across any cinema")
@@ -2398,9 +2592,9 @@ def main() -> None:
     out_dir = Path(OUTPUT_DIR)
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # Remove legacy .ics files without wtw- prefix
+    # Remove legacy .ics files without merlin- prefix
     for old in out_dir.glob("*.ics"):
-        if not old.name.startswith("wtw-"):
+        if not old.name.startswith("merlin-"):
             old.unlink()
             logger.info("Removed legacy %s", old.name)
 
@@ -2419,7 +2613,7 @@ def main() -> None:
             "METHOD:PUBLISH",
             "REFRESH-INTERVAL;VALUE=DURATION:PT12H",
             "X-PUBLISHED-TTL:PT12H",
-            f"X-WR-CALNAME:WTW {cname} Movie Premieres",
+            f"X-WR-CALNAME:Merlin {cname} Movie Premieres",
             f"X-WR-CALDESC:Upcoming movie premieres at WTW Cinemas {cname}",
         ]
         if CALENDAR_TIMEZONE.strip():
@@ -2463,7 +2657,8 @@ def main() -> None:
         # Film is "now showing" if it has any showtimes this week
         min_date = min(st["date"] for st in all_st)
         max_date = max(st["date"] for st in all_st)
-        if min_date > today + timedelta(days=7):
+        has_screening = bool(wf_list[0].get("screening", ""))
+        if min_date > today + timedelta(days=7) and not has_screening:
             continue
         cinemas_set = sorted(set(st.get("cinema_name", "") for st in all_st))
         slug = _tmdb_cache_key(wf_list[0]["title"])
@@ -2478,6 +2673,9 @@ def main() -> None:
                     poster = fdetails.get("poster_url", "")
                     if poster:
                         break
+        # Fallback to Merlin poster from whats-on data
+        if not poster:
+            poster = wf_list[0].get("poster_url", "") or ""
         now_showing_films.append({
             "title": wf_list[0]["title"],
             "slug": slug,
@@ -2485,12 +2683,18 @@ def main() -> None:
             "showtimes": all_st,
             "min_date": min_date,
             "poster": poster,
+            "screening": wf_list[0].get("screening", ""),
         })
     now_showing_films.sort(key=lambda f: (f["min_date"], f["title"]))
+
+    # ── Special Events ─────────────────────────────────────────────────────
+    special_events = [f for f in now_showing_films if f.get("screening")]
+    special_events.sort(key=lambda f: (f.get("screening", ""), f["min_date"]))
 
     # Write index.html
     html = build_index_html(enabled_cinemas, films_by_cinema, stats=stats,
                             now_showing_live=now_showing_films,
+                            special_events=special_events,
                             new_slugs=new_slugs)
     (out_dir / "index.html").write_text(html, encoding="utf-8")
     logger.info("Wrote %s/index.html", OUTPUT_DIR)
@@ -2524,7 +2728,12 @@ def main() -> None:
             if slug not in now_showing_entries:
                 now_showing_entries[slug] = {
                     "title": wf["title"], "slug": slug,
-                    "details": {}, "cinemas": [],
+                    "details": {
+                        "screening": wf.get("screening", ""),
+                        "screening_feature": wf.get("screening_feature", ""),
+                        "poster_url": wf.get("poster_url", ""),
+                    },
+                    "cinemas": [],
                     "release_date": date.today(),
                 }
             now_showing_entries[slug]["cinemas"].append(
