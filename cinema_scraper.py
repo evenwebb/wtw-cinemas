@@ -21,6 +21,7 @@ from datetime import date, datetime, timedelta, timezone
 from itertools import groupby
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
+from zoneinfo import ZoneInfo
 
 warnings.filterwarnings("ignore", message=".*OpenSSL.*", category=UserWarning)
 
@@ -38,6 +39,12 @@ USER_AGENT = (
     "Chrome/119.0.0.0 Safari/537.36"
 )
 ICAL_LINE_LENGTH = 75
+LONDON_TZ = ZoneInfo("Europe/London")
+
+
+def format_london_timestamp(dt: Optional[datetime] = None) -> str:
+    dt = dt or datetime.now(LONDON_TZ)
+    return dt.astimezone(LONDON_TZ).strftime("%Y-%m-%d %H:%M %Z")
 ICAL_NEWLINE = "\r\n"
 CALENDAR_TIMEZONE = os.getenv("CALENDAR_TIMEZONE", "Europe/London")
 OUTPUT_DIR = "docs"
@@ -1514,7 +1521,7 @@ def build_index_html(
             '    </a>\n\n'
         )
 
-    now_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    now_london = format_london_timestamp()
 
     # ── Cinema filter JS ──────────────────────────────────────────────────────
     cinema_filter_js = (
@@ -1558,7 +1565,7 @@ def build_index_html(
         '      <h1>What\'s on at WTW Cinemas</h1>\n'
         '      <p class="tagline">Browse and discover upcoming film premieres across all WTW Cinemas. Ratings, trailers, and booking links - all in one place.</p>\n'
         f'      <span class="hero-stat">{len(all_films_list)} films across {len(enabled_cinemas)} cinemas</span>\n'
-        f'      <div class="hero-updated">Last updated {now_utc}</div>\n'
+        f'      <div class="hero-updated">Last updated {now_london}</div>\n'
         '    </header>\n\n'
         + calendar_promo +
         (
@@ -1585,7 +1592,7 @@ def build_index_html(
         '        <span aria-hidden="true">·</span>\n'
         '        <a href="https://github.com/evenwebb/">evenwebb</a>\n'
         '      </div>\n'
-        f'      <p class="footer-updated">Last updated: {now_utc}</p>\n'
+        f'      <p class="footer-updated">Last updated: {now_london}</p>\n'
         '    </footer>\n'
         '  </div>\n'
         + cinema_filter_js +
@@ -1766,7 +1773,7 @@ def build_cinema_page(
         f'  </section>\n'
     ) if cs_items else ''
 
-    now_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    now_london = format_london_timestamp()
 
     return (
         '<!DOCTYPE html>\n<html lang="en">\n<head>\n'
@@ -1805,7 +1812,7 @@ def build_cinema_page(
         + ns_grid + cs_section +
         f'    <footer style="text-align:center;padding:2rem 0;color:var(--text-muted);font-size:0.85rem;border-top:1px solid var(--border);margin-top:3rem">\n'
         f'      <p>An open source fan-made project. Not affiliated with WTW Cinemas.</p>\n'
-        f'      <p class="footer-updated">Last updated: {now_utc}</p>\n'
+        f'      <p class="footer-updated">Last updated: {now_london}</p>\n'
         f'    </footer>\n'
         '  </div>\n'
         '</body>\n</html>'
@@ -2163,7 +2170,7 @@ def build_film_page(
                     f'<td class="book-cell"><a href="{_esc(booking_url)}" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>'
                 )
 
-    now_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    now_london = format_london_timestamp()
 
     # Schema.org Movie structured data
     schema = {
@@ -2361,7 +2368,7 @@ def build_film_page(
         '        <span aria-hidden="true"> · </span>\n'
         '        <a href="../">All premieres</a>\n'
         '      </div>\n'
-        f'      <p class="footer-updated">Last updated: {now_utc}</p>\n'
+        f'      <p class="footer-updated">Last updated: {now_london}</p>\n'
         '    </footer>\n'
         '  </div>\n'
         '</body>\n</html>'
