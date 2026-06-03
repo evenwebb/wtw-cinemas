@@ -4,7 +4,7 @@
 
 # WTW Cinemas
 
-**All-in-one cinema tracker for Cornwall — now showing, coming soon, and calendar feeds.**
+**All-in-one cinema tracker for Cornwall - now showing, coming soon, and calendar feeds.**
 
 [Live page](https://evenwebb.github.io/wtw-cinemas/) · [Repository](https://github.com/evenwebb/wtw-cinemas)
 
@@ -143,7 +143,7 @@ docs/
 
 ## Configuration
 
-Edit `cinema_scraper.py` — constants at the top:
+Edit `cinema_scraper.py` - constants at the top:
 
 | Setting | Default | Purpose |
 |---|---|---|
@@ -156,7 +156,7 @@ Edit `cinema_scraper.py` — constants at the top:
 | `CALENDAR_TIMEZONE` (env) | `Europe/London` | iCal timezone |
 | `HEALTH_MIN_FILMS` (env) | 1 | Minimum films before health check fails |
 | `HEALTH_MIN_CINEMAS` (env) | 1 | Minimum cinemas before health check fails |
-| `TMDB_API_KEY` (env) | — | Enables live TMDb enrichment |
+| `TMDB_API_KEY` (env) | - | Enables live TMDb enrichment |
 
 ---
 
