@@ -19,7 +19,7 @@
 :root{--bg:#09090d;--surface:#13131c;--surface-2:#1a1a26;--border:rgba(192,132,252,0.18);--text:#e8edf2;--text-muted:#8b9db5;--cyan:#22d3ee;--purple:#c084fc;--accent:#22d3ee;--accent-dim:rgba(34,211,238,0.12);--accent-glow:rgba(34,211,238,0.2);--amber:#f59e0b;--radius:16px;--radius-sm:10px;--transition:0.2s ease}
 *,::before,::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:2rem}
-body{font-family:'Space Grotesk',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh;-webkit-font-smoothing:antialiased}
+body{padding-top:42px;font-family:'Space Grotesk',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh;-webkit-font-smoothing:antialiased}
 @keyframes pageIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .page{animation:pageIn 0.4s ease-out}
 .bg-mesh{position:fixed;inset:0;overflow:hidden;background:radial-gradient(ellipse 80% 60% at 50% -20%,var(--accent-dim) 0%,transparent 50%),radial-gradient(ellipse 50% 40% at 80% 90%,rgba(192,132,252,0.06) 0%,transparent 50%);pointer-events:none;z-index:0}
@@ -34,7 +34,7 @@ body{position:relative}
 @media(min-width:640px){.page{padding:2.5rem 2rem 5rem}}
 .back-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1.1rem;background:var(--surface);border:1px solid var(--border);border-radius:100px;color:var(--text-muted);text-decoration:none;font-weight:500;font-size:0.85rem;margin-bottom:2rem;transition:all var(--transition)}
 .back-btn:hover{color:var(--accent);border-color:var(--accent);background:var(--accent-dim)}
-.film-layout{display:grid;grid-template-columns:1fr;gap:2rem;margin-bottom:2.5rem;position:relative}
+.film-layout{display:grid;grid-template-columns:1fr;gap:2rem;margin-bottom:2.5rem;position:relative;padding-top:42px}@media(min-width:600px){body{padding-top:48px}}
 @media(min-width:680px){.film-layout{grid-template-columns:280px 1fr;align-items:start}}
 .poster{width:100%;max-width:280px;margin:0 auto;position:relative;z-index:1}
 @media(min-width:680px){.poster{margin:0}}
@@ -47,6 +47,9 @@ body{position:relative}
 .film-info .genres{color:var(--purple);font-weight:500}
 .film-info .rating-pill{background:var(--accent-dim);color:var(--accent);padding:0.2rem 0.65rem;border-radius:100px;font-weight:600;font-size:0.82rem}
 .film-info .synopsis{font-size:0.95rem;line-height:1.75;color:var(--text-muted);margin-bottom:1.25rem;padding:1.25rem;background:var(--surface);border-radius:12px;border:1px solid var(--border)}
+.screening-info{background:linear-gradient(135deg,rgba(34,211,238,0.08),rgba(192,132,252,0.06));border:1px solid rgba(34,211,238,0.2);border-radius:12px;padding:1rem 1.25rem;margin-bottom:1.25rem}
+.screening-info-label{display:inline-block;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent);background:var(--accent-dim);padding:0.25rem 0.65rem;border-radius:100px;margin-bottom:0.6rem}
+.screening-info p{font-size:0.88rem;color:var(--text);margin:0;line-height:1.6}
 .film-info .crew{margin-bottom:1rem}
 .film-info .crew p{font-size:0.88rem;color:var(--text-muted);padding:0.55rem 0;border-bottom:1px solid var(--border)}
 .film-info .crew p:last-child{border-bottom:none}
@@ -114,11 +117,16 @@ tr.nearest-cinema-row td:first-child{border-left:3px solid var(--accent)}
 @media(min-width:600px){.cinema-table .table-book-btn{font-size:0.78rem;padding:0.4rem 0.9rem}}
 .cinema-table .table-book-btn:hover{transform:scale(1.04);box-shadow:0 4px 15px var(--accent-glow)}
 .cert{display:inline-block;width:28px;height:28px;background-position:center;background-repeat:no-repeat;background-size:contain;vertical-align:middle;margin-left:0.4rem}
-.cert--U{background-image:url(../certs/cert-u.png)}
-.cert--PG{background-image:url(../certs/cert-pg.png)}
-.cert--12A{background-image:url(../certs/cert-12a.png)}
+.cert--u{background-image:url(../certs/cert-u.png)}
+.cert--pg{background-image:url(../certs/cert-pg.png)}
+.cert--12a{background-image:url(../certs/cert-12a.png)}
+.cert--12{background-image:url(../certs/cert-12.png)}
 .cert--15{background-image:url(../certs/cert-15.png)}
 .cert--18{background-image:url(../certs/cert-18.png)}
+.backdrop-wrap{position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;overflow:hidden;opacity:0.15;pointer-events:none}
+.backdrop-wrap::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,16,0.7) 0%,rgba(10,10,16,0.9) 100%)}
+.backdrop-img{width:100%;height:100%;object-fit:cover}
+@media(max-width:680px){.backdrop-wrap{position:relative;height:200px;opacity:0.2}}
 .backdrop-wrap{position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;overflow:hidden}
 .backdrop-wrap::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,16,0.65) 0%,rgba(10,10,16,0.85) 100%)}
 .backdrop-img{width:100%;height:100%;object-fit:cover}
@@ -160,10 +168,10 @@ tr.nearest-cinema-row td:first-child{border-left:3px solid var(--accent)}
         <table class="cinema-table">
           <thead><tr><th>Date</th><th>Time</th><th>Cinema</th><th></th></tr></thead>
           <tbody>
-<tr data-film-cinema="newquay"><td class="date-cell">Tue 23 Feb</td><td class="time-cell">18:45</td><td class="cinema-cell">WTW Newquay <span class="screen-badge">Screen 2</span><span class="tag-badge" title="Subtitles">CC</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> <span class="tag-badge" title="Event Cinema">EV</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=65905&amp;screen=newquay" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
-<tr data-film-cinema="st-austell"><td class="date-cell">Tue 23 Feb</td><td class="time-cell">18:45</td><td class="cinema-cell">WTW St Austell <span class="screen-badge">Screen 3</span><span class="tag-badge" title="Subtitles">CC</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> <span class="tag-badge" title="Event Cinema">EV</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=77529&amp;screen=staustell" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
-<tr data-film-cinema="truro"><td class="date-cell">Tue 23 Feb</td><td class="time-cell">18:45</td><td class="cinema-cell">WTW Truro <span class="screen-badge">Screen 2</span><span class="tag-badge" title="Subtitles">CC</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> <span class="tag-badge" title="Event Cinema">EV</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120817&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
-<tr data-film-cinema="wadebridge"><td class="date-cell">Tue 23 Feb</td><td class="time-cell">18:45</td><td class="cinema-cell">WTW Wadebridge <span class="screen-badge">Screen 1</span><span class="tag-badge" title="Subtitles">CC</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> <span class="tag-badge" title="Event Cinema">EV</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=28926&amp;screen=wadebridge" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="newquay"><td class="date-cell">Tue 23 Feb</td><td class="time-cell">18:45</td><td class="cinema-cell">Merlin Newquay <span class="screen-badge">Screen 2</span><span class="tag-badge" title="Subtitles">CC</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> <span class="tag-badge" title="Event Cinema">EV</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=65905&amp;screen=newquay" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="st-austell"><td class="date-cell">Tue 23 Feb</td><td class="time-cell">18:45</td><td class="cinema-cell">Merlin St Austell <span class="screen-badge">Screen 3</span><span class="tag-badge" title="Subtitles">CC</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> <span class="tag-badge" title="Event Cinema">EV</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=77529&amp;screen=staustell" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="truro"><td class="date-cell">Tue 23 Feb</td><td class="time-cell">18:45</td><td class="cinema-cell">Merlin Truro <span class="screen-badge">Screen 2</span><span class="tag-badge" title="Subtitles">CC</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> <span class="tag-badge" title="Event Cinema">EV</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120817&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="wadebridge"><td class="date-cell">Tue 23 Feb</td><td class="time-cell">18:45</td><td class="cinema-cell">Merlin Wadebridge <span class="screen-badge">Screen 1</span><span class="tag-badge" title="Subtitles">CC</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> <span class="tag-badge" title="Event Cinema">EV</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=28926&amp;screen=wadebridge" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
           </tbody>
         </table>
       </div>
@@ -239,11 +247,11 @@ table.parentNode.insertBefore(label,table);
     <footer>
       <p>An open source fan-made project. Not affiliated with WTW Cinemas.</p>
       <div style="margin-top:0.75rem">
-        <a href="https://wtwcinemas.co.uk/">WTW Cinemas</a>
+        <a href="https://www.merlincinemas.co.uk/">WTW Cinemas</a>
         <span aria-hidden="true"> · </span>
         <a href="../">All premieres</a>
       </div>
-      <p class="footer-updated">Last updated: 2026-05-30 21:59 BST</p>
+      <p class="footer-updated">Last updated: 2026-06-06 11:57 BST</p>
     </footer>
   </div>
 </body>

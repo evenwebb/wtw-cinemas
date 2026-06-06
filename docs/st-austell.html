@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>What's on at WTW St Austell</title>
+  <title>What's on at Merlin St Austell</title>
   <meta name="description" content="Now showing and coming soon at WTW Cinemas St Austell.">
   <link rel="canonical" href="https://evenwebb.github.io/wtw-cinemas/">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
@@ -15,7 +15,7 @@
 :root{--bg:#09090d;--surface:#13131c;--surface-2:#1a1a26;--border:rgba(192,132,252,0.18);--text:#e8edf2;--text-muted:#8b9db5;--cyan:#22d3ee;--purple:#c084fc;--accent:#22d3ee;--accent-dim:rgba(34,211,238,0.12);--accent-glow:rgba(34,211,238,0.2);--amber:#f59e0b;--radius:16px;--radius-sm:10px;--transition:0.2s ease}
 *,::before,::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:2rem}
-body{font-family:'Space Grotesk',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh;-webkit-font-smoothing:antialiased}
+body{padding-top:42px;font-family:'Space Grotesk',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh;-webkit-font-smoothing:antialiased}
 @keyframes pageIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .page{animation:pageIn 0.4s ease-out}
 .bg-mesh{position:fixed;inset:0;overflow:hidden;background:radial-gradient(ellipse 80% 60% at 50% -20%,var(--accent-dim) 0%,transparent 50%),radial-gradient(ellipse 50% 40% at 80% 90%,rgba(192,132,252,0.06) 0%,transparent 50%);pointer-events:none;z-index:0}
@@ -42,66 +42,60 @@ footer a:hover{color:var(--purple)}
 <body>
   <div class="bg-mesh" aria-hidden="true"></div>
   <div class="page">
-    <a href="./" class="back-btn">← All cinemas</a>
+    <a href="./" class="back-btn">← All</a>
     <header class="cinema-hero">
-      <h1>WTW St Austell</h1>
+      <h1>Merlin St Austell</h1>
       <p>Subscribe: <a href="wtw-st-austell.ics" type="text/calendar" download>iCal feed</a></p>
       <a href="https://www.google.com/maps/search/White+River+Cinema+St+Austell" class="map-link" target="_blank" rel="noopener">📍 View on map</a>
     </header>
   <section class="film-section" id="now-showing">
-    <div class="section-header"><h2>Now Showing</h2><span class="count">11 films</span></div>
+    <div class="section-header"><h2>Now Showing</h2><span class="count">10 films</span></div>
     <div class="ns-poster-grid">
-<a href="films/charlie-the-wonderdog.html" class="ns-poster-card">
-  <div class="ns-poster-wrap"><img src="../posters/charlie-the-wonderdog.jpg" alt="Charlie The Wonderdog" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Charlie The Wonderdog</span>
-</a>
-<a href="films/finding-emily.html" class="ns-poster-card">
-  <div class="ns-poster-wrap"><img src="../posters/finding-emily.jpg" alt="Finding Emily" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Finding Emily</span>
-</a>
-<a href="films/michael.html" class="ns-poster-card">
-  <div class="ns-poster-wrap"><img src="../posters/michael.jpg" alt="Michael" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Michael</span>
-</a>
-<a href="films/obsession.html" class="ns-poster-card">
-  <div class="ns-poster-wrap"><img src="../posters/obsession.jpg" alt="Obsession" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Obsession</span>
-</a>
-<a href="films/power-ballad.html" class="ns-poster-card">
-  <div class="ns-poster-wrap"><img src="../posters/power-ballad.jpg" alt="Power Ballad" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Power Ballad</span>
-</a>
-<a href="films/star-wars-the-mandalorian-and-grogu.html" class="ns-poster-card">
-  <div class="ns-poster-wrap"><img src="../posters/star-wars-the-mandalorian-and-grogu.jpg" alt="Star Wars: The Mandalorian And Grogu" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Star Wars: The Mandalorian And Grogu</span>
-</a>
-<a href="films/the-devil-wears-prada-2.html" class="ns-poster-card">
-  <div class="ns-poster-wrap"><img src="../posters/the-devil-wears-prada-2.jpg" alt="The Devil Wears Prada 2" loading="lazy" decoding="async"></div>
-  <span class="ns-title">The Devil Wears Prada 2</span>
-</a>
-<a href="films/the-sheep-detectives.html" class="ns-poster-card">
-  <div class="ns-poster-wrap"><img src="../posters/the-sheep-detectives.jpg" alt="The Sheep Detectives" loading="lazy" decoding="async"></div>
-  <span class="ns-title">The Sheep Detectives</span>
-</a>
-<a href="films/national-theatre-live-the-playboy-of-the-western-world.html" class="ns-poster-card">
-  <div class="ns-poster-wrap"><img src="../posters/national-theatre-live-the-playboy-of-the-western-world.jpg" alt="National Theatre Live: The Playboy of the Western World" loading="lazy" decoding="async"></div>
-  <span class="ns-title">National Theatre Live: The Playboy of the Western World</span>
+<a href="films/backrooms.html" class="ns-poster-card">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">Backrooms</div></div>
+  <span class="ns-title">Backrooms</span>
 </a>
 <a href="films/masters-of-the-universe.html" class="ns-poster-card">
-  <div class="ns-poster-wrap"><img src="../posters/masters-of-the-universe.jpg" alt="Masters Of The Universe" loading="lazy" decoding="async"></div>
+  <div class="ns-poster-wrap"><div class="ns-no-poster">Masters Of The Universe</div></div>
   <span class="ns-title">Masters Of The Universe</span>
 </a>
+<a href="films/power-ballad.html" class="ns-poster-card">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">Power Ballad</div></div>
+  <span class="ns-title">Power Ballad</span>
+</a>
+<a href="films/savage-house.html" class="ns-poster-card">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">Savage House</div></div>
+  <span class="ns-title">Savage House</span>
+</a>
+<a href="films/scary-movie.html" class="ns-poster-card">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">Scary Movie</div></div>
+  <span class="ns-title">Scary Movie</span>
+</a>
+<a href="films/star-wars-the-mandalorian-and-grogu.html" class="ns-poster-card">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">Star Wars: The Mandalorian And</div></div>
+  <span class="ns-title">Star Wars: The Mandalorian And Grogu</span>
+</a>
 <a href="films/the-amazing-digital-circus-the-last-act.html" class="ns-poster-card">
-  <div class="ns-poster-wrap"><img src="../posters/the-amazing-digital-circus-the-last-act.jpg" alt="The Amazing Digital Circus: The Last Act" loading="lazy" decoding="async"></div>
+  <div class="ns-poster-wrap"><div class="ns-no-poster">The Amazing Digital Circus: Th</div></div>
   <span class="ns-title">The Amazing Digital Circus: The Last Act</span>
+</a>
+<a href="films/the-sheep-detectives.html" class="ns-poster-card">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">The Sheep Detectives</div></div>
+  <span class="ns-title">The Sheep Detectives</span>
+</a>
+<a href="films/the-super-mario-galaxy-movie.html" class="ns-poster-card">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">The Super Mario Galaxy Movie</div></div>
+  <span class="ns-title">The Super Mario Galaxy Movie</span>
+</a>
+<a href="films/disclosure-day.html" class="ns-poster-card">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">Disclosure Day</div></div>
+  <span class="ns-title">Disclosure Day</span>
 </a>
     </div>
   </section>
   <section class="film-section" id="coming-soon">
-    <div class="section-header"><h2>Coming Soon</h2><span class="count">22 films</span></div>
+    <div class="section-header"><h2>Coming Soon</h2><span class="count">20 films</span></div>
     <ul class="cs-list">
-<li><a href="films/masters-of-the-universe.html">Masters Of The Universe</a> - Fri 05 Jun 2026</li>
-<li><a href="films/scary-movie.html">Scary Movie</a> - Fri 05 Jun 2026</li>
 <li><a href="films/disclosure-day.html">Disclosure Day</a> - Fri 12 Jun 2026</li>
 <li><a href="films/toy-story-5.html">Toy Story 5</a> - Fri 19 Jun 2026</li>
 <li><a href="films/supergirl-woman-of-tomorrow.html">Supergirl: Woman Of Tomorrow</a> - Fri 26 Jun 2026</li>
@@ -126,7 +120,7 @@ footer a:hover{color:var(--purple)}
   </section>
     <footer style="text-align:center;padding:2rem 0;color:var(--text-muted);font-size:0.85rem;border-top:1px solid var(--border);margin-top:3rem">
       <p>An open source fan-made project. Not affiliated with WTW Cinemas.</p>
-      <p class="footer-updated">Last updated: 2026-05-30 21:59 BST</p>
+      <p class="footer-updated">Last updated: 2026-06-06 11:57 BST</p>
     </footer>
   </div>
 </body>

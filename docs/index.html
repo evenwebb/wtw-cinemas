@@ -116,6 +116,8 @@ footer a:hover{color:var(--purple)}
 .ns-poster-wrap img{width:100%;height:100%;object-fit:cover;display:block}
 .ns-poster-wrap .ns-no-poster{width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;font-size:0.75rem;color:var(--text-muted);padding:0.5rem;background:linear-gradient(135deg,var(--accent-dim),rgba(192,132,252,0.06))}
 .ns-title{display:block;padding:0.5rem 0.6rem;font-size:0.78rem;font-weight:600;color:var(--text);line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ns-event-tag{display:block;font-size:0.62rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;padding:0.1rem 0.6rem 0.4rem;text-align:center}
+.ns-event-tag.rbo{color:#f87171}.ns-event-tag.nt-live{color:var(--accent)}.ns-event-tag.toddler-cinema{color:var(--amber)}.ns-event-tag.double-bill{color:var(--purple)}.ns-event-tag.q-a{color:#fb923c}
 @media(max-width:479px){.ns-title{padding:0.4rem;font-size:0.72rem}}
 .film-card-full{display:grid;grid-template-columns:90px 1fr;gap:1rem;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.25rem;transition:border-color var(--transition),transform var(--transition)}
 @media(min-width:480px){.film-card-full{grid-template-columns:130px 1fr;gap:1.5rem;padding:1.5rem}}
@@ -132,9 +134,19 @@ footer a:hover{color:var(--purple)}
 .film-card-full .fc-info h3 a{color:var(--text);text-decoration:none}
 .film-card-full .fc-info h3 a:hover{color:var(--accent)}
 .new-badge{display:inline-block;font-size:0.62rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;padding:0.15rem 0.45rem;border-radius:100px;background:linear-gradient(135deg,var(--amber),#f59e0b);color:#0a0a10;vertical-align:middle;margin-left:0.3rem}
+.screening-badge{display:inline-block;font-size:0.62rem;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;padding:0.15rem 0.5rem;border-radius:100px;background:rgba(192,132,252,0.15);color:var(--purple);vertical-align:middle;margin-left:0.3rem}
+.fc-screening-banner{font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:0.35rem 1rem;margin:-1.25rem -1.25rem 0.75rem -1.25rem;border-radius:12px 12px 0 0;text-align:center}
+.fc-screening-banner.rbo{background:linear-gradient(135deg,rgba(248,113,113,0.2),rgba(248,113,113,0.06));color:#f87171;border-bottom:1px solid rgba(248,113,113,0.2)}
+.fc-screening-banner.nt-live{background:linear-gradient(135deg,rgba(34,211,238,0.15),rgba(34,211,238,0.04));color:var(--accent);border-bottom:1px solid rgba(34,211,238,0.2)}
+.fc-screening-banner.toddler-cinema{background:linear-gradient(135deg,rgba(251,191,36,0.18),rgba(251,191,36,0.05));color:var(--amber);border-bottom:1px solid rgba(251,191,36,0.2)}
+.fc-screening-banner.double-bill{background:linear-gradient(135deg,rgba(192,132,252,0.18),rgba(192,132,252,0.05));color:var(--purple);border-bottom:1px solid rgba(192,132,252,0.2)}
+.fc-screening-banner.q-a{background:linear-gradient(135deg,rgba(251,146,60,0.2),rgba(251,146,60,0.06));color:#fb923c;border-bottom:1px solid rgba(251,146,60,0.2)}
+@media(min-width:480px){.fc-screening-banner{margin:-1.5rem -1.5rem 0.75rem -1.5rem}}
+@media(min-width:768px){.fc-screening-banner{margin:-1.75rem -1.75rem 0.75rem -1.75rem}}
 .film-card-full .fc-meta{display:flex;flex-wrap:wrap;gap:0.35rem 0.85rem;font-size:0.82rem;color:var(--text-muted);align-items:center}
 .film-card-full .fc-meta .stars{color:var(--amber);font-size:0.82rem;letter-spacing:0.05em}
 .film-card-full .fc-meta .genres{color:var(--purple);font-weight:500}
+.film-card-full .fc-meta .cert-badge{display:inline-block;font-size:0.7rem;font-weight:700;padding:0.1rem 0.4rem;border-radius:3px;background:rgba(34,211,238,0.12);color:var(--accent)}
 .film-card-full .fc-meta .showing-date{color:var(--accent);font-weight:600}
 .film-card-full .fc-synopsis{font-size:0.88rem;color:var(--text-muted);line-height:1.6;margin-top:0.25rem}
 @media(max-width:479px){.film-card-full .fc-synopsis{-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;display:-webkit-box}}
@@ -233,8 +245,8 @@ footer a:hover{color:var(--purple)}
     <header class="hero">
       <h1>What's on at WTW Cinemas</h1>
       <p class="tagline">Browse and discover upcoming film premieres across all WTW Cinemas. Ratings, trailers, and booking links - all in one place.</p>
-      <span class="hero-stat">22 films across 4 cinemas</span>
-      <div class="hero-updated">Last updated 2026-05-30 21:59 BST</div>
+      <span class="hero-stat">20 films across 4 cinemas</span>
+      <div class="hero-updated">Last updated 2026-06-06 11:57 BST</div>
     </header>
 
     <a href="#subscribe" class="calendar-promo">
@@ -251,7 +263,7 @@ footer a:hover{color:var(--purple)}
     </nav>
 
     <div class="cinema-filter" role="group" aria-label="Filter by cinema">
-        <button type="button" class="active" data-cinema="all">All cinemas</button>
+        <button type="button" class="active" data-cinema="all">All</button>
         <button type="button" data-cinema="st-austell">St Austell</button>
         <button type="button" data-cinema="newquay">Newquay</button>
         <button type="button" data-cinema="wadebridge">Wadebridge</button>
@@ -259,214 +271,153 @@ footer a:hover{color:var(--purple)}
     </div>
 
     <section class="film-section poster-view" id="now-showing-live">
-      <div class="section-header"><h2>Now Showing</h2><div style="display:flex;align-items:center;gap:0.75rem"><span class="count">17 films</span><button type="button" id="ns-view-toggle" class="view-toggle-btn">☰ List</button></div></div>
+      <div class="section-header"><h2>Now Showing</h2><div style="display:flex;align-items:center;gap:0.75rem"><span class="count">13 films</span><button type="button" id="ns-view-toggle" class="view-toggle-btn">☰ List</button></div></div>
       <div class="ns-poster-grid">
-<a href="films/backrooms.html" class="ns-poster-card" title="Backrooms - Newquay, Truro">
-  <div class="ns-poster-wrap"><img src="https://image.tmdb.org/t/p/w500/vpkNMkbisv5cTaIfCzUduYzXnjb.jpg" alt="Backrooms" loading="lazy" decoding="async"></div>
+<a href="films/backrooms.html" class="ns-poster-card" title="Backrooms - Newquay, St Austell, Truro">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">Backrooms</div></div>
   <span class="ns-title">Backrooms</span>
 </a>
-<a href="films/charlie-the-wonderdog.html" class="ns-poster-card" title="Charlie The Wonderdog - St Austell">
-  <div class="ns-poster-wrap"><img src="https://image.tmdb.org/t/p/w500/whvkL0wzxgKmVbaPontq9NlVd5z.jpg" alt="Charlie The Wonderdog" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Charlie The Wonderdog</span>
-</a>
-<a href="films/finding-emily.html" class="ns-poster-card" title="Finding Emily - St Austell, Truro">
-  <div class="ns-poster-wrap"><img src="https://image.tmdb.org/t/p/w500/xuMPGxa6E07q7gxNf9irP0qkjik.jpg" alt="Finding Emily" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Finding Emily</span>
-</a>
-<a href="films/michael.html" class="ns-poster-card" title="Michael - Newquay, St Austell, Truro">
-  <div class="ns-poster-wrap"><img src="https://image.tmdb.org/t/p/w500/3Qud19bBUrrJAzy0Ilm8gRJlJXP.jpg" alt="Michael" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Michael</span>
-</a>
-<a href="films/obsession.html" class="ns-poster-card" title="Obsession - St Austell">
-  <div class="ns-poster-wrap"><img src="https://image.tmdb.org/t/p/w500/6X4qFYBsG3bpWDG2XIKqr04kFJa.jpg" alt="Obsession" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Obsession</span>
-</a>
-<a href="films/passenger.html" class="ns-poster-card" title="Passenger - Newquay">
-  <div class="ns-poster-wrap"><img src="https://image.tmdb.org/t/p/w500/2sOEJzhPzjTkZSlPbGxOJ7xgIyS.jpg" alt="Passenger" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Passenger</span>
-</a>
-<a href="films/power-ballad.html" class="ns-poster-card" title="Power Ballad - St Austell">
-  <div class="ns-poster-wrap"><img src="https://image.tmdb.org/t/p/w500/lsDLLagSIyTu0Gi06QjVKDp2LI2.jpg" alt="Power Ballad" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Power Ballad</span>
-</a>
-<a href="films/star-wars-the-mandalorian-and-grogu.html" class="ns-poster-card" title="Star Wars: The Mandalorian And Grogu - Newquay, St Austell, Truro">
-  <div class="ns-poster-wrap"><img src="https://image.tmdb.org/t/p/w500/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg" alt="Star Wars: The Mandalorian And Grogu" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Star Wars: The Mandalorian And Grogu</span>
-</a>
-<a href="films/the-christophers.html" class="ns-poster-card" title="The Christophers - Truro">
-  <div class="ns-poster-wrap"><img src="https://image.tmdb.org/t/p/w500/s6oUrGMNl8hVh7fn0O8oF2rHwrM.jpg" alt="The Christophers" loading="lazy" decoding="async"></div>
-  <span class="ns-title">The Christophers</span>
-</a>
-<a href="films/the-devil-wears-prada-2.html" class="ns-poster-card" title="The Devil Wears Prada 2 - Newquay, St Austell, Truro">
-  <div class="ns-poster-wrap"><img src="https://image.tmdb.org/t/p/w500/xTI42pmsP5EDnvsNJPEDubwWBQO.jpg" alt="The Devil Wears Prada 2" loading="lazy" decoding="async"></div>
-  <span class="ns-title">The Devil Wears Prada 2</span>
-</a>
-<a href="films/the-sheep-detectives.html" class="ns-poster-card" title="The Sheep Detectives - Newquay, St Austell, Truro">
-  <div class="ns-poster-wrap"><img src="https://image.tmdb.org/t/p/w500/6QtL9rl3Zb4d8qW6EJ4qO5hSSfU.jpg" alt="The Sheep Detectives" loading="lazy" decoding="async"></div>
-  <span class="ns-title">The Sheep Detectives</span>
-</a>
-<a href="films/tuner.html" class="ns-poster-card" title="Tuner - Truro">
-  <div class="ns-poster-wrap"><img src="https://image.tmdb.org/t/p/w500/kyM60vcgf7lfofmZB4F5Rj7OrHW.jpg" alt="Tuner" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Tuner</span>
-</a>
-<a href="films/drishyam-3.html" class="ns-poster-card" title="Drishyam 3 - Truro">
-  <div class="ns-poster-wrap"><img src="https://image.tmdb.org/t/p/w500/456FlpiU1iOBnaOxSd783QhZKWw.jpg" alt="Drishyam 3" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Drishyam 3</span>
-</a>
-<a href="films/national-theatre-live-the-playboy-of-the-western-world.html" class="ns-poster-card" title="National Theatre Live: The Playboy of the Western World - Newquay, St Austell, Truro">
-  <div class="ns-poster-wrap"><img src="https://image.tmdb.org/t/p/w500/hFA2KlHAExXZFs7sZ7YtxtblDQC.jpg" alt="National Theatre Live: The Playboy of the Western World" loading="lazy" decoding="async"></div>
-  <span class="ns-title">National Theatre Live: The Playboy of the Western World</span>
-</a>
-<a href="films/star-wars-the-mandalorian-and-grogu.html" class="ns-poster-card" title="Star Wars: The Mandalorian and Grogu (2D) - Newquay, Truro, Wadebridge">
-  <div class="ns-poster-wrap"><img src="https://image.tmdb.org/t/p/w500/5Vi8dSauVwH1HOsiZceDMbRr1Ca.jpg" alt="Star Wars: The Mandalorian and Grogu (2D)" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Star Wars: The Mandalorian and Grogu (2D)</span>
-</a>
 <a href="films/masters-of-the-universe.html" class="ns-poster-card" title="Masters Of The Universe - Newquay, St Austell, Truro">
-  <div class="ns-poster-wrap"><img src="https://image.tmdb.org/t/p/w500/y4xNd1eWv1ea5qoPO6JmLvzHZf0.jpg" alt="Masters Of The Universe" loading="lazy" decoding="async"></div>
+  <div class="ns-poster-wrap"><div class="ns-no-poster">Masters Of The Universe</div></div>
   <span class="ns-title">Masters Of The Universe</span>
 </a>
+<a href="films/michael.html" class="ns-poster-card" title="Michael - Newquay, Truro">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">Michael</div></div>
+  <span class="ns-title">Michael</span>
+</a>
+<a href="films/power-ballad.html" class="ns-poster-card" title="Power Ballad - St Austell">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">Power Ballad</div></div>
+  <span class="ns-title">Power Ballad</span>
+</a>
+<a href="films/savage-house.html" class="ns-poster-card" title="Savage House - St Austell">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">Savage House</div></div>
+  <span class="ns-title">Savage House</span>
+</a>
+<a href="films/scary-movie.html" class="ns-poster-card" title="Scary Movie - Newquay, St Austell, Truro">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">Scary Movie</div></div>
+  <span class="ns-title">Scary Movie</span>
+</a>
+<a href="films/star-wars-the-mandalorian-and-grogu.html" class="ns-poster-card" title="Star Wars: The Mandalorian And Grogu - Newquay, St Austell, Truro">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">Star Wars: The Mandalorian And</div></div>
+  <span class="ns-title">Star Wars: The Mandalorian And Grogu</span>
+</a>
 <a href="films/the-amazing-digital-circus-the-last-act.html" class="ns-poster-card" title="The Amazing Digital Circus: The Last Act - Newquay, St Austell, Truro">
-  <div class="ns-poster-wrap"><img src="https://image.tmdb.org/t/p/w500/uoZeXWuUS2z2F7VaC1iS5RS5cnk.jpg" alt="The Amazing Digital Circus: The Last Act" loading="lazy" decoding="async"></div>
+  <div class="ns-poster-wrap"><div class="ns-no-poster">The Amazing Digital Circus: Th</div></div>
   <span class="ns-title">The Amazing Digital Circus: The Last Act</span>
+</a>
+<a href="films/the-sheep-detectives.html" class="ns-poster-card" title="The Sheep Detectives - Newquay, St Austell, Truro">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">The Sheep Detectives</div></div>
+  <span class="ns-title">The Sheep Detectives</span>
+</a>
+<a href="films/the-super-mario-galaxy-movie.html" class="ns-poster-card" title="The Super Mario Galaxy Movie - St Austell, Truro">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">The Super Mario Galaxy Movie</div></div>
+  <span class="ns-title">The Super Mario Galaxy Movie</span>
+</a>
+<a href="films/tuner.html" class="ns-poster-card" title="Tuner - Newquay, Truro">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">Tuner</div></div>
+  <span class="ns-title">Tuner</span>
+</a>
+<a href="films/the-north.html" class="ns-poster-card" title="The North - Wadebridge">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">The North</div></div>
+  <span class="ns-title">The North</span>
+</a>
+<a href="films/disclosure-day.html" class="ns-poster-card" title="Disclosure Day - Newquay, St Austell, Truro">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">Disclosure Day</div></div>
+  <span class="ns-title">Disclosure Day</span>
 </a>
       </div>
       <div class="ns-list-grid" style="display:none">
 <a href="films/backrooms.html" class="ns-list-card">
   <span class="ns-list-title">Backrooms</span>
-  <span class="ns-list-cinemas">Newquay, Truro</span>
-  <span class="ns-list-next">Sat 30 May 17:00</span>
-</a>
-<a href="films/charlie-the-wonderdog.html" class="ns-list-card">
-  <span class="ns-list-title">Charlie The Wonderdog</span>
-  <span class="ns-list-cinemas">St Austell</span>
-  <span class="ns-list-next">Sat 30 May 14:15</span>
-</a>
-<a href="films/finding-emily.html" class="ns-list-card">
-  <span class="ns-list-title">Finding Emily</span>
-  <span class="ns-list-cinemas">St Austell, Truro</span>
-  <span class="ns-list-next">Sat 30 May 17:15</span>
-</a>
-<a href="films/michael.html" class="ns-list-card">
-  <span class="ns-list-title">Michael</span>
   <span class="ns-list-cinemas">Newquay, St Austell, Truro</span>
-  <span class="ns-list-next">Sat 30 May 19:45</span>
-</a>
-<a href="films/obsession.html" class="ns-list-card">
-  <span class="ns-list-title">Obsession</span>
-  <span class="ns-list-cinemas">St Austell</span>
-  <span class="ns-list-next">Sat 30 May 20:00</span>
-</a>
-<a href="films/passenger.html" class="ns-list-card">
-  <span class="ns-list-title">Passenger</span>
-  <span class="ns-list-cinemas">Newquay</span>
-  <span class="ns-list-next">Sat 30 May 20:15</span>
-</a>
-<a href="films/power-ballad.html" class="ns-list-card">
-  <span class="ns-list-title">Power Ballad</span>
-  <span class="ns-list-cinemas">St Austell</span>
-  <span class="ns-list-next">Sat 30 May 20:15</span>
-</a>
-<a href="films/star-wars-the-mandalorian-and-grogu.html" class="ns-list-card">
-  <span class="ns-list-title">Star Wars: The Mandalorian And Grogu</span>
-  <span class="ns-list-cinemas">Newquay, St Austell, Truro</span>
-  <span class="ns-list-next">Sat 30 May 13:30</span>
-</a>
-<a href="films/the-christophers.html" class="ns-list-card">
-  <span class="ns-list-title">The Christophers</span>
-  <span class="ns-list-cinemas">Truro</span>
-  <span class="ns-list-next">Sat 30 May 17:30</span>
-</a>
-<a href="films/the-devil-wears-prada-2.html" class="ns-list-card">
-  <span class="ns-list-title">The Devil Wears Prada 2</span>
-  <span class="ns-list-cinemas">Newquay, St Austell, Truro</span>
-  <span class="ns-list-next">Sat 30 May 16:45</span>
-</a>
-<a href="films/the-sheep-detectives.html" class="ns-list-card">
-  <span class="ns-list-title">The Sheep Detectives</span>
-  <span class="ns-list-cinemas">Newquay, St Austell, Truro</span>
-  <span class="ns-list-next">Sat 30 May 14:00</span>
-</a>
-<a href="films/tuner.html" class="ns-list-card">
-  <span class="ns-list-title">Tuner</span>
-  <span class="ns-list-cinemas">Truro</span>
-  <span class="ns-list-next">Sat 30 May 15:00</span>
-</a>
-<a href="films/drishyam-3.html" class="ns-list-card">
-  <span class="ns-list-title">Drishyam 3</span>
-  <span class="ns-list-cinemas">Truro</span>
-  <span class="ns-list-next">Sun 31 May 18:30</span>
-</a>
-<a href="films/national-theatre-live-the-playboy-of-the-western-world.html" class="ns-list-card">
-  <span class="ns-list-title">National Theatre Live: The Playboy of the Western World</span>
-  <span class="ns-list-cinemas">Newquay, St Austell, Truro</span>
-  <span class="ns-list-next">Sun 31 May 14:00</span>
-</a>
-<a href="films/star-wars-the-mandalorian-and-grogu.html" class="ns-list-card">
-  <span class="ns-list-title">Star Wars: The Mandalorian and Grogu (2D)</span>
-  <span class="ns-list-cinemas">Newquay, Truro, Wadebridge</span>
-  <span class="ns-list-next">Tue 02 Jun 19:30</span>
+  <span class="ns-list-next">Sat 06 Jun 20:00</span>
 </a>
 <a href="films/masters-of-the-universe.html" class="ns-list-card">
   <span class="ns-list-title">Masters Of The Universe</span>
   <span class="ns-list-cinemas">Newquay, St Austell, Truro</span>
-  <span class="ns-list-next">Wed 03 Jun 14:00</span>
+  <span class="ns-list-next">Sat 06 Jun 16:15</span>
+</a>
+<a href="films/michael.html" class="ns-list-card">
+  <span class="ns-list-title">Michael</span>
+  <span class="ns-list-cinemas">Newquay, Truro</span>
+  <span class="ns-list-next">Sat 06 Jun 15:00</span>
+</a>
+<a href="films/power-ballad.html" class="ns-list-card">
+  <span class="ns-list-title">Power Ballad</span>
+  <span class="ns-list-cinemas">St Austell</span>
+  <span class="ns-list-next">Sat 06 Jun 17:15</span>
+</a>
+<a href="films/savage-house.html" class="ns-list-card">
+  <span class="ns-list-title">Savage House</span>
+  <span class="ns-list-cinemas">St Austell</span>
+  <span class="ns-list-next">Sat 06 Jun 14:45</span>
+</a>
+<a href="films/scary-movie.html" class="ns-list-card">
+  <span class="ns-list-title">Scary Movie</span>
+  <span class="ns-list-cinemas">Newquay, St Austell, Truro</span>
+  <span class="ns-list-next">Sat 06 Jun 20:15</span>
+</a>
+<a href="films/star-wars-the-mandalorian-and-grogu.html" class="ns-list-card">
+  <span class="ns-list-title">Star Wars: The Mandalorian And Grogu</span>
+  <span class="ns-list-cinemas">Newquay, St Austell, Truro</span>
+  <span class="ns-list-next">Sat 06 Jun 14:00</span>
 </a>
 <a href="films/the-amazing-digital-circus-the-last-act.html" class="ns-list-card">
   <span class="ns-list-title">The Amazing Digital Circus: The Last Act</span>
   <span class="ns-list-cinemas">Newquay, St Austell, Truro</span>
-  <span class="ns-list-next">Thu 04 Jun 19:30</span>
+  <span class="ns-list-next">Sat 06 Jun 19:30</span>
+</a>
+<a href="films/the-sheep-detectives.html" class="ns-list-card">
+  <span class="ns-list-title">The Sheep Detectives</span>
+  <span class="ns-list-cinemas">Newquay, St Austell, Truro</span>
+  <span class="ns-list-next">Sat 06 Jun 13:30</span>
+</a>
+<a href="films/the-super-mario-galaxy-movie.html" class="ns-list-card">
+  <span class="ns-list-title">The Super Mario Galaxy Movie</span>
+  <span class="ns-list-cinemas">St Austell, Truro</span>
+  <span class="ns-list-next">Sat 06 Jun 12:30</span>
+</a>
+<a href="films/tuner.html" class="ns-list-card">
+  <span class="ns-list-title">Tuner</span>
+  <span class="ns-list-cinemas">Newquay, Truro</span>
+  <span class="ns-list-next">Sat 06 Jun 14:45</span>
+</a>
+<a href="films/the-north.html" class="ns-list-card">
+  <span class="ns-list-title">The North</span>
+  <span class="ns-list-cinemas">Wadebridge</span>
+  <span class="ns-list-next">Sun 07 Jun 19:30</span>
+</a>
+<a href="films/disclosure-day.html" class="ns-list-card">
+  <span class="ns-list-title">Disclosure Day</span>
+  <span class="ns-list-cinemas">Newquay, St Austell, Truro</span>
+  <span class="ns-list-next">Wed 10 Jun 19:45</span>
 </a>
       </div>
     </section>
 
     <section class="film-section" id="coming-soon">
-      <div class="section-header"><h2>Coming Soon</h2><div style="display:flex;align-items:center;gap:0.75rem"><span class="count">22 films</span><button type="button" id="view-toggle" class="view-toggle-btn">▦ Posters</button></div></div>
+      <div class="section-header"><h2>Coming Soon</h2><div style="display:flex;align-items:center;gap:0.75rem"><span class="count">20 films</span><button type="button" id="view-toggle" class="view-toggle-btn">▦ Posters</button></div></div>
       <div class="film-browse-grid">
-<article class="film-card-full" data-date="2026-06-05" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/masters-of-the-universe.html"><img src="https://image.tmdb.org/t/p/w500/y4xNd1eWv1ea5qoPO6JmLvzHZf0.jpg" alt="" loading="lazy" decoding="async"></a></div>
-  <div class="fc-info">
-    <h3><a href="films/masters-of-the-universe.html">Masters Of The Universe</a></h3>
-    <div class="fc-meta">
-      <span>2h 21min</span>
-      <span class="stars">★★★★☆</span>
-      <span class="genres">Action, Fantasy, Science Fiction</span>
-    </div>
-    <p class="fc-synopsis">After being separated for 15 years, the Sword of Power leads Prince Adam back to Eternia, where he discovers his home shattered under the fiendish rule of Skeletor. To save his family and his world, Adam must join forces with his closest allies, Teela and Duncan/Man-At-Arms, and  <a href="films/masters-of-the-universe.html">More →</a></p>
-    <div class="fc-showings">
-      <div class="showing-row"><span class="showing-date">Fri 05 Jun</span><span class="showing-cinemas"><a href="https://wtwcinemas.co.uk/film/masters-of-the-universe/?screen=newquay" class="showing-cinema-link" target="_blank" rel="noopener">Newquay</a> <a href="https://wtwcinemas.co.uk/film/masters-of-the-universe/?screen=st-austell" class="showing-cinema-link" target="_blank" rel="noopener">St Austell</a> <a href="https://wtwcinemas.co.uk/film/masters-of-the-universe/?screen=truro" class="showing-cinema-link" target="_blank" rel="noopener">Truro</a> <a href="https://wtwcinemas.co.uk/film/masters-of-the-universe/?screen=wadebridge" class="showing-cinema-link" target="_blank" rel="noopener">Wadebridge</a></span></div>    </div>
-  </div>
-</article>
-<article class="film-card-full" data-date="2026-06-05" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/scary-movie.html"><img src="https://image.tmdb.org/t/p/w500/2OHkZEqQL4OjYXIqWopJu0BijTD.jpg" alt="" loading="lazy" decoding="async"></a></div>
-  <div class="fc-info">
-    <h3><a href="films/scary-movie.html">Scary Movie</a></h3>
-    <div class="fc-meta">
-      <span class="genres">Comedy, Horror</span>
-    </div>
-    <p class="fc-synopsis">Twenty-six years after outrunning a suspiciously familiar masked killer, the Core Four are back in the killer&#x27;s crosshairs and no horror movie IP is safe. <a href="films/scary-movie.html">More →</a></p>
-    <div class="fc-showings">
-      <div class="showing-row"><span class="showing-date">Fri 05 Jun</span><span class="showing-cinemas"><a href="https://wtwcinemas.co.uk/film/scary-movie/?screen=newquay" class="showing-cinema-link" target="_blank" rel="noopener">Newquay</a> <a href="https://wtwcinemas.co.uk/film/scary-movie/?screen=st-austell" class="showing-cinema-link" target="_blank" rel="noopener">St Austell</a> <a href="https://wtwcinemas.co.uk/film/scary-movie/?screen=truro" class="showing-cinema-link" target="_blank" rel="noopener">Truro</a> <a href="https://wtwcinemas.co.uk/film/scary-movie/?screen=wadebridge" class="showing-cinema-link" target="_blank" rel="noopener">Wadebridge</a></span></div>    </div>
-  </div>
-</article>
 <article class="film-card-full" data-date="2026-06-12" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/disclosure-day.html"><img src="https://image.tmdb.org/t/p/w500/3o5YPjDGDTcTDL5ftDA9NwN9dLd.jpg" alt="" loading="lazy" decoding="async"></a></div>
+  <div class="fc-poster"><a href="films/disclosure-day.html"><div class="no-poster-sm">🎬</div></a></div>
   <div class="fc-info">
     <h3><a href="films/disclosure-day.html">Disclosure Day</a></h3>
     <div class="fc-meta">
-      <span>2h 30min</span>
-      <span class="genres">Mystery, Science Fiction, Thriller</span>
+      <span class="cert cert--12a" title="12A"></span>
+      <span>2h 25min</span>
     </div>
-    <p class="fc-synopsis">If you found out we weren’t alone, if someone showed you, proved it to you, would that frighten you? <a href="films/disclosure-day.html">More →</a></p>
+    <p class="fc-synopsis">If you found out we weren&#x27;t alone, if someone showed you, proved it to you, would that frighten you? <a href="films/disclosure-day.html">More →</a></p>
     <div class="fc-showings">
       <div class="showing-row"><span class="showing-date">Fri 12 Jun</span><span class="showing-cinemas"><a href="https://wtwcinemas.co.uk/film/disclosure-day/?screen=newquay" class="showing-cinema-link" target="_blank" rel="noopener">Newquay</a> <a href="https://wtwcinemas.co.uk/film/disclosure-day/?screen=st-austell" class="showing-cinema-link" target="_blank" rel="noopener">St Austell</a> <a href="https://wtwcinemas.co.uk/film/disclosure-day/?screen=truro" class="showing-cinema-link" target="_blank" rel="noopener">Truro</a> <a href="https://wtwcinemas.co.uk/film/disclosure-day/?screen=wadebridge" class="showing-cinema-link" target="_blank" rel="noopener">Wadebridge</a></span></div>    </div>
   </div>
 </article>
 <article class="film-card-full" data-date="2026-06-19" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/toy-story-5.html"><img src="https://image.tmdb.org/t/p/w500/dWIAOC9EKFehGs3CYvDQih3hxaG.jpg" alt="" loading="lazy" decoding="async"></a></div>
+  <div class="fc-poster"><a href="films/toy-story-5.html"><div class="no-poster-sm">🎬</div></a></div>
   <div class="fc-info">
     <h3><a href="films/toy-story-5.html">Toy Story 5</a></h3>
     <div class="fc-meta">
-      <span class="genres">Adventure, Animation, Comedy</span>
+      <span class="cert cert--pg" title="PG"></span>
+      <span>1h 42min</span>
     </div>
     <p class="fc-synopsis">When Bonnie receives a Lilypad tablet as a gift and becomes obsessed, Buzz, Woody, Jessie and the rest of the gang&#x27;s jobs become exponentially harder when they have to go head to head with the all-new threat to playtime. <a href="films/toy-story-5.html">More →</a></p>
     <div class="fc-showings">
@@ -474,11 +425,10 @@ footer a:hover{color:var(--purple)}
   </div>
 </article>
 <article class="film-card-full" data-date="2026-06-26" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/supergirl-woman-of-tomorrow.html"><img src="https://image.tmdb.org/t/p/w500/niSvU02l2BONH9ivubV6K1a5QiK.jpg" alt="" loading="lazy" decoding="async"></a></div>
+  <div class="fc-poster"><a href="films/supergirl-woman-of-tomorrow.html"><div class="no-poster-sm">🎬</div></a></div>
   <div class="fc-info">
     <h3><a href="films/supergirl-woman-of-tomorrow.html">Supergirl: Woman Of Tomorrow</a></h3>
     <div class="fc-meta">
-      <span class="genres">Action, Adventure, Science Fiction</span>
     </div>
     <p class="fc-synopsis">When an unexpected and ruthless adversary strikes too close to home, Kara Zor-El, aka Supergirl, reluctantly joins forces with an unlikely companion on an epic, interstellar journey of vengeance and justice. <a href="films/supergirl-woman-of-tomorrow.html">More →</a></p>
     <div class="fc-showings">
@@ -486,11 +436,11 @@ footer a:hover{color:var(--purple)}
   </div>
 </article>
 <article class="film-card-full" data-date="2026-06-26" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/jackass-best-and-last.html"><img src="https://image.tmdb.org/t/p/w500/tfgccePxnswMqhmtxafliLlcCVR.jpg" alt="" loading="lazy" decoding="async"></a></div>
+  <div class="fc-poster"><a href="films/jackass-best-and-last.html"><div class="no-poster-sm">🎬</div></a></div>
   <div class="fc-info">
     <h3><a href="films/jackass-best-and-last.html">Jackass: Best And Last</a></h3>
     <div class="fc-meta">
-      <span class="genres">Action, Comedy, Documentary</span>
+      <span class="cert cert--18" title="18"></span>
     </div>
     <p class="fc-synopsis">The 5th and final installment to Jackass franchise where the crew go on one last insane crusade. <a href="films/jackass-best-and-last.html">More →</a></p>
     <div class="fc-showings">
@@ -498,11 +448,10 @@ footer a:hover{color:var(--purple)}
   </div>
 </article>
 <article class="film-card-full" data-date="2026-07-03" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/minions-monsters.html"><img src="https://image.tmdb.org/t/p/w500/nz7i42yhLIJ4ve9JKgM6NthoLHO.jpg" alt="" loading="lazy" decoding="async"></a></div>
+  <div class="fc-poster"><a href="films/minions-monsters.html"><div class="no-poster-sm">🎬</div></a></div>
   <div class="fc-info">
     <h3><a href="films/minions-monsters.html">Minions &amp; Monsters</a></h3>
     <div class="fc-meta">
-      <span class="genres">Adventure, Animation, Comedy</span>
     </div>
     <p class="fc-synopsis">This is the rambunctious, ridiculous and totally true story of how the Minions conquered Hollywood, became movie stars, lost everything, unleashed monsters onto the world and then banded together to try and save the planet from the mayhem they had just created. <a href="films/minions-monsters.html">More →</a></p>
     <div class="fc-showings">
@@ -510,11 +459,10 @@ footer a:hover{color:var(--purple)}
   </div>
 </article>
 <article class="film-card-full" data-date="2026-07-10" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/moana.html"><img src="https://image.tmdb.org/t/p/w500/zKVgiv5qHCvCLT4A2ymJi5QeXDH.jpg" alt="" loading="lazy" decoding="async"></a></div>
+  <div class="fc-poster"><a href="films/moana.html"><div class="no-poster-sm">🎬</div></a></div>
   <div class="fc-info">
     <h3><a href="films/moana.html">Moana</a></h3>
     <div class="fc-meta">
-      <span class="genres">Adventure, Comedy, Family</span>
     </div>
     <p class="fc-synopsis">Moana answers the Ocean&#x27;s call and, for the first time, voyages beyond the reef of her island of Motunui with the infamous demigod Maui on an unforgettable journey to restore prosperity to her people. <a href="films/moana.html">More →</a></p>
     <div class="fc-showings">
@@ -522,24 +470,22 @@ footer a:hover{color:var(--purple)}
   </div>
 </article>
 <article class="film-card-full" data-date="2026-07-17" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/the-odyssey.html"><img src="https://image.tmdb.org/t/p/w500/krVa7rKCQb4OBfsr2LTJv4rTz5q.jpg" alt="" loading="lazy" decoding="async"></a></div>
+  <div class="fc-poster"><a href="films/the-odyssey.html"><div class="no-poster-sm">🎬</div></a></div>
   <div class="fc-info">
     <h3><a href="films/the-odyssey.html">The Odyssey</a></h3>
     <div class="fc-meta">
-      <span>2h 59min</span>
-      <span class="genres">Action, Adventure, Fantasy</span>
+      <span>2h 52min</span>
     </div>
-    <p class="fc-synopsis">Odysseus, the legendary King of Ithaca, embarks on a long and perilous journey home following the Trojan War. Throughout his voyage, he is forced to confront the whims of gods, mythological monsters, and trials that stretch both his cunning and his humanity to the breaking point. <a href="films/the-odyssey.html">More →</a></p>
+    <p class="fc-synopsis">Odysseus, the legendary Greek king of Ithaca, embarks on a long and perilous journey home following the Trojan War, chronicling his encounters with mythical beings such as the Cyclops Polyphemus, the Sirens, and the witch-goddess Circe, while attempting to reunite with his wife,  <a href="films/the-odyssey.html">More →</a></p>
     <div class="fc-showings">
       <div class="showing-row"><span class="showing-date">Fri 17 Jul</span><span class="showing-cinemas"><a href="https://wtwcinemas.co.uk/film/the-odyssey/?screen=newquay" class="showing-cinema-link" target="_blank" rel="noopener">Newquay</a> <a href="https://wtwcinemas.co.uk/film/the-odyssey/?screen=st-austell" class="showing-cinema-link" target="_blank" rel="noopener">St Austell</a> <a href="https://wtwcinemas.co.uk/film/the-odyssey/?screen=truro" class="showing-cinema-link" target="_blank" rel="noopener">Truro</a> <a href="https://wtwcinemas.co.uk/film/the-odyssey/?screen=wadebridge" class="showing-cinema-link" target="_blank" rel="noopener">Wadebridge</a></span></div>    </div>
   </div>
 </article>
 <article class="film-card-full" data-date="2026-07-31" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/spider-man-brand-new-day.html"><img src="https://image.tmdb.org/t/p/w500/yyB2VJEW3an2xCdcYCPQhn9QERR.jpg" alt="" loading="lazy" decoding="async"></a></div>
+  <div class="fc-poster"><a href="films/spider-man-brand-new-day.html"><div class="no-poster-sm">🎬</div></a></div>
   <div class="fc-info">
     <h3><a href="films/spider-man-brand-new-day.html">Spider-Man: Brand New Day</a></h3>
     <div class="fc-meta">
-      <span class="genres">Action, Adventure, Science Fiction</span>
     </div>
     <p class="fc-synopsis">Four years have passed since the events of No Way Home, and Peter is now an adult living entirely alone, having voluntarily erased himself from the lives and memories of those he loves. Crime-fighting in a New York that no longer knows his name, he&#x27;s devoted himself entirely to p <a href="films/spider-man-brand-new-day.html">More →</a></p>
     <div class="fc-showings">
@@ -547,23 +493,21 @@ footer a:hover{color:var(--purple)}
   </div>
 </article>
 <article class="film-card-full" data-date="2026-08-07" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/paw-patrol-the-dino-movie.html"><img src="https://image.tmdb.org/t/p/w500/3US9zyWBUbLTASwNwMSuZ0fO6hC.jpg" alt="" loading="lazy" decoding="async"></a></div>
+  <div class="fc-poster"><a href="films/paw-patrol-the-dino-movie.html"><div class="no-poster-sm">🎬</div></a></div>
   <div class="fc-info">
     <h3><a href="films/paw-patrol-the-dino-movie.html">Paw Patrol: The Dino Movie</a></h3>
     <div class="fc-meta">
-      <span class="genres">Adventure, Animation, Comedy</span>
     </div>
-    <p class="fc-synopsis">The PAW Patrol pups crash land on an uncharted tropical island filled with dinosaurs after their ship gets caught in a mysterious storm. They meet Rex, a pup who has been stranded on the island for years and has become an expert in all things dino-related. When the Patrol’s archr <a href="films/paw-patrol-the-dino-movie.html">More →</a></p>
+    <p class="fc-synopsis">The PAW Patrol pups crash land on an uncharted tropical island filled with dinosaurs after their ship gets caught in a mysterious storm. They meet Rex, a pup who has been stranded on the island for years and has become an expert in all things dino-related. When the Patrol&#x27;s archr <a href="films/paw-patrol-the-dino-movie.html">More →</a></p>
     <div class="fc-showings">
       <div class="showing-row"><span class="showing-date">Fri 07 Aug</span><span class="showing-cinemas"><a href="https://wtwcinemas.co.uk/film/paw-patrol-the-dino-movie/?screen=newquay" class="showing-cinema-link" target="_blank" rel="noopener">Newquay</a> <a href="https://wtwcinemas.co.uk/film/paw-patrol-the-dino-movie/?screen=st-austell" class="showing-cinema-link" target="_blank" rel="noopener">St Austell</a> <a href="https://wtwcinemas.co.uk/film/paw-patrol-the-dino-movie/?screen=truro" class="showing-cinema-link" target="_blank" rel="noopener">Truro</a> <a href="https://wtwcinemas.co.uk/film/paw-patrol-the-dino-movie/?screen=wadebridge" class="showing-cinema-link" target="_blank" rel="noopener">Wadebridge</a></span></div>    </div>
   </div>
 </article>
 <article class="film-card-full" data-date="2026-08-14" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/the-end-of-oak-street.html"><img src="https://image.tmdb.org/t/p/w500/u9jha7bkttIrc5RO1TWeSn7QVyI.jpg" alt="" loading="lazy" decoding="async"></a></div>
+  <div class="fc-poster"><a href="films/the-end-of-oak-street.html"><div class="no-poster-sm">🎬</div></a></div>
   <div class="fc-info">
     <h3><a href="films/the-end-of-oak-street.html">The End Of Oak Street</a></h3>
     <div class="fc-meta">
-      <span class="genres">Mystery, Science Fiction, Thriller</span>
     </div>
     <p class="fc-synopsis">After a mysterious cosmic event rips Oak Street from suburbia and transports their neighborhood to someplace unknown, a family soon discovers that their very survival depends on them sticking together as they navigate their now unrecognizable surroundings. <a href="films/the-end-of-oak-street.html">More →</a></p>
     <div class="fc-showings">
@@ -571,37 +515,33 @@ footer a:hover{color:var(--purple)}
   </div>
 </article>
 <article class="film-card-full" data-date="2026-09-11" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/pressure.html"><img src="https://image.tmdb.org/t/p/w500/9RkDrI8V8QJBjhtyRX7y6Qow3aq.jpg" alt="" loading="lazy" decoding="async"></a></div>
+  <div class="fc-poster"><a href="films/pressure.html"><div class="no-poster-sm">🎬</div></a></div>
   <div class="fc-info">
     <h3><a href="films/pressure.html">Pressure</a></h3>
     <div class="fc-meta">
       <span>1h 40min</span>
-      <span class="stars">★★★★☆</span>
-      <span class="genres">History, Thriller, War</span>
     </div>
-    <p class="fc-synopsis">In the tense 72 hours before D-Day, and the fate of the free world hanging in the balance, General Dwight D. Eisenhower and Captain James Stagg face an impossible choice - launch the largest and most dangerous seaborne invasion in history or risk losing the war altogether. <a href="films/pressure.html">More →</a></p>
+    <p class="fc-synopsis">In the tense 72 hours before D-Day, and the fate of the free world hanging in the balance, General Dwight D. Eisenhower and Captain James Stagg face an impossible choice-launch the largest and most dangerous seaborne invasion in history or risk losing the war altogether. <a href="films/pressure.html">More →</a></p>
     <div class="fc-showings">
       <div class="showing-row"><span class="showing-date">Fri 11 Sep</span><span class="showing-cinemas"><a href="https://wtwcinemas.co.uk/film/pressure/?screen=newquay" class="showing-cinema-link" target="_blank" rel="noopener">Newquay</a> <a href="https://wtwcinemas.co.uk/film/pressure/?screen=st-austell" class="showing-cinema-link" target="_blank" rel="noopener">St Austell</a> <a href="https://wtwcinemas.co.uk/film/pressure/?screen=truro" class="showing-cinema-link" target="_blank" rel="noopener">Truro</a> <a href="https://wtwcinemas.co.uk/film/pressure/?screen=wadebridge" class="showing-cinema-link" target="_blank" rel="noopener">Wadebridge</a></span></div>    </div>
   </div>
 </article>
 <article class="film-card-full" data-date="2026-09-18" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/shaun-the-sheep-the-beast-of-mossy-bottom.html"><img src="https://image.tmdb.org/t/p/w500/ev28R1iempBfLXIzaFDMxQQVfQv.jpg" alt="" loading="lazy" decoding="async"></a></div>
+  <div class="fc-poster"><a href="films/shaun-the-sheep-the-beast-of-mossy-bottom.html"><div class="no-poster-sm">🎬</div></a></div>
   <div class="fc-info">
     <h3><a href="films/shaun-the-sheep-the-beast-of-mossy-bottom.html">Shaun The Sheep: The Beast Of Mossy Bottom</a></h3>
     <div class="fc-meta">
-      <span class="genres">Adventure, Animation, Comedy</span>
     </div>
-    <p class="fc-synopsis">The residents of Mossy Bottom Farm looking forward to Halloween – until the clumsy Farmer trashes the flock’s beloved pumpkin patch! When Shaun turns mad scientist to fix the problem, things rapidly spiral out of control. With the Farmer missing and a wild beast roaming the woods <a href="films/shaun-the-sheep-the-beast-of-mossy-bottom.html">More →</a></p>
+    <p class="fc-synopsis">The residents of Mossy Bottom Farm looking forward to Halloween - until the clumsy Farmer trashes the flock&#x27;s beloved pumpkin patch! When Shaun turns mad scientist to fix the problem, things rapidly spiral out of control. With the Farmer missing and a wild beast roaming the woods <a href="films/shaun-the-sheep-the-beast-of-mossy-bottom.html">More →</a></p>
     <div class="fc-showings">
       <div class="showing-row"><span class="showing-date">Fri 18 Sep</span><span class="showing-cinemas"><a href="https://wtwcinemas.co.uk/film/shaun-the-sheep-the-beast-of-mossy-bottom/?screen=newquay" class="showing-cinema-link" target="_blank" rel="noopener">Newquay</a> <a href="https://wtwcinemas.co.uk/film/shaun-the-sheep-the-beast-of-mossy-bottom/?screen=st-austell" class="showing-cinema-link" target="_blank" rel="noopener">St Austell</a> <a href="https://wtwcinemas.co.uk/film/shaun-the-sheep-the-beast-of-mossy-bottom/?screen=truro" class="showing-cinema-link" target="_blank" rel="noopener">Truro</a> <a href="https://wtwcinemas.co.uk/film/shaun-the-sheep-the-beast-of-mossy-bottom/?screen=wadebridge" class="showing-cinema-link" target="_blank" rel="noopener">Wadebridge</a></span></div>    </div>
   </div>
 </article>
 <article class="film-card-full" data-date="2026-10-16" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/street-fighter.html"><img src="https://image.tmdb.org/t/p/w500/rOH0hMRFJZCMzf6zTUldrbjAmSO.jpg" alt="" loading="lazy" decoding="async"></a></div>
+  <div class="fc-poster"><a href="films/street-fighter.html"><div class="no-poster-sm">🎬</div></a></div>
   <div class="fc-info">
     <h3><a href="films/street-fighter.html">Street Fighter</a></h3>
     <div class="fc-meta">
-      <span class="genres">Action, Comedy, Fantasy</span>
     </div>
     <p class="fc-synopsis">In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to  <a href="films/street-fighter.html">More →</a></p>
     <div class="fc-showings">
@@ -609,38 +549,33 @@ footer a:hover{color:var(--purple)}
   </div>
 </article>
 <article class="film-card-full" data-date="2026-10-26" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/digger.html"><img src="https://image.tmdb.org/t/p/w500/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg" alt="" loading="lazy" decoding="async"></a></div>
+  <div class="fc-poster"><a href="films/digger.html"><div class="no-poster-sm">🎬</div></a></div>
   <div class="fc-info">
     <h3><a href="films/digger.html">Digger</a></h3>
     <div class="fc-meta">
       <span>1h 46min</span>
-      <span class="genres">Comedy, Drama</span>
     </div>
-    <p class="fc-synopsis">The most powerful man in the world embarks on a frantic mission to prove he is humanity&#x27;s saviour before the disaster he’s unleashed destroys everything. <a href="films/digger.html">More →</a></p>
+    <p class="fc-synopsis">The most powerful man in the world embarks on a frantic mission to prove he is humanity&#x27;s saviour before the disaster he&#x27;s unleashed destroys everything. <a href="films/digger.html">More →</a></p>
     <div class="fc-showings">
       <div class="showing-row"><span class="showing-date">Mon 26 Oct</span><span class="showing-cinemas"><a href="https://wtwcinemas.co.uk/film/digger/?screen=newquay" class="showing-cinema-link" target="_blank" rel="noopener">Newquay</a> <a href="https://wtwcinemas.co.uk/film/digger/?screen=st-austell" class="showing-cinema-link" target="_blank" rel="noopener">St Austell</a> <a href="https://wtwcinemas.co.uk/film/digger/?screen=truro" class="showing-cinema-link" target="_blank" rel="noopener">Truro</a> <a href="https://wtwcinemas.co.uk/film/digger/?screen=wadebridge" class="showing-cinema-link" target="_blank" rel="noopener">Wadebridge</a></span></div>    </div>
   </div>
 </article>
 <article class="film-card-full" data-date="2026-11-06" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/dr-seuss-the-cat-in-the-hat.html"><img src="https://image.tmdb.org/t/p/w500/lDbWgGUs1loHxi0joaqjI82C7xz.jpg" alt="" loading="lazy" decoding="async"></a></div>
+  <div class="fc-poster"><a href="films/dr-seuss-the-cat-in-the-hat.html"><div class="no-poster-sm">🎬</div></a></div>
   <div class="fc-info">
     <h3><a href="films/dr-seuss-the-cat-in-the-hat.html">Dr Seuss’ The Cat in the Hat</a></h3>
     <div class="fc-meta">
-      <span>24 min</span>
-      <span class="stars">★★★☆☆</span>
-      <span class="genres">Animation, Family, TV Movie</span>
     </div>
-    <p class="fc-synopsis">In a marvelously animated version of one of the most beloved of all Dr. Seuss tales, two youngsters find themselves at home with nothing to do on a rainy afternoon. But when the magical, mischievous Cat in the Hat arrives on the scene, they&#x27;re all cat-apulted into a day of rousin <a href="films/dr-seuss-the-cat-in-the-hat.html">More →</a></p>
+    <p class="fc-synopsis">Doing what he does best, the Cat spreads joy to kids in his hilarious, signature, and singularly irreverent way, transporting them and audiences on a fantastical journey through a world they&#x27;ve never seen before. Our hero takes on his toughest assignment yet for the I.I.I.I. (Ins <a href="films/dr-seuss-the-cat-in-the-hat.html">More →</a></p>
     <div class="fc-showings">
       <div class="showing-row"><span class="showing-date">Fri 06 Nov</span><span class="showing-cinemas"><a href="https://wtwcinemas.co.uk/film/the-cat-in-the-hat/?screen=newquay" class="showing-cinema-link" target="_blank" rel="noopener">Newquay</a> <a href="https://wtwcinemas.co.uk/film/the-cat-in-the-hat/?screen=st-austell" class="showing-cinema-link" target="_blank" rel="noopener">St Austell</a> <a href="https://wtwcinemas.co.uk/film/the-cat-in-the-hat/?screen=truro" class="showing-cinema-link" target="_blank" rel="noopener">Truro</a> <a href="https://wtwcinemas.co.uk/film/the-cat-in-the-hat/?screen=wadebridge" class="showing-cinema-link" target="_blank" rel="noopener">Wadebridge</a></span></div>    </div>
   </div>
 </article>
 <article class="film-card-full" data-date="2026-11-06" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/wild-horse-nine.html"><img src="https://image.tmdb.org/t/p/w500/dNJFRtVg3xLQ7dbNIQ55cmmIniD.jpg" alt="" loading="lazy" decoding="async"></a></div>
+  <div class="fc-poster"><a href="films/wild-horse-nine.html"><div class="no-poster-sm">🎬</div></a></div>
   <div class="fc-info">
     <h3><a href="films/wild-horse-nine.html">Wild Horse Nine</a></h3>
     <div class="fc-meta">
-      <span class="genres">Comedy, Crime, Thriller</span>
     </div>
     <p class="fc-synopsis">Shortly before the 1973 Chilean coup, CIA agents Chris and Lee are dispatched from Santiago to Easter Island by their bureau chief, MJ. Amongst the Island&#x27;s iconic statues, and as the longtime partners wrestle with their dark pasts and present conspiracies, Chris&#x27;s newfound bond  <a href="films/wild-horse-nine.html">More →</a></p>
     <div class="fc-showings">
@@ -648,11 +583,10 @@ footer a:hover{color:var(--purple)}
   </div>
 </article>
 <article class="film-card-full" data-date="2026-11-20" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/the-hunger-games-sunrise-on-the-reaping.html"><img src="https://image.tmdb.org/t/p/w500/ffJaYMtB6v1TrvkyhCOqwqCKm0o.jpg" alt="" loading="lazy" decoding="async"></a></div>
+  <div class="fc-poster"><a href="films/the-hunger-games-sunrise-on-the-reaping.html"><div class="no-poster-sm">🎬</div></a></div>
   <div class="fc-info">
     <h3><a href="films/the-hunger-games-sunrise-on-the-reaping.html">The Hunger Games: Sunrise On The Reaping</a></h3>
     <div class="fc-meta">
-      <span class="genres">Action, Adventure, Science Fiction</span>
     </div>
     <p class="fc-synopsis">Return to the world of Panem 24 years before the events of The Hunger Games, starting on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell. <a href="films/the-hunger-games-sunrise-on-the-reaping.html">More →</a></p>
     <div class="fc-showings">
@@ -660,11 +594,10 @@ footer a:hover{color:var(--purple)}
   </div>
 </article>
 <article class="film-card-full" data-date="2026-11-27" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/focker-in-law.html"><img src="https://image.tmdb.org/t/p/w500/gPdzdeehaoaYqxH2rA6yayEDSsS.jpg" alt="" loading="lazy" decoding="async"></a></div>
+  <div class="fc-poster"><a href="films/focker-in-law.html"><div class="no-poster-sm">🎬</div></a></div>
   <div class="fc-info">
     <h3><a href="films/focker-in-law.html">Focker-In-Law</a></h3>
     <div class="fc-meta">
-      <span class="genres">Comedy, Romance</span>
     </div>
     <p class="fc-synopsis">Henry, son of Greg and Pam Focker, faces family chaos when he decides to marry a strong-willed woman who appears to be his complete mismatch. <a href="films/focker-in-law.html">More →</a></p>
     <div class="fc-showings">
@@ -672,11 +605,10 @@ footer a:hover{color:var(--purple)}
   </div>
 </article>
 <article class="film-card-full" data-date="2026-12-18" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/avengers-doomsday.html"><img src="https://image.tmdb.org/t/p/w500/8HkIe2i4ScpCkcX9SzZ9IPasqWV.jpg" alt="" loading="lazy" decoding="async"></a></div>
+  <div class="fc-poster"><a href="films/avengers-doomsday.html"><div class="no-poster-sm">🎬</div></a></div>
   <div class="fc-info">
     <h3><a href="films/avengers-doomsday.html">Avengers: Doomsday</a></h3>
     <div class="fc-meta">
-      <span class="genres">Action, Adventure, Science Fiction</span>
     </div>
     <p class="fc-synopsis">Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they&#x27;ve ever encountered. <a href="films/avengers-doomsday.html">More →</a></p>
     <div class="fc-showings">
@@ -684,11 +616,10 @@ footer a:hover{color:var(--purple)}
   </div>
 </article>
 <article class="film-card-full" data-date="2026-12-18" data-cinemas="newquay,st-austell,truro,wadebridge">
-  <div class="fc-poster"><a href="films/dune-part-three.html"><img src="https://image.tmdb.org/t/p/w500/b4wekkUaxExzOeGe7hKXzhnyXHt.jpg" alt="" loading="lazy" decoding="async"></a></div>
+  <div class="fc-poster"><a href="films/dune-part-three.html"><div class="no-poster-sm">🎬</div></a></div>
   <div class="fc-info">
     <h3><a href="films/dune-part-three.html">Dune: Part Three</a></h3>
     <div class="fc-meta">
-      <span class="genres">Action, Adventure, Science Fiction</span>
     </div>
     <p class="fc-synopsis">As Emperor, Paul Atreides grapples with the consequences of his rise to power as political conspiracies and a galaxy-spanning holy war threaten the future he alone can foresee. <a href="films/dune-part-three.html">More →</a></p>
     <div class="fc-showings">
@@ -768,13 +699,13 @@ footer a:hover{color:var(--purple)}
     <footer role="contentinfo">
       <p class="footer-disclaimer">An open source fan-made project. Calendars update when new premieres are added. Not affiliated with WTW Cinemas.</p>
       <div class="footer-links">
-        <a href="https://wtwcinemas.co.uk/">WTW Cinemas</a>
+        <a href="https://www.merlincinemas.co.uk/">WTW Cinemas</a>
         <span aria-hidden="true">·</span>
         <a href="https://github.com/evenwebb/wtw-cinemas">Source</a>
         <span aria-hidden="true">·</span>
         <a href="https://github.com/evenwebb/">evenwebb</a>
       </div>
-      <p class="footer-updated">Last updated: 2026-05-30 21:59 BST</p>
+      <p class="footer-updated">Last updated: 2026-06-06 11:57 BST</p>
     </footer>
   </div>
 <script>
@@ -834,7 +765,7 @@ document.querySelectorAll(".show-btn").forEach(function(btn){btn.addEventListene
   <script>
   // Nearest cinema highlight
   (function(){
-    var cinemas={"St Austell":{lat:50.338,lng:-4.795},"Newquay":{lat:50.414,lng:-5.075},"Wadebridge":{lat:50.517,lng:-4.835},"Truro":{lat:50.263,lng:-5.051}};
+    var cinemas={"bodmin":{lat:50.466,lng:-4.718},"helston":{lat:50.102,lng:-5.274},"falmouth":{lat:50.155,lng:-5.067},"redruth":{lat:50.233,lng:-5.226},"st-ives":{lat:50.21,lng:-5.49},"penzance-savoy":{lat:50.118,lng:-5.538},"penzance-ritz":{lat:50.118,lng:-5.536}};
     if(!navigator.geolocation)return;
     navigator.geolocation.getCurrentPosition(function(pos){
       var best=null,bestDist=Infinity;
@@ -861,7 +792,7 @@ document.querySelectorAll(".show-btn").forEach(function(btn){btn.addEventListene
     var toggle=document.getElementById(toggleId);
     var section=document.getElementById(sectionId);
     if(!toggle||!section)return;
-    var storageKey="wtw-view-"+sectionId;
+    var storageKey="merlin-view-"+sectionId;
     var isPoster=section.classList.contains("poster-view");
     if(localStorage.getItem(storageKey)==="cards"){
       section.classList.remove("poster-view");

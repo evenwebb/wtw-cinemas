@@ -4,13 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The Super Mario Galaxy Movie - WTW Cinemas</title>
-  <meta name="description" content="Having thwarted Bowser&#x27;s previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father ">
+  <meta name="description" content="Synopsis coming soon.">
   <meta property="og:title" content="The Super Mario Galaxy Movie - WTW Cinemas">
-  <meta property="og:description" content="Having thwarted Bowser&#x27;s previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family le">
+  <meta property="og:description" content="Synopsis coming soon.">
   <meta property="og:type" content="website">
-    <meta property="og:image" content="posters/the-super-mario-galaxy-movie.jpg">
-  <meta property="og:url" content="https://evenwebb.github.io/wtw-cinemas-calendar/films/the-super-mario-galaxy-movie.html">
-  <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:url" content="https://evenwebb.github.io/wtw-cinemas/films/the-super-mario-galaxy-movie.html">
+  <meta name="twitter:card" content="summary">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +19,7 @@
 :root{--bg:#09090d;--surface:#13131c;--surface-2:#1a1a26;--border:rgba(192,132,252,0.18);--text:#e8edf2;--text-muted:#8b9db5;--cyan:#22d3ee;--purple:#c084fc;--accent:#22d3ee;--accent-dim:rgba(34,211,238,0.12);--accent-glow:rgba(34,211,238,0.2);--amber:#f59e0b;--radius:16px;--radius-sm:10px;--transition:0.2s ease}
 *,::before,::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:2rem}
-body{font-family:'Space Grotesk',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh;-webkit-font-smoothing:antialiased}
+body{padding-top:42px;font-family:'Space Grotesk',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh;-webkit-font-smoothing:antialiased}
 @keyframes pageIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .page{animation:pageIn 0.4s ease-out}
 .bg-mesh{position:fixed;inset:0;overflow:hidden;background:radial-gradient(ellipse 80% 60% at 50% -20%,var(--accent-dim) 0%,transparent 50%),radial-gradient(ellipse 50% 40% at 80% 90%,rgba(192,132,252,0.06) 0%,transparent 50%);pointer-events:none;z-index:0}
@@ -35,7 +34,7 @@ body{position:relative}
 @media(min-width:640px){.page{padding:2.5rem 2rem 5rem}}
 .back-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1.1rem;background:var(--surface);border:1px solid var(--border);border-radius:100px;color:var(--text-muted);text-decoration:none;font-weight:500;font-size:0.85rem;margin-bottom:2rem;transition:all var(--transition)}
 .back-btn:hover{color:var(--accent);border-color:var(--accent);background:var(--accent-dim)}
-.film-layout{display:grid;grid-template-columns:1fr;gap:2rem;margin-bottom:2.5rem;position:relative}
+.film-layout{display:grid;grid-template-columns:1fr;gap:2rem;margin-bottom:2.5rem;position:relative;padding-top:42px}@media(min-width:600px){body{padding-top:48px}}
 @media(min-width:680px){.film-layout{grid-template-columns:280px 1fr;align-items:start}}
 .poster{width:100%;max-width:280px;margin:0 auto;position:relative;z-index:1}
 @media(min-width:680px){.poster{margin:0}}
@@ -48,6 +47,9 @@ body{position:relative}
 .film-info .genres{color:var(--purple);font-weight:500}
 .film-info .rating-pill{background:var(--accent-dim);color:var(--accent);padding:0.2rem 0.65rem;border-radius:100px;font-weight:600;font-size:0.82rem}
 .film-info .synopsis{font-size:0.95rem;line-height:1.75;color:var(--text-muted);margin-bottom:1.25rem;padding:1.25rem;background:var(--surface);border-radius:12px;border:1px solid var(--border)}
+.screening-info{background:linear-gradient(135deg,rgba(34,211,238,0.08),rgba(192,132,252,0.06));border:1px solid rgba(34,211,238,0.2);border-radius:12px;padding:1rem 1.25rem;margin-bottom:1.25rem}
+.screening-info-label{display:inline-block;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent);background:var(--accent-dim);padding:0.25rem 0.65rem;border-radius:100px;margin-bottom:0.6rem}
+.screening-info p{font-size:0.88rem;color:var(--text);margin:0;line-height:1.6}
 .film-info .crew{margin-bottom:1rem}
 .film-info .crew p{font-size:0.88rem;color:var(--text-muted);padding:0.55rem 0;border-bottom:1px solid var(--border)}
 .film-info .crew p:last-child{border-bottom:none}
@@ -61,29 +63,70 @@ body{position:relative}
 .trailer-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none}
 .trailer-wrap .no-trailer{display:flex;align-items:center;justify-content:center;height:100%;color:var(--text-muted);font-size:0.9rem}
 .cinema-section{margin-bottom:2.5rem}
-.cinema-section h2{font-size:1.1rem;font-weight:700;margin-bottom:0.85rem;color:var(--accent)}
+.cinema-section h2{font-size:1.1rem;font-weight:700;margin-bottom:0.85rem;color:var(--accent);display:flex;align-items:center;gap:0.5rem}
+.tag-key-btn{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;border:1px solid var(--border);background:var(--surface);color:var(--text-muted);font-size:0.75rem;cursor:pointer;transition:all var(--transition);padding:0;line-height:1}
+.tag-key-btn:hover{color:var(--accent);border-color:var(--accent);background:var(--accent-dim)}
+.tag-key-popup{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center}
+.tag-key-popup[hidden]{display:none}
+.tag-key-overlay{position:absolute;inset:0;background:rgba(0,0,0,0.6)}
+.tag-key-dialog{position:relative;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:1.5rem;max-width:340px;width:92%;max-height:80vh;overflow-y:auto;box-shadow:0 20px 60px rgba(0,0,0,0.5)}
+@media(min-width:480px){.tag-key-dialog{padding:2rem;max-width:380px}}
+.tag-key-close{position:absolute;top:0.75rem;right:1rem;background:none;border:none;color:var(--text-muted);font-size:1.5rem;cursor:pointer;padding:0;line-height:1}
+.tag-key-close:hover{color:var(--text)}
+.tag-key-dialog h3{font-size:1rem;font-weight:700;margin-bottom:1rem;color:var(--text)}
+.tag-key-dialog dl{display:grid;grid-template-columns:auto 1fr;gap:0.6rem 0.75rem;align-items:center}
+.tag-key-dialog dt{margin:0}
+.tag-key-dialog dd{font-size:0.85rem;color:var(--text-muted);margin:0}
 .st-filter{display:flex;flex-wrap:wrap;gap:0.35rem;margin-bottom:0.85rem}
 .st-filter-btn{font-family:inherit;font-size:0.72rem;font-weight:600;padding:0.3rem 0.75rem;border-radius:100px;border:1px solid var(--border);background:var(--surface);color:var(--text-muted);cursor:pointer;transition:all var(--transition)}
 .st-filter-btn:hover{color:var(--accent);border-color:var(--accent)}
 .st-filter-btn.active{background:var(--accent-dim);color:var(--accent);border-color:var(--accent)}
-.cinema-table{width:100%;border-collapse:collapse;font-size:0.9rem}
-.cinema-table thead th{text-align:left;font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);padding:0.5rem 0.75rem;border-bottom:2px solid var(--border)}
-.cinema-table tbody td{padding:0.6rem 0.75rem;border-bottom:1px solid var(--border);vertical-align:middle}
+.cinema-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -0.5rem;padding:0 0.5rem}
+@media(min-width:600px){.cinema-table-wrap{margin:0;padding:0;overflow-x:visible}}
+.cinema-table{width:100%;border-collapse:collapse;font-size:0.82rem;min-width:480px}
+@media(min-width:600px){.cinema-table{font-size:0.9rem;min-width:0}}
+.cinema-table thead th{text-align:left;font-size:0.68rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;color:var(--text-muted);padding:0.4rem 0.5rem;border-bottom:2px solid var(--border)}
+@media(min-width:600px){.cinema-table thead th{font-size:0.72rem;padding:0.5rem 0.75rem}}
+.cinema-table tbody td{padding:0.5rem 0.5rem;border-bottom:1px solid var(--border);vertical-align:middle}
+@media(min-width:600px){.cinema-table tbody td{padding:0.6rem 0.75rem}}
 .cinema-table tbody tr:hover{background:var(--accent-dim)}
-.cinema-table .date-cell{font-weight:600;color:var(--accent);white-space:nowrap}
+tr.nearest-cinema-row{background:rgba(34,211,238,0.06)}
+tr.nearest-cinema-row:first-child{border-top:2px solid var(--accent)}
+tr.nearest-cinema-row:last-of-type{border-bottom:2px solid var(--accent)}
+tr.nearest-cinema-row td:first-child{border-left:3px solid var(--accent)}
+.nearest-cinema-label{font-size:0.78rem;font-weight:600;color:var(--accent);padding:0.4rem 0.6rem;margin-bottom:0.25rem;display:flex;align-items:center;gap:0.3rem;background:rgba(34,211,238,0.08);border-radius:8px}
+.cinema-table .date-cell{font-weight:600;color:var(--accent);white-space:nowrap;font-size:0.78rem}
+@media(min-width:600px){.cinema-table .date-cell{font-size:inherit}}
 .cinema-table .time-cell{font-weight:500;color:var(--text);font-variant-numeric:tabular-nums}
-.cinema-table .screen-badge{font-size:0.72rem;font-weight:600;color:var(--purple);background:rgba(192,132,252,0.12);padding:0.15rem 0.4rem;border-radius:4px;margin-left:0.3rem}
+.cinema-table .screen-badge{font-size:0.65rem;font-weight:600;color:var(--purple);background:rgba(192,132,252,0.12);padding:0.12rem 0.3rem;border-radius:4px;margin-left:0.2rem;white-space:nowrap}
+@media(min-width:600px){.cinema-table .screen-badge{font-size:0.72rem;padding:0.15rem 0.4rem}}
+.cinema-table .tag-badge{display:inline-block;font-size:0.6rem;font-weight:700;padding:0.1rem 0.25rem;border-radius:3px;margin-left:0.15rem;vertical-align:middle;line-height:1.4;cursor:help}
+@media(min-width:600px){.cinema-table .tag-badge{font-size:0.65rem;padding:0.1rem 0.3rem;margin-left:0.2rem}}
+.cinema-table .tag-badge[title*="Audio"]{color:#22d3ee;background:rgba(34,211,238,0.12)}
+.cinema-table .tag-badge[title*="Subtitles"]{color:#facc15;background:rgba(250,204,21,0.12)}
+.cinema-table .tag-badge[title*="Wheelchair"]{color:#4ade80;background:rgba(74,222,128,0.12)}
+.cinema-table .tag-badge[title*="Strobe"]{color:#fb923c;background:rgba(251,146,60,0.12)}
+.cinema-table .tag-badge[title*="Autism"]{color:#c084fc;background:rgba(192,132,252,0.12)}
+.cinema-table .tag-badge[title*="Baby"],.cinema-table .tag-badge[title*="Parent"]{color:#f472b6;background:rgba(244,114,182,0.12)}
+.cinema-table .tag-badge[title*="Kids"]{color:#fbbf24;background:rgba(251,191,36,0.12)}
+.cinema-table .tag-badge[title*="Silver"]{color:#94a3b8;background:rgba(148,163,184,0.12)}
+.cinema-table .tag-badge[title*="Event"]{color:#f87171;background:rgba(248,113,113,0.12)}
 .cinema-table .cinema-cell{font-weight:500;color:var(--text)}
 .cinema-table .book-cell{text-align:right;white-space:nowrap}
-.cinema-table .table-book-btn{display:inline-block;padding:0.4rem 0.9rem;background:linear-gradient(135deg,var(--cyan),var(--purple));color:#0a0a10;font-weight:600;font-size:0.78rem;border-radius:8px;text-decoration:none;transition:transform var(--transition),box-shadow var(--transition)}
+.cinema-table .table-book-btn{display:inline-block;padding:0.35rem 0.7rem;background:linear-gradient(135deg,var(--cyan),var(--purple));color:#0a0a10;font-weight:600;font-size:0.72rem;border-radius:8px;text-decoration:none;transition:transform var(--transition),box-shadow var(--transition)}
+@media(min-width:600px){.cinema-table .table-book-btn{font-size:0.78rem;padding:0.4rem 0.9rem}}
 .cinema-table .table-book-btn:hover{transform:scale(1.04);box-shadow:0 4px 15px var(--accent-glow)}
-@media(max-width:600px){.cinema-table .book-cell{padding-right:0.25rem}.cinema-table thead th,.cinema-table tbody td{padding:0.5rem 0.4rem;font-size:0.82rem}}
 .cert{display:inline-block;width:28px;height:28px;background-position:center;background-repeat:no-repeat;background-size:contain;vertical-align:middle;margin-left:0.4rem}
-.cert--U{background-image:url(../certs/cert-u.png)}
-.cert--PG{background-image:url(../certs/cert-pg.png)}
-.cert--12A{background-image:url(../certs/cert-12a.png)}
+.cert--u{background-image:url(../certs/cert-u.png)}
+.cert--pg{background-image:url(../certs/cert-pg.png)}
+.cert--12a{background-image:url(../certs/cert-12a.png)}
+.cert--12{background-image:url(../certs/cert-12.png)}
 .cert--15{background-image:url(../certs/cert-15.png)}
 .cert--18{background-image:url(../certs/cert-18.png)}
+.backdrop-wrap{position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;overflow:hidden;opacity:0.15;pointer-events:none}
+.backdrop-wrap::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,16,0.7) 0%,rgba(10,10,16,0.9) 100%)}
+.backdrop-img{width:100%;height:100%;object-fit:cover}
+@media(max-width:680px){.backdrop-wrap{position:relative;height:200px;opacity:0.2}}
 .backdrop-wrap{position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;overflow:hidden}
 .backdrop-wrap::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,16,0.65) 0%,rgba(10,10,16,0.85) 100%)}
 .backdrop-img{width:100%;height:100%;object-fit:cover}
@@ -93,50 +136,120 @@ body{position:relative}
 </head>
 <body>
   <div class="bg-mesh" aria-hidden="true"></div>
-<div class="backdrop-wrap">
-  <img src="https://image.tmdb.org/t/p/w780/9Z2uDYXqJrlmePznQQJhL6d92Rq.jpg" alt="" class="backdrop-img" loading="lazy" decoding="async">
-</div>
   <div class="page">
     <a href="../" class="back-btn">← Back to all premieres</a>
     <div class="film-layout">
-      <div class="poster"><img src="../posters/the-super-mario-galaxy-movie.jpg" alt="Poster for The Super Mario Galaxy Movie" loading="lazy"></div>
+      <div class="poster"><div class="no-poster">No poster available</div></div>
       <div class="film-info">
         <h1>The Super Mario Galaxy Movie </h1>
-        <div class="meta"><span>1h 38min</span><span class="stars">★★★★☆</span><span class="rating-pill">8.0/10</span><span class="genres">Adventure, Animation, Comedy, Family, Fantasy</span></div>
-        <div class="synopsis">Having thwarted Bowser&#x27;s previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir&#x27;s crusade.</div>
+        <div class="meta"></div>
+        <div class="synopsis">Synopsis coming soon.</div>
         <div class="links">
-          <a href="https://www.imdb.com/title/tt28650488/" class="ext-link" target="_blank" rel="noopener">IMDb</a>
           <a href="https://www.rottentomatoes.com/search?search=The Super Mario Galaxy Movie" class="ext-link" target="_blank" rel="noopener">Rotten Tomatoes</a>
           <a href="https://trakt.tv/search?query=The Super Mario Galaxy Movie" class="ext-link" target="_blank" rel="noopener">Trakt</a>
         </div>
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Movie", "name": "The Super Mario Galaxy Movie", "description": "Having thwarted Bowser's previous plot to marry Princess Peach, Mario and Luigi now face a fresh threat in Bowser Jr., who is determined to liberate his father from captivity and restore the family legacy. Alongside companions new and old, the brothers travel across the stars to stop the young heir's crusade.", "image": "posters/the-super-mario-galaxy-movie.jpg", "director": {"@type": "Person", "name": "Michael Jelenic, Aaron Horvath"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": 8.043, "bestRating": 10}, "genre": ["Adventure", "Animation", "Comedy", "Family", "Fantasy"]}</script>
-        <div class="crew">
-          <p><strong>Director:</strong> Michael Jelenic, Aaron Horvath</p>
-          <p><strong>Starring:</strong> Chris Pratt, Anya Taylor-Joy, Charlie Day, Jack Black, Donald Glover, Benny Safdie</p>
-        </div>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Movie", "name": "The Super Mario Galaxy Movie", "description": "Synopsis coming soon.", "image": null}</script>
     </div>
   </div>
     <div class="trailer-section">
       <h2>Trailer</h2>
-      <div class="trailer-wrap"><iframe src="https://www.youtube-nocookie.com/embed/En5QZmL5R1s" title="Trailer for The Super Mario Galaxy Movie" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+      <div class="trailer-wrap"><div class="no-trailer">No trailer available</div></div>
     </div>
     <div class="cinema-section">
-      <h2>Showtimes & Cinemas</h2>
-      <table class="cinema-table">
-        <thead><tr><th>Date</th><th>Time</th><th>Cinema</th><th></th></tr></thead>
-        <tbody>
-<tr data-film-cinema="truro"><td class="date-cell">Sat 30 May</td><td class="time-cell">14:30</td><td class="cinema-cell">WTW Truro <span class="screen-badge">Sc 4</span></td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120725&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
-        </tbody>
-      </table>
+      <h2>Showtimes & Cinemas <button type="button" id="tag-key-btn" class="tag-key-btn" aria-label="Accessibility key" title="Accessibility key">ⓘ</button></h2>
+      <div class="st-filter" role="group" aria-label="Filter by cinema">
+        <button type="button" class="st-filter-btn active" data-st-cinema="all">All</button>
+          <button type="button" class="st-filter-btn" data-st-cinema="st-austell">St Austell</button>
+          <button type="button" class="st-filter-btn" data-st-cinema="truro">Truro</button>
+      </div>
+      <div class="cinema-table-wrap">
+        <table class="cinema-table">
+          <thead><tr><th>Date</th><th>Time</th><th>Cinema</th><th></th></tr></thead>
+          <tbody>
+<tr data-film-cinema="st-austell"><td class="date-cell">Sat 06 Jun</td><td class="time-cell">12:30</td><td class="cinema-cell">Merlin St Austell <span class="screen-badge">Screen 4</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=77548&amp;screen=staustell" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="truro"><td class="date-cell">Sat 06 Jun</td><td class="time-cell">12:30</td><td class="cinema-cell">Merlin Truro <span class="screen-badge">Screen 4</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120877&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="st-austell"><td class="date-cell">Sun 07 Jun</td><td class="time-cell">12:30</td><td class="cinema-cell">Merlin St Austell <span class="screen-badge">Screen 4</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=77559&amp;screen=staustell" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="truro"><td class="date-cell">Sun 07 Jun</td><td class="time-cell">12:30</td><td class="cinema-cell">Merlin Truro <span class="screen-badge">Screen 4</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120878&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+<script>
+document.querySelectorAll(".st-filter-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".st-filter-btn").forEach(function(b){b.classList.remove("active")});this.classList.add("active");var cinema=this.getAttribute("data-st-cinema");document.querySelectorAll("tr[data-film-cinema]").forEach(function(row){row.style.display=(cinema==="all"||row.getAttribute("data-film-cinema")===cinema)?"":"none"})})});
+</script>
+<div class="tag-key-popup" id="tag-key-popup" hidden>
+  <div class="tag-key-overlay"></div>
+  <div class="tag-key-dialog" role="dialog" aria-label="Accessibility key">
+    <button type="button" class="tag-key-close" aria-label="Close">&times;</button>
+    <h3>Accessibility Key</h3>
+    <dl>
+      <dt><span class="tag-badge" style="color:#22d3ee;background:rgba(34,211,238,0.12)">AD</span></dt><dd>Audio Description</dd>
+      <dt><span class="tag-badge" style="color:#facc15;background:rgba(250,204,21,0.12)">CC</span></dt><dd>Subtitles / Closed Captions</dd>
+      <dt><span class="tag-badge" style="color:#4ade80;background:rgba(74,222,128,0.12)">WA</span></dt><dd>Wheelchair Accessible</dd>
+      <dt><span class="tag-badge" style="color:#fb923c;background:rgba(251,146,60,0.12)">SL</span></dt><dd>Strobe Lighting warning</dd>
+      <dt><span class="tag-badge" style="color:#c084fc;background:rgba(192,132,252,0.12)">AF</span></dt><dd>Autism Friendly screening</dd>
+      <dt><span class="tag-badge" style="color:#f472b6;background:rgba(244,114,182,0.12)">PB</span></dt><dd>Parent &amp; Baby screening</dd>
+      <dt><span class="tag-badge" style="color:#fbbf24;background:rgba(251,191,36,0.12)">KC</span></dt><dd>Kids Club</dd>
+      <dt><span class="tag-badge" style="color:#94a3b8;background:rgba(148,163,184,0.12)">SS</span></dt><dd>Silver Screen (over 60s)</dd>
+      <dt><span class="tag-badge" style="color:#f87171;background:rgba(248,113,113,0.12)">EV</span></dt><dd>Event Cinema</dd>
+    </dl>
+  </div>
+</div>
+<script>
+var tagPopup=document.getElementById("tag-key-popup");
+var tagBtn=document.getElementById("tag-key-btn");
+var tagClose=tagPopup.querySelector(".tag-key-close");
+var tagOverlay=tagPopup.querySelector(".tag-key-overlay");
+tagBtn.addEventListener("click",function(){tagPopup.hidden=false});
+tagClose.addEventListener("click",function(){tagPopup.hidden=true});
+tagOverlay.addEventListener("click",function(){tagPopup.hidden=true});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")tagPopup.hidden=true});
+</script>
+<script>
+// Nearest cinema highlight - reorder showtime rows
+(function(){
+var coords={"st-austell":{lat:50.338,lng:-4.795},"newquay":{lat:50.414,lng:-5.075},"wadebridge":{lat:50.517,lng:-4.835},"truro":{lat:50.263,lng:-5.051}};
+if(!navigator.geolocation)return;
+navigator.geolocation.getCurrentPosition(function(pos){
+var best=null,bestDist=Infinity;
+for(var cn in coords){
+var c=coords[cn];
+var d=Math.sqrt(Math.pow(c.lat-pos.coords.latitude,2)+Math.pow(c.lng-pos.coords.longitude,2));
+if(d<bestDist){bestDist=d;best=cn;}
+}
+if(!best)return;
+var tbody=document.querySelector(".cinema-table tbody");
+var rows=document.querySelectorAll("tr[data-film-cinema]");
+var topRows=[],otherRows=[];
+for(var i=0;i<rows.length;i++){
+var r=rows[i];
+if(r.getAttribute("data-film-cinema")===best){
+r.classList.add("nearest-cinema-row");
+topRows.push(r);
+}else{otherRows.push(r);}
+}
+if(topRows.length){
+var frag=document.createDocumentFragment();
+for(var j=0;j<topRows.length;j++)frag.appendChild(topRows[j]);
+for(var k=0;k<otherRows.length;k++)frag.appendChild(otherRows[k]);
+tbody.appendChild(frag);
+var label=document.createElement("div");
+label.className="nearest-cinema-label";
+label.textContent="★ Nearest cinema: "+(best.charAt(0).toUpperCase()+best.slice(1).replace(/-/g," "));
+var table=document.querySelector(".cinema-table-wrap");
+table.parentNode.insertBefore(label,table);
+}
+},function(){},{timeout:5000,maximumAge:3600000});
+})();
+</script>
     </div>
     <footer>
       <p>An open source fan-made project. Not affiliated with WTW Cinemas.</p>
       <div style="margin-top:0.75rem">
-        <a href="https://wtwcinemas.co.uk/">WTW Cinemas</a>
+        <a href="https://www.merlincinemas.co.uk/">WTW Cinemas</a>
         <span aria-hidden="true"> · </span>
         <a href="../">All premieres</a>
       </div>
-      <p class="footer-updated">Last updated: 2026-05-30 12:49 BST</p>
+      <p class="footer-updated">Last updated: 2026-06-06 11:57 BST</p>
     </footer>
   </div>
 </body>

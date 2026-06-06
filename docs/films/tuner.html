@@ -4,13 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tuner - WTW Cinemas</title>
-  <meta name="description" content="A talented piano tuner&#x27;s life is turned upside down when he discovers that his meticulous skills for tuning pianos can equally be applied to cracking safes.">
+  <meta name="description" content="Synopsis coming soon.">
   <meta property="og:title" content="Tuner - WTW Cinemas">
-  <meta property="og:description" content="A talented piano tuner&#x27;s life is turned upside down when he discovers that his meticulous skills for tuning pianos can equally be applied to cracking safes.">
+  <meta property="og:description" content="Synopsis coming soon.">
   <meta property="og:type" content="website">
-    <meta property="og:image" content="posters/tuner.jpg">
-  <meta property="og:url" content="https://evenwebb.github.io/wtw-cinemas/films/tuner.html">
-  <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:url" content="https://evenwebb.github.io/wtw-cinemas/films/tuner.html">
+  <meta name="twitter:card" content="summary">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +19,7 @@
 :root{--bg:#09090d;--surface:#13131c;--surface-2:#1a1a26;--border:rgba(192,132,252,0.18);--text:#e8edf2;--text-muted:#8b9db5;--cyan:#22d3ee;--purple:#c084fc;--accent:#22d3ee;--accent-dim:rgba(34,211,238,0.12);--accent-glow:rgba(34,211,238,0.2);--amber:#f59e0b;--radius:16px;--radius-sm:10px;--transition:0.2s ease}
 *,::before,::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:2rem}
-body{font-family:'Space Grotesk',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh;-webkit-font-smoothing:antialiased}
+body{padding-top:42px;font-family:'Space Grotesk',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh;-webkit-font-smoothing:antialiased}
 @keyframes pageIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .page{animation:pageIn 0.4s ease-out}
 .bg-mesh{position:fixed;inset:0;overflow:hidden;background:radial-gradient(ellipse 80% 60% at 50% -20%,var(--accent-dim) 0%,transparent 50%),radial-gradient(ellipse 50% 40% at 80% 90%,rgba(192,132,252,0.06) 0%,transparent 50%);pointer-events:none;z-index:0}
@@ -35,7 +34,7 @@ body{position:relative}
 @media(min-width:640px){.page{padding:2.5rem 2rem 5rem}}
 .back-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1.1rem;background:var(--surface);border:1px solid var(--border);border-radius:100px;color:var(--text-muted);text-decoration:none;font-weight:500;font-size:0.85rem;margin-bottom:2rem;transition:all var(--transition)}
 .back-btn:hover{color:var(--accent);border-color:var(--accent);background:var(--accent-dim)}
-.film-layout{display:grid;grid-template-columns:1fr;gap:2rem;margin-bottom:2.5rem;position:relative}
+.film-layout{display:grid;grid-template-columns:1fr;gap:2rem;margin-bottom:2.5rem;position:relative;padding-top:42px}@media(min-width:600px){body{padding-top:48px}}
 @media(min-width:680px){.film-layout{grid-template-columns:280px 1fr;align-items:start}}
 .poster{width:100%;max-width:280px;margin:0 auto;position:relative;z-index:1}
 @media(min-width:680px){.poster{margin:0}}
@@ -48,6 +47,9 @@ body{position:relative}
 .film-info .genres{color:var(--purple);font-weight:500}
 .film-info .rating-pill{background:var(--accent-dim);color:var(--accent);padding:0.2rem 0.65rem;border-radius:100px;font-weight:600;font-size:0.82rem}
 .film-info .synopsis{font-size:0.95rem;line-height:1.75;color:var(--text-muted);margin-bottom:1.25rem;padding:1.25rem;background:var(--surface);border-radius:12px;border:1px solid var(--border)}
+.screening-info{background:linear-gradient(135deg,rgba(34,211,238,0.08),rgba(192,132,252,0.06));border:1px solid rgba(34,211,238,0.2);border-radius:12px;padding:1rem 1.25rem;margin-bottom:1.25rem}
+.screening-info-label{display:inline-block;font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--accent);background:var(--accent-dim);padding:0.25rem 0.65rem;border-radius:100px;margin-bottom:0.6rem}
+.screening-info p{font-size:0.88rem;color:var(--text);margin:0;line-height:1.6}
 .film-info .crew{margin-bottom:1rem}
 .film-info .crew p{font-size:0.88rem;color:var(--text-muted);padding:0.55rem 0;border-bottom:1px solid var(--border)}
 .film-info .crew p:last-child{border-bottom:none}
@@ -115,11 +117,16 @@ tr.nearest-cinema-row td:first-child{border-left:3px solid var(--accent)}
 @media(min-width:600px){.cinema-table .table-book-btn{font-size:0.78rem;padding:0.4rem 0.9rem}}
 .cinema-table .table-book-btn:hover{transform:scale(1.04);box-shadow:0 4px 15px var(--accent-glow)}
 .cert{display:inline-block;width:28px;height:28px;background-position:center;background-repeat:no-repeat;background-size:contain;vertical-align:middle;margin-left:0.4rem}
-.cert--U{background-image:url(../certs/cert-u.png)}
-.cert--PG{background-image:url(../certs/cert-pg.png)}
-.cert--12A{background-image:url(../certs/cert-12a.png)}
+.cert--u{background-image:url(../certs/cert-u.png)}
+.cert--pg{background-image:url(../certs/cert-pg.png)}
+.cert--12a{background-image:url(../certs/cert-12a.png)}
+.cert--12{background-image:url(../certs/cert-12.png)}
 .cert--15{background-image:url(../certs/cert-15.png)}
 .cert--18{background-image:url(../certs/cert-18.png)}
+.backdrop-wrap{position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;overflow:hidden;opacity:0.15;pointer-events:none}
+.backdrop-wrap::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,16,0.7) 0%,rgba(10,10,16,0.9) 100%)}
+.backdrop-img{width:100%;height:100%;object-fit:cover}
+@media(max-width:680px){.backdrop-wrap{position:relative;height:200px;opacity:0.2}}
 .backdrop-wrap{position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;overflow:hidden}
 .backdrop-wrap::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,16,0.65) 0%,rgba(10,10,16,0.85) 100%)}
 .backdrop-img{width:100%;height:100%;object-fit:cover}
@@ -129,56 +136,64 @@ tr.nearest-cinema-row td:first-child{border-left:3px solid var(--accent)}
 </head>
 <body>
   <div class="bg-mesh" aria-hidden="true"></div>
-<div class="backdrop-wrap">
-  <img src="https://image.tmdb.org/t/p/w780/sT5Inhc0aaReSZoufWgfJTQUbKp.jpg" alt="" class="backdrop-img" loading="lazy" decoding="async">
-</div>
   <div class="page">
     <a href="../" class="back-btn">← Back to all premieres</a>
     <div class="film-layout">
-      <div class="poster"><img src="../posters/tuner.jpg" alt="Poster for Tuner" loading="lazy"></div>
+      <div class="poster"><div class="no-poster">No poster available</div></div>
       <div class="film-info">
         <h1>Tuner </h1>
-        <div class="meta"><span>1h 47min</span><span class="stars">★★★☆☆</span><span class="rating-pill">6.8/10</span><span class="genres">Crime, Thriller</span></div>
-        <div class="synopsis">A talented piano tuner&#x27;s life is turned upside down when he discovers that his meticulous skills for tuning pianos can equally be applied to cracking safes.</div>
+        <div class="meta"></div>
+        <div class="synopsis">Synopsis coming soon.</div>
         <div class="links">
-          <a href="https://www.imdb.com/title/tt33296751/" class="ext-link" target="_blank" rel="noopener">IMDb</a>
           <a href="https://www.rottentomatoes.com/search?search=Tuner" class="ext-link" target="_blank" rel="noopener">Rotten Tomatoes</a>
           <a href="https://trakt.tv/search?query=Tuner" class="ext-link" target="_blank" rel="noopener">Trakt</a>
         </div>
-    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Movie", "name": "Tuner", "description": "A talented piano tuner's life is turned upside down when he discovers that his meticulous skills for tuning pianos can equally be applied to cracking safes.", "image": "posters/tuner.jpg", "director": {"@type": "Person", "name": "Daniel Roher"}, "aggregateRating": {"@type": "AggregateRating", "ratingValue": 6.818, "bestRating": 10}, "genre": ["Crime", "Thriller"]}</script>
-        <div class="crew">
-          <p><strong>Director:</strong> Daniel Roher</p>
-          <p><strong>Starring:</strong> Leo Woodall, Havana Rose Liu, Lior Raz, Tovah Feldshuh, Jean Reno, Dustin Hoffman</p>
-        </div>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Movie", "name": "Tuner", "description": "Synopsis coming soon.", "image": null}</script>
     </div>
   </div>
     <div class="trailer-section">
       <h2>Trailer</h2>
-      <div class="trailer-wrap"><iframe src="https://www.youtube-nocookie.com/embed/rdlOZhl-nSA" title="Trailer for Tuner" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+      <div class="trailer-wrap"><div class="no-trailer">No trailer available</div></div>
     </div>
     <div class="cinema-section">
       <h2>Showtimes & Cinemas <button type="button" id="tag-key-btn" class="tag-key-btn" aria-label="Accessibility key" title="Accessibility key">ⓘ</button></h2>
+      <div class="st-filter" role="group" aria-label="Filter by cinema">
+        <button type="button" class="st-filter-btn active" data-st-cinema="all">All</button>
+          <button type="button" class="st-filter-btn" data-st-cinema="newquay">Newquay</button>
+          <button type="button" class="st-filter-btn" data-st-cinema="truro">Truro</button>
+      </div>
       <div class="cinema-table-wrap">
         <table class="cinema-table">
           <thead><tr><th>Date</th><th>Time</th><th>Cinema</th><th></th></tr></thead>
           <tbody>
-<tr data-film-cinema="truro"><td class="date-cell">Sat 30 May</td><td class="time-cell">15:00</td><td class="cinema-cell">WTW Truro <span class="screen-badge">Screen 5</span></td><td class="book-cell"></td></tr>
-<tr data-film-cinema="truro"><td class="date-cell">Sat 30 May</td><td class="time-cell">17:45</td><td class="cinema-cell">WTW Truro <span class="screen-badge">Screen 5</span></td><td class="book-cell"></td></tr>
-<tr data-film-cinema="truro"><td class="date-cell">Sat 30 May</td><td class="time-cell">20:15</td><td class="cinema-cell">WTW Truro <span class="screen-badge">Screen 2</span><span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"></td></tr>
-<tr data-film-cinema="truro"><td class="date-cell">Sun 31 May</td><td class="time-cell">15:00</td><td class="cinema-cell">WTW Truro <span class="screen-badge">Screen 5</span></td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120753&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
-<tr data-film-cinema="truro"><td class="date-cell">Sun 31 May</td><td class="time-cell">17:45</td><td class="cinema-cell">WTW Truro <span class="screen-badge">Screen 5</span></td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120754&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
-<tr data-film-cinema="truro"><td class="date-cell">Sun 31 May</td><td class="time-cell">20:15</td><td class="cinema-cell">WTW Truro <span class="screen-badge">Screen 2</span><span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120752&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
-<tr data-film-cinema="truro"><td class="date-cell">Mon 01 Jun</td><td class="time-cell">17:45</td><td class="cinema-cell">WTW Truro <span class="screen-badge">Screen 5</span></td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120776&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
-<tr data-film-cinema="truro"><td class="date-cell">Mon 01 Jun</td><td class="time-cell">20:15</td><td class="cinema-cell">WTW Truro <span class="screen-badge">Screen 2</span><span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120774&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
-<tr data-film-cinema="truro"><td class="date-cell">Tue 02 Jun</td><td class="time-cell">17:45</td><td class="cinema-cell">WTW Truro <span class="screen-badge">Screen 5</span></td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120786&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
-<tr data-film-cinema="truro"><td class="date-cell">Tue 02 Jun</td><td class="time-cell">20:15</td><td class="cinema-cell">WTW Truro <span class="screen-badge">Screen 2</span><span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120785&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
-<tr data-film-cinema="truro"><td class="date-cell">Wed 03 Jun</td><td class="time-cell">14:15</td><td class="cinema-cell">WTW Truro <span class="screen-badge">Screen 3</span><span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120806&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
-<tr data-film-cinema="truro"><td class="date-cell">Wed 03 Jun</td><td class="time-cell">17:45</td><td class="cinema-cell">WTW Truro <span class="screen-badge">Screen 5</span></td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120803&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
-<tr data-film-cinema="truro"><td class="date-cell">Wed 03 Jun</td><td class="time-cell">20:15</td><td class="cinema-cell">WTW Truro <span class="screen-badge">Screen 4</span><span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120800&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
-<tr data-film-cinema="truro"><td class="date-cell">Thu 04 Jun</td><td class="time-cell">17:45</td><td class="cinema-cell">WTW Truro <span class="screen-badge">Screen 5</span></td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120794&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="truro"><td class="date-cell">Sat 06 Jun</td><td class="time-cell">14:45</td><td class="cinema-cell">Merlin Truro <span class="screen-badge">Screen 5</span><span class="tag-badge" title="Audio Description">AD</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120897&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="newquay"><td class="date-cell">Sat 06 Jun</td><td class="time-cell">17:30</td><td class="cinema-cell">Merlin Newquay <span class="screen-badge">Screen 3</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=65950&amp;screen=newquay" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="truro"><td class="date-cell">Sat 06 Jun</td><td class="time-cell">18:00</td><td class="cinema-cell">Merlin Truro <span class="screen-badge">Screen 4</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120883&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="truro"><td class="date-cell">Sun 07 Jun</td><td class="time-cell">14:45</td><td class="cinema-cell">Merlin Truro <span class="screen-badge">Screen 5</span><span class="tag-badge" title="Audio Description">AD</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120898&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="newquay"><td class="date-cell">Sun 07 Jun</td><td class="time-cell">17:30</td><td class="cinema-cell">Merlin Newquay <span class="screen-badge">Screen 3</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=65951&amp;screen=newquay" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="truro"><td class="date-cell">Sun 07 Jun</td><td class="time-cell">18:00</td><td class="cinema-cell">Merlin Truro <span class="screen-badge">Screen 4</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120884&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="newquay"><td class="date-cell">Mon 08 Jun</td><td class="time-cell">17:30</td><td class="cinema-cell">Merlin Newquay <span class="screen-badge">Screen 3</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=65952&amp;screen=newquay" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="truro"><td class="date-cell">Mon 08 Jun</td><td class="time-cell">18:00</td><td class="cinema-cell">Merlin Truro <span class="screen-badge">Screen 4</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120885&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="truro"><td class="date-cell">Mon 08 Jun</td><td class="time-cell">19:30</td><td class="cinema-cell">Merlin Truro <span class="screen-badge">Screen 2</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120853&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="newquay"><td class="date-cell">Mon 08 Jun</td><td class="time-cell">20:00</td><td class="cinema-cell">Merlin Newquay <span class="screen-badge">Screen 3</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=65955&amp;screen=newquay" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="newquay"><td class="date-cell">Tue 09 Jun</td><td class="time-cell">17:30</td><td class="cinema-cell">Merlin Newquay <span class="screen-badge">Screen 3</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=65953&amp;screen=newquay" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="truro"><td class="date-cell">Tue 09 Jun</td><td class="time-cell">18:00</td><td class="cinema-cell">Merlin Truro <span class="screen-badge">Screen 4</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120886&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="truro"><td class="date-cell">Tue 09 Jun</td><td class="time-cell">19:30</td><td class="cinema-cell">Merlin Truro <span class="screen-badge">Screen 2</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120854&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="newquay"><td class="date-cell">Tue 09 Jun</td><td class="time-cell">20:00</td><td class="cinema-cell">Merlin Newquay <span class="screen-badge">Screen 3</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=65956&amp;screen=newquay" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="truro"><td class="date-cell">Wed 10 Jun</td><td class="time-cell">14:00</td><td class="cinema-cell">Merlin Truro <span class="screen-badge">Screen 3</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120862&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="newquay"><td class="date-cell">Wed 10 Jun</td><td class="time-cell">16:15</td><td class="cinema-cell">Merlin Newquay <span class="screen-badge">Screen 3</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=65948&amp;screen=newquay" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="truro"><td class="date-cell">Wed 10 Jun</td><td class="time-cell">18:00</td><td class="cinema-cell">Merlin Truro <span class="screen-badge">Screen 4</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120887&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="truro"><td class="date-cell">Wed 10 Jun</td><td class="time-cell">20:15</td><td class="cinema-cell">Merlin Truro <span class="screen-badge">Screen 5</span><span class="tag-badge" title="Audio Description">AD</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120911&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="newquay"><td class="date-cell">Thu 11 Jun</td><td class="time-cell">17:30</td><td class="cinema-cell">Merlin Newquay <span class="screen-badge">Screen 3</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=65954&amp;screen=newquay" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="truro"><td class="date-cell">Thu 11 Jun</td><td class="time-cell">18:00</td><td class="cinema-cell">Merlin Truro <span class="screen-badge">Screen 4</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120888&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="newquay"><td class="date-cell">Thu 11 Jun</td><td class="time-cell">20:00</td><td class="cinema-cell">Merlin Newquay <span class="screen-badge">Screen 3</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=65957&amp;screen=newquay" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="truro"><td class="date-cell">Thu 11 Jun</td><td class="time-cell">20:15</td><td class="cinema-cell">Merlin Truro <span class="screen-badge">Screen 5</span><span class="tag-badge" title="Audio Description">AD</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120912&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
           </tbody>
         </table>
       </div>
+<script>
+document.querySelectorAll(".st-filter-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".st-filter-btn").forEach(function(b){b.classList.remove("active")});this.classList.add("active");var cinema=this.getAttribute("data-st-cinema");document.querySelectorAll("tr[data-film-cinema]").forEach(function(row){row.style.display=(cinema==="all"||row.getAttribute("data-film-cinema")===cinema)?"":"none"})})});
+</script>
 <div class="tag-key-popup" id="tag-key-popup" hidden>
   <div class="tag-key-overlay"></div>
   <div class="tag-key-dialog" role="dialog" aria-label="Accessibility key">
@@ -248,11 +263,11 @@ table.parentNode.insertBefore(label,table);
     <footer>
       <p>An open source fan-made project. Not affiliated with WTW Cinemas.</p>
       <div style="margin-top:0.75rem">
-        <a href="https://wtwcinemas.co.uk/">WTW Cinemas</a>
+        <a href="https://www.merlincinemas.co.uk/">WTW Cinemas</a>
         <span aria-hidden="true"> · </span>
         <a href="../">All premieres</a>
       </div>
-      <p class="footer-updated">Last updated: 2026-05-30 21:59 BST</p>
+      <p class="footer-updated">Last updated: 2026-06-06 11:57 BST</p>
     </footer>
   </div>
 </body>
