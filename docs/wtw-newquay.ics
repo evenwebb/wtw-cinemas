@@ -10,7 +10,7 @@ X-WR-CALDESC:Upcoming movie premieres at WTW Cinemas Newquay
 X-WR-TIMEZONE:Europe/London
 BEGIN:VEVENT
 UID:fd09fa212745c97ffbec8890d775d0721180f7d5@wtw-cinemas
-DTSTAMP:20260606T105709Z
+DTSTAMP:20260608T131254Z
 DTSTART;VALUE=DATE:20260612
 DTEND;VALUE=DATE:20260613
 SUMMARY:Disclosure Day @ Merlin Newquay
@@ -23,8 +23,23 @@ LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/film/disclosure-day/?screen=newquay
 END:VEVENT
 BEGIN:VEVENT
+UID:7d7814f02610becce529b291f42ac3a2b419565d@wtw-cinemas
+DTSTAMP:20260608T131254Z
+DTSTART;VALUE=DATE:20260614
+DTEND;VALUE=DATE:20260615
+SUMMARY:Scary Movie SUBTITLED @ Merlin Newquay
+DESCRIPTION:Scary Movie SUBTITLED (1h 35min)\n\nTwenty-six years after outr
+ unning a suspiciously familiar masked killer\, the Core Four are back in t
+ he killer's crosshairs and no horror movie IP is safe.\n\nFilm release at 
+ WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/film/scary-mov
+ ie-subtitled/?screen=newquay\n\nFilm details: https://evenwebb.github.io/w
+ tw-cinemas/films/scary-movie-subtitled.html
+LOCATION:WTW Cinemas Newquay
+URL:https://wtwcinemas.co.uk/film/scary-movie-subtitled/?screen=newquay
+END:VEVENT
+BEGIN:VEVENT
 UID:ec59f8d3bbb58af25846c79e3115abd451486813@wtw-cinemas
-DTSTAMP:20260606T105709Z
+DTSTAMP:20260608T131254Z
 DTSTART;VALUE=DATE:20260619
 DTEND;VALUE=DATE:20260620
 SUMMARY:Toy Story 5 @ Merlin Newquay
@@ -39,8 +54,25 @@ LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/film/toy-story-5/?screen=newquay
 END:VEVENT
 BEGIN:VEVENT
+UID:a188557aedf3cffdd588cd84f3c7611d75856620@wtw-cinemas
+DTSTAMP:20260608T131254Z
+DTSTART;VALUE=DATE:20260621
+DTEND;VALUE=DATE:20260622
+SUMMARY:Toy Story 5 @ Merlin Newquay
+DESCRIPTION:Toy Story 5 (1h 42min)\n\nWhen Bonnie receives a Lilypad tablet
+  as a gift and becomes obsessed\, Buzz\, Woody\, Jessie and the rest of th
+ e gang's jobs become exponentially harder when they have to go head to hea
+ d with the all-new threat to playtime.\n\nFilm release at WTW Cinemas Newq
+ uay\nBook tickets: https://wtwcinemas.co.uk/film/toy-story-5-autism-friend
+ ly-screening/?screen=newquay\n\nFilm details: https://evenwebb.github.io/w
+ tw-cinemas/films/toy-story-5.html
+LOCATION:WTW Cinemas Newquay
+URL:https://wtwcinemas.co.uk/film/toy-story-5-autism-friendly-screening/?sc
+ reen=newquay
+END:VEVENT
+BEGIN:VEVENT
 UID:bc5ba3970d371825b2fc957345fad7dbf3a0ec58@wtw-cinemas
-DTSTAMP:20260606T105709Z
+DTSTAMP:20260608T131254Z
 DTSTART;VALUE=DATE:20260626
 DTEND;VALUE=DATE:20260627
 SUMMARY:Supergirl: Woman Of Tomorrow @ Merlin Newquay
@@ -57,7 +89,7 @@ URL:https://wtwcinemas.co.uk/film/supergirl-woman-of-tomorrow/?screen=newqu
 END:VEVENT
 BEGIN:VEVENT
 UID:fceb7ff40f1cf8f13b00a8668fd72a52ecacc114@wtw-cinemas
-DTSTAMP:20260606T105709Z
+DTSTAMP:20260608T131254Z
 DTSTART;VALUE=DATE:20260626
 DTEND;VALUE=DATE:20260627
 SUMMARY:Jackass: Best And Last @ Merlin Newquay
@@ -71,7 +103,7 @@ URL:https://wtwcinemas.co.uk/film/jackass-best-and-last/?screen=newquay
 END:VEVENT
 BEGIN:VEVENT
 UID:454a33058b752f441260f4cacc94d3746a108d8c@wtw-cinemas
-DTSTAMP:20260606T105709Z
+DTSTAMP:20260608T131254Z
 DTSTART;VALUE=DATE:20260703
 DTEND;VALUE=DATE:20260704
 SUMMARY:Minions & Monsters @ Merlin Newquay
@@ -87,7 +119,7 @@ URL:https://wtwcinemas.co.uk/film/minions-3/?screen=newquay
 END:VEVENT
 BEGIN:VEVENT
 UID:d804f311fbae9bad8b8b70d4a77c7c7b2655c888@wtw-cinemas
-DTSTAMP:20260606T105709Z
+DTSTAMP:20260608T131254Z
 DTSTART;VALUE=DATE:20260710
 DTEND;VALUE=DATE:20260711
 SUMMARY:Moana @ Merlin Newquay
@@ -102,7 +134,7 @@ URL:https://wtwcinemas.co.uk/film/moana/?screen=newquay
 END:VEVENT
 BEGIN:VEVENT
 UID:8dc96e4376c4650e89d430ac18e1e04043faa3b0@wtw-cinemas
-DTSTAMP:20260606T105709Z
+DTSTAMP:20260608T131254Z
 DTSTART;VALUE=DATE:20260717
 DTEND;VALUE=DATE:20260718
 SUMMARY:The Odyssey @ Merlin Newquay
@@ -119,7 +151,7 @@ URL:https://wtwcinemas.co.uk/film/the-odyssey/?screen=newquay
 END:VEVENT
 BEGIN:VEVENT
 UID:95fe6baa3d0796b796ca8c94d57db998ef63ad9a@wtw-cinemas
-DTSTAMP:20260606T105709Z
+DTSTAMP:20260608T131254Z
 DTSTART;VALUE=DATE:20260731
 DTEND;VALUE=DATE:20260801
 SUMMARY:Spider-Man: Brand New Day @ Merlin Newquay
@@ -139,7 +171,7 @@ URL:https://wtwcinemas.co.uk/film/spider-man-brand-new-day/?screen=newquay
 END:VEVENT
 BEGIN:VEVENT
 UID:8f72c8857815fabcc04660a7701831b9a2f2112f@wtw-cinemas
-DTSTAMP:20260606T105709Z
+DTSTAMP:20260608T131254Z
 DTSTART;VALUE=DATE:20260807
 DTEND;VALUE=DATE:20260808
 SUMMARY:Paw Patrol: The Dino Movie @ Merlin Newquay
@@ -161,7 +193,7 @@ URL:https://wtwcinemas.co.uk/film/paw-patrol-the-dino-movie/?screen=newquay
 END:VEVENT
 BEGIN:VEVENT
 UID:d6ed9977c735544cf442d92d02e78a48d199300c@wtw-cinemas
-DTSTAMP:20260606T105709Z
+DTSTAMP:20260608T131254Z
 DTSTART;VALUE=DATE:20260814
 DTEND;VALUE=DATE:20260815
 SUMMARY:The End Of Oak Street @ Merlin Newquay
@@ -177,7 +209,7 @@ URL:https://wtwcinemas.co.uk/film/the-end-of-oak-street/?screen=newquay
 END:VEVENT
 BEGIN:VEVENT
 UID:bdfd852ad6e483496e8d49134c1c825c29f5e42d@wtw-cinemas
-DTSTAMP:20260606T105709Z
+DTSTAMP:20260608T131254Z
 DTSTART;VALUE=DATE:20260911
 DTEND;VALUE=DATE:20260912
 SUMMARY:Pressure @ Merlin Newquay
@@ -193,7 +225,7 @@ URL:https://wtwcinemas.co.uk/film/pressure/?screen=newquay
 END:VEVENT
 BEGIN:VEVENT
 UID:8873a229d21c826a797713a0350ba4fe5b2ba077@wtw-cinemas
-DTSTAMP:20260606T105709Z
+DTSTAMP:20260608T131254Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
 SUMMARY:Shaun The Sheep: The Beast Of Mossy Bottom @ Merlin Newquay
@@ -213,7 +245,7 @@ URL:https://wtwcinemas.co.uk/film/shaun-the-sheep-the-beast-of-mossy-bottom
 END:VEVENT
 BEGIN:VEVENT
 UID:36549e319926e6ba4ebe8ec3f9b8a4196c34a11f@wtw-cinemas
-DTSTAMP:20260606T105709Z
+DTSTAMP:20260608T131254Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Street Fighter @ Merlin Newquay
@@ -231,7 +263,7 @@ URL:https://wtwcinemas.co.uk/film/street-fighter/?screen=newquay
 END:VEVENT
 BEGIN:VEVENT
 UID:d2fc07fad828759110dfa5108426fe9832e14676@wtw-cinemas
-DTSTAMP:20260606T105709Z
+DTSTAMP:20260608T131254Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:Digger @ Merlin Newquay
@@ -245,7 +277,7 @@ URL:https://wtwcinemas.co.uk/film/digger/?screen=newquay
 END:VEVENT
 BEGIN:VEVENT
 UID:4f1aecbd2f0b929d44a6369ec69d665a3b73c492@wtw-cinemas
-DTSTAMP:20260606T105709Z
+DTSTAMP:20260608T131254Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Dr Seuss’ The Cat in the Hat @ Merlin Newquay
@@ -266,7 +298,7 @@ URL:https://wtwcinemas.co.uk/film/the-cat-in-the-hat/?screen=newquay
 END:VEVENT
 BEGIN:VEVENT
 UID:627db9e82dda1927d1af7bd1d2160a2a93dff4e0@wtw-cinemas
-DTSTAMP:20260606T105709Z
+DTSTAMP:20260608T131254Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Wild Horse Nine @ Merlin Newquay
@@ -284,7 +316,7 @@ URL:https://wtwcinemas.co.uk/film/wild-horse-nine/?screen=newquay
 END:VEVENT
 BEGIN:VEVENT
 UID:25ae3c85631fa5c939300db7b1ea3559e140d624@wtw-cinemas
-DTSTAMP:20260606T105709Z
+DTSTAMP:20260608T131254Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:The Hunger Games: Sunrise On The Reaping @ Merlin Newquay
@@ -301,7 +333,7 @@ URL:https://wtwcinemas.co.uk/film/the-hunger-games-sunrise-on-the-reaping/?
 END:VEVENT
 BEGIN:VEVENT
 UID:ee366a58c03c2669e7097b80171770e38e345799@wtw-cinemas
-DTSTAMP:20260606T105709Z
+DTSTAMP:20260608T131254Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Focker-In-Law @ Merlin Newquay
@@ -315,7 +347,7 @@ URL:https://wtwcinemas.co.uk/film/focker-in-law/?screen=newquay
 END:VEVENT
 BEGIN:VEVENT
 UID:58a791f9322d50cdf1a6d8cf14cbfa8da1d14ced@wtw-cinemas
-DTSTAMP:20260606T105709Z
+DTSTAMP:20260608T131254Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Avengers: Doomsday @ Merlin Newquay
@@ -330,7 +362,7 @@ URL:https://wtwcinemas.co.uk/film/avengers-doomsday/?screen=newquay
 END:VEVENT
 BEGIN:VEVENT
 UID:6a35b522e1d19b9886fe7869440815d7a9f212df@wtw-cinemas
-DTSTAMP:20260606T105709Z
+DTSTAMP:20260608T131254Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Dune: Part Three @ Merlin Newquay

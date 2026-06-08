@@ -157,25 +157,15 @@ tr.nearest-cinema-row td:first-child{border-left:3px solid var(--accent)}
     </div>
     <div class="cinema-section">
       <h2>Showtimes & Cinemas <button type="button" id="tag-key-btn" class="tag-key-btn" aria-label="Accessibility key" title="Accessibility key">ⓘ</button></h2>
-      <div class="st-filter" role="group" aria-label="Filter by cinema">
-        <button type="button" class="st-filter-btn active" data-st-cinema="all">All</button>
-          <button type="button" class="st-filter-btn" data-st-cinema="st-austell">St Austell</button>
-          <button type="button" class="st-filter-btn" data-st-cinema="truro">Truro</button>
-      </div>
       <div class="cinema-table-wrap">
         <table class="cinema-table">
           <thead><tr><th>Date</th><th>Time</th><th>Cinema</th><th></th></tr></thead>
           <tbody>
-<tr data-film-cinema="st-austell"><td class="date-cell">Sat 06 Jun</td><td class="time-cell">12:30</td><td class="cinema-cell">Merlin St Austell <span class="screen-badge">Screen 4</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=77548&amp;screen=staustell" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
-<tr data-film-cinema="truro"><td class="date-cell">Sat 06 Jun</td><td class="time-cell">12:30</td><td class="cinema-cell">Merlin Truro <span class="screen-badge">Screen 4</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120877&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
-<tr data-film-cinema="st-austell"><td class="date-cell">Sun 07 Jun</td><td class="time-cell">12:30</td><td class="cinema-cell">Merlin St Austell <span class="screen-badge">Screen 4</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=77559&amp;screen=staustell" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
-<tr data-film-cinema="truro"><td class="date-cell">Sun 07 Jun</td><td class="time-cell">12:30</td><td class="cinema-cell">Merlin Truro <span class="screen-badge">Screen 4</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120878&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="truro"><td class="date-cell">Sat 13 Jun</td><td class="time-cell">11:45</td><td class="cinema-cell">Merlin Truro <span class="screen-badge">Screen 3</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120954&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
+<tr data-film-cinema="truro"><td class="date-cell">Sun 14 Jun</td><td class="time-cell">11:45</td><td class="cinema-cell">Merlin Truro <span class="screen-badge">Screen 2</span><span class="tag-badge" title="Audio Description">AD</span> <span class="tag-badge" title="Wheelchair Accessible">WA</span> </td><td class="book-cell"><a href="https://wtwcinemas.co.uk/book?performance=120942&amp;screen=truro" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>
           </tbody>
         </table>
       </div>
-<script>
-document.querySelectorAll(".st-filter-btn").forEach(function(btn){btn.addEventListener("click",function(){document.querySelectorAll(".st-filter-btn").forEach(function(b){b.classList.remove("active")});this.classList.add("active");var cinema=this.getAttribute("data-st-cinema");document.querySelectorAll("tr[data-film-cinema]").forEach(function(row){row.style.display=(cinema==="all"||row.getAttribute("data-film-cinema")===cinema)?"":"none"})})});
-</script>
 <div class="tag-key-popup" id="tag-key-popup" hidden>
   <div class="tag-key-overlay"></div>
   <div class="tag-key-dialog" role="dialog" aria-label="Accessibility key">
@@ -249,7 +239,7 @@ table.parentNode.insertBefore(label,table);
         <span aria-hidden="true"> · </span>
         <a href="../">All premieres</a>
       </div>
-      <p class="footer-updated">Last updated: 2026-06-06 11:57 BST</p>
+      <p class="footer-updated">Last updated: 2026-06-08 14:12 BST</p>
     </footer>
   </div>
 </body>
