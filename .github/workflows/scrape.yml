@@ -2,12 +2,12 @@ name: Scrape Cinema Calendar
 
 on:
   schedule:
-    - cron: "0 9 * * *"
+    - cron: "0 10 * * *"
   workflow_dispatch:
 
 concurrency:
   group: scrape-cinema
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -17,9 +17,18 @@ jobs:
   scrape:
     runs-on: ubuntu-latest
     timeout-minutes: 15
-
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+      PIP_DISABLE_PIP_VERSION_CHECK: "1"
+      CREATE_FAILURE_ISSUE: ${{ vars.CREATE_FAILURE_ISSUE || 'true' }}
     steps:
       - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+          cache-dependency-path: requirements.txt
 
       - uses: astral-sh/setup-uv@v4
         with:
@@ -27,9 +36,9 @@ jobs:
           cache-dependency-glob: requirements.txt
 
       - name: Install dependencies
-        run: |
-          uv venv
-          uv pip install --python .venv/bin/python -r requirements.txt
+        env:
+          UV_SYSTEM_PYTHON: 1
+        run: uv pip install -r requirements.txt
 
       - name: Restore scraper caches
         uses: actions/cache@v4
@@ -39,94 +48,175 @@ jobs:
             .tmdb_cache.json
             .release_history.json
             .scrape_fingerprint
-          key: scraper-cache-${{ github.run_id }}
+          key: scraper-cache-main
           restore-keys: |
             scraper-cache-
 
-      - name: Run scraper
+      - name: Run scraper (with retries)
         id: scraped
         env:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           SCRAPER_RUN_ATTEMPTS: ${{ vars.SCRAPER_RUN_ATTEMPTS || '2' }}
         run: |
-          ATTEMPTS=$SCRAPER_RUN_ATTEMPTS
-          for i in $(seq 1 $ATTEMPTS); do
-            echo "::group::Attempt $i of $ATTEMPTS"
-            if .venv/bin/python cinema_scraper.py; then
+          mkdir -p logs
+          ATTEMPTS="${SCRAPER_RUN_ATTEMPTS:-2}"
+          if [ "$ATTEMPTS" -lt 1 ]; then ATTEMPTS=1; fi
+          attempt=1
+          while [ "$attempt" -le "$ATTEMPTS" ]; do
+            echo "::group::Attempt $attempt of $ATTEMPTS"
+            if python cinema_scraper.py 2>&1 | tee logs/scraper.log; then
               echo "SCRAPER_OK=true" >> "$GITHUB_OUTPUT"
               echo "::endgroup::"
               exit 0
             fi
             echo "::endgroup::"
-            if [ "$i" -lt "$ATTEMPTS" ]; then
-              SLEEP=$((i * 30))
-              echo "Attempt $i failed — retrying in ${SLEEP}s..."
-              sleep "$SLEEP"
+            if [ "$attempt" -lt "$ATTEMPTS" ]; then
+              sleep_seconds=$((attempt * 30))
+              echo "Attempt $attempt failed; retrying in ${sleep_seconds}s..."
+              sleep "$sleep_seconds"
             fi
+            attempt=$((attempt + 1))
           done
           echo "SCRAPER_OK=false" >> "$GITHUB_OUTPUT"
 
       - name: Commit and push changes
         if: steps.scraped.outputs.SCRAPER_OK == 'true'
-        env:
-          GIT_AUTHOR_NAME: "github-actions[bot]"
-          GIT_AUTHOR_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com"
-          GIT_COMMITTER_NAME: "github-actions[bot]"
-          GIT_COMMITTER_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com"
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           if [ -d docs ]; then git add docs/; fi
           for f in .film_cache.json .tmdb_cache.json .release_history.json .scrape_fingerprint; do
             if [ -f "$f" ]; then git add "$f"; fi
           done
           if git diff --staged --quiet; then
             echo "No changes to commit."
-          else
-            FOUND=0
-            for f in docs/wtw-*.ics; do
-              if [ -f "$f" ]; then
-                FOUND=$((FOUND + $(grep -c 'BEGIN:VEVENT' "$f" 2>/dev/null || echo 0)))
-              fi
-            done
-            PAGES=$(ls docs/films/*.html 2>/dev/null | wc -l)
-            CINEMAS=$(ls docs/*.html 2>/dev/null | grep -v index | wc -l)
-            git commit -m "Update: ${FOUND} premieres, ${PAGES} film pages, ${CINEMAS} cinema pages — $(date -u +'%Y-%m-%d %H:%M UTC')"
-            git push
+            exit 0
           fi
+          FOUND=0
+          for f in docs/wtw-*.ics; do
+            if [ -f "$f" ]; then
+              FOUND=$((FOUND + $(grep -c 'BEGIN:VEVENT' "$f" 2>/dev/null || echo 0)))
+            fi
+          done
+          PAGES=$(find docs/films -maxdepth 1 -name '*.html' 2>/dev/null | wc -l)
+          CINEMAS=$(find docs -maxdepth 1 -name '*.html' ! -name 'index.html' 2>/dev/null | wc -l)
+          git commit -m "Update: ${FOUND} premieres, ${PAGES} film pages, ${CINEMAS} cinema pages — $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
 
-      - name: Report failure
-        if: steps.scraped.outputs.SCRAPER_OK != 'true'
+      - name: Upload failure logs artifact
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scraper-failure-logs-${{ github.run_id }}
+          retention-days: 7
+          path: logs/
+          if-no-files-found: ignore
+
+      - name: Create or update failure issue
+        if: steps.scraped.outputs.SCRAPER_OK != 'true' && env.CREATE_FAILURE_ISSUE == 'true'
         uses: actions/github-script@v7
         with:
           script: |
-            const createIssue = process.env.CREATE_FAILURE_ISSUE === 'true' || '${{ vars.CREATE_FAILURE_ISSUE }}' === 'true';
-            if (!createIssue) return;
+            const fs = require("fs");
+            const crypto = require("crypto");
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const title = "WTW Cinema scraper failure";
+            const labels = ["automation", "scraper-failure"];
+            const runUrl = `https://github.com/${owner}/${repo}/actions/runs/${context.runId}`;
 
-            const label = 'scraper-failure';
-            const title = `Scraper run failed — ${new Date().toISOString().slice(0, 10)}`;
-            const body = `The daily scraper run failed after ${{ vars.SCRAPER_RUN_ATTEMPTS || 2 }} attempt(s).\n\nCheck the [workflow run](${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}) for details.`;
+            let logSnippet = "";
+            try { logSnippet = fs.readFileSync("logs/scraper.log", "utf8").slice(-8000); } catch (e) {}
 
-            const { data: issues } = await github.rest.issues.listForRepo({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              labels: label,
-              state: 'open',
-              per_page: 5,
+            const stableLines = logSnippet
+              .split(/\r?\n/)
+              .filter(l => /error|failed|traceback|exception|warning/i.test(l))
+              .slice(-60).join("\n");
+            const sig = crypto.createHash("sha256")
+              .update(stableLines || logSnippet).digest("hex").slice(0, 16);
+            const sigMarker = `<!-- failure-signature:${sig} -->`;
+            const streakPattern = /<!--\s*success-streak:(\d+)\s*-->/i;
+
+            function resetStreak(body) {
+              const marker = "<!-- success-streak:0 -->";
+              if (!body) return marker;
+              return streakPattern.test(body) ? body.replace(streakPattern, marker) : body + "\n" + marker;
+            }
+
+            const body = [
+              sigMarker,
+              "The WTW Cinema scraper workflow failed after configured retries.",
+              "",
+              `- Failure Signature: \`${sig}\``,
+              `- Workflow: ${context.workflow}`,
+              `- Job: ${context.job}`,
+              `- Run: ${runUrl}`,
+              `- Commit: ${context.sha}`,
+              "",
+              "### Log excerpt",
+              "```text", (logSnippet || "No logs captured.").slice(-60000), "```",
+            ].join("\n");
+
+            const existing = await github.rest.issues.listForRepo({
+              owner, repo, state: "all", labels: labels.join(","), per_page: 100
             });
 
-            const existing = issues.find(i => i.title.startsWith('Scraper run failed'));
-            if (existing) {
-              await github.rest.issues.createComment({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                issue_number: existing.number,
-                body: `Repeated failure — ${new Date().toISOString()}\n\n${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}`,
-              });
+            let issue = existing.data.find(i => i.title === title && (i.body || "").includes(sigMarker));
+            if (!issue) {
+              for (const i of existing.data) {
+                if (i.title !== title) continue;
+                const comments = await github.rest.issues.listComments({
+                  owner, repo, issue_number: i.number, per_page: 100
+                });
+                if (comments.data.some(c => (c.body || "").includes(sigMarker))) {
+                  issue = i; break;
+                }
+              }
+            }
+
+            if (issue) {
+              if (issue.state === "closed") {
+                await github.rest.issues.update({ owner, repo, issue_number: issue.number, state: "open" });
+              }
+              await github.rest.issues.update({ owner, repo, issue_number: issue.number, body: resetStreak(issue.body) });
             } else {
-              await github.rest.issues.create({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                title,
-                body,
-                labels: [label],
+              const match = existing.data.find(i => i.title === title);
+              if (match) {
+                await github.rest.issues.createComment({ owner, repo, issue_number: match.number, body });
+              } else {
+                await github.rest.issues.create({ owner, repo, title, body: resetStreak(body), labels });
+              }
+            }
+
+      - name: Auto-close stale failure issue after 2 successful runs
+        if: steps.scraped.outputs.SCRAPER_OK == 'true' && env.CREATE_FAILURE_ISSUE == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const title = "WTW Cinema scraper failure";
+            const labels = ["automation", "scraper-failure"];
+            const streakPattern = /<!--\s*success-streak:(\d+)\s*-->/i;
+            function getStreak(body) { const m = (body || "").match(streakPattern); return m ? parseInt(m[1], 10) : 0; }
+            function setStreak(body, v) {
+              const marker = `<!-- success-streak:${v} -->`;
+              if (!body) return marker;
+              return streakPattern.test(body) ? body.replace(streakPattern, marker) : body + "\n" + marker;
+            }
+
+            const existing = await github.rest.issues.listForRepo({
+              owner, repo, state: "open", labels: labels.join(","), per_page: 100
+            });
+            const issue = existing.data.find(i => i.title === title);
+            if (!issue) return;
+            const next = getStreak(issue.body) + 1;
+            if (next >= 2) {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: issue.number,
+                body: "Auto-closing after 2 consecutive successful runs."
               });
+              await github.rest.issues.update({ owner, repo, issue_number: issue.number, state: "closed", body: setStreak(issue.body, next) });
+            } else {
+              await github.rest.issues.update({ owner, repo, issue_number: issue.number, body: setStreak(issue.body, next) });
             }

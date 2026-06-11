@@ -36,7 +36,7 @@ HTTP_RETRY_MULTIPLIER = 2
 USER_AGENT = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/119.0.0.0 Safari/537.36"
+    "Chrome/131.0.0.0 Safari/537.36"
 )
 ICAL_LINE_LENGTH = 75
 LONDON_TZ = ZoneInfo("Europe/London")
@@ -48,7 +48,7 @@ def format_london_timestamp(dt: Optional[datetime] = None) -> str:
 ICAL_NEWLINE = "\r\n"
 CALENDAR_TIMEZONE = os.getenv("CALENDAR_TIMEZONE", "Europe/London")
 OUTPUT_DIR = "docs"
-WTW_BASE_URL = "https://www.merlincinemas.co.uk"
+WTW_BASE_URL = "https://wtwcinemas.co.uk"
 RELEASE_HISTORY_PATH = ".release_history.json"
 RELEASE_HISTORY_MAX_DAYS = 730
 CACHE_FILE = ".film_cache.json"
@@ -64,14 +64,14 @@ MAX_SYNOPSIS_LENGTH = 500
 SYNOPSIS_SKIP_TERMS = ["cookie", "privacy", "terms", "wheelchair", "audio description"]
 MAX_WORKERS = min(4, os.cpu_count() or 4)
 
-DATE_PATTERN = re.compile(r"(?:Released|Showing)\s+(?:on\s+)?(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]+)")
-ALT_DATE_PATTERN = re.compile(r"(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]+)")
+DATE_PATTERN = re.compile(r"(?:Released|Showing)\s+(?:on\s+)?(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]+)", re.IGNORECASE)
+ALT_DATE_PATTERN = re.compile(r"(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]+)", re.IGNORECASE)
 RUNTIME_RE = re.compile(r"(\d+)\s*(?:minutes?|mins?)", re.IGNORECASE)
 FILM_LINK_RE = re.compile(r"/film/")
 TITLE_CLEAN_RE = re.compile(r"\s*\([^)]*\)$")
 
-# Merlin special screening suffixes - stripped before TMDb search
-MERLIN_TITLE_CLEAN = [
+# Special screening suffixes - stripped before TMDb search
+TITLE_CLEAN_PATTERNS = [
     (re.compile(r"\s+Toddler Cinema$", re.IGNORECASE), ""),
     (re.compile(r"\s+Double Bill$", re.IGNORECASE), ""),
     (re.compile(r"\s+Triple Bill$", re.IGNORECASE), ""),
@@ -89,11 +89,9 @@ MERLIN_TITLE_CLEAN = [
     (re.compile(r"\s+with Q&A$", re.IGNORECASE), ""),
     (re.compile(r"\s+with Q and A$", re.IGNORECASE), ""),
     (re.compile(r"\s*[-–]\s*with Q&A$", re.IGNORECASE), ""),
-    (re.compile(r"\s*[-–]\s*Silver Screen$", re.IGNORECASE), ""),
     (re.compile(r"\s+Silver Screen$", re.IGNORECASE), ""),
     (re.compile(r"\s*[-–]\s*Super Saver$", re.IGNORECASE), ""),
     (re.compile(r"\s+Super Saver$", re.IGNORECASE), ""),
-    (re.compile(r"\s*[-–]\s*Autism Friendly$", re.IGNORECASE), ""),
     (re.compile(r"^NT Live:\s*", re.IGNORECASE), ""),
     (re.compile(r"^RBO \d{4}-\d{2}:\s*", re.IGNORECASE), ""),
 ]
@@ -110,10 +108,10 @@ _SCREENING_LABEL_MAP = {
 }
 
 def extract_screening_label(title: str):
-    """Return (cleaned_title, screening_label) for a Merlin film title.
-    Matches against MERLIN_TITLE_CLEAN patterns and returns the
+    """Return (cleaned_title, screening_label) for a film title.
+    Matches against screening suffix patterns and returns the
     corresponding friendly label for UI display."""
-    for pattern, _ in MERLIN_TITLE_CLEAN:
+    for pattern, _ in TITLE_CLEAN_PATTERNS:
         m = pattern.search(title)
         if m:
             cleaned = pattern.sub("", title).strip()
@@ -125,7 +123,7 @@ def extract_screening_label(title: str):
     return title, ""
 
 # Non-film events to skip TMDb enrichment entirely
-MERLIN_SKIP_TMDB = [
+SKIP_TMDB_TERMS = [
     "live nation", "tribute", "comedy club", "pantomime", "panto",
     "psychic", "candlelit", "on tour", "presented by", "choir", "orchestra",
     "theatre company", "pride", "adults only",
@@ -169,7 +167,7 @@ NOTIFICATIONS: Dict[str, Any] = {"enabled": False, "alarms": []}
 
 # BBFC age rating: extracted from film titles like "Film Name (15)" or "Film Name (12A)"
 BBFC_PATTERN = re.compile(r"\((\d{1,2}A?|U|PG|R18)\)", re.IGNORECASE)
-CERT_IMAGES = {"U": "cert-u.png", "PG": "cert-pg.png", "12A": "cert-12a.png", "15": "cert-15.png", "18": "cert-18.png"}
+CERT_IMAGES = {"U": "cert-u.png", "PG": "cert-pg.png", "12": "cert-12.png", "12A": "cert-12a.png", "15": "cert-15.png", "18": "cert-18.png"}
 WTW_CERT_BASE = "https://wtwcinemas.co.uk/wp-content/themes/wtw-2017/dist/images"
 
 # Cinema addresses for map links
@@ -181,13 +179,10 @@ CINEMA_ADDRESSES = {
 }
 # Cinema coordinates for geolocation
 CINEMA_COORDS = {
-    "bodmin": (50.466, -4.718),
-    "helston": (50.102, -5.274),
-    "falmouth": (50.155, -5.067),
-    "redruth": (50.233, -5.226),
-    "st-ives": (50.210, -5.490),
-    "penzance-savoy": (50.118, -5.538),
-    "penzance-ritz": (50.118, -5.536),
+    "st-austell": (50.338, -4.795),
+    "newquay": (50.416, -5.075),
+    "wadebridge": (50.517, -4.835),
+    "truro": (50.263, -5.051),
 }
 
 # Health check minimums (env-configurable)
@@ -208,6 +203,10 @@ logger = logging.getLogger(__name__)
 err_handler = logging.FileHandler("cinema_log.txt")
 err_handler.setLevel(logging.WARNING)
 logger.addHandler(err_handler)
+import atexit as _atexit
+@_atexit.register
+def _close_log_handler():
+    err_handler.close()
 
 
 # ── HTTP ───────────────────────────────────────────────────────────────────────
@@ -267,8 +266,10 @@ def _load_json_cache(path: str, ttl_days: int, label: str = "") -> Dict[str, dic
 
 def _save_json_cache(path: str, cache: Dict[str, dict], label: str = "") -> None:
     try:
-        with open(path, "w", encoding="utf-8") as f:
+        tmp = path + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as f:
             json.dump(cache, f, indent=2, ensure_ascii=False)
+        os.replace(tmp, path)
         logger.info("Saved %s: %d entries", label, len(cache))
     except OSError as e:
         logger.warning("%s save failed: %s", label, e)
@@ -334,14 +335,13 @@ def parse_date(text: str) -> Optional[date]:
     """Parse release date: "Expected: DD Month YYYY" or "Expected at WTW ... DDth Month"."""
     m = DATE_PATTERN.search(text)
     if m:
-        day, month_str, year = int(m.group(1)), m.group(2), int(m.group(3))
-        has_explicit_year = True
+        day, month_str = int(m.group(1)), m.group(2)
+        year = date.today().year
     else:
         m = ALT_DATE_PATTERN.search(text)
         if not m:
             return None
         day, month_str = int(m.group(1)), m.group(2)
-        has_explicit_year = False
         year = date.today().year
 
     try:
@@ -356,8 +356,8 @@ def parse_date(text: str) -> Optional[date]:
         logger.warning("Invalid date: day=%d month=%d year=%d in: %s", day, month, year, text)
         return None
 
-    # For alt pattern (no year), auto-advance into next year if in the past
-    if not has_explicit_year and parsed < date.today():
+    # Auto-advance into next year if parsed date is in the past
+    if parsed < date.today():
         for advance in range(1, 5):
             try:
                 parsed = date(year + advance, month, day)
@@ -524,9 +524,11 @@ def extract_films(
         if release_date and title:
             key = (release_date, title, cinema_name, film_url)
             if key not in seen:
+                clean_title, screening = extract_screening_label(title)
                 film_details = fetch_film_details(film_url, cache, session)
                 film_details["bbfc"] = bbfc_rating
-                films.append((release_date, title, cinema_name, film_url, film_details))
+                film_details["screening"] = screening
+                films.append((release_date, clean_title or title, cinema_name, film_url, film_details))
                 seen.add(key)
                 logger.info("  %s - %s (%s)", title, release_date, cinema_name)
 
@@ -680,14 +682,14 @@ def enrich_film_tmdb(
 ) -> Dict[str, Any]:
     """Fetch TMDb metadata for a film. Returns genres, rating, director, cast, poster_url, trailer_url."""
     search_title = TMDB_SEARCH_STRIP_RE.sub("", TITLE_CLEAN_RE.sub("", film_title)).strip()
-    # Apply Merlin-specific title cleaning
-    for pattern, replacement in MERLIN_TITLE_CLEAN:
+    # Apply screening-suffix title cleaning
+    for pattern, replacement in TITLE_CLEAN_PATTERNS:
         search_title = pattern.sub(replacement, search_title).strip()
     if not search_title:
         return {}
     # Skip TMDb enrichment for non-film live events
     tl = search_title.lower()
-    if any(skip in tl for skip in MERLIN_SKIP_TMDB):
+    if any(skip in tl for skip in SKIP_TMDB_TERMS):
         return {}
     key = _tmdb_cache_key(film_title)
 
@@ -724,7 +726,8 @@ def enrich_film_tmdb(
                 continue
             resp.raise_for_status()
             return resp.json()
-        raise RuntimeError(f"TMDb request failed: {url}")
+        safe_url = re.sub(r"api_key=[^&]+", "api_key=***", url)
+        raise RuntimeError(f"TMDb request failed: {safe_url}")
     empty_result = {
         "overview": "", "genres": [], "vote_average": None,
         "director": "", "cast": "",
@@ -743,7 +746,7 @@ def enrich_film_tmdb(
         chosen = _pick_best_tmdb_result(results, search_title)
 
         # Progressive fallback: strip unknown screening suffixes word by word.
-        # Merlin may add "Toddler Cinema", "Kids Club", "Special Event" etc.
+        # Cinema site may add "Toddler Cinema", "Kids Club", "Special Event" etc.
         # that our known-pattern list doesn't catch. Drop up to 3 trailing
         # words and re-search until TMDb gives a solid match.
         if not chosen:
@@ -1005,7 +1008,7 @@ def make_ics_event(
         f"DTSTAMP:{dtstamp}",
         f"DTSTART;VALUE=DATE:{release_date.strftime('%Y%m%d')}",
         f"DTEND;VALUE=DATE:{dtend.strftime('%Y%m%d')}",
-        escape_and_fold_ical_text(f"{film_title} @ Merlin {cinema_name}", "SUMMARY:"),
+        escape_and_fold_ical_text(f"{film_title} @ WTW {cinema_name}", "SUMMARY:"),
         escape_and_fold_ical_text(description, "DESCRIPTION:"),
         escape_and_fold_ical_text(f"WTW Cinemas {cinema_name}", "LOCATION:"),
     ]
@@ -1014,8 +1017,51 @@ def make_ics_event(
     if NOTIFICATIONS.get("enabled") and NOTIFICATIONS.get("alarms"):
         for alarm in NOTIFICATIONS["alarms"]:
             lines.append(_make_alarm(alarm, release_date).rstrip(ICAL_NEWLINE))
-    lines.extend(["END:VEVENT", ""])
-    return ICAL_NEWLINE.join(lines)
+    sequence = _get_ics_sequence(film_title, cinema_name, release_date, film_url)
+    lines.append(f"SEQUENCE:{sequence}")
+    lines.append("END:VEVENT")
+    return ICAL_NEWLINE.join(lines) + ICAL_NEWLINE
+
+
+# ── Dynamic SEQUENCE management (#3) ──────────────────────────────────────────
+_SEQ_STATE_FILE = ".ics_sequence.json"
+_seq_state_cache: Optional[Dict[str, dict]] = None
+
+
+def _load_sequence_state() -> Dict[str, dict]:
+    global _seq_state_cache
+    if _seq_state_cache is not None:
+        return _seq_state_cache
+    if os.path.exists(_SEQ_STATE_FILE):
+        try:
+            with open(_SEQ_STATE_FILE, "r") as f:
+                _seq_state_cache = json.load(f)
+            return _seq_state_cache
+        except (json.JSONDecodeError, OSError):
+            pass
+    _seq_state_cache = {}
+    return _seq_state_cache
+
+
+def _save_sequence_state() -> None:
+    if _seq_state_cache is not None:
+        Path(_SEQ_STATE_FILE).parent.mkdir(parents=True, exist_ok=True)
+        with open(_SEQ_STATE_FILE, "w") as f:
+            json.dump(_seq_state_cache, f, indent=2)
+
+
+def _get_ics_sequence(title: str, cinema: str, release_date: date, url: str = "") -> int:
+    """Return SEQUENCE number. Increments when event data changes."""
+    fp = hashlib.sha256(f"{title}|{cinema}|{release_date}|{url}".encode()).hexdigest()[:16]
+    state = _load_sequence_state()
+    key = f"{title}|{cinema}"
+    prev = state.get(key)
+    if prev and prev.get("fp") == fp:
+        return prev.get("seq", 0)
+    seq = (prev.get("seq", 0) + 1) if prev else 0
+    state[key] = {"fp": fp, "seq": seq}
+    _seq_state_cache = state
+    return seq
 
 
 # ── Shared base CSS ─────────────────────────────────────────────────────────────
@@ -1306,13 +1352,14 @@ def build_index_html(
         cinema_names = sorted(cinemas_dict.keys())
         # Map cinema display names to the IDs used in filter buttons
         _name_to_id = {v["name"]: k for k, v in enabled_cinemas.items()}
-        _name_to_id = {v["name"]: k for k, v in enabled_cinemas.items()}
-        _name_to_subdomain = {v["name"]: v.get("subdomain", k) for k, v in enabled_cinemas.items()}
         cinema_slugs = [_name_to_id.get(cn, cn.lower().replace(" ", "-")) for cn in cinema_names]
         cinemas_data = ",".join(cinema_slugs)
 
         stars = _stars_from_rating(rating) if rating is not None else ""
         meta_parts = []
+        screening = d.get("screening") or ""
+        if screening:
+            meta_parts.append(f'<span class="screening-badge">{_esc(screening)}</span>')
         if bbfc:
             meta_parts.append(f'<span class="cert cert--{bbfc.lower()}" title="{_esc(bbfc)}"></span>')
         if runtime:
@@ -1330,7 +1377,7 @@ def build_index_html(
         banner_class = d.get("screening","").lower().replace(" ","-").replace("&","") if d.get("screening") else ""
         scrn_banner = f'<div class="fc-screening-banner {_esc(banner_class)}">{_esc(d.get("screening",""))}</div>\n' if d.get("screening") else ""
 
-        # Group cinemas by date for merlin style display
+        # Group cinemas by date for grid style display
         showings_by_date: Dict[date, List[tuple]] = {}
         for cname, (furl, rd) in cinemas_dict.items():
             showings_by_date.setdefault(rd, []).append((cname, furl))
@@ -1586,7 +1633,7 @@ def build_index_html(
         '    <footer role="contentinfo">\n'
         '      <p class="footer-disclaimer">An open source fan-made project. Calendars update when new premieres are added. Not affiliated with WTW Cinemas.</p>\n'
         '      <div class="footer-links">\n'
-        '        <a href="https://www.merlincinemas.co.uk/">WTW Cinemas</a>\n'
+        '        <a href="https://wtwcinemas.co.uk/">WTW Cinemas</a>\n'
         '        <span aria-hidden="true">·</span>\n'
         '        <a href="https://github.com/evenwebb/wtw-cinemas">Source</a>\n'
         '        <span aria-hidden="true">·</span>\n'
@@ -1697,7 +1744,7 @@ def build_index_html(
         '    var toggle=document.getElementById(toggleId);\n'
         '    var section=document.getElementById(sectionId);\n'
         '    if(!toggle||!section)return;\n'
-        '    var storageKey="merlin-view-"+sectionId;\n'
+        '    var storageKey="wtw-view-"+sectionId;\n'
         '    var isPoster=section.classList.contains("poster-view");\n'
         '    if(localStorage.getItem(storageKey)==="cards"){\n'
         '      section.classList.remove("poster-view");\n'
@@ -1779,7 +1826,7 @@ def build_cinema_page(
         '<!DOCTYPE html>\n<html lang="en">\n<head>\n'
         '  <meta charset="utf-8">\n'
         '  <meta name="viewport" content="width=device-width, initial-scale=1">\n'
-        f'  <title>What\'s on at Merlin {cinema_info["name"]}</title>\n'
+        f'  <title>What\'s on at WTW {cinema_info["name"]}</title>\n'
         f'  <meta name="description" content="Now showing and coming soon at WTW Cinemas {cinema_info["name"]}.">\n'
         '  <link rel="canonical" href="https://evenwebb.github.io/wtw-cinemas/">\n'
         '  <link rel="icon" href="data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><text y=\'.9em\' font-size=\'90\'>🎬</text></svg>">\n'
@@ -1805,7 +1852,7 @@ def build_cinema_page(
         '  <div class="page">\n'
         '    <a href="./" class="back-btn">← All</a>\n'
         f'    <header class="cinema-hero">\n'
-        f'      <h1>Merlin {cinema_info["name"]}</h1>\n'
+        f'      <h1>WTW {cinema_info["name"]}</h1>\n'
         f'      <p>Subscribe: <a href="wtw-{cinema_id}.ics" type="text/calendar" download>iCal feed</a></p>\n'
         f'      <a href="{maps_url}" class="map-link" target="_blank" rel="noopener">📍 View on map</a>\n'
         f'    </header>\n'
@@ -1840,7 +1887,7 @@ def _extract_bbfc(title: str) -> str:
 def _download_cert_images(session: Optional[requests.Session] = None) -> None:
     """Download BBFC cert images to docs/certs/ for local serving."""
     if not WTW_CERT_BASE:
-        return  # Merlin uses inline cert images, no remote download needed
+        return  # WTW uses inline cert images, no remote download needed
     s = session or _session()
     Path(CERTS_DIR).mkdir(parents=True, exist_ok=True)
     for rating, filename in CERT_IMAGES.items():
@@ -2062,7 +2109,7 @@ def build_film_page(
         else:
             # Check if this is a known non-film event (live band, tribute, comedy etc.)
             tl = film_title.lower()
-            if any(s in tl for s in MERLIN_SKIP_TMDB):
+            if any(s in tl for s in SKIP_TMDB_TERMS):
                 overview = "A live event at WTW Cinemas. Check the showtimes below for dates, times, and booking."
             else:
                 overview = "Synopsis coming soon."
@@ -2124,7 +2171,7 @@ def build_film_page(
             cinema_name = st['cinema_name']
             cinema_slug = cinema_name.lower().replace(" ", "-")
             cinema_set.add(cinema_name)
-            cinema_label = f"Merlin {cinema_name}"
+            cinema_label = f"WTW {cinema_name}"
             time_str = st.get("time", "")
             screen_num = st.get("screen", 1)
             booking_url = st.get("booking_url", "")
@@ -2166,7 +2213,7 @@ def build_film_page(
                 booking_url = WTW_BASE_URL + furl if furl.startswith("/") else furl
                 table_rows.append(
                     f'<tr><td class="date-cell">{rd_short}</td>'
-                    f'<td class="cinema-cell">Merlin {cname}</td>'
+                    f'<td class="cinema-cell">WTW {cname}</td>'
                     f'<td class="book-cell"><a href="{_esc(booking_url)}" class="table-book-btn" target="_blank" rel="noopener">Book →</a></td></tr>'
                 )
 
@@ -2364,7 +2411,7 @@ def build_film_page(
         '    <footer>\n'
         '      <p>An open source fan-made project. Not affiliated with WTW Cinemas.</p>\n'
         '      <div style="margin-top:0.75rem">\n'
-        '        <a href="https://www.merlincinemas.co.uk/">WTW Cinemas</a>\n'
+        '        <a href="https://wtwcinemas.co.uk/">WTW Cinemas</a>\n'
         '        <span aria-hidden="true"> · </span>\n'
         '        <a href="../">All premieres</a>\n'
         '      </div>\n'
@@ -2567,7 +2614,7 @@ def main() -> None:
         logger.info("TMDb enrichment done: %d coming-soon + %d whats-on unique films",
                      len(unique_by_key), len(whats_on_unique))
     else:
-        logger.info("TMDB_API_KEY not set; Merlin-only data")
+        logger.info("TMDB_API_KEY not set; scraping without TMDb enrichment")
 
     if not all_films:
         logger.warning("No films found across any cinema")
@@ -2599,9 +2646,9 @@ def main() -> None:
     out_dir = Path(OUTPUT_DIR)
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    # Remove legacy .ics files without merlin- prefix
+    # Remove legacy .ics files without wtw- prefix
     for old in out_dir.glob("*.ics"):
-        if not old.name.startswith("merlin-"):
+        if not old.name.startswith("wtw-"):
             old.unlink()
             logger.info("Removed legacy %s", old.name)
 
@@ -2620,7 +2667,7 @@ def main() -> None:
             "METHOD:PUBLISH",
             "REFRESH-INTERVAL;VALUE=DURATION:PT12H",
             "X-PUBLISHED-TTL:PT12H",
-            f"X-WR-CALNAME:Merlin {cname} Movie Premieres",
+            f"X-WR-CALNAME:WTW {cname} Movie Premieres",
             f"X-WR-CALDESC:Upcoming movie premieres at WTW Cinemas {cname}",
         ]
         if CALENDAR_TIMEZONE.strip():
@@ -2628,6 +2675,8 @@ def main() -> None:
         ics = ICAL_NEWLINE.join(header) + ICAL_NEWLINE + "".join(events) + f"END:VCALENDAR{ICAL_NEWLINE}"
         (out_dir / f"wtw-{cid}.ics").write_text(ics, encoding="utf-8")
         logger.info("Wrote %s (%d events)", f"wtw-{cid}.ics", len(events))
+
+    _save_sequence_state()
 
     # ── Release stats ─────────────────────────────────────────────────────
     today = date.today()
@@ -2680,7 +2729,7 @@ def main() -> None:
                     poster = fdetails.get("poster_url", "")
                     if poster:
                         break
-        # Fallback to Merlin poster from whats-on data
+        # Fallback to cinema poster from whats-on data
         if not poster:
             poster = wf_list[0].get("poster_url", "") or ""
         now_showing_films.append({
