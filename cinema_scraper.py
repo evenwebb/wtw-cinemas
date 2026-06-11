@@ -2160,6 +2160,15 @@ def build_film_page(
         else '<div class="trailer-wrap"><div class="no-trailer">No trailer available</div></div>'
     )
 
+    # Google Calendar "Add to Calendar" link (#5)
+    from urllib.parse import quote as _url_quote
+    first_rd = cinemas[0][2] if cinemas else date.today()
+    gcal_dates = f"{first_rd.strftime('%Y%m%d')}/{first_rd.strftime('%Y%m%d')}"
+    gcal_text = _url_quote(film_title)
+    gcal_location = _url_quote(f"WTW Cinemas {cinemas[0][0]}" if cinemas else "WTW Cinemas")
+    gcal_url = f"https://calendar.google.com/calendar/render?action=TEMPLATE&text={gcal_text}&dates={gcal_dates}&location={gcal_location}"
+    gcal_html = f'<a href="{_esc(gcal_url)}" class="cta-btn google-btn" target="_blank" rel="noopener" title="Add to Google Calendar">📅 Add to Calendar</a>'
+
     # Build cinema showtime table - use whats-on showtimes if available, else coming-soon dates
     table_rows = []
     cinema_set: set = set()
@@ -2408,6 +2417,7 @@ def build_film_page(
         f'      {trailer_html}\n'
         f'    </div>\n'
         + cinema_html +
+        f'    <div style="text-align:center;margin:1.5rem 0">{gcal_html}</div>\n'
         '    <footer>\n'
         '      <p>An open source fan-made project. Not affiliated with WTW Cinemas.</p>\n'
         '      <div style="margin-top:0.75rem">\n'
