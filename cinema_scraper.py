@@ -7,7 +7,6 @@ iCalendar feeds plus an index page for GitHub Pages.
 from __future__ import annotations
 
 import hashlib
-import html as html_mod
 import json
 import logging
 import os
@@ -22,6 +21,7 @@ from itertools import groupby
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 from zoneinfo import ZoneInfo
+import atexit as _atexit
 
 warnings.filterwarnings("ignore", message=".*OpenSSL.*", category=UserWarning)
 
@@ -39,13 +39,8 @@ USER_AGENT = (
     "Chrome/131.0.0.0 Safari/537.36"
 )
 ICAL_LINE_LENGTH = 75
-LONDON_TZ = ZoneInfo("Europe/London")
 
 
-def format_london_timestamp(dt: Optional[datetime] = None) -> str:
-    dt = dt or datetime.now(LONDON_TZ)
-    return dt.astimezone(LONDON_TZ).strftime("%Y-%m-%d %H:%M %Z")
-ICAL_NEWLINE = "\r\n"
 CALENDAR_TIMEZONE = os.getenv("CALENDAR_TIMEZONE", "Europe/London")
 OUTPUT_DIR = "docs"
 WTW_BASE_URL = "https://wtwcinemas.co.uk"
@@ -203,7 +198,6 @@ logger = logging.getLogger(__name__)
 err_handler = logging.FileHandler("cinema_log.txt")
 err_handler.setLevel(logging.WARNING)
 logger.addHandler(err_handler)
-import atexit as _atexit
 @_atexit.register
 def _close_log_handler():
     err_handler.close()
