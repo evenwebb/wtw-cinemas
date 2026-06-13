@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: scrape-cinema
+  group: scrape-cinema-${{ github.ref }}
   cancel-in-progress: true
 
 permissions:
