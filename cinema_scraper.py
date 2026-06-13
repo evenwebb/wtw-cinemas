@@ -548,7 +548,8 @@ def scrape_cinema_whats_on(
 
     today_scrape = date.today()
     tag_names = ("Audio Description", "Subtitles", "Wheelchair access", "Silver Screen", "2D", "3D",
-                 "Event cinema", "Strobe Light warning", "Parent & Baby", "Autism Friendly", "Kids Club")
+                 "Event cinema", "Strobe Light warning", "Parent & Baby", "Autism Friendly", "Kids Club",
+                 "Super Saver", "Licensed venue", "Advanced Screening", "Mini Movie Deal", "Baby Friendly", "FLS")
 
     for li in film_items:
         film_a = li.find("a", href=lambda h: h and "/film/" in h)
