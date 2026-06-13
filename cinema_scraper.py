@@ -850,6 +850,8 @@ from html_templates import (
     _esc, _format_runtime_display, _stars_from_rating,
     build_index_html, build_cinema_page, build_film_page,
     _cert_span, _youtube_embed_url, _extract_bbfc,
+    _compute_fingerprint, _load_fingerprint, _save_fingerprint,
+    _download_cert_images, _health_check, _save_sequence_state,
     write_style_css,
 )
 
