@@ -14,3 +14,4 @@ env/
 # Runtime logs
 cinema_log.txt
 *.log
+*.log
