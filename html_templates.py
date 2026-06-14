@@ -7,12 +7,22 @@ from __future__ import annotations
 import hashlib
 import html as html_mod
 import json
+import os
 import re
-from datetime import date, datetime
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 from urllib.parse import quote as _url_quote
 from zoneinfo import ZoneInfo
+
+# Import shared names from shared_constants.py (avoids circular import with cinema_scraper)
+from shared_constants import (  # noqa: E402
+    _tmdb_cache_key, BBFC_PATTERN, CERT_IMAGES, CERTS_DIR, CINEMA_ADDRESSES,
+    FINGERPRINT_FILE, HEALTH_MIN_CINEMAS, HEALTH_MIN_FILMS,
+    ICAL_LINE_LENGTH, NOTIFICATIONS, NOTIFICATION_TIME,
+    POSTERS_DIR, SKIP_TMDB_TERMS, WTW_BASE_URL, WTW_CERT_BASE,
+    logger,
+)
 
 # Re-export the CSS constants and build functions for cinema_scraper.py to use
 __all__ = [
@@ -253,9 +263,10 @@ def _load_sequence_state() -> Dict[str, dict]:
 
 def _save_sequence_state() -> None:
     if _seq_state_cache is not None:
-        Path(_SEQ_STATE_FILE).parent.mkdir(parents=True, exist_ok=True)
-        with open(_SEQ_STATE_FILE, "w") as f:
+        tmp = _SEQ_STATE_FILE + ".tmp"
+        with open(tmp, "w") as f:
             json.dump(_seq_state_cache, f, indent=2)
+        os.replace(tmp, _SEQ_STATE_FILE)
 
 
 def _get_ics_sequence(title: str, cinema: str, release_date: date, url: str = "") -> int:
@@ -268,7 +279,6 @@ def _get_ics_sequence(title: str, cinema: str, release_date: date, url: str = ""
         return prev.get("seq", 0)
     seq = (prev.get("seq", 0) + 1) if prev else 0
     state[key] = {"fp": fp, "seq": seq}
-    _seq_state_cache = state
     return seq
 
 
@@ -1075,6 +1085,14 @@ def generate_sitemap(film_slugs: List[str], cinema_ids: List[str]) -> str:
 
 
 # ── Film detail pages ───────────────────────────────────────────────────────────
+def _session():
+    """Return a requests Session with retry-compatible settings."""
+    import requests as _req
+    s = _req.Session()
+    s.headers.update({"User-Agent": "Mozilla/5.0 (compatible; WTW-Cinemas/1.0)"})
+    return s
+
+
 def _extract_bbfc(title: str) -> str:
     """Extract BBFC rating from title like 'Film Name (15)' -> '15'."""
     m = BBFC_PATTERN.search(title)
@@ -1138,7 +1156,10 @@ def _load_fingerprint() -> str:
 
 
 def _save_fingerprint(fp: str) -> None:
-    Path(FINGERPRINT_FILE).write_text(fp, encoding="utf-8")
+    tmp = FINGERPRINT_FILE + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        f.write(fp)
+    os.replace(tmp, FINGERPRINT_FILE)
 
 
 def _health_check(films: List[Tuple], enabled_cinemas: Dict[str, dict]) -> bool:
@@ -1333,7 +1354,6 @@ def build_film_page(
     if genres:
         meta_parts.append(f'<span class="genres">{", ".join(genres)}</span>')
 
-    poster_large_src = f"../{poster_large}" if poster_large.startswith("posters/") else poster_large
     poster_src = f"../{poster}" if poster.startswith("posters/") else poster
     poster_large = film_details.get("poster_large_url") or poster
     poster_large_src = f"../{poster_large}" if poster_large.startswith("posters/") else poster_large

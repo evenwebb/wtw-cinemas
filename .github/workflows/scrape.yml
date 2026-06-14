@@ -56,6 +56,7 @@ jobs:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           SCRAPER_RUN_ATTEMPTS: ${{ vars.SCRAPER_RUN_ATTEMPTS || '2' }}
         run: |
+          set -o pipefail
           mkdir -p logs
           ATTEMPTS="${SCRAPER_RUN_ATTEMPTS:-2}"
           if [ "$ATTEMPTS" -lt 1 ]; then ATTEMPTS=1; fi

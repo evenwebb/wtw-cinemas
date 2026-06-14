@@ -38,9 +38,6 @@ USER_AGENT = (
     "AppleWebKit/537.36 (KHTML, like Gecko) "
     "Chrome/131.0.0.0 Safari/537.36"
 )
-ICAL_LINE_LENGTH = 75
-
-
 CALENDAR_TIMEZONE = os.getenv("CALENDAR_TIMEZONE", "Europe/London")
 OUTPUT_DIR = "docs"
 WTW_BASE_URL = "https://wtwcinemas.co.uk"
@@ -51,13 +48,18 @@ CACHE_EXPIRY_DAYS = 7
 TMDB_CACHE_FILE = ".tmdb_cache.json"
 TMDB_CACHE_DAYS = 30
 TMDB_DELAY_SEC = 0.2
-POSTERS_DIR = "docs/posters"
-CERTS_DIR = "docs/certs"
-FINGERPRINT_FILE = ".scrape_fingerprint"
 MIN_SYNOPSIS_LENGTH = 50
 MAX_SYNOPSIS_LENGTH = 500
 SYNOPSIS_SKIP_TERMS = ["cookie", "privacy", "terms", "wheelchair", "audio description"]
 MAX_WORKERS = min(4, os.cpu_count() or 4)
+
+# Import shared constants from the split-out module
+from shared_constants import (  # noqa: E402
+    _tmdb_cache_key, BBFC_PATTERN, CERT_IMAGES, CERTS_DIR, CINEMA_ADDRESSES,
+    FINGERPRINT_FILE, HEALTH_MIN_CINEMAS, HEALTH_MIN_FILMS,
+    ICAL_LINE_LENGTH, NOTIFICATIONS, NOTIFICATION_TIME,
+    POSTERS_DIR, SKIP_TMDB_TERMS, WTW_CERT_BASE,
+)
 
 DATE_PATTERN = re.compile(r"(?:Released|Showing)\s+(?:on\s+)?(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]+)", re.IGNORECASE)
 ALT_DATE_PATTERN = re.compile(r"(\d{1,2})(?:st|nd|rd|th)?\s+([A-Za-z]+)", re.IGNORECASE)
@@ -157,32 +159,9 @@ CINEMAS: Dict[str, dict] = {
     },
 }
 
-NOTIFICATION_TIME = "09:00"
 NOTIFICATIONS: Dict[str, Any] = {"enabled": False, "alarms": []}
 
-# BBFC age rating: extracted from film titles like "Film Name (15)" or "Film Name (12A)"
-BBFC_PATTERN = re.compile(r"\((\d{1,2}A?|U|PG|R18)\)", re.IGNORECASE)
-CERT_IMAGES = {"U": "cert-u.png", "PG": "cert-pg.png", "12": "cert-12.png", "12A": "cert-12a.png", "15": "cert-15.png", "18": "cert-18.png"}
-WTW_CERT_BASE = "https://wtwcinemas.co.uk/wp-content/themes/wtw-2017/dist/images"
-
-# Cinema addresses for map links
-CINEMA_ADDRESSES = {
-    "st-austell": "White+River+Cinema+St+Austell",
-    "newquay": "Lighthouse+Cinema+Newquay",
-    "wadebridge": "Regal+Cinema+Wadebridge",
-    "truro": "Plaza+Cinema+Truro",
-}
-# Cinema coordinates for geolocation
-CINEMA_COORDS = {
-    "st-austell": (50.338, -4.795),
-    "newquay": (50.416, -5.075),
-    "wadebridge": (50.517, -4.835),
-    "truro": (50.263, -5.051),
-}
-
-# Health check minimums (env-configurable)
-HEALTH_MIN_FILMS = int(os.getenv("HEALTH_MIN_FILMS", "1"))
-HEALTH_MIN_CINEMAS = int(os.getenv("HEALTH_MIN_CINEMAS", "1"))
+# BBFC / cinema / health constants are in shared_constants.py
 
 TMDB_GENRE_MAP = {
     28: "Action", 12: "Adventure", 16: "Animation", 35: "Comedy",
@@ -310,19 +289,16 @@ def save_release_history(releases: set) -> None:
     cutoff = today - timedelta(days=RELEASE_HISTORY_MAX_DAYS)
     kept = [(d.isoformat(), t) for (d, t) in releases if d >= cutoff]
     try:
-        Path(RELEASE_HISTORY_PATH).write_text(
-            json.dumps(kept, ensure_ascii=False), encoding="utf-8"
-        )
+        tmp = RELEASE_HISTORY_PATH + ".tmp"
+        with open(tmp, "w", encoding="utf-8") as f:
+            json.dump(kept, f, ensure_ascii=False)
+        os.replace(tmp, RELEASE_HISTORY_PATH)
         logger.info("Saved release history: %d entries", len(kept))
     except OSError as e:
         logger.warning("Release history save failed: %s", e)
 
 
-def _tmdb_cache_key(film_title: str) -> str:
-    t = TITLE_CLEAN_RE.sub("", film_title).strip()
-    t = re.sub(r"[\s\-:]+", " ", t.lower()).strip()
-    return re.sub(r"[^a-z0-9]+", "-", t).strip("-") or "unknown"
-
+# _tmdb_cache_key is now in shared_constants.py
 
 # ── Date parsing ───────────────────────────────────────────────────────────────
 def parse_date(text: str) -> Optional[date]:
@@ -350,14 +326,12 @@ def parse_date(text: str) -> Optional[date]:
         logger.warning("Invalid date: day=%d month=%d year=%d in: %s", day, month, year, text)
         return None
 
-    # Auto-advance into next year if parsed date is in the past
+    # Auto-advance into next year if parsed date is in the past (cap at 1 year)
     if parsed < date.today():
-        for advance in range(1, 5):
-            try:
-                parsed = date(year + advance, month, day)
-                break
-            except ValueError:
-                continue
+        try:
+            parsed = date(year + 1, month, day)
+        except ValueError:
+            pass
     return parsed
 
 
@@ -882,6 +856,36 @@ def validate_configuration() -> None:
         raise ValueError("At least one cinema must be enabled.")
 
 
+# ── Main helpers ─────────────────────────────────────────────────────────────────
+def _scrape_one_cinema(cid: str, info: dict, cache: Dict[str, dict]) -> List[Tuple]:
+    """Scrape a single cinema's coming-soon page (module-level for pickling)."""
+    sess = _session()
+    results = []
+    try:
+        films = extract_films(info["url"], info["name"], cache, session=sess)
+        for f in films:
+            results.append((*f, cid))
+    except Exception as e:
+        logger.error("Error scraping %s: %s", info["name"], e)
+        print(f"✗ {info['name']}: Error - {e}")
+    finally:
+        sess.close()
+    return results
+
+
+def _scrape_whats_on_one(cid: str, info: dict) -> List[Dict]:
+    """Scrape a single cinema's whats-on page (module-level for pickling)."""
+    sess = _session()
+    try:
+        return scrape_cinema_whats_on(cid, info["name"], session=sess)
+    except Exception as e:
+        logger.error("Error scraping whats-on %s: %s", info["name"], e)
+        print(f"✗ {info['name']} whats-on: Error - {e}")
+        return []
+    finally:
+        sess.close()
+
+
 # ── Main ───────────────────────────────────────────────────────────────────────
 def main() -> None:
     try:
@@ -905,22 +909,8 @@ def main() -> None:
     all_films: List[Tuple] = []
 
     # ── Parallel cinema scraping ──────────────────────────────────────────
-    def scrape_cinema(cid: str, info: dict) -> List[Tuple]:
-        sess = _session()
-        results = []
-        try:
-            films = extract_films(info["url"], info["name"], cache, session=sess)
-            for f in films:
-                results.append((*f, cid))
-        except Exception as e:
-            logger.error("Error scraping %s: %s", info["name"], e)
-            print(f"✗ {info['name']}: Error - {e}")
-        finally:
-            sess.close()
-        return results
-
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
-        futures = {ex.submit(scrape_cinema, cid, info): cid for cid, info in enabled_cinemas.items()}
+        futures = {ex.submit(_scrape_one_cinema, cid, info, cache): cid for cid, info in enabled_cinemas.items()}
         for fut in as_completed(futures, timeout=HTTP_TIMEOUT * 3):
             cid = futures[fut]
             try:
@@ -934,20 +924,9 @@ def main() -> None:
     save_cache(cache)
 
     # ── Parallel whats-on scraping ──────────────────────────────────────────
-    def scrape_whats_on(cid: str, info: dict) -> List[Dict]:
-        sess = _session()
-        try:
-            return scrape_cinema_whats_on(cid, info["name"], session=sess)
-        except Exception as e:
-            logger.error("Error scraping whats-on %s: %s", info["name"], e)
-            print(f"✗ {info['name']} whats-on: Error - {e}")
-            return []
-        finally:
-            sess.close()
-
     whats_on_data: Dict[str, List[Dict]] = {}  # normalized_title -> [showtime dicts]
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as wex:
-        wfutures = {wex.submit(scrape_whats_on, cid, info): cid for cid, info in enabled_cinemas.items()}
+        wfutures = {wex.submit(_scrape_whats_on_one, cid, info): cid for cid, info in enabled_cinemas.items()}
         for fut in as_completed(wfutures, timeout=HTTP_TIMEOUT * 3):
             cid = wfutures[fut]
             try:
@@ -996,13 +975,13 @@ def main() -> None:
                 unique_by_key[k][2].append(i)
 
         # TMDb lookups in parallel for unique films
-        def _tmdb_enrich(key: str, title: str, url: str) -> Dict[str, Any]:
-            return enrich_film_tmdb(title, url, api_key, tmdb_cache, session=sess)
+        from functools import partial as _partial
+        _tmdb_enrich = _partial(enrich_film_tmdb, api_key=api_key, cache=tmdb_cache, session=sess)
 
         enrich_futures: Dict[Any, str] = {}
         with ThreadPoolExecutor(max_workers=min(8, MAX_WORKERS * 2)) as tex:
             for k, (title, furl, indices) in unique_by_key.items():
-                enrich_futures[tex.submit(_tmdb_enrich, k, title, furl)] = k
+                enrich_futures[tex.submit(_tmdb_enrich, title, furl)] = k
             for fut in as_completed(enrich_futures):
                 k = enrich_futures[fut]
                 try:
@@ -1036,7 +1015,7 @@ def main() -> None:
             wo_enrich_futures: Dict[Any, str] = {}
             with ThreadPoolExecutor(max_workers=min(8, MAX_WORKERS * 2)) as tex:
                 for k, (title, furl) in whats_on_unique.items():
-                    wo_enrich_futures[tex.submit(_tmdb_enrich, k, title, furl)] = k
+                    wo_enrich_futures[tex.submit(_tmdb_enrich, title, furl)] = k
                 for fut in as_completed(wo_enrich_futures):
                     k = wo_enrich_futures[fut]
                     try:
@@ -1046,11 +1025,12 @@ def main() -> None:
                     if extra:
                         tmdb_cache.setdefault(k, {}).update({**extra, "cached_at": datetime.now().isoformat()})
         sess.close()
-        save_tmdb_cache(tmdb_cache)
         logger.info("TMDb enrichment done: %d coming-soon + %d whats-on unique films",
                      len(unique_by_key), len(whats_on_unique))
     else:
         logger.info("TMDB_API_KEY not set; scraping without TMDb enrichment")
+
+    save_tmdb_cache(tmdb_cache)
 
     if not all_films:
         logger.warning("No films found across any cinema")
