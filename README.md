@@ -73,6 +73,9 @@ docs/
 
 ## Features
 
+- **Dark mode** with automatic OS preference detection and themed favicon
+- **Modular architecture**:  and  with 
+
 ### Scraping
 | Area | Details |
 |---|---|
