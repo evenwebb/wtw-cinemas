@@ -578,6 +578,30 @@ def extract_films(
                 genre = cls.replace("filmecatte", "").strip()
                 break
 
+        # Poster image from card or parent
+        poster_url = ""
+        for el in [card] + list(card.parents)[:4]:
+            for img in el.select("img"):
+                src = img.get("src", "")
+                alt = img.get("alt", "")
+                # Skip cert icons, accessibility icons, format badges
+                if any(skip in src.lower() for skip in (
+                    "filmcerts", "cert-", "modifier", "icon", "2d.png",
+                    "3d.png", "wheelchair", "ccap", "audio-des",
+                    "closed-caption", "strobe",
+                )):
+                    continue
+                if alt in ("2D", "3D", "Closed Caption Subtitle Glasses Available",
+                           "Audio Description Headsets Available", "Wheelchair Access",
+                           "Contains a sequence of flashing lights.", "Laser Projection",
+                           "Autism Friendly Film", "background-image"):
+                    continue
+                if "cdn.taposapp.com" in src or "poster" in src.lower():
+                    poster_url = src
+                    break
+            if poster_url:
+                break
+
         # Synopsis from card text
         card_text = card.get_text(" ", strip=True)
         synopsis = card_text[:MAX_SYNOPSIS_LENGTH] if len(card_text) >= MIN_SYNOPSIS_LENGTH else ""
@@ -592,6 +616,7 @@ def extract_films(
                 "screening": screening,
                 "synopsis": synopsis,
                 "genre": genre,
+                "poster_url": poster_url,
                 "source": "coming_soon_card",
             }
             if film_url:
@@ -681,9 +706,18 @@ def scrape_cinema_whats_on(
         title = ""
         film_url = ""
         page_synopsis = ""
+        poster_url = ""
         if runtime > 1 and runtime in hero_runtimes:
             title, film_url, details = hero_runtimes[runtime]
             page_synopsis = details.get("synopsis", "")
+            # Extract poster from the matching hero slider blurb
+            for blurb in soup.select(".row.blurb"):
+                h1 = blurb.select_one("h1")
+                if h1 and h1.get_text(strip=True) == title:
+                    poster_img = blurb.select_one(".movie-slide-pic img")
+                    if poster_img:
+                        poster_url = poster_img.get("src", "")
+                    break
         elif starring:
             # Fallback: match by first actor name in hero blurb text
             first_actor = starring.split(",")[0].strip().lower()
@@ -848,6 +882,7 @@ def scrape_cinema_whats_on(
                 "starring": starring,
                 "bbfc": bbfc,
                 "synopsis": page_synopsis,
+                "poster_url": poster_url,
             })
 
     logger.info("  whats-on %s: %d films with showtimes", cinema_name, len(films))
@@ -1082,7 +1117,7 @@ from html_templates import (
     build_index_html, build_cinema_page, build_film_page,
     _cert_span, _youtube_embed_url, _extract_bbfc,
     _compute_fingerprint, _load_fingerprint, _save_fingerprint,
-    _download_cert_images, _health_check, _save_sequence_state,
+    _download_cert_images, _download_poster, _health_check, _save_sequence_state,
     write_style_css, make_ics_event, ICAL_NEWLINE, generate_sitemap,
 )
 
@@ -1464,7 +1499,7 @@ def main() -> None:
                 details: Dict[str, Any] = {
                     "screening": wf.get("screening", ""),
                     "screening_feature": wf.get("screening_feature", ""),
-                    "poster_url": wf.get("poster_url", ""),
+                    "poster_url": wf.get("poster_url") or "",
                     "runtime": f"{wf['runtime']} min" if wf.get("runtime") else "",
                     "cast": wf.get("starring", ""),
                     "bbfc": wf.get("bbfc", ""),
