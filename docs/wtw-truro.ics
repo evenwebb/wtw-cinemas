@@ -10,25 +10,22 @@ X-WR-CALDESC:Upcoming movie premieres at WTW Cinemas Truro
 X-WR-TIMEZONE:Europe/London
 BEGIN:VEVENT
 UID:78013148de1abe4b285e144604a01db8cf223a12@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20260802
 DTEND;VALUE=DATE:20260803
 SUMMARY:PAW Patrol: The Dino Movie - MediCinema Advanced Screening @ WTW Tr
  uro
 DESCRIPTION:PAW Patrol: The Dino Movie - MediCinema Advanced Screening (1h 
- 28min)\n\nThe PAW Patrol crash land on an uncharted tropical island filled
-  with dinosaurs after their ship gets caught in a mysterious storm. They m
- eet Rex\, a pup who has been stranded for years and has become an expert i
- n all things dino-related. When the Patrol's archrival\, Mayor Humdinger\,
-  begins recklessly mining to exploit the island's natural resources\, he i
- nadvertently causes a huge\, dormant volcano to erupt. The pups are thrown
-  into a series of high-stakes\, dino-sized rescues bigger than anything th
- ey've done before\, as they must stop Humdinger before everything on the i
- sland goes extinct.\n\nProceeds from the screening will go to the charit
- y MediCinema.\n\nFilm release at WTW Cinemas Truro\nBook tickets: https://
- wtwcinemas.co.uk/truro/film/5604/paw-patrol-the-dino-movie-medicinema-adva
- nced-screening\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/fil
- ms/paw-patrol-the-dino-movie-medicinema-advanced-screening.html
+ 28min)\n★★☆☆☆\nAdventure\, Animation\, Comedy\, Family\n\nThe Paw Patrol l
+ ands on a mysterious dinosaur island after a storm\, where they meet Rex\,
+  a stranded pup. When Humdinger's reckless mining triggers a volcano\, the
+  team faces their biggest rescue mission yet to save the island.\n\nStarri
+ ng: Carter Young\, Hayden Chamberlen\, Mckenna Grace\, Rain Janjua\, Henry
+  Bolan\, Lucien Duncan-Reid\n\nFilm release at WTW Cinemas Truro\nBook tic
+ kets: https://wtwcinemas.co.uk/truro/film/5604/paw-patrol-the-dino-movie-m
+ edicinema-advanced-screening\n\nFilm details: https://evenwebb.github.io/w
+ tw-cinemas/films/paw-patrol-the-dino-movie-medicinema-advanced-screening.h
+ tml
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5604/paw-patrol-the-dino-movie-medi
  cinema-advanced-screening
@@ -36,7 +33,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:6929a599cb74f9d72319e0928643026580bc6704@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20260802
 DTEND;VALUE=DATE:20260803
 SUMMARY:Fatal Attraction & Basic Instinct Double Bill - Pat's Film Club @ W
@@ -66,65 +63,63 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:d661e153a1d261a54e1ee32946e217015304b5e0@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20260805
 DTEND;VALUE=DATE:20260806
 SUMMARY:PAW Patrol: The Dino Movie @ WTW Truro
-DESCRIPTION:PAW Patrol: The Dino Movie (1h 28min)\n\nThe PAW Patrol pups cr
- ash land on an uncharted tropical island filled with dinosaurs after their
-  ship gets caught in a mysterious storm. They meet Rex\, a pup who has bee
- n stranded on the island for years and has become an expert in all things 
- dino-related. When the Patrol's archrival\, Mayor Humdinger\, begins reckl
- essly mining in hopes of exploiting the island for its natural resources\,
-  he inadvertently causes a huge\, dormant volcano to erupt. The pups are t
- hrown into a series of high-stakes\, dino-sized rescues bigger than anythi
- ng they've done before\, as they must stop Humdinger before everything on 
- the island goes extinct.\n\nFilm release at WTW Cinemas Truro\nBook ticket
- s: https://wtwcinemas.co.uk/truro/film/5539/paw-patrol-the-dino-movie\n\nF
- ilm details: https://evenwebb.github.io/wtw-cinemas/films/paw-patrol-the-d
- ino-movie.html
+DESCRIPTION:PAW Patrol: The Dino Movie (1h 28min)\n★★☆☆☆\nAdventure\, Anima
+ tion\, Comedy\, Family\n\nThe Paw Patrol lands on a mysterious dinosaur is
+ land after a storm\, where they meet Rex\, a stranded pup. When Humdinger'
+ s reckless mining triggers a volcano\, the team faces their biggest rescue
+  mission yet to save the island.\n\nStarring: Carter Young\, Hayden Chambe
+ rlen\, Mckenna Grace\, Rain Janjua\, Henry Bolan\, Lucien Duncan-Reid\n\nF
+ ilm release at WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co.uk/t
+ ruro/film/5539/paw-patrol-the-dino-movie\n\nFilm details: https://evenwebb
+ .github.io/wtw-cinemas/films/paw-patrol-the-dino-movie.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5539/paw-patrol-the-dino-movie
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c93cefdaca5aadb9b25844fc391aee93de9c892c@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20260806
 DTEND;VALUE=DATE:20260807
 SUMMARY:Turandot on Sydney Harbour @ WTW Truro
-DESCRIPTION:Turandot on Sydney Harbour (2h 11min)\n\nThis Handa Opera on Sy
- dney Harbour production\, directed by Chen Shi-Zheng\, is known for its la
- vish sets\, including a 25-meter dragon and a 20-meter pagoda\, and its us
- e of contemporary cinema and Chinese acrobatics. The production features a
-  cast of world-class singers\, including Dragana Radakovic as Turandot and
-  Riccardo Massi as Calaf\, and is known for its powerful rendition of “Nes
- sun Dorma”.\n\nFilm release at WTW Cinemas Truro\nBook tickets: https://wt
- wcinemas.co.uk/truro/film/5593/turandot-on-sydney-harbour\n\nFilm details:
-  https://evenwebb.github.io/wtw-cinemas/films/turandot-on-sydney-harbour.h
- tml
+DESCRIPTION:Turandot on Sydney Harbour (1h 59min)\n★★★☆☆\nMusic\n\nThe Pucc
+ hini opera "Turandot" will be shown completely new at the Gran Teatre del 
+ Liceu. The new production by the Spanish video artist Franc Aleu refers wi
+ th a wink to the history of the Catalan institution: 20 years ago\, this v
+ ery opera was resumed there after a fire in 1994 severely damaged the thea
+ ter.\n\nStarring: Iréne Theorin\, Chris Merritt\, Alexander Vinogradov\, J
+ orge de León\, Ermonela Jaho\, Toni Marsol\n\nFilm release at WTW Cinemas 
+ Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film/5593/turandot-on-
+ sydney-harbour\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/fil
+ ms/turandot-on-sydney-harbour.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5593/turandot-on-sydney-harbour
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:a6ab5a15515a1293bf5ba144df2b12526409dac8@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20260807
 DTEND;VALUE=DATE:20260808
 SUMMARY:Ice Cream Man @ WTW Truro
-DESCRIPTION:Ice Cream Man (1h 26min)\n\nAn idyllic summer town descends int
- o madness when an ice cream man serves kids sweet delights with horrifying
-  results.\n\nFilm release at WTW Cinemas Truro\nBook tickets: https://wtwc
- inemas.co.uk/truro/film/5626/ice-cream-man\n\nFilm details: https://evenwe
- bb.github.io/wtw-cinemas/films/ice-cream-man.html
+DESCRIPTION:Ice Cream Man (1h 26min)\nHorror\, Thriller\n\nAn idyllic summe
+ r town descends into madness when an ice cream man serves kids sweet delig
+ hts with horrifying results.\n\nStarring: Ari Millen\, Charlie Zeltzer\, S
+ hiloh O’Reilly\, Kiori Mirza Waldman\, Sarah Abbott\, Benjamin Byron Davis
+ \n\nFilm release at WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co
+ .uk/truro/film/5626/ice-cream-man\n\nFilm details: https://evenwebb.github
+ .io/wtw-cinemas/films/ice-cream-man.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5626/ice-cream-man
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:d4ffc0218bf5d42d2641a8dea04d4b4605fbf804@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20260808
 DTEND;VALUE=DATE:20260809
 SUMMARY:André Rieu's 2026 Summer Concert: Viva Maastricht! @ WTW Truro
@@ -140,11 +135,11 @@ DESCRIPTION:André Rieu's 2026 Summer Concert: Viva Maastricht! (2h 55min)\n
  altzes to soul-stirring classics\, this landmark anniversary concert promi
  ses an evening of passion\, joy\, and togetherness. Be part of this histor
  ic celebration as the Vrijthof once again transforms into a breathtaking o
- pen-air ballroom — only in cinemas this summer.\n\nFilm release at WTW Cin
- emas Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film/5551/andr-ri
- eus-2026-summer-concert-viva-maastricht\n\nFilm details: https://evenwebb.
- github.io/wtw-cinemas/films/andr-rieu-s-2026-summer-concert-viva-maastrich
- t.html
+ pen-air ballroom — only in cinemas this summer.\n\nStarring: André Rieu\n\
+ nFilm release at WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co.uk
+ /truro/film/5551/andr-rieus-2026-summer-concert-viva-maastricht\n\nFilm de
+ tails: https://evenwebb.github.io/wtw-cinemas/films/andr-rieu-s-2026-summe
+ r-concert-viva-maastricht.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5551/andr-rieus-2026-summer-concert
  -viva-maastricht
@@ -152,51 +147,57 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:236a8ce8f29562472d7d4e872fb8b90ff592cc98@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20260814
 DTEND;VALUE=DATE:20260815
 SUMMARY:The End of Oak Street @ WTW Truro
-DESCRIPTION:The End of Oak Street\n\nAfter a mysterious cosmic event rips O
- ak Street from suburbia and transports their neighborhood to someplace unk
- nown\, a family soon discovers that their very survival depends on them st
- icking together as they navigate their now unrecognizable surroundings.\n\
- nFilm release at WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co.uk
- /truro/film/5591/the-end-of-oak-street\n\nFilm details: https://evenwebb.g
- ithub.io/wtw-cinemas/films/the-end-of-oak-street.html
+DESCRIPTION:The End of Oak Street (1h 40min)\nScience Fiction\, Mystery\, T
+ hriller\n\nAfter a mysterious cosmic event rips Oak Street from suburbia a
+ nd transports their neighborhood to someplace unknown\, the Platt family s
+ oon discovers that their very survival depends on them sticking together a
+ s they navigate their now unrecognizable surroundings.\n\nStarring: Anne H
+ athaway\, Ewan McGregor\, Christian Convery\, Maisy Stella\, Jordan Alexa 
+ Davis\, P.J. Byrne\n\nFilm release at WTW Cinemas Truro\nBook tickets: htt
+ ps://wtwcinemas.co.uk/truro/film/5591/the-end-of-oak-street\n\nFilm detail
+ s: https://evenwebb.github.io/wtw-cinemas/films/the-end-of-oak-street.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5591/the-end-of-oak-street
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:832b578fde2742d13ee88c7b1621210a0553e895@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20260814
 DTEND;VALUE=DATE:20260815
 SUMMARY:Sunny Dancer @ WTW Truro
-DESCRIPTION:Sunny Dancer (1h 46min)\n\nIvy is a teenager in remission from 
- cancer\, whose mum and dad insist she attend Children Run Free Camp\, a su
- mmer retreat for young adults affected by cancer. However\, as Ivy is relu
- ctantly dragged through camp experience\, she discovers new feelings with 
- new friends.\n\nFilm release at WTW Cinemas Truro\nBook tickets: https://w
- twcinemas.co.uk/truro/film/5632/sunny-dancer\n\nFilm details: https://even
- webb.github.io/wtw-cinemas/films/sunny-dancer.html
+DESCRIPTION:Sunny Dancer (1h 46min)\nDrama\, Comedy\n\nIvy is a teenager in
+  remission from cancer\, whose mum and dad insist she attend Children Run 
+ Free Camp\, a summer retreat for young adults affected by cancer. However\
+ , as Ivy is reluctantly dragged through camp experience\, she discovers ne
+ w feelings with new friends.\n\nStarring: Bella Ramsey\, Daniel Quinn-Toye
+ \, Ruby Stokes\, Earl Cave\, Conrad Khan\, Jasmine Elcock\n\nFilm release 
+ at WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film/56
+ 32/sunny-dancer\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/fi
+ lms/sunny-dancer.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5632/sunny-dancer
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:a7d66b4e32866a877d749bc0171c8a2d8e732f9c@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20260828
 DTEND;VALUE=DATE:20260829
 SUMMARY:Kiki's Delivery Service - Anime Season @ WTW Truro
-DESCRIPTION:Kiki's Delivery Service - Anime Season (1h 44min)\n\nA young wi
- tch\, on her mandatory year of independent life\, finds fitting into a new
-  community difficult while she supports herself by running an air courier 
- service.\n\nFilm release at WTW Cinemas Truro\nBook tickets: https://wtwci
- nemas.co.uk/truro/film/5623/kikis-delivery-service-anime-season-with-subti
- tles\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/kiki-s-
- delivery-service-anime-season.html
+DESCRIPTION:Kiki's Delivery Service - Anime Season (1h 43min)\n★★★★☆\nAnima
+ tion\, Family\, Fantasy\n\nA young witch\, on her mandatory year of indepe
+ ndent life\, finds fitting into a new community difficult while she suppor
+ ts herself by running an air courier service.\n\nStarring: Minami Takayama
+ \, Rei Sakuma\, Kappei Yamaguchi\, Keiko Toda\, Mieko Nobusawa\, Koichi Mi
+ ura\n\nFilm release at WTW Cinemas Truro\nBook tickets: https://wtwcinemas
+ .co.uk/truro/film/5623/kikis-delivery-service-anime-season-with-subtitles\
+ n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/kiki-s-deliv
+ ery-service-anime-season.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5623/kikis-delivery-service-anime-s
  eason-with-subtitles
@@ -204,60 +205,68 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:98d98a66dcb78c4c562c79bc0a61297def533b52@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20260903
 DTEND;VALUE=DATE:20260904
 SUMMARY:La Traviata on Sydney Harbour @ WTW Truro
-DESCRIPTION:La Traviata on Sydney Harbour (2h 25min)\n\nVerdi's hugely popu
- lar La Traviata returns to the Sydney Harbour water stage featuring a brea
- th-taking soaring 9 metre high\, 3.5 ton chandelier covered in 10\,000 shi
- mmering Swarovski crystals. This glamorous production was captured on loca
- tion on Sydney Harbour in 2021 in front of a sold out audience. La Traviat
- a features timeless romantic arias\, lively choreography\, beautiful costu
- mes and spectacular fireworks.\n\nFilm release at WTW Cinemas Truro\nBook 
- tickets: https://wtwcinemas.co.uk/truro/film/5594/la-traviata-on-sydney-ha
- rbour\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/la-tra
- viata-on-sydney-harbour.html
+DESCRIPTION:La Traviata on Sydney Harbour (2h 25min)\n\nDirector Constantin
+ e Costi helms Verdi’s tragic masterpiece against the stunning backdrop of 
+ Sydney Harbour\, starring Stacey Alleaume as the doomed courtesan Violetta
+  alongside dashing tenor Rame Lahaj as Alfredo.  Brian Thomson’s vibrant s
+ et design features a showstopping Swarovski crystal chandelier suspended o
+ ver a vast stage\, perfectly evoking a whirlwind world of glamorous Parisi
+ an parties. Australian-Mauritian soprano Stacey Alleaume delivers a magnet
+ ic performance as Violetta\, sharing an intense chemistry with Kosovo-born
+  tenor Rame Lahaj as her passionate lover\, Alfredo.  Conductor Brian Cast
+ les-Onion expertly guides the orchestra through the effervescent drinking 
+ song ‘Brindisi’ and the soaring emotional heights of ‘Sempre Libera’\, mak
+ ing this a truly unforgettable evening under the stars.\n\nStarring: Stace
+ y Alleaume\, Rame Lahaj\n\nFilm release at WTW Cinemas Truro\nBook tickets
+ : https://wtwcinemas.co.uk/truro/film/5594/la-traviata-on-sydney-harbour\n
+ \nFilm details: https://evenwebb.github.io/wtw-cinemas/films/la-traviata-o
+ n-sydney-harbour.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5594/la-traviata-on-sydney-harbour
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:2ab87c0dbc9e2324afaed3c9b9744f9b10724ded@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20260909
 DTEND;VALUE=DATE:20260910
 SUMMARY:Pressure @ WTW Truro
-DESCRIPTION:Pressure (1h 40min)\n\nIn the tense 72 hours before D-Day\, and
-  the fate of the free world hanging in the balance\, General Dwight D. Eis
- enhower and Captain James Stagg face an impossible choice—launch the large
- st and most dangerous seaborne invasion in history or risk losing the war 
- altogether.\n\nFilm release at WTW Cinemas Truro\nBook tickets: https://wt
- wcinemas.co.uk/truro/film/5580/pressure\n\nFilm details: https://evenwebb.
- github.io/wtw-cinemas/films/pressure.html
+DESCRIPTION:Pressure (1h 41min)\n★★★★☆\nThriller\, History\, War\n\nIn the 
+ tense 72 hours before D-Day\, and the fate of the free world hanging in th
+ e balance\, General Dwight D. Eisenhower and Captain James Stagg face an i
+ mpossible choice—launch the largest and most dangerous seaborne invasion i
+ n history or risk losing the war altogether.\n\nStarring: Andrew Scott\, B
+ rendan Fraser\, Kerry Condon\, Chris Messina\, Damian Lewis\, Tamsin Topol
+ ski\n\nFilm release at WTW Cinemas Truro\nBook tickets: https://wtwcinemas
+ .co.uk/truro/film/5580/pressure\n\nFilm details: https://evenwebb.github.i
+ o/wtw-cinemas/films/pressure.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5580/pressure
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:a524958bc591972538afa4b734df0a10e9b33c61@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20260915
 DTEND;VALUE=DATE:20260916
 SUMMARY:James McNeill Whistler - Exhibition On Screen @ WTW Truro
-DESCRIPTION:James McNeill Whistler - Exhibition On Screen (1h 30min)\n\nTat
- e Britain is holding the first major retrospective of Whistler in three de
- cades (exhibition dates: 21 May- 27 September). This blockbuster exhibitio
- n promises to reawaken the world to just how important Whistler is to art 
- history\, uniting world-famous masterpieces with rarely seen works. Exhibi
- tion on Screen will bring these stunning works and the incredible story be
- hind them to cinemas around the world while the exhibition is still runnin
- g\, bringing this truly global artist to a global audience. This will be a
- n unmissable chance to get to know this visually spectacular artist and th
- e influence he has had on those who followed.\n\nFilm release at WTW Cinem
- as Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film/5548/james-mcn
- eill-whistler-exhibition-on-screen\n\nFilm details: https://evenwebb.githu
- b.io/wtw-cinemas/films/james-mcneill-whistler-exhibition-on-screen.html
+DESCRIPTION:James McNeill Whistler - Exhibition On Screen (1h 30min)\nDocum
+ entary\n\nTate Britain is now holding the first major retrospective of Whi
+ stler in three decades. This blockbuster exhibition promises to reawaken t
+ he world to just how important Whistler is to art history\, uniting world-
+ famous masterpieces with rarely seen works. Exhibition on Screen will brin
+ g these stunning works and the incredible story behind them to cinemas aro
+ und the world while the exhibition is still running\, bringing this truly 
+ global artist to a global audience. This will be an unmissable chance to g
+ et to know this visually spectacular artist and the influence he has had o
+ n those who followed.\n\nFilm release at WTW Cinemas Truro\nBook tickets: 
+ https://wtwcinemas.co.uk/truro/film/5548/james-mcneill-whistler-exhibition
+ -on-screen\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/j
+ ames-mcneill-whistler-exhibition-on-screen.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5548/james-mcneill-whistler-exhibit
  ion-on-screen
@@ -265,20 +274,19 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ca72008b619122d694186566dcf9f6e727424fd6@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
 SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom @ WTW Truro
-DESCRIPTION:Shaun the Sheep: The Beast of Mossy Bottom\n\nThe residents of 
- Mossy Bottom Farm looking forward to Halloween – until the clumsy Farmer t
- rashes the flock's beloved pumpkin patch! When Shaun turns mad scientist t
- o fix the problem\, things rapidly spiral out of control. With the Farmer 
- missing and a wild beast roaming the woods of Mossingham\, all the ingredi
- ents are in place for a monstrously fun family adventure.\n\nFilm release 
- at WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film/55
- 81/shaun-the-sheep-the-beast-of-mossy-bottom\n\nFilm details: https://even
- webb.github.io/wtw-cinemas/films/shaun-the-sheep-the-beast-of-mossy-bottom
- .html
+DESCRIPTION:Shaun the Sheep: The Beast of Mossy Bottom\nAnimation\, Comedy\
+ , Adventure\, Science Fiction\, Family\n\nOn Halloween Eve at Mossy Bottom
+  Farm\, excitement turns to dismay when the clumsy Farmer ruins the pumpki
+ n patch. Shaun tries fixing it with science experiments\, but things go wr
+ ong when a wild beast appears in the woods.\n\nStarring: Justin Fletcher\,
+  John Sparkes\, Kate Harbour\n\nFilm release at WTW Cinemas Truro\nBook ti
+ ckets: https://wtwcinemas.co.uk/truro/film/5581/shaun-the-sheep-the-beast-
+ of-mossy-bottom\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/fi
+ lms/shaun-the-sheep-the-beast-of-mossy-bottom.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5581/shaun-the-sheep-the-beast-of-m
  ossy-bottom
@@ -286,22 +294,25 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:152788c567dee23f0956e4f03ba2ead00b714bb5@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
 SUMMARY:National Theatre Live: The Misanthrope @ WTW Truro
-DESCRIPTION:National Theatre Live: The Misanthrope (2h 30min)\n\nAward-winn
- er Sandra Oh (Killing Eve) plays the title role in this razor-sharp reimag
- ining of Molière classic dark comedy.\nTelling the truth isn't always tha
- t simple. Alice\, a brilliant novelist\, despises the carefully constructe
- d lies of modern society. But the more she challenges those around her\, t
- he fiercer the backlash becomes. Soon\, she must confront the price of spe
- aking her truth in a world that would rather silence her.\nFilmed live on
-  stage at the National Theatre\, Indhu Rubasingham directs Martin Crimp's 
- (Cyrano de Bergerac) highly anticipated play.\n\nFilm release at WTW Cinem
- as Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film/5599/national-
- theatre-live-the-misanthrope\n\nFilm details: https://evenwebb.github.io/w
- tw-cinemas/films/national-theatre-live-the-misanthrope.html
+DESCRIPTION:National Theatre Live: The Misanthrope (2h 30min)\nDrama\, Come
+ dy\n\nAlice\, a brilliant novelist\, despises the hollow contemporary mant
+ ras of kindness and respect. But the bolder she becomes in speaking out\, 
+ the more colleagues avoid her\, and the more her personal relationships be
+ gin to fracture. As she challenges fashionable ideas and lends her voice t
+ o causes others are afraid to touch\, she faces intense criticism and back
+ lash. Alice will soon learn the price she must pay as an artist and as a w
+ oman for daring to speak her mind. Award-winner Sandra Oh is the Misanthro
+ pe in Martin Crimp's cutting new version of Molière's dark comedy\, direct
+ ed by National Theatre Director Indhu Rubasingham.\n\nStarring: Sandra Oh\
+ , Paul Chahidi\, Abigail Cruttenden\, Imogen Elliott\, Rina Fatania\, Fred
+ die MacBruce\n\nFilm release at WTW Cinemas Truro\nBook tickets: https://w
+ twcinemas.co.uk/truro/film/5599/national-theatre-live-the-misanthrope\n\nF
+ ilm details: https://evenwebb.github.io/wtw-cinemas/films/national-theatre
+ -live-the-misanthrope.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5599/national-theatre-live-the-misa
  nthrope
@@ -309,57 +320,56 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:6d383612fb7dbfaafa912804f938b0c7dcfd6cab@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
 SUMMARY:Digger @ WTW Truro
-DESCRIPTION:Digger (1h 46min)\n\nThe most powerful man in the world embarks
-  on a frantic mission to prove he is humanity's saviour before the disaste
- r he's unleashed destroys everything.\n\nFilm release at WTW Cinemas Truro
- \nBook tickets: https://wtwcinemas.co.uk/truro/film/5583/digger\n\nFilm de
- tails: https://evenwebb.github.io/wtw-cinemas/films/digger.html
+DESCRIPTION:Digger (1h 46min)\nDrama\, Comedy\n\nThe most powerful man in t
+ he world embarks on a frantic mission to prove he is humanity's savior bef
+ ore the disaster he's unleashed destroys everything.\n\nStarring: Tom Crui
+ se\, Riz Ahmed\, John Goodman\, Sandra Hüller\, Michael Stuhlbarg\, Jesse 
+ Plemons\n\nFilm release at WTW Cinemas Truro\nBook tickets: https://wtwcin
+ emas.co.uk/truro/film/5583/digger\n\nFilm details: https://evenwebb.github
+ .io/wtw-cinemas/films/digger.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5583/digger
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:391d97cb254857a4b4e5294af7465ae168ffae1d@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Street Fighter @ WTW Truro
-DESCRIPTION:Street Fighter\n\nIn 1993\, estranged Street Fighters Ryu and K
- en Masters are thrown back into combat when the mysterious Chun-Li recruit
- s them for the next World Warrior Tournament: a brutal clash of fists\, fa
- te\, and fury. But behind this battle royale lies a deadly conspiracy that
-  forces them to face off against each other and the demons of their past. 
- And if they don't\, it's GAME OVER!\n\nFilm release at WTW Cinemas Truro\n
- Book tickets: https://wtwcinemas.co.uk/truro/film/5582/street-fighter\n\nF
- ilm details: https://evenwebb.github.io/wtw-cinemas/films/street-fighter.h
- tml
+DESCRIPTION:Street Fighter (2h 5min)\nAction\, Fantasy\n\nIn 1993\, estrang
+ ed Street Fighters Ryu and Ken Masters are thrown back into combat when th
+ e mysterious Chun-Li recruits them for the next World Warrior Tournament: 
+ a brutal clash of fists\, fate\, and fury. But behind this battle royale l
+ ies a deadly conspiracy that forces them to face off against each other an
+ d the demons of their past. And if they don't\, it's GAME OVER!\n\nStarrin
+ g: Noah Centineo\, Andrew Koji\, Callina Liang\, Joe Anoa'i\, David Dastma
+ lchian\, Cody Rhodes\n\nFilm release at WTW Cinemas Truro\nBook tickets: h
+ ttps://wtwcinemas.co.uk/truro/film/5582/street-fighter\n\nFilm details: ht
+ tps://evenwebb.github.io/wtw-cinemas/films/street-fighter.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5582/street-fighter
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b1498524f818c8bafba99ba7683c151cbed1f4ce@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Macbeth - Royal Ballet & Opera 26-27 Season @ WTW Truro
-DESCRIPTION:Macbeth - Royal Ballet & Opera 26-27 Season (3h 30min)\n\nTwo o
- f opera's most extraordinary artists return to The Met: Live in HD for Ver
- di's thrilling take on the immortal Shakespearean tale of the scheming cou
- ple determined to seize power at any cost.\nBaritone Quinn Kelsey is the 
- Scottish king haunted by the ghosts of his murderous ascent to the throne\
- , opposite soprano Lise Davidsen as the power-mad Lady Macbeth\, whose rui
- nous ambition damns them both. Met Music Director Yannick Nézet-Séguin tak
- es the podium for a penetrating production by Louisa Proske. Rounding out 
- the all-star cast are tenor Freddie De Tommaso as Macduff and bass-bariton
- e Ryan Speedo Green as Banquo.\n\nFilm release at WTW Cinemas Truro\nBook 
- tickets: https://wtwcinemas.co.uk/truro/film/5555/macbeth-royal-ballet-ope
- ra-2627-season\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/fil
- ms/macbeth-royal-ballet-opera-26-27-season.html
+DESCRIPTION:Macbeth - Royal Ballet & Opera 26-27 Season (1h 53min)\n★★★☆☆\n
+ Drama\, War\n\nFeature film adaptation of Shakespeare's Scottish play abou
+ t General Macbeth whose ambitious wife urges him to use wicked means in or
+ der to gain power of the throne over the sitting king\, Duncan.\n\nStarrin
+ g: Michael Fassbender\, Marion Cotillard\, Paddy Considine\, Sean Harris\,
+  Jack Reynor\, Elizabeth Debicki\n\nFilm release at WTW Cinemas Truro\nBoo
+ k tickets: https://wtwcinemas.co.uk/truro/film/5555/macbeth-royal-ballet-o
+ pera-2627-season\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/f
+ ilms/macbeth-royal-ballet-opera-26-27-season.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5555/macbeth-royal-ballet-opera-262
  7-season
@@ -367,33 +377,25 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0a6524d6a73fa9e9108f7932b0759deb406379c3@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Fallen Angels by Noël Coward @ WTW Truro
-DESCRIPTION:Fallen Angels by Noël Coward (1h 50min)\n\nSparkling\, dizzying
- \, and deliciously potent\, Fallen Angels\, Noël Coward's champagne-fresh 
- comedy of bad manners\, shocked and delighted audiences at its 1925 premie
- re. Two upper-class wives\, their husbands away for the day\, share a few 
- toasts to their pre-marital dalliances-with the same man\, who just may be
-  en route from France to visit. Old rivalries and past scandals bubble to 
- the surface in this intoxicating romp from one of theatre's comedy masters
- .\nStarring Golden Globe-winner Rose Byrne (If I Had Legs I'd Kick You) a
- nd Tony Award winner Kelli O'Hara (The King and I)\, with Tracee Chimo\, M
- ark Consuelos (making his Broadway debut)\, Christopher Fitzgerald and Aas
- if Mandvi\, this new Roundabout Theatre and Tony Award-winning production 
- of 'pure escapist fun' (The New York Times) was filmed live on stage at Br
- oadway's Todd Haimes Theatre and now comes to the big screen.\n\nFilm rele
- ase at WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co.uk/truro/fil
- m/5635/fallen-angels-by-nol-coward\n\nFilm details: https://evenwebb.githu
- b.io/wtw-cinemas/films/fallen-angels-by-no-l-coward.html
+DESCRIPTION:Fallen Angels by Noël Coward (1h 38min)\n★★★★☆\nAction\, Romanc
+ e\, Crime\n\nAn indifferent hitman\, his infatuated business partner and a
+ n ex-convict search for love and meaning as their lives cross paths in Hon
+ g Kong.\n\nStarring: Leon Lai Ming\, Michele Reis\, Takeshi Kaneshiro\, Ch
+ arlie Yeung Choi-Nei\, Karen Mok Man-Wai\, Chan Man-Lei\n\nFilm release at
+  WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film/5635
+ /fallen-angels-by-nol-coward\n\nFilm details: https://evenwebb.github.io/w
+ tw-cinemas/films/fallen-angels-by-no-l-coward.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5635/fallen-angels-by-nol-coward
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:359b0495186c19385a52ea785133db3aa3021ef3@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:Manon - Royal Ballet & Opera 26-27 Season @ WTW Truro
@@ -420,42 +422,44 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b0c0bc36e7c4f34228ea54d417daedf78d7e25bb@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Wild Horse Nine @ WTW Truro
-DESCRIPTION:Wild Horse Nine\n\nShortly before the 1973 Chilean coup\, CIA a
- gents Chris and Lee are dispatched from Santiago to Easter Island by their
-  bureau chief\, MJ. Amongst the Island's iconic statues\, and as the longt
- ime partners wrestle with their dark pasts and present conspiracies\, Chri
- s's newfound bond with a pair of rebellious students threatens to send eve
- ryone's trip to this remote paradise sideways.\n\nFilm release at WTW Cine
- mas Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film/5585/wild-hor
- se-nine\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/wild
- -horse-nine.html
+DESCRIPTION:Wild Horse Nine (1h 58min)\nComedy\, Crime\, Thriller\n\nShortl
+ y before the 1973 Chilean coup\, CIA agents Chris and Lee are dispatched f
+ rom Santiago to Easter Island by their bureau chief\, MJ. Amongst the Isla
+ nd's iconic statues\, and as the longtime partners wrestle with their dark
+  pasts and present conspiracies\, Chris's newfound bond with a pair of reb
+ ellious students threatens to send everyone’s trip to this remote paradise
+  sideways.\n\nStarring: John Malkovich\, Sam Rockwell\, Steve Buscemi\, Pa
+ rker Posey\, Tom Waits\, Mariana di Girolamo\n\nFilm release at WTW Cinema
+ s Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film/5585/wild-horse
+ -nine\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/wild-h
+ orse-nine.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5585/wild-horse-nine
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:64ea87602f87d072d2d0318119ca3c7e94d96cff@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Carmen - Royal Ballet & Opera 26-27 Season @ WTW Truro
 DESCRIPTION:Carmen - Royal Ballet & Opera 26-27 Season (3h 35min)\n\nUnder 
  the oppressive heat of the Spanish sun\, the fiercely independent Carmen a
- ttracts the attention of Don José. She warns him not to fall in love with 
- her\, but his obsession knows no bounds. Damiano Michieletto's searing pro
- duction returns\, casting scorching light on the lust\, violence and destr
- uctive desire of Bizet's ever-popular opera. \nAn all-star cast brings th
- is white-hot drama to life\, with Ginger Costa-Jackson in the fiery title 
- role\, alongside Russell Thomas as the jealous and despairing Don José. Fo
- llowing his 2023 Royal Opera debut\, Sesto Quatrini returns to conduct Biz
- et's electrifying and sensual score.\n\nFilm release at WTW Cinemas Truro\
- nBook tickets: https://wtwcinemas.co.uk/truro/film/5557/carmen-royal-balle
- t-opera-2627-season\n\nFilm details: https://evenwebb.github.io/wtw-cinema
- s/films/carmen-royal-ballet-opera-26-27-season.html
+ ttracts the attention of Don José. She warns him not to fall in love with
+  her\, but his obsession knows no bounds. Damiano Michieletto’s searing p
+ roduction returns\, casting scorching light on the lust\, violence and de
+ structive desire of Bizet’s ever-popular opera. An all-star cast brings t
+ his white-hot drama to life\, with Ginger Costa-Jackson in the fiery title
+  role\, alongside Russell Thomas as the jealous and despairing Don José. 
+ Following his 2023 Royal Opera debut\, Sesto Quatrini returns to conduct 
+ Bizet’s electrifying and sensual score.\n\nFilm release at WTW Cinemas Tru
+ ro\nBook tickets: https://wtwcinemas.co.uk/truro/film/5557/carmen-royal-ba
+ llet-opera-2627-season\n\nFilm details: https://evenwebb.github.io/wtw-cin
+ emas/films/carmen-royal-ballet-opera-26-27-season.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5557/carmen-royal-ballet-opera-2627
  -season
@@ -463,47 +467,40 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:4bc87df5415ab0599f3ee753918b01e6684d5ea4@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:GIANT - The Play @ WTW Truro
-DESCRIPTION:GIANT - The Play (2h 16min)\n\nGIANT\, the 5-star critically ac
- claimed play starring John Lithgow (Killers of the Flower Moon\, The Crown
- ) as Roald Dahl\, comes to the big screen. Winner of 3 Olivier Awards® inc
- luding Best Play and a Tony Award® for Best Actor in a Play (John Lithgow)
- \, the production was filmed live in London's West End ahead of its sold-o
- ut Broadway run. The stellar cast includes Aya Cash (The Boys\, The Franch
- ise\, You're the Worst)\, Elliot Levey (Cold War\, Patriots\, Good) and Ra
- chael Stirling (The Divine Mrs S).\n\nA world-famous children's author u
- nder threat. A battle of wills in the wake of scandal. And one chance to m
- ake amends...It's the summer of 1983\, The Witches is about to hit the she
- lves and Roald Dahl is making last-minute edits. But the outcry at his rec
- ent\, explicitly antisemitic article won't die down. Across a single after
- noon at his family home\, and rocked by an unexpectedly explosive confront
- ation\, Dahl is forced to choose: make a public apology or risk his name a
- nd reputation.\n\nInspired by real events\, GIANT explores with dark hum
- our the difference between considered opinion and dangerous rhetoric offer
- ing a complicated portrait of a fiendishly charismatic icon.\n\nFilm relea
- se at WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film
- /5619/giant-the-play\n\nFilm details: https://evenwebb.github.io/wtw-cinem
- as/films/giant-the-play.html
+DESCRIPTION:GIANT - The Play (2h 16min)\nDrama\n\nSet in the summer of 1983
+ \, just before the release of The Witches\, Giant imagines a tense meeting
+  between Roald Dahl and his American and British publishers as they scramb
+ le to contain the fallout from his public denunciation of Israel and defen
+ ce of the Palestinians in a review of a book on the 1982 Lebanon war. Film
+ ed live onstage at the Harold Pinter Theatre in London's West End in 2025.
+ \n\nStarring: John Lithgow\, Elliot Levey\, Aya Cash\, Rachael Stirling\, 
+ Tessa Bonham Jones\, Richard Hope\n\nFilm release at WTW Cinemas Truro\nBo
+ ok tickets: https://wtwcinemas.co.uk/truro/film/5619/giant-the-play\n\nFil
+ m details: https://evenwebb.github.io/wtw-cinemas/films/giant-the-play.htm
+ l
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5619/giant-the-play
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:08edf96402bd4f0943e2245ee4aac1aacd2a5b98@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:The Hunger Games: Sunrise on the Reaping @ WTW Truro
-DESCRIPTION:The Hunger Games: Sunrise on the Reaping\n\nReturn to the world
-  of Panem 24 years before the events of The Hunger Games\, starting on the
-  morning of the reaping of the 50th Hunger Games\, also known as the Secon
- d Quarter Quell.\n\nFilm release at WTW Cinemas Truro\nBook tickets: https
- ://wtwcinemas.co.uk/truro/film/5586/the-hunger-games-sunrise-on-the-reapin
- g\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/the-hunger
- -games-sunrise-on-the-reaping.html
+DESCRIPTION:The Hunger Games: Sunrise on the Reaping\nScience Fiction\, Act
+ ion\, Adventure\n\nReturn to the world of Panem 24 years before the events
+  of The Hunger Games\, starting on the morning of the reaping of the 50th 
+ Hunger Games\, also known as the Second Quarter Quell.\n\nStarring: Joseph
+  Zada\, Mckenna Grace\, Jesse Plemons\, Elle Fanning\, Ralph Fiennes\, May
+ a Hawke\n\nFilm release at WTW Cinemas Truro\nBook tickets: https://wtwcin
+ emas.co.uk/truro/film/5586/the-hunger-games-sunrise-on-the-reaping\n\nFilm
+  details: https://evenwebb.github.io/wtw-cinemas/films/the-hunger-games-su
+ nrise-on-the-reaping.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5586/the-hunger-games-sunrise-on-th
  e-reaping
@@ -511,39 +508,39 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9ce114aba1b264edd66634d77589d3c71d0a1c17@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Focker-In-Law @ WTW Truro
-DESCRIPTION:Focker-In-Law\n\nHenry\, son of Greg and Pam Focker\, faces fam
- ily chaos when he decides to marry a strong-willed woman who appears to be
-  his complete mismatch.\n\nFilm release at WTW Cinemas Truro\nBook tickets
- : https://wtwcinemas.co.uk/truro/film/5587/fockerinlaw\n\nFilm details: ht
- tps://evenwebb.github.io/wtw-cinemas/films/focker-in-law.html
+DESCRIPTION:Focker-In-Law\nComedy\, Romance\n\nHenry\, son of Greg and Pam 
+ Focker\, faces family chaos when he decides to marry a strong-willed woman
+  who appears to be his complete mismatch.\n\nStarring: Ben Stiller\, Rober
+ t De Niro\, Ariana Grande\, Skyler Gisondo\, Owen Wilson\, Blythe Danner\n
+ \nFilm release at WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co.u
+ k/truro/film/5587/fockerinlaw\n\nFilm details: https://evenwebb.github.io/
+ wtw-cinemas/films/focker-in-law.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5587/fockerinlaw
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:727a776ef1c4a5b15f2ffe14793b66db96352bef@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:The Nutcracker - Royal Ballet & Opera 26-27 Season @ WTW Truro
 DESCRIPTION:The Nutcracker - Royal Ballet & Opera 26-27 Season (2h 20min)\n
- \nAt a cosy Christmas party\, young Clara meets the mysterious magician Dr
- osselmeyer\, who gives her a nutcracker doll. When the guests have departe
- d and the house is asleep\, Clara sneaks downstairs in search of the doll.
-  Instead\, she finds Drosselmeyer\, who whisks her away on a journey into 
- a whole world of enchantment: fantastical landscapes of flurried snow and 
- glittering confection where toys come alive and the magic never stops. \n
- Peter Wright's production of this festive family favourite sparkles to the
-  wondrous swell of Tchaikovsky's orchestral score\, alongside the glow and
-  grandeur of Julia Trevelyan Oman's period designs.\n\nFilm release at WTW
-  Cinemas Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film/5558/the
- -nutcracker-royal-ballet-opera-2627-season\n\nFilm details: https://evenwe
- bb.github.io/wtw-cinemas/films/the-nutcracker-royal-ballet-opera-26-27-sea
- son.html
+ \nThe magician Herr Drosselmeyer is on a quest to save his nephew. Hans-Pe
+ ter has been transformed into a Nutcracker doll by the wicked Queen of the
+  Mice\; the only way to break the spell is for the Nutcracker to defeat th
+ e Mouse King and find a girl to love and care for him. A flicker of hope c
+ omes to Drosselmeyer in the form of the young Clara\, whom Drosselmeyer me
+ ets at the Stahlbaum’s Christmas party. With a swish of Drosselmeyer’s cap
+ e and a little bit of magic\, a cosy festive gathering turns into a marvel
+ lous adventure.\n\nFilm release at WTW Cinemas Truro\nBook tickets: https:
+ //wtwcinemas.co.uk/truro/film/5558/the-nutcracker-royal-ballet-opera-2627-
+ season\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/the-n
+ utcracker-royal-ballet-opera-26-27-season.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5558/the-nutcracker-royal-ballet-op
  era-2627-season
@@ -551,90 +548,93 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:bd3c65fd99f7626e754695c0b177a9107cb1b34d@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:The Cat in the Hat @ WTW Truro
-DESCRIPTION:The Cat in the Hat\n\nDoing what he does best\, the Cat spreads
-  joy to kids in his hilarious\, signature\, and singularly irreverent way\
- , transporting them and audiences on a fantastical journey through a world
-  they've never seen before. Our hero takes on his toughest assignment yet 
- for the I.I.I.I. (Institute for the Institution of Imagination and Inspira
- tion\, LLC) to cheer up Gabby and Sebastian\, a pair of siblings strugglin
- g to move to a new town. Known for taking things too far\, this could be t
- his agent of chaos' last chance to prove himself...or lose his magical hat
- !\n\nFilm release at WTW Cinemas Truro\nBook tickets: https://wtwcinemas.c
- o.uk/truro/film/5584/the-cat-in-the-hat\n\nFilm details: https://evenwebb.
- github.io/wtw-cinemas/films/the-cat-in-the-hat.html
+DESCRIPTION:The Cat in the Hat (1h 22min)\n★★★☆☆\nFantasy\, Adventure\, Fam
+ ily\, Comedy\n\nDuring a rainy day\, and while their mother is out\, Conra
+ d and Sally\, and their pet fish\, are visited by the mischievous Cat in t
+ he Hat. Fun soon turns to mayhem\, and the siblings must figure out how to
+  rid themselves of the maniacal Cat.\n\nStarring: Mike Myers\, Dakota Fann
+ ing\, Spencer Breslin\, Kelly Preston\, Alec Baldwin\, Amy Hill\n\nFilm re
+ lease at WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co.uk/truro/f
+ ilm/5584/the-cat-in-the-hat\n\nFilm details: https://evenwebb.github.io/wt
+ w-cinemas/films/the-cat-in-the-hat.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5584/the-cat-in-the-hat
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:161a2195ec75d6fc0a8c8c2c809914343eda2fcf@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Avengers: Doomsday @ WTW Truro
-DESCRIPTION:Avengers: Doomsday\n\nBeloved heroes from three distinct univer
- ses are set on a deadly collision course and face an existential threat un
- like anything they've ever encountered.\n\nFilm release at WTW Cinemas Tru
- ro\nBook tickets: https://wtwcinemas.co.uk/truro/film/5588/avengers-doomsd
- ay\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/avengers-
- doomsday.html
+DESCRIPTION:Avengers: Doomsday (2h 45min)\nScience Fiction\, Action\, Adven
+ ture\n\nBeloved heroes from three distinct universes are set on a deadly c
+ ollision course and face an existential threat unlike anything they've eve
+ r encountered.\n\nStarring: Robert Downey Jr.\, Chris Evans\, Chris Hemswo
+ rth\, Pedro Pascal\, Paul Rudd\, Anthony Mackie\n\nFilm release at WTW Cin
+ emas Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film/5588/avenger
+ s-doomsday\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/a
+ vengers-doomsday.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5588/avengers-doomsday
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f1356a13c50941bd0a6bba7d2da4ededb664d64e@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Dune: Part Three @ WTW Truro
-DESCRIPTION:Dune: Part Three\n\nAs Emperor\, Paul Atreides grapples with th
- e consequences of his rise to power as political conspiracies and a galaxy
- -spanning holy war threaten the future he alone can foresee.\n\nFilm relea
- se at WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film
- /5589/dune-part-three\n\nFilm details: https://evenwebb.github.io/wtw-cine
- mas/films/dune-part-three.html
+DESCRIPTION:Dune: Part Three (2h 20min)\nScience Fiction\, Adventure\n\nEmp
+ eror Paul Atreides faces the fallout from his ascent to power as political
+  plots and a galaxy-wide holy war endanger the future only he can see.\n\n
+ Starring: Timothée Chalamet\, Zendaya\, Jason Momoa\, Florence Pugh\, Rebe
+ cca Ferguson\, Isaach de Bankolé\n\nFilm release at WTW Cinemas Truro\nBoo
+ k tickets: https://wtwcinemas.co.uk/truro/film/5589/dune-part-three\n\nFil
+ m details: https://evenwebb.github.io/wtw-cinemas/films/dune-part-three.ht
+ ml
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5589/dune-part-three
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:20d3ee12c72add5bbadd8869276908216019eddf@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Jumanji: Open World @ WTW Truro
-DESCRIPTION:Jumanji: Open World\n\nOur heroes have escaped the ever-changin
- g jungles of Jumanji before\, but this time the game comes to us - as Juma
- nji breaks free of its console\, unleashing its chaos into our world.\n\nF
- ilm release at WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co.uk/t
- ruro/film/5590/jumanji-open-world\n\nFilm details: https://evenwebb.github
- .io/wtw-cinemas/films/jumanji-open-world.html
+DESCRIPTION:Jumanji: Open World\nFantasy\, Adventure\, Comedy\n\nOur heroes
+  have escaped the ever-changing jungles of Jumanji before\, but this time 
+ the game comes to us - as Jumanji breaks free of its console\, unleashing 
+ its chaos into our world.\n\nStarring: Dwayne Johnson\, Kevin Hart\, Jack 
+ Black\, Karen Gillan\, Awkwafina\, Alex Wolff\n\nFilm release at WTW Cinem
+ as Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film/5590/jumanji-o
+ pen-world\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/ju
+ manji-open-world.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5590/jumanji-open-world
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:e593256b89ee65e907dcf0323751724107f58316@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20270119
 DTEND;VALUE=DATE:20270120
 SUMMARY:Renoir & Love - Exhibition On Screen @ WTW Truro
-DESCRIPTION:Renoir & Love - Exhibition On Screen (1h 30min)\n\nPierre-Augus
- te Renoir is one of the world's favourite artists\, a founding member of t
- he Impressionist movement and a constantly evolving artist. With exclusive
-  access to the National Gallery's new exciting show of the same name (3 Oc
- tober 2026 - 31 January 2027)\, Exhibition on Screen will bring Renoir's w
- orld class works to cinema audiences. Be transported back to a Parisian su
- mmer of love through the eyes of a true visionary. An unmissable opportuni
- ty to fall in love with Renoir this winter.\n\nFilm release at WTW Cinemas
-  Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film/5549/renoir-love
- -exhibition-on-screen\n\nFilm details: https://evenwebb.github.io/wtw-cine
- mas/films/renoir-love-exhibition-on-screen.html
+DESCRIPTION:Renoir & Love - Exhibition On Screen (52 min)\n★★★★☆\nDocumenta
+ ry\n\nPierre-Auguste Renoir (1841-1919) is one of the most popular impress
+ ionist painters\, famous for much-loved paintings such as “The Luncheon of
+  the Boating Party”. But critics have sometimes been less impressed by an 
+ artist who could be considered superficial. This documentary sheds light o
+ n Renoir’s paintings. Could they be more modern and sophisticated than we 
+ imagine?\n\nFilm release at WTW Cinemas Truro\nBook tickets: https://wtwci
+ nemas.co.uk/truro/film/5549/renoir-love-exhibition-on-screen\n\nFilm detai
+ ls: https://evenwebb.github.io/wtw-cinemas/films/renoir-love-exhibition-on
+ -screen.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5549/renoir-love-exhibition-on-scre
  en
@@ -642,28 +642,28 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:81068bb6566a42b37cee550b74b54646f1e9fbbf@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270127
 SUMMARY:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season @ WTW Tru
  ro
-DESCRIPTION:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season (3h 1
- 5min)\n\nPuccini's exhilarating drama of the Wild West returns in a new st
- aging by celebrated British director Richard Jones\, marking the company's
-  first new production of La Fanciulla del West in more than 30 years. Sopr
- ano Sondra Radvanovsky adds to her already remarkable Met repertoire\, mak
- ing her role debut as Minnie\, the tough tavern owner with a heart of gold
-  who finds love when she least expects it. Tenor SeokJong Baek is the dash
- ing bandit who rambles into the remote California mining town to steal her
-  heart\, opposite baritone Christopher Maltman as the lawman determined to
-  deliver rough justice—and win Minnie for himself. Maestro Keri-Lynn Wilso
- n takes the podium to conduct one of opera's most action-packed adventures
- \, live from the Met stage to cinemas worldwide. This production is part o
- f the Met's award-winning Live in HD series\, bringing opera to cinemas ac
- ross the globe.\n\nFilm release at WTW Cinemas Truro\nBook tickets: https:
- //wtwcinemas.co.uk/truro/film/5559/la-fanciulla-del-west-royal-ballet-oper
- a-2627-season\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/film
- s/la-fanciulla-del-west-royal-ballet-opera-26-27-season.html
+DESCRIPTION:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season (2h 2
+ 0min)\n★★★★★\n\nGiancarlo Del Monaco’s atmospheric production brings to co
+ lorful life a 19th-century mining camp during the California Gold Rush. At
+  the center of the action is the good-hearted bar owner Minnie\, sung by B
+ arbara Daniels\, who takes a motherly interest in the miners. Plácido Domi
+ ngo is Dick Johnson\, also known as the bandit Ramerrez\, who falls in lov
+ e with Minnie. Sherrill Milnes sings Jack Rance\, the sheriff who is not o
+ nly determined to capture Ramerrez but also wants Minnie for himself. Bloo
+ dshed\, a crooked poker game\, a snowstorm\, and a near lynching ensue bef
+ ore Minnie and her bandit-turned-lover can ride off to start a new life. L
+ eonard Slatkin conducts one of Puccini’s most colorful scores.\n\nStarring
+ : Plácido Domingo\, Barbara Daniels\, Sherrill Milnes\, Anthony Laciura\, 
+ Julien Robbins\, Charles Anthony\n\nFilm release at WTW Cinemas Truro\nBoo
+ k tickets: https://wtwcinemas.co.uk/truro/film/5559/la-fanciulla-del-west-
+ royal-ballet-opera-2627-season\n\nFilm details: https://evenwebb.github.io
+ /wtw-cinemas/films/la-fanciulla-del-west-royal-ballet-opera-26-27-season.h
+ tml
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5559/la-fanciulla-del-west-royal-ba
  llet-opera-2627-season
@@ -671,7 +671,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5a355359eb90afdf50230d9a220ee7597034e660@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 SUMMARY:Götterdämmerung - Royal Ballet & Opera 26-27 Season @ WTW Truro
@@ -699,7 +699,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:818a8655cbdc6a27fc37ef655d4205d23259582a@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20270223
 DTEND;VALUE=DATE:20270224
 SUMMARY:Così Fan Tutte - Royal Ballet & Opera 26-27 Season @ WTW Truro
@@ -728,31 +728,20 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b20decd0830713fb922fe47e26b79135c3fb67d4@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20270323
 DTEND;VALUE=DATE:20270324
 SUMMARY:Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Seaso
  n @ WTW Truro
 DESCRIPTION:Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 S
- eason (2h 50min)\n\nAt a garden party on a sunny afternoon\, Alice is surp
- rised to see her parents' friend Lewis Carroll transform into a white rabb
- it. When she follows him down a rabbit hole\, events become curiouser and 
- curiouser…As Alice journeys through Wonderland\, she encounters countless 
- strange creatures. She's swept off her feet by the charming Knave of Heart
- s\, who's on the run for stealing the tarts. Confusion piles upon confusio
- n. Then Alice wakes with a start. Was it all a daydream? \nChristopher Wh
- eeldon's Alice's Adventures in Wonderland burst onto the stage in 2011 in 
- an explosion of colour\, stage magic and inventive\, sophisticated choreog
- raphy. Joby Talbot's score combines contemporary soundworlds with sweeping
-  melodies that gesture to ballet scores of the 19th century. Bob Crowley's
-  wildly imaginative\, eye-popping designs draw on everything from puppetry
-  to projections to make Wonderland wonderfully real. The result shows The 
- Royal Ballet at its best\, bringing together world-class dance with enchan
- ting family entertainment and ingenious music and design.\n\nFilm release 
- at WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film/55
- 62/alices-adventures-in-wonderland-royal-ballet-opera-2627-season\n\nFilm 
- details: https://evenwebb.github.io/wtw-cinemas/films/alice-s-adventures-i
- n-wonderland-royal-ballet-opera-26-27-season.html
+ eason (2h 50min)\nMusic\n\nDistraught by her mother's refusal to allow her
+  to meet gardener Jack\, Victorian teenager Alice retreats into a book gif
+ ted to her by Lewls Carroll.\n\nStarring: Francesca Hayward\, William Brac
+ ewell\, James Hay\, Steven McRae\, Lauren Cuthbertson\n\nFilm release at W
+ TW Cinemas Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film/5562/a
+ lices-adventures-in-wonderland-royal-ballet-opera-2627-season\n\nFilm deta
+ ils: https://evenwebb.github.io/wtw-cinemas/films/alice-s-adventures-in-wo
+ nderland-royal-ballet-opera-26-27-season.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5562/alices-adventures-in-wonderlan
  d-royal-ballet-opera-2627-season
@@ -760,22 +749,17 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8b7441118300fd153816b47696db2d14f05735b5@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20270422
 DTEND;VALUE=DATE:20270423
 SUMMARY:Swan Lake - Royal Ballet & Opera 26-27 Season @ WTW Truro
-DESCRIPTION:Swan Lake - Royal Ballet & Opera 26-27 Season (3h 25min)\n\nPri
- ncess Odette is bound by a curse\, turned into a swan by the evil sorcerer
-  Von Rothbart. The spell can only be broken by a pledge of eternal love. W
- hen she meets Prince Siegfried\, he is immediately enamoured by her fragil
- e beauty and pledges to free her. But freedom is not promised for Odette a
- s Von Rothbart conspires to thwart the lovers' plans.\nLiam Scarlett's pr
- oduction for The Royal Ballet brings together Tchaikovsky's towering score
-  and John Macfarlane's picturesque designs to create an enduring ballet sp
- ectacle of love\, treachery and forgiveness.\n\nFilm release at WTW Cinema
- s Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film/5563/swan-lake-
- royal-ballet-opera-2627-season\n\nFilm details: https://evenwebb.github.io
- /wtw-cinemas/films/swan-lake-royal-ballet-opera-26-27-season.html
+DESCRIPTION:Swan Lake - Royal Ballet & Opera 26-27 Season (3h 30min)\n\nCla
+ ssical ballet's most powerful tale of love\, treachery and forgiveness ret
+ urns to the Royal Opera House stage\n\nStarring: Matthew Ball\, Yasmine Na
+ ghdi\n\nFilm release at WTW Cinemas Truro\nBook tickets: https://wtwcinema
+ s.co.uk/truro/film/5563/swan-lake-royal-ballet-opera-2627-season\n\nFilm d
+ etails: https://evenwebb.github.io/wtw-cinemas/films/swan-lake-royal-balle
+ t-opera-26-27-season.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5563/swan-lake-royal-ballet-opera-2
  627-season
@@ -783,23 +767,22 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:62ad9a3e4ae7f83555ab0fe3c1eae7ef83f86d7b@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20270505
 DTEND;VALUE=DATE:20270506
 SUMMARY:Tosca - Royal Ballet & Opera 26-27 Season @ WTW Truro
-DESCRIPTION:Tosca - Royal Ballet & Opera 26-27 Season (3h 15min)\n\nFloria 
- Tosca and Mario Cavaradossi live for each other and for their art. But whe
- n Cavaradossi helps an escaped prisoner\, the lovers make a deadly enemy i
- n the form of Baron Scarpia\, Chief of Police. At the mercy of Scarpia's t
- wisted desires\, Tosca is forced to make a horrific bargain: sleeping with
-  the man she hates\, in order to save the man she loves. Can she find a wa
- y out?\nOliver Mears's acclaimed production returns\, setting Puccini's o
- peratic thriller in a contemporary\, war-torn Rome. Daniel Oren conducts A
- leksandra Kurzak\, who returns to the title role\, joined by Saimir Pirgu 
- as Cavaradossi and Christopher Maltman as Baron Scarpia.\n\nFilm release a
- t WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film/556
- 4/tosca-royal-ballet-opera-2627-season\n\nFilm details: https://evenwebb.g
- ithub.io/wtw-cinemas/films/tosca-royal-ballet-opera-26-27-season.html
+DESCRIPTION:Tosca - Royal Ballet & Opera 26-27 Season (3h 30min)\nMusic\n\n
+ In war-torn Rome\, Floria Tosca and Mario Cavaradossi live for each other 
+ and for their art. But when Cavaradossi helps an escaped prisoner\, the lo
+ vers make a deadly enemy in the form of Baron Scarpia\, Chief of Police. A
+ t the mercy of Scarpia’s twisted desires\, Tosca is forced to make a horri
+ fic bargain: sleeping with the man she hates in order to save the man she 
+ loves. Can she find a way out?\n\nStarring: Anna Netrebko\, Freddie De Tom
+ maso\, Gerald Finley\, Carlo Bosi\, Ossian Huskinson\, Alessandro Corbelli
+ \n\nFilm release at WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co
+ .uk/truro/film/5564/tosca-royal-ballet-opera-2627-season\n\nFilm details: 
+ https://evenwebb.github.io/wtw-cinemas/films/tosca-royal-ballet-opera-26-2
+ 7-season.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5564/tosca-royal-ballet-opera-2627-
  season
@@ -807,43 +790,34 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:854f1fd21d92ec61dda7dc121fb7a635cadddd34@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20270511
 DTEND;VALUE=DATE:20270512
 SUMMARY:Monet - Exhibition On Screen @ WTW Truro
-DESCRIPTION:Monet - Exhibition On Screen (1h 30min)\n\nTo celebrate Tate Br
- itain's blockbuster Monet and Time exhibition\, Exhibition on Screen is de
- lighted to bring the iconic story of Claude Monet to cinema screens in May
-  2027. Details are still to be fully confirmed for this title\, but this w
- ill be an unmissable opportunity for audiences to be dazzled by Monet's sp
- ectacular and revolutionary use of light and colour and marvel at one of t
- he world's favourite artists.\n\nFilm release at WTW Cinemas Truro\nBook t
- ickets: https://wtwcinemas.co.uk/truro/film/5550/monet-exhibition-on-scree
- n\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/monet-exhi
- bition-on-screen.html
+DESCRIPTION:Monet - Exhibition On Screen (2 min)\n\nPart of paraconsistent 
+ sequence series.\n\nFilm release at WTW Cinemas Truro\nBook tickets: https
+ ://wtwcinemas.co.uk/truro/film/5550/monet-exhibition-on-screen\n\nFilm det
+ ails: https://evenwebb.github.io/wtw-cinemas/films/monet-exhibition-on-scr
+ een.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5550/monet-exhibition-on-screen
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:93a18ed5faecc85ba95f74e974c66c8f8d8812b8@wtw-cinemas
-DTSTAMP:20260731T092430Z
+DTSTAMP:20260731T093141Z
 DTSTART;VALUE=DATE:20270525
 DTEND;VALUE=DATE:20270526
 SUMMARY:Romeo And Juliet - Royal Ballet & Opera 26-27 Season @ WTW Truro
-DESCRIPTION:Romeo And Juliet - Royal Ballet & Opera 26-27 Season (2h 50min)
- \n\nThe Capulets and Montagues are sworn enemies. Yet it is love at first 
- sight for Romeo Montague and Juliet Capulet when they meet each other at t
- he Capulet ball\, into which Romeo has snuck. The two fall in love and the
- y profess their devotion to each other at Juliet's balcony. They secretly 
- get married.   \nThe stakes are raised for the young couple when Romeo av
- enges the death of his friend Mercutio who has been killed by Tybalt\, Jul
- iet's cousin. For this\, Romeo is exiled from Verona. Meanwhile\, Juliet's
-  parents are forcing her to marry another suitor. In order to be together\
- , Romeo and Juliet must risk it all.\n\nFilm release at WTW Cinemas Truro\
- nBook tickets: https://wtwcinemas.co.uk/truro/film/5565/romeo-and-juliet-r
- oyal-ballet-opera-2627-season\n\nFilm details: https://evenwebb.github.io/
- wtw-cinemas/films/romeo-and-juliet-royal-ballet-opera-26-27-season.html
+DESCRIPTION:Romeo And Juliet - Royal Ballet & Opera 26-27 Season (3h 30min)
+ \n★★★☆☆\n\nThe Capulets and Montagues are sworn enemies. Yet it is love at
+  first sight for Romeo Montague and Juliet Capulet when they meet each oth
+ er at the Capulet ball\, into which Romeo has snuck. The two fall in love 
+ and they profess their devotion to each other at Juliet’s balcony. They se
+ cretly get married.\n\nFilm release at WTW Cinemas Truro\nBook tickets: ht
+ tps://wtwcinemas.co.uk/truro/film/5565/romeo-and-juliet-royal-ballet-opera
+ -2627-season\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films
+ /romeo-and-juliet-royal-ballet-opera-26-27-season.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5565/romeo-and-juliet-royal-ballet-
  opera-2627-season
