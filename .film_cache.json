@@ -1150,5 +1150,69 @@
     "director": "Alan Parker",
     "title": "Pink Floyd: The Wall - Pat's Film Club",
     "cached_at": "2026-07-31T10:01:11.404793"
+  },
+  "https://wtwcinemas.co.uk/newquay/film/5638/coyote-vs-acme": {
+    "runtime": "103 min",
+    "cast": "Will Forte, Lana Condor, Tone Bell",
+    "synopsis": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
+    "director": "Dave Green",
+    "title": "Coyote vs. Acme",
+    "cached_at": "2026-07-31T11:02:18.142956"
+  },
+  "https://wtwcinemas.co.uk/truro/film/5638/coyote-vs-acme": {
+    "runtime": "103 min",
+    "cast": "Will Forte, Lana Condor, Tone Bell",
+    "synopsis": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
+    "director": "Dave Green",
+    "title": "Coyote vs. Acme",
+    "cached_at": "2026-07-31T11:02:18.315900"
+  },
+  "https://wtwcinemas.co.uk/st-austell/film/5638/coyote-vs-acme": {
+    "runtime": "103 min",
+    "cast": "Will Forte, Lana Condor, Tone Bell",
+    "synopsis": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
+    "director": "Dave Green",
+    "title": "Coyote vs. Acme",
+    "cached_at": "2026-07-31T11:02:18.437618"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5638/coyote-vs-acme": {
+    "runtime": "103 min",
+    "cast": "Will Forte, Lana Condor, Tone Bell",
+    "synopsis": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
+    "director": "Dave Green",
+    "title": "Coyote vs. Acme",
+    "cached_at": "2026-07-31T11:02:18.475921"
+  },
+  "https://wtwcinemas.co.uk/newquay/film/5637/insidious-out-of-the-further": {
+    "runtime": "106 min",
+    "cast": "Amelia Eve, Island Austin, Lin Shaye",
+    "synopsis": "Gemma, a young mother raising her daughter in the house she grew up in, discovers she can travel into The Further, where she possesses an ability to bring what lives there back to the real world.",
+    "director": "Jacob Chase",
+    "title": "Insidious: Out of the Further",
+    "cached_at": "2026-07-31T11:02:19.794719"
+  },
+  "https://wtwcinemas.co.uk/st-austell/film/5637/insidious-out-of-the-further": {
+    "runtime": "106 min",
+    "cast": "Amelia Eve, Island Austin, Lin Shaye",
+    "synopsis": "Gemma, a young mother raising her daughter in the house she grew up in, discovers she can travel into The Further, where she possesses an ability to bring what lives there back to the real world.",
+    "director": "Jacob Chase",
+    "title": "Insidious: Out of the Further",
+    "cached_at": "2026-07-31T11:02:20.146447"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5637/insidious-out-of-the-further": {
+    "runtime": "106 min",
+    "cast": "Amelia Eve, Island Austin, Lin Shaye",
+    "synopsis": "Gemma, a young mother raising her daughter in the house she grew up in, discovers she can travel into The Further, where she possesses an ability to bring what lives there back to the real world.",
+    "director": "Jacob Chase",
+    "title": "Insidious: Out of the Further",
+    "cached_at": "2026-07-31T11:02:20.231126"
+  },
+  "https://wtwcinemas.co.uk/truro/film/5637/insidious-out-of-the-further": {
+    "runtime": "106 min",
+    "cast": "Amelia Eve, Island Austin, Lin Shaye",
+    "synopsis": "Gemma, a young mother raising her daughter in the house she grew up in, discovers she can travel into The Further, where she possesses an ability to bring what lives there back to the real world.",
+    "director": "Jacob Chase",
+    "title": "Insidious: Out of the Further",
+    "cached_at": "2026-07-31T11:02:20.305427"
   }
 }

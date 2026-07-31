@@ -1189,33 +1189,35 @@ def _cert_span(rating: str) -> str:
 
 FILM_CSS = _SHARED_CSS + """
 body{position:relative;background:var(--bg)}
-.page{position:relative;z-index:1;max-width:860px;margin:0 auto;padding:1.5rem 1rem 4rem}
-@media(min-width:640px){.page{padding:2rem 2rem 5rem}}
-.back-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1.1rem;background:rgba(0,0,0,0.5);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.12);border-radius:100px;color:#fff;text-decoration:none;font-weight:500;font-size:0.85rem;position:absolute;top:1rem;left:1rem;z-index:10;transition:all var(--transition)}
+/* Backdrop — full-width, edge-to-edge at top */
+.film-backdrop{position:absolute;top:0;left:0;width:100%;height:420px;overflow:hidden;z-index:0}
+.film-backdrop .backdrop-bg{width:100%;height:100%;object-fit:cover;opacity:0.35}
+.film-backdrop-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,var(--bg) 95%)}
+.page{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:2rem 1rem 4rem}
+@media(min-width:640px){.page{padding:2.5rem 2rem 5rem}}
+.back-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1.1rem;background:rgba(0,0,0,0.45);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.1);border-radius:100px;color:#fff;text-decoration:none;font-weight:500;font-size:0.85rem;position:absolute;top:1rem;left:1rem;z-index:10;transition:all var(--transition)}
 @media(min-width:640px){.back-btn{top:1.5rem;left:2rem}}
-.back-btn:hover{background:rgba(0,0,0,0.7);border-color:rgba(255,255,255,0.25);color:#fff}
-/* Film hero banner */
-.film-hero{position:relative;width:100vw;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;overflow:hidden;background:var(--surface);margin-bottom:1.5rem}
-.film-hero .hero-bg{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:0.3;filter:blur(2px) brightness(0.5)}
-.film-hero .hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(10,10,18,0.2) 0%,var(--bg) 100%)}
-.film-hero .hero-content{position:relative;z-index:2;display:flex;gap:2rem;align-items:center;max-width:860px;margin:0 auto;padding:2.5rem 1rem}
-@media(max-width:600px){.film-hero .hero-content{flex-direction:column;align-items:center;text-align:center;gap:1.25rem;padding:2rem 1rem}}
-.hero-poster{flex-shrink:0;width:180px}
-@media(min-width:600px){.hero-poster{width:220px}}
-@media(min-width:768px){.hero-poster{width:250px}}
-.hero-poster img{width:100%;border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,0.7);display:block}
-.hero-info h1{font-size:clamp(1.3rem,3.5vw,1.8rem);font-weight:800;line-height:1.15;margin-bottom:0.6rem;color:#fff}
-.hero-info .meta{display:flex;flex-wrap:wrap;align-items:center;gap:0.4rem 0.9rem;font-size:0.88rem;color:rgba(255,255,255,0.75);margin-bottom:0}
-.hero-info .stars{color:var(--amber);letter-spacing:0.05em;font-size:0.9rem}
-.hero-info .genres{color:var(--purple);font-weight:500}
-.hero-info .rating-pill{background:rgba(34,211,238,0.15);color:var(--accent);padding:0.2rem 0.65rem;border-radius:100px;font-weight:600;font-size:0.82rem}
+.back-btn:hover{background:rgba(0,0,0,0.65);border-color:rgba(255,255,255,0.2);color:#fff}
+/* Film layout: poster left, details right */
+.film-layout{display:flex;gap:2rem;align-items:flex-start}
+@media(max-width:680px){.film-layout{flex-direction:column;align-items:center;text-align:center}}
+.film-poster{flex-shrink:0;width:250px;position:sticky;top:1.5rem}
+@media(max-width:680px){.film-poster{width:200px;position:static}}
+.film-poster img{width:100%;border-radius:14px;box-shadow:0 12px 45px rgba(0,0,0,0.6);display:block}
+.film-poster .no-poster{width:100%;aspect-ratio:2/3;background:var(--surface);border-radius:14px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);font-size:0.85rem;border:1px dashed var(--border)}
+.film-details{flex:1;min-width:0}
+.film-details h1{font-size:clamp(1.4rem,4vw,1.9rem);font-weight:800;line-height:1.15;margin-bottom:0.6rem;color:var(--text)}
+.film-details .meta{display:flex;flex-wrap:wrap;align-items:center;gap:0.4rem 0.9rem;margin-bottom:1rem;font-size:0.88rem;color:var(--text-muted)}
+.film-details .stars{color:var(--amber);letter-spacing:0.05em;font-size:0.9rem}
+.film-details .genres{color:var(--purple);font-weight:500}
+.film-details .rating-pill{background:var(--accent-dim);color:var(--accent);padding:0.2rem 0.65rem;border-radius:100px;font-weight:600;font-size:0.82rem}
 /* Action buttons row */
-.action-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0.75rem;margin-bottom:1.5rem;padding:0.75rem 1rem;background:var(--surface);border:1px solid var(--border);border-radius:12px}
-.action-right{display:flex;flex-wrap:wrap;gap:0.5rem}
-.act-btn{display:inline-flex;align-items:center;gap:0.35rem;padding:0.55rem 1rem;border-radius:100px;text-decoration:none;font-size:0.82rem;font-weight:600;transition:all var(--transition);white-space:nowrap}
+.action-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0.5rem;margin-bottom:1.25rem;padding:0.65rem 0.9rem;background:var(--surface);border:1px solid var(--border);border-radius:10px}
+.action-right{display:flex;flex-wrap:wrap;gap:0.4rem}
+.act-btn{display:inline-flex;align-items:center;gap:0.3rem;padding:0.5rem 0.85rem;border-radius:100px;text-decoration:none;font-size:0.8rem;font-weight:600;transition:all var(--transition);white-space:nowrap}
 .act-btn:hover{transform:translateY(-1px)}
-.act-cal{background:linear-gradient(135deg,var(--accent),#0891b2);color:#fff;box-shadow:0 2px 12px rgba(34,211,238,0.25)}
-.act-cal:hover{box-shadow:0 4px 20px rgba(34,211,238,0.4);color:#fff}
+.act-cal{background:linear-gradient(135deg,var(--accent),#0891b2);color:#fff;box-shadow:0 2px 10px rgba(34,211,238,0.2)}
+.act-cal:hover{box-shadow:0 4px 18px rgba(34,211,238,0.35);color:#fff}
 .act-imdb{background:#f5c518;color:#000}
 .act-imdb:hover{background:#e2b013}
 .act-rt{background:#fa320a;color:#fff}
@@ -1223,10 +1225,11 @@ body{position:relative;background:var(--bg)}
 .act-trakt{background:#6c3fd1;color:#fff}
 .act-trakt:hover{background:#5a34b0}
 /* Content sections */
-.synopsis{font-size:0.95rem;line-height:1.75;color:var(--text-muted);margin-bottom:1.5rem;padding:1.25rem;background:var(--surface);border-radius:12px;border:1px solid var(--border)}
-.crew{margin-bottom:1.25rem}
-.crew p{font-size:0.88rem;color:var(--text-muted);padding:0.55rem 0;border-bottom:1px solid var(--border)}
+.synopsis{font-size:0.95rem;line-height:1.75;color:var(--text-muted);margin-bottom:1rem;padding:1rem;background:var(--surface);border-radius:10px;border:1px solid var(--border)}
+.crew{margin-bottom:1rem}
+.crew p{font-size:0.88rem;color:var(--text-muted);padding:0.5rem 0;border-bottom:1px solid var(--border)}
 .crew p:last-child{border-bottom:none}
+.crew strong{color:var(--text);margin-right:0.5rem;font-weight:600}
 .crew strong{color:var(--text);margin-right:0.5rem;font-weight:600}
 .trailer-section{margin-bottom:2.5rem}
 .trailer-section h2{font-size:1.1rem;font-weight:700;margin-bottom:0.85rem;color:var(--accent)}
@@ -1373,30 +1376,12 @@ def build_film_page(
     poster_large = film_details.get("poster_large_url") or poster
     poster_large_src = f"../{poster_large}" if poster_large.startswith("posters/") else poster_large
 
-    # Header banner with backdrop + poster
+    # Backdrop — full-width behind the page
     backdrop_url = film_details.get("backdrop_url") or ""
-    banner_html = ""
-    if poster or backdrop_url:
-        banner_html_parts = ['<div class="film-hero">']
-        if backdrop_url:
-            banner_html_parts.append(f'  <img src="{_esc(backdrop_url)}" alt="" class="hero-bg" loading="lazy" decoding="async">')
-        banner_html_parts.append('  <div class="hero-overlay"></div>')
-        banner_html_parts.append('  <div class="hero-content">')
-        if poster:
-            banner_html_parts.append(f'    <div class="hero-poster"><img src="{_esc(poster_src)}" alt="{_esc(film_title)}" loading="lazy"></div>')
-        banner_html_parts.append('    <div class="hero-info">')
-        banner_html_parts.append(f'      <h1>{_esc(film_title)} {_cert_span(bbfc)}{scr_html}</h1>')
-        banner_html_parts.append(f'      <div class="meta">{"".join(meta_parts)}</div>')
-        banner_html_parts.append('    </div>')
-        banner_html_parts.append('  </div>')
-        banner_html_parts.append('</div>')
-        banner_html = "\n".join(banner_html_parts)
-
-    trailer_html = (
-        f'<div class="trailer-wrap"><iframe src="{_esc(embed_url)}" title="Trailer for {_esc(film_title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>'
-        if embed_url
-        else '<div class="trailer-wrap"><div class="no-trailer">No trailer available</div></div>'
-    )
+    backdrop_html = (
+        f'<div class="film-backdrop"><img src="{_esc(backdrop_url)}" alt="" class="backdrop-bg" loading="lazy" decoding="async"></div>\n'
+        f'<div class="film-backdrop-overlay"></div>\n'
+    ) if backdrop_url else ""
 
     # Action buttons row
     from urllib.parse import quote as _url_quote
@@ -1411,6 +1396,30 @@ def build_film_page(
     trakt_btn = f'<a href="https://trakt.tv/search?query={_esc(film_title)}" class="act-btn act-trakt" target="_blank" rel="noopener">Trakt</a>'
     ext_btns = f'<div class="action-right">{imdb_btn}{rt_btn}{trakt_btn}</div>'
     action_row = f'<div class="action-row">{gcal_html}{ext_btns}</div>'
+
+    # Poster column
+    poster_col = (
+        f'<div class="film-poster"><img src="{_esc(poster_src)}" alt="{_esc(film_title)}" loading="lazy"></div>'
+        if poster
+        else f'<div class="film-poster"><div class="no-poster">No poster available</div></div>'
+    )
+
+    # Info column: title, meta, action buttons, synopsis, crew
+    info_col = (
+        f'<div class="film-details">\n'
+        f'  <h1>{_esc(film_title)} {_cert_span(bbfc)}{scr_html}</h1>\n'
+        f'  <div class="meta">{"".join(meta_parts)}</div>\n'
+        f'  {action_row}\n'
+        f'  <div class="synopsis">{_esc(overview)}</div>\n'
+        f'  {crew_html}'
+        f'</div>'
+    )
+
+    trailer_html = (
+        f'<div class="trailer-wrap"><iframe src="{_esc(embed_url)}" title="Trailer for {_esc(film_title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>'
+        if embed_url
+        else '<div class="trailer-wrap"><div class="no-trailer">No trailer available</div></div>'
+    )
 
     # Build cinema showtime table - use whats-on showtimes if available, else coming-soon dates
     table_rows = []
@@ -1639,12 +1648,14 @@ def build_film_page(
         '  <link rel="stylesheet" href="../style.css">\n'
         '</head>\n<body>\n'
         '  <div class="bg-mesh" aria-hidden="true"></div>\n'
+        + backdrop_html +
         '  <a href="../" class="back-btn">← Back to all premieres</a>\n'
-        + banner_html +
         '  <div class="page">\n'
-        + action_row + '\n'
-        f'    <div class="synopsis">{_esc(overview)}</div>\n'
-        + crew_html + schema_block +
+        f'    <div class="film-layout">\n'
+        f'      {poster_col}\n'
+        f'      {info_col}\n'
+        f'    </div>\n'
+        + schema_block +
         f'    <div class="trailer-section">\n'
         f'      <h2>Trailer</h2>\n'
         f'      {trailer_html}\n'
