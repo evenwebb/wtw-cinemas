@@ -17,8 +17,8 @@ from zoneinfo import ZoneInfo
 
 # Import shared names from shared_constants.py (avoids circular import with cinema_scraper)
 from shared_constants import (  # noqa: E402
-    _tmdb_cache_key, BBFC_PATTERN, CERT_IMAGES, CERTS_DIR, CINEMA_ADDRESSES,
-    FINGERPRINT_FILE, HEALTH_MIN_CINEMAS, HEALTH_MIN_FILMS,
+    _tmdb_cache_key, BBFC_PATTERN, CERT_CDN_MAP, CERT_IMAGES, CERTS_DIR,
+    CINEMA_ADDRESSES, FINGERPRINT_FILE, HEALTH_MIN_CINEMAS, HEALTH_MIN_FILMS,
     ICAL_LINE_LENGTH, NOTIFICATIONS, NOTIFICATION_TIME,
     POSTERS_DIR, SKIP_TMDB_TERMS, WTW_BASE_URL, WTW_CERT_BASE,
     logger,
@@ -1101,20 +1101,19 @@ def _extract_bbfc(title: str) -> str:
 
 def _download_cert_images(session: Optional[requests.Session] = None) -> None:
     """Download BBFC cert images to docs/certs/ for local serving."""
-    if not WTW_CERT_BASE:
-        return  # WTW uses inline cert images, no remote download needed
     s = session or _session()
     Path(CERTS_DIR).mkdir(parents=True, exist_ok=True)
-    for rating, filename in CERT_IMAGES.items():
-        path = Path(CERTS_DIR) / filename
+    for rating, local_filename in CERT_IMAGES.items():
+        path = Path(CERTS_DIR) / local_filename
         if path.exists():
             continue
+        cdn_filename = CERT_CDN_MAP.get(local_filename, local_filename)
         try:
-            r = s.get(f"{WTW_CERT_BASE}/{filename}", headers={"Referer": WTW_BASE_URL + "/"}, timeout=10)
+            r = s.get(f"{WTW_CERT_BASE}/{cdn_filename}", headers={"Referer": WTW_BASE_URL + "/"}, timeout=10)
             r.raise_for_status()
             path.write_bytes(r.content)
         except Exception as e:
-            logger.warning("Cert download failed %s: %s", filename, e)
+            logger.warning("Cert download failed %s: %s", local_filename, e)
 
 
 def _download_poster(url: str, slug: str, session: Optional[requests.Session] = None) -> str:

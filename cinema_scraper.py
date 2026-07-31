@@ -373,7 +373,7 @@ def fetch_film_details(
     film_url: str, cache: Dict[str, dict], session: Optional[requests.Session] = None
 ) -> Dict[str, str]:
     """Fetch runtime, cast, synopsis from a film page. Uses cache when available."""
-    details: Dict[str, str] = {"runtime": "", "cast": "", "synopsis": "", "director": ""}
+    details: Dict[str, str] = {"runtime": "", "cast": "", "synopsis": "", "director": "", "title": ""}
     if not film_url:
         return details
 
@@ -390,6 +390,20 @@ def fetch_film_details(
         logger.info("Fetching film: %s", film_url)
         resp = fetch_with_retries(film_url, session=session)
         soup = BeautifulSoup(resp.text, "html.parser")
+
+        # Title: from <title> tag or <h1>
+        if soup.title:
+            title_text = soup.title.get_text(strip=True)
+            # Strip "Film Times and Tickets | WTW Cinemas" suffix
+            for sep in (" Film Times", " | WTW", " | The WTW"):
+                if sep in title_text:
+                    title_text = title_text.split(sep)[0].strip()
+            if title_text:
+                details["title"] = title_text
+        if not details.get("title"):
+            h1 = soup.select_one("h1")
+            if h1:
+                details["title"] = h1.get_text(strip=True)
 
         # Runtime: match "119 minutes" etc.
         for text in soup.stripped_strings:
@@ -442,13 +456,34 @@ def fetch_film_details(
     return details
 
 
+def _extract_title_from_slug(slug: str) -> str:
+    """Convert a URL slug to a readable title."""
+    if not slug:
+        return ""
+    # Hyphens to spaces, title case
+    title = slug.replace("-", " ").title()
+    # Fix common words
+    for word in ("The", "Of", "In", "On", "And", "At", "For", "To", "By", "A", "An", "Is", "It", "Or", "As", "Be", "No"):
+        title = title.replace(f" {word} ", f" {word.lower()} ")
+    # Fix first word lowercase
+    parts = title.split()
+    if parts and parts[0].lower() in ("the", "a", "an"):
+        pass  # Keep first word title case
+    return title.strip()
+
+
 def extract_films(
     url: str,
     cinema_name: str,
     cache: Dict[str, dict],
     session: Optional[requests.Session] = None,
 ) -> List[Tuple[date, str, str, str, Dict[str, str]]]:
-    """Scrape film listing from a cinema's coming-soon page."""
+    """Scrape film listing from a cinema's coming-soon page.
+
+    Current site structure (2026): div[class^='filmecatte'] cards with
+    film links containing slug-based titles. Release dates in sibling
+    .poster-film-content .running-time containers.
+    """
     logger.info("Scraping: %s (%s)", url, cinema_name)
     resp = fetch_with_retries(url, session=session)
     soup = BeautifulSoup(resp.text, "html.parser")
@@ -456,50 +491,91 @@ def extract_films(
     films: List[Tuple[date, str, str, str, Dict[str, str]]] = []
     seen: set = set()
 
-    for td in soup.find_all("div", class_="times"):
-        li = td.parent
-        if not li:
-            continue
+    film_cards = soup.select("div[class^='filmecatte']")
+    if not film_cards:
+        logger.warning("No film cards found on coming-soon page for %s", cinema_name)
+        return films
 
-        h2 = li.find("h2")
-        if not h2:
-            continue
-
-        raw_title = h2.get_text(strip=True)
-        # Extract BBFC from cert span (e.g., <span class="cert cert--12A">)
-        cert_span = li.select_one(".cert")
-        bbfc_rating = ""
-        if cert_span:
-            for cls in cert_span.get("class", []):
-                if cls.startswith("cert--"):
-                    bbfc_rating = cls.replace("cert--", "").upper()
-                    if bbfc_rating == "TBC":
-                        bbfc_rating = ""
-                    break
-        title = TITLE_CLEAN_RE.sub("", raw_title)
-
-        p = td.find("p")
-        if not p:
-            continue
-
-        release_date = parse_date(p.get_text(strip=True))
-
+    for card in film_cards:
+        # Find film link — could be in card or a parent
         film_url = ""
-        a = li.find("a", href=FILM_LINK_RE)
-        if a:
-            film_url = a.get("href", "")
+        for el in [card] + list(card.parents)[:5]:
+            link = el.select_one("a[href*='/film/']")
+            if link:
+                film_url = link.get("href", "")
+                break
+        if film_url and not film_url.startswith("http"):
+            film_url = WTW_BASE_URL + film_url
 
-        if release_date and title:
-            key = (release_date, title, cinema_name, film_url)
-            if key not in seen:
-                clean_title, screening = extract_screening_label(title)
-                film_details = fetch_film_details(film_url, cache, session)
-                film_details["bbfc"] = bbfc_rating
-                film_details["screening"] = screening
-                films.append((release_date, clean_title or title, cinema_name, film_url, film_details))
-                seen.add(key)
-                logger.info("  %s - %s (%s)", title, release_date, cinema_name)
+        # Extract slug from URL for title
+        slug = film_url.rstrip("/").split("/")[-1] if film_url else ""
+        title = _extract_title_from_slug(slug)
 
+        if not title or title.lower() in ("coming soon", "film", "cinema", ""):
+            continue
+
+        # Release date from .running-time in parent chain
+        release_date = None
+        for el in [card] + list(card.parents)[:6]:
+            rt = el.select_one(".running-time")
+            if rt:
+                rt_text = rt.get_text(strip=True).replace("Expected:", "").strip()
+                release_date = parse_date(rt_text)
+                if release_date:
+                    break
+
+        if not release_date:
+            continue
+
+        # BBFC cert
+        bbfc_rating = ""
+        for el in [card] + list(card.parents)[:6]:
+            cert_img = el.select_one(".film-certificate img")
+            if cert_img:
+                cert_src = cert_img.get("src", "")
+                for cert_name, cert_file in CERT_IMAGES.items():
+                    if cert_file in cert_src:
+                        bbfc_rating = cert_name
+                        break
+                if bbfc_rating:
+                    break
+
+        # Genre from card class
+        genre = ""
+        for cls in card.get("class", []):
+            if cls.startswith("filmecatte"):
+                genre = cls.replace("filmecatte", "").strip()
+                break
+
+        # Synopsis from card text
+        card_text = card.get_text(" ", strip=True)
+        synopsis = card_text[:MAX_SYNOPSIS_LENGTH] if len(card_text) >= MIN_SYNOPSIS_LENGTH else ""
+
+        # Screening label
+        clean_title, screening = extract_screening_label(title)
+
+        key = (release_date, clean_title or title, cinema_name, film_url)
+        if key not in seen:
+            film_details: Dict[str, str] = {
+                "bbfc": bbfc_rating,
+                "screening": screening,
+                "synopsis": synopsis,
+                "genre": genre,
+                "source": "coming_soon_card",
+            }
+            if film_url:
+                page_details = fetch_film_details(film_url, cache, session)
+                if page_details:
+                    # Use the real title from film page if available
+                    page_title = page_details.get("title", "")
+                    if page_title:
+                        clean_title = TITLE_CLEAN_RE.sub("", page_title)
+                    film_details.update(page_details)
+            films.append((release_date, clean_title or title, cinema_name, film_url, film_details))
+            seen.add(key)
+            logger.info("  %s - %s (%s)", clean_title or title, release_date, cinema_name)
+
+    logger.info("  coming-soon %s: %d films", cinema_name, len(films))
     return films
 
 
@@ -508,76 +584,201 @@ def scrape_cinema_whats_on(
     cinema_name: str,
     session: Optional[requests.Session] = None,
 ) -> List[Dict[str, Any]]:
-    """Scrape a cinema's whats-on page for films with full multi-date showtime schedules."""
+    """Scrape a cinema's whats-on page for films with full multi-date showtime schedules.
+
+    Current site structure (2026): Hero slider (.row.blurb) contains film titles.
+    Showtime blocks are in #film_section .poster-film-content with .singlefilmperfs.
+    """
     url = CINEMAS[cinema_id]["whats_on_url"]
     logger.info("Scraping whats-on: %s (%s)", url, cinema_name)
     resp = fetch_with_retries(url, session=session)
     soup = BeautifulSoup(resp.text, "html.parser")
 
     films: List[Dict[str, Any]] = []
-    film_items = soup.select("li.js-film") or soup.select("div[data-film]")
+    today_scrape = date.today()
+
+    # First, get film titles from the hero slider (.row.blurb h1)
+    hero_titles = []
+    for blurb in soup.select(".row.blurb"):
+        h1 = blurb.select_one("h1")
+        if h1:
+            title = h1.get_text(strip=True)
+            if title and not any(skip in title.lower() for skip in (
+                "looking ahead", "gaming", "private cinema",
+                "onscreen magazine", "book the cinema",
+            )):
+                hero_titles.append(title)
+
+    # Get film items - current site uses .poster-film-content in #film_section
+    film_items = soup.select("#film_section .poster-film-content")
     if not film_items:
-        logger.warning("No js-film nodes on whats-on page for %s", cinema_name)
+        logger.warning("No .poster-film-content nodes on whats-on page for %s", cinema_name)
         return films
 
-    today_scrape = date.today()
-    tag_names = ("Audio Description", "Subtitles", "Wheelchair access", "Silver Screen", "2D", "3D",
-                 "Event cinema", "Strobe Light warning", "Parent & Baby", "Autism Friendly", "Kids Club",
-                 "Super Saver", "Licensed venue", "Advanced Screening", "Mini Movie Deal", "Baby Friendly", "FLS")
+    for idx, item in enumerate(film_items):
+        # Runtime and starring
+        runtime = 0
+        starring = ""
+        rt_div = item.select_one(".running-time")
+        if rt_div:
+            rt_text = rt_div.get_text(" ", strip=True)
+            star_match = re.search(r"Starring:\s*(.+?)\s*(?:Running\s*Time:|$)", rt_text)
+            if star_match:
+                starring = star_match.group(1).strip()
+            rt_match = re.search(r"Running\s*Time:\s*(\d+)\s*minutes?", rt_text, re.IGNORECASE)
+            if rt_match:
+                runtime = int(rt_match.group(1))
 
-    for li in film_items:
-        film_a = li.find("a", href=lambda h: h and "/film/" in h)
-        if not film_a:
-            continue
-        href = film_a.get("href", "")
-        film_url = href if href.startswith("http") else WTW_BASE_URL + href
+        # Film title — try to match to hero slider by index, or extract from booking URL
+        title = hero_titles[idx] if idx < len(hero_titles) else ""
+        if not title:
+            # Fallback: try to find film name from nearby poster img alt in parent chain
+            parent = item.parent
+            for _ in range(10):
+                if not parent:
+                    break
+                for img in parent.select("img[alt]"):
+                    alt = img.get("alt", "").strip()
+                    if (alt and len(alt) > 2 and
+                        alt not in ("2D", "3D", "background-image", "Wheelchair Access",
+                                    "Closed Caption Subtitle Glasses Available",
+                                    "Audio Description Headsets Available",
+                                    "Contains a sequence of flashing lights.",
+                                    "Laser Projection", "Autism Friendly Film")):
+                        title = alt
+                        break
+                if title:
+                    break
+                parent = parent.parent if hasattr(parent, 'parent') else None
 
-        title_elem = li.find("h2")
-        title = (title_elem.get_text(strip=True) if title_elem else film_a.get_text(strip=True) or "").replace("–", "-")
-        title = TITLE_CLEAN_RE.sub("", title)
         if not title:
             continue
-        if any(skip in title.lower() for skip in ("looking ahead", "gaming", "private cinema", "onscreen magazine", "book the cinema")):
+
+        title = TITLE_CLEAN_RE.sub("", title)
+        title = title.replace("–", "-").replace("—", "-")
+
+        if any(skip in title.lower() for skip in (
+            "looking ahead", "gaming", "private cinema",
+            "onscreen magazine", "book the cinema"
+        )):
             continue
 
-        showtimes: List[Dict[str, Any]] = []
-        dates_ul = li.find("ul", class_="dates")
-        if dates_ul:
-            for date_li in dates_ul.find_all("li", class_="js-performance-date"):
-                date_text = date_li.get_text(separator=" ", strip=True)
-                parsed_date = parse_uk_date(date_text, today_scrape)
-                if not parsed_date:
-                    continue
-                for perf in date_li.find_all("li", class_="js-performance"):
-                    perf_text = perf.get_text(separator=" ", strip=True)
-                    time_m = re.search(r"(\d{1,2}:\d{2})", perf_text)
-                    time_str = time_m.group(1) if time_m else ""
-                    if not time_str:
-                        continue
-                    screen = 1
-                    sm = re.search(r"Screen:\s*(\d+)", perf_text, re.IGNORECASE)
-                    if sm:
-                        screen = int(sm.group(1))
-                    tags = [t for t in tag_names if t.lower() in perf_text.lower()]
-                    if not tags and "2D" in perf_text:
-                        tags = ["2D"]
-                    book_a = perf.find("a", href=lambda h: h and "performance=" in (h or ""))
-                    booking_url = ""
-                    if book_a:
-                        raw_href = book_a.get("href", "").replace("&#038;", "&")
-                        booking_url = raw_href if raw_href.startswith("http") else WTW_BASE_URL + raw_href
+        # BBFC cert
+        bbfc = ""
+        cert_img = item.select_one(".film-certificate img")
+        if cert_img:
+            cert_src = cert_img.get("src", "")
+            for cert_name, cert_file in CERT_IMAGES.items():
+                if cert_file in cert_src:
+                    bbfc = cert_name
+                    break
 
-                    showtimes.append({
-                        "date": parsed_date,
-                        "time": time_str,
-                        "screen": screen,
-                        "booking_url": booking_url,
-                        "tags": tags or ["2D"],
-                        "cinema_name": cinema_name,
-                    })
+        # Film detail URL — try from poster link or find from page links
+        film_url = ""
+        film_link = item.select_one("a[href*='/film/']")
+        if film_link:
+            film_url = film_link.get("href", "")
+        if film_url and not film_url.startswith("http"):
+            film_url = WTW_BASE_URL + film_url
+
+        # Showtimes: .singlefilmperfs blocks
+        showtimes: List[Dict[str, Any]] = []
+
+        for perf_block in item.select(".singlefilmperfs"):
+            # Get the date from the parent chain
+            date_span = None
+            parent = perf_block
+            for _ in range(10):
+                if not parent:
+                    break
+                date_span = parent.select_one(".firstdateshow")
+                if date_span:
+                    break
+                parent = parent.parent
+
+            if not date_span:
+                continue
+
+            date_text = date_span.get_text(strip=True)
+            if not date_text:
+                continue
+
+            parsed_date = parse_uk_date(date_text, today_scrape)
+            if not parsed_date:
+                continue
+
+            # Time from .perfbtn
+            time_btn = perf_block.select_one(".perfbtn")
+            time_text = ""
+            if time_btn:
+                time_parts = []
+                for child in time_btn.children:
+                    if isinstance(child, str):
+                        time_parts.append(child.strip())
+                time_text = "".join(time_parts).strip()
+                time_match = re.search(r"(\d{1,2}:\d{2})", time_text)
+                time_text = time_match.group(1) if time_match else ""
+
+            if not time_text:
+                continue
+
+            # Screen
+            screen = 1
+            for li in perf_block.select(".hiddenbox-items li"):
+                li_text = li.get_text(strip=True)
+                screen_match = re.search(r"Screen:\s*(\d+)", li_text)
+                if screen_match:
+                    screen = int(screen_match.group(1))
+                    break
+
+            # Booking URL
+            booking_url = ""
+            book_link = perf_block.select_one("a.hiddenbox-wrapper-link")
+            if book_link:
+                booking_url = book_link.get("href", "")
+                if booking_url and not booking_url.startswith("http"):
+                    booking_url = WTW_BASE_URL + booking_url
+
+            # Accessibility tags from CSS classes
+            cls_list = perf_block.get("class", [])
+            tags = []
+            if "icon-2d" in cls_list:
+                tags.append("2D")
+            elif "icon-3d" in cls_list:
+                tags.append("3D")
+            if "ccap" in cls_list:
+                tags.append("Subtitles")
+            if "audio-des" in cls_list:
+                tags.append("Audio Description")
+            if "wc" in cls_list:
+                tags.append("Wheelchair access")
+            if "strobe-lgt" in cls_list:
+                tags.append("Strobe Light warning")
+            if "autism-friendly" in cls_list:
+                tags.append("Autism Friendly")
+            if "laser" in cls_list:
+                tags.append("Laser Projection")
+            if "kids-club" in cls_list:
+                tags.append("Kids Club")
+            if "silver-screen" in cls_list:
+                tags.append("Silver Screen")
+            if "parent-baby" in cls_list:
+                tags.append("Parent & Baby")
+            if "event-cinema" in cls_list:
+                tags.append("Event cinema")
+            if "fls-period" in cls_list:
+                tags.append("FLS")
+
+            showtimes.append({
+                "date": parsed_date,
+                "time": time_text,
+                "screen": screen,
+                "booking_url": booking_url,
+                "tags": tags or ["2D"],
+                "cinema_name": cinema_name,
+            })
 
         if showtimes:
-            # Deduplicate by (date, time, screen)
             seen_st = set()
             unique_st = []
             for st in showtimes:
@@ -586,12 +787,16 @@ def scrape_cinema_whats_on(
                     seen_st.add(key)
                     unique_st.append(st)
             unique_st.sort(key=lambda s: (s["date"], s["time"]))
+
             films.append({
                 "title": title,
                 "film_url": film_url,
                 "cinema_id": cinema_id,
                 "cinema_name": cinema_name,
                 "showtimes": unique_st,
+                "runtime": runtime,
+                "starring": starring,
+                "bbfc": bbfc,
             })
 
     logger.info("  whats-on %s: %d films with showtimes", cinema_name, len(films))
@@ -827,7 +1032,7 @@ from html_templates import (
     _cert_span, _youtube_embed_url, _extract_bbfc,
     _compute_fingerprint, _load_fingerprint, _save_fingerprint,
     _download_cert_images, _health_check, _save_sequence_state,
-    write_style_css,
+    write_style_css, make_ics_event, ICAL_NEWLINE, generate_sitemap,
 )
 
 

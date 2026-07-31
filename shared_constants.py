@@ -17,13 +17,19 @@ FINGERPRINT_FILE = ".scrape_fingerprint"
 
 # ── WTW site constants ──────────────────────────────────────────────────────────
 WTW_BASE_URL = "https://wtwcinemas.co.uk"
-WTW_CERT_BASE = "https://wtwcinemas.co.uk/wp-content/themes/wtw-2017/dist/images"
+WTW_CERT_BASE = "https://websales-django-static-uk.taposapp.com/static/sales/images/filmcerts_uk"
 
 # ── BBFC cert patterns and images ───────────────────────────────────────────────
 BBFC_PATTERN = re.compile(r"\((\d{1,2}A?|U|PG|R18)\)", re.IGNORECASE)
 CERT_IMAGES = {
     "U": "cert-u.png", "PG": "cert-pg.png", "12": "cert-12.png",
     "12A": "cert-12a.png", "15": "cert-15.png", "18": "cert-18.png",
+}
+
+# Mapping from CDN cert filenames to local filenames
+CERT_CDN_MAP = {
+    "cert-u.png": "u.png", "cert-pg.png": "pg.png", "cert-12.png": "12.png",
+    "cert-12a.png": "12a.png", "cert-15.png": "15.png", "cert-18.png": "18.png",
 }
 
 # ── Cinema addresses for map links ──────────────────────────────────────────────

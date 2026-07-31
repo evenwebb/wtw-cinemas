@@ -3,120 +3,102 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>What's on at Merlin St Austell</title>
+  <title>What's on at WTW St Austell</title>
   <meta name="description" content="Now showing and coming soon at WTW Cinemas St Austell.">
   <link rel="canonical" href="https://evenwebb.github.io/wtw-cinemas/">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+  <link rel="icon" media="(prefers-color-scheme: dark)" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎥</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-
-:root{--bg:#09090d;--surface:#13131c;--surface-2:#1a1a26;--border:rgba(192,132,252,0.18);--text:#e8edf2;--text-muted:#8b9db5;--cyan:#22d3ee;--purple:#c084fc;--accent:#22d3ee;--accent-dim:rgba(34,211,238,0.12);--accent-glow:rgba(34,211,238,0.2);--amber:#f59e0b;--radius:16px;--radius-sm:10px;--transition:0.2s ease}
-*,::before,::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:2rem}
-body{padding-top:42px;font-family:'Space Grotesk',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh;-webkit-font-smoothing:antialiased}
-@keyframes pageIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-.page{animation:pageIn 0.4s ease-out}
-.bg-mesh{position:fixed;inset:0;overflow:hidden;background:radial-gradient(ellipse 80% 60% at 50% -20%,var(--accent-dim) 0%,transparent 50%),radial-gradient(ellipse 50% 40% at 80% 90%,rgba(192,132,252,0.06) 0%,transparent 50%);pointer-events:none;z-index:0}
-footer{text-align:center;padding:2.5rem 2rem;color:var(--text-muted);font-size:0.85rem;border-top:1px solid rgba(255,255,255,0.05);margin-top:4rem}
-footer a{color:var(--accent);text-decoration:none;font-weight:500}
-footer a:hover{color:var(--purple)}
-.footer-updated{font-size:0.75rem;opacity:0.4;margin-top:0.75rem}
-@media print{body{background:#fff!important;color:#111!important}.bg-mesh,.skip-link,.quick-nav,.map-link,.book-btn{display:none!important}.card,.stat-pill,.featured-film,.now-film,.cinema-table td{background:#fff!important;border:1px solid #ddd!important;box-shadow:none!important;break-inside:avoid}.hero h1{color:#111!important;-webkit-text-fill-color:#111!important;background:none!important}footer{border-top:1px solid #ddd!important}a{color:#111!important}}
-
-    .page{max-width:860px;margin:0 auto;padding:1.5rem 1rem 4rem}
-    .back-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1.1rem;background:var(--surface);border:1px solid var(--border);border-radius:100px;color:var(--text-muted);text-decoration:none;font-weight:500;font-size:0.85rem;margin-bottom:2rem;transition:all var(--transition)}
-    .back-btn:hover{color:var(--accent);border-color:var(--accent);background:var(--accent-dim)}
-    .cinema-hero{text-align:center;padding:2rem 0 3rem}
-    .cinema-hero h1{font-size:clamp(1.5rem,4vw,2rem);font-weight:800;background:linear-gradient(135deg,var(--cyan),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-    .cinema-hero p{color:var(--text-muted);font-size:0.95rem;margin-top:0.5rem}
-    .cinema-hero .map-link{display:inline-block;margin-top:0.75rem;padding:0.4rem 1rem;border-radius:100px;font-size:0.82rem;color:var(--accent);text-decoration:none;border:1px solid var(--border);transition:all var(--transition)}
-    .cinema-hero .map-link:hover{background:var(--accent-dim);border-color:var(--accent)}
-    .cs-list{list-style:none;padding:0;display:flex;flex-direction:column;gap:0.5rem}
-    .cs-list li{font-size:0.92rem;padding:0.75rem 1rem;background:var(--surface);border:1px solid var(--border);border-radius:10px}
-    .cs-list li a{color:var(--text);text-decoration:none;font-weight:600}
-    .cs-list li a:hover{color:var(--accent)}
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="bg-mesh" aria-hidden="true"></div>
   <div class="page">
     <a href="./" class="back-btn">← All</a>
     <header class="cinema-hero">
-      <h1>Merlin St Austell</h1>
+      <h1>WTW St Austell</h1>
       <p>Subscribe: <a href="wtw-st-austell.ics" type="text/calendar" download>iCal feed</a></p>
       <a href="https://www.google.com/maps/search/White+River+Cinema+St+Austell" class="map-link" target="_blank" rel="noopener">📍 View on map</a>
     </header>
   <section class="film-section" id="now-showing">
-    <div class="section-header"><h2>Now Showing</h2><span class="count">9 films</span></div>
+    <div class="section-header"><h2>Now Showing</h2><span class="count">5 films</span></div>
     <div class="ns-poster-grid">
-<a href="films/backrooms.html" class="ns-poster-card">
-  <div class="ns-poster-wrap"><img src="../posters/backrooms.jpg" alt="Backrooms" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Backrooms</span>
+<a href="films/minions-monsters.html" class="ns-poster-card">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">Minions &amp; Monsters</div></div>
+  <span class="ns-title">Minions &amp; Monsters</span>
 </a>
-<a href="films/masters-of-the-universe.html" class="ns-poster-card">
-  <div class="ns-poster-wrap"><img src="../posters/masters-of-the-universe.jpg" alt="Masters Of The Universe" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Masters Of The Universe</span>
+<a href="films/moana.html" class="ns-poster-card">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">Moana</div></div>
+  <span class="ns-title">Moana</span>
 </a>
-<a href="films/power-ballad.html" class="ns-poster-card">
-  <div class="ns-poster-wrap"><img src="../posters/power-ballad.jpg" alt="Power Ballad" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Power Ballad</span>
+<a href="films/spider-man-brand-new-day.html" class="ns-poster-card">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">Spider-Man: Brand New Day</div></div>
+  <span class="ns-title">Spider-Man: Brand New Day</span>
 </a>
-<a href="films/savage-house.html" class="ns-poster-card">
-  <div class="ns-poster-wrap"><img src="../posters/savage-house.jpg" alt="Savage House" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Savage House</span>
+<a href="films/the-odyssey.html" class="ns-poster-card">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">The Odyssey</div></div>
+  <span class="ns-title">The Odyssey</span>
 </a>
-<a href="films/scary-movie.html" class="ns-poster-card">
-  <div class="ns-poster-wrap"><img src="../posters/scary-movie.jpg" alt="Scary Movie" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Scary Movie</span>
-</a>
-<a href="films/star-wars-the-mandalorian-and-grogu.html" class="ns-poster-card">
-  <div class="ns-poster-wrap"><img src="../posters/star-wars-the-mandalorian-and-grogu.jpg" alt="Star Wars: The Mandalorian And Grogu" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Star Wars: The Mandalorian And Grogu</span>
-</a>
-<a href="films/disclosure-day.html" class="ns-poster-card">
-  <div class="ns-poster-wrap"><img src="../posters/disclosure-day.jpg" alt="Disclosure Day" loading="lazy" decoding="async"></div>
-  <span class="ns-title">Disclosure Day</span>
-</a>
-<a href="films/the-sheep-detectives.html" class="ns-poster-card">
-  <div class="ns-poster-wrap"><img src="../posters/the-sheep-detectives.jpg" alt="The Sheep Detectives" loading="lazy" decoding="async"></div>
-  <span class="ns-title">The Sheep Detectives</span>
-</a>
-<a href="films/the-super-mario-galaxy-movie.html" class="ns-poster-card">
-  <div class="ns-poster-wrap"><img src="../posters/the-super-mario-galaxy-movie.jpg" alt="The Super Mario Galaxy Movie" loading="lazy" decoding="async"></div>
-  <span class="ns-title">The Super Mario Galaxy Movie</span>
+<a href="films/toy-story-5.html" class="ns-poster-card">
+  <div class="ns-poster-wrap"><div class="ns-no-poster">Toy Story 5</div></div>
+  <span class="ns-title">Toy Story 5</span>
 </a>
     </div>
   </section>
   <section class="film-section" id="coming-soon">
-    <div class="section-header"><h2>Coming Soon</h2><span class="count">20 films</span></div>
+    <div class="section-header"><h2>Coming Soon</h2><span class="count">44 films</span></div>
     <ul class="cs-list">
-<li><a href="films/disclosure-day.html">Disclosure Day</a> - Fri 12 Jun 2026</li>
-<li><a href="films/toy-story-5.html">Toy Story 5</a> - Fri 19 Jun 2026</li>
-<li><a href="films/supergirl-woman-of-tomorrow.html">Supergirl: Woman Of Tomorrow</a> - Fri 26 Jun 2026</li>
-<li><a href="films/jackass-best-and-last.html">Jackass: Best And Last</a> - Fri 26 Jun 2026</li>
-<li><a href="films/minions-monsters.html">Minions &amp; Monsters</a> - Fri 03 Jul 2026</li>
-<li><a href="films/moana.html">Moana</a> - Fri 10 Jul 2026</li>
-<li><a href="films/the-odyssey.html">The Odyssey</a> - Fri 17 Jul 2026</li>
-<li><a href="films/spider-man-brand-new-day.html">Spider-Man: Brand New Day</a> - Fri 31 Jul 2026</li>
-<li><a href="films/paw-patrol-the-dino-movie.html">Paw Patrol: The Dino Movie</a> - Fri 07 Aug 2026</li>
-<li><a href="films/the-end-of-oak-street.html">The End Of Oak Street</a> - Fri 14 Aug 2026</li>
-<li><a href="films/pressure.html">Pressure</a> - Fri 11 Sep 2026</li>
-<li><a href="films/shaun-the-sheep-the-beast-of-mossy-bottom.html">Shaun The Sheep: The Beast Of Mossy Bottom</a> - Fri 18 Sep 2026</li>
+<li><a href="films/paw-patrol-the-dino-movie-medicinema-advanced-screening.html">PAW Patrol: The Dino Movie - MediCinema Advanced Screening</a> - Sun 02 Aug 2026</li>
+<li><a href="films/fatal-attraction-basic-instinct-double-bill-pat-s-film-club.html">Fatal Attraction &amp; Basic Instinct Double Bill - Pat&#x27;s Film Club</a> - Sun 02 Aug 2026</li>
+<li><a href="films/paw-patrol-the-dino-movie.html">PAW Patrol: The Dino Movie</a> - Wed 05 Aug 2026</li>
+<li><a href="films/turandot-on-sydney-harbour.html">Turandot on Sydney Harbour</a> - Thu 06 Aug 2026</li>
+<li><a href="films/ice-cream-man.html">Ice Cream Man</a> - Fri 07 Aug 2026</li>
+<li><a href="films/andr-rieu-s-2026-summer-concert-viva-maastricht.html">André Rieu&#x27;s 2026 Summer Concert: Viva Maastricht!</a> - Sat 08 Aug 2026</li>
+<li><a href="films/nimrods-a-green-day-comedy.html">Nimrods: A Green Day Comedy</a> - Tue 11 Aug 2026</li>
+<li><a href="films/katseye-wild-hearts.html">KATSEYE: WILD HEARTS</a> - Wed 12 Aug 2026</li>
+<li><a href="films/the-end-of-oak-street.html">The End of Oak Street</a> - Fri 14 Aug 2026</li>
+<li><a href="films/sunny-dancer.html">Sunny Dancer</a> - Fri 14 Aug 2026</li>
+<li><a href="films/life-support.html">Life Support</a> - Sun 16 Aug 2026</li>
+<li><a href="films/blue-heron.html">Blue Heron</a> - Sun 23 Aug 2026</li>
+<li><a href="films/ghost-2-big-to-rig.html">GHOST: 2 Big To Rig</a> - Wed 26 Aug 2026</li>
+<li><a href="films/kiki-s-delivery-service-anime-season.html">Kiki&#x27;s Delivery Service - Anime Season</a> - Fri 28 Aug 2026</li>
+<li><a href="films/the-spin.html">The Spin</a> - Sun 30 Aug 2026</li>
+<li><a href="films/la-traviata-on-sydney-harbour.html">La Traviata on Sydney Harbour</a> - Thu 03 Sep 2026</li>
+<li><a href="films/pressure.html">Pressure</a> - Wed 09 Sep 2026</li>
+<li><a href="films/james-mcneill-whistler-exhibition-on-screen.html">James McNeill Whistler - Exhibition On Screen</a> - Tue 15 Sep 2026</li>
+<li><a href="films/shaun-the-sheep-the-beast-of-mossy-bottom.html">Shaun the Sheep: The Beast of Mossy Bottom</a> - Fri 18 Sep 2026</li>
+<li><a href="films/national-theatre-live-the-misanthrope.html">National Theatre Live: The Misanthrope</a> - Tue 22 Sep 2026</li>
+<li><a href="films/digger.html">Digger</a> - Fri 02 Oct 2026</li>
 <li><a href="films/street-fighter.html">Street Fighter</a> - Fri 16 Oct 2026</li>
-<li><a href="films/digger.html">Digger</a> - Mon 26 Oct 2026</li>
-<li><a href="films/dr-seuss-the-cat-in-the-hat.html">Dr Seuss’ The Cat in the Hat</a> - Fri 06 Nov 2026</li>
+<li><a href="films/macbeth-royal-ballet-opera-26-27-season.html">Macbeth - Royal Ballet &amp; Opera 26-27 Season</a> - Tue 20 Oct 2026</li>
+<li><a href="films/fallen-angels-by-no-l-coward.html">Fallen Angels by Noël Coward</a> - Thu 22 Oct 2026</li>
+<li><a href="films/manon-royal-ballet-opera-26-27-season.html">Manon - Royal Ballet &amp; Opera 26-27 Season</a> - Tue 27 Oct 2026</li>
 <li><a href="films/wild-horse-nine.html">Wild Horse Nine</a> - Fri 06 Nov 2026</li>
-<li><a href="films/the-hunger-games-sunrise-on-the-reaping.html">The Hunger Games: Sunrise On The Reaping</a> - Fri 20 Nov 2026</li>
-<li><a href="films/focker-in-law.html">Focker-In-Law</a> - Fri 27 Nov 2026</li>
-<li><a href="films/avengers-doomsday.html">Avengers: Doomsday</a> - Fri 18 Dec 2026</li>
-<li><a href="films/dune-part-three.html">Dune: Part Three</a> - Fri 18 Dec 2026</li>
+<li><a href="films/carmen-royal-ballet-opera-26-27-season.html">Carmen - Royal Ballet &amp; Opera 26-27 Season</a> - Tue 10 Nov 2026</li>
+<li><a href="films/giant-the-play.html">GIANT - The Play</a> - Thu 19 Nov 2026</li>
+<li><a href="films/the-hunger-games-sunrise-on-the-reaping.html">The Hunger Games: Sunrise on the Reaping</a> - Fri 20 Nov 2026</li>
+<li><a href="films/focker-in-law.html">Focker-In-Law</a> - Wed 25 Nov 2026</li>
+<li><a href="films/the-nutcracker-royal-ballet-opera-26-27-season.html">The Nutcracker - Royal Ballet &amp; Opera 26-27 Season</a> - Tue 01 Dec 2026</li>
+<li><a href="films/the-cat-in-the-hat.html">The Cat in the Hat</a> - Fri 04 Dec 2026</li>
+<li><a href="films/avengers-doomsday.html">Avengers: Doomsday</a> - Wed 16 Dec 2026</li>
+<li><a href="films/dune-part-three.html">Dune: Part Three</a> - Wed 16 Dec 2026</li>
+<li><a href="films/jumanji-open-world.html">Jumanji: Open World</a> - Wed 23 Dec 2026</li>
+<li><a href="films/renoir-love-exhibition-on-screen.html">Renoir &amp; Love - Exhibition On Screen</a> - Tue 19 Jan 2027</li>
+<li><a href="films/la-fanciulla-del-west-royal-ballet-opera-26-27-season.html">La Fanciulla Del West - Royal Ballet &amp; Opera 26-27 Season</a> - Tue 26 Jan 2027</li>
+<li><a href="films/g-tterd-mmerung-royal-ballet-opera-26-27-season.html">Götterdämmerung - Royal Ballet &amp; Opera 26-27 Season</a> - Wed 03 Feb 2027</li>
+<li><a href="films/cos-fan-tutte-royal-ballet-opera-26-27-season.html">Così Fan Tutte - Royal Ballet &amp; Opera 26-27 Season</a> - Tue 23 Feb 2027</li>
+<li><a href="films/alice-s-adventures-in-wonderland-royal-ballet-opera-26-27-season.html">Alice&#x27;s Adventures In Wonderland - Royal Ballet &amp; Opera 26-27 Season</a> - Tue 23 Mar 2027</li>
+<li><a href="films/swan-lake-royal-ballet-opera-26-27-season.html">Swan Lake - Royal Ballet &amp; Opera 26-27 Season</a> - Thu 22 Apr 2027</li>
+<li><a href="films/tosca-royal-ballet-opera-26-27-season.html">Tosca - Royal Ballet &amp; Opera 26-27 Season</a> - Wed 05 May 2027</li>
+<li><a href="films/monet-exhibition-on-screen.html">Monet - Exhibition On Screen</a> - Tue 11 May 2027</li>
+<li><a href="films/romeo-and-juliet-royal-ballet-opera-26-27-season.html">Romeo And Juliet - Royal Ballet &amp; Opera 26-27 Season</a> - Tue 25 May 2027</li>
     </ul>
   </section>
     <footer style="text-align:center;padding:2rem 0;color:var(--text-muted);font-size:0.85rem;border-top:1px solid var(--border);margin-top:3rem">
       <p>An open source fan-made project. Not affiliated with WTW Cinemas.</p>
-      <p class="footer-updated">Last updated: 2026-06-08 21:50 BST</p>
+      <p class="footer-updated">Last updated: 2026-07-31 09:46 BST</p>
     </footer>
   </div>
 </body>
