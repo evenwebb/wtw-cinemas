@@ -1459,13 +1459,13 @@ def main() -> None:
     special_events = [f for f in now_showing_films if f.get("screening")]
     special_events.sort(key=lambda f: (f.get("screening", ""), f["min_date"]))
 
-    # Write index.html
-    html = build_index_html(enabled_cinemas, films_by_cinema, stats=stats,
-                            now_showing_live=now_showing_films,
-                            special_events=special_events,
-                            new_slugs=new_slugs)
-    _atomic_write_text(out_dir / "index.html", html)
-    logger.info("Wrote %s/index.html", OUTPUT_DIR)
+    # ── Enrich now-showing films with TMDb posters ───────────────────────────
+    for f in now_showing_films:
+        slug = f["slug"]
+        if slug in tmdb_cache:
+            tc = tmdb_cache[slug]
+            if tc.get("poster_url"):
+                f["poster"] = tc["poster_url"]
 
     # ── Per-film detail pages ────────────────────────────────────────────────
     films_dir = out_dir / "films"
@@ -1547,15 +1547,20 @@ def main() -> None:
 
     # Enrich whats-on films with TMDb data from cache
     for slug, page in film_pages.items():
-        if slug in tmdb_cache and not page["details"].get("overview"):
+        if slug in tmdb_cache:
             tc = tmdb_cache[slug]
             for field in ("overview", "genres", "vote_average", "director", "cast",
                           "poster_url", "poster_large_url", "backdrop_url", "runtime",
                           "trailer_url", "imdb_id"):
                 val = tc.get(field)
-                if val and not page["details"].get(field):
-                    if field == "vote_average" and float(val) == 0.0:
-                        continue
+                if not val:
+                    continue
+                if field == "vote_average" and float(val) == 0.0:
+                    continue
+                # Always prefer TMDb poster/backdrop over WTW CDN backdrops
+                if field in ("poster_url", "poster_large_url", "backdrop_url"):
+                    page["details"][field] = val
+                elif not page["details"].get(field):
                     page["details"][field] = val
 
     for slug, page in film_pages.items():
@@ -1569,6 +1574,38 @@ def main() -> None:
         )
         _atomic_write_text(films_dir / f"{slug}.html", page_html)
     logger.info("Wrote %d film detail pages to %s/films/", len(film_pages), OUTPUT_DIR)
+
+    # ── Rebuild index with TMDb-enriched film_pages data ──────────────────────
+    # build_index_html expects Dict[str, List[6-tuple]] format
+    enriched_by_cinema: Dict[str, List] = {}
+    for slug, page in film_pages.items():
+        for cname, furl, rd, cid in page.get("cinemas", []):
+            if cid:
+                enriched_by_cinema.setdefault(cid, []).append(
+                    (rd, page["title"], cname, furl, page["details"], cid)
+                )
+    enriched_all_films = []
+    _seen = set()
+    for cf in enriched_by_cinema.values():
+        for rd, title, cname, furl, fdetails, cid in cf:
+            slug = _tmdb_cache_key(title)
+            if slug not in _seen:
+                _seen.add(slug)
+                cinemas_dict = {}
+                for cname2, furl2, rd2, _cid2 in [(cname, furl, rd, cid)]:
+                    cinemas_dict[cname2] = (furl2, rd2)
+                enriched_all_films.append({
+                    "title": title, "slug": slug,
+                    "details": fdetails, "cinemas": cinemas_dict,
+                    "release_date": rd,
+                })
+    enriched_all_films.sort(key=lambda f: (f["release_date"], f["title"]))
+    html = build_index_html(enabled_cinemas, enriched_by_cinema, stats=stats,
+                            now_showing_live=now_showing_films,
+                            special_events=special_events,
+                            new_slugs=new_slugs)
+    _atomic_write_text(out_dir / "index.html", html)
+    logger.info("Wrote %s/index.html (enriched)", OUTPUT_DIR)
 
     # ── Poster downloads ─────────────────────────────────────────────────────
     poster_sess = _session()
@@ -1607,23 +1644,9 @@ def main() -> None:
     _download_cert_images()
 
     # ── Cinema pages ─────────────────────────────────────────────────────────
-    # Build all_films_list for cinema pages (same as in build_index_html)
-    _all_films_list = []
-    _film_entries: Dict[str, Dict[str, Any]] = {}
-    for cf in films_by_cinema.values():
-        for rd, title, cname, furl, fdetails, cid in cf:
-            slug = _tmdb_cache_key(title)
-            if slug not in _film_entries:
-                _film_entries[slug] = {
-                    "title": title, "release_date": rd, "slug": slug,
-                    "details": fdetails, "cinemas": {},
-                }
-            _film_entries[slug]["cinemas"][cname] = (furl, rd)
-            if rd < _film_entries[slug]["release_date"]:
-                _film_entries[slug]["release_date"] = rd
-    _all_films_list = sorted(_film_entries.values(), key=lambda f: f["release_date"])
+    # Use enriched film_pages data
     cs_films_sorted = sorted(
-        [f for f in _all_films_list if f["release_date"] > today],
+        [f for f in enriched_all_films if f["release_date"] > today],
         key=lambda f: f["release_date"]
     )
     for cid, info in enabled_cinemas.items():

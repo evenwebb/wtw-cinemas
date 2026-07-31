@@ -701,7 +701,7 @@ def build_index_html(
             f'    <section class="film-section poster-view" id="now-showing-live">\n'
             f'      <div class="section-header"><h2>Now Showing</h2><div style="display:flex;align-items:center;gap:0.75rem"><span class="count">{len(now_showing_live)} films</span><button type="button" id="ns-view-toggle" class="view-toggle-btn">☰ List</button></div></div>\n'
             f'      <div class="ns-poster-grid">\n' + "\n".join(poster_cards) + f'\n      </div>\n'
-            f'      <div class="ns-list-grid" style="display:none">\n' + "\n".join(list_cards) + f'\n      </div>\n'
+            f'      <div class="ns-list-grid">\n' + "\n".join(list_cards) + f'\n      </div>\n'
             f'    </section>\n\n'
         )
 
