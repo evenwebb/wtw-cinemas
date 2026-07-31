@@ -1403,7 +1403,7 @@ def build_film_page(
     gcal_text = _url_quote(film_title)
     gcal_location = _url_quote(f"WTW Cinemas {cinemas[0][0]}" if cinemas else "WTW Cinemas")
     gcal_url = f"https://calendar.google.com/calendar/render?action=TEMPLATE&text={gcal_text}&dates={gcal_dates}&location={gcal_location}"
-    gcal_html = f'<a href="{_esc(gcal_url)}" class="act-btn act-cal" target="_blank" rel="noopener" title="Add to Google Calendar">📅 Calendar</a>'
+    gcal_html = f'<a href="{_esc(gcal_url)}" class="act-btn act-cal" target="_blank" rel="noopener" title="Add to Google Calendar">📅 Add to Calendar</a>'
     imdb_btn = f'<a href="https://www.imdb.com/title/{imdb_id}/" class="act-btn act-imdb" target="_blank" rel="noopener">IMDb</a>' if imdb_id else ''
     rt_btn = f'<a href="https://www.rottentomatoes.com/search?search={_esc(film_title)}" class="act-btn act-rt" target="_blank" rel="noopener">Rotten Tomatoes</a>'
     trakt_btn = f'<a href="https://trakt.tv/search?query={_esc(film_title)}" class="act-btn act-trakt" target="_blank" rel="noopener">Trakt</a>'
