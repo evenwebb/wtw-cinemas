@@ -20,7 +20,7 @@ from shared_constants import (  # noqa: E402
     _tmdb_cache_key, BBFC_PATTERN, CERT_CDN_MAP, CERT_IMAGES, CERTS_DIR,
     CINEMA_ADDRESSES, FINGERPRINT_FILE, HEALTH_MIN_CINEMAS, HEALTH_MIN_FILMS,
     ICAL_LINE_LENGTH, NOTIFICATIONS, NOTIFICATION_TIME,
-    POSTERS_DIR, SKIP_TMDB_TERMS, WTW_BASE_URL, WTW_CERT_BASE,
+    POSTERS_DIR, SITE_BASE_URL, SKIP_TMDB_TERMS, WTW_BASE_URL, WTW_CERT_BASE,
     logger,
 )
 
@@ -216,7 +216,7 @@ def make_ics_event(
     if film_url:
         parts.append("Book tickets: " + film_url)
     film_slug = _tmdb_cache_key(film_title)
-    parts.append(f"\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/{film_slug}.html")
+    parts.append(f"\nFilm details: {SITE_BASE_URL}/films/{film_slug}.html")
 
     description = "\n".join(parts)
 
@@ -735,7 +735,7 @@ def build_index_html(
             ics_url = f"wtw-{cid}.ics"
             webcal_url = f"webcal://evenwebb.github.io/wtw-cinemas/{ics_url}"
             gcal_url = f"https://calendar.google.com/calendar/render?cid=webcal://evenwebb.github.io/wtw-cinemas/{ics_url}"
-            https_url = f"https://evenwebb.github.io/wtw-cinemas/{ics_url}"
+            https_url = f"{SITE_BASE_URL}/{ics_url}"
             cta_buttons += (
                 f'          <div class="cta-cinema-row">\n'
                 f'            <span class="cta-cinema-name">{info["name"]}</span>\n'
@@ -814,7 +814,7 @@ def build_index_html(
         '  <meta property="og:title" content="What\'s on at WTW Cinemas">\n'
         '  <meta property="og:description" content="Browse upcoming film premieres at WTW Cinemas in Cornwall. Ratings, trailers, and booking links.">\n'
         '  <meta property="og:type" content="website">\n'
-        '  <link rel="canonical" href="https://evenwebb.github.io/wtw-cinemas/">\n'
+        f'  <link rel="canonical" href="{SITE_BASE_URL}/">\n'
         '  <meta name="twitter:card" content="summary">\n'
         '  <link rel="icon" href="data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><text y=\'.9em\' font-size=\'90\'>🎬</text></svg>">\n'
         '  <link rel="icon" media="(prefers-color-scheme: dark)" href="data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><text y=\'.9em\' font-size=\'90\'>🎥</text></svg>">\n'
@@ -1047,7 +1047,7 @@ def build_cinema_page(
         '  <meta name="viewport" content="width=device-width, initial-scale=1">\n'
         f'  <title>What\'s on at WTW {cinema_info["name"]}</title>\n'
         f'  <meta name="description" content="Now showing and coming soon at WTW Cinemas {cinema_info["name"]}.">\n'
-        '  <link rel="canonical" href="https://evenwebb.github.io/wtw-cinemas/">\n'
+        f'  <link rel="canonical" href="{SITE_BASE_URL}/">\n'
         '  <link rel="icon" href="data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><text y=\'.9em\' font-size=\'90\'>🎬</text></svg>">\n'
         '  <link rel="icon" media="(prefers-color-scheme: dark)" href="data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><text y=\'.9em\' font-size=\'90\'>🎥</text></svg>">\n'
         '  <link rel="preconnect" href="https://fonts.googleapis.com">\n'
@@ -1075,7 +1075,7 @@ def build_cinema_page(
 
 def generate_sitemap(film_slugs: List[str], cinema_ids: List[str]) -> str:
     """Generate sitemap.xml for SEO."""
-    base = "https://evenwebb.github.io/wtw-cinemas"
+    base = SITE_BASE_URL
     urls = [f"  <url><loc>{base}/</loc></url>"]
     for slug in film_slugs:
         urls.append(f"  <url><loc>{base}/films/{slug}.html</loc></url>")
@@ -1111,7 +1111,9 @@ def _download_cert_images(session: Optional[requests.Session] = None) -> None:
         try:
             r = s.get(f"{WTW_CERT_BASE}/{cdn_filename}", headers={"Referer": WTW_BASE_URL + "/"}, timeout=10)
             r.raise_for_status()
-            path.write_bytes(r.content)
+            tmp = path.with_suffix(path.suffix + ".tmp")
+            tmp.write_bytes(r.content)
+            tmp.replace(path)
         except Exception as e:
             logger.warning("Cert download failed %s: %s", local_filename, e)
 
@@ -1132,7 +1134,9 @@ def _download_poster(url: str, slug: str, session: Optional[requests.Session] = 
     try:
         r = s.get(url, timeout=15)
         r.raise_for_status()
-        path.write_bytes(r.content)
+        tmp = path.with_suffix(path.suffix + ".tmp")
+        tmp.write_bytes(r.content)
+        tmp.replace(path)
         return f"posters/{slug_clean}.{ext}"
     except Exception as e:
         logger.warning("Poster download failed %s: %s", url[:50], e)
@@ -1602,7 +1606,7 @@ def build_film_page(
         f'  <meta property="og:description" content="{_esc(overview[:200])}">\n'
         f'  <meta property="og:type" content="website">\n'
         f'  {og_image}'
-        f'  <meta property="og:url" content="https://evenwebb.github.io/wtw-cinemas/films/{film_slug}.html">\n'
+        f'  <meta property="og:url" content="{SITE_BASE_URL}/films/{film_slug}.html">\n'
         f'  <meta name="twitter:card" content="{twitter_card}">\n'
         '  <link rel="icon" href="data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><text y=\'.9em\' font-size=\'90\'>🎬</text></svg>">\n'
         '  <link rel="icon" media="(prefers-color-scheme: dark)" href="data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><text y=\'.9em\' font-size=\'90\'>🎥</text></svg>">\n'

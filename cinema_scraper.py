@@ -20,7 +20,6 @@ from datetime import date, datetime, timedelta, timezone
 from itertools import groupby
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
-from zoneinfo import ZoneInfo
 import atexit as _atexit
 
 warnings.filterwarnings("ignore", message=".*OpenSSL.*", category=UserWarning)
@@ -362,6 +361,26 @@ def parse_uk_date(text: str, scrape_date: date) -> Optional[date]:
         except ValueError:
             pass
     return None
+
+
+def _atomic_write_text(path: Path, content: str, encoding: str = "utf-8") -> None:
+    """Write content atomically: temp file then rename. Logs and continues on error."""
+    try:
+        tmp = path.with_suffix(path.suffix + ".tmp")
+        tmp.write_text(content, encoding=encoding)
+        tmp.replace(path)
+    except OSError as e:
+        logger.error("Failed to write %s: %s", path, e)
+
+
+def _atomic_write_bytes(path: Path, content: bytes) -> None:
+    """Write bytes atomically: temp file then rename. Logs and continues on error."""
+    try:
+        tmp = path.with_suffix(path.suffix + ".tmp")
+        tmp.write_bytes(content)
+        tmp.replace(path)
+    except OSError as e:
+        logger.error("Failed to write %s: %s", path, e)
 
 
 # ── Film detail scraping ───────────────────────────────────────────────────────
@@ -1191,7 +1210,8 @@ def main() -> None:
                 k = enrich_futures[fut]
                 try:
                     extra = fut.result()
-                except Exception:
+                except Exception as exc:
+                    logger.warning("TMDb enrichment failed for %s: %s", unique_by_key[k][0], exc)
                     extra = {}
                 if not extra:
                     continue
@@ -1225,7 +1245,8 @@ def main() -> None:
                     k = wo_enrich_futures[fut]
                     try:
                         extra = fut.result()
-                    except Exception:
+                    except Exception as exc:
+                        logger.warning("TMDb poster fetch failed: %s", exc)
                         extra = {}
                     if extra:
                         tmdb_cache.setdefault(k, {}).update({**extra, "cached_at": datetime.now().isoformat()})
@@ -1297,7 +1318,7 @@ def main() -> None:
         if CALENDAR_TIMEZONE.strip():
             header.append(f"X-WR-TIMEZONE:{CALENDAR_TIMEZONE.strip()}")
         ics = ICAL_NEWLINE.join(header) + ICAL_NEWLINE + "".join(events) + f"END:VCALENDAR{ICAL_NEWLINE}"
-        (out_dir / f"wtw-{cid}.ics").write_text(ics, encoding="utf-8")
+        _atomic_write_text(out_dir / f"wtw-{cid}.ics", ics)
         logger.info("Wrote %s (%d events)", f"wtw-{cid}.ics", len(events))
 
     _save_sequence_state()
@@ -1376,7 +1397,7 @@ def main() -> None:
                             now_showing_live=now_showing_films,
                             special_events=special_events,
                             new_slugs=new_slugs)
-    (out_dir / "index.html").write_text(html, encoding="utf-8")
+    _atomic_write_text(out_dir / "index.html", html)
     logger.info("Wrote %s/index.html", OUTPUT_DIR)
 
     # ── Per-film detail pages ────────────────────────────────────────────────
@@ -1455,7 +1476,7 @@ def main() -> None:
             page["title"], slug, page["details"], page["cinemas"],
             showtimes=film_showtimes or None
         )
-        (films_dir / f"{slug}.html").write_text(page_html, encoding="utf-8")
+        _atomic_write_text(films_dir / f"{slug}.html", page_html)
     logger.info("Wrote %d film detail pages to %s/films/", len(film_pages), OUTPUT_DIR)
 
     # ── Poster downloads ─────────────────────────────────────────────────────
@@ -1475,7 +1496,8 @@ def main() -> None:
                     slug = futures[fut]
                     try:
                         local = fut.result() or ""
-                    except Exception:
+                    except Exception as exc:
+                        logger.warning("Poster download failed for %s: %s", slug, exc)
                         local = ""
                     if local:
                         slug_to_page[slug][1]["details"]["poster_url"] = local
@@ -1486,7 +1508,7 @@ def main() -> None:
                 film_showtimes = showtimes_by_slug.get(slug, [])
                 page_html = build_film_page(page["title"], slug, page["details"], page["cinemas"],
                     showtimes=film_showtimes or None)
-                (films_dir / f"{slug}.html").write_text(page_html, encoding="utf-8")
+                _atomic_write_text(films_dir / f"{slug}.html", page_html)
     finally:
         poster_sess.close()
 
@@ -1515,13 +1537,13 @@ def main() -> None:
     )
     for cid, info in enabled_cinemas.items():
         page_html = build_cinema_page(cid, info, now_showing_films, cs_films_sorted)
-        (out_dir / f"{cid}.html").write_text(page_html, encoding="utf-8")
+        _atomic_write_text(out_dir / f"{cid}.html", page_html)
     logger.info("Wrote %d cinema pages", len(enabled_cinemas))
 
     # ── Sitemap ───────────────────────────────────────────────────────────────
     film_slugs = sorted(film_pages.keys())
     sitemap = generate_sitemap(film_slugs, list(enabled_cinemas.keys()))
-    (out_dir / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+    _atomic_write_text(out_dir / "sitemap.xml", sitemap)
     logger.info("Wrote sitemap.xml with %d URLs", len(film_slugs) + len(enabled_cinemas) + 1)
 
     # ── Save fingerprint ─────────────────────────────────────────────────────

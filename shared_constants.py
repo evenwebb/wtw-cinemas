@@ -6,6 +6,7 @@ This module breaks the circular import between those two files.
 from __future__ import annotations
 
 import logging
+import os as _os
 import re
 from typing import Any, Dict, List
 
@@ -14,6 +15,9 @@ ICAL_LINE_LENGTH = 75
 POSTERS_DIR = "docs/posters"
 CERTS_DIR = "docs/certs"
 FINGERPRINT_FILE = ".scrape_fingerprint"
+
+# ── Site URL (used for canonical links, sitemap, iCal, calendar feeds) ──────────
+SITE_BASE_URL = _os.environ.get("SITE_URL", "https://evenwebb.github.io/wtw-cinemas")
 
 # ── WTW site constants ──────────────────────────────────────────────────────────
 WTW_BASE_URL = "https://wtwcinemas.co.uk"
@@ -41,7 +45,6 @@ CINEMA_ADDRESSES = {
 }
 
 # ── Health check minimums ───────────────────────────────────────────────────────
-import os as _os
 HEALTH_MIN_FILMS = int(_os.getenv("HEALTH_MIN_FILMS", "1"))
 HEALTH_MIN_CINEMAS = int(_os.getenv("HEALTH_MIN_CINEMAS", "1"))
 
