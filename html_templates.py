@@ -1404,6 +1404,14 @@ def build_film_page(
         else f'<div class="film-poster"><div class="no-poster">No poster available</div></div>'
     )
 
+    # Crew block
+    crew_html = (
+        f'        <div class="crew">\n'
+        + (f'          <p><strong>Director:</strong> {_esc(director)}</p>\n' if director else '')
+        + (f'          <p><strong>Starring:</strong> {_esc(cast)}</p>\n' if cast else '')
+        + f'        </div>\n'
+    ) if (director or cast) else ''
+
     # Info column: title, meta, action buttons, synopsis, crew
     info_col = (
         f'<div class="film-details">\n'
@@ -1496,13 +1504,6 @@ def build_film_page(
         schema["genre"] = genres
     schema_json = json.dumps(schema, ensure_ascii=False)
     schema_block = f'    <script type="application/ld+json">{schema_json}</script>\n'
-
-    crew_html = (
-        f'        <div class="crew">\n'
-        + (f'          <p><strong>Director:</strong> {_esc(director)}</p>\n' if director else '')
-        + (f'          <p><strong>Starring:</strong> {_esc(cast)}</p>\n' if cast else '')
-        + f'        </div>\n'
-    ) if (director or cast) else ''
 
     table_header = '<thead><tr><th>Date</th><th>Time</th><th>Cinema</th><th></th></tr></thead>' if showtimes else '<thead><tr><th>Date</th><th>Cinema</th><th></th></tr></thead>'
     # Cinema filter pills for showtime table
