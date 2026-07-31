@@ -1191,8 +1191,9 @@ FILM_CSS = _SHARED_CSS + """
 body{position:relative;background:var(--bg)}
 .page{position:relative;z-index:1;max-width:860px;margin:0 auto;padding:1.5rem 1rem 4rem}
 @media(min-width:640px){.page{padding:2rem 2rem 5rem}}
-.back-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1.1rem;background:var(--surface);border:1px solid var(--border);border-radius:100px;color:var(--text-muted);text-decoration:none;font-weight:500;font-size:0.85rem;margin-bottom:1.5rem;transition:all var(--transition)}
-.back-btn:hover{color:var(--accent);border-color:var(--accent);background:var(--accent-dim)}
+.back-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1.1rem;background:rgba(0,0,0,0.5);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.12);border-radius:100px;color:#fff;text-decoration:none;font-weight:500;font-size:0.85rem;position:absolute;top:1rem;left:1rem;z-index:10;transition:all var(--transition)}
+@media(min-width:640px){.back-btn{top:1.5rem;left:2rem}}
+.back-btn:hover{background:rgba(0,0,0,0.7);border-color:rgba(255,255,255,0.25);color:#fff}
 /* Film hero banner */
 .film-hero{position:relative;width:100vw;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;overflow:hidden;background:var(--surface);margin-bottom:1.5rem}
 .film-hero .hero-bg{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:0.3;filter:blur(2px) brightness(0.5)}
@@ -1209,7 +1210,8 @@ body{position:relative;background:var(--bg)}
 .hero-info .genres{color:var(--purple);font-weight:500}
 .hero-info .rating-pill{background:rgba(34,211,238,0.15);color:var(--accent);padding:0.2rem 0.65rem;border-radius:100px;font-weight:600;font-size:0.82rem}
 /* Action buttons row */
-.action-row{display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem}
+.action-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0.75rem;margin-bottom:1.5rem;padding:0.75rem 1rem;background:var(--surface);border:1px solid var(--border);border-radius:12px}
+.action-right{display:flex;flex-wrap:wrap;gap:0.5rem}
 .act-btn{display:inline-flex;align-items:center;gap:0.35rem;padding:0.55rem 1rem;border-radius:100px;text-decoration:none;font-size:0.82rem;font-weight:600;transition:all var(--transition);white-space:nowrap}
 .act-btn:hover{transform:translateY(-1px)}
 .act-cal{background:linear-gradient(135deg,var(--accent),#0891b2);color:#fff;box-shadow:0 2px 12px rgba(34,211,238,0.25)}
@@ -1407,7 +1409,8 @@ def build_film_page(
     imdb_btn = f'<a href="https://www.imdb.com/title/{imdb_id}/" class="act-btn act-imdb" target="_blank" rel="noopener">IMDb</a>' if imdb_id else ''
     rt_btn = f'<a href="https://www.rottentomatoes.com/search?search={_esc(film_title)}" class="act-btn act-rt" target="_blank" rel="noopener">Rotten Tomatoes</a>'
     trakt_btn = f'<a href="https://trakt.tv/search?query={_esc(film_title)}" class="act-btn act-trakt" target="_blank" rel="noopener">Trakt</a>'
-    action_row = f'<div class="action-row">{gcal_html}{imdb_btn}{rt_btn}{trakt_btn}</div>'
+    ext_btns = f'<div class="action-right">{imdb_btn}{rt_btn}{trakt_btn}</div>'
+    action_row = f'<div class="action-row">{gcal_html}{ext_btns}</div>'
 
     # Build cinema showtime table - use whats-on showtimes if available, else coming-soon dates
     table_rows = []
@@ -1636,9 +1639,9 @@ def build_film_page(
         '  <link rel="stylesheet" href="../style.css">\n'
         '</head>\n<body>\n'
         '  <div class="bg-mesh" aria-hidden="true"></div>\n'
+        '  <a href="../" class="back-btn">← Back to all premieres</a>\n'
         + banner_html +
         '  <div class="page">\n'
-        '    <a href="../" class="back-btn">← Back to all premieres</a>\n'
         + action_row + '\n'
         f'    <div class="synopsis">{_esc(overview)}</div>\n'
         + crew_html + schema_block +
