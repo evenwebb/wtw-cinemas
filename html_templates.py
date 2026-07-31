@@ -1613,7 +1613,7 @@ def build_film_page(
         '  <link rel="preconnect" href="https://fonts.googleapis.com">\n'
         '  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
         '  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">\n'
-        '  <link rel="stylesheet" href="style.css">\n'
+        '  <link rel="stylesheet" href="../style.css">\n'
         '</head>\n<body>\n'
         '  <div class="bg-mesh" aria-hidden="true"></div>\n'
         + backdrop_html +

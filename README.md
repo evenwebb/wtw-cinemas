@@ -81,7 +81,7 @@ docs/
 |---|---|
 | **Dual-source** | Scrapes `/coming-soon/` (future release dates) and `/whats-on/` (full multi-date showtime schedules) for all 4 cinemas in parallel |
 | **Showtimes** | Date, time, screen number, accessibility tags (Audio Description, Subtitles, Wheelchair, Strobe, Autism Friendly, Parent & Baby, Kids Club, Silver Screen, Event Cinema), booking links |
-| **Film details** | Runtime, cast, synopsis extracted from individual WTW film pages with 7-day cache |
+| **Film details** | Extracts runtime, cast, synopsis from individual WTW film pages with 7-day cache |
 | **Parallel** | `ThreadPoolExecutor` for cinema scraping and TMDb lookups with `requests.Session` reuse |
 
 ### Enrichment
