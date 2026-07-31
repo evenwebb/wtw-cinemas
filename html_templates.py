@@ -1194,16 +1194,17 @@ body{position:relative;background:var(--bg)}
 .back-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1.1rem;background:var(--surface);border:1px solid var(--border);border-radius:100px;color:var(--text-muted);text-decoration:none;font-weight:500;font-size:0.85rem;margin-bottom:1.5rem;transition:all var(--transition)}
 .back-btn:hover{color:var(--accent);border-color:var(--accent);background:var(--accent-dim)}
 /* Film hero banner */
-.film-hero{position:relative;width:100vw;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;overflow:hidden;min-height:260px;background:var(--surface);margin-bottom:1.5rem}
-.film-hero .hero-bg{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0}
-.film-hero .hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(10,10,18,0.3) 0%,rgba(10,10,18,0.85) 70%,var(--bg) 100%)}
-.film-hero .hero-content{position:relative;z-index:2;display:flex;gap:1.5rem;align-items:flex-end;max-width:860px;margin:0 auto;padding:2rem 1rem 1.5rem;min-height:260px}
-@media(max-width:600px){.film-hero .hero-content{flex-direction:column;align-items:center;text-align:center;gap:1rem}}
-.hero-poster{flex-shrink:0;width:130px}
-@media(min-width:600px){.hero-poster{width:150px}}
-.hero-poster img{width:100%;border-radius:10px;box-shadow:0 8px 35px rgba(0,0,0,0.6);display:block}
-.hero-info h1{font-size:clamp(1.3rem,3.5vw,1.7rem);font-weight:800;line-height:1.15;margin-bottom:0.5rem;color:#fff}
-.hero-info .meta{display:flex;flex-wrap:wrap;align-items:center;gap:0.4rem 0.9rem;font-size:0.88rem;color:rgba(255,255,255,0.7);margin-bottom:0}
+.film-hero{position:relative;width:100vw;left:50%;right:50%;margin-left:-50vw;margin-right:-50vw;overflow:hidden;background:var(--surface);margin-bottom:1.5rem}
+.film-hero .hero-bg{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:0.3;filter:blur(2px) brightness(0.5)}
+.film-hero .hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(10,10,18,0.2) 0%,var(--bg) 100%)}
+.film-hero .hero-content{position:relative;z-index:2;display:flex;gap:2rem;align-items:center;max-width:860px;margin:0 auto;padding:2.5rem 1rem}
+@media(max-width:600px){.film-hero .hero-content{flex-direction:column;align-items:center;text-align:center;gap:1.25rem;padding:2rem 1rem}}
+.hero-poster{flex-shrink:0;width:180px}
+@media(min-width:600px){.hero-poster{width:220px}}
+@media(min-width:768px){.hero-poster{width:250px}}
+.hero-poster img{width:100%;border-radius:12px;box-shadow:0 12px 40px rgba(0,0,0,0.7);display:block}
+.hero-info h1{font-size:clamp(1.3rem,3.5vw,1.8rem);font-weight:800;line-height:1.15;margin-bottom:0.6rem;color:#fff}
+.hero-info .meta{display:flex;flex-wrap:wrap;align-items:center;gap:0.4rem 0.9rem;font-size:0.88rem;color:rgba(255,255,255,0.75);margin-bottom:0}
 .hero-info .stars{color:var(--amber);letter-spacing:0.05em;font-size:0.9rem}
 .hero-info .genres{color:var(--purple);font-weight:500}
 .hero-info .rating-pill{background:rgba(34,211,238,0.15);color:var(--accent);padding:0.2rem 0.65rem;border-radius:100px;font-weight:600;font-size:0.82rem}
@@ -1372,20 +1373,22 @@ def build_film_page(
 
     # Header banner with backdrop + poster
     backdrop_url = film_details.get("backdrop_url") or ""
-    banner_html_parts = ['<div class="film-hero">']
-    if backdrop_url:
-        banner_html_parts.append(f'  <img src="{_esc(backdrop_url)}" alt="" class="hero-bg" loading="lazy" decoding="async">')
-    banner_html_parts.append('  <div class="hero-overlay"></div>')
-    banner_html_parts.append('  <div class="hero-content">')
-    if poster:
-        banner_html_parts.append(f'    <div class="hero-poster"><img src="{_esc(poster_src)}" alt="{_esc(film_title)}" loading="lazy"></div>')
-    banner_html_parts.append('    <div class="hero-info">')
-    banner_html_parts.append(f'      <h1>{_esc(film_title)} {_cert_span(bbfc)}{scr_html}</h1>')
-    banner_html_parts.append(f'      <div class="meta">{"".join(meta_parts)}</div>')
-    banner_html_parts.append('    </div>')
-    banner_html_parts.append('  </div>')
-    banner_html_parts.append('</div>')
-    banner_html = "\n".join(banner_html_parts) if (backdrop_url or poster) else ""
+    banner_html = ""
+    if poster or backdrop_url:
+        banner_html_parts = ['<div class="film-hero">']
+        if backdrop_url:
+            banner_html_parts.append(f'  <img src="{_esc(backdrop_url)}" alt="" class="hero-bg" loading="lazy" decoding="async">')
+        banner_html_parts.append('  <div class="hero-overlay"></div>')
+        banner_html_parts.append('  <div class="hero-content">')
+        if poster:
+            banner_html_parts.append(f'    <div class="hero-poster"><img src="{_esc(poster_src)}" alt="{_esc(film_title)}" loading="lazy"></div>')
+        banner_html_parts.append('    <div class="hero-info">')
+        banner_html_parts.append(f'      <h1>{_esc(film_title)} {_cert_span(bbfc)}{scr_html}</h1>')
+        banner_html_parts.append(f'      <div class="meta">{"".join(meta_parts)}</div>')
+        banner_html_parts.append('    </div>')
+        banner_html_parts.append('  </div>')
+        banner_html_parts.append('</div>')
+        banner_html = "\n".join(banner_html_parts)
 
     trailer_html = (
         f'<div class="trailer-wrap"><iframe src="{_esc(embed_url)}" title="Trailer for {_esc(film_title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>'
