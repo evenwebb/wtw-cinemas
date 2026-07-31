@@ -232,4 +232,4 @@ No frameworks, no build step, no JavaScript dependencies. Static HTML/CSS/JS out
 
 ## License
 
-MIT
+GNU General Public License v3.0
