@@ -10,7 +10,7 @@ X-WR-CALDESC:Upcoming movie premieres at WTW Cinemas St Austell
 X-WR-TIMEZONE:Europe/London
 BEGIN:VEVENT
 UID:58c94b2a922697282be2e9c040963c4fa7449116@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20260802
 DTEND;VALUE=DATE:20260803
 SUMMARY:PAW Patrol: The Dino Movie - MediCinema Advanced Screening @ WTW St
@@ -20,12 +20,11 @@ DESCRIPTION:PAW Patrol: The Dino Movie - MediCinema Advanced Screening (1h
  ands on a mysterious dinosaur island after a storm\, where they meet Rex\,
   a stranded pup. When Humdinger's reckless mining triggers a volcano\, the
   team faces their biggest rescue mission yet to save the island.\n\nStarri
- ng: Carter Young\, Hayden Chamberlen\, Mckenna Grace\, Rain Janjua\, Henry
-  Bolan\, Lucien Duncan-Reid\n\nFilm release at WTW Cinemas St Austell\nBoo
- k tickets: https://wtwcinemas.co.uk/st-austell/film/5604/paw-patrol-the-di
- no-movie-medicinema-advanced-screening\n\nFilm details: https://evenwebb.g
- ithub.io/wtw-cinemas/films/paw-patrol-the-dino-movie-medicinema-advanced-s
- creening.html
+ ng: Carter Young\, Hayden Chamberlen\, Mckenna Grace\n\nFilm release at WT
+ W Cinemas St Austell\nBook tickets: https://wtwcinemas.co.uk/st-austell/fi
+ lm/5604/paw-patrol-the-dino-movie-medicinema-advanced-screening\n\nFilm de
+ tails: https://evenwebb.github.io/wtw-cinemas/films/paw-patrol-the-dino-mo
+ vie-medicinema-advanced-screening.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5604/paw-patrol-the-dino-movie
  -medicinema-advanced-screening
@@ -33,7 +32,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:e8bc75d6fe03b87b0fcca514e27948c416a9e1c3@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20260805
 DTEND;VALUE=DATE:20260806
 SUMMARY:PAW Patrol: The Dino Movie @ WTW St Austell
@@ -42,21 +41,21 @@ DESCRIPTION:PAW Patrol: The Dino Movie (1h 28min)\n★★☆☆☆\nAdventure\, 
  land after a storm\, where they meet Rex\, a stranded pup. When Humdinger'
  s reckless mining triggers a volcano\, the team faces their biggest rescue
   mission yet to save the island.\n\nStarring: Carter Young\, Hayden Chambe
- rlen\, Mckenna Grace\, Rain Janjua\, Henry Bolan\, Lucien Duncan-Reid\n\nF
- ilm release at WTW Cinemas St Austell\nBook tickets: https://wtwcinemas.co
- .uk/st-austell/film/5539/paw-patrol-the-dino-movie\n\nFilm details: https:
- //evenwebb.github.io/wtw-cinemas/films/paw-patrol-the-dino-movie.html
+ rlen\, Mckenna Grace\n\nFilm release at WTW Cinemas St Austell\nBook ticke
+ ts: https://wtwcinemas.co.uk/st-austell/film/5539/paw-patrol-the-dino-movi
+ e\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/paw-patrol
+ -the-dino-movie.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5539/paw-patrol-the-dino-movie
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:e8f9e76b588af9fa273d30c06596bdd8354c9026@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20260806
 DTEND;VALUE=DATE:20260807
 SUMMARY:Turandot on Sydney Harbour @ WTW St Austell
-DESCRIPTION:Turandot on Sydney Harbour (1h 59min)\n★★★☆☆\nMusic\n\nThe Pucc
+DESCRIPTION:Turandot on Sydney Harbour (2h 11min)\n★★★☆☆\nMusic\n\nThe Pucc
  hini opera "Turandot" will be shown completely new at the Gran Teatre del 
  Liceu. The new production by the Spanish video artist Franc Aleu refers wi
  th a wink to the history of the Catalan institution: 20 years ago\, this v
@@ -73,24 +72,23 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:eecd866230bfb0dfc043c8b4311f9af6dbae6794@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20260807
 DTEND;VALUE=DATE:20260808
 SUMMARY:Ice Cream Man @ WTW St Austell
 DESCRIPTION:Ice Cream Man (1h 26min)\nHorror\, Thriller\n\nAn idyllic summe
  r town descends into madness when an ice cream man serves kids sweet delig
  hts with horrifying results.\n\nStarring: Ari Millen\, Charlie Zeltzer\, S
- hiloh O’Reilly\, Kiori Mirza Waldman\, Sarah Abbott\, Benjamin Byron Davis
- \n\nFilm release at WTW Cinemas St Austell\nBook tickets: https://wtwcinem
- as.co.uk/st-austell/film/5626/ice-cream-man\n\nFilm details: https://evenw
- ebb.github.io/wtw-cinemas/films/ice-cream-man.html
+ hiloh O’Reilly\n\nFilm release at WTW Cinemas St Austell\nBook tickets: ht
+ tps://wtwcinemas.co.uk/st-austell/film/5626/ice-cream-man\n\nFilm details:
+  https://evenwebb.github.io/wtw-cinemas/films/ice-cream-man.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5626/ice-cream-man
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:58a869bc8cc53eac2367e528c19c8eb3bbb27cc7@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20260808
 DTEND;VALUE=DATE:20260809
 SUMMARY:André Rieu's 2026 Summer Concert: Viva Maastricht! @ WTW St Austell
@@ -118,7 +116,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:e088c1cdb0c208e52c2667318260dd56b2e18f92@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20260814
 DTEND;VALUE=DATE:20260815
 SUMMARY:Sunny Dancer @ WTW St Austell
@@ -127,37 +125,35 @@ DESCRIPTION:Sunny Dancer (1h 46min)\nDrama\, Comedy\n\nIvy is a teenager in
  Free Camp\, a summer retreat for young adults affected by cancer. However\
  , as Ivy is reluctantly dragged through camp experience\, she discovers ne
  w feelings with new friends.\n\nStarring: Bella Ramsey\, Daniel Quinn-Toye
- \, Ruby Stokes\, Earl Cave\, Conrad Khan\, Jasmine Elcock\n\nFilm release 
- at WTW Cinemas St Austell\nBook tickets: https://wtwcinemas.co.uk/st-auste
- ll/film/5632/sunny-dancer\n\nFilm details: https://evenwebb.github.io/wtw-
- cinemas/films/sunny-dancer.html
+ \, Ruby Stokes\n\nFilm release at WTW Cinemas St Austell\nBook tickets: ht
+ tps://wtwcinemas.co.uk/st-austell/film/5632/sunny-dancer\n\nFilm details: 
+ https://evenwebb.github.io/wtw-cinemas/films/sunny-dancer.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5632/sunny-dancer
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b85db0e90673aa2eecdd97885cbb058eeee7dfa8@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20260814
 DTEND;VALUE=DATE:20260815
 SUMMARY:The End of Oak Street @ WTW St Austell
-DESCRIPTION:The End of Oak Street (1h 40min)\nScience Fiction\, Mystery\, T
- hriller\n\nAfter a mysterious cosmic event rips Oak Street from suburbia a
- nd transports their neighborhood to someplace unknown\, the Platt family s
- oon discovers that their very survival depends on them sticking together a
- s they navigate their now unrecognizable surroundings.\n\nStarring: Anne H
- athaway\, Ewan McGregor\, Christian Convery\, Maisy Stella\, Jordan Alexa 
- Davis\, P.J. Byrne\n\nFilm release at WTW Cinemas St Austell\nBook tickets
- : https://wtwcinemas.co.uk/st-austell/film/5591/the-end-of-oak-street\n\nF
- ilm details: https://evenwebb.github.io/wtw-cinemas/films/the-end-of-oak-s
- treet.html
+DESCRIPTION:The End of Oak Street\nScience Fiction\, Mystery\, Thriller\n\n
+ After a mysterious cosmic event rips Oak Street from suburbia and transpor
+ ts their neighborhood to someplace unknown\, the Platt family soon discove
+ rs that their very survival depends on them sticking together as they navi
+ gate their now unrecognizable surroundings.\n\nStarring: Anne Hathaway\, E
+ wan McGregor\, Christian Convery\n\nFilm release at WTW Cinemas St Austell
+ \nBook tickets: https://wtwcinemas.co.uk/st-austell/film/5591/the-end-of-o
+ ak-street\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/th
+ e-end-of-oak-street.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5591/the-end-of-oak-street
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b9db149c214eb9c14de70dd244a353ad3fab6202@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20260903
 DTEND;VALUE=DATE:20260904
 SUMMARY:La Traviata on Sydney Harbour @ WTW St Austell
@@ -184,26 +180,25 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:dd7b58cb1a3592106dcf11dca222190d92c212e7@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20260909
 DTEND;VALUE=DATE:20260910
 SUMMARY:Pressure @ WTW St Austell
-DESCRIPTION:Pressure (1h 41min)\n★★★★☆\nThriller\, History\, War\n\nIn the 
+DESCRIPTION:Pressure (1h 40min)\n★★★★☆\nThriller\, History\, War\n\nIn the 
  tense 72 hours before D-Day\, and the fate of the free world hanging in th
  e balance\, General Dwight D. Eisenhower and Captain James Stagg face an i
  mpossible choice—launch the largest and most dangerous seaborne invasion i
  n history or risk losing the war altogether.\n\nStarring: Andrew Scott\, B
- rendan Fraser\, Kerry Condon\, Chris Messina\, Damian Lewis\, Tamsin Topol
- ski\n\nFilm release at WTW Cinemas St Austell\nBook tickets: https://wtwci
- nemas.co.uk/st-austell/film/5580/pressure\n\nFilm details: https://evenweb
- b.github.io/wtw-cinemas/films/pressure.html
+ rendan Fraser\, Kerry Condon\n\nFilm release at WTW Cinemas St Austell\nBo
+ ok tickets: https://wtwcinemas.co.uk/st-austell/film/5580/pressure\n\nFilm
+  details: https://evenwebb.github.io/wtw-cinemas/films/pressure.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5580/pressure
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:3aaf6d754065dd5ee4baa27300f8a4553a127fb8@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
 SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom @ WTW St Austell
@@ -223,7 +218,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:1036f7487e5086c78150dedc3879a075f1bc559c@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
 SUMMARY:National Theatre Live: The Misanthrope @ WTW St Austell
@@ -237,11 +232,10 @@ DESCRIPTION:National Theatre Live: The Misanthrope (2h 30min)\nDrama\, Come
  oman for daring to speak her mind. Award-winner Sandra Oh is the Misanthro
  pe in Martin Crimp's cutting new version of Molière's dark comedy\, direct
  ed by National Theatre Director Indhu Rubasingham.\n\nStarring: Sandra Oh\
- , Paul Chahidi\, Abigail Cruttenden\, Imogen Elliott\, Rina Fatania\, Fred
- die MacBruce\n\nFilm release at WTW Cinemas St Austell\nBook tickets: http
- s://wtwcinemas.co.uk/st-austell/film/5599/national-theatre-live-the-misant
- hrope\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/nation
- al-theatre-live-the-misanthrope.html
+ n\nFilm release at WTW Cinemas St Austell\nBook tickets: https://wtwcinema
+ s.co.uk/st-austell/film/5599/national-theatre-live-the-misanthrope\n\nFilm
+  details: https://evenwebb.github.io/wtw-cinemas/films/national-theatre-li
+ ve-the-misanthrope.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5599/national-theatre-live-the
  -misanthrope
@@ -249,48 +243,47 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:91b87fe5930fced571d86fc7108b0cb81a1abf16@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
 SUMMARY:Digger @ WTW St Austell
 DESCRIPTION:Digger (1h 46min)\nDrama\, Comedy\n\nThe most powerful man in t
  he world embarks on a frantic mission to prove he is humanity's savior bef
  ore the disaster he's unleashed destroys everything.\n\nStarring: Tom Crui
- se\, Riz Ahmed\, John Goodman\, Sandra Hüller\, Michael Stuhlbarg\, Jesse 
- Plemons\n\nFilm release at WTW Cinemas St Austell\nBook tickets: https://w
- twcinemas.co.uk/st-austell/film/5583/digger\n\nFilm details: https://evenw
- ebb.github.io/wtw-cinemas/films/digger.html
+ se\, Sandra Hüller\, John Goodman\n\nFilm release at WTW Cinemas St Austel
+ l\nBook tickets: https://wtwcinemas.co.uk/st-austell/film/5583/digger\n\nF
+ ilm details: https://evenwebb.github.io/wtw-cinemas/films/digger.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5583/digger
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ea4730cfbea987f162cdb96204b7cd66891d4866@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Street Fighter @ WTW St Austell
-DESCRIPTION:Street Fighter (2h 5min)\nAction\, Fantasy\n\nIn 1993\, estrang
- ed Street Fighters Ryu and Ken Masters are thrown back into combat when th
- e mysterious Chun-Li recruits them for the next World Warrior Tournament: 
- a brutal clash of fists\, fate\, and fury. But behind this battle royale l
- ies a deadly conspiracy that forces them to face off against each other an
- d the demons of their past. And if they don't\, it's GAME OVER!\n\nStarrin
- g: Noah Centineo\, Andrew Koji\, Callina Liang\, Joe Anoa'i\, David Dastma
- lchian\, Cody Rhodes\n\nFilm release at WTW Cinemas St Austell\nBook ticke
- ts: https://wtwcinemas.co.uk/st-austell/film/5582/street-fighter\n\nFilm d
- etails: https://evenwebb.github.io/wtw-cinemas/films/street-fighter.html
+DESCRIPTION:Street Fighter\nAction\, Fantasy\n\nIn 1993\, estranged Street 
+ Fighters Ryu and Ken Masters are thrown back into combat when the mysterio
+ us Chun-Li recruits them for the next World Warrior Tournament: a brutal c
+ lash of fists\, fate\, and fury. But behind this battle royale lies a dead
+ ly conspiracy that forces them to face off against each other and the demo
+ ns of their past. And if they don't\, it's GAME OVER!\n\nStarring: Andrew 
+ Koji\, Noah Centineo\, Callina Liang\n\nFilm release at WTW Cinemas St Aus
+ tell\nBook tickets: https://wtwcinemas.co.uk/st-austell/film/5582/street-f
+ ighter\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/stree
+ t-fighter.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5582/street-fighter
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:35b81ba7d021cdb992e698eb1b5348e9d115c82f@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Macbeth - Royal Ballet & Opera 26-27 Season @ WTW St Austell
-DESCRIPTION:Macbeth - Royal Ballet & Opera 26-27 Season (1h 53min)\n★★★☆☆\n
+DESCRIPTION:Macbeth - Royal Ballet & Opera 26-27 Season (3h 30min)\n★★★☆☆\n
  Drama\, War\n\nFeature film adaptation of Shakespeare's Scottish play abou
  t General Macbeth whose ambitious wife urges him to use wicked means in or
  der to gain power of the throne over the sitting king\, Duncan.\n\nStarrin
@@ -306,18 +299,18 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5d3cd7ce9961ebf7eda33da15fedffb8085c1985@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Fallen Angels by Noël Coward @ WTW St Austell
-DESCRIPTION:Fallen Angels by Noël Coward (1h 38min)\n★★★★☆\nAction\, Romanc
+DESCRIPTION:Fallen Angels by Noël Coward (1h 50min)\n★★★★☆\nAction\, Romanc
  e\, Crime\n\nAn indifferent hitman\, his infatuated business partner and a
  n ex-convict search for love and meaning as their lives cross paths in Hon
- g Kong.\n\nStarring: Leon Lai Ming\, Michele Reis\, Takeshi Kaneshiro\, Ch
- arlie Yeung Choi-Nei\, Karen Mok Man-Wai\, Chan Man-Lei\n\nFilm release at
-  WTW Cinemas St Austell\nBook tickets: https://wtwcinemas.co.uk/st-austell
- /film/5635/fallen-angels-by-nol-coward\n\nFilm details: https://evenwebb.g
- ithub.io/wtw-cinemas/films/fallen-angels-by-no-l-coward.html
+ g Kong.\n\nStarring: Rose Byrne\, Kelli O'Hara\, Tracee Chimo\, Mark Consu
+ elos\, Christopher Fitzgeral\, Aasif Mandv\n\nFilm release at WTW Cinemas 
+ St Austell\nBook tickets: https://wtwcinemas.co.uk/st-austell/film/5635/fa
+ llen-angels-by-nol-coward\n\nFilm details: https://evenwebb.github.io/wtw-
+ cinemas/films/fallen-angels-by-no-l-coward.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5635/fallen-angels-by-nol-cowa
  rd
@@ -325,7 +318,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:63f70690497b3c65fded8d88f55b70c928ff36f4@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:Manon - Royal Ballet & Opera 26-27 Season @ WTW St Austell
@@ -352,28 +345,27 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:d37300144c2a8f58c137480bc2c490325dc943ec@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Wild Horse Nine @ WTW St Austell
-DESCRIPTION:Wild Horse Nine (1h 58min)\nComedy\, Crime\, Thriller\n\nShortl
- y before the 1973 Chilean coup\, CIA agents Chris and Lee are dispatched f
- rom Santiago to Easter Island by their bureau chief\, MJ. Amongst the Isla
- nd's iconic statues\, and as the longtime partners wrestle with their dark
-  pasts and present conspiracies\, Chris's newfound bond with a pair of reb
- ellious students threatens to send everyone’s trip to this remote paradise
-  sideways.\n\nStarring: John Malkovich\, Sam Rockwell\, Steve Buscemi\, Pa
- rker Posey\, Tom Waits\, Mariana di Girolamo\n\nFilm release at WTW Cinema
- s St Austell\nBook tickets: https://wtwcinemas.co.uk/st-austell/film/5585/
- wild-horse-nine\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/fi
- lms/wild-horse-nine.html
+DESCRIPTION:Wild Horse Nine\nComedy\, Crime\, Thriller\n\nShortly before th
+ e 1973 Chilean coup\, CIA agents Chris and Lee are dispatched from Santiag
+ o to Easter Island by their bureau chief\, MJ. Amongst the Island's iconic
+  statues\, and as the longtime partners wrestle with their dark pasts and 
+ present conspiracies\, Chris's newfound bond with a pair of rebellious stu
+ dents threatens to send everyone’s trip to this remote paradise sideways.\
+ n\nStarring: John Malkovich\, Sam Rockwell\, Steve Buscemi\n\nFilm release
+  at WTW Cinemas St Austell\nBook tickets: https://wtwcinemas.co.uk/st-aust
+ ell/film/5585/wild-horse-nine\n\nFilm details: https://evenwebb.github.io/
+ wtw-cinemas/films/wild-horse-nine.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5585/wild-horse-nine
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c327ec635ea9b70af2b86faaddd4172d4043f385@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Carmen - Royal Ballet & Opera 26-27 Season @ WTW St Austell
@@ -397,7 +389,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f2b5b85db995e1d7eb1444af6f0839095de77306@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:GIANT - The Play @ WTW St Austell
@@ -407,18 +399,17 @@ DESCRIPTION:GIANT - The Play (2h 16min)\nDrama\n\nSet in the summer of 1983
  le to contain the fallout from his public denunciation of Israel and defen
  ce of the Palestinians in a review of a book on the 1982 Lebanon war. Film
  ed live onstage at the Harold Pinter Theatre in London's West End in 2025.
- \n\nStarring: John Lithgow\, Elliot Levey\, Aya Cash\, Rachael Stirling\, 
- Tessa Bonham Jones\, Richard Hope\n\nFilm release at WTW Cinemas St Austel
- l\nBook tickets: https://wtwcinemas.co.uk/st-austell/film/5619/giant-the-p
- lay\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/giant-th
- e-play.html
+ \n\nStarring: Aya Cash\, Elliot Levey\, John Lithgow\, Rachael Stirling\n\
+ nFilm release at WTW Cinemas St Austell\nBook tickets: https://wtwcinemas.
+ co.uk/st-austell/film/5619/giant-the-play\n\nFilm details: https://evenweb
+ b.github.io/wtw-cinemas/films/giant-the-play.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5619/giant-the-play
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:3a3f5a10a6cc459a1044d66728b132801f3852ff@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:The Hunger Games: Sunrise on the Reaping @ WTW St Austell
@@ -426,11 +417,10 @@ DESCRIPTION:The Hunger Games: Sunrise on the Reaping\nScience Fiction\, Act
  ion\, Adventure\n\nReturn to the world of Panem 24 years before the events
   of The Hunger Games\, starting on the morning of the reaping of the 50th 
  Hunger Games\, also known as the Second Quarter Quell.\n\nStarring: Joseph
-  Zada\, Mckenna Grace\, Jesse Plemons\, Elle Fanning\, Ralph Fiennes\, May
- a Hawke\n\nFilm release at WTW Cinemas St Austell\nBook tickets: https://w
- twcinemas.co.uk/st-austell/film/5586/the-hunger-games-sunrise-on-the-reapi
- ng\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/the-hunge
- r-games-sunrise-on-the-reaping.html
+  Zada\, Mckenna Grace\, Jesse Plemons\n\nFilm release at WTW Cinemas St Au
+ stell\nBook tickets: https://wtwcinemas.co.uk/st-austell/film/5586/the-hun
+ ger-games-sunrise-on-the-reaping\n\nFilm details: https://evenwebb.github.
+ io/wtw-cinemas/films/the-hunger-games-sunrise-on-the-reaping.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5586/the-hunger-games-sunrise-
  on-the-reaping
@@ -438,24 +428,23 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:36deef46b001f035f9acd675b456c9caa83086c3@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Focker-In-Law @ WTW St Austell
 DESCRIPTION:Focker-In-Law\nComedy\, Romance\n\nHenry\, son of Greg and Pam 
  Focker\, faces family chaos when he decides to marry a strong-willed woman
-  who appears to be his complete mismatch.\n\nStarring: Ben Stiller\, Rober
- t De Niro\, Ariana Grande\, Skyler Gisondo\, Owen Wilson\, Blythe Danner\n
- \nFilm release at WTW Cinemas St Austell\nBook tickets: https://wtwcinemas
- .co.uk/st-austell/film/5587/fockerinlaw\n\nFilm details: https://evenwebb.
- github.io/wtw-cinemas/films/focker-in-law.html
+  who appears to be his complete mismatch.\n\nStarring: Robert De Niro\, Be
+ n Stiller\, Ariana Grande\n\nFilm release at WTW Cinemas St Austell\nBook 
+ tickets: https://wtwcinemas.co.uk/st-austell/film/5587/fockerinlaw\n\nFilm
+  details: https://evenwebb.github.io/wtw-cinemas/films/focker-in-law.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5587/fockerinlaw
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c5673731d89cc7ea29a0a7aa9477d744d852c871@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:The Nutcracker - Royal Ballet & Opera 26-27 Season @ WTW St Austell
@@ -478,62 +467,59 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:bb743c363da82b476a08e6940ee2473669b218bc@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:The Cat in the Hat @ WTW St Austell
-DESCRIPTION:The Cat in the Hat (1h 22min)\n★★★☆☆\nFantasy\, Adventure\, Fam
- ily\, Comedy\n\nDuring a rainy day\, and while their mother is out\, Conra
- d and Sally\, and their pet fish\, are visited by the mischievous Cat in t
- he Hat. Fun soon turns to mayhem\, and the siblings must figure out how to
-  rid themselves of the maniacal Cat.\n\nStarring: Mike Myers\, Dakota Fann
- ing\, Spencer Breslin\, Kelly Preston\, Alec Baldwin\, Amy Hill\n\nFilm re
- lease at WTW Cinemas St Austell\nBook tickets: https://wtwcinemas.co.uk/st
- -austell/film/5584/the-cat-in-the-hat\n\nFilm details: https://evenwebb.gi
- thub.io/wtw-cinemas/films/the-cat-in-the-hat.html
+DESCRIPTION:The Cat in the Hat\n★★★☆☆\nFantasy\, Adventure\, Family\, Comed
+ y\n\nDuring a rainy day\, and while their mother is out\, Conrad and Sally
+ \, and their pet fish\, are visited by the mischievous Cat in the Hat. Fun
+  soon turns to mayhem\, and the siblings must figure out how to rid themse
+ lves of the maniacal Cat.\n\nStarring: Bill Hader\, Xochitl Gomez\, Quinta
+  Brunson\n\nFilm release at WTW Cinemas St Austell\nBook tickets: https://
+ wtwcinemas.co.uk/st-austell/film/5584/the-cat-in-the-hat\n\nFilm details: 
+ https://evenwebb.github.io/wtw-cinemas/films/the-cat-in-the-hat.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5584/the-cat-in-the-hat
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:10c6948bd827c8cc4ae928a3c66eed5292a63c60@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Avengers: Doomsday @ WTW St Austell
-DESCRIPTION:Avengers: Doomsday (2h 45min)\nScience Fiction\, Action\, Adven
- ture\n\nBeloved heroes from three distinct universes are set on a deadly c
- ollision course and face an existential threat unlike anything they've eve
- r encountered.\n\nStarring: Robert Downey Jr.\, Chris Evans\, Chris Hemswo
- rth\, Pedro Pascal\, Paul Rudd\, Anthony Mackie\n\nFilm release at WTW Cin
- emas St Austell\nBook tickets: https://wtwcinemas.co.uk/st-austell/film/55
- 88/avengers-doomsday\n\nFilm details: https://evenwebb.github.io/wtw-cinem
- as/films/avengers-doomsday.html
+DESCRIPTION:Avengers: Doomsday\nScience Fiction\, Action\, Adventure\n\nBel
+ oved heroes from three distinct universes are set on a deadly collision co
+ urse and face an existential threat unlike anything they've ever encounter
+ ed.\n\nStarring: Robert Downey Jr.\, Chris Evans\, Chris Hemsworth\n\nFilm
+  release at WTW Cinemas St Austell\nBook tickets: https://wtwcinemas.co.uk
+ /st-austell/film/5588/avengers-doomsday\n\nFilm details: https://evenwebb.
+ github.io/wtw-cinemas/films/avengers-doomsday.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5588/avengers-doomsday
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:4f7a591e7eb312c7a038c26b128a2bbe1f6db7d1@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Dune: Part Three @ WTW St Austell
-DESCRIPTION:Dune: Part Three (2h 20min)\nScience Fiction\, Adventure\n\nEmp
- eror Paul Atreides faces the fallout from his ascent to power as political
-  plots and a galaxy-wide holy war endanger the future only he can see.\n\n
- Starring: Timothée Chalamet\, Zendaya\, Jason Momoa\, Florence Pugh\, Rebe
- cca Ferguson\, Isaach de Bankolé\n\nFilm release at WTW Cinemas St Austell
- \nBook tickets: https://wtwcinemas.co.uk/st-austell/film/5589/dune-part-th
- ree\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/dune-par
- t-three.html
+DESCRIPTION:Dune: Part Three\nScience Fiction\, Adventure\n\nEmperor Paul A
+ treides faces the fallout from his ascent to power as political plots and 
+ a galaxy-wide holy war endanger the future only he can see.\n\nStarring: T
+ imothée Chalamet\, Zendaya\, Jason Momoa\n\nFilm release at WTW Cinemas St
+  Austell\nBook tickets: https://wtwcinemas.co.uk/st-austell/film/5589/dune
+ -part-three\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/
+ dune-part-three.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5589/dune-part-three
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f3b3a728fc272813833fe407fb87b95660d72741@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Jumanji: Open World @ WTW St Austell
@@ -541,23 +527,22 @@ DESCRIPTION:Jumanji: Open World\nFantasy\, Adventure\, Comedy\n\nOur heroes
   have escaped the ever-changing jungles of Jumanji before\, but this time 
  the game comes to us - as Jumanji breaks free of its console\, unleashing 
  its chaos into our world.\n\nStarring: Dwayne Johnson\, Kevin Hart\, Jack 
- Black\, Karen Gillan\, Awkwafina\, Alex Wolff\n\nFilm release at WTW Cinem
- as St Austell\nBook tickets: https://wtwcinemas.co.uk/st-austell/film/5590
- /jumanji-open-world\n\nFilm details: https://evenwebb.github.io/wtw-cinema
- s/films/jumanji-open-world.html
+ Black\n\nFilm release at WTW Cinemas St Austell\nBook tickets: https://wtw
+ cinemas.co.uk/st-austell/film/5590/jumanji-open-world\n\nFilm details: htt
+ ps://evenwebb.github.io/wtw-cinemas/films/jumanji-open-world.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5590/jumanji-open-world
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:70e531dcc22782b1a5735bac959610c861b6bf01@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270127
 SUMMARY:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season @ WTW St 
  Austell
-DESCRIPTION:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season (2h 2
- 0min)\n★★★★★\n\nGiancarlo Del Monaco’s atmospheric production brings to co
+DESCRIPTION:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season (3h 1
+ 5min)\n★★★★★\n\nGiancarlo Del Monaco’s atmospheric production brings to co
  lorful life a 19th-century mining camp during the California Gold Rush. At
   the center of the action is the good-hearted bar owner Minnie\, sung by B
  arbara Daniels\, who takes a motherly interest in the miners. Plácido Domi
@@ -580,7 +565,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0af7f0515d41b03da6676d84c3f362b8fe957d9e@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 SUMMARY:Götterdämmerung - Royal Ballet & Opera 26-27 Season @ WTW St Austel
@@ -609,7 +594,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:e4049a9a6347e16284feb4fbbd411ccd842f6ba6@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20270223
 DTEND;VALUE=DATE:20270224
 SUMMARY:Così Fan Tutte - Royal Ballet & Opera 26-27 Season @ WTW St Austell
@@ -638,7 +623,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:db437e16e6910ec40f2fb1475481d5b9d903cd7d@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20270323
 DTEND;VALUE=DATE:20270324
 SUMMARY:Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Seaso
@@ -659,11 +644,11 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:bfe5163f3b754ee36a208d486f4ccce2fef5691c@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20270422
 DTEND;VALUE=DATE:20270423
 SUMMARY:Swan Lake - Royal Ballet & Opera 26-27 Season @ WTW St Austell
-DESCRIPTION:Swan Lake - Royal Ballet & Opera 26-27 Season (3h 30min)\n\nCla
+DESCRIPTION:Swan Lake - Royal Ballet & Opera 26-27 Season (3h 25min)\n\nCla
  ssical ballet's most powerful tale of love\, treachery and forgiveness ret
  urns to the Royal Opera House stage\n\nStarring: Matthew Ball\, Yasmine Na
  ghdi\n\nFilm release at WTW Cinemas St Austell\nBook tickets: https://wtwc
@@ -677,11 +662,11 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:dd25e59f78018f2808c990617123f4ab67a08153@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20270505
 DTEND;VALUE=DATE:20270506
 SUMMARY:Tosca - Royal Ballet & Opera 26-27 Season @ WTW St Austell
-DESCRIPTION:Tosca - Royal Ballet & Opera 26-27 Season (3h 30min)\nMusic\n\n
+DESCRIPTION:Tosca - Royal Ballet & Opera 26-27 Season (3h 15min)\nMusic\n\n
  In war-torn Rome\, Floria Tosca and Mario Cavaradossi live for each other 
  and for their art. But when Cavaradossi helps an escaped prisoner\, the lo
  vers make a deadly enemy in the form of Baron Scarpia\, Chief of Police. A
@@ -700,12 +685,12 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:2f13f113479402885d114bfa74461352f749d4b1@wtw-cinemas
-DTSTAMP:20260731T093141Z
+DTSTAMP:20260731T093522Z
 DTSTART;VALUE=DATE:20270525
 DTEND;VALUE=DATE:20270526
 SUMMARY:Romeo And Juliet - Royal Ballet & Opera 26-27 Season @ WTW St Auste
  ll
-DESCRIPTION:Romeo And Juliet - Royal Ballet & Opera 26-27 Season (3h 30min)
+DESCRIPTION:Romeo And Juliet - Royal Ballet & Opera 26-27 Season (2h 50min)
  \n★★★☆☆\n\nThe Capulets and Montagues are sworn enemies. Yet it is love at
   first sight for Romeo Montague and Juliet Capulet when they meet each oth
  er at the Capulet ball\, into which Romeo has snuck. The two fall in love 

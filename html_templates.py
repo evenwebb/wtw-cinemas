@@ -935,7 +935,7 @@ def build_index_html(
         '  // Nearest cinema highlight\n'
         '  (function(){\n'
         '    var cinemas={'
-        + ",".join(f'"{c["name"]}":{{lat:{c["lat"]},lng:{c["lng"]}}}' for c in [{"name":"bodmin","lat":50.466,"lng":-4.718},{"name":"helston","lat":50.102,"lng":-5.274},{"name":"falmouth","lat":50.155,"lng":-5.067},{"name":"redruth","lat":50.233,"lng":-5.226},{"name":"st-ives","lat":50.210,"lng":-5.490},{"name":"penzance-savoy","lat":50.118,"lng":-5.538},{"name":"penzance-ritz","lat":50.118,"lng":-5.536}])
+        + ",".join(f'"{c["name"]}":{{lat:{c["lat"]},lng:{c["lng"]}}}' for c in [{"name":"St Austell","lat":50.338,"lng":-4.795},{"name":"Newquay","lat":50.414,"lng":-5.075},{"name":"Wadebridge","lat":50.517,"lng":-4.835},{"name":"Truro","lat":50.263,"lng":-5.051}])
         + '};\n'
         '    if(!navigator.geolocation)return;\n'
         '    navigator.geolocation.getCurrentPosition(function(pos){\n'
