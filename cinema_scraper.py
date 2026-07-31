@@ -431,13 +431,25 @@ def fetch_film_details(
                 details["runtime"] = f"{m.group(1)} min"
                 break
 
-        # Cast: find text after "Starring:"
-        for text in soup.stripped_strings:
-            if "starring" in text.lower():
-                rest = text.split(":", 1)[-1].strip()
+        # Cast & Director: find <li> elements with "Starring:" or "Directed by:"
+        for li in soup.find_all("li"):
+            li_text = li.get_text(" ", strip=True)
+            if not details.get("cast") and "starring" in li_text.lower():
+                rest = li_text.split(":", 1)[-1].strip()
                 if len(rest) > 3:
                     details["cast"] = rest
-                break
+            if not details.get("director") and "directed by" in li_text.lower():
+                rest = li_text.split(":", 1)[-1].strip()
+                if len(rest) > 1:
+                    details["director"] = rest
+        # Fallback: try stripped_strings for cast
+        if not details.get("cast"):
+            for text in soup.stripped_strings:
+                if "starring" in text.lower():
+                    rest = text.split(":", 1)[-1].strip()
+                    if len(rest) > 3:
+                        details["cast"] = rest
+                    break
 
         # Synopsis
         for p in soup.find_all("p"):
@@ -616,26 +628,43 @@ def scrape_cinema_whats_on(
     films: List[Dict[str, Any]] = []
     today_scrape = date.today()
 
-    # First, get film titles from the hero slider (.row.blurb h1)
-    hero_titles = []
+    # Step 1: Extract hero slider data — (title, film_url)
+    hero_entries: List[Tuple[str, str]] = []  # (title, film_url)
     for blurb in soup.select(".row.blurb"):
         h1 = blurb.select_one("h1")
-        if h1:
+        film_link = blurb.select_one("a[href*='/film/']")
+        if h1 and film_link:
             title = h1.get_text(strip=True)
             if title and not any(skip in title.lower() for skip in (
                 "looking ahead", "gaming", "private cinema",
                 "onscreen magazine", "book the cinema",
             )):
-                hero_titles.append(title)
+                furl = film_link.get("href", "")
+                if furl and not furl.startswith("http"):
+                    furl = WTW_BASE_URL + furl
+                hero_entries.append((title, furl))
 
-    # Get film items - current site uses .poster-film-content in #film_section
+    # Step 2: Build hero runtime lookup by fetching film detail pages (cached)
+    hero_runtimes: Dict[int, Tuple[str, str, Dict[str, str]]] = {}  # runtime → (title, film_url, details)
+    local_cache = load_cache()
+    for hero_title, hero_url in hero_entries:
+        details = fetch_film_details(hero_url, local_cache, session=session)
+        if details:
+            rt_str = details.get("runtime", "")
+            rt_match = re.search(r"(\d+)", str(rt_str))
+            if rt_match:
+                rt = int(rt_match.group(1))
+                if rt > 1 and rt not in hero_runtimes:
+                    hero_runtimes[rt] = (hero_title, hero_url, details)
+
+    # Step 3: Get film items from #film_section
     film_items = soup.select("#film_section .poster-film-content")
     if not film_items:
         logger.warning("No .poster-film-content nodes on whats-on page for %s", cinema_name)
         return films
 
-    for idx, item in enumerate(film_items):
-        # Runtime and starring
+    for item in film_items:
+        # Runtime and starring from film section
         runtime = 0
         starring = ""
         rt_div = item.select_one(".running-time")
@@ -648,27 +677,29 @@ def scrape_cinema_whats_on(
             if rt_match:
                 runtime = int(rt_match.group(1))
 
-        # Film title — try to match to hero slider by index, or extract from booking URL
-        title = hero_titles[idx] if idx < len(hero_titles) else ""
-        if not title:
-            # Fallback: try to find film name from nearby poster img alt in parent chain
-            parent = item.parent
-            for _ in range(10):
-                if not parent:
-                    break
-                for img in parent.select("img[alt]"):
-                    alt = img.get("alt", "").strip()
-                    if (alt and len(alt) > 2 and
-                        alt not in ("2D", "3D", "background-image", "Wheelchair Access",
-                                    "Closed Caption Subtitle Glasses Available",
-                                    "Audio Description Headsets Available",
-                                    "Contains a sequence of flashing lights.",
-                                    "Laser Projection", "Autism Friendly Film")):
-                        title = alt
+        # Match film section to hero slider by runtime
+        title = ""
+        film_url = ""
+        page_synopsis = ""
+        if runtime > 1 and runtime in hero_runtimes:
+            title, film_url, details = hero_runtimes[runtime]
+            page_synopsis = details.get("synopsis", "")
+        elif starring:
+            # Fallback: match by first actor name in hero blurb text
+            first_actor = starring.split(",")[0].strip().lower()
+            if len(first_actor) > 3:
+                for blurb in soup.select(".row.blurb"):
+                    blurb_text = blurb.get_text(" ", strip=True).lower()
+                    if first_actor in blurb_text:
+                        h1 = blurb.select_one("h1")
+                        fl = blurb.select_one("a[href*='/film/']")
+                        if h1:
+                            title = h1.get_text(strip=True)
+                        if fl:
+                            film_url = fl.get("href", "")
+                            if film_url and not film_url.startswith("http"):
+                                film_url = WTW_BASE_URL + film_url
                         break
-                if title:
-                    break
-                parent = parent.parent if hasattr(parent, 'parent') else None
 
         if not title:
             continue
@@ -816,6 +847,7 @@ def scrape_cinema_whats_on(
                 "runtime": runtime,
                 "starring": starring,
                 "bbfc": bbfc,
+                "synopsis": page_synopsis,
             })
 
     logger.info("  whats-on %s: %d films with showtimes", cinema_name, len(films))
@@ -1427,19 +1459,43 @@ def main() -> None:
         for wf in wf_list:
             slug = _tmdb_cache_key(wf["title"])
             if slug not in now_showing_entries:
+                # Use title from film cache if we have a matching entry
+                best_title = wf["title"]
+                details: Dict[str, Any] = {
+                    "screening": wf.get("screening", ""),
+                    "screening_feature": wf.get("screening_feature", ""),
+                    "poster_url": wf.get("poster_url", ""),
+                    "runtime": f"{wf['runtime']} min" if wf.get("runtime") else "",
+                    "cast": wf.get("starring", ""),
+                    "bbfc": wf.get("bbfc", ""),
+                    "synopsis": wf.get("synopsis", ""),
+                }
                 now_showing_entries[slug] = {
-                    "title": wf["title"], "slug": slug,
-                    "details": {
-                        "screening": wf.get("screening", ""),
-                        "screening_feature": wf.get("screening_feature", ""),
-                        "poster_url": wf.get("poster_url", ""),
-                    },
+                    "title": best_title, "slug": slug,
+                    "details": details,
                     "cinemas": [],
                     "release_date": date.today(),
                 }
             now_showing_entries[slug]["cinemas"].append(
                 (wf["cinema_name"], wf["film_url"], date.today(), wf["cinema_id"])
             )
+    # ── Cross-reference with coming-soon to enrich now-showing films ────────
+    # Build a lookup of coming-soon film URLs by normalized title
+    cs_urls: Dict[str, str] = {}
+    for rd, title, cname, furl, fdetails, cid in all_films:
+        key = _tmdb_cache_key(title)
+        if key not in cs_urls and furl:
+            cs_urls[key] = furl
+    # Fetch WTW detail pages for now-showing films that have a coming-soon URL
+    for slug, entry in now_showing_entries.items():
+        if slug in cs_urls and slug not in film_pages:
+            wf_url = cs_urls[slug]
+            page_details = fetch_film_details(wf_url, cache)
+            if page_details:
+                for field in ("synopsis", "runtime", "cast", "title"):
+                    val = page_details.get(field)
+                    if val and not entry["details"].get(field):
+                        entry["details"][field] = val
     # Deduplicate showtimes per slug for detail pages
     showtimes_by_slug: Dict[str, List[Dict]] = {}
     for norm_title, wf_list in whats_on_data.items():
