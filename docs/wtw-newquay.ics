@@ -10,11 +10,11 @@ X-WR-CALDESC:Upcoming movie premieres at WTW Cinemas Newquay
 X-WR-TIMEZONE:Europe/London
 BEGIN:VEVENT
 UID:029169e5381dc142980e52d5bf1550bd934fbfff@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20260807
 DTEND;VALUE=DATE:20260808
 SUMMARY:Ice Cream Man @ WTW Newquay
-DESCRIPTION:Ice Cream Man (1h 26min)\n★★☆☆☆\nHorror\, Thriller\, Comedy\n\n
+DESCRIPTION:Ice Cream Man (1h 26min)\n★★★☆☆\nHorror\, Thriller\, Comedy\n\n
  An idyllic summer town descends into madness when an ice cream man serves 
  kids sweet delights with horrifying results.\n\nStarring: Ari Millen\, Cha
  rlie Zeltzer\, Shiloh O’Reilly\, Kiori Mirza Waldman\, Sarah Abbott\, Benj
@@ -27,7 +27,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5ef1955aa6aafacc49151ae3f4ad69fa9f29167b@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20260808
 DTEND;VALUE=DATE:20260809
 SUMMARY:André Rieu's 2026 Summer Concert: Viva Maastricht! @ WTW Newquay
@@ -55,7 +55,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:13f8dcdae77d41fc4427c28009aa12305ec034c8@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20260811
 DTEND;VALUE=DATE:20260812
 SUMMARY:Nimrods: A Green Day Comedy @ WTW Newquay
@@ -73,7 +73,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5329894e7f644a247e6429b0e262578e4ea1bb3a@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20260812
 DTEND;VALUE=DATE:20260813
 SUMMARY:KATSEYE: WILD HEARTS @ WTW Newquay
@@ -91,27 +91,27 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8ea89ca4d583281510903efd4dfbcc7b8164cb44@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20260814
 DTEND;VALUE=DATE:20260815
 SUMMARY:The End of Oak Street @ WTW Newquay
-DESCRIPTION:The End of Oak Street (1h 40min)\nScience Fiction\, Mystery\, T
- hriller\n\nAfter a mysterious cosmic event rips Oak Street from suburbia a
- nd transports their neighborhood to someplace unknown\, the Platt family s
- oon discovers that their very survival depends on them sticking together a
- s they navigate their now unrecognizable surroundings.\n\nStarring: Anne H
- athaway\, Ewan McGregor\, Christian Convery\, Maisy Stella\, Jordan Alexa 
- Davis\, P.J. Byrne\n\nFilm release at WTW Cinemas Newquay\nBook tickets: h
- ttps://wtwcinemas.co.uk/newquay/film/5591/the-end-of-oak-street\n\nFilm de
- tails: https://evenwebb.github.io/wtw-cinemas/films/the-end-of-oak-street.
- html
+DESCRIPTION:The End of Oak Street (1h 40min)\n★★★★☆\nScience Fiction\, Myst
+ ery\, Thriller\n\nAfter a mysterious cosmic event rips Oak Street from sub
+ urbia and transports their neighborhood to someplace unknown\, the Platt f
+ amily soon discovers that their very survival depends on them sticking tog
+ ether as they navigate their now unrecognizable surroundings.\n\nStarring:
+  Anne Hathaway\, Ewan McGregor\, Christian Convery\, Maisy Stella\, Jordan
+  Alexa Davis\, P.J. Byrne\n\nFilm release at WTW Cinemas Newquay\nBook tic
+ kets: https://wtwcinemas.co.uk/newquay/film/5591/the-end-of-oak-street\n\n
+ Film details: https://evenwebb.github.io/wtw-cinemas/films/the-end-of-oak-
+ street.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5591/the-end-of-oak-street
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:e636d98754edd83be98a77882ab86af4a3f5d23f@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20260814
 DTEND;VALUE=DATE:20260815
 SUMMARY:Sunny Dancer @ WTW Newquay
@@ -129,8 +129,65 @@ URL:https://wtwcinemas.co.uk/newquay/film/5632/sunny-dancer
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
+UID:cbbee9ff2aaec040f7141015c36deffce45d77da@wtw-cinemas
+DTSTAMP:20260806T115721Z
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260815
+SUMMARY:Holy Days @ WTW Newquay
+DESCRIPTION:Holy Days (1h 41min)\n★★★☆☆\nAdventure\, Comedy\, Drama\n\nWhen
+  young Brian discovers plans to close a convent of delightfully eccentric 
+ nuns\, he sets off with them on a wild road trip across New Zealand to sav
+ e their home.\n\nStarring: Judy Davis\, Miriam Margolyes\, Jacki Weaver\, 
+ Elijah Tamati\, Craig Hall\, John Bach\n\nFilm release at WTW Cinemas Newq
+ uay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5646/holy-days\n\
+ nFilm details: https://evenwebb.github.io/wtw-cinemas/films/holy-days.html
+LOCATION:WTW Cinemas Newquay
+URL:https://wtwcinemas.co.uk/newquay/film/5646/holy-days
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:8b5f8a041caafa63a874aac43f7c46a23320889e@wtw-cinemas
+DTSTAMP:20260806T115721Z
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260815
+SUMMARY:Sunny Dancer @ WTW Newquay
+DESCRIPTION:Sunny Dancer (1h 46min)\nDrama\, Comedy\n\nIvy is a teenager in
+  remission from cancer\, whose mum and dad insist she attend Children Run 
+ Free Camp\, a summer retreat for young adults affected by cancer. However\
+ , as Ivy is reluctantly dragged through camp experience\, she discovers ne
+ w feelings with new friends.\n\nStarring: Bella Ramsey\, Daniel Quinn-Toye
+ \, Ruby Stokes\, Earl Cave\, Conrad Khan\, Jasmine Elcock\n\nFilm release 
+ at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/fil
+ m/5648/sunny-dancer-with-subtitles\n\nFilm details: https://evenwebb.githu
+ b.io/wtw-cinemas/films/sunny-dancer.html
+LOCATION:WTW Cinemas Newquay
+URL:https://wtwcinemas.co.uk/newquay/film/5648/sunny-dancer-with-subtitles
+SEQUENCE:1
+END:VEVENT
+BEGIN:VEVENT
+UID:8ab2ee1bcdf5b5ba002b51c2c5d104f98bf81249@wtw-cinemas
+DTSTAMP:20260806T115721Z
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260815
+SUMMARY:The End of Oak Street @ WTW Newquay
+DESCRIPTION:The End of Oak Street (1h 40min)\n★★★★☆\nScience Fiction\, Myst
+ ery\, Thriller\n\nAfter a mysterious cosmic event rips Oak Street from sub
+ urbia and transports their neighborhood to someplace unknown\, the Platt f
+ amily soon discovers that their very survival depends on them sticking tog
+ ether as they navigate their now unrecognizable surroundings.\n\nStarring:
+  Anne Hathaway\, Ewan McGregor\, Christian Convery\, Maisy Stella\, Jordan
+  Alexa Davis\, P.J. Byrne\n\nFilm release at WTW Cinemas Newquay\nBook tic
+ kets: https://wtwcinemas.co.uk/newquay/film/5647/the-end-of-oak-street-wit
+ h-subtitles\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/
+ the-end-of-oak-street.html
+LOCATION:WTW Cinemas Newquay
+URL:https://wtwcinemas.co.uk/newquay/film/5647/the-end-of-oak-street-with-s
+ ubtitles
+SEQUENCE:1
+END:VEVENT
+BEGIN:VEVENT
 UID:bc82f3be326394a5e792bc2f51d70ac4a4d9a1ad@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20260821
 DTEND;VALUE=DATE:20260822
 SUMMARY:Coyote vs. Acme @ WTW Newquay
@@ -148,7 +205,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:88cbc34dee10233445bf651f805cf36b6af2d341@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20260821
 DTEND;VALUE=DATE:20260822
 SUMMARY:Insidious: Out of the Further @ WTW Newquay
@@ -166,8 +223,25 @@ URL:https://wtwcinemas.co.uk/newquay/film/5637/insidious-out-of-the-further
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
+UID:db7ebec73580ae3495c3e8855a4ca88c2dab2780@wtw-cinemas
+DTSTAMP:20260806T115721Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260822
+SUMMARY:Tony @ WTW Newquay
+DESCRIPTION:Tony (1h 46min)\n★★★★☆\nDrama\, Comedy\n\nA 19-year-old Anthony
+  Bourdain travels to Provincetown and stumbles into the chaotic world of a
+  restaurant kitchen\, setting off a summer that will shape the course of h
+ is life.\n\nStarring: Dominic Sessa\, Antonio Banderas\, Emilia Jones\, Le
+ o Woodall\, Stavros Halkias\, Michael Jibrin\n\nFilm release at WTW Cinema
+ s Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5649/tony\n
+ \nFilm details: https://evenwebb.github.io/wtw-cinemas/films/tony.html
+LOCATION:WTW Cinemas Newquay
+URL:https://wtwcinemas.co.uk/newquay/film/5649/tony
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
 UID:d517aa3f00b757e8155cfc20e5511de313eff420@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20260826
 DTEND;VALUE=DATE:20260827
 SUMMARY:GHOST: 2 Big To Rig @ WTW Newquay
@@ -189,7 +263,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:05b9a97cee79d5bc7cb958e05f33c0c019b3fd75@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20260826
 DTEND;VALUE=DATE:20260827
 SUMMARY:The Dog Stars @ WTW Newquay
@@ -209,7 +283,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8a90a6a022d89aa37601f3e046b4259217c8e907@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260906
 SUMMARY:Star Trek IV: The Voyage Home @ WTW Newquay
@@ -228,7 +302,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:cd1e36ecad3e9dfe01b1206a124c90ced22549c0@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20260909
 DTEND;VALUE=DATE:20260910
 SUMMARY:Pressure @ WTW Newquay
@@ -247,7 +321,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:cb96582fc5ad6db52f68f684f51617c548085fbe@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
 SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom @ WTW Newquay
@@ -267,7 +341,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:53779e6c655af4d22196aa02023fabe1b88fdcdf@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
 SUMMARY:National Theatre Live: The Misanthrope @ WTW Newquay
@@ -293,7 +367,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0d13e5a47ac64d56d38a478ffeb04e5019e003ee@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
 SUMMARY:Digger @ WTW Newquay
@@ -310,7 +384,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:7bbb719a6f79ad493a097d501e6acecb77ac5c01@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Street Fighter @ WTW Newquay
@@ -330,7 +404,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5e010fda2b4be4e6a1267a728e77863cbbdde9e0@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Forgotten Island @ WTW Newquay
@@ -351,7 +425,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f122737e6b6a7b2f0e998436f10adf11f640303b@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Macbeth - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -372,7 +446,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:979a660aaefeec037d4296642661dd99489a2e0c@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Fallen Angels by Noël Coward @ WTW Newquay
@@ -390,7 +464,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:54fdea381517cf456b9ec0bd7286788af82a8c3b@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:Manon - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -417,7 +491,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:48661bb4668d3d3a019208349c084744ce5fc49e@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Wild Horse Nine @ WTW Newquay
@@ -438,7 +512,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b3f7ae6f4c3719476c734b90998ced9e9f267cab@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Carmen - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -462,7 +536,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:1d52954d5a767132c77e7c36672dc0631aadfe4b@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:GIANT - The Play @ WTW Newquay
@@ -483,7 +557,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c1479b9c4d124a4f482cc3565b7def71c2e6444f@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:The Hunger Games: Sunrise on the Reaping @ WTW Newquay
@@ -503,7 +577,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:7098710e36e892e80dbfdb672656fab4310aa867@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Focker-In-Law @ WTW Newquay
@@ -520,7 +594,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0b4b7f23ff7d9bded898f133b19a35dfec6df9e6@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:The Nutcracker - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -543,7 +617,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5bfefb2977887c7a6c8f0c590693eed8ddfa49ca@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:The Cat in the Hat @ WTW Newquay
@@ -562,7 +636,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c77fa32b09d34cc4a118bcdedc77403f564b40ec@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Andre Rieu's 2026 Christmas Concert Let It Snow @ WTW Newquay
@@ -579,7 +653,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:744a6a063776624f07c93b55bffc8287e735befa@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Avengers: Doomsday @ WTW Newquay
@@ -597,7 +671,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:485f7542e162d37a2ede58eb3985196e381e12aa@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Dune: Part Three @ WTW Newquay
@@ -614,7 +688,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:44e65ff4d37973e4a79973e99e18d1f78b0fd4ab@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Jumanji: Open World @ WTW Newquay
@@ -632,7 +706,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:32d4e5f38a17949d5cc00ed101bf8137f4bf9b8d@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270127
 SUMMARY:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season @ WTW New
@@ -661,7 +735,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f6d39d9a60ae9727e36a26ae835afb5039c78136@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 SUMMARY:Götterdämmerung - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -689,7 +763,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8c8c4a85ce8eb65d740c2af8023c81beb387a7d4@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20270223
 DTEND;VALUE=DATE:20270224
 SUMMARY:Così Fan Tutte - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -718,7 +792,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:35f9e1444906984f7df24b2ed7df3a14a78d5fab@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20270323
 DTEND;VALUE=DATE:20270324
 SUMMARY:Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Seaso
@@ -739,7 +813,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:701819a4b21ac4e8d68fa43f21d0034a8ebc098b@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20270422
 DTEND;VALUE=DATE:20270423
 SUMMARY:Swan Lake - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -757,7 +831,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:6f4f84b6ff4e1df32063b367bf43c083f29865b9@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20270505
 DTEND;VALUE=DATE:20270506
 SUMMARY:Tosca - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -780,7 +854,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9ab5660140c194f5f9dcb84a73142f3ae94588cd@wtw-cinemas
-DTSTAMP:20260805T115126Z
+DTSTAMP:20260806T115721Z
 DTSTART;VALUE=DATE:20270525
 DTEND;VALUE=DATE:20270526
 SUMMARY:Romeo And Juliet - Royal Ballet & Opera 26-27 Season @ WTW Newquay
