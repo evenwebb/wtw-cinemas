@@ -10,7 +10,7 @@ X-WR-CALDESC:Upcoming movie premieres at WTW Cinemas Wadebridge
 X-WR-TIMEZONE:Europe/London
 BEGIN:VEVENT
 UID:bb428299d7a18d16ae1d71061694a69090e946db@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20260814
 DTEND;VALUE=DATE:20260815
 SUMMARY:Holy Days @ WTW Wadebridge
@@ -28,26 +28,26 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:a11ab1d8cb42834ee5418cc2ed80e43fc8c6ec41@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20260814
 DTEND;VALUE=DATE:20260815
 SUMMARY:Sunny Dancer @ WTW Wadebridge
-DESCRIPTION:Sunny Dancer (1h 46min)\nDrama\, Comedy\n\nIvy is a teenager in
-  remission from cancer\, whose mum and dad insist she attend Children Run 
- Free Camp\, a summer retreat for young adults affected by cancer. However\
- , as Ivy is reluctantly dragged through camp experience\, she discovers ne
- w feelings with new friends.\n\nStarring: Bella Ramsey\, Daniel Quinn-Toye
- \, Ruby Stokes\, Earl Cave\, Conrad Khan\, Jasmine Elcock\n\nFilm release 
- at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebrid
- ge/film/5632/sunny-dancer\n\nFilm details: https://evenwebb.github.io/wtw-
- cinemas/films/sunny-dancer.html
+DESCRIPTION:Sunny Dancer (1h 46min)\n★★★★☆\nDrama\, Comedy\n\nIvy is a teen
+ ager in remission from cancer\, whose mum and dad insist she attend Childr
+ en Run Free Camp\, a summer retreat for young adults affected by cancer. H
+ owever\, as Ivy is reluctantly dragged through camp experience\, she disco
+ vers new feelings with new friends.\n\nStarring: Bella Ramsey\, Daniel Qui
+ nn-Toye\, Ruby Stokes\, Earl Cave\, Conrad Khan\, Jasmine Elcock\n\nFilm r
+ elease at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co.uk/w
+ adebridge/film/5632/sunny-dancer\n\nFilm details: https://evenwebb.github.
+ io/wtw-cinemas/films/sunny-dancer.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5632/sunny-dancer
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:4630d647df9c1c13baf459342b02362a01f2ead8@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20260814
 DTEND;VALUE=DATE:20260815
 SUMMARY:PAW Patrol: The Dino Movie @ WTW Wadebridge
@@ -66,7 +66,7 @@ SEQUENCE:1
 END:VEVENT
 BEGIN:VEVENT
 UID:0f92ab6a1fa9337778b0530d37e2faf112135981@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20260814
 DTEND;VALUE=DATE:20260815
 SUMMARY:The End of Oak Street @ WTW Wadebridge
@@ -86,7 +86,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:915ac33344c738a857ae1e82fead80d496b7147d@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20260816
 DTEND;VALUE=DATE:20260817
 SUMMARY:Life Support @ WTW Wadebridge
@@ -103,7 +103,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:4ad70f8577975417dd5d9e333f1cbfd9d983af5f@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20260821
 DTEND;VALUE=DATE:20260822
 SUMMARY:Tony @ WTW Wadebridge
@@ -121,7 +121,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:4ef179ea8604b02241f1c77ef18b952b08aa4f17@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20260821
 DTEND;VALUE=DATE:20260822
 SUMMARY:Khalifa @ WTW Wadebridge
@@ -138,26 +138,43 @@ URL:https://wtwcinemas.co.uk/wadebridge/film/5654/khalifa
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
+UID:25fdcc724eb1e964eeb89aaf22746493fbb86445@wtw-cinemas
+DTSTAMP:20260812T105147Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260822
+SUMMARY:Spa Weekend @ WTW Wadebridge
+DESCRIPTION:Spa Weekend (1h 37min)\nComedy\n\nThree friends go on a spa wee
+ kend that descends into chaos when their trainwreck friend joins\, leading
+  to hilarious consequences.\n\nStarring: Leslie Mann\, Michelle Buteau\, A
+ nna Faris\, Isla Fisher\, Adam Demos\, Quinn Aune\n\nFilm release at WTW C
+ inemas Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/
+ 5655/spa-weekend\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/f
+ ilms/spa-weekend.html
+LOCATION:WTW Cinemas Wadebridge
+URL:https://wtwcinemas.co.uk/wadebridge/film/5655/spa-weekend
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
 UID:073b9f69f0ecdb7a0d3e0a0755d32a0fa392ccbd@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20260821
 DTEND;VALUE=DATE:20260822
 SUMMARY:Coyote vs. Acme @ WTW Wadebridge
-DESCRIPTION:Coyote vs. Acme (1h 43min)\nComedy\, Adventure\, Family\n\nAfte
- r Acme products fail him one too many times in his dogged pursuit of the R
- oadrunner\, Wile E. Coyote decides to hire a billboard lawyer to sue the A
- cme Corporation.\n\nStarring: Will Forte\, Lana Condor\, Tone Bell\, John 
- Cena\, Eric Bauza\, P.J. Byrne\n\nFilm release at WTW Cinemas Wadebridge\n
- Book tickets: https://wtwcinemas.co.uk/wadebridge/film/5638/coyote-vs-acme
- \n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/coyote-vs-a
- cme.html
+DESCRIPTION:Coyote vs. Acme (1h 43min)\nComedy\, Adventure\, Family\, Anima
+ tion\n\nAfter Acme products fail him one too many times in his dogged purs
+ uit of the Roadrunner\, Wile E. Coyote decides to hire a billboard lawyer 
+ to sue the Acme Corporation.\n\nStarring: Will Forte\, Lana Condor\, Tone 
+ Bell\, John Cena\, Eric Bauza\, P.J. Byrne\n\nFilm release at WTW Cinemas 
+ Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/5638/co
+ yote-vs-acme\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films
+ /coyote-vs-acme.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5638/coyote-vs-acme
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:2df224a6a69d7d6560674de1af0c50e27ba27654@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20260821
 DTEND;VALUE=DATE:20260822
 SUMMARY:Insidious: Out of the Further @ WTW Wadebridge
@@ -177,7 +194,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:54de9af7bd4e218a0e8a65c38605ac2564b4a1a9@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20260823
 DTEND;VALUE=DATE:20260824
 SUMMARY:Blue Heron @ WTW Wadebridge
@@ -196,7 +213,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:08098140203962bfa8a17cb18bbc524021dec528@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20260826
 DTEND;VALUE=DATE:20260827
 SUMMARY:The Dog Stars @ WTW Wadebridge
@@ -216,7 +233,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:311da15c2ad78ccd9534056db13ddcec270aa2ab@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20260830
 DTEND;VALUE=DATE:20260831
 SUMMARY:The Spin @ WTW Wadebridge
@@ -233,7 +250,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:977932fb6972ff467330f97507826a96c0be49cd@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20260903
 DTEND;VALUE=DATE:20260904
 SUMMARY:La Traviata on Sydney Harbour @ WTW Wadebridge
@@ -260,7 +277,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9f4a0a13652cfe95c4d2663886e3989edda72a4f@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260906
 SUMMARY:Star Trek IV: The Voyage Home @ WTW Wadebridge
@@ -280,7 +297,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:58701b57b78c62cfdf6e840b7d8976615225df55@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20260909
 DTEND;VALUE=DATE:20260910
 SUMMARY:Pressure @ WTW Wadebridge
@@ -299,7 +316,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:29ee127a88e520f38e2da8439ab6d9374db3fd88@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20260915
 DTEND;VALUE=DATE:20260916
 SUMMARY:James McNeill Whistler - Exhibition On Screen @ WTW Wadebridge
@@ -323,7 +340,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:acb7029a4faa779cd7ac15d216ee60f243fcd491@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
 SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom @ WTW Wadebridge
@@ -343,7 +360,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ae0b0aeeb8006257996f8dfb36c6b4e86fb904a4@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
 SUMMARY:National Theatre Live: The Misanthrope @ WTW Wadebridge
@@ -369,24 +386,24 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:376363fd8b4598e9390d7ecf4457e22ecc1649e1@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
 SUMMARY:Digger @ WTW Wadebridge
-DESCRIPTION:Digger (2h 8min)\nComedy\n\nThe most powerful man in the world 
- embarks on a frantic mission to prove he is humanity's savior before the d
- isaster he's unleashed destroys everything.\n\nStarring: Tom Cruise\, Riz 
- Ahmed\, John Goodman\, Sandra Hüller\, Michael Stuhlbarg\, Jesse Plemons\n
- \nFilm release at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas
- .co.uk/wadebridge/film/5583/digger\n\nFilm details: https://evenwebb.githu
- b.io/wtw-cinemas/films/digger.html
+DESCRIPTION:Digger (1h 46min)\nComedy\n\nThe most powerful man in the world
+  embarks on a frantic mission to prove he is humanity's savior before the 
+ disaster he's unleashed destroys everything.\n\nStarring: Tom Cruise\, Riz
+  Ahmed\, John Goodman\, Sandra Hüller\, Michael Stuhlbarg\, Jesse Plemons\
+ n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinema
+ s.co.uk/wadebridge/film/5583/digger\n\nFilm details: https://evenwebb.gith
+ ub.io/wtw-cinemas/films/digger.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5583/digger
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:fb1c5c75ade45e3de67b010a966a4feb11fc3991@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:Hadestown: The Musical @ WTW Wadebridge
@@ -406,7 +423,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:7b464e63519f6fd5f1b009b8bec4b96c3ff93b8f@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Forgotten Island @ WTW Wadebridge
@@ -427,7 +444,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:de0be0ffa48df7e23c795b08b1fa7312a1416bcb@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Street Fighter @ WTW Wadebridge
@@ -447,21 +464,20 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:009f56f2391a795f162830efc8e87d5911a21364@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Macbeth - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
-DESCRIPTION:Macbeth - Royal Ballet & Opera 26-27 Season (2h 21min)\n★★★★☆\n
- War\, Drama\n\nScotland\, 11th century. Driven by the twisted prophecy of 
- three witches and the ruthless ambition of his wife\, warlord Macbeth\, bo
- ld and brave\, but also weak and hesitant\, betrays his good king and his 
- brothers in arms and sinks into the bloody mud of a path with no return\, 
- sown with crime and suspicion.\n\nStarring: Jon Finch\, Francesca Annis\, 
- Martin Shaw\, John Stride\, Nicholas Selby\, Terence Bayler\n\nFilm releas
- e at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebr
- idge/film/5555/macbeth-royal-ballet-opera-2627-season\n\nFilm details: htt
- ps://evenwebb.github.io/wtw-cinemas/films/macbeth-royal-ballet-opera-26-27
- -season.html
+DESCRIPTION:Macbeth - Royal Ballet & Opera 26-27 Season (1h 47min)\n★★★★☆\n
+ Drama\n\nMacbeth\, the Thane of Glamis\, receives a prophecy from a trio o
+ f witches that one day he will become King of Scotland. Consumed by ambiti
+ on and spurred to action by his wife\, Macbeth commits a treasonous act an
+ d takes the throne for himself.\n\nStarring: Orson Welles\, Jeanette Nolan
+ \, Dan O'Herlihy\, Roddy McDowall\, Edgar Barrier\, Alan Napier\n\nFilm re
+ lease at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wa
+ debridge/film/5555/macbeth-royal-ballet-opera-2627-season\n\nFilm details:
+  https://evenwebb.github.io/wtw-cinemas/films/macbeth-royal-ballet-opera-2
+ 6-27-season.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5555/macbeth-royal-ballet-oper
  a-2627-season
@@ -469,7 +485,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:bde707976116149cf570b3d56c8f14e3f96a4095@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Fallen Angels by Noël Coward @ WTW Wadebridge
@@ -488,7 +504,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8282d8cfcf26313b4f3e10f43534892282baac16@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:Manon - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
@@ -515,7 +531,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:a83c2225b0846ac01a271b3c2c9da2bc0ee11b0f@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Wild Horse Nine @ WTW Wadebridge
@@ -536,7 +552,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:259ec131692e586d7bb556e861d573a23cbf7b5f@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Carmen - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
@@ -560,7 +576,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:23d5c901aec69131de7785a68a90fa98def64c02@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:GIANT - The Play @ WTW Wadebridge
@@ -581,7 +597,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:95b124defaef04405fa08e6c30df4971be9deba4@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:The Hunger Games: Sunrise on the Reaping @ WTW Wadebridge
@@ -601,7 +617,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9e6609fe0148e68c89acc8c353ee07d0beb9a6e0@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Focker-In-Law @ WTW Wadebridge
@@ -618,7 +634,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:32e0d9e7b556fde8fa9ddc736c1bb5f2f871acb7@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:The Nutcracker - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
@@ -641,7 +657,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ae259c1820ed07e4967fb77493b68b29a9d7edc7@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:The Cat in the Hat @ WTW Wadebridge
@@ -660,7 +676,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ea5a9ae4f3515a6c41449349cf9ce6a5d57e0e51@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Andre Rieu's 2026 Christmas Concert Let It Snow @ WTW Wadebridge
@@ -677,7 +693,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:654c91c1336c58188b76a1e4db75a9912088802b@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Avengers: Doomsday @ WTW Wadebridge
@@ -695,7 +711,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8b09939e190b28f8b45a450ab67b2dbd2b5de919@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Dune: Part Three @ WTW Wadebridge
@@ -713,7 +729,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:d57df00005ba739cee61d719e3e33f88fb670a63@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Jumanji: Open World @ WTW Wadebridge
@@ -731,7 +747,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:e946202c3d79e6b82fe3dcdbdbb3fc21048e609e@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20270119
 DTEND;VALUE=DATE:20270120
 SUMMARY:Renoir & Love - Exhibition On Screen @ WTW Wadebridge
@@ -753,7 +769,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9103b988c7486fd82cbbdafcb54e2d25babb2825@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270127
 SUMMARY:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season @ WTW Wad
@@ -782,7 +798,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:561f682c0c18af56edaad91535c9c258ba76003a@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 SUMMARY:Götterdämmerung - Royal Ballet & Opera 26-27 Season @ WTW Wadebridg
@@ -811,7 +827,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8a425195a90364c9afb77d5e7aabfc1fdb6802d9@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20270223
 DTEND;VALUE=DATE:20270224
 SUMMARY:Così Fan Tutte - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
@@ -840,7 +856,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:90b7dba09378dd2d2a02950b9857a9b76935acbe@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20270323
 DTEND;VALUE=DATE:20270324
 SUMMARY:Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Seaso
@@ -861,7 +877,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5020767395f525964cf68b2a2f14235211fb48ac@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20270422
 DTEND;VALUE=DATE:20270423
 SUMMARY:Swan Lake - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
@@ -879,7 +895,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0d381b6f83ecf059f6b8cf4d4cc1d1314cba8361@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20270505
 DTEND;VALUE=DATE:20270506
 SUMMARY:Tosca - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
@@ -902,7 +918,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0f9467c209ba97b79605fee9149fe794b2e844b8@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20270511
 DTEND;VALUE=DATE:20270512
 SUMMARY:Monet - Exhibition On Screen @ WTW Wadebridge
@@ -918,7 +934,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:389f8f13806597cf250c31d49ba3b7bef6262567@wtw-cinemas
-DTSTAMP:20260811T104213Z
+DTSTAMP:20260812T105147Z
 DTSTART;VALUE=DATE:20270525
 DTEND;VALUE=DATE:20270526
 SUMMARY:Romeo And Juliet - Royal Ballet & Opera 26-27 Season @ WTW Wadebrid
