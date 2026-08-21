@@ -1,203 +1,11 @@
 {
-  "https://wtwcinemas.co.uk/wadebridge/film/5649/tony": {
-    "runtime": "106 min",
-    "cast": "Dominic Sessa, Antonio Banderas, Emilia Jones",
-    "synopsis": "A 19-year-old Anthony Bourdain travels to Provincetown and stumbles into the chaotic world of a restaurant kitchen, setting off a summer that will shape the course of his life.",
-    "director": "Matt Johnson",
-    "title": "Tony",
-    "cached_at": "2026-08-20T10:17:29.439126"
-  },
-  "https://wtwcinemas.co.uk/st-austell/film/5637/insidious-out-of-the-further": {
-    "runtime": "106 min",
-    "cast": "Amelia Eve, Island Austin, Lin Shaye",
-    "synopsis": "Gemma, a young mother raising her daughter in the house she grew up in, discovers she can travel into The Further, where she possesses an ability to bring what lives there back to the real world.",
-    "director": "Jacob Chase",
-    "title": "Insidious: Out of the Further",
-    "cached_at": "2026-08-20T10:17:29.662523"
-  },
-  "https://wtwcinemas.co.uk/newquay/film/5654/khalifa": {
-    "runtime": "153 min",
-    "cast": "Prithviraj Sukumaran, Mohanlal, Neil Nitin Mukesh",
-    "synopsis": "Aamir Ali, a notorious gold smuggling kingpin who inherited his multi-million dollar criminal enterprise from a lineage of gangsters, is drawn into a web of vengeance, legacy and power.",
-    "director": "Vysakh",
-    "title": "Khalifa",
-    "cached_at": "2026-08-20T10:17:29.683906"
-  },
-  "https://wtwcinemas.co.uk/truro/film/5649/tony": {
-    "runtime": "106 min",
-    "cast": "Dominic Sessa, Antonio Banderas, Emilia Jones",
-    "synopsis": "A 19-year-old Anthony Bourdain travels to Provincetown and stumbles into the chaotic world of a restaurant kitchen, setting off a summer that will shape the course of his life.",
-    "director": "Matt Johnson",
-    "title": "Tony",
-    "cached_at": "2026-08-20T10:17:29.725793"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5654/khalifa": {
-    "runtime": "153 min",
-    "cast": "Prithviraj Sukumaran, Mohanlal, Neil Nitin Mukesh",
-    "synopsis": "Aamir Ali, a notorious gold smuggling kingpin who inherited his multi-million dollar criminal enterprise from a lineage of gangsters, is drawn into a web of vengeance, legacy and power.",
-    "director": "Vysakh",
-    "title": "Khalifa",
-    "cached_at": "2026-08-20T10:17:30.933142"
-  },
-  "https://wtwcinemas.co.uk/newquay/film/5655/spa-weekend": {
-    "runtime": "97 min",
-    "cast": "Leslie Mann, Michelle Buteau, Anna Faris",
-    "synopsis": "Three friends go on a spa weekend that descends into chaos when their trainwreck friend joins, leading to hilarious consequences.",
-    "director": "Scott Moore, Jon Lucas",
-    "title": "Spa Weekend",
-    "cached_at": "2026-08-20T10:17:31.207502"
-  },
-  "https://wtwcinemas.co.uk/st-austell/film/5649/tony": {
-    "runtime": "106 min",
-    "cast": "Dominic Sessa, Antonio Banderas, Emilia Jones",
-    "synopsis": "A 19-year-old Anthony Bourdain travels to Provincetown and stumbles into the chaotic world of a restaurant kitchen, setting off a summer that will shape the course of his life.",
-    "director": "Matt Johnson",
-    "title": "Tony",
-    "cached_at": "2026-08-20T10:17:31.291200"
-  },
-  "https://wtwcinemas.co.uk/truro/film/5654/khalifa": {
-    "runtime": "153 min",
-    "cast": "Prithviraj Sukumaran, Mohanlal, Neil Nitin Mukesh",
-    "synopsis": "Aamir Ali, a notorious gold smuggling kingpin who inherited his multi-million dollar criminal enterprise from a lineage of gangsters, is drawn into a web of vengeance, legacy and power.",
-    "director": "Vysakh",
-    "title": "Khalifa",
-    "cached_at": "2026-08-20T10:17:31.392123"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5655/spa-weekend": {
-    "runtime": "97 min",
-    "cast": "Leslie Mann, Michelle Buteau, Anna Faris",
-    "synopsis": "Three friends go on a spa weekend that descends into chaos when their trainwreck friend joins, leading to hilarious consequences.",
-    "director": "Scott Moore, Jon Lucas",
-    "title": "Spa Weekend",
-    "cached_at": "2026-08-20T10:17:32.634914"
-  },
-  "https://wtwcinemas.co.uk/st-austell/film/5654/khalifa": {
-    "runtime": "153 min",
-    "cast": "Prithviraj Sukumaran, Mohanlal, Neil Nitin Mukesh",
-    "synopsis": "Aamir Ali, a notorious gold smuggling kingpin who inherited his multi-million dollar criminal enterprise from a lineage of gangsters, is drawn into a web of vengeance, legacy and power.",
-    "director": "Vysakh",
-    "title": "Khalifa",
-    "cached_at": "2026-08-20T10:17:33.373544"
-  },
-  "https://wtwcinemas.co.uk/newquay/film/5658/david": {
-    "runtime": "109 min",
-    "cast": "Brandon Engman, Brian Stivale, Shahar Taboch",
-    "synopsis": "In this animated adventure set in biblical times, a young shepherd combines courage with religious faith to realise his destiny to save the Kingdom of Judah from its enemies.",
-    "director": "Phil Cunningham, Brent Dawes",
-    "title": "David",
-    "cached_at": "2026-08-20T10:17:33.414261"
-  },
-  "https://wtwcinemas.co.uk/truro/film/5655/spa-weekend": {
-    "runtime": "97 min",
-    "cast": "Leslie Mann, Michelle Buteau, Anna Faris",
-    "synopsis": "Three friends go on a spa weekend that descends into chaos when their trainwreck friend joins, leading to hilarious consequences.",
-    "director": "Scott Moore, Jon Lucas",
-    "title": "Spa Weekend",
-    "cached_at": "2026-08-20T10:17:33.591597"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5658/david": {
-    "runtime": "109 min",
-    "cast": "Brandon Engman, Brian Stivale, Shahar Taboch",
-    "synopsis": "In this animated adventure set in biblical times, a young shepherd combines courage with religious faith to realise his destiny to save the Kingdom of Judah from its enemies.",
-    "director": "Phil Cunningham, Brent Dawes",
-    "title": "David",
-    "cached_at": "2026-08-20T10:17:34.389738"
-  },
-  "https://wtwcinemas.co.uk/newquay/film/5662/mutiny": {
-    "runtime": "95 min",
-    "cast": "Jason Statham, Annabelle Wallis, Roland Møller",
-    "synopsis": "After witnessing his billionaire boss' murder and being framed for the crime, Cole Reed boards a cargo ship on a one-man crusade to avenge his boss' death only to discover an international conspiracy.",
-    "director": "Jean-François Richet",
-    "title": "Mutiny",
-    "cached_at": "2026-08-20T10:17:34.909515"
-  },
-  "https://wtwcinemas.co.uk/st-austell/film/5655/spa-weekend": {
-    "runtime": "97 min",
-    "cast": "Leslie Mann, Michelle Buteau, Anna Faris",
-    "synopsis": "Three friends go on a spa weekend that descends into chaos when their trainwreck friend joins, leading to hilarious consequences.",
-    "director": "Scott Moore, Jon Lucas",
-    "title": "Spa Weekend",
-    "cached_at": "2026-08-20T10:17:34.979977"
-  },
-  "https://wtwcinemas.co.uk/truro/film/5658/david": {
-    "runtime": "109 min",
-    "cast": "Brandon Engman, Brian Stivale, Shahar Taboch",
-    "synopsis": "In this animated adventure set in biblical times, a young shepherd combines courage with religious faith to realise his destiny to save the Kingdom of Judah from its enemies.",
-    "director": "Phil Cunningham, Brent Dawes",
-    "title": "David",
-    "cached_at": "2026-08-20T10:17:35.260353"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5662/mutiny": {
-    "runtime": "95 min",
-    "cast": "Jason Statham, Annabelle Wallis, Roland Møller",
-    "synopsis": "After witnessing his billionaire boss' murder and being framed for the crime, Cole Reed boards a cargo ship on a one-man crusade to avenge his boss' death only to discover an international conspiracy.",
-    "director": "Jean-François Richet",
-    "title": "Mutiny",
-    "cached_at": "2026-08-20T10:17:35.952578"
-  },
-  "https://wtwcinemas.co.uk/newquay/film/5637/insidious-out-of-the-further": {
-    "runtime": "106 min",
-    "cast": "Amelia Eve, Island Austin, Lin Shaye",
-    "synopsis": "Gemma, a young mother raising her daughter in the house she grew up in, discovers she can travel into The Further, where she possesses an ability to bring what lives there back to the real world.",
-    "director": "Jacob Chase",
-    "title": "Insidious: Out of the Further",
-    "cached_at": "2026-08-20T10:17:36.439521"
-  },
-  "https://wtwcinemas.co.uk/st-austell/film/5658/david": {
-    "runtime": "109 min",
-    "cast": "Brandon Engman, Brian Stivale, Shahar Taboch",
-    "synopsis": "In this animated adventure set in biblical times, a young shepherd combines courage with religious faith to realise his destiny to save the Kingdom of Judah from its enemies.",
-    "director": "Phil Cunningham, Brent Dawes",
-    "title": "David",
-    "cached_at": "2026-08-20T10:17:36.642681"
-  },
-  "https://wtwcinemas.co.uk/truro/film/5662/mutiny": {
-    "runtime": "95 min",
-    "cast": "Jason Statham, Annabelle Wallis, Roland Møller",
-    "synopsis": "After witnessing his billionaire boss' murder and being framed for the crime, Cole Reed boards a cargo ship on a one-man crusade to avenge his boss' death only to discover an international conspiracy.",
-    "director": "Jean-François Richet",
-    "title": "Mutiny",
-    "cached_at": "2026-08-20T10:17:36.769617"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5637/insidious-out-of-the-further": {
-    "runtime": "106 min",
-    "cast": "Amelia Eve, Island Austin, Lin Shaye",
-    "synopsis": "Gemma, a young mother raising her daughter in the house she grew up in, discovers she can travel into The Further, where she possesses an ability to bring what lives there back to the real world.",
-    "director": "Jacob Chase",
-    "title": "Insidious: Out of the Further",
-    "cached_at": "2026-08-20T10:17:37.416847"
-  },
-  "https://wtwcinemas.co.uk/newquay/film/5649/tony": {
-    "runtime": "106 min",
-    "cast": "Dominic Sessa, Antonio Banderas, Emilia Jones",
-    "synopsis": "A 19-year-old Anthony Bourdain travels to Provincetown and stumbles into the chaotic world of a restaurant kitchen, setting off a summer that will shape the course of his life.",
-    "director": "Matt Johnson",
-    "title": "Tony",
-    "cached_at": "2026-08-20T10:17:38.005870"
-  },
-  "https://wtwcinemas.co.uk/st-austell/film/5662/mutiny": {
-    "runtime": "95 min",
-    "cast": "Jason Statham, Annabelle Wallis, Roland Møller",
-    "synopsis": "After witnessing his billionaire boss' murder and being framed for the crime, Cole Reed boards a cargo ship on a one-man crusade to avenge his boss' death only to discover an international conspiracy.",
-    "director": "Jean-François Richet",
-    "title": "Mutiny",
-    "cached_at": "2026-08-20T10:17:38.353148"
-  },
-  "https://wtwcinemas.co.uk/truro/film/5636/pink-floyd-the-wall-pats-film-club": {
-    "runtime": "95 min",
-    "cast": "Bob Geldof, Christine Hargreaves, James Laurenson",
-    "synopsis": "A troubled rock star descends into madness in the midst of his physical and social isolation from everyone.",
-    "director": "Alan Parker",
-    "title": "Pink Floyd: The Wall - Pat's Film Club",
-    "cached_at": "2026-08-20T10:17:38.486396"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5631/blue-heron": {
-    "runtime": "91 min",
-    "cast": "Eylul Guven, Iringó Réti, Ádám Tompa",
-    "synopsis": "In the late 1990s, a family of six settles into their new home on Vancouver Island, as internal dynamics are slowly revealed through the experiences of the youngest child, Sasha. Their fresh start is interrupted by the increasingly dangerous behavior of Jeremy, the family's oldest child.",
-    "director": "Sophy Romvari",
-    "title": "Blue Heron",
-    "cached_at": "2026-08-20T10:17:39.259923"
+  "https://wtwcinemas.co.uk/st-austell/film/5644/the-dog-stars": {
+    "runtime": "118 min",
+    "cast": "Jacob Elordi, Josh Brolin, Margaret Qualley",
+    "synopsis": "After the world's population has been ravaged by a pandemic, a man lives a lonesome existence in a Colorado airplane hangar with his dog and a dour gunman he has befriended. When a mysterious transmission comes through on the radio while he's flying his old Cessna, it sparks a hunt for the provenance of the sound.",
+    "director": "Ridley Scott",
+    "title": "The Dog Stars",
+    "cached_at": "2026-08-21T10:18:06.786538"
   },
   "https://wtwcinemas.co.uk/newquay/film/5633/ghost-2-big-to-rig": {
     "runtime": "115 min",
@@ -205,47 +13,7 @@
     "synopsis": "Captured live over the course of GHOST's two sold-out shows in Mexico City last year, 2 BIG TO RIG is the definitive document of the band's unforgettable SKELETOUR WORLD TOUR.\r\nFeaturing the only pro-shot footage of Papa V Perpetua and his band of Nameless Ghouls from the phone-free SKELETOUR, 2 BIG TO RIG immerses the audience in the GHOST live ritual, including exclusive behind-the-scenes and backstage access.\r\n2 BIG TO RIG was created to share the SKELETOUR experience with the faithful in the territories where staging the show was not logistically feasible - and is a love letter to all those who have shared the GHOST ritual.\r\nShot on 16mm film, GHOST has never looked or sounded better, ripping through material from the band's six albums - including 2025's global #1 SKELETÁ as well as non-LP favorites including \"Mary On A Cross,\" \"Kiss the Go-Goat,\" and \"The Future is a Foreign Land.\"",
     "director": "Amir Juan Chamdin, Jim Parsons",
     "title": "GHOST: 2 Big To Rig",
-    "cached_at": "2026-08-20T10:17:39.712758"
-  },
-  "https://wtwcinemas.co.uk/st-austell/film/5644/the-dog-stars": {
-    "runtime": "118 min",
-    "cast": "Jacob Elordi, Josh Brolin, Margaret Qualley",
-    "synopsis": "After the world's population has been ravaged by a pandemic, a man lives a lonesome existence in a Colorado airplane hangar with his dog and a dour gunman he has befriended. When a mysterious transmission comes through on the radio while he's flying his old Cessna, it sparks a hunt for the provenance of the sound.",
-    "director": "Ridley Scott",
-    "title": "The Dog Stars",
-    "cached_at": "2026-08-20T10:17:40.006693"
-  },
-  "https://wtwcinemas.co.uk/truro/film/5637/insidious-out-of-the-further": {
-    "runtime": "106 min",
-    "cast": "Amelia Eve, Island Austin, Lin Shaye",
-    "synopsis": "Gemma, a young mother raising her daughter in the house she grew up in, discovers she can travel into The Further, where she possesses an ability to bring what lives there back to the real world.",
-    "director": "Jacob Chase",
-    "title": "Insidious: Out of the Further",
-    "cached_at": "2026-08-20T10:17:40.274142"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5644/the-dog-stars": {
-    "runtime": "118 min",
-    "cast": "Jacob Elordi, Josh Brolin, Margaret Qualley",
-    "synopsis": "After the world's population has been ravaged by a pandemic, a man lives a lonesome existence in a Colorado airplane hangar with his dog and a dour gunman he has befriended. When a mysterious transmission comes through on the radio while he's flying his old Cessna, it sparks a hunt for the provenance of the sound.",
-    "director": "Ridley Scott",
-    "title": "The Dog Stars",
-    "cached_at": "2026-08-20T10:17:40.875897"
-  },
-  "https://wtwcinemas.co.uk/newquay/film/5644/the-dog-stars": {
-    "runtime": "118 min",
-    "cast": "Jacob Elordi, Josh Brolin, Margaret Qualley",
-    "synopsis": "After the world's population has been ravaged by a pandemic, a man lives a lonesome existence in a Colorado airplane hangar with his dog and a dour gunman he has befriended. When a mysterious transmission comes through on the radio while he's flying his old Cessna, it sparks a hunt for the provenance of the sound.",
-    "director": "Ridley Scott",
-    "title": "The Dog Stars",
-    "cached_at": "2026-08-20T10:17:41.248696"
-  },
-  "https://wtwcinemas.co.uk/st-austell/film/5638/coyote-vs-acme": {
-    "runtime": "103 min",
-    "cast": "Will Forte, Lana Condor, Tone Bell",
-    "synopsis": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
-    "director": "Dave Green",
-    "title": "Coyote vs. Acme",
-    "cached_at": "2026-08-20T10:17:41.583593"
+    "cached_at": "2026-08-21T10:18:07.035819"
   },
   "https://wtwcinemas.co.uk/truro/film/5644/the-dog-stars": {
     "runtime": "118 min",
@@ -253,31 +21,23 @@
     "synopsis": "After the world's population has been ravaged by a pandemic, a man lives a lonesome existence in a Colorado airplane hangar with his dog and a dour gunman he has befriended. When a mysterious transmission comes through on the radio while he's flying his old Cessna, it sparks a hunt for the provenance of the sound.",
     "director": "Ridley Scott",
     "title": "The Dog Stars",
-    "cached_at": "2026-08-20T10:17:41.935294"
+    "cached_at": "2026-08-21T10:18:07.053388"
   },
-  "https://wtwcinemas.co.uk/wadebridge/film/5665/one-night-only": {
-    "runtime": "102 min",
-    "cast": "Monica Barbaro, Callum Turner, Maya Hawke",
-    "synopsis": "Two love-starved strangers crash into each other on the one night of the year when single people are allowed to have sex.",
-    "director": "Will Gluck",
-    "title": "One Night Only",
-    "cached_at": "2026-08-20T10:17:42.479337"
+  "https://wtwcinemas.co.uk/wadebridge/film/5631/blue-heron": {
+    "runtime": "91 min",
+    "cast": "Eylul Guven, Iringó Réti, Ádám Tompa",
+    "synopsis": "In the late 1990s, a family of six settles into their new home on Vancouver Island, as internal dynamics are slowly revealed through the experiences of the youngest child, Sasha. Their fresh start is interrupted by the increasingly dangerous behavior of Jeremy, the family's oldest child.",
+    "director": "Sophy Romvari",
+    "title": "Blue Heron",
+    "cached_at": "2026-08-21T10:18:07.202146"
   },
-  "https://wtwcinemas.co.uk/newquay/film/5665/one-night-only": {
-    "runtime": "102 min",
-    "cast": "Monica Barbaro, Callum Turner, Maya Hawke",
-    "synopsis": "Two love-starved strangers crash into each other on the one night of the year when single people are allowed to have sex.",
-    "director": "Will Gluck",
-    "title": "One Night Only",
-    "cached_at": "2026-08-20T10:17:42.774198"
-  },
-  "https://wtwcinemas.co.uk/st-austell/film/5665/one-night-only": {
-    "runtime": "102 min",
-    "cast": "Monica Barbaro, Callum Turner, Maya Hawke",
-    "synopsis": "Two love-starved strangers crash into each other on the one night of the year when single people are allowed to have sex.",
-    "director": "Will Gluck",
-    "title": "One Night Only",
-    "cached_at": "2026-08-20T10:17:43.180009"
+  "https://wtwcinemas.co.uk/st-austell/film/5638/coyote-vs-acme": {
+    "runtime": "103 min",
+    "cast": "Will Forte, Lana Condor, Tone Bell",
+    "synopsis": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
+    "director": "Dave Green",
+    "title": "Coyote vs. Acme",
+    "cached_at": "2026-08-21T10:18:09.492720"
   },
   "https://wtwcinemas.co.uk/truro/film/5665/one-night-only": {
     "runtime": "102 min",
@@ -285,31 +45,39 @@
     "synopsis": "Two love-starved strangers crash into each other on the one night of the year when single people are allowed to have sex.",
     "director": "Will Gluck",
     "title": "One Night Only",
-    "cached_at": "2026-08-20T10:17:43.521101"
+    "cached_at": "2026-08-21T10:18:09.567192"
   },
-  "https://wtwcinemas.co.uk/wadebridge/film/5638/coyote-vs-acme": {
-    "runtime": "103 min",
-    "cast": "Will Forte, Lana Condor, Tone Bell",
-    "synopsis": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
-    "director": "Dave Green",
-    "title": "Coyote vs. Acme",
-    "cached_at": "2026-08-20T10:17:44.137588"
+  "https://wtwcinemas.co.uk/newquay/film/5644/the-dog-stars": {
+    "runtime": "118 min",
+    "cast": "Jacob Elordi, Josh Brolin, Margaret Qualley",
+    "synopsis": "After the world's population has been ravaged by a pandemic, a man lives a lonesome existence in a Colorado airplane hangar with his dog and a dour gunman he has befriended. When a mysterious transmission comes through on the radio while he's flying his old Cessna, it sparks a hunt for the provenance of the sound.",
+    "director": "Ridley Scott",
+    "title": "The Dog Stars",
+    "cached_at": "2026-08-21T10:18:09.762856"
   },
-  "https://wtwcinemas.co.uk/newquay/film/5638/coyote-vs-acme": {
-    "runtime": "103 min",
-    "cast": "Will Forte, Lana Condor, Tone Bell",
-    "synopsis": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
-    "director": "Dave Green",
-    "title": "Coyote vs. Acme",
-    "cached_at": "2026-08-20T10:17:44.525237"
+  "https://wtwcinemas.co.uk/wadebridge/film/5644/the-dog-stars": {
+    "runtime": "118 min",
+    "cast": "Jacob Elordi, Josh Brolin, Margaret Qualley",
+    "synopsis": "After the world's population has been ravaged by a pandemic, a man lives a lonesome existence in a Colorado airplane hangar with his dog and a dour gunman he has befriended. When a mysterious transmission comes through on the radio while he's flying his old Cessna, it sparks a hunt for the provenance of the sound.",
+    "director": "Ridley Scott",
+    "title": "The Dog Stars",
+    "cached_at": "2026-08-21T10:18:09.794482"
   },
-  "https://wtwcinemas.co.uk/st-austell/film/5594/la-traviata-on-sydney-harbour": {
-    "runtime": "145 min",
-    "cast": "",
-    "synopsis": "Verdi's hugely popular La Traviata returns to the Sydney Harbour water stage featuring a breath-taking soaring 9 metre high, 3.5 ton chandelier covered in 10,000 shimmering Swarovski crystals. This glamorous production was captured on location on Sydney Harbour in 2021 in front of a sold out audience. La Traviata features timeless romantic arias, lively choreography, beautiful costumes and spectacular fireworks.",
-    "director": "",
-    "title": "La Traviata on Sydney Harbour",
-    "cached_at": "2026-08-20T10:17:44.816658"
+  "https://wtwcinemas.co.uk/st-austell/film/5665/one-night-only": {
+    "runtime": "102 min",
+    "cast": "Monica Barbaro, Callum Turner, Maya Hawke",
+    "synopsis": "Two love-starved strangers crash into each other on the one night of the year when single people are allowed to have sex.",
+    "director": "Will Gluck",
+    "title": "One Night Only",
+    "cached_at": "2026-08-21T10:18:12.127371"
+  },
+  "https://wtwcinemas.co.uk/newquay/film/5665/one-night-only": {
+    "runtime": "102 min",
+    "cast": "Monica Barbaro, Callum Turner, Maya Hawke",
+    "synopsis": "Two love-starved strangers crash into each other on the one night of the year when single people are allowed to have sex.",
+    "director": "Will Gluck",
+    "title": "One Night Only",
+    "cached_at": "2026-08-21T10:18:12.424275"
   },
   "https://wtwcinemas.co.uk/truro/film/5623/kikis-delivery-service-anime-season-with-subtitles": {
     "runtime": "104 min",
@@ -317,31 +85,23 @@
     "synopsis": "A young witch, on her mandatory year of independent life, finds fitting into a new community difficult while she supports herself by running an air courier service.",
     "director": "Hayao Miyazaki",
     "title": "Kiki's Delivery Service - Anime Season (with subtitles)",
-    "cached_at": "2026-08-20T10:17:45.275330"
+    "cached_at": "2026-08-21T10:18:12.456955"
   },
-  "https://wtwcinemas.co.uk/wadebridge/film/5630/the-spin": {
-    "runtime": "92 min",
-    "cast": "Tara Lynne O'Neill, Brenock O'Connor, Owen Colgan",
-    "synopsis": "A struggling record store owner travels down south to Cork with his best friend in a bid to save his shop from closure.",
-    "director": "Michael Head",
-    "title": "The Spin",
-    "cached_at": "2026-08-20T10:17:45.671049"
+  "https://wtwcinemas.co.uk/wadebridge/film/5665/one-night-only": {
+    "runtime": "102 min",
+    "cast": "Monica Barbaro, Callum Turner, Maya Hawke",
+    "synopsis": "Two love-starved strangers crash into each other on the one night of the year when single people are allowed to have sex.",
+    "director": "Will Gluck",
+    "title": "One Night Only",
+    "cached_at": "2026-08-21T10:18:12.547568"
   },
-  "https://wtwcinemas.co.uk/newquay/film/5645/star-trek-iv-the-voyage-home": {
-    "runtime": "118 min",
-    "cast": "William Shatner, Leonard Nimoy, DeForest Kelley",
-    "synopsis": "When a huge alien probe enters the galaxy and begins to vaporize Earth's oceans, Kirk and his crew must travel back in time in order to bring back whales and save the planet.",
-    "director": "Leonard Nimoy",
-    "title": "Star Trek IV: The Voyage Home",
-    "cached_at": "2026-08-20T10:17:46.288966"
-  },
-  "https://wtwcinemas.co.uk/st-austell/film/5645/star-trek-iv-the-voyage-home": {
-    "runtime": "118 min",
-    "cast": "William Shatner, Leonard Nimoy, DeForest Kelley",
-    "synopsis": "When a huge alien probe enters the galaxy and begins to vaporize Earth's oceans, Kirk and his crew must travel back in time in order to bring back whales and save the planet.",
-    "director": "Leonard Nimoy",
-    "title": "Star Trek IV: The Voyage Home",
-    "cached_at": "2026-08-20T10:17:46.361278"
+  "https://wtwcinemas.co.uk/st-austell/film/5594/la-traviata-on-sydney-harbour": {
+    "runtime": "145 min",
+    "cast": "",
+    "synopsis": "Verdi's hugely popular La Traviata returns to the Sydney Harbour water stage featuring a breath-taking soaring 9 metre high, 3.5 ton chandelier covered in 10,000 shimmering Swarovski crystals. This glamorous production was captured on location on Sydney Harbour in 2021 in front of a sold out audience. La Traviata features timeless romantic arias, lively choreography, beautiful costumes and spectacular fireworks.",
+    "director": "",
+    "title": "La Traviata on Sydney Harbour",
+    "cached_at": "2026-08-21T10:18:14.997315"
   },
   "https://wtwcinemas.co.uk/truro/film/5638/coyote-vs-acme": {
     "runtime": "103 min",
@@ -349,23 +109,55 @@
     "synopsis": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
     "director": "Dave Green",
     "title": "Coyote vs. Acme",
-    "cached_at": "2026-08-20T10:17:46.946757"
+    "cached_at": "2026-08-21T10:18:15.029473"
   },
-  "https://wtwcinemas.co.uk/wadebridge/film/5594/la-traviata-on-sydney-harbour": {
-    "runtime": "145 min",
-    "cast": "",
-    "synopsis": "Verdi's hugely popular La Traviata returns to the Sydney Harbour water stage featuring a breath-taking soaring 9 metre high, 3.5 ton chandelier covered in 10,000 shimmering Swarovski crystals. This glamorous production was captured on location on Sydney Harbour in 2021 in front of a sold out audience. La Traviata features timeless romantic arias, lively choreography, beautiful costumes and spectacular fireworks.",
-    "director": "",
-    "title": "La Traviata on Sydney Harbour",
-    "cached_at": "2026-08-20T10:17:47.167784"
+  "https://wtwcinemas.co.uk/newquay/film/5638/coyote-vs-acme": {
+    "runtime": "103 min",
+    "cast": "Will Forte, Lana Condor, Tone Bell",
+    "synopsis": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
+    "director": "Dave Green",
+    "title": "Coyote vs. Acme",
+    "cached_at": "2026-08-21T10:18:15.150270"
   },
-  "https://wtwcinemas.co.uk/newquay/film/5580/pressure": {
-    "runtime": "100 min",
-    "cast": "Andrew Scott, Brendan Fraser, Kerry Condon",
-    "synopsis": "In the tense 72 hours before D-Day, and the fate of the free world hanging in the balance, General Dwight D. Eisenhower and Captain James Stagg face an impossible choice—launch the largest and most dangerous seaborne invasion in history or risk losing the war altogether.",
-    "director": "Anthony Maras",
-    "title": "Pressure",
-    "cached_at": "2026-08-20T10:17:47.813995"
+  "https://wtwcinemas.co.uk/wadebridge/film/5638/coyote-vs-acme": {
+    "runtime": "103 min",
+    "cast": "Will Forte, Lana Condor, Tone Bell",
+    "synopsis": "After Acme products fail him one too many times in his dogged pursuit of the Roadrunner, Wile E. Coyote decides to hire a billboard lawyer to sue the Acme Corporation.",
+    "director": "Dave Green",
+    "title": "Coyote vs. Acme",
+    "cached_at": "2026-08-21T10:18:15.282168"
+  },
+  "https://wtwcinemas.co.uk/st-austell/film/5645/star-trek-iv-the-voyage-home": {
+    "runtime": "118 min",
+    "cast": "William Shatner, Leonard Nimoy, DeForest Kelley",
+    "synopsis": "When a huge alien probe enters the galaxy and begins to vaporize Earth's oceans, Kirk and his crew must travel back in time in order to bring back whales and save the planet.",
+    "director": "Leonard Nimoy",
+    "title": "Star Trek IV: The Voyage Home",
+    "cached_at": "2026-08-21T10:18:17.549191"
+  },
+  "https://wtwcinemas.co.uk/newquay/film/5645/star-trek-iv-the-voyage-home": {
+    "runtime": "118 min",
+    "cast": "William Shatner, Leonard Nimoy, DeForest Kelley",
+    "synopsis": "When a huge alien probe enters the galaxy and begins to vaporize Earth's oceans, Kirk and his crew must travel back in time in order to bring back whales and save the planet.",
+    "director": "Leonard Nimoy",
+    "title": "Star Trek IV: The Voyage Home",
+    "cached_at": "2026-08-21T10:18:17.556123"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5630/the-spin": {
+    "runtime": "92 min",
+    "cast": "Tara Lynne O'Neill, Brenock O'Connor, Owen Colgan",
+    "synopsis": "A struggling record store owner travels down south to Cork with his best friend in a bid to save his shop from closure.",
+    "director": "Michael Head",
+    "title": "The Spin",
+    "cached_at": "2026-08-21T10:18:17.572513"
+  },
+  "https://wtwcinemas.co.uk/truro/film/5669/la-la-land-10th-anniversary": {
+    "runtime": "129 min",
+    "cast": "Ryan Gosling, Emma Stone, John Legend",
+    "synopsis": "Mia, an aspiring actress, serves lattes to movie stars in between auditions and Sebastian, a jazz musician, scrapes by playing cocktail party gigs in dingy bars, but as success mounts they are faced with decisions that begin to fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.",
+    "director": "Damien Chazelle",
+    "title": "La La Land - 10th Anniversary",
+    "cached_at": "2026-08-21T10:18:17.664221"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5580/pressure": {
     "runtime": "100 min",
@@ -373,7 +165,23 @@
     "synopsis": "In the tense 72 hours before D-Day, and the fate of the free world hanging in the balance, General Dwight D. Eisenhower and Captain James Stagg face an impossible choice—launch the largest and most dangerous seaborne invasion in history or risk losing the war altogether.",
     "director": "Anthony Maras",
     "title": "Pressure",
-    "cached_at": "2026-08-20T10:17:47.907704"
+    "cached_at": "2026-08-21T10:18:19.902247"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5594/la-traviata-on-sydney-harbour": {
+    "runtime": "145 min",
+    "cast": "",
+    "synopsis": "Verdi's hugely popular La Traviata returns to the Sydney Harbour water stage featuring a breath-taking soaring 9 metre high, 3.5 ton chandelier covered in 10,000 shimmering Swarovski crystals. This glamorous production was captured on location on Sydney Harbour in 2021 in front of a sold out audience. La Traviata features timeless romantic arias, lively choreography, beautiful costumes and spectacular fireworks.",
+    "director": "",
+    "title": "La Traviata on Sydney Harbour",
+    "cached_at": "2026-08-21T10:18:19.963751"
+  },
+  "https://wtwcinemas.co.uk/newquay/film/5580/pressure": {
+    "runtime": "100 min",
+    "cast": "Andrew Scott, Brendan Fraser, Kerry Condon",
+    "synopsis": "In the tense 72 hours before D-Day, and the fate of the free world hanging in the balance, General Dwight D. Eisenhower and Captain James Stagg face an impossible choice—launch the largest and most dangerous seaborne invasion in history or risk losing the war altogether.",
+    "director": "Anthony Maras",
+    "title": "Pressure",
+    "cached_at": "2026-08-21T10:18:19.980646"
   },
   "https://wtwcinemas.co.uk/truro/film/5594/la-traviata-on-sydney-harbour": {
     "runtime": "145 min",
@@ -381,15 +189,7 @@
     "synopsis": "Verdi's hugely popular La Traviata returns to the Sydney Harbour water stage featuring a breath-taking soaring 9 metre high, 3.5 ton chandelier covered in 10,000 shimmering Swarovski crystals. This glamorous production was captured on location on Sydney Harbour in 2021 in front of a sold out audience. La Traviata features timeless romantic arias, lively choreography, beautiful costumes and spectacular fireworks.",
     "director": "",
     "title": "La Traviata on Sydney Harbour",
-    "cached_at": "2026-08-20T10:17:48.497284"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5645/star-trek-iv-the-voyage-home": {
-    "runtime": "118 min",
-    "cast": "William Shatner, Leonard Nimoy, DeForest Kelley",
-    "synopsis": "When a huge alien probe enters the galaxy and begins to vaporize Earth's oceans, Kirk and his crew must travel back in time in order to bring back whales and save the planet.",
-    "director": "Leonard Nimoy",
-    "title": "Star Trek IV: The Voyage Home",
-    "cached_at": "2026-08-20T10:17:48.680717"
+    "cached_at": "2026-08-21T10:18:20.170456"
   },
   "https://wtwcinemas.co.uk/newquay/film/5657/practical-magic-2": {
     "runtime": "126 min",
@@ -397,7 +197,15 @@
     "synopsis": "The Owens sisters must confront the dark curse that threatens to unravel their family once and for all.",
     "director": "Susanne Bier",
     "title": "Practical Magic 2",
-    "cached_at": "2026-08-20T10:17:49.361696"
+    "cached_at": "2026-08-21T10:18:22.403820"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5645/star-trek-iv-the-voyage-home": {
+    "runtime": "118 min",
+    "cast": "William Shatner, Leonard Nimoy, DeForest Kelley",
+    "synopsis": "When a huge alien probe enters the galaxy and begins to vaporize Earth's oceans, Kirk and his crew must travel back in time in order to bring back whales and save the planet.",
+    "director": "Leonard Nimoy",
+    "title": "Star Trek IV: The Voyage Home",
+    "cached_at": "2026-08-21T10:18:22.484519"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5657/practical-magic-2": {
     "runtime": "126 min",
@@ -405,7 +213,7 @@
     "synopsis": "The Owens sisters must confront the dark curse that threatens to unravel their family once and for all.",
     "director": "Susanne Bier",
     "title": "Practical Magic 2",
-    "cached_at": "2026-08-20T10:17:49.472323"
+    "cached_at": "2026-08-21T10:18:22.546889"
   },
   "https://wtwcinemas.co.uk/truro/film/5645/star-trek-iv-the-voyage-home": {
     "runtime": "118 min",
@@ -413,7 +221,7 @@
     "synopsis": "When a huge alien probe enters the galaxy and begins to vaporize Earth's oceans, Kirk and his crew must travel back in time in order to bring back whales and save the planet.",
     "director": "Leonard Nimoy",
     "title": "Star Trek IV: The Voyage Home",
-    "cached_at": "2026-08-20T10:17:50.157745"
+    "cached_at": "2026-08-21T10:18:22.826936"
   },
   "https://wtwcinemas.co.uk/wadebridge/film/5580/pressure": {
     "runtime": "100 min",
@@ -421,7 +229,7 @@
     "synopsis": "In the tense 72 hours before D-Day, and the fate of the free world hanging in the balance, General Dwight D. Eisenhower and Captain James Stagg face an impossible choice—launch the largest and most dangerous seaborne invasion in history or risk losing the war altogether.",
     "director": "Anthony Maras",
     "title": "Pressure",
-    "cached_at": "2026-08-20T10:17:50.186997"
+    "cached_at": "2026-08-21T10:18:24.899211"
   },
   "https://wtwcinemas.co.uk/newquay/film/5664/raiders-of-the-lost-ark-45th-anniversary": {
     "runtime": "115 min",
@@ -429,7 +237,7 @@
     "synopsis": "When Dr. Indiana Jones – the tweed-suited professor who just happens to be a celebrated archaeologist – is hired by the government to locate the legendary Ark of the Covenant, he finds himself up against the entire Nazi regime.",
     "director": "Steven Spielberg",
     "title": "Raiders of the Lost Ark - 45th Anniversary",
-    "cached_at": "2026-08-20T10:17:50.950705"
+    "cached_at": "2026-08-21T10:18:24.936217"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5664/raiders-of-the-lost-ark-45th-anniversary": {
     "runtime": "115 min",
@@ -437,15 +245,7 @@
     "synopsis": "When Dr. Indiana Jones – the tweed-suited professor who just happens to be a celebrated archaeologist – is hired by the government to locate the legendary Ark of the Covenant, he finds himself up against the entire Nazi regime.",
     "director": "Steven Spielberg",
     "title": "Raiders of the Lost Ark - 45th Anniversary",
-    "cached_at": "2026-08-20T10:17:51.255810"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5657/practical-magic-2": {
-    "runtime": "126 min",
-    "cast": "Sandra Bullock, Nicole Kidman, Joey King",
-    "synopsis": "The Owens sisters must confront the dark curse that threatens to unravel their family once and for all.",
-    "director": "Susanne Bier",
-    "title": "Practical Magic 2",
-    "cached_at": "2026-08-20T10:17:51.638901"
+    "cached_at": "2026-08-21T10:18:25.253444"
   },
   "https://wtwcinemas.co.uk/truro/film/5580/pressure": {
     "runtime": "100 min",
@@ -453,7 +253,7 @@
     "synopsis": "In the tense 72 hours before D-Day, and the fate of the free world hanging in the balance, General Dwight D. Eisenhower and Captain James Stagg face an impossible choice—launch the largest and most dangerous seaborne invasion in history or risk losing the war altogether.",
     "director": "Anthony Maras",
     "title": "Pressure",
-    "cached_at": "2026-08-20T10:17:51.896319"
+    "cached_at": "2026-08-21T10:18:25.470142"
   },
   "https://wtwcinemas.co.uk/newquay/film/5656/the-transformers-the-movie-40th-anniversary": {
     "runtime": "96 min",
@@ -461,7 +261,15 @@
     "synopsis": "In 1986, THE TRANSFORMERS: THE MOVIE rolled into cinemas and changed the franchise forever. Unicron arrives as a planet-sized threat to the universe, heroes rise, legends are forged and an entire generation of kids were changed forever by THAT moment, which still\r\nhits like a truck. Featuring an iconic voice cast, unforgettable animation and a soundtrack that had absolutely no business going that hard, the film remains one of the boldest animated classics of its era.\r\nNow, forty years later, it returns to the big screen in 4K for a special anniversary celebration of the battle, the music and the legacy. Stay through the credits...because as this journey ends, a new one begins.",
     "director": "Nelson Shin",
     "title": "THE TRANSFORMERS: THE MOVIE 40TH ANNIVERSARY",
-    "cached_at": "2026-08-20T10:17:52.554192"
+    "cached_at": "2026-08-21T10:18:27.196848"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5657/practical-magic-2": {
+    "runtime": "126 min",
+    "cast": "Sandra Bullock, Nicole Kidman, Joey King",
+    "synopsis": "The Owens sisters must confront the dark curse that threatens to unravel their family once and for all.",
+    "director": "Susanne Bier",
+    "title": "Practical Magic 2",
+    "cached_at": "2026-08-21T10:18:27.265814"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5656/the-transformers-the-movie-40th-anniversary": {
     "runtime": "96 min",
@@ -469,15 +277,7 @@
     "synopsis": "In 1986, THE TRANSFORMERS: THE MOVIE rolled into cinemas and changed the franchise forever. Unicron arrives as a planet-sized threat to the universe, heroes rise, legends are forged and an entire generation of kids were changed forever by THAT moment, which still\r\nhits like a truck. Featuring an iconic voice cast, unforgettable animation and a soundtrack that had absolutely no business going that hard, the film remains one of the boldest animated classics of its era.\r\nNow, forty years later, it returns to the big screen in 4K for a special anniversary celebration of the battle, the music and the legacy. Stay through the credits...because as this journey ends, a new one begins.",
     "director": "Nelson Shin",
     "title": "THE TRANSFORMERS: THE MOVIE 40TH ANNIVERSARY",
-    "cached_at": "2026-08-20T10:17:52.868026"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5548/james-mcneill-whistler-exhibition-on-screen": {
-    "runtime": "90 min",
-    "cast": "",
-    "synopsis": "Tate Britain is holding the first major retrospective of Whistler in three decades (exhibition dates: 21 May- 27 September). This blockbuster exhibition promises to reawaken the world to just how important Whistler is to art history, uniting world-famous masterpieces with rarely seen works. Exhibition on Screen will bring these stunning works and the incredible story behind them to cinemas around the world while the exhibition is still running, bringing this truly global artist to a global audience. This will be an unmissable chance to get to know this visually spectacular artist and the influence he has had on those who followed.",
-    "director": "David Bickerstaff",
-    "title": "James McNeill Whistler - Exhibition On Screen",
-    "cached_at": "2026-08-20T10:17:53.373446"
+    "cached_at": "2026-08-21T10:18:27.677355"
   },
   "https://wtwcinemas.co.uk/truro/film/5657/practical-magic-2": {
     "runtime": "126 min",
@@ -485,7 +285,7 @@
     "synopsis": "The Owens sisters must confront the dark curse that threatens to unravel their family once and for all.",
     "director": "Susanne Bier",
     "title": "Practical Magic 2",
-    "cached_at": "2026-08-20T10:17:53.683321"
+    "cached_at": "2026-08-21T10:18:27.943178"
   },
   "https://wtwcinemas.co.uk/newquay/film/5581/shaun-the-sheep-the-beast-of-mossy-bottom": {
     "runtime": "1 min",
@@ -493,7 +293,15 @@
     "synopsis": "The residents of Mossy Bottom Farm looking forward to Halloween – until the clumsy Farmer trashes the flock's beloved pumpkin patch! When Shaun turns mad scientist to fix the problem, things rapidly spiral out of control. With the Farmer missing and a wild beast roaming the woods of Mossingham, all the ingredients are in place for a monstrously fun family adventure.",
     "director": "Steve Cox, Matthew Walker",
     "title": "Shaun the Sheep: The Beast of Mossy Bottom",
-    "cached_at": "2026-08-20T10:17:54.112644"
+    "cached_at": "2026-08-21T10:18:29.674977"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5548/james-mcneill-whistler-exhibition-on-screen": {
+    "runtime": "90 min",
+    "cast": "",
+    "synopsis": "Tate Britain is holding the first major retrospective of Whistler in three decades (exhibition dates: 21 May- 27 September). This blockbuster exhibition promises to reawaken the world to just how important Whistler is to art history, uniting world-famous masterpieces with rarely seen works. Exhibition on Screen will bring these stunning works and the incredible story behind them to cinemas around the world while the exhibition is still running, bringing this truly global artist to a global audience. This will be an unmissable chance to get to know this visually spectacular artist and the influence he has had on those who followed.",
+    "director": "David Bickerstaff",
+    "title": "James McNeill Whistler - Exhibition On Screen",
+    "cached_at": "2026-08-21T10:18:29.903381"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5581/shaun-the-sheep-the-beast-of-mossy-bottom": {
     "runtime": "1 min",
@@ -501,15 +309,7 @@
     "synopsis": "The residents of Mossy Bottom Farm looking forward to Halloween – until the clumsy Farmer trashes the flock's beloved pumpkin patch! When Shaun turns mad scientist to fix the problem, things rapidly spiral out of control. With the Farmer missing and a wild beast roaming the woods of Mossingham, all the ingredients are in place for a monstrously fun family adventure.",
     "director": "Steve Cox, Matthew Walker",
     "title": "Shaun the Sheep: The Beast of Mossy Bottom",
-    "cached_at": "2026-08-20T10:17:54.406902"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5656/the-transformers-the-movie-40th-anniversary": {
-    "runtime": "96 min",
-    "cast": "Peter Cullen, Frank Welker, Orson Welles, Judd Nelson, Leonard Nimoy, Eric Idle, Robert Stack",
-    "synopsis": "In 1986, THE TRANSFORMERS: THE MOVIE rolled into cinemas and changed the franchise forever. Unicron arrives as a planet-sized threat to the universe, heroes rise, legends are forged and an entire generation of kids were changed forever by THAT moment, which still\r\nhits like a truck. Featuring an iconic voice cast, unforgettable animation and a soundtrack that had absolutely no business going that hard, the film remains one of the boldest animated classics of its era.\r\nNow, forty years later, it returns to the big screen in 4K for a special anniversary celebration of the battle, the music and the legacy. Stay through the credits...because as this journey ends, a new one begins.",
-    "director": "Nelson Shin",
-    "title": "THE TRANSFORMERS: THE MOVIE 40TH ANNIVERSARY",
-    "cached_at": "2026-08-20T10:17:54.905285"
+    "cached_at": "2026-08-21T10:18:30.261724"
   },
   "https://wtwcinemas.co.uk/truro/film/5664/raiders-of-the-lost-ark-45th-anniversary": {
     "runtime": "115 min",
@@ -517,7 +317,15 @@
     "synopsis": "When Dr. Indiana Jones – the tweed-suited professor who just happens to be a celebrated archaeologist – is hired by the government to locate the legendary Ark of the Covenant, he finds himself up against the entire Nazi regime.",
     "director": "Steven Spielberg",
     "title": "Raiders of the Lost Ark - 45th Anniversary",
-    "cached_at": "2026-08-20T10:17:55.276819"
+    "cached_at": "2026-08-21T10:18:30.631758"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5656/the-transformers-the-movie-40th-anniversary": {
+    "runtime": "96 min",
+    "cast": "Peter Cullen, Frank Welker, Orson Welles, Judd Nelson, Leonard Nimoy, Eric Idle, Robert Stack",
+    "synopsis": "In 1986, THE TRANSFORMERS: THE MOVIE rolled into cinemas and changed the franchise forever. Unicron arrives as a planet-sized threat to the universe, heroes rise, legends are forged and an entire generation of kids were changed forever by THAT moment, which still\r\nhits like a truck. Featuring an iconic voice cast, unforgettable animation and a soundtrack that had absolutely no business going that hard, the film remains one of the boldest animated classics of its era.\r\nNow, forty years later, it returns to the big screen in 4K for a special anniversary celebration of the battle, the music and the legacy. Stay through the credits...because as this journey ends, a new one begins.",
+    "director": "Nelson Shin",
+    "title": "THE TRANSFORMERS: THE MOVIE 40TH ANNIVERSARY",
+    "cached_at": "2026-08-21T10:18:32.268255"
   },
   "https://wtwcinemas.co.uk/newquay/film/5599/national-theatre-live-the-misanthrope": {
     "runtime": "150 min",
@@ -525,7 +333,7 @@
     "synopsis": "Award-winner Sandra Oh (Killing Eve) plays the title role in this razor-sharp reimagining of Molière classic dark comedy.\r\nTelling the truth isn't always that simple. Alice, a brilliant novelist, despises the carefully constructed lies of modern society. But the more she challenges those around her, the fiercer the backlash becomes. Soon, she must confront the price of speaking her truth in a world that would rather silence her.\r\nFilmed live on stage at the National Theatre, Indhu Rubasingham directs Martin Crimp's (Cyrano de Bergerac) highly anticipated play.",
     "director": "Indhu Rubasingham",
     "title": "National Theatre Live: The Misanthrope",
-    "cached_at": "2026-08-20T10:17:55.801618"
+    "cached_at": "2026-08-21T10:18:32.310818"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5599/national-theatre-live-the-misanthrope": {
     "runtime": "150 min",
@@ -533,15 +341,7 @@
     "synopsis": "Award-winner Sandra Oh (Killing Eve) plays the title role in this razor-sharp reimagining of Molière classic dark comedy.\r\nTelling the truth isn't always that simple. Alice, a brilliant novelist, despises the carefully constructed lies of modern society. But the more she challenges those around her, the fiercer the backlash becomes. Soon, she must confront the price of speaking her truth in a world that would rather silence her.\r\nFilmed live on stage at the National Theatre, Indhu Rubasingham directs Martin Crimp's (Cyrano de Bergerac) highly anticipated play.",
     "director": "Indhu Rubasingham",
     "title": "National Theatre Live: The Misanthrope",
-    "cached_at": "2026-08-20T10:17:55.979316"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5581/shaun-the-sheep-the-beast-of-mossy-bottom": {
-    "runtime": "1 min",
-    "cast": "Justin Fletcher, John Sparkes, Kate Harbour",
-    "synopsis": "The residents of Mossy Bottom Farm looking forward to Halloween – until the clumsy Farmer trashes the flock's beloved pumpkin patch! When Shaun turns mad scientist to fix the problem, things rapidly spiral out of control. With the Farmer missing and a wild beast roaming the woods of Mossingham, all the ingredients are in place for a monstrously fun family adventure.",
-    "director": "Steve Cox, Matthew Walker",
-    "title": "Shaun the Sheep: The Beast of Mossy Bottom",
-    "cached_at": "2026-08-20T10:17:56.477613"
+    "cached_at": "2026-08-21T10:18:32.799238"
   },
   "https://wtwcinemas.co.uk/truro/film/5668/kill-bill-the-whole-bloody-affair-pats-film-club": {
     "runtime": "275 min",
@@ -549,7 +349,15 @@
     "synopsis": "A former assassin, known simply as The Bride, wakes from a coma four years after her jealous ex-lover Bill attempts to murder her on her wedding day. Fueled by an insatiable desire for revenge, she vows to get even with every person who contributed to the loss of her unborn child, her entire wedding party, and four years of her life.  After devising a hit list, The Bride sets off on her quest, enduring unspeakable injury and unscrupulous enemies.",
     "director": "Quentin Tarantino",
     "title": "Kill Bill: The Whole Bloody Affair - Pat's Film Club",
-    "cached_at": "2026-08-20T10:17:56.949575"
+    "cached_at": "2026-08-21T10:18:33.284281"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5581/shaun-the-sheep-the-beast-of-mossy-bottom": {
+    "runtime": "1 min",
+    "cast": "Justin Fletcher, John Sparkes, Kate Harbour",
+    "synopsis": "The residents of Mossy Bottom Farm looking forward to Halloween – until the clumsy Farmer trashes the flock's beloved pumpkin patch! When Shaun turns mad scientist to fix the problem, things rapidly spiral out of control. With the Farmer missing and a wild beast roaming the woods of Mossingham, all the ingredients are in place for a monstrously fun family adventure.",
+    "director": "Steve Cox, Matthew Walker",
+    "title": "Shaun the Sheep: The Beast of Mossy Bottom",
+    "cached_at": "2026-08-21T10:18:34.554883"
   },
   "https://wtwcinemas.co.uk/newquay/film/5583/digger": {
     "runtime": "106 min",
@@ -557,7 +365,7 @@
     "synopsis": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's saviour before the disaster he's unleashed destroys everything.",
     "director": "Alejandro G. Iñárritu",
     "title": "Digger",
-    "cached_at": "2026-08-20T10:17:57.445095"
+    "cached_at": "2026-08-21T10:18:34.634503"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5583/digger": {
     "runtime": "106 min",
@@ -565,15 +373,7 @@
     "synopsis": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's saviour before the disaster he's unleashed destroys everything.",
     "director": "Alejandro G. Iñárritu",
     "title": "Digger",
-    "cached_at": "2026-08-20T10:17:57.660184"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5599/national-theatre-live-the-misanthrope": {
-    "runtime": "150 min",
-    "cast": "Sandra Oh",
-    "synopsis": "Award-winner Sandra Oh (Killing Eve) plays the title role in this razor-sharp reimagining of Molière classic dark comedy.\r\nTelling the truth isn't always that simple. Alice, a brilliant novelist, despises the carefully constructed lies of modern society. But the more she challenges those around her, the fiercer the backlash becomes. Soon, she must confront the price of speaking her truth in a world that would rather silence her.\r\nFilmed live on stage at the National Theatre, Indhu Rubasingham directs Martin Crimp's (Cyrano de Bergerac) highly anticipated play.",
-    "director": "Indhu Rubasingham",
-    "title": "National Theatre Live: The Misanthrope",
-    "cached_at": "2026-08-20T10:17:58.191097"
+    "cached_at": "2026-08-21T10:18:35.192836"
   },
   "https://wtwcinemas.co.uk/truro/film/5548/james-mcneill-whistler-exhibition-on-screen": {
     "runtime": "90 min",
@@ -581,7 +381,15 @@
     "synopsis": "Tate Britain is holding the first major retrospective of Whistler in three decades (exhibition dates: 21 May- 27 September). This blockbuster exhibition promises to reawaken the world to just how important Whistler is to art history, uniting world-famous masterpieces with rarely seen works. Exhibition on Screen will bring these stunning works and the incredible story behind them to cinemas around the world while the exhibition is still running, bringing this truly global artist to a global audience. This will be an unmissable chance to get to know this visually spectacular artist and the influence he has had on those who followed.",
     "director": "David Bickerstaff",
     "title": "James McNeill Whistler - Exhibition On Screen",
-    "cached_at": "2026-08-20T10:17:58.622862"
+    "cached_at": "2026-08-21T10:18:35.630719"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5599/national-theatre-live-the-misanthrope": {
+    "runtime": "150 min",
+    "cast": "Sandra Oh",
+    "synopsis": "Award-winner Sandra Oh (Killing Eve) plays the title role in this razor-sharp reimagining of Molière classic dark comedy.\r\nTelling the truth isn't always that simple. Alice, a brilliant novelist, despises the carefully constructed lies of modern society. But the more she challenges those around her, the fiercer the backlash becomes. Soon, she must confront the price of speaking her truth in a world that would rather silence her.\r\nFilmed live on stage at the National Theatre, Indhu Rubasingham directs Martin Crimp's (Cyrano de Bergerac) highly anticipated play.",
+    "director": "Indhu Rubasingham",
+    "title": "National Theatre Live: The Misanthrope",
+    "cached_at": "2026-08-21T10:18:36.892715"
   },
   "https://wtwcinemas.co.uk/newquay/film/5653/hadestown-the-musical": {
     "runtime": "142 min",
@@ -589,7 +397,7 @@
     "synopsis": "The international hit musical comes to the big screen! Winner of eight Tony Awards in 2019 including Best Musical and the 2020 Grammy Award for Best Musical Theater Album, HADESTOWN: THE MUSICAL is the genre-defying musical blending modern American folk music with New Orleans-inspired jazz to reimagine a sweeping ancient tale of two intertwining love stories, that of young dreamers Orpheus and Eurydice, and King Hades and his wife Persephone. Filmed live on stage in London's West End and featuring the original Broadway stars, HADESTOWN: THE MUSICAL invites audiences on a hell-raising journey to the underworld and back.",
     "director": "Brett Sullivan",
     "title": "Hadestown: The Musical",
-    "cached_at": "2026-08-20T10:17:59.123259"
+    "cached_at": "2026-08-21T10:18:36.934447"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5653/hadestown-the-musical": {
     "runtime": "142 min",
@@ -597,15 +405,7 @@
     "synopsis": "The international hit musical comes to the big screen! Winner of eight Tony Awards in 2019 including Best Musical and the 2020 Grammy Award for Best Musical Theater Album, HADESTOWN: THE MUSICAL is the genre-defying musical blending modern American folk music with New Orleans-inspired jazz to reimagine a sweeping ancient tale of two intertwining love stories, that of young dreamers Orpheus and Eurydice, and King Hades and his wife Persephone. Filmed live on stage in London's West End and featuring the original Broadway stars, HADESTOWN: THE MUSICAL invites audiences on a hell-raising journey to the underworld and back.",
     "director": "Brett Sullivan",
     "title": "Hadestown: The Musical",
-    "cached_at": "2026-08-20T10:17:59.414008"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5583/digger": {
-    "runtime": "106 min",
-    "cast": "Tom Cruise, Sandra Hüller, John Goodman",
-    "synopsis": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's saviour before the disaster he's unleashed destroys everything.",
-    "director": "Alejandro G. Iñárritu",
-    "title": "Digger",
-    "cached_at": "2026-08-20T10:17:59.786615"
+    "cached_at": "2026-08-21T10:18:37.525177"
   },
   "https://wtwcinemas.co.uk/truro/film/5656/the-transformers-the-movie-40th-anniversary": {
     "runtime": "96 min",
@@ -613,7 +413,7 @@
     "synopsis": "In 1986, THE TRANSFORMERS: THE MOVIE rolled into cinemas and changed the franchise forever. Unicron arrives as a planet-sized threat to the universe, heroes rise, legends are forged and an entire generation of kids were changed forever by THAT moment, which still\r\nhits like a truck. Featuring an iconic voice cast, unforgettable animation and a soundtrack that had absolutely no business going that hard, the film remains one of the boldest animated classics of its era.\r\nNow, forty years later, it returns to the big screen in 4K for a special anniversary celebration of the battle, the music and the legacy. Stay through the credits...because as this journey ends, a new one begins.",
     "director": "Nelson Shin",
     "title": "THE TRANSFORMERS: THE MOVIE 40TH ANNIVERSARY",
-    "cached_at": "2026-08-20T10:18:00.343758"
+    "cached_at": "2026-08-21T10:18:37.992926"
   },
   "https://wtwcinemas.co.uk/newquay/film/5582/street-fighter": {
     "runtime": "1 min",
@@ -621,7 +421,15 @@
     "synopsis": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
     "director": "Kitao Sakurai",
     "title": "Street Fighter",
-    "cached_at": "2026-08-20T10:18:00.818984"
+    "cached_at": "2026-08-21T10:18:39.311158"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5583/digger": {
+    "runtime": "106 min",
+    "cast": "Tom Cruise, Sandra Hüller, John Goodman",
+    "synopsis": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's saviour before the disaster he's unleashed destroys everything.",
+    "director": "Alejandro G. Iñárritu",
+    "title": "Digger",
+    "cached_at": "2026-08-21T10:18:39.326961"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5643/forgotten-island": {
     "runtime": "109 min",
@@ -629,15 +437,7 @@
     "synopsis": "While celebrating their last night together, high school graduates and best friends Jo and Raissa stumble upon a mysterious portal that transports them to the fantastical island of Nakali. When they discover that the memories of their entire friendship are the price for returning home, Jo and Raissa will race to find a way to leave the island before they forget each other forever.",
     "director": "Januel Mercado, Joel Crawford",
     "title": "Forgotten Island",
-    "cached_at": "2026-08-20T10:18:00.964473"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5653/hadestown-the-musical": {
-    "runtime": "142 min",
-    "cast": "Mara Isaacs, Dale Franzen, Hunter Arnold, Brett Sullivan, Natalie Daniels-Browne",
-    "synopsis": "The international hit musical comes to the big screen! Winner of eight Tony Awards in 2019 including Best Musical and the 2020 Grammy Award for Best Musical Theater Album, HADESTOWN: THE MUSICAL is the genre-defying musical blending modern American folk music with New Orleans-inspired jazz to reimagine a sweeping ancient tale of two intertwining love stories, that of young dreamers Orpheus and Eurydice, and King Hades and his wife Persephone. Filmed live on stage in London's West End and featuring the original Broadway stars, HADESTOWN: THE MUSICAL invites audiences on a hell-raising journey to the underworld and back.",
-    "director": "Brett Sullivan",
-    "title": "Hadestown: The Musical",
-    "cached_at": "2026-08-20T10:18:01.369031"
+    "cached_at": "2026-08-21T10:18:39.831275"
   },
   "https://wtwcinemas.co.uk/truro/film/5581/shaun-the-sheep-the-beast-of-mossy-bottom": {
     "runtime": "1 min",
@@ -645,7 +445,7 @@
     "synopsis": "The residents of Mossy Bottom Farm looking forward to Halloween – until the clumsy Farmer trashes the flock's beloved pumpkin patch! When Shaun turns mad scientist to fix the problem, things rapidly spiral out of control. With the Farmer missing and a wild beast roaming the woods of Mossingham, all the ingredients are in place for a monstrously fun family adventure.",
     "director": "Steve Cox, Matthew Walker",
     "title": "Shaun the Sheep: The Beast of Mossy Bottom",
-    "cached_at": "2026-08-20T10:18:02.296333"
+    "cached_at": "2026-08-21T10:18:40.416204"
   },
   "https://wtwcinemas.co.uk/newquay/film/5643/forgotten-island": {
     "runtime": "109 min",
@@ -653,7 +453,15 @@
     "synopsis": "While celebrating their last night together, high school graduates and best friends Jo and Raissa stumble upon a mysterious portal that transports them to the fantastical island of Nakali. When they discover that the memories of their entire friendship are the price for returning home, Jo and Raissa will race to find a way to leave the island before they forget each other forever.",
     "director": "Januel Mercado, Joel Crawford",
     "title": "Forgotten Island",
-    "cached_at": "2026-08-20T10:18:02.767911"
+    "cached_at": "2026-08-21T10:18:41.540865"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5653/hadestown-the-musical": {
+    "runtime": "142 min",
+    "cast": "Mara Isaacs, Dale Franzen, Hunter Arnold, Brett Sullivan, Natalie Daniels-Browne",
+    "synopsis": "The international hit musical comes to the big screen! Winner of eight Tony Awards in 2019 including Best Musical and the 2020 Grammy Award for Best Musical Theater Album, HADESTOWN: THE MUSICAL is the genre-defying musical blending modern American folk music with New Orleans-inspired jazz to reimagine a sweeping ancient tale of two intertwining love stories, that of young dreamers Orpheus and Eurydice, and King Hades and his wife Persephone. Filmed live on stage in London's West End and featuring the original Broadway stars, HADESTOWN: THE MUSICAL invites audiences on a hell-raising journey to the underworld and back.",
+    "director": "Brett Sullivan",
+    "title": "Hadestown: The Musical",
+    "cached_at": "2026-08-21T10:18:41.695706"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5582/street-fighter": {
     "runtime": "1 min",
@@ -661,15 +469,7 @@
     "synopsis": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
     "director": "Kitao Sakurai",
     "title": "Street Fighter",
-    "cached_at": "2026-08-20T10:18:03.036157"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5643/forgotten-island": {
-    "runtime": "109 min",
-    "cast": "H.E.R., Liza Soberano, Dave Franco",
-    "synopsis": "While celebrating their last night together, high school graduates and best friends Jo and Raissa stumble upon a mysterious portal that transports them to the fantastical island of Nakali. When they discover that the memories of their entire friendship are the price for returning home, Jo and Raissa will race to find a way to leave the island before they forget each other forever.",
-    "director": "Januel Mercado, Joel Crawford",
-    "title": "Forgotten Island",
-    "cached_at": "2026-08-20T10:18:03.383332"
+    "cached_at": "2026-08-21T10:18:42.017337"
   },
   "https://wtwcinemas.co.uk/truro/film/5599/national-theatre-live-the-misanthrope": {
     "runtime": "150 min",
@@ -677,7 +477,7 @@
     "synopsis": "Award-winner Sandra Oh (Killing Eve) plays the title role in this razor-sharp reimagining of Molière classic dark comedy.\r\nTelling the truth isn't always that simple. Alice, a brilliant novelist, despises the carefully constructed lies of modern society. But the more she challenges those around her, the fiercer the backlash becomes. Soon, she must confront the price of speaking her truth in a world that would rather silence her.\r\nFilmed live on stage at the National Theatre, Indhu Rubasingham directs Martin Crimp's (Cyrano de Bergerac) highly anticipated play.",
     "director": "Indhu Rubasingham",
     "title": "National Theatre Live: The Misanthrope",
-    "cached_at": "2026-08-20T10:18:04.270001"
+    "cached_at": "2026-08-21T10:18:42.653041"
   },
   "https://wtwcinemas.co.uk/newquay/film/5555/macbeth-royal-ballet-opera-2627-season": {
     "runtime": "210 min",
@@ -685,7 +485,15 @@
     "synopsis": "Two of opera's most extraordinary artists return to The Met: Live in HD for Verdi's thrilling take on the immortal Shakespearean tale of the scheming couple determined to seize power at any cost.\r\nBaritone Quinn Kelsey is the Scottish king haunted by the ghosts of his murderous ascent to the throne, opposite soprano Lise Davidsen as the power-mad Lady Macbeth, whose ruinous ambition damns them both. Met Music Director Yannick Nézet-Séguin takes the podium for a penetrating production by Louisa Proske. Rounding out the all-star cast are tenor Freddie De Tommaso as Macduff and bass-baritone Ryan Speedo Green as Banquo.",
     "director": "",
     "title": "Macbeth - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:04.676670"
+    "cached_at": "2026-08-21T10:18:43.753735"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5643/forgotten-island": {
+    "runtime": "109 min",
+    "cast": "H.E.R., Liza Soberano, Dave Franco",
+    "synopsis": "While celebrating their last night together, high school graduates and best friends Jo and Raissa stumble upon a mysterious portal that transports them to the fantastical island of Nakali. When they discover that the memories of their entire friendship are the price for returning home, Jo and Raissa will race to find a way to leave the island before they forget each other forever.",
+    "director": "Januel Mercado, Joel Crawford",
+    "title": "Forgotten Island",
+    "cached_at": "2026-08-21T10:18:43.955380"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5555/macbeth-royal-ballet-opera-2627-season": {
     "runtime": "210 min",
@@ -693,15 +501,7 @@
     "synopsis": "Two of opera's most extraordinary artists return to The Met: Live in HD for Verdi's thrilling take on the immortal Shakespearean tale of the scheming couple determined to seize power at any cost.\r\nBaritone Quinn Kelsey is the Scottish king haunted by the ghosts of his murderous ascent to the throne, opposite soprano Lise Davidsen as the power-mad Lady Macbeth, whose ruinous ambition damns them both. Met Music Director Yannick Nézet-Séguin takes the podium for a penetrating production by Louisa Proske. Rounding out the all-star cast are tenor Freddie De Tommaso as Macduff and bass-baritone Ryan Speedo Green as Banquo.",
     "director": "",
     "title": "Macbeth - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:05.011827"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5582/street-fighter": {
-    "runtime": "1 min",
-    "cast": "Andrew Koji, Noah Centineo, Callina Liang",
-    "synopsis": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
-    "director": "Kitao Sakurai",
-    "title": "Street Fighter",
-    "cached_at": "2026-08-20T10:18:05.306685"
+    "cached_at": "2026-08-21T10:18:44.094650"
   },
   "https://wtwcinemas.co.uk/truro/film/5583/digger": {
     "runtime": "106 min",
@@ -709,7 +509,7 @@
     "synopsis": "The most powerful man in the world embarks on a frantic mission to prove he is humanity's saviour before the disaster he's unleashed destroys everything.",
     "director": "Alejandro G. Iñárritu",
     "title": "Digger",
-    "cached_at": "2026-08-20T10:18:06.200534"
+    "cached_at": "2026-08-21T10:18:45.193048"
   },
   "https://wtwcinemas.co.uk/newquay/film/5635/fallen-angels-by-nol-coward": {
     "runtime": "110 min",
@@ -717,7 +517,15 @@
     "synopsis": "Sparkling, dizzying, and deliciously potent, Fallen Angels, Noël Coward's champagne-fresh comedy of bad manners, shocked and delighted audiences at its 1925 premiere. Two upper-class wives, their husbands away for the day, share a few toasts to their pre-marital dalliances-with the same man, who just may be en route from France to visit. Old rivalries and past scandals bubble to the surface in this intoxicating romp from one of theatre's comedy masters.\r\nStarring Golden Globe-winner Rose Byrne (If I Had Legs I'd Kick You) and Tony Award winner Kelli O'Hara (The King and I), with Tracee Chimo, Mark Consuelos (making his Broadway debut), Christopher Fitzgerald and Aasif Mandvi, this new Roundabout Theatre and Tony Award-winning production of 'pure escapist fun' (The New York Times) was filmed live on stage at Broadway's Todd Haimes Theatre and now comes to the big screen.",
     "director": "",
     "title": "Fallen Angels by Noël Coward",
-    "cached_at": "2026-08-20T10:18:06.436327"
+    "cached_at": "2026-08-21T10:18:46.328526"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5582/street-fighter": {
+    "runtime": "1 min",
+    "cast": "Andrew Koji, Noah Centineo, Callina Liang",
+    "synopsis": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
+    "director": "Kitao Sakurai",
+    "title": "Street Fighter",
+    "cached_at": "2026-08-21T10:18:46.502778"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5635/fallen-angels-by-nol-coward": {
     "runtime": "110 min",
@@ -725,15 +533,7 @@
     "synopsis": "Sparkling, dizzying, and deliciously potent, Fallen Angels, Noël Coward's champagne-fresh comedy of bad manners, shocked and delighted audiences at its 1925 premiere. Two upper-class wives, their husbands away for the day, share a few toasts to their pre-marital dalliances-with the same man, who just may be en route from France to visit. Old rivalries and past scandals bubble to the surface in this intoxicating romp from one of theatre's comedy masters.\r\nStarring Golden Globe-winner Rose Byrne (If I Had Legs I'd Kick You) and Tony Award winner Kelli O'Hara (The King and I), with Tracee Chimo, Mark Consuelos (making his Broadway debut), Christopher Fitzgerald and Aasif Mandvi, this new Roundabout Theatre and Tony Award-winning production of 'pure escapist fun' (The New York Times) was filmed live on stage at Broadway's Todd Haimes Theatre and now comes to the big screen.",
     "director": "",
     "title": "Fallen Angels by Noël Coward",
-    "cached_at": "2026-08-20T10:18:06.963793"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5555/macbeth-royal-ballet-opera-2627-season": {
-    "runtime": "210 min",
-    "cast": "",
-    "synopsis": "Two of opera's most extraordinary artists return to The Met: Live in HD for Verdi's thrilling take on the immortal Shakespearean tale of the scheming couple determined to seize power at any cost.\r\nBaritone Quinn Kelsey is the Scottish king haunted by the ghosts of his murderous ascent to the throne, opposite soprano Lise Davidsen as the power-mad Lady Macbeth, whose ruinous ambition damns them both. Met Music Director Yannick Nézet-Séguin takes the podium for a penetrating production by Louisa Proske. Rounding out the all-star cast are tenor Freddie De Tommaso as Macduff and bass-baritone Ryan Speedo Green as Banquo.",
-    "director": "",
-    "title": "Macbeth - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:07.008935"
+    "cached_at": "2026-08-21T10:18:46.640704"
   },
   "https://wtwcinemas.co.uk/truro/film/5653/hadestown-the-musical": {
     "runtime": "142 min",
@@ -741,7 +541,7 @@
     "synopsis": "The international hit musical comes to the big screen! Winner of eight Tony Awards in 2019 including Best Musical and the 2020 Grammy Award for Best Musical Theater Album, HADESTOWN: THE MUSICAL is the genre-defying musical blending modern American folk music with New Orleans-inspired jazz to reimagine a sweeping ancient tale of two intertwining love stories, that of young dreamers Orpheus and Eurydice, and King Hades and his wife Persephone. Filmed live on stage in London's West End and featuring the original Broadway stars, HADESTOWN: THE MUSICAL invites audiences on a hell-raising journey to the underworld and back.",
     "director": "Brett Sullivan",
     "title": "Hadestown: The Musical",
-    "cached_at": "2026-08-20T10:18:08.098991"
+    "cached_at": "2026-08-21T10:18:47.667155"
   },
   "https://wtwcinemas.co.uk/newquay/film/5556/manon-royal-ballet-opera-2627-season": {
     "runtime": "190 min",
@@ -749,7 +549,15 @@
     "synopsis": "In the seedy underbelly of 18th-century Paris, money is king. Nothing is sacred – even love itself can be bought for the right price. A native of this hedonistic underworld, Manon is caught between twin desires when she falls in love with the student Des Grieux. Steadfast and devoted, he offers the possibility of an honourable life. Yet, the riches promised by the world of Parisian society remain tempting...\r\nManon's inner turmoil and struggle for survival lie at the devastating heart of Kenneth MacMillan's 1974 adaptation of Abbé Prévost's novel. In this signature work of The Royal Ballet, MacMillan's nuanced understanding of human psychology makes for an unflinching look into the moral degradation of Manon's Paris, while all its decadence and decay are brought to life through Jules Massenet's score and Nicholas Georgiadis's designs.",
     "director": "",
     "title": "Manon - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:08.284752"
+    "cached_at": "2026-08-21T10:18:48.767956"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5555/macbeth-royal-ballet-opera-2627-season": {
+    "runtime": "210 min",
+    "cast": "",
+    "synopsis": "Two of opera's most extraordinary artists return to The Met: Live in HD for Verdi's thrilling take on the immortal Shakespearean tale of the scheming couple determined to seize power at any cost.\r\nBaritone Quinn Kelsey is the Scottish king haunted by the ghosts of his murderous ascent to the throne, opposite soprano Lise Davidsen as the power-mad Lady Macbeth, whose ruinous ambition damns them both. Met Music Director Yannick Nézet-Séguin takes the podium for a penetrating production by Louisa Proske. Rounding out the all-star cast are tenor Freddie De Tommaso as Macduff and bass-baritone Ryan Speedo Green as Banquo.",
+    "director": "",
+    "title": "Macbeth - Royal Ballet & Opera 26-27 Season",
+    "cached_at": "2026-08-21T10:18:48.833492"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5556/manon-royal-ballet-opera-2627-season": {
     "runtime": "190 min",
@@ -757,15 +565,7 @@
     "synopsis": "In the seedy underbelly of 18th-century Paris, money is king. Nothing is sacred – even love itself can be bought for the right price. A native of this hedonistic underworld, Manon is caught between twin desires when she falls in love with the student Des Grieux. Steadfast and devoted, he offers the possibility of an honourable life. Yet, the riches promised by the world of Parisian society remain tempting...\r\nManon's inner turmoil and struggle for survival lie at the devastating heart of Kenneth MacMillan's 1974 adaptation of Abbé Prévost's novel. In this signature work of The Royal Ballet, MacMillan's nuanced understanding of human psychology makes for an unflinching look into the moral degradation of Manon's Paris, while all its decadence and decay are brought to life through Jules Massenet's score and Nicholas Georgiadis's designs.",
     "director": "",
     "title": "Manon - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:08.978327"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5635/fallen-angels-by-nol-coward": {
-    "runtime": "110 min",
-    "cast": "Rose Byrne, Kelli O'Hara, Tracee Chimo, Mark Consuelos, Christopher Fitzgeral, Aasif Mandv",
-    "synopsis": "Sparkling, dizzying, and deliciously potent, Fallen Angels, Noël Coward's champagne-fresh comedy of bad manners, shocked and delighted audiences at its 1925 premiere. Two upper-class wives, their husbands away for the day, share a few toasts to their pre-marital dalliances-with the same man, who just may be en route from France to visit. Old rivalries and past scandals bubble to the surface in this intoxicating romp from one of theatre's comedy masters.\r\nStarring Golden Globe-winner Rose Byrne (If I Had Legs I'd Kick You) and Tony Award winner Kelli O'Hara (The King and I), with Tracee Chimo, Mark Consuelos (making his Broadway debut), Christopher Fitzgerald and Aasif Mandvi, this new Roundabout Theatre and Tony Award-winning production of 'pure escapist fun' (The New York Times) was filmed live on stage at Broadway's Todd Haimes Theatre and now comes to the big screen.",
-    "director": "",
-    "title": "Fallen Angels by Noël Coward",
-    "cached_at": "2026-08-20T10:18:09.034639"
+    "cached_at": "2026-08-21T10:18:49.085006"
   },
   "https://wtwcinemas.co.uk/truro/film/5643/forgotten-island": {
     "runtime": "109 min",
@@ -773,7 +573,7 @@
     "synopsis": "While celebrating their last night together, high school graduates and best friends Jo and Raissa stumble upon a mysterious portal that transports them to the fantastical island of Nakali. When they discover that the memories of their entire friendship are the price for returning home, Jo and Raissa will race to find a way to leave the island before they forget each other forever.",
     "director": "Januel Mercado, Joel Crawford",
     "title": "Forgotten Island",
-    "cached_at": "2026-08-20T10:18:10.068321"
+    "cached_at": "2026-08-21T10:18:50.336878"
   },
   "https://wtwcinemas.co.uk/newquay/film/5651/national-theatre-live-golden-boy": {
     "runtime": "180 min",
@@ -781,7 +581,15 @@
     "synopsis": "Josh O'Connor (The Crown; Challengers) leads the cast in this searing revival of Clifford Odets' knockout American classic.\r\n1930s New York, at the height of the Depression. Joe Bonaparte is a gifted young violinist with a future in music, until a chance at fame and fortune lures him into the brutal world of professional boxing. He must confront what he's willing to sacrifice, who he's willing to become and how to find his\r\nplace in a world that demands he choose a side.\r\nBrought to life with a live string quartet and filmed live from the Almeida Theatre. Olivier Award-winner Sam Yates (Vanya) directs this propulsive drama exploring ambition, identity, and the high price of success.",
     "director": "",
     "title": "National Theatre Live: Golden Boy",
-    "cached_at": "2026-08-20T10:18:10.300383"
+    "cached_at": "2026-08-21T10:18:51.232454"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5635/fallen-angels-by-nol-coward": {
+    "runtime": "110 min",
+    "cast": "Rose Byrne, Kelli O'Hara, Tracee Chimo, Mark Consuelos, Christopher Fitzgeral, Aasif Mandv",
+    "synopsis": "Sparkling, dizzying, and deliciously potent, Fallen Angels, Noël Coward's champagne-fresh comedy of bad manners, shocked and delighted audiences at its 1925 premiere. Two upper-class wives, their husbands away for the day, share a few toasts to their pre-marital dalliances-with the same man, who just may be en route from France to visit. Old rivalries and past scandals bubble to the surface in this intoxicating romp from one of theatre's comedy masters.\r\nStarring Golden Globe-winner Rose Byrne (If I Had Legs I'd Kick You) and Tony Award winner Kelli O'Hara (The King and I), with Tracee Chimo, Mark Consuelos (making his Broadway debut), Christopher Fitzgerald and Aasif Mandvi, this new Roundabout Theatre and Tony Award-winning production of 'pure escapist fun' (The New York Times) was filmed live on stage at Broadway's Todd Haimes Theatre and now comes to the big screen.",
+    "director": "",
+    "title": "Fallen Angels by Noël Coward",
+    "cached_at": "2026-08-21T10:18:51.331602"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5651/national-theatre-live-golden-boy": {
     "runtime": "180 min",
@@ -789,15 +597,7 @@
     "synopsis": "Josh O'Connor (The Crown; Challengers) leads the cast in this searing revival of Clifford Odets' knockout American classic.\r\n1930s New York, at the height of the Depression. Joe Bonaparte is a gifted young violinist with a future in music, until a chance at fame and fortune lures him into the brutal world of professional boxing. He must confront what he's willing to sacrifice, who he's willing to become and how to find his\r\nplace in a world that demands he choose a side.\r\nBrought to life with a live string quartet and filmed live from the Almeida Theatre. Olivier Award-winner Sam Yates (Vanya) directs this propulsive drama exploring ambition, identity, and the high price of success.",
     "director": "",
     "title": "National Theatre Live: Golden Boy",
-    "cached_at": "2026-08-20T10:18:10.771001"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5556/manon-royal-ballet-opera-2627-season": {
-    "runtime": "190 min",
-    "cast": "",
-    "synopsis": "In the seedy underbelly of 18th-century Paris, money is king. Nothing is sacred – even love itself can be bought for the right price. A native of this hedonistic underworld, Manon is caught between twin desires when she falls in love with the student Des Grieux. Steadfast and devoted, he offers the possibility of an honourable life. Yet, the riches promised by the world of Parisian society remain tempting...\r\nManon's inner turmoil and struggle for survival lie at the devastating heart of Kenneth MacMillan's 1974 adaptation of Abbé Prévost's novel. In this signature work of The Royal Ballet, MacMillan's nuanced understanding of human psychology makes for an unflinching look into the moral degradation of Manon's Paris, while all its decadence and decay are brought to life through Jules Massenet's score and Nicholas Georgiadis's designs.",
-    "director": "",
-    "title": "Manon - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:10.789954"
+    "cached_at": "2026-08-21T10:18:51.582627"
   },
   "https://wtwcinemas.co.uk/truro/film/5582/street-fighter": {
     "runtime": "1 min",
@@ -805,7 +605,7 @@
     "synopsis": "In 1993, estranged Street Fighters Ryu and Ken Masters are thrown back into combat when the mysterious Chun-Li recruits them for the next World Warrior Tournament: a brutal clash of fists, fate, and fury. But behind this battle royale lies a deadly conspiracy that forces them to face off against each other and the demons of their past. And if they don't, it's GAME OVER!",
     "director": "Kitao Sakurai",
     "title": "Street Fighter",
-    "cached_at": "2026-08-20T10:18:11.862609"
+    "cached_at": "2026-08-21T10:18:52.661492"
   },
   "https://wtwcinemas.co.uk/newquay/film/5585/wild-horse-nine": {
     "runtime": "1 min",
@@ -813,7 +613,15 @@
     "synopsis": "Shortly before the 1973 Chilean coup, CIA agents Chris and Lee are dispatched from Santiago to Easter Island by their bureau chief, MJ. Amongst the Island's iconic statues, and as the longtime partners wrestle with their dark pasts and present conspiracies, Chris's newfound bond with a pair of rebellious students threatens to send everyone's trip to this remote paradise sideways.",
     "director": "Martin McDonagh",
     "title": "Wild Horse Nine",
-    "cached_at": "2026-08-20T10:18:11.937296"
+    "cached_at": "2026-08-21T10:18:53.373967"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5556/manon-royal-ballet-opera-2627-season": {
+    "runtime": "190 min",
+    "cast": "",
+    "synopsis": "In the seedy underbelly of 18th-century Paris, money is king. Nothing is sacred – even love itself can be bought for the right price. A native of this hedonistic underworld, Manon is caught between twin desires when she falls in love with the student Des Grieux. Steadfast and devoted, he offers the possibility of an honourable life. Yet, the riches promised by the world of Parisian society remain tempting...\r\nManon's inner turmoil and struggle for survival lie at the devastating heart of Kenneth MacMillan's 1974 adaptation of Abbé Prévost's novel. In this signature work of The Royal Ballet, MacMillan's nuanced understanding of human psychology makes for an unflinching look into the moral degradation of Manon's Paris, while all its decadence and decay are brought to life through Jules Massenet's score and Nicholas Georgiadis's designs.",
+    "director": "",
+    "title": "Manon - Royal Ballet & Opera 26-27 Season",
+    "cached_at": "2026-08-21T10:18:53.564663"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5585/wild-horse-nine": {
     "runtime": "1 min",
@@ -821,23 +629,7 @@
     "synopsis": "Shortly before the 1973 Chilean coup, CIA agents Chris and Lee are dispatched from Santiago to Easter Island by their bureau chief, MJ. Amongst the Island's iconic statues, and as the longtime partners wrestle with their dark pasts and present conspiracies, Chris's newfound bond with a pair of rebellious students threatens to send everyone's trip to this remote paradise sideways.",
     "director": "Martin McDonagh",
     "title": "Wild Horse Nine",
-    "cached_at": "2026-08-20T10:18:12.299291"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5651/national-theatre-live-golden-boy": {
-    "runtime": "180 min",
-    "cast": "Josh O’Connor",
-    "synopsis": "Josh O'Connor (The Crown; Challengers) leads the cast in this searing revival of Clifford Odets' knockout American classic.\r\n1930s New York, at the height of the Depression. Joe Bonaparte is a gifted young violinist with a future in music, until a chance at fame and fortune lures him into the brutal world of professional boxing. He must confront what he's willing to sacrifice, who he's willing to become and how to find his\r\nplace in a world that demands he choose a side.\r\nBrought to life with a live string quartet and filmed live from the Almeida Theatre. Olivier Award-winner Sam Yates (Vanya) directs this propulsive drama exploring ambition, identity, and the high price of success.",
-    "director": "",
-    "title": "National Theatre Live: Golden Boy",
-    "cached_at": "2026-08-20T10:18:12.849011"
-  },
-  "https://wtwcinemas.co.uk/newquay/film/5557/carmen-royal-ballet-opera-2627-season": {
-    "runtime": "215 min",
-    "cast": "",
-    "synopsis": "Under the oppressive heat of the Spanish sun, the fiercely independent Carmen attracts the attention of Don José. She warns him not to fall in love with her, but his obsession knows no bounds. Damiano Michieletto's searing production returns, casting scorching light on the lust, violence and destructive desire of Bizet's ever-popular opera. \r\nAn all-star cast brings this white-hot drama to life, with Ginger Costa-Jackson in the fiery title role, alongside Russell Thomas as the jealous and despairing Don José. Following his 2023 Royal Opera debut, Sesto Quatrini returns to conduct Bizet's electrifying and sensual score.",
-    "director": "",
-    "title": "Carmen - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:13.515713"
+    "cached_at": "2026-08-21T10:18:53.776939"
   },
   "https://wtwcinemas.co.uk/truro/film/5555/macbeth-royal-ballet-opera-2627-season": {
     "runtime": "210 min",
@@ -845,7 +637,23 @@
     "synopsis": "Two of opera's most extraordinary artists return to The Met: Live in HD for Verdi's thrilling take on the immortal Shakespearean tale of the scheming couple determined to seize power at any cost.\r\nBaritone Quinn Kelsey is the Scottish king haunted by the ghosts of his murderous ascent to the throne, opposite soprano Lise Davidsen as the power-mad Lady Macbeth, whose ruinous ambition damns them both. Met Music Director Yannick Nézet-Séguin takes the podium for a penetrating production by Louisa Proske. Rounding out the all-star cast are tenor Freddie De Tommaso as Macduff and bass-baritone Ryan Speedo Green as Banquo.",
     "director": "",
     "title": "Macbeth - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:13.569271"
+    "cached_at": "2026-08-21T10:18:54.922938"
+  },
+  "https://wtwcinemas.co.uk/newquay/film/5557/carmen-royal-ballet-opera-2627-season": {
+    "runtime": "215 min",
+    "cast": "",
+    "synopsis": "Under the oppressive heat of the Spanish sun, the fiercely independent Carmen attracts the attention of Don José. She warns him not to fall in love with her, but his obsession knows no bounds. Damiano Michieletto's searing production returns, casting scorching light on the lust, violence and destructive desire of Bizet's ever-popular opera. \r\nAn all-star cast brings this white-hot drama to life, with Ginger Costa-Jackson in the fiery title role, alongside Russell Thomas as the jealous and despairing Don José. Following his 2023 Royal Opera debut, Sesto Quatrini returns to conduct Bizet's electrifying and sensual score.",
+    "director": "",
+    "title": "Carmen - Royal Ballet & Opera 26-27 Season",
+    "cached_at": "2026-08-21T10:18:55.593564"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5651/national-theatre-live-golden-boy": {
+    "runtime": "180 min",
+    "cast": "Josh O’Connor",
+    "synopsis": "Josh O'Connor (The Crown; Challengers) leads the cast in this searing revival of Clifford Odets' knockout American classic.\r\n1930s New York, at the height of the Depression. Joe Bonaparte is a gifted young violinist with a future in music, until a chance at fame and fortune lures him into the brutal world of professional boxing. He must confront what he's willing to sacrifice, who he's willing to become and how to find his\r\nplace in a world that demands he choose a side.\r\nBrought to life with a live string quartet and filmed live from the Almeida Theatre. Olivier Award-winner Sam Yates (Vanya) directs this propulsive drama exploring ambition, identity, and the high price of success.",
+    "director": "",
+    "title": "National Theatre Live: Golden Boy",
+    "cached_at": "2026-08-21T10:18:55.892290"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5557/carmen-royal-ballet-opera-2627-season": {
     "runtime": "215 min",
@@ -853,23 +661,7 @@
     "synopsis": "Under the oppressive heat of the Spanish sun, the fiercely independent Carmen attracts the attention of Don José. She warns him not to fall in love with her, but his obsession knows no bounds. Damiano Michieletto's searing production returns, casting scorching light on the lust, violence and destructive desire of Bizet's ever-popular opera. \r\nAn all-star cast brings this white-hot drama to life, with Ginger Costa-Jackson in the fiery title role, alongside Russell Thomas as the jealous and despairing Don José. Following his 2023 Royal Opera debut, Sesto Quatrini returns to conduct Bizet's electrifying and sensual score.",
     "director": "",
     "title": "Carmen - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:14.109165"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5585/wild-horse-nine": {
-    "runtime": "1 min",
-    "cast": "John Malkovich, Sam Rockwell, Steve Buscemi",
-    "synopsis": "Shortly before the 1973 Chilean coup, CIA agents Chris and Lee are dispatched from Santiago to Easter Island by their bureau chief, MJ. Amongst the Island's iconic statues, and as the longtime partners wrestle with their dark pasts and present conspiracies, Chris's newfound bond with a pair of rebellious students threatens to send everyone's trip to this remote paradise sideways.",
-    "director": "Martin McDonagh",
-    "title": "Wild Horse Nine",
-    "cached_at": "2026-08-20T10:18:14.439809"
-  },
-  "https://wtwcinemas.co.uk/newquay/film/5619/giant-the-play": {
-    "runtime": "136 min",
-    "cast": "Aya Cash, Elliot Levey, John Lithgow, Rachael Stirling",
-    "synopsis": "GIANT, the 5-star critically acclaimed play starring John Lithgow (Killers of the Flower Moon, The Crown) as Roald Dahl, comes to the big screen. Winner of 3 Olivier Awards® including Best Play and a Tony Award® for Best Actor in a Play (John Lithgow), the production was filmed live in London's West End ahead of its sold-out Broadway run. The stellar cast includes Aya Cash (The Boys, The Franchise, You're the Worst), Elliot Levey (Cold War, Patriots, Good) and Rachael Stirling (The Divine Mrs S).\r\n\r\nA world-famous children's author under threat. A battle of wills in the wake of scandal. And one chance to make amends...It's the summer of 1983, The Witches is about to hit the shelves and Roald Dahl is making last-minute edits. But the outcry at his recent, explicitly antisemitic article won't die down. Across a single afternoon at his family home, and rocked by an unexpectedly explosive confrontation, Dahl is forced to choose: make a public apology or risk his name and reputation.\r\n\r\nInspired by real events, GIANT explores with dark humour the difference between considered opinion and dangerous rhetoric offering a complicated portrait of a fiendishly charismatic icon.",
-    "director": "Nicholas Hytner",
-    "title": "GIANT - The Play",
-    "cached_at": "2026-08-20T10:18:15.149122"
+    "cached_at": "2026-08-21T10:18:56.093913"
   },
   "https://wtwcinemas.co.uk/truro/film/5635/fallen-angels-by-nol-coward": {
     "runtime": "110 min",
@@ -877,7 +669,23 @@
     "synopsis": "Sparkling, dizzying, and deliciously potent, Fallen Angels, Noël Coward's champagne-fresh comedy of bad manners, shocked and delighted audiences at its 1925 premiere. Two upper-class wives, their husbands away for the day, share a few toasts to their pre-marital dalliances-with the same man, who just may be en route from France to visit. Old rivalries and past scandals bubble to the surface in this intoxicating romp from one of theatre's comedy masters.\r\nStarring Golden Globe-winner Rose Byrne (If I Had Legs I'd Kick You) and Tony Award winner Kelli O'Hara (The King and I), with Tracee Chimo, Mark Consuelos (making his Broadway debut), Christopher Fitzgerald and Aasif Mandvi, this new Roundabout Theatre and Tony Award-winning production of 'pure escapist fun' (The New York Times) was filmed live on stage at Broadway's Todd Haimes Theatre and now comes to the big screen.",
     "director": "",
     "title": "Fallen Angels by Noël Coward",
-    "cached_at": "2026-08-20T10:18:15.308994"
+    "cached_at": "2026-08-21T10:18:57.446913"
+  },
+  "https://wtwcinemas.co.uk/newquay/film/5619/giant-the-play": {
+    "runtime": "136 min",
+    "cast": "Aya Cash, Elliot Levey, John Lithgow, Rachael Stirling",
+    "synopsis": "GIANT, the 5-star critically acclaimed play starring John Lithgow (Killers of the Flower Moon, The Crown) as Roald Dahl, comes to the big screen. Winner of 3 Olivier Awards® including Best Play and a Tony Award® for Best Actor in a Play (John Lithgow), the production was filmed live in London's West End ahead of its sold-out Broadway run. The stellar cast includes Aya Cash (The Boys, The Franchise, You're the Worst), Elliot Levey (Cold War, Patriots, Good) and Rachael Stirling (The Divine Mrs S).\r\n\r\nA world-famous children's author under threat. A battle of wills in the wake of scandal. And one chance to make amends...It's the summer of 1983, The Witches is about to hit the shelves and Roald Dahl is making last-minute edits. But the outcry at his recent, explicitly antisemitic article won't die down. Across a single afternoon at his family home, and rocked by an unexpectedly explosive confrontation, Dahl is forced to choose: make a public apology or risk his name and reputation.\r\n\r\nInspired by real events, GIANT explores with dark humour the difference between considered opinion and dangerous rhetoric offering a complicated portrait of a fiendishly charismatic icon.",
+    "director": "Nicholas Hytner",
+    "title": "GIANT - The Play",
+    "cached_at": "2026-08-21T10:18:57.854251"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5585/wild-horse-nine": {
+    "runtime": "1 min",
+    "cast": "John Malkovich, Sam Rockwell, Steve Buscemi",
+    "synopsis": "Shortly before the 1973 Chilean coup, CIA agents Chris and Lee are dispatched from Santiago to Easter Island by their bureau chief, MJ. Amongst the Island's iconic statues, and as the longtime partners wrestle with their dark pasts and present conspiracies, Chris's newfound bond with a pair of rebellious students threatens to send everyone's trip to this remote paradise sideways.",
+    "director": "Martin McDonagh",
+    "title": "Wild Horse Nine",
+    "cached_at": "2026-08-21T10:18:58.126191"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5619/giant-the-play": {
     "runtime": "136 min",
@@ -885,23 +693,7 @@
     "synopsis": "GIANT, the 5-star critically acclaimed play starring John Lithgow (Killers of the Flower Moon, The Crown) as Roald Dahl, comes to the big screen. Winner of 3 Olivier Awards® including Best Play and a Tony Award® for Best Actor in a Play (John Lithgow), the production was filmed live in London's West End ahead of its sold-out Broadway run. The stellar cast includes Aya Cash (The Boys, The Franchise, You're the Worst), Elliot Levey (Cold War, Patriots, Good) and Rachael Stirling (The Divine Mrs S).\r\n\r\nA world-famous children's author under threat. A battle of wills in the wake of scandal. And one chance to make amends...It's the summer of 1983, The Witches is about to hit the shelves and Roald Dahl is making last-minute edits. But the outcry at his recent, explicitly antisemitic article won't die down. Across a single afternoon at his family home, and rocked by an unexpectedly explosive confrontation, Dahl is forced to choose: make a public apology or risk his name and reputation.\r\n\r\nInspired by real events, GIANT explores with dark humour the difference between considered opinion and dangerous rhetoric offering a complicated portrait of a fiendishly charismatic icon.",
     "director": "Nicholas Hytner",
     "title": "GIANT - The Play",
-    "cached_at": "2026-08-20T10:18:15.942741"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5557/carmen-royal-ballet-opera-2627-season": {
-    "runtime": "215 min",
-    "cast": "",
-    "synopsis": "Under the oppressive heat of the Spanish sun, the fiercely independent Carmen attracts the attention of Don José. She warns him not to fall in love with her, but his obsession knows no bounds. Damiano Michieletto's searing production returns, casting scorching light on the lust, violence and destructive desire of Bizet's ever-popular opera. \r\nAn all-star cast brings this white-hot drama to life, with Ginger Costa-Jackson in the fiery title role, alongside Russell Thomas as the jealous and despairing Don José. Following his 2023 Royal Opera debut, Sesto Quatrini returns to conduct Bizet's electrifying and sensual score.",
-    "director": "",
-    "title": "Carmen - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:15.961186"
-  },
-  "https://wtwcinemas.co.uk/newquay/film/5586/the-hunger-games-sunrise-on-the-reaping": {
-    "runtime": "1 min",
-    "cast": "Joseph Zada, Mckenna Grace, Jesse Plemons",
-    "synopsis": "Return to the world of Panem 24 years before the events of The Hunger Games, starting on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
-    "director": "Francis Lawrence",
-    "title": "The Hunger Games: Sunrise on the Reaping",
-    "cached_at": "2026-08-20T10:18:16.745699"
+    "cached_at": "2026-08-21T10:18:58.274438"
   },
   "https://wtwcinemas.co.uk/truro/film/5556/manon-royal-ballet-opera-2627-season": {
     "runtime": "190 min",
@@ -909,15 +701,23 @@
     "synopsis": "In the seedy underbelly of 18th-century Paris, money is king. Nothing is sacred – even love itself can be bought for the right price. A native of this hedonistic underworld, Manon is caught between twin desires when she falls in love with the student Des Grieux. Steadfast and devoted, he offers the possibility of an honourable life. Yet, the riches promised by the world of Parisian society remain tempting...\r\nManon's inner turmoil and struggle for survival lie at the devastating heart of Kenneth MacMillan's 1974 adaptation of Abbé Prévost's novel. In this signature work of The Royal Ballet, MacMillan's nuanced understanding of human psychology makes for an unflinching look into the moral degradation of Manon's Paris, while all its decadence and decay are brought to life through Jules Massenet's score and Nicholas Georgiadis's designs.",
     "director": "",
     "title": "Manon - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:16.999610"
+    "cached_at": "2026-08-21T10:18:59.671919"
   },
-  "https://wtwcinemas.co.uk/wadebridge/film/5619/giant-the-play": {
-    "runtime": "136 min",
-    "cast": "Aya Cash, Elliot Levey, John Lithgow, Rachael Stirling",
-    "synopsis": "GIANT, the 5-star critically acclaimed play starring John Lithgow (Killers of the Flower Moon, The Crown) as Roald Dahl, comes to the big screen. Winner of 3 Olivier Awards® including Best Play and a Tony Award® for Best Actor in a Play (John Lithgow), the production was filmed live in London's West End ahead of its sold-out Broadway run. The stellar cast includes Aya Cash (The Boys, The Franchise, You're the Worst), Elliot Levey (Cold War, Patriots, Good) and Rachael Stirling (The Divine Mrs S).\r\n\r\nA world-famous children's author under threat. A battle of wills in the wake of scandal. And one chance to make amends...It's the summer of 1983, The Witches is about to hit the shelves and Roald Dahl is making last-minute edits. But the outcry at his recent, explicitly antisemitic article won't die down. Across a single afternoon at his family home, and rocked by an unexpectedly explosive confrontation, Dahl is forced to choose: make a public apology or risk his name and reputation.\r\n\r\nInspired by real events, GIANT explores with dark humour the difference between considered opinion and dangerous rhetoric offering a complicated portrait of a fiendishly charismatic icon.",
-    "director": "Nicholas Hytner",
-    "title": "GIANT - The Play",
-    "cached_at": "2026-08-20T10:18:17.454634"
+  "https://wtwcinemas.co.uk/newquay/film/5586/the-hunger-games-sunrise-on-the-reaping": {
+    "runtime": "1 min",
+    "cast": "Joseph Zada, Mckenna Grace, Jesse Plemons",
+    "synopsis": "Return to the world of Panem 24 years before the events of The Hunger Games, starting on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
+    "director": "Francis Lawrence",
+    "title": "The Hunger Games: Sunrise on the Reaping",
+    "cached_at": "2026-08-21T10:18:59.992781"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5557/carmen-royal-ballet-opera-2627-season": {
+    "runtime": "215 min",
+    "cast": "",
+    "synopsis": "Under the oppressive heat of the Spanish sun, the fiercely independent Carmen attracts the attention of Don José. She warns him not to fall in love with her, but his obsession knows no bounds. Damiano Michieletto's searing production returns, casting scorching light on the lust, violence and destructive desire of Bizet's ever-popular opera. \r\nAn all-star cast brings this white-hot drama to life, with Ginger Costa-Jackson in the fiery title role, alongside Russell Thomas as the jealous and despairing Don José. Following his 2023 Royal Opera debut, Sesto Quatrini returns to conduct Bizet's electrifying and sensual score.",
+    "director": "",
+    "title": "Carmen - Royal Ballet & Opera 26-27 Season",
+    "cached_at": "2026-08-21T10:19:00.376033"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5586/the-hunger-games-sunrise-on-the-reaping": {
     "runtime": "1 min",
@@ -925,15 +725,7 @@
     "synopsis": "Return to the world of Panem 24 years before the events of The Hunger Games, starting on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
     "director": "Francis Lawrence",
     "title": "The Hunger Games: Sunrise on the Reaping",
-    "cached_at": "2026-08-20T10:18:17.517145"
-  },
-  "https://wtwcinemas.co.uk/newquay/film/5587/fockerinlaw": {
-    "runtime": "1 min",
-    "cast": "Robert De Niro, Ben Stiller, Ariana Grande",
-    "synopsis": "Henry, son of Greg and Pam Focker, faces family chaos when he decides to marry a strong-willed woman who appears to be his complete mismatch.",
-    "director": "John Hamburg",
-    "title": "Focker-In-Law",
-    "cached_at": "2026-08-20T10:18:18.333805"
+    "cached_at": "2026-08-21T10:19:00.494009"
   },
   "https://wtwcinemas.co.uk/truro/film/5651/national-theatre-live-golden-boy": {
     "runtime": "180 min",
@@ -941,7 +733,23 @@
     "synopsis": "Josh O'Connor (The Crown; Challengers) leads the cast in this searing revival of Clifford Odets' knockout American classic.\r\n1930s New York, at the height of the Depression. Joe Bonaparte is a gifted young violinist with a future in music, until a chance at fame and fortune lures him into the brutal world of professional boxing. He must confront what he's willing to sacrifice, who he's willing to become and how to find his\r\nplace in a world that demands he choose a side.\r\nBrought to life with a live string quartet and filmed live from the Almeida Theatre. Olivier Award-winner Sam Yates (Vanya) directs this propulsive drama exploring ambition, identity, and the high price of success.",
     "director": "",
     "title": "National Theatre Live: Golden Boy",
-    "cached_at": "2026-08-20T10:18:18.798317"
+    "cached_at": "2026-08-21T10:19:02.071845"
+  },
+  "https://wtwcinemas.co.uk/newquay/film/5587/fockerinlaw": {
+    "runtime": "1 min",
+    "cast": "Robert De Niro, Ben Stiller, Ariana Grande",
+    "synopsis": "Henry, son of Greg and Pam Focker, faces family chaos when he decides to marry a strong-willed woman who appears to be his complete mismatch.",
+    "director": "John Hamburg",
+    "title": "Focker-In-Law",
+    "cached_at": "2026-08-21T10:19:02.256491"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5619/giant-the-play": {
+    "runtime": "136 min",
+    "cast": "Aya Cash, Elliot Levey, John Lithgow, Rachael Stirling",
+    "synopsis": "GIANT, the 5-star critically acclaimed play starring John Lithgow (Killers of the Flower Moon, The Crown) as Roald Dahl, comes to the big screen. Winner of 3 Olivier Awards® including Best Play and a Tony Award® for Best Actor in a Play (John Lithgow), the production was filmed live in London's West End ahead of its sold-out Broadway run. The stellar cast includes Aya Cash (The Boys, The Franchise, You're the Worst), Elliot Levey (Cold War, Patriots, Good) and Rachael Stirling (The Divine Mrs S).\r\n\r\nA world-famous children's author under threat. A battle of wills in the wake of scandal. And one chance to make amends...It's the summer of 1983, The Witches is about to hit the shelves and Roald Dahl is making last-minute edits. But the outcry at his recent, explicitly antisemitic article won't die down. Across a single afternoon at his family home, and rocked by an unexpectedly explosive confrontation, Dahl is forced to choose: make a public apology or risk his name and reputation.\r\n\r\nInspired by real events, GIANT explores with dark humour the difference between considered opinion and dangerous rhetoric offering a complicated portrait of a fiendishly charismatic icon.",
+    "director": "Nicholas Hytner",
+    "title": "GIANT - The Play",
+    "cached_at": "2026-08-21T10:19:03.180944"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5587/fockerinlaw": {
     "runtime": "1 min",
@@ -949,23 +757,7 @@
     "synopsis": "Henry, son of Greg and Pam Focker, faces family chaos when he decides to marry a strong-willed woman who appears to be his complete mismatch.",
     "director": "John Hamburg",
     "title": "Focker-In-Law",
-    "cached_at": "2026-08-20T10:18:19.016243"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5586/the-hunger-games-sunrise-on-the-reaping": {
-    "runtime": "1 min",
-    "cast": "Joseph Zada, Mckenna Grace, Jesse Plemons",
-    "synopsis": "Return to the world of Panem 24 years before the events of The Hunger Games, starting on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
-    "director": "Francis Lawrence",
-    "title": "The Hunger Games: Sunrise on the Reaping",
-    "cached_at": "2026-08-20T10:18:19.184471"
-  },
-  "https://wtwcinemas.co.uk/newquay/film/5558/the-nutcracker-royal-ballet-opera-2627-season": {
-    "runtime": "140 min",
-    "cast": "",
-    "synopsis": "At a cosy Christmas party, young Clara meets the mysterious magician Drosselmeyer, who gives her a nutcracker doll. When the guests have departed and the house is asleep, Clara sneaks downstairs in search of the doll. Instead, she finds Drosselmeyer, who whisks her away on a journey into a whole world of enchantment: fantastical landscapes of flurried snow and glittering confection where toys come alive and the magic never stops. \r\nPeter Wright's production of this festive family favourite sparkles to the wondrous swell of Tchaikovsky's orchestral score, alongside the glow and grandeur of Julia Trevelyan Oman's period designs.",
-    "director": "",
-    "title": "The Nutcracker - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:19.865359"
+    "cached_at": "2026-08-21T10:19:03.226062"
   },
   "https://wtwcinemas.co.uk/truro/film/5585/wild-horse-nine": {
     "runtime": "1 min",
@@ -973,7 +765,23 @@
     "synopsis": "Shortly before the 1973 Chilean coup, CIA agents Chris and Lee are dispatched from Santiago to Easter Island by their bureau chief, MJ. Amongst the Island's iconic statues, and as the longtime partners wrestle with their dark pasts and present conspiracies, Chris's newfound bond with a pair of rebellious students threatens to send everyone's trip to this remote paradise sideways.",
     "director": "Martin McDonagh",
     "title": "Wild Horse Nine",
-    "cached_at": "2026-08-20T10:18:20.462032"
+    "cached_at": "2026-08-21T10:19:05.482847"
+  },
+  "https://wtwcinemas.co.uk/newquay/film/5558/the-nutcracker-royal-ballet-opera-2627-season": {
+    "runtime": "140 min",
+    "cast": "",
+    "synopsis": "At a cosy Christmas party, young Clara meets the mysterious magician Drosselmeyer, who gives her a nutcracker doll. When the guests have departed and the house is asleep, Clara sneaks downstairs in search of the doll. Instead, she finds Drosselmeyer, who whisks her away on a journey into a whole world of enchantment: fantastical landscapes of flurried snow and glittering confection where toys come alive and the magic never stops. \r\nPeter Wright's production of this festive family favourite sparkles to the wondrous swell of Tchaikovsky's orchestral score, alongside the glow and grandeur of Julia Trevelyan Oman's period designs.",
+    "director": "",
+    "title": "The Nutcracker - Royal Ballet & Opera 26-27 Season",
+    "cached_at": "2026-08-21T10:19:05.564966"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5586/the-hunger-games-sunrise-on-the-reaping": {
+    "runtime": "1 min",
+    "cast": "Joseph Zada, Mckenna Grace, Jesse Plemons",
+    "synopsis": "Return to the world of Panem 24 years before the events of The Hunger Games, starting on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
+    "director": "Francis Lawrence",
+    "title": "The Hunger Games: Sunrise on the Reaping",
+    "cached_at": "2026-08-21T10:19:06.577229"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5558/the-nutcracker-royal-ballet-opera-2627-season": {
     "runtime": "140 min",
@@ -981,15 +789,7 @@
     "synopsis": "At a cosy Christmas party, young Clara meets the mysterious magician Drosselmeyer, who gives her a nutcracker doll. When the guests have departed and the house is asleep, Clara sneaks downstairs in search of the doll. Instead, she finds Drosselmeyer, who whisks her away on a journey into a whole world of enchantment: fantastical landscapes of flurried snow and glittering confection where toys come alive and the magic never stops. \r\nPeter Wright's production of this festive family favourite sparkles to the wondrous swell of Tchaikovsky's orchestral score, alongside the glow and grandeur of Julia Trevelyan Oman's period designs.",
     "director": "",
     "title": "The Nutcracker - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:20.559391"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5587/fockerinlaw": {
-    "runtime": "1 min",
-    "cast": "Robert De Niro, Ben Stiller, Ariana Grande",
-    "synopsis": "Henry, son of Greg and Pam Focker, faces family chaos when he decides to marry a strong-willed woman who appears to be his complete mismatch.",
-    "director": "John Hamburg",
-    "title": "Focker-In-Law",
-    "cached_at": "2026-08-20T10:18:20.779570"
+    "cached_at": "2026-08-21T10:19:06.634803"
   },
   "https://wtwcinemas.co.uk/newquay/film/5584/the-cat-in-the-hat": {
     "runtime": "1 min",
@@ -997,7 +797,7 @@
     "synopsis": "Doing what he does best, the Cat spreads joy to kids in his hilarious, signature, and singularly irreverent way, transporting them and audiences on a fantastical journey through a world they've never seen before. Our hero takes on his toughest assignment yet for the I.I.I.I. (Institute for the Institution of Imagination and Inspiration, LLC) to cheer up Gabby and Sebastian, a pair of siblings struggling to move to a new town. Known for taking things too far, this could be this agent of chaos' last chance to prove himself...or lose his magical hat!",
     "director": "Erica Rivinoja, Alessandro Carloni",
     "title": "The Cat in the Hat",
-    "cached_at": "2026-08-20T10:18:21.401493"
+    "cached_at": "2026-08-21T10:19:08.229613"
   },
   "https://wtwcinemas.co.uk/truro/film/5557/carmen-royal-ballet-opera-2627-season": {
     "runtime": "215 min",
@@ -1005,7 +805,15 @@
     "synopsis": "Under the oppressive heat of the Spanish sun, the fiercely independent Carmen attracts the attention of Don José. She warns him not to fall in love with her, but his obsession knows no bounds. Damiano Michieletto's searing production returns, casting scorching light on the lust, violence and destructive desire of Bizet's ever-popular opera. \r\nAn all-star cast brings this white-hot drama to life, with Ginger Costa-Jackson in the fiery title role, alongside Russell Thomas as the jealous and despairing Don José. Following his 2023 Royal Opera debut, Sesto Quatrini returns to conduct Bizet's electrifying and sensual score.",
     "director": "",
     "title": "Carmen - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:21.950818"
+    "cached_at": "2026-08-21T10:19:08.325446"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5587/fockerinlaw": {
+    "runtime": "1 min",
+    "cast": "Robert De Niro, Ben Stiller, Ariana Grande",
+    "synopsis": "Henry, son of Greg and Pam Focker, faces family chaos when he decides to marry a strong-willed woman who appears to be his complete mismatch.",
+    "director": "John Hamburg",
+    "title": "Focker-In-Law",
+    "cached_at": "2026-08-21T10:19:09.117732"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5584/the-cat-in-the-hat": {
     "runtime": "1 min",
@@ -1013,15 +821,7 @@
     "synopsis": "Doing what he does best, the Cat spreads joy to kids in his hilarious, signature, and singularly irreverent way, transporting them and audiences on a fantastical journey through a world they've never seen before. Our hero takes on his toughest assignment yet for the I.I.I.I. (Institute for the Institution of Imagination and Inspiration, LLC) to cheer up Gabby and Sebastian, a pair of siblings struggling to move to a new town. Known for taking things too far, this could be this agent of chaos' last chance to prove himself...or lose his magical hat!",
     "director": "Erica Rivinoja, Alessandro Carloni",
     "title": "The Cat in the Hat",
-    "cached_at": "2026-08-20T10:18:22.062085"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5558/the-nutcracker-royal-ballet-opera-2627-season": {
-    "runtime": "140 min",
-    "cast": "",
-    "synopsis": "At a cosy Christmas party, young Clara meets the mysterious magician Drosselmeyer, who gives her a nutcracker doll. When the guests have departed and the house is asleep, Clara sneaks downstairs in search of the doll. Instead, she finds Drosselmeyer, who whisks her away on a journey into a whole world of enchantment: fantastical landscapes of flurried snow and glittering confection where toys come alive and the magic never stops. \r\nPeter Wright's production of this festive family favourite sparkles to the wondrous swell of Tchaikovsky's orchestral score, alongside the glow and grandeur of Julia Trevelyan Oman's period designs.",
-    "director": "",
-    "title": "The Nutcracker - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:22.262102"
+    "cached_at": "2026-08-21T10:19:09.311492"
   },
   "https://wtwcinemas.co.uk/newquay/film/5642/andre-rieus-2026-christmas-concert-let-it-snow": {
     "runtime": "165 min",
@@ -1029,7 +829,7 @@
     "synopsis": "This holiday season, celebrate the most wonderful time of the year on the big screen with André Rieu's 2026 Christmas Concert – Let It Snow. This heartwarming festive spectacular, filled with beloved Christmas classics, enchanting waltzes, and magical surprises, will\r\nleave you smiling long after the final encore.\r\nJoined by his world-famous Johann Strauss Orchestra, exceptional sopranos, and a powerful 120-voice male choir, André brings the spirit of Christmas to life in an unforgettable musical event. Overflowing with music, laughter, and holiday cheer, this concert is perfect for the whole family.\r\nWhether you're surrounded by snow or simply dreaming of it, experience the magic of Christmas on the big screen with those you love. Wrap up your year with Let It Snow – only in cinemas!",
     "director": "",
     "title": "Andre Rieu's 2026 Christmas Concert Let It Snow",
-    "cached_at": "2026-08-20T10:18:23.009407"
+    "cached_at": "2026-08-21T10:19:10.763676"
   },
   "https://wtwcinemas.co.uk/truro/film/5619/giant-the-play": {
     "runtime": "136 min",
@@ -1037,7 +837,15 @@
     "synopsis": "GIANT, the 5-star critically acclaimed play starring John Lithgow (Killers of the Flower Moon, The Crown) as Roald Dahl, comes to the big screen. Winner of 3 Olivier Awards® including Best Play and a Tony Award® for Best Actor in a Play (John Lithgow), the production was filmed live in London's West End ahead of its sold-out Broadway run. The stellar cast includes Aya Cash (The Boys, The Franchise, You're the Worst), Elliot Levey (Cold War, Patriots, Good) and Rachael Stirling (The Divine Mrs S).\r\n\r\nA world-famous children's author under threat. A battle of wills in the wake of scandal. And one chance to make amends...It's the summer of 1983, The Witches is about to hit the shelves and Roald Dahl is making last-minute edits. But the outcry at his recent, explicitly antisemitic article won't die down. Across a single afternoon at his family home, and rocked by an unexpectedly explosive confrontation, Dahl is forced to choose: make a public apology or risk his name and reputation.\r\n\r\nInspired by real events, GIANT explores with dark humour the difference between considered opinion and dangerous rhetoric offering a complicated portrait of a fiendishly charismatic icon.",
     "director": "Nicholas Hytner",
     "title": "GIANT - The Play",
-    "cached_at": "2026-08-20T10:18:23.593099"
+    "cached_at": "2026-08-21T10:19:11.121355"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5558/the-nutcracker-royal-ballet-opera-2627-season": {
+    "runtime": "140 min",
+    "cast": "",
+    "synopsis": "At a cosy Christmas party, young Clara meets the mysterious magician Drosselmeyer, who gives her a nutcracker doll. When the guests have departed and the house is asleep, Clara sneaks downstairs in search of the doll. Instead, she finds Drosselmeyer, who whisks her away on a journey into a whole world of enchantment: fantastical landscapes of flurried snow and glittering confection where toys come alive and the magic never stops. \r\nPeter Wright's production of this festive family favourite sparkles to the wondrous swell of Tchaikovsky's orchestral score, alongside the glow and grandeur of Julia Trevelyan Oman's period designs.",
+    "director": "",
+    "title": "The Nutcracker - Royal Ballet & Opera 26-27 Season",
+    "cached_at": "2026-08-21T10:19:11.616510"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5642/andre-rieus-2026-christmas-concert-let-it-snow": {
     "runtime": "165 min",
@@ -1045,15 +853,7 @@
     "synopsis": "This holiday season, celebrate the most wonderful time of the year on the big screen with André Rieu's 2026 Christmas Concert – Let It Snow. This heartwarming festive spectacular, filled with beloved Christmas classics, enchanting waltzes, and magical surprises, will\r\nleave you smiling long after the final encore.\r\nJoined by his world-famous Johann Strauss Orchestra, exceptional sopranos, and a powerful 120-voice male choir, André brings the spirit of Christmas to life in an unforgettable musical event. Overflowing with music, laughter, and holiday cheer, this concert is perfect for the whole family.\r\nWhether you're surrounded by snow or simply dreaming of it, experience the magic of Christmas on the big screen with those you love. Wrap up your year with Let It Snow – only in cinemas!",
     "director": "",
     "title": "Andre Rieu's 2026 Christmas Concert Let It Snow",
-    "cached_at": "2026-08-20T10:18:23.855554"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5584/the-cat-in-the-hat": {
-    "runtime": "1 min",
-    "cast": "Bill Hader, Xochitl Gomez, Quinta Brunson",
-    "synopsis": "Doing what he does best, the Cat spreads joy to kids in his hilarious, signature, and singularly irreverent way, transporting them and audiences on a fantastical journey through a world they've never seen before. Our hero takes on his toughest assignment yet for the I.I.I.I. (Institute for the Institution of Imagination and Inspiration, LLC) to cheer up Gabby and Sebastian, a pair of siblings struggling to move to a new town. Known for taking things too far, this could be this agent of chaos' last chance to prove himself...or lose his magical hat!",
-    "director": "Erica Rivinoja, Alessandro Carloni",
-    "title": "The Cat in the Hat",
-    "cached_at": "2026-08-20T10:18:23.997264"
+    "cached_at": "2026-08-21T10:19:11.910132"
   },
   "https://wtwcinemas.co.uk/newquay/film/5588/avengers-doomsday": {
     "runtime": "1 min",
@@ -1061,7 +861,7 @@
     "synopsis": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
     "director": "Joe Russo, Anthony Russo",
     "title": "Avengers: Doomsday",
-    "cached_at": "2026-08-20T10:18:24.591994"
+    "cached_at": "2026-08-21T10:19:13.334519"
   },
   "https://wtwcinemas.co.uk/truro/film/5586/the-hunger-games-sunrise-on-the-reaping": {
     "runtime": "1 min",
@@ -1069,7 +869,15 @@
     "synopsis": "Return to the world of Panem 24 years before the events of The Hunger Games, starting on the morning of the reaping of the 50th Hunger Games, also known as the Second Quarter Quell.",
     "director": "Francis Lawrence",
     "title": "The Hunger Games: Sunrise on the Reaping",
-    "cached_at": "2026-08-20T10:18:25.422882"
+    "cached_at": "2026-08-21T10:19:13.860735"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5584/the-cat-in-the-hat": {
+    "runtime": "1 min",
+    "cast": "Bill Hader, Xochitl Gomez, Quinta Brunson",
+    "synopsis": "Doing what he does best, the Cat spreads joy to kids in his hilarious, signature, and singularly irreverent way, transporting them and audiences on a fantastical journey through a world they've never seen before. Our hero takes on his toughest assignment yet for the I.I.I.I. (Institute for the Institution of Imagination and Inspiration, LLC) to cheer up Gabby and Sebastian, a pair of siblings struggling to move to a new town. Known for taking things too far, this could be this agent of chaos' last chance to prove himself...or lose his magical hat!",
+    "director": "Erica Rivinoja, Alessandro Carloni",
+    "title": "The Cat in the Hat",
+    "cached_at": "2026-08-21T10:19:14.775071"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5588/avengers-doomsday": {
     "runtime": "1 min",
@@ -1077,15 +885,7 @@
     "synopsis": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
     "director": "Joe Russo, Anthony Russo",
     "title": "Avengers: Doomsday",
-    "cached_at": "2026-08-20T10:18:25.571869"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5642/andre-rieus-2026-christmas-concert-let-it-snow": {
-    "runtime": "165 min",
-    "cast": "André Rieu",
-    "synopsis": "This holiday season, celebrate the most wonderful time of the year on the big screen with André Rieu's 2026 Christmas Concert – Let It Snow. This heartwarming festive spectacular, filled with beloved Christmas classics, enchanting waltzes, and magical surprises, will\r\nleave you smiling long after the final encore.\r\nJoined by his world-famous Johann Strauss Orchestra, exceptional sopranos, and a powerful 120-voice male choir, André brings the spirit of Christmas to life in an unforgettable musical event. Overflowing with music, laughter, and holiday cheer, this concert is perfect for the whole family.\r\nWhether you're surrounded by snow or simply dreaming of it, experience the magic of Christmas on the big screen with those you love. Wrap up your year with Let It Snow – only in cinemas!",
-    "director": "",
-    "title": "Andre Rieu's 2026 Christmas Concert Let It Snow",
-    "cached_at": "2026-08-20T10:18:25.615469"
+    "cached_at": "2026-08-21T10:19:14.916883"
   },
   "https://wtwcinemas.co.uk/newquay/film/5589/dune-part-three": {
     "runtime": "1 min",
@@ -1093,7 +893,7 @@
     "synopsis": "As Emperor, Paul Atreides grapples with the consequences of his rise to power as political conspiracies and a galaxy-spanning holy war threaten the future he alone can foresee.",
     "director": "Denis Villeneuve",
     "title": "Dune: Part Three",
-    "cached_at": "2026-08-20T10:18:26.154142"
+    "cached_at": "2026-08-21T10:19:16.194083"
   },
   "https://wtwcinemas.co.uk/truro/film/5587/fockerinlaw": {
     "runtime": "1 min",
@@ -1101,7 +901,15 @@
     "synopsis": "Henry, son of Greg and Pam Focker, faces family chaos when he decides to marry a strong-willed woman who appears to be his complete mismatch.",
     "director": "John Hamburg",
     "title": "Focker-In-Law",
-    "cached_at": "2026-08-20T10:18:27.130560"
+    "cached_at": "2026-08-21T10:19:16.641358"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5642/andre-rieus-2026-christmas-concert-let-it-snow": {
+    "runtime": "165 min",
+    "cast": "André Rieu",
+    "synopsis": "This holiday season, celebrate the most wonderful time of the year on the big screen with André Rieu's 2026 Christmas Concert – Let It Snow. This heartwarming festive spectacular, filled with beloved Christmas classics, enchanting waltzes, and magical surprises, will\r\nleave you smiling long after the final encore.\r\nJoined by his world-famous Johann Strauss Orchestra, exceptional sopranos, and a powerful 120-voice male choir, André brings the spirit of Christmas to life in an unforgettable musical event. Overflowing with music, laughter, and holiday cheer, this concert is perfect for the whole family.\r\nWhether you're surrounded by snow or simply dreaming of it, experience the magic of Christmas on the big screen with those you love. Wrap up your year with Let It Snow – only in cinemas!",
+    "director": "",
+    "title": "Andre Rieu's 2026 Christmas Concert Let It Snow",
+    "cached_at": "2026-08-21T10:19:17.212322"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5589/dune-part-three": {
     "runtime": "1 min",
@@ -1109,15 +917,7 @@
     "synopsis": "As Emperor, Paul Atreides grapples with the consequences of his rise to power as political conspiracies and a galaxy-spanning holy war threaten the future he alone can foresee.",
     "director": "Denis Villeneuve",
     "title": "Dune: Part Three",
-    "cached_at": "2026-08-20T10:18:27.148182"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5588/avengers-doomsday": {
-    "runtime": "1 min",
-    "cast": "Robert Downey Jr., Chris Evans, Chris Hemsworth",
-    "synopsis": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
-    "director": "Joe Russo, Anthony Russo",
-    "title": "Avengers: Doomsday",
-    "cached_at": "2026-08-20T10:18:27.309976"
+    "cached_at": "2026-08-21T10:19:17.418255"
   },
   "https://wtwcinemas.co.uk/newquay/film/5590/jumanji-open-world": {
     "runtime": "1 min",
@@ -1125,15 +925,7 @@
     "synopsis": "Our heroes have escaped the ever-changing jungles of Jumanji before, but this time the game comes to us - as Jumanji breaks free of its console, unleashing its chaos into our world.",
     "director": "Jake Kasdan",
     "title": "Jumanji: Open World",
-    "cached_at": "2026-08-20T10:18:27.727682"
-  },
-  "https://wtwcinemas.co.uk/st-austell/film/5590/jumanji-open-world": {
-    "runtime": "1 min",
-    "cast": "Dwayne Johnson, Kevin Hart, Jack Black",
-    "synopsis": "Our heroes have escaped the ever-changing jungles of Jumanji before, but this time the game comes to us - as Jumanji breaks free of its console, unleashing its chaos into our world.",
-    "director": "Jake Kasdan",
-    "title": "Jumanji: Open World",
-    "cached_at": "2026-08-20T10:18:28.945936"
+    "cached_at": "2026-08-21T10:19:18.543915"
   },
   "https://wtwcinemas.co.uk/truro/film/5558/the-nutcracker-royal-ballet-opera-2627-season": {
     "runtime": "140 min",
@@ -1141,15 +933,23 @@
     "synopsis": "At a cosy Christmas party, young Clara meets the mysterious magician Drosselmeyer, who gives her a nutcracker doll. When the guests have departed and the house is asleep, Clara sneaks downstairs in search of the doll. Instead, she finds Drosselmeyer, who whisks her away on a journey into a whole world of enchantment: fantastical landscapes of flurried snow and glittering confection where toys come alive and the magic never stops. \r\nPeter Wright's production of this festive family favourite sparkles to the wondrous swell of Tchaikovsky's orchestral score, alongside the glow and grandeur of Julia Trevelyan Oman's period designs.",
     "director": "",
     "title": "The Nutcracker - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:29.002093"
+    "cached_at": "2026-08-21T10:19:19.162745"
   },
-  "https://wtwcinemas.co.uk/wadebridge/film/5589/dune-part-three": {
+  "https://wtwcinemas.co.uk/wadebridge/film/5588/avengers-doomsday": {
     "runtime": "1 min",
-    "cast": "Timothée Chalamet, Zendaya, Jason Momoa",
-    "synopsis": "As Emperor, Paul Atreides grapples with the consequences of his rise to power as political conspiracies and a galaxy-spanning holy war threaten the future he alone can foresee.",
-    "director": "Denis Villeneuve",
-    "title": "Dune: Part Three",
-    "cached_at": "2026-08-20T10:18:29.240525"
+    "cast": "Robert Downey Jr., Chris Evans, Chris Hemsworth",
+    "synopsis": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
+    "director": "Joe Russo, Anthony Russo",
+    "title": "Avengers: Doomsday",
+    "cached_at": "2026-08-21T10:19:19.554514"
+  },
+  "https://wtwcinemas.co.uk/st-austell/film/5590/jumanji-open-world": {
+    "runtime": "1 min",
+    "cast": "Dwayne Johnson, Kevin Hart, Jack Black",
+    "synopsis": "Our heroes have escaped the ever-changing jungles of Jumanji before, but this time the game comes to us - as Jumanji breaks free of its console, unleashing its chaos into our world.",
+    "director": "Jake Kasdan",
+    "title": "Jumanji: Open World",
+    "cached_at": "2026-08-21T10:19:19.797665"
   },
   "https://wtwcinemas.co.uk/newquay/film/5559/la-fanciulla-del-west-royal-ballet-opera-2627-season": {
     "runtime": "195 min",
@@ -1157,7 +957,7 @@
     "synopsis": "Puccini's exhilarating drama of the Wild West returns in a new staging by celebrated British director Richard Jones, marking the company's first new production of La Fanciulla del West in more than 30 years. Soprano Sondra Radvanovsky adds to her already remarkable Met repertoire, making her role debut as Minnie, the tough tavern owner with a heart of gold who finds love when she least expects it. Tenor SeokJong Baek is the dashing bandit who rambles into the remote California mining town to steal her heart, opposite baritone Christopher Maltman as the lawman determined to deliver rough justice—and win Minnie for himself. Maestro Keri-Lynn Wilson takes the podium to conduct one of opera's most action-packed adventures, live from the Met stage to cinemas worldwide. This production is part of the Met's award-winning Live in HD series, bringing opera to cinemas across the globe.",
     "director": "",
     "title": "La Fanciulla Del West - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:29.553743"
+    "cached_at": "2026-08-21T10:19:20.712973"
   },
   "https://wtwcinemas.co.uk/truro/film/5584/the-cat-in-the-hat": {
     "runtime": "1 min",
@@ -1165,7 +965,15 @@
     "synopsis": "Doing what he does best, the Cat spreads joy to kids in his hilarious, signature, and singularly irreverent way, transporting them and audiences on a fantastical journey through a world they've never seen before. Our hero takes on his toughest assignment yet for the I.I.I.I. (Institute for the Institution of Imagination and Inspiration, LLC) to cheer up Gabby and Sebastian, a pair of siblings struggling to move to a new town. Known for taking things too far, this could be this agent of chaos' last chance to prove himself...or lose his magical hat!",
     "director": "Erica Rivinoja, Alessandro Carloni",
     "title": "The Cat in the Hat",
-    "cached_at": "2026-08-20T10:18:30.691315"
+    "cached_at": "2026-08-21T10:19:21.281391"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5589/dune-part-three": {
+    "runtime": "1 min",
+    "cast": "Timothée Chalamet, Zendaya, Jason Momoa",
+    "synopsis": "As Emperor, Paul Atreides grapples with the consequences of his rise to power as political conspiracies and a galaxy-spanning holy war threaten the future he alone can foresee.",
+    "director": "Denis Villeneuve",
+    "title": "Dune: Part Three",
+    "cached_at": "2026-08-21T10:19:21.706218"
   },
   "https://wtwcinemas.co.uk/st-austell/film/5559/la-fanciulla-del-west-royal-ballet-opera-2627-season": {
     "runtime": "195 min",
@@ -1173,15 +981,7 @@
     "synopsis": "Puccini's exhilarating drama of the Wild West returns in a new staging by celebrated British director Richard Jones, marking the company's first new production of La Fanciulla del West in more than 30 years. Soprano Sondra Radvanovsky adds to her already remarkable Met repertoire, making her role debut as Minnie, the tough tavern owner with a heart of gold who finds love when she least expects it. Tenor SeokJong Baek is the dashing bandit who rambles into the remote California mining town to steal her heart, opposite baritone Christopher Maltman as the lawman determined to deliver rough justice—and win Minnie for himself. Maestro Keri-Lynn Wilson takes the podium to conduct one of opera's most action-packed adventures, live from the Met stage to cinemas worldwide. This production is part of the Met's award-winning Live in HD series, bringing opera to cinemas across the globe.",
     "director": "",
     "title": "La Fanciulla Del West - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:30.711835"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5590/jumanji-open-world": {
-    "runtime": "1 min",
-    "cast": "Dwayne Johnson, Kevin Hart, Jack Black",
-    "synopsis": "Our heroes have escaped the ever-changing jungles of Jumanji before, but this time the game comes to us - as Jumanji breaks free of its console, unleashing its chaos into our world.",
-    "director": "Jake Kasdan",
-    "title": "Jumanji: Open World",
-    "cached_at": "2026-08-20T10:18:30.850759"
+    "cached_at": "2026-08-21T10:19:22.111563"
   },
   "https://wtwcinemas.co.uk/newquay/film/5560/gtterdmmerung-royal-ballet-opera-2627-season": {
     "runtime": "350 min",
@@ -1189,15 +989,7 @@
     "synopsis": "An earth in ruin. The twilight of the Gods. \r\nDeception leads to treachery, then devastation, when Siegfried is tricked into betraying Brünnhilde. Learning the truth of her beloved's innocence, Brünnhilde at last returns the ring to the Rhinemaidens, before ordering that Valhalla be swallowed in flames. For the long-awaited finale of Wagner's epic saga, director Barrie Kosky situates the rich apocalyptic drama in a contemporary world of dream-like turmoil. Antonio Pappano, Conductor Laureate of The Royal Opera, returns to take on the impassioned, otherworldly music – including Siegfried's transporting Funeral March and Brünnhilde's electrifying Immolation Scene. The brilliant cast is led by Elisabet Strid, Andreas Schager and Mika Kares, who together with the full forces of the Orchestra of the Royal Opera House and the Royal Opera Chorus bring opera's greatest journey to its shattering end.",
     "director": "",
     "title": "Götterdämmerung - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:31.206929"
-  },
-  "https://wtwcinemas.co.uk/st-austell/film/5560/gtterdmmerung-royal-ballet-opera-2627-season": {
-    "runtime": "350 min",
-    "cast": "",
-    "synopsis": "An earth in ruin. The twilight of the Gods. \r\nDeception leads to treachery, then devastation, when Siegfried is tricked into betraying Brünnhilde. Learning the truth of her beloved's innocence, Brünnhilde at last returns the ring to the Rhinemaidens, before ordering that Valhalla be swallowed in flames. For the long-awaited finale of Wagner's epic saga, director Barrie Kosky situates the rich apocalyptic drama in a contemporary world of dream-like turmoil. Antonio Pappano, Conductor Laureate of The Royal Opera, returns to take on the impassioned, otherworldly music – including Siegfried's transporting Funeral March and Brünnhilde's electrifying Immolation Scene. The brilliant cast is led by Elisabet Strid, Andreas Schager and Mika Kares, who together with the full forces of the Orchestra of the Royal Opera House and the Royal Opera Chorus bring opera's greatest journey to its shattering end.",
-    "director": "",
-    "title": "Götterdämmerung - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:32.346733"
+    "cached_at": "2026-08-21T10:19:22.830663"
   },
   "https://wtwcinemas.co.uk/truro/film/5642/andre-rieus-2026-christmas-concert-let-it-snow": {
     "runtime": "165 min",
@@ -1205,15 +997,23 @@
     "synopsis": "This holiday season, celebrate the most wonderful time of the year on the big screen with André Rieu's 2026 Christmas Concert – Let It Snow. This heartwarming festive spectacular, filled with beloved Christmas classics, enchanting waltzes, and magical surprises, will\r\nleave you smiling long after the final encore.\r\nJoined by his world-famous Johann Strauss Orchestra, exceptional sopranos, and a powerful 120-voice male choir, André brings the spirit of Christmas to life in an unforgettable musical event. Overflowing with music, laughter, and holiday cheer, this concert is perfect for the whole family.\r\nWhether you're surrounded by snow or simply dreaming of it, experience the magic of Christmas on the big screen with those you love. Wrap up your year with Let It Snow – only in cinemas!",
     "director": "",
     "title": "Andre Rieu's 2026 Christmas Concert Let It Snow",
-    "cached_at": "2026-08-20T10:18:32.499976"
+    "cached_at": "2026-08-21T10:19:23.626682"
   },
-  "https://wtwcinemas.co.uk/wadebridge/film/5549/renoir-love-exhibition-on-screen": {
-    "runtime": "90 min",
+  "https://wtwcinemas.co.uk/wadebridge/film/5590/jumanji-open-world": {
+    "runtime": "1 min",
+    "cast": "Dwayne Johnson, Kevin Hart, Jack Black",
+    "synopsis": "Our heroes have escaped the ever-changing jungles of Jumanji before, but this time the game comes to us - as Jumanji breaks free of its console, unleashing its chaos into our world.",
+    "director": "Jake Kasdan",
+    "title": "Jumanji: Open World",
+    "cached_at": "2026-08-21T10:19:23.822567"
+  },
+  "https://wtwcinemas.co.uk/st-austell/film/5560/gtterdmmerung-royal-ballet-opera-2627-season": {
+    "runtime": "350 min",
     "cast": "",
-    "synopsis": "Pierre-Auguste Renoir is one of the world's favourite artists, a founding member of the Impressionist movement and a constantly evolving artist. With exclusive access to the National Gallery's new exciting show of the same name (3 October 2026 - 31 January 2027), Exhibition on Screen will bring Renoir's world class works to cinema audiences. Be transported back to a Parisian summer of love through the eyes of a true visionary. An unmissable opportunity to fall in love with Renoir this winter.",
-    "director": "Ali Ray",
-    "title": "Renoir & Love - Exhibition On Screen",
-    "cached_at": "2026-08-20T10:18:32.573471"
+    "synopsis": "An earth in ruin. The twilight of the Gods. \r\nDeception leads to treachery, then devastation, when Siegfried is tricked into betraying Brünnhilde. Learning the truth of her beloved's innocence, Brünnhilde at last returns the ring to the Rhinemaidens, before ordering that Valhalla be swallowed in flames. For the long-awaited finale of Wagner's epic saga, director Barrie Kosky situates the rich apocalyptic drama in a contemporary world of dream-like turmoil. Antonio Pappano, Conductor Laureate of The Royal Opera, returns to take on the impassioned, otherworldly music – including Siegfried's transporting Funeral March and Brünnhilde's electrifying Immolation Scene. The brilliant cast is led by Elisabet Strid, Andreas Schager and Mika Kares, who together with the full forces of the Orchestra of the Royal Opera House and the Royal Opera Chorus bring opera's greatest journey to its shattering end.",
+    "director": "",
+    "title": "Götterdämmerung - Royal Ballet & Opera 26-27 Season",
+    "cached_at": "2026-08-21T10:19:24.176825"
   },
   "https://wtwcinemas.co.uk/newquay/film/5561/cos-fan-tutte-royal-ballet-opera-2627-season": {
     "runtime": "210 min",
@@ -1221,23 +1021,7 @@
     "synopsis": "Spurred on by a bet, two young men hatch a plan to test the fidelity of their girlfriends. What follows is a slippery game of seduction and power, the four lovers plunging into a dizzying world of shifting reality, where truth becomes increasingly unstable. \r\nCosì fan tutte has lost none of its sting since it first scandalised audiences in 1790. In her Main Stage debut, Netia Jones, Associate Director of The Royal Opera, reimagines Mozart's comedy of manners through a sharp contemporary lens, where 18th-century romantic trickery meets deeply satirical high-tech deceit. Taking on the roles of the lovers is an exciting young cast led by Louise Alder, Simone McIntosh, Mingjie Lei and Huw Montague Rendall, with Gerald Finley as their manipulative game-master Don Alfonso and Emily Pogorelc as Despina. Thomas Hengelbrock conducts, bringing out the exquisite melodies that underpin the provocative, and resolutely modern, themes at the heart of the opera.",
     "director": "",
     "title": "Così Fan Tutte - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:32.789848"
-  },
-  "https://wtwcinemas.co.uk/st-austell/film/5561/cos-fan-tutte-royal-ballet-opera-2627-season": {
-    "runtime": "210 min",
-    "cast": "",
-    "synopsis": "Spurred on by a bet, two young men hatch a plan to test the fidelity of their girlfriends. What follows is a slippery game of seduction and power, the four lovers plunging into a dizzying world of shifting reality, where truth becomes increasingly unstable. \r\nCosì fan tutte has lost none of its sting since it first scandalised audiences in 1790. In her Main Stage debut, Netia Jones, Associate Director of The Royal Opera, reimagines Mozart's comedy of manners through a sharp contemporary lens, where 18th-century romantic trickery meets deeply satirical high-tech deceit. Taking on the roles of the lovers is an exciting young cast led by Louise Alder, Simone McIntosh, Mingjie Lei and Huw Montague Rendall, with Gerald Finley as their manipulative game-master Don Alfonso and Emily Pogorelc as Despina. Thomas Hengelbrock conducts, bringing out the exquisite melodies that underpin the provocative, and resolutely modern, themes at the heart of the opera.",
-    "director": "",
-    "title": "Così Fan Tutte - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:34.020598"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5559/la-fanciulla-del-west-royal-ballet-opera-2627-season": {
-    "runtime": "195 min",
-    "cast": "",
-    "synopsis": "Puccini's exhilarating drama of the Wild West returns in a new staging by celebrated British director Richard Jones, marking the company's first new production of La Fanciulla del West in more than 30 years. Soprano Sondra Radvanovsky adds to her already remarkable Met repertoire, making her role debut as Minnie, the tough tavern owner with a heart of gold who finds love when she least expects it. Tenor SeokJong Baek is the dashing bandit who rambles into the remote California mining town to steal her heart, opposite baritone Christopher Maltman as the lawman determined to deliver rough justice—and win Minnie for himself. Maestro Keri-Lynn Wilson takes the podium to conduct one of opera's most action-packed adventures, live from the Met stage to cinemas worldwide. This production is part of the Met's award-winning Live in HD series, bringing opera to cinemas across the globe.",
-    "director": "",
-    "title": "La Fanciulla Del West - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:34.240123"
+    "cached_at": "2026-08-21T10:19:25.057854"
   },
   "https://wtwcinemas.co.uk/truro/film/5588/avengers-doomsday": {
     "runtime": "1 min",
@@ -1245,7 +1029,23 @@
     "synopsis": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
     "director": "Joe Russo, Anthony Russo",
     "title": "Avengers: Doomsday",
-    "cached_at": "2026-08-20T10:18:34.295309"
+    "cached_at": "2026-08-21T10:19:25.846295"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5549/renoir-love-exhibition-on-screen": {
+    "runtime": "90 min",
+    "cast": "",
+    "synopsis": "Pierre-Auguste Renoir is one of the world's favourite artists, a founding member of the Impressionist movement and a constantly evolving artist. With exclusive access to the National Gallery's new exciting show of the same name (3 October 2026 - 31 January 2027), Exhibition on Screen will bring Renoir's world class works to cinema audiences. Be transported back to a Parisian summer of love through the eyes of a true visionary. An unmissable opportunity to fall in love with Renoir this winter.",
+    "director": "Ali Ray",
+    "title": "Renoir & Love - Exhibition On Screen",
+    "cached_at": "2026-08-21T10:19:26.030193"
+  },
+  "https://wtwcinemas.co.uk/st-austell/film/5561/cos-fan-tutte-royal-ballet-opera-2627-season": {
+    "runtime": "210 min",
+    "cast": "",
+    "synopsis": "Spurred on by a bet, two young men hatch a plan to test the fidelity of their girlfriends. What follows is a slippery game of seduction and power, the four lovers plunging into a dizzying world of shifting reality, where truth becomes increasingly unstable. \r\nCosì fan tutte has lost none of its sting since it first scandalised audiences in 1790. In her Main Stage debut, Netia Jones, Associate Director of The Royal Opera, reimagines Mozart's comedy of manners through a sharp contemporary lens, where 18th-century romantic trickery meets deeply satirical high-tech deceit. Taking on the roles of the lovers is an exciting young cast led by Louise Alder, Simone McIntosh, Mingjie Lei and Huw Montague Rendall, with Gerald Finley as their manipulative game-master Don Alfonso and Emily Pogorelc as Despina. Thomas Hengelbrock conducts, bringing out the exquisite melodies that underpin the provocative, and resolutely modern, themes at the heart of the opera.",
+    "director": "",
+    "title": "Così Fan Tutte - Royal Ballet & Opera 26-27 Season",
+    "cached_at": "2026-08-21T10:19:26.367249"
   },
   "https://wtwcinemas.co.uk/newquay/film/5562/alices-adventures-in-wonderland-royal-ballet-opera-2627-season": {
     "runtime": "170 min",
@@ -1253,23 +1053,7 @@
     "synopsis": "At a garden party on a sunny afternoon, Alice is surprised to see her parents' friend Lewis Carroll transform into a white rabbit. When she follows him down a rabbit hole, events become curiouser and curiouser…As Alice journeys through Wonderland, she encounters countless strange creatures. She's swept off her feet by the charming Knave of Hearts, who's on the run for stealing the tarts. Confusion piles upon confusion. Then Alice wakes with a start. Was it all a daydream? \r\nChristopher Wheeldon's Alice's Adventures in Wonderland burst onto the stage in 2011 in an explosion of colour, stage magic and inventive, sophisticated choreography. Joby Talbot's score combines contemporary soundworlds with sweeping melodies that gesture to ballet scores of the 19th century. Bob Crowley's wildly imaginative, eye-popping designs draw on everything from puppetry to projections to make Wonderland wonderfully real. The result shows The Royal Ballet at its best, bringing together world-class dance with enchanting family entertainment and ingenious music and design.",
     "director": "",
     "title": "Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:34.424739"
-  },
-  "https://wtwcinemas.co.uk/st-austell/film/5562/alices-adventures-in-wonderland-royal-ballet-opera-2627-season": {
-    "runtime": "170 min",
-    "cast": "",
-    "synopsis": "At a garden party on a sunny afternoon, Alice is surprised to see her parents' friend Lewis Carroll transform into a white rabbit. When she follows him down a rabbit hole, events become curiouser and curiouser…As Alice journeys through Wonderland, she encounters countless strange creatures. She's swept off her feet by the charming Knave of Hearts, who's on the run for stealing the tarts. Confusion piles upon confusion. Then Alice wakes with a start. Was it all a daydream? \r\nChristopher Wheeldon's Alice's Adventures in Wonderland burst onto the stage in 2011 in an explosion of colour, stage magic and inventive, sophisticated choreography. Joby Talbot's score combines contemporary soundworlds with sweeping melodies that gesture to ballet scores of the 19th century. Bob Crowley's wildly imaginative, eye-popping designs draw on everything from puppetry to projections to make Wonderland wonderfully real. The result shows The Royal Ballet at its best, bringing together world-class dance with enchanting family entertainment and ingenious music and design.",
-    "director": "",
-    "title": "Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:35.674549"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5560/gtterdmmerung-royal-ballet-opera-2627-season": {
-    "runtime": "350 min",
-    "cast": "",
-    "synopsis": "An earth in ruin. The twilight of the Gods. \r\nDeception leads to treachery, then devastation, when Siegfried is tricked into betraying Brünnhilde. Learning the truth of her beloved's innocence, Brünnhilde at last returns the ring to the Rhinemaidens, before ordering that Valhalla be swallowed in flames. For the long-awaited finale of Wagner's epic saga, director Barrie Kosky situates the rich apocalyptic drama in a contemporary world of dream-like turmoil. Antonio Pappano, Conductor Laureate of The Royal Opera, returns to take on the impassioned, otherworldly music – including Siegfried's transporting Funeral March and Brünnhilde's electrifying Immolation Scene. The brilliant cast is led by Elisabet Strid, Andreas Schager and Mika Kares, who together with the full forces of the Orchestra of the Royal Opera House and the Royal Opera Chorus bring opera's greatest journey to its shattering end.",
-    "director": "",
-    "title": "Götterdämmerung - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:36.012132"
+    "cached_at": "2026-08-21T10:19:27.167935"
   },
   "https://wtwcinemas.co.uk/truro/film/5589/dune-part-three": {
     "runtime": "1 min",
@@ -1277,7 +1061,23 @@
     "synopsis": "As Emperor, Paul Atreides grapples with the consequences of his rise to power as political conspiracies and a galaxy-spanning holy war threaten the future he alone can foresee.",
     "director": "Denis Villeneuve",
     "title": "Dune: Part Three",
-    "cached_at": "2026-08-20T10:18:36.182282"
+    "cached_at": "2026-08-21T10:19:27.979930"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5559/la-fanciulla-del-west-royal-ballet-opera-2627-season": {
+    "runtime": "195 min",
+    "cast": "",
+    "synopsis": "Puccini's exhilarating drama of the Wild West returns in a new staging by celebrated British director Richard Jones, marking the company's first new production of La Fanciulla del West in more than 30 years. Soprano Sondra Radvanovsky adds to her already remarkable Met repertoire, making her role debut as Minnie, the tough tavern owner with a heart of gold who finds love when she least expects it. Tenor SeokJong Baek is the dashing bandit who rambles into the remote California mining town to steal her heart, opposite baritone Christopher Maltman as the lawman determined to deliver rough justice—and win Minnie for himself. Maestro Keri-Lynn Wilson takes the podium to conduct one of opera's most action-packed adventures, live from the Met stage to cinemas worldwide. This production is part of the Met's award-winning Live in HD series, bringing opera to cinemas across the globe.",
+    "director": "",
+    "title": "La Fanciulla Del West - Royal Ballet & Opera 26-27 Season",
+    "cached_at": "2026-08-21T10:19:28.282061"
+  },
+  "https://wtwcinemas.co.uk/st-austell/film/5562/alices-adventures-in-wonderland-royal-ballet-opera-2627-season": {
+    "runtime": "170 min",
+    "cast": "",
+    "synopsis": "At a garden party on a sunny afternoon, Alice is surprised to see her parents' friend Lewis Carroll transform into a white rabbit. When she follows him down a rabbit hole, events become curiouser and curiouser…As Alice journeys through Wonderland, she encounters countless strange creatures. She's swept off her feet by the charming Knave of Hearts, who's on the run for stealing the tarts. Confusion piles upon confusion. Then Alice wakes with a start. Was it all a daydream? \r\nChristopher Wheeldon's Alice's Adventures in Wonderland burst onto the stage in 2011 in an explosion of colour, stage magic and inventive, sophisticated choreography. Joby Talbot's score combines contemporary soundworlds with sweeping melodies that gesture to ballet scores of the 19th century. Bob Crowley's wildly imaginative, eye-popping designs draw on everything from puppetry to projections to make Wonderland wonderfully real. The result shows The Royal Ballet at its best, bringing together world-class dance with enchanting family entertainment and ingenious music and design.",
+    "director": "",
+    "title": "Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Season",
+    "cached_at": "2026-08-21T10:19:28.654526"
   },
   "https://wtwcinemas.co.uk/newquay/film/5563/swan-lake-royal-ballet-opera-2627-season": {
     "runtime": "205 min",
@@ -1285,31 +1085,7 @@
     "synopsis": "Princess Odette is bound by a curse, turned into a swan by the evil sorcerer Von Rothbart. The spell can only be broken by a pledge of eternal love. When she meets Prince Siegfried, he is immediately enamoured by her fragile beauty and pledges to free her. But freedom is not promised for Odette as Von Rothbart conspires to thwart the lovers' plans.\r\nLiam Scarlett's production for The Royal Ballet brings together Tchaikovsky's towering score and John Macfarlane's picturesque designs to create an enduring ballet spectacle of love, treachery and forgiveness.",
     "director": "",
     "title": "Swan Lake - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:36.211742"
-  },
-  "https://wtwcinemas.co.uk/st-austell/film/5563/swan-lake-royal-ballet-opera-2627-season": {
-    "runtime": "205 min",
-    "cast": "",
-    "synopsis": "Princess Odette is bound by a curse, turned into a swan by the evil sorcerer Von Rothbart. The spell can only be broken by a pledge of eternal love. When she meets Prince Siegfried, he is immediately enamoured by her fragile beauty and pledges to free her. But freedom is not promised for Odette as Von Rothbart conspires to thwart the lovers' plans.\r\nLiam Scarlett's production for The Royal Ballet brings together Tchaikovsky's towering score and John Macfarlane's picturesque designs to create an enduring ballet spectacle of love, treachery and forgiveness.",
-    "director": "",
-    "title": "Swan Lake - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:37.364870"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5561/cos-fan-tutte-royal-ballet-opera-2627-season": {
-    "runtime": "210 min",
-    "cast": "",
-    "synopsis": "Spurred on by a bet, two young men hatch a plan to test the fidelity of their girlfriends. What follows is a slippery game of seduction and power, the four lovers plunging into a dizzying world of shifting reality, where truth becomes increasingly unstable. \r\nCosì fan tutte has lost none of its sting since it first scandalised audiences in 1790. In her Main Stage debut, Netia Jones, Associate Director of The Royal Opera, reimagines Mozart's comedy of manners through a sharp contemporary lens, where 18th-century romantic trickery meets deeply satirical high-tech deceit. Taking on the roles of the lovers is an exciting young cast led by Louise Alder, Simone McIntosh, Mingjie Lei and Huw Montague Rendall, with Gerald Finley as their manipulative game-master Don Alfonso and Emily Pogorelc as Despina. Thomas Hengelbrock conducts, bringing out the exquisite melodies that underpin the provocative, and resolutely modern, themes at the heart of the opera.",
-    "director": "",
-    "title": "Così Fan Tutte - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:37.751120"
-  },
-  "https://wtwcinemas.co.uk/newquay/film/5564/tosca-royal-ballet-opera-2627-season": {
-    "runtime": "195 min",
-    "cast": "",
-    "synopsis": "Floria Tosca and Mario Cavaradossi live for each other and for their art. But when Cavaradossi helps an escaped prisoner, the lovers make a deadly enemy in the form of Baron Scarpia, Chief of Police. At the mercy of Scarpia's twisted desires, Tosca is forced to make a horrific bargain: sleeping with the man she hates, in order to save the man she loves. Can she find a way out?\r\nOliver Mears's acclaimed production returns, setting Puccini's operatic thriller in a contemporary, war-torn Rome. Daniel Oren conducts Aleksandra Kurzak, who returns to the title role, joined by Saimir Pirgu as Cavaradossi and Christopher Maltman as Baron Scarpia.",
-    "director": "",
-    "title": "Tosca - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:37.846885"
+    "cached_at": "2026-08-21T10:19:29.464290"
   },
   "https://wtwcinemas.co.uk/truro/film/5590/jumanji-open-world": {
     "runtime": "1 min",
@@ -1317,23 +1093,31 @@
     "synopsis": "Our heroes have escaped the ever-changing jungles of Jumanji before, but this time the game comes to us - as Jumanji breaks free of its console, unleashing its chaos into our world.",
     "director": "Jake Kasdan",
     "title": "Jumanji: Open World",
-    "cached_at": "2026-08-20T10:18:37.970100"
+    "cached_at": "2026-08-21T10:19:30.505936"
   },
-  "https://wtwcinemas.co.uk/st-austell/film/5564/tosca-royal-ballet-opera-2627-season": {
+  "https://wtwcinemas.co.uk/wadebridge/film/5560/gtterdmmerung-royal-ballet-opera-2627-season": {
+    "runtime": "350 min",
+    "cast": "",
+    "synopsis": "An earth in ruin. The twilight of the Gods. \r\nDeception leads to treachery, then devastation, when Siegfried is tricked into betraying Brünnhilde. Learning the truth of her beloved's innocence, Brünnhilde at last returns the ring to the Rhinemaidens, before ordering that Valhalla be swallowed in flames. For the long-awaited finale of Wagner's epic saga, director Barrie Kosky situates the rich apocalyptic drama in a contemporary world of dream-like turmoil. Antonio Pappano, Conductor Laureate of The Royal Opera, returns to take on the impassioned, otherworldly music – including Siegfried's transporting Funeral March and Brünnhilde's electrifying Immolation Scene. The brilliant cast is led by Elisabet Strid, Andreas Schager and Mika Kares, who together with the full forces of the Orchestra of the Royal Opera House and the Royal Opera Chorus bring opera's greatest journey to its shattering end.",
+    "director": "",
+    "title": "Götterdämmerung - Royal Ballet & Opera 26-27 Season",
+    "cached_at": "2026-08-21T10:19:30.695047"
+  },
+  "https://wtwcinemas.co.uk/st-austell/film/5563/swan-lake-royal-ballet-opera-2627-season": {
+    "runtime": "205 min",
+    "cast": "",
+    "synopsis": "Princess Odette is bound by a curse, turned into a swan by the evil sorcerer Von Rothbart. The spell can only be broken by a pledge of eternal love. When she meets Prince Siegfried, he is immediately enamoured by her fragile beauty and pledges to free her. But freedom is not promised for Odette as Von Rothbart conspires to thwart the lovers' plans.\r\nLiam Scarlett's production for The Royal Ballet brings together Tchaikovsky's towering score and John Macfarlane's picturesque designs to create an enduring ballet spectacle of love, treachery and forgiveness.",
+    "director": "",
+    "title": "Swan Lake - Royal Ballet & Opera 26-27 Season",
+    "cached_at": "2026-08-21T10:19:30.925433"
+  },
+  "https://wtwcinemas.co.uk/newquay/film/5564/tosca-royal-ballet-opera-2627-season": {
     "runtime": "195 min",
     "cast": "",
     "synopsis": "Floria Tosca and Mario Cavaradossi live for each other and for their art. But when Cavaradossi helps an escaped prisoner, the lovers make a deadly enemy in the form of Baron Scarpia, Chief of Police. At the mercy of Scarpia's twisted desires, Tosca is forced to make a horrific bargain: sleeping with the man she hates, in order to save the man she loves. Can she find a way out?\r\nOliver Mears's acclaimed production returns, setting Puccini's operatic thriller in a contemporary, war-torn Rome. Daniel Oren conducts Aleksandra Kurzak, who returns to the title role, joined by Saimir Pirgu as Cavaradossi and Christopher Maltman as Baron Scarpia.",
     "director": "",
     "title": "Tosca - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:39.101826"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5562/alices-adventures-in-wonderland-royal-ballet-opera-2627-season": {
-    "runtime": "170 min",
-    "cast": "",
-    "synopsis": "At a garden party on a sunny afternoon, Alice is surprised to see her parents' friend Lewis Carroll transform into a white rabbit. When she follows him down a rabbit hole, events become curiouser and curiouser…As Alice journeys through Wonderland, she encounters countless strange creatures. She's swept off her feet by the charming Knave of Hearts, who's on the run for stealing the tarts. Confusion piles upon confusion. Then Alice wakes with a start. Was it all a daydream? \r\nChristopher Wheeldon's Alice's Adventures in Wonderland burst onto the stage in 2011 in an explosion of colour, stage magic and inventive, sophisticated choreography. Joby Talbot's score combines contemporary soundworlds with sweeping melodies that gesture to ballet scores of the 19th century. Bob Crowley's wildly imaginative, eye-popping designs draw on everything from puppetry to projections to make Wonderland wonderfully real. The result shows The Royal Ballet at its best, bringing together world-class dance with enchanting family entertainment and ingenious music and design.",
-    "director": "",
-    "title": "Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:39.226710"
+    "cached_at": "2026-08-21T10:19:31.538389"
   },
   "https://wtwcinemas.co.uk/truro/film/5549/renoir-love-exhibition-on-screen": {
     "runtime": "90 min",
@@ -1341,7 +1125,23 @@
     "synopsis": "Pierre-Auguste Renoir is one of the world's favourite artists, a founding member of the Impressionist movement and a constantly evolving artist. With exclusive access to the National Gallery's new exciting show of the same name (3 October 2026 - 31 January 2027), Exhibition on Screen will bring Renoir's world class works to cinema audiences. Be transported back to a Parisian summer of love through the eyes of a true visionary. An unmissable opportunity to fall in love with Renoir this winter.",
     "director": "Ali Ray",
     "title": "Renoir & Love - Exhibition On Screen",
-    "cached_at": "2026-08-20T10:18:39.535024"
+    "cached_at": "2026-08-21T10:19:32.609252"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5561/cos-fan-tutte-royal-ballet-opera-2627-season": {
+    "runtime": "210 min",
+    "cast": "",
+    "synopsis": "Spurred on by a bet, two young men hatch a plan to test the fidelity of their girlfriends. What follows is a slippery game of seduction and power, the four lovers plunging into a dizzying world of shifting reality, where truth becomes increasingly unstable. \r\nCosì fan tutte has lost none of its sting since it first scandalised audiences in 1790. In her Main Stage debut, Netia Jones, Associate Director of The Royal Opera, reimagines Mozart's comedy of manners through a sharp contemporary lens, where 18th-century romantic trickery meets deeply satirical high-tech deceit. Taking on the roles of the lovers is an exciting young cast led by Louise Alder, Simone McIntosh, Mingjie Lei and Huw Montague Rendall, with Gerald Finley as their manipulative game-master Don Alfonso and Emily Pogorelc as Despina. Thomas Hengelbrock conducts, bringing out the exquisite melodies that underpin the provocative, and resolutely modern, themes at the heart of the opera.",
+    "director": "",
+    "title": "Così Fan Tutte - Royal Ballet & Opera 26-27 Season",
+    "cached_at": "2026-08-21T10:19:32.842452"
+  },
+  "https://wtwcinemas.co.uk/st-austell/film/5564/tosca-royal-ballet-opera-2627-season": {
+    "runtime": "195 min",
+    "cast": "",
+    "synopsis": "Floria Tosca and Mario Cavaradossi live for each other and for their art. But when Cavaradossi helps an escaped prisoner, the lovers make a deadly enemy in the form of Baron Scarpia, Chief of Police. At the mercy of Scarpia's twisted desires, Tosca is forced to make a horrific bargain: sleeping with the man she hates, in order to save the man she loves. Can she find a way out?\r\nOliver Mears's acclaimed production returns, setting Puccini's operatic thriller in a contemporary, war-torn Rome. Daniel Oren conducts Aleksandra Kurzak, who returns to the title role, joined by Saimir Pirgu as Cavaradossi and Christopher Maltman as Baron Scarpia.",
+    "director": "",
+    "title": "Tosca - Royal Ballet & Opera 26-27 Season",
+    "cached_at": "2026-08-21T10:19:32.938467"
   },
   "https://wtwcinemas.co.uk/newquay/film/5565/romeo-and-juliet-royal-ballet-opera-2627-season": {
     "runtime": "170 min",
@@ -1349,23 +1149,7 @@
     "synopsis": "The Capulets and Montagues are sworn enemies. Yet it is love at first sight for Romeo Montague and Juliet Capulet when they meet each other at the Capulet ball, into which Romeo has snuck. The two fall in love and they profess their devotion to each other at Juliet's balcony. They secretly get married.   \r\nThe stakes are raised for the young couple when Romeo avenges the death of his friend Mercutio who has been killed by Tybalt, Juliet's cousin. For this, Romeo is exiled from Verona. Meanwhile, Juliet's parents are forcing her to marry another suitor. In order to be together, Romeo and Juliet must risk it all.",
     "director": "",
     "title": "Romeo And Juliet - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:39.613193"
-  },
-  "https://wtwcinemas.co.uk/st-austell/film/5565/romeo-and-juliet-royal-ballet-opera-2627-season": {
-    "runtime": "170 min",
-    "cast": "",
-    "synopsis": "The Capulets and Montagues are sworn enemies. Yet it is love at first sight for Romeo Montague and Juliet Capulet when they meet each other at the Capulet ball, into which Romeo has snuck. The two fall in love and they profess their devotion to each other at Juliet's balcony. They secretly get married.   \r\nThe stakes are raised for the young couple when Romeo avenges the death of his friend Mercutio who has been killed by Tybalt, Juliet's cousin. For this, Romeo is exiled from Verona. Meanwhile, Juliet's parents are forcing her to marry another suitor. In order to be together, Romeo and Juliet must risk it all.",
-    "director": "",
-    "title": "Romeo And Juliet - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:40.822612"
-  },
-  "https://wtwcinemas.co.uk/wadebridge/film/5563/swan-lake-royal-ballet-opera-2627-season": {
-    "runtime": "205 min",
-    "cast": "",
-    "synopsis": "Princess Odette is bound by a curse, turned into a swan by the evil sorcerer Von Rothbart. The spell can only be broken by a pledge of eternal love. When she meets Prince Siegfried, he is immediately enamoured by her fragile beauty and pledges to free her. But freedom is not promised for Odette as Von Rothbart conspires to thwart the lovers' plans.\r\nLiam Scarlett's production for The Royal Ballet brings together Tchaikovsky's towering score and John Macfarlane's picturesque designs to create an enduring ballet spectacle of love, treachery and forgiveness.",
-    "director": "",
-    "title": "Swan Lake - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:40.841223"
+    "cached_at": "2026-08-21T10:19:33.781743"
   },
   "https://wtwcinemas.co.uk/truro/film/5559/la-fanciulla-del-west-royal-ballet-opera-2627-season": {
     "runtime": "195 min",
@@ -1373,15 +1157,31 @@
     "synopsis": "Puccini's exhilarating drama of the Wild West returns in a new staging by celebrated British director Richard Jones, marking the company's first new production of La Fanciulla del West in more than 30 years. Soprano Sondra Radvanovsky adds to her already remarkable Met repertoire, making her role debut as Minnie, the tough tavern owner with a heart of gold who finds love when she least expects it. Tenor SeokJong Baek is the dashing bandit who rambles into the remote California mining town to steal her heart, opposite baritone Christopher Maltman as the lawman determined to deliver rough justice—and win Minnie for himself. Maestro Keri-Lynn Wilson takes the podium to conduct one of opera's most action-packed adventures, live from the Met stage to cinemas worldwide. This production is part of the Met's award-winning Live in HD series, bringing opera to cinemas across the globe.",
     "director": "",
     "title": "La Fanciulla Del West - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:41.153769"
+    "cached_at": "2026-08-21T10:19:35.026742"
   },
-  "https://wtwcinemas.co.uk/wadebridge/film/5564/tosca-royal-ballet-opera-2627-season": {
-    "runtime": "195 min",
+  "https://wtwcinemas.co.uk/wadebridge/film/5562/alices-adventures-in-wonderland-royal-ballet-opera-2627-season": {
+    "runtime": "170 min",
     "cast": "",
-    "synopsis": "Floria Tosca and Mario Cavaradossi live for each other and for their art. But when Cavaradossi helps an escaped prisoner, the lovers make a deadly enemy in the form of Baron Scarpia, Chief of Police. At the mercy of Scarpia's twisted desires, Tosca is forced to make a horrific bargain: sleeping with the man she hates, in order to save the man she loves. Can she find a way out?\r\nOliver Mears's acclaimed production returns, setting Puccini's operatic thriller in a contemporary, war-torn Rome. Daniel Oren conducts Aleksandra Kurzak, who returns to the title role, joined by Saimir Pirgu as Cavaradossi and Christopher Maltman as Baron Scarpia.",
+    "synopsis": "At a garden party on a sunny afternoon, Alice is surprised to see her parents' friend Lewis Carroll transform into a white rabbit. When she follows him down a rabbit hole, events become curiouser and curiouser…As Alice journeys through Wonderland, she encounters countless strange creatures. She's swept off her feet by the charming Knave of Hearts, who's on the run for stealing the tarts. Confusion piles upon confusion. Then Alice wakes with a start. Was it all a daydream? \r\nChristopher Wheeldon's Alice's Adventures in Wonderland burst onto the stage in 2011 in an explosion of colour, stage magic and inventive, sophisticated choreography. Joby Talbot's score combines contemporary soundworlds with sweeping melodies that gesture to ballet scores of the 19th century. Bob Crowley's wildly imaginative, eye-popping designs draw on everything from puppetry to projections to make Wonderland wonderfully real. The result shows The Royal Ballet at its best, bringing together world-class dance with enchanting family entertainment and ingenious music and design.",
     "director": "",
-    "title": "Tosca - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:42.499590"
+    "title": "Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Season",
+    "cached_at": "2026-08-21T10:19:35.091603"
+  },
+  "https://wtwcinemas.co.uk/st-austell/film/5565/romeo-and-juliet-royal-ballet-opera-2627-season": {
+    "runtime": "170 min",
+    "cast": "",
+    "synopsis": "The Capulets and Montagues are sworn enemies. Yet it is love at first sight for Romeo Montague and Juliet Capulet when they meet each other at the Capulet ball, into which Romeo has snuck. The two fall in love and they profess their devotion to each other at Juliet's balcony. They secretly get married.   \r\nThe stakes are raised for the young couple when Romeo avenges the death of his friend Mercutio who has been killed by Tybalt, Juliet's cousin. For this, Romeo is exiled from Verona. Meanwhile, Juliet's parents are forcing her to marry another suitor. In order to be together, Romeo and Juliet must risk it all.",
+    "director": "",
+    "title": "Romeo And Juliet - Royal Ballet & Opera 26-27 Season",
+    "cached_at": "2026-08-21T10:19:35.135898"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5563/swan-lake-royal-ballet-opera-2627-season": {
+    "runtime": "205 min",
+    "cast": "",
+    "synopsis": "Princess Odette is bound by a curse, turned into a swan by the evil sorcerer Von Rothbart. The spell can only be broken by a pledge of eternal love. When she meets Prince Siegfried, he is immediately enamoured by her fragile beauty and pledges to free her. But freedom is not promised for Odette as Von Rothbart conspires to thwart the lovers' plans.\r\nLiam Scarlett's production for The Royal Ballet brings together Tchaikovsky's towering score and John Macfarlane's picturesque designs to create an enduring ballet spectacle of love, treachery and forgiveness.",
+    "director": "",
+    "title": "Swan Lake - Royal Ballet & Opera 26-27 Season",
+    "cached_at": "2026-08-21T10:19:37.350606"
   },
   "https://wtwcinemas.co.uk/truro/film/5560/gtterdmmerung-royal-ballet-opera-2627-season": {
     "runtime": "350 min",
@@ -1389,15 +1189,15 @@
     "synopsis": "An earth in ruin. The twilight of the Gods. \r\nDeception leads to treachery, then devastation, when Siegfried is tricked into betraying Brünnhilde. Learning the truth of her beloved's innocence, Brünnhilde at last returns the ring to the Rhinemaidens, before ordering that Valhalla be swallowed in flames. For the long-awaited finale of Wagner's epic saga, director Barrie Kosky situates the rich apocalyptic drama in a contemporary world of dream-like turmoil. Antonio Pappano, Conductor Laureate of The Royal Opera, returns to take on the impassioned, otherworldly music – including Siegfried's transporting Funeral March and Brünnhilde's electrifying Immolation Scene. The brilliant cast is led by Elisabet Strid, Andreas Schager and Mika Kares, who together with the full forces of the Orchestra of the Royal Opera House and the Royal Opera Chorus bring opera's greatest journey to its shattering end.",
     "director": "",
     "title": "Götterdämmerung - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:42.742803"
+    "cached_at": "2026-08-21T10:19:37.423662"
   },
-  "https://wtwcinemas.co.uk/wadebridge/film/5550/monet-exhibition-on-screen": {
-    "runtime": "90 min",
+  "https://wtwcinemas.co.uk/wadebridge/film/5564/tosca-royal-ballet-opera-2627-season": {
+    "runtime": "195 min",
     "cast": "",
-    "synopsis": "To celebrate Tate Britain's blockbuster Monet and Time exhibition, Exhibition on Screen is delighted to bring the iconic story of Claude Monet to cinema screens in May 2027. Details are still to be fully confirmed for this title, but this will be an unmissable opportunity for audiences to be dazzled by Monet's spectacular and revolutionary use of light and colour and marvel at one of the world's favourite artists.",
+    "synopsis": "Floria Tosca and Mario Cavaradossi live for each other and for their art. But when Cavaradossi helps an escaped prisoner, the lovers make a deadly enemy in the form of Baron Scarpia, Chief of Police. At the mercy of Scarpia's twisted desires, Tosca is forced to make a horrific bargain: sleeping with the man she hates, in order to save the man she loves. Can she find a way out?\r\nOliver Mears's acclaimed production returns, setting Puccini's operatic thriller in a contemporary, war-torn Rome. Daniel Oren conducts Aleksandra Kurzak, who returns to the title role, joined by Saimir Pirgu as Cavaradossi and Christopher Maltman as Baron Scarpia.",
     "director": "",
-    "title": "Monet - Exhibition On Screen",
-    "cached_at": "2026-08-20T10:18:44.066111"
+    "title": "Tosca - Royal Ballet & Opera 26-27 Season",
+    "cached_at": "2026-08-21T10:19:39.634575"
   },
   "https://wtwcinemas.co.uk/truro/film/5561/cos-fan-tutte-royal-ballet-opera-2627-season": {
     "runtime": "210 min",
@@ -1405,15 +1205,15 @@
     "synopsis": "Spurred on by a bet, two young men hatch a plan to test the fidelity of their girlfriends. What follows is a slippery game of seduction and power, the four lovers plunging into a dizzying world of shifting reality, where truth becomes increasingly unstable. \r\nCosì fan tutte has lost none of its sting since it first scandalised audiences in 1790. In her Main Stage debut, Netia Jones, Associate Director of The Royal Opera, reimagines Mozart's comedy of manners through a sharp contemporary lens, where 18th-century romantic trickery meets deeply satirical high-tech deceit. Taking on the roles of the lovers is an exciting young cast led by Louise Alder, Simone McIntosh, Mingjie Lei and Huw Montague Rendall, with Gerald Finley as their manipulative game-master Don Alfonso and Emily Pogorelc as Despina. Thomas Hengelbrock conducts, bringing out the exquisite melodies that underpin the provocative, and resolutely modern, themes at the heart of the opera.",
     "director": "",
     "title": "Così Fan Tutte - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:44.379098"
+    "cached_at": "2026-08-21T10:19:39.861620"
   },
-  "https://wtwcinemas.co.uk/wadebridge/film/5565/romeo-and-juliet-royal-ballet-opera-2627-season": {
-    "runtime": "170 min",
+  "https://wtwcinemas.co.uk/wadebridge/film/5550/monet-exhibition-on-screen": {
+    "runtime": "90 min",
     "cast": "",
-    "synopsis": "The Capulets and Montagues are sworn enemies. Yet it is love at first sight for Romeo Montague and Juliet Capulet when they meet each other at the Capulet ball, into which Romeo has snuck. The two fall in love and they profess their devotion to each other at Juliet's balcony. They secretly get married.   \r\nThe stakes are raised for the young couple when Romeo avenges the death of his friend Mercutio who has been killed by Tybalt, Juliet's cousin. For this, Romeo is exiled from Verona. Meanwhile, Juliet's parents are forcing her to marry another suitor. In order to be together, Romeo and Juliet must risk it all.",
+    "synopsis": "To celebrate Tate Britain's blockbuster Monet and Time exhibition, Exhibition on Screen is delighted to bring the iconic story of Claude Monet to cinema screens in May 2027. Details are still to be fully confirmed for this title, but this will be an unmissable opportunity for audiences to be dazzled by Monet's spectacular and revolutionary use of light and colour and marvel at one of the world's favourite artists.",
     "director": "",
-    "title": "Romeo And Juliet - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:45.744594"
+    "title": "Monet - Exhibition On Screen",
+    "cached_at": "2026-08-21T10:19:41.899932"
   },
   "https://wtwcinemas.co.uk/truro/film/5562/alices-adventures-in-wonderland-royal-ballet-opera-2627-season": {
     "runtime": "170 min",
@@ -1421,7 +1221,15 @@
     "synopsis": "At a garden party on a sunny afternoon, Alice is surprised to see her parents' friend Lewis Carroll transform into a white rabbit. When she follows him down a rabbit hole, events become curiouser and curiouser…As Alice journeys through Wonderland, she encounters countless strange creatures. She's swept off her feet by the charming Knave of Hearts, who's on the run for stealing the tarts. Confusion piles upon confusion. Then Alice wakes with a start. Was it all a daydream? \r\nChristopher Wheeldon's Alice's Adventures in Wonderland burst onto the stage in 2011 in an explosion of colour, stage magic and inventive, sophisticated choreography. Joby Talbot's score combines contemporary soundworlds with sweeping melodies that gesture to ballet scores of the 19th century. Bob Crowley's wildly imaginative, eye-popping designs draw on everything from puppetry to projections to make Wonderland wonderfully real. The result shows The Royal Ballet at its best, bringing together world-class dance with enchanting family entertainment and ingenious music and design.",
     "director": "",
     "title": "Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:46.003577"
+    "cached_at": "2026-08-21T10:19:42.271617"
+  },
+  "https://wtwcinemas.co.uk/wadebridge/film/5565/romeo-and-juliet-royal-ballet-opera-2627-season": {
+    "runtime": "170 min",
+    "cast": "",
+    "synopsis": "The Capulets and Montagues are sworn enemies. Yet it is love at first sight for Romeo Montague and Juliet Capulet when they meet each other at the Capulet ball, into which Romeo has snuck. The two fall in love and they profess their devotion to each other at Juliet's balcony. They secretly get married.   \r\nThe stakes are raised for the young couple when Romeo avenges the death of his friend Mercutio who has been killed by Tybalt, Juliet's cousin. For this, Romeo is exiled from Verona. Meanwhile, Juliet's parents are forcing her to marry another suitor. In order to be together, Romeo and Juliet must risk it all.",
+    "director": "",
+    "title": "Romeo And Juliet - Royal Ballet & Opera 26-27 Season",
+    "cached_at": "2026-08-21T10:19:43.913364"
   },
   "https://wtwcinemas.co.uk/truro/film/5563/swan-lake-royal-ballet-opera-2627-season": {
     "runtime": "205 min",
@@ -1429,7 +1237,7 @@
     "synopsis": "Princess Odette is bound by a curse, turned into a swan by the evil sorcerer Von Rothbart. The spell can only be broken by a pledge of eternal love. When she meets Prince Siegfried, he is immediately enamoured by her fragile beauty and pledges to free her. But freedom is not promised for Odette as Von Rothbart conspires to thwart the lovers' plans.\r\nLiam Scarlett's production for The Royal Ballet brings together Tchaikovsky's towering score and John Macfarlane's picturesque designs to create an enduring ballet spectacle of love, treachery and forgiveness.",
     "director": "",
     "title": "Swan Lake - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:47.742213"
+    "cached_at": "2026-08-21T10:19:44.277224"
   },
   "https://wtwcinemas.co.uk/truro/film/5564/tosca-royal-ballet-opera-2627-season": {
     "runtime": "195 min",
@@ -1437,7 +1245,7 @@
     "synopsis": "Floria Tosca and Mario Cavaradossi live for each other and for their art. But when Cavaradossi helps an escaped prisoner, the lovers make a deadly enemy in the form of Baron Scarpia, Chief of Police. At the mercy of Scarpia's twisted desires, Tosca is forced to make a horrific bargain: sleeping with the man she hates, in order to save the man she loves. Can she find a way out?\r\nOliver Mears's acclaimed production returns, setting Puccini's operatic thriller in a contemporary, war-torn Rome. Daniel Oren conducts Aleksandra Kurzak, who returns to the title role, joined by Saimir Pirgu as Cavaradossi and Christopher Maltman as Baron Scarpia.",
     "director": "",
     "title": "Tosca - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:49.611299"
+    "cached_at": "2026-08-21T10:19:46.420977"
   },
   "https://wtwcinemas.co.uk/truro/film/5550/monet-exhibition-on-screen": {
     "runtime": "90 min",
@@ -1445,7 +1253,7 @@
     "synopsis": "To celebrate Tate Britain's blockbuster Monet and Time exhibition, Exhibition on Screen is delighted to bring the iconic story of Claude Monet to cinema screens in May 2027. Details are still to be fully confirmed for this title, but this will be an unmissable opportunity for audiences to be dazzled by Monet's spectacular and revolutionary use of light and colour and marvel at one of the world's favourite artists.",
     "director": "",
     "title": "Monet - Exhibition On Screen",
-    "cached_at": "2026-08-20T10:18:51.225673"
+    "cached_at": "2026-08-21T10:19:48.480817"
   },
   "https://wtwcinemas.co.uk/truro/film/5565/romeo-and-juliet-royal-ballet-opera-2627-season": {
     "runtime": "170 min",
@@ -1453,6 +1261,6 @@
     "synopsis": "The Capulets and Montagues are sworn enemies. Yet it is love at first sight for Romeo Montague and Juliet Capulet when they meet each other at the Capulet ball, into which Romeo has snuck. The two fall in love and they profess their devotion to each other at Juliet's balcony. They secretly get married.   \r\nThe stakes are raised for the young couple when Romeo avenges the death of his friend Mercutio who has been killed by Tybalt, Juliet's cousin. For this, Romeo is exiled from Verona. Meanwhile, Juliet's parents are forcing her to marry another suitor. In order to be together, Romeo and Juliet must risk it all.",
     "director": "",
     "title": "Romeo And Juliet - Royal Ballet & Opera 26-27 Season",
-    "cached_at": "2026-08-20T10:18:52.794930"
+    "cached_at": "2026-08-21T10:19:50.808533"
   }
 }
