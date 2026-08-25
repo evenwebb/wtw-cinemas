@@ -45,7 +45,7 @@ ICAL_NEWLINE = "\r\n"
 
 
 _CINEMA_PAGE_CSS = (
-    ".page{max-width:860px;margin:0 auto;padding:1.5rem 1rem 4rem}"
+    ".page-cinema{max-width:1100px;margin:0 auto;padding:1.5rem 1rem 4rem}"
     ".back-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1.1rem;background:var(--surface);border:1px solid var(--border);border-radius:100px;color:var(--text-muted);text-decoration:none;font-weight:500;font-size:0.85rem;margin-bottom:2rem;transition:all var(--transition)}"
     ".back-btn:hover{color:var(--accent);border-color:var(--accent);background:var(--accent-dim)}"
     ".cinema-hero{text-align:center;padding:2rem 0 3rem}"
@@ -302,8 +302,8 @@ footer a:hover{color:var(--purple)}
 CSS = _SHARED_CSS + """
 .skip-link{position:absolute;top:-100px;left:1rem;z-index:100;background:var(--accent);color:var(--bg);padding:0.5rem 1.25rem;border-radius:100px;font-weight:600;text-decoration:none;font-size:0.9rem}
 .skip-link:focus{top:1.25rem}
-.page{position:relative;z-index:1;max-width:1100px;margin:0 auto;padding:2rem 1rem 4rem}
-@media(min-width:640px){.page{padding:3rem 2rem 5rem}}
+.page-index{position:relative;z-index:1;max-width:1440px;margin:0 auto;padding:2rem 1rem 4rem}
+@media(min-width:640px){.page-index{padding:3rem 2rem 5rem}}
 .quick-nav{display:flex;flex-wrap:wrap;gap:0.5rem;justify-content:center;margin-bottom:2.5rem;padding-bottom:2rem;border-bottom:1px solid var(--border)}
 .quick-nav a{padding:0.65rem 1.5rem;border-radius:100px;font-size:0.9rem;font-weight:600;text-decoration:none;color:var(--text);background:var(--surface);border:1px solid var(--border);transition:all var(--transition)}
 .quick-nav a:hover,.quick-nav a:focus{color:var(--accent);border-color:var(--accent);background:var(--accent-dim);transform:translateY(-1px);box-shadow:0 4px 12px var(--accent-glow)}
@@ -381,6 +381,7 @@ CSS = _SHARED_CSS + """
 @media(min-width:480px){.ns-poster-grid{grid-template-columns:repeat(3,1fr);gap:1rem}}
 @media(min-width:768px){.ns-poster-grid{grid-template-columns:repeat(4,1fr);gap:1.25rem}}
 @media(min-width:1024px){.ns-poster-grid{grid-template-columns:repeat(5,1fr);gap:1.5rem}}
+@media(min-width:1280px){.ns-poster-grid{grid-template-columns:repeat(6,1fr);gap:1.75rem}}
 .ns-poster-card{display:block;text-decoration:none;border-radius:12px;overflow:hidden;transition:transform 0.2s,box-shadow 0.2s;background:var(--surface);border:1px solid var(--border)}
 .ns-poster-card:hover{transform:translateY(-4px);box-shadow:0 8px 25px rgba(0,0,0,0.4);border-color:var(--accent)}
 .ns-poster-wrap{position:relative;aspect-ratio:2/3;overflow:hidden;background:var(--surface-2)}
@@ -453,6 +454,8 @@ CSS = _SHARED_CSS + """
 #coming-soon.poster-view .film-browse-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0.75rem}
 @media(min-width:480px){#coming-soon.poster-view .film-browse-grid{grid-template-columns:repeat(3,1fr);gap:1rem}}
 @media(min-width:768px){#coming-soon.poster-view .film-browse-grid{grid-template-columns:repeat(4,1fr);gap:1.25rem}}
+@media(min-width:1024px){#coming-soon.poster-view .film-browse-grid{grid-template-columns:repeat(5,1fr);gap:1.5rem}}
+@media(min-width:1280px){#coming-soon.poster-view .film-browse-grid{grid-template-columns:repeat(6,1fr);gap:1.75rem}}
 #coming-soon.poster-view .film-card-full{display:block;padding:0;border:none;background:none}
 #coming-soon.poster-view .film-card-full:hover{transform:none;box-shadow:none}
 #coming-soon.poster-view .fc-poster{width:100%;height:auto;aspect-ratio:2/3;border-radius:12px}
@@ -543,9 +546,6 @@ def build_index_html(
     all_films_list = sorted(film_entries.values(), key=lambda f: f["release_date"])
 
     today = date.today()
-    cutoff = today - timedelta(days=14)
-    now_showing = [f for f in all_films_list if cutoff <= f["release_date"] <= today]
-    now_showing.sort(key=lambda f: f["release_date"], reverse=True)
     coming_soon = [f for f in all_films_list if f["release_date"] > today]
 
     cinema_slugs = list(enabled_cinemas.keys())
@@ -632,7 +632,6 @@ def build_index_html(
             f'</article>'
         )
 
-    now_cards = "\n".join(_film_card(f) for f in now_showing)
     coming_cards = "\n".join(_film_card(f) for f in coming_soon)
 
     # ── Now Showing poster grid (from whats-on data) ──────────────────────────
@@ -701,16 +700,9 @@ def build_index_html(
             f'    <section class="film-section poster-view" id="now-showing-live">\n'
             f'      <div class="section-header"><h2>Now Showing</h2><div style="display:flex;align-items:center;gap:0.75rem"><span class="count">{len(now_showing_live)} films</span><button type="button" id="ns-view-toggle" class="view-toggle-btn">☰ List</button></div></div>\n'
             f'      <div class="ns-poster-grid">\n' + "\n".join(poster_cards) + f'\n      </div>\n'
-            f'      <div class="ns-list-grid" style="display:none">\n' + "\n".join(list_cards) + f'\n      </div>\n'
+            f'      <div class="ns-list-grid">\n' + "\n".join(list_cards) + f'\n      </div>\n'
             f'    </section>\n\n'
         )
-
-    now_html = (
-        f'    <section class="film-section" id="now-showing">\n'
-        f'      <div class="section-header"><h2>Now Showing</h2><span class="count">{len(now_showing)} films</span></div>\n'
-        f'      <div class="film-browse-grid">\n{now_cards}\n      </div>\n'
-        f'    </section>\n\n'
-    ) if now_showing else ""
 
     coming_html = (
         f'    <section class="film-section" id="coming-soon">\n'
@@ -825,7 +817,7 @@ def build_index_html(
         '</head>\n<body>\n'
         '  <a href="#main-content" class="skip-link">Skip to content</a>\n'
         '  <div class="bg-mesh" aria-hidden="true"></div>\n'
-        '  <div class="page" id="main-content">\n'
+        '  <div class="page page-index" id="main-content">\n'
         '    <header class="hero">\n'
         ''
         '      <h1>What\'s on at WTW Cinemas</h1>\n'
@@ -964,15 +956,19 @@ def build_index_html(
         '    var section=document.getElementById(sectionId);\n'
         '    if(!toggle||!section)return;\n'
         '    var storageKey="wtw-view-"+sectionId;\n'
-        '    var isPoster=section.classList.contains("poster-view");\n'
-        '    if(localStorage.getItem(storageKey)==="cards"){\n'
-        '      section.classList.remove("poster-view");\n'
-        '      toggle.textContent=defaultPoster?"▦ Posters":"☰ Cards";\n'
+        '    var listLabel=defaultPoster?"☰ List":"☰ Cards";\n'
+        '    var posterLabel="▦ Posters";\n'
+        '    function apply(poster){\n'
+        '      if(poster){section.classList.add("poster-view");}else{section.classList.remove("poster-view");}\n'
+        '      toggle.textContent=poster?listLabel:posterLabel;\n'
         '    }\n'
+        '    var saved=localStorage.getItem(storageKey);\n'
+        '    var poster=saved===null?defaultPoster:(saved==="posters");\n'
+        '    apply(poster);\n'
         '    toggle.addEventListener("click",function(){\n'
-        '      var nowPoster=section.classList.toggle("poster-view");\n'
-        '      toggle.textContent=nowPoster?(defaultPoster?"☰ List":"☰ Cards"):(defaultPoster?"▦ Posters":"▦ Posters");\n'
-        '      localStorage.setItem(storageKey,nowPoster?"posters":"cards");\n'
+        '      poster=!poster;\n'
+        '      apply(poster);\n'
+        '      localStorage.setItem(storageKey,poster?"posters":"cards");\n'
         '    });\n'
         '  }\n'
         '  setupViewToggle("ns-view-toggle","now-showing-live",true);\n'
@@ -1056,7 +1052,7 @@ def build_cinema_page(
         '  <link rel="stylesheet" href="style.css">\n'
         '</head>\n<body>\n'
         '  <div class="bg-mesh" aria-hidden="true"></div>\n'
-        '  <div class="page">\n'
+        '  <div class="page page-cinema">\n'
         '    <a href="./" class="back-btn">← All</a>\n'
         f'    <header class="cinema-hero">\n'
         f'      <h1>WTW {cinema_info["name"]}</h1>\n'
@@ -1193,8 +1189,8 @@ body{position:relative;background:var(--bg)}
 .film-backdrop{position:absolute;top:0;left:0;width:100%;height:420px;overflow:hidden;z-index:0}
 .film-backdrop .backdrop-bg{width:100%;height:100%;object-fit:cover;opacity:0.35}
 .film-backdrop-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,var(--bg) 95%)}
-.page{position:relative;z-index:1;max-width:960px;margin:0 auto;padding:2rem 1rem 4rem}
-@media(min-width:640px){.page{padding:2.5rem 2rem 5rem}}
+.page-film{position:relative;z-index:1;max-width:1200px;margin:0 auto;padding:2rem 1rem 4rem}
+@media(min-width:640px){.page-film{padding:2.5rem 2rem 5rem}}
 .back-btn{display:inline-flex;align-items:center;gap:0.4rem;padding:0.5rem 1.1rem;background:rgba(0,0,0,0.45);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.1);border-radius:100px;color:#fff;text-decoration:none;font-weight:500;font-size:0.85rem;position:absolute;top:1rem;left:1rem;z-index:10;transition:all var(--transition)}
 @media(min-width:640px){.back-btn{top:1.5rem;left:2rem}}
 .back-btn:hover{background:rgba(0,0,0,0.65);border-color:rgba(255,255,255,0.2);color:#fff}
@@ -1651,7 +1647,7 @@ def build_film_page(
         '  <div class="bg-mesh" aria-hidden="true"></div>\n'
         + backdrop_html +
         '  <a href="../" class="back-btn">← Back to all premieres</a>\n'
-        '  <div class="page">\n'
+        '  <div class="page page-film">\n'
         f'    <div class="film-layout">\n'
         f'      {poster_col}\n'
         f'      {info_col}\n'
