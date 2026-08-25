@@ -54,8 +54,8 @@ MAX_WORKERS = min(4, os.cpu_count() or 4)
 
 # Import shared constants from the split-out module
 from shared_constants import (  # noqa: E402
-    _tmdb_cache_key, BBFC_PATTERN, CERT_IMAGES, CERTS_DIR, CINEMA_ADDRESSES,
-    FINGERPRINT_FILE, HEALTH_MIN_CINEMAS, HEALTH_MIN_FILMS,
+    _tmdb_cache_key, BBFC_PATTERN, CERT_CDN_MAP, CERT_IMAGES, CERTS_DIR,
+    CINEMA_ADDRESSES, FINGERPRINT_FILE, HEALTH_MIN_CINEMAS, HEALTH_MIN_FILMS,
     ICAL_LINE_LENGTH, NOTIFICATIONS, NOTIFICATION_TIME,
     POSTERS_DIR, SKIP_TMDB_TERMS, WTW_CERT_BASE,
 )
@@ -565,7 +565,7 @@ def extract_films(
             if cert_img:
                 cert_src = cert_img.get("src", "")
                 for cert_name, cert_file in CERT_IMAGES.items():
-                    if cert_file in cert_src:
+                    if cert_file in cert_src or CERT_CDN_MAP.get(cert_file, "") in cert_src:
                         bbfc_rating = cert_name
                         break
                 if bbfc_rating:
@@ -753,7 +753,7 @@ def scrape_cinema_whats_on(
         if cert_img:
             cert_src = cert_img.get("src", "")
             for cert_name, cert_file in CERT_IMAGES.items():
-                if cert_file in cert_src:
+                if cert_file in cert_src or CERT_CDN_MAP.get(cert_file, "") in cert_src:
                     bbfc = cert_name
                     break
 
@@ -815,13 +815,15 @@ def scrape_cinema_whats_on(
                     screen = int(screen_match.group(1))
                     break
 
-            # Booking URL
+            # Booking URL — skip sold-out/disabled showings (javascript:void(0);)
             booking_url = ""
             book_link = perf_block.select_one("a.hiddenbox-wrapper-link")
-            if book_link:
-                booking_url = book_link.get("href", "")
-                if booking_url and not booking_url.startswith("http"):
-                    booking_url = WTW_BASE_URL + booking_url
+            if book_link and "disabled" not in book_link.get("class", []):
+                href = book_link.get("href", "")
+                if href and not href.startswith("javascript:"):
+                    booking_url = href
+                    if not booking_url.startswith("http"):
+                        booking_url = WTW_BASE_URL + booking_url
 
             # Accessibility tags from CSS classes
             cls_list = perf_block.get("class", [])
