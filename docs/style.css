@@ -170,13 +170,16 @@ footer a:hover{color:var(--gold-bright)}
 @media(min-width:768px){#coming-soon.poster-view .film-browse-grid{grid-template-columns:repeat(4,1fr);gap:1.25rem}}
 @media(min-width:1024px){#coming-soon.poster-view .film-browse-grid{grid-template-columns:repeat(5,1fr);gap:1.5rem}}
 @media(min-width:1280px){#coming-soon.poster-view .film-browse-grid{grid-template-columns:repeat(6,1fr);gap:1.75rem}}
-#coming-soon.poster-view .film-card-full{display:block;padding:0;border:none;background:none}
-#coming-soon.poster-view .film-card-full:hover{transform:none;box-shadow:none}
-#coming-soon.poster-view .fc-poster{width:100%;height:auto;aspect-ratio:2/3;border-radius:12px}
-#coming-soon.poster-view .fc-info{display:none}
-#coming-soon.poster-view .fc-poster img{border-radius:12px}
+#coming-soon.poster-view .film-card-full{display:flex;flex-direction:column;padding:0.55rem;background:var(--surface);border:1px solid var(--border);border-radius:12px;transition:transform 0.2s,box-shadow 0.2s,border-color var(--transition)}
+#coming-soon.poster-view .film-card-full:hover{transform:translateY(-4px);box-shadow:0 8px 25px rgba(0,0,0,0.4);border-color:rgba(226,114,60,0.4)}
+#coming-soon.poster-view .fc-poster{order:0;width:100%;height:auto;aspect-ratio:2/3;border-radius:10px}
+#coming-soon.poster-view .fc-poster img{border-radius:10px}
+#coming-soon.poster-view .fc-info{order:1;display:block;min-width:0}
+#coming-soon.poster-view .fc-info h3{font-size:0.78rem;font-weight:600;line-height:1.25;padding:0.5rem 0.15rem 0;margin:0;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#coming-soon.poster-view .fc-info h3 a{color:var(--text)}
+#coming-soon.poster-view .fc-meta,#coming-soon.poster-view .fc-synopsis,#coming-soon.poster-view .fc-showings{display:none}
 #coming-soon .fc-airing-date{display:none}
-#coming-soon.poster-view .fc-airing-date{display:block;margin-top:0.55rem;text-align:center;font-size:0.82rem;font-weight:600;color:var(--text-muted)}
+#coming-soon.poster-view .fc-airing-date{order:2;display:block;text-align:center;font-size:0.78rem;font-weight:500;color:var(--accent)}
 /* Calendar promo banner */
 .calendar-promo{display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.55rem 1rem;background:rgba(20,18,16,0.72);border-bottom:1px solid var(--border);text-decoration:none;margin:0;position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:0}
 .calendar-promo:hover{border-bottom-color:var(--accent);box-shadow:0 2px 15px var(--accent-glow)}
