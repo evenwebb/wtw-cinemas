@@ -1575,6 +1575,10 @@ def main() -> None:
             showtimes=film_showtimes or None
         )
         _atomic_write_text(films_dir / f"{slug}.html", page_html)
+    current_film_slugs = set(film_pages.keys())
+    for stale_page in films_dir.glob("*.html"):
+        if stale_page.stem not in current_film_slugs:
+            stale_page.unlink()
     logger.info("Wrote %d film detail pages to %s/films/", len(film_pages), OUTPUT_DIR)
 
     # ── Rebuild index with TMDb-enriched film_pages data ──────────────────────
