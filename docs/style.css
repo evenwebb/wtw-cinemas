@@ -241,7 +241,7 @@ body{position:relative;background:var(--bg)}
 @media(max-width:680px){.film-layout{flex-direction:column;align-items:center;text-align:center}}
 .film-poster{flex-shrink:0;width:250px;position:sticky;top:1.5rem}
 @media(max-width:680px){.film-poster{width:200px;position:static}}
-.film-poster img{width:100%;border-radius:14px;box-shadow:0 12px 45px rgba(0,0,0,0.6);display:block}
+.film-poster img{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:14px;box-shadow:0 12px 45px rgba(0,0,0,0.6);display:block}
 .film-poster .no-poster{width:100%;aspect-ratio:2/3;background:linear-gradient(160deg,var(--accent-dim),rgba(226,114,60,0.05) 55%,var(--surface-2));border-radius:14px;display:flex;align-items:flex-start;justify-content:flex-start;text-align:left;font-family:var(--font-display);font-weight:600;font-size:1.05rem;line-height:1.3;color:var(--text);padding:1rem;box-sizing:border-box;border:1px dashed var(--border)}
 .film-details{flex:1;min-width:0}
 .film-details h1{font-family:var(--font-display);font-size:clamp(1.7rem,5vw,2.6rem);font-weight:600;line-height:1.05;margin-bottom:0.6rem;color:var(--text);letter-spacing:-0.01em}
