@@ -9,7 +9,7 @@ h1,h2,h3{font-family:var(--font-display);font-weight:600;letter-spacing:-0.01em}
 .card .btn,.act-btn,.promo-cta{font-family:var(--font-label);font-weight:400;letter-spacing:0.05em}
 @keyframes pageIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .page{animation:pageIn 0.4s ease-out}
-.bg-mesh{position:fixed;inset:0;overflow:hidden;background:radial-gradient(ellipse 80% 60% at 50% -20%,rgba(226,114,60,0.1) 0%,transparent 50%),radial-gradient(ellipse 50% 40% at 80% 90%,rgba(226,114,60,0.08) 0%,transparent 50%);pointer-events:none;z-index:0}
+.bg-mesh{position:fixed;inset:0;overflow:hidden;background:radial-gradient(ellipse 80% 60% at 50% -20%,rgba(242,237,227,0.035) 0%,transparent 55%);pointer-events:none;z-index:0}
 footer{text-align:center;padding:2.5rem 2rem;color:var(--text-muted);font-size:0.85rem;border-top:1px solid rgba(242,237,227,0.08);margin-top:4rem}
 footer a{color:var(--accent);text-decoration:none;font-weight:500}
 footer a:hover{color:var(--gold-bright)}
@@ -45,7 +45,7 @@ footer a:hover{color:var(--gold-bright)}
 .card-icon{width:52px;height:52px;background:var(--accent-dim);border-radius:14px;display:flex;align-items:center;justify-content:center;margin:0 auto 1rem;font-size:1.5rem}
 .card h2{font-size:1.15rem;font-weight:700;margin-bottom:0.25rem;text-align:center}
 .card .meta{font-size:0.85rem;color:var(--text-muted);margin-bottom:1.25rem;text-align:center}
-.card .btn{display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;width:100%;padding:0.75rem 1.25rem;background:linear-gradient(135deg,var(--gold-bright),var(--gold-deep));color:#141210;font-weight:400;font-size:1rem;border-radius:12px;text-decoration:none;letter-spacing:0.06em}
+.card .btn{display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;width:100%;padding:0.75rem 1.25rem;background:var(--accent);color:#141210;font-weight:400;font-size:1rem;border-radius:12px;text-decoration:none;letter-spacing:0.06em}
 @media(prefers-reduced-motion:no-preference){.card .btn{transition:transform var(--transition),box-shadow var(--transition),opacity var(--transition)}}
 .card .btn:hover{transform:scale(1.02);box-shadow:0 6px 25px var(--accent-glow)}
 .card .btn:active{transform:scale(0.98)}
@@ -121,7 +121,7 @@ footer a:hover{color:var(--gold-bright)}
 @media(min-width:768px){.film-card-full .fc-info h3{font-size:1.2rem}}
 .film-card-full .fc-info h3 a{color:var(--text);text-decoration:none}
 .film-card-full .fc-info h3 a:hover{color:var(--accent)}
-.new-badge{display:inline-block;font-size:0.62rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;padding:0.15rem 0.45rem;border-radius:100px;background:linear-gradient(135deg,var(--amber),#f08a52);color:#141210;vertical-align:middle;margin-left:0.3rem}
+.new-badge{display:inline-block;font-size:0.62rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;padding:0.15rem 0.45rem;border-radius:100px;background:var(--accent);color:#141210;vertical-align:middle;margin-left:0.3rem}
 .screening-badge{display:inline-block;font-size:0.62rem;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;padding:0.15rem 0.5rem;border-radius:100px;background:rgba(226,114,60,0.15);color:var(--accent);vertical-align:middle;margin-left:0.3rem}
 .fc-screening-banner{font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;padding:0.35rem 1rem;margin:-1.25rem -1.25rem 0.75rem -1.25rem;border-radius:12px 12px 0 0;text-align:center}
 .fc-screening-banner.rbo{background:linear-gradient(135deg,rgba(248,113,113,0.2),rgba(248,113,113,0.06));color:#f87171;border-bottom:1px solid rgba(248,113,113,0.2)}
@@ -178,18 +178,18 @@ footer a:hover{color:var(--gold-bright)}
 #coming-soon.poster-view .fc-info{display:none}
 #coming-soon.poster-view .fc-poster img{border-radius:12px}
 /* Calendar promo banner */
-.calendar-promo{display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.55rem 1rem;background:linear-gradient(135deg,rgba(226,114,60,0.16),rgba(226,114,60,0.12));border-bottom:1px solid rgba(226,114,60,0.25);text-decoration:none;margin:0;position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:0}
+.calendar-promo{display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.55rem 1rem;background:rgba(20,18,16,0.72);border-bottom:1px solid var(--border);text-decoration:none;margin:0;position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:0}
 .calendar-promo:hover{border-bottom-color:var(--accent);box-shadow:0 2px 15px var(--accent-glow)}
 .promo-icon{font-size:1.2rem;flex-shrink:0}
 .promo-text{font-weight:500;color:var(--text);flex:1;text-align:center}
 .promo-text-full{font-size:0.88rem}
 .promo-text-short{font-size:0.82rem;display:none}
-.promo-cta{font-size:0.74rem;font-weight:400;color:#141210;background:linear-gradient(135deg,var(--gold-bright),var(--gold-deep));padding:0.35rem 0.85rem;border-radius:100px;white-space:nowrap;animation:bounce-down 1.5s infinite;flex-shrink:0;letter-spacing:0.05em}
+.promo-cta{font-size:0.74rem;font-weight:400;color:#141210;background:var(--accent);padding:0.35rem 0.85rem;border-radius:100px;white-space:nowrap;animation:bounce-down 1.5s infinite;flex-shrink:0;letter-spacing:0.05em}
 @keyframes bounce-down{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
 @media(max-width:600px){.calendar-promo{padding:0.45rem 0.75rem;gap:0.4rem}.promo-text-full{display:none}.promo-text-short{display:inline}.promo-cta{font-size:0.68rem;padding:0.3rem 0.7rem}}
 /* Calendar CTA section */
-.calendar-cta{background:linear-gradient(160deg,rgba(226,114,60,0.07) 0%,rgba(226,114,60,0.09) 50%,rgba(226,114,60,0.03) 100%);border:1px solid rgba(226,114,60,0.2);border-radius:18px;padding:1.5rem;text-align:center;margin:3rem 0 2rem;position:relative;overflow:hidden}
-.calendar-cta::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--accent),var(--red),var(--accent),transparent)}
+.calendar-cta{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:1.5rem;text-align:center;margin:3rem 0 2rem;position:relative;overflow:hidden}
+.calendar-cta::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--accent)}
 @media(min-width:640px){.calendar-cta{padding:2.5rem;margin:4rem 0 3rem}}
 .cta-header{display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem;text-align:left;justify-content:center;flex-wrap:wrap}
 @media(min-width:640px){.cta-header{margin-bottom:2rem}}
@@ -254,7 +254,7 @@ body{position:relative;background:var(--bg)}
 .action-right{display:flex;flex-wrap:wrap;gap:0.4rem}
 .act-btn{display:inline-flex;align-items:center;gap:0.3rem;padding:0.5rem 0.85rem;border-radius:100px;text-decoration:none;font-size:0.8rem;font-weight:600;transition:all var(--transition);white-space:nowrap}
 .act-btn:hover{transform:translateY(-1px)}
-.act-cal{background:linear-gradient(135deg,var(--gold-bright),var(--gold-deep));color:#141210;box-shadow:0 2px 10px rgba(226,114,60,0.25)}
+.act-cal{background:var(--accent);color:#141210;box-shadow:0 2px 10px rgba(226,114,60,0.25)}
 .act-cal:hover{box-shadow:0 4px 18px rgba(226,114,60,0.4);color:#141210}
 .act-imdb,.act-rt,.act-trakt{background:transparent;border:1px solid var(--border);color:var(--text-muted)}
 .act-imdb:hover{background:#f5c518;color:#000;border-color:#f5c518}
@@ -324,7 +324,7 @@ tr.nearest-cinema-row td:first-child{border-left:3px solid var(--accent)}
 .cinema-table .tag-badge[title*="Event"]{color:#f87171;background:rgba(248,113,113,0.12)}
 .cinema-table .cinema-cell{font-weight:500;color:var(--text)}
 .cinema-table .book-cell{text-align:right;white-space:nowrap}
-.cinema-table .table-book-btn{display:inline-block;padding:0.35rem 0.7rem;background:linear-gradient(135deg,var(--gold-bright),var(--gold-deep));color:#141210;font-weight:600;font-size:0.72rem;border-radius:8px;text-decoration:none;transition:transform var(--transition),box-shadow var(--transition)}
+.cinema-table .table-book-btn{display:inline-block;padding:0.35rem 0.7rem;background:var(--accent);color:#141210;font-weight:600;font-size:0.72rem;border-radius:8px;text-decoration:none;transition:transform var(--transition),box-shadow var(--transition)}
 @media(min-width:600px){.cinema-table .table-book-btn{font-size:0.78rem;padding:0.4rem 0.9rem}}
 .cinema-table .table-book-btn:hover{transform:scale(1.04);box-shadow:0 4px 15px var(--accent-glow)}
 .cert{display:inline-block;width:28px;height:28px;background-position:center;background-repeat:no-repeat;background-size:contain;vertical-align:middle;margin-left:0.4rem}
