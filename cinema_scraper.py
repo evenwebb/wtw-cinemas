@@ -118,6 +118,42 @@ def extract_screening_label(title: str):
             return cleaned, ""
     return title, ""
 
+
+# Screening labels that denote alternative/event content — the film *is* the
+# event (opera, ballet, theatre, concert, Q&A) as opposed to a Hollywood film
+# shown in a special format (Toddler Cinema, Silver Screen, Double Bill, etc.).
+EVENT_CINEMA_SCREENINGS = {"NT Live", "RBO", "Event Cinema", "Q&A"}
+
+# Extra title hints for alternative content that carries no screening label.
+# Covers the RBO / NT Live / exhibition / concert patterns WTW actually lists,
+# plus the shared Merlin-style hints. ("Music" TMDb genre is deliberately
+# ignored: it also covers Hollywood musicals like La La Land, which must stay
+# under Now Showing.)
+EVENT_CINEMA_TITLE_HINTS = (
+    "concert", "met opera", "royal opera", "royal ballet", "bolshoi",
+    "glyndebourne", "encore", "rieu",
+    "national theatre live", "nt live", "exhibition on screen",
+    "the musical", "the play", "q&a",
+)
+
+
+def _is_event_cinema(title: str, screening: str = "", categories=None, showtimes=None) -> bool:
+    """Classify a now-showing film as event cinema / special content vs a
+    regular Hollywood release. Uses the screening label, WTW's own per-showtime
+    "Event cinema" tag, then falls back to title hints."""
+    if screening in EVENT_CINEMA_SCREENINGS:
+        return True
+    if "Event Cinema" in (categories or []):
+        return True
+    for st in (showtimes or []):
+        for tag in (st.get("tags") or []):
+            if "event cinema" in (tag or "").lower():
+                return True
+    tl = (title or "").lower()
+    if any(hint in tl for hint in EVENT_CINEMA_TITLE_HINTS):
+        return True
+    return False
+
 # Non-film events to skip TMDb enrichment entirely
 SKIP_TMDB_TERMS = [
     "live nation", "tribute", "comedy club", "pantomime", "panto",
@@ -1424,11 +1460,14 @@ def main() -> None:
             all_st.extend(wf.get("showtimes", []))
         if not all_st:
             continue
-        # Film is "now showing" if it has any showtimes this week
+        # Film is "now showing" if it has any showtimes this week; event
+        # cinema (opera, ballet, theatre, concert, Q&A) is surfaced even
+        # when its next date is further out so it can be split out below.
         min_date = min(st["date"] for st in all_st)
         max_date = max(st["date"] for st in all_st)
-        has_screening = bool(wf_list[0].get("screening", ""))
-        if min_date > today + timedelta(days=7) and not has_screening:
+        screening = extract_screening_label(wf_list[0]["title"])[1]
+        is_event = _is_event_cinema(wf_list[0]["title"], screening, None, all_st)
+        if min_date > today + timedelta(days=7) and not is_event:
             continue
         cinemas_set = sorted(set(st.get("cinema_name", "") for st in all_st))
         slug = _tmdb_cache_key(wf_list[0]["title"])
@@ -1453,13 +1492,15 @@ def main() -> None:
             "showtimes": all_st,
             "min_date": min_date,
             "poster": poster,
-            "screening": wf_list[0].get("screening", ""),
+            "screening": screening,
+            "is_event": is_event,
         })
     now_showing_films.sort(key=lambda f: (f["min_date"], f["title"]))
 
-    # ── Special Events ─────────────────────────────────────────────────────
-    special_events = [f for f in now_showing_films if f.get("screening")]
+    # ── Special Events / Hollywood split ─────────────────────────────────────
+    special_events = [f for f in now_showing_films if f.get("is_event")]
     special_events.sort(key=lambda f: (f.get("screening", ""), f["min_date"]))
+    now_showing_hollywood = [f for f in now_showing_films if not f.get("is_event")]
 
     # ── Enrich now-showing films with TMDb posters ───────────────────────────
     for f in now_showing_films:
@@ -1606,8 +1647,36 @@ def main() -> None:
                     "release_date": rd,
                 })
     enriched_all_films.sort(key=lambda f: (f["release_date"], f["title"]))
+
+    # ── Special Events from the full coming-soon list ───────────────────────
+    # wtw's event cinema (opera, ballet, theatre, concert, exhibition, NT Live,
+    # RBO) films only appear in the full film list scraped for Coming Soon, not
+    # in the current-week whats-on feed. Classify them here so they surface in
+    # their own Special Events section below Now Showing instead of being
+    # buried in Coming Soon.
+    _today = date.today()
+    _se_slugs = {f["slug"] for f in special_events}
+    for f in enriched_all_films:
+        if f["release_date"] < _today:
+            continue
+        if f["slug"] in _se_slugs:
+            continue
+        d = f.get("details", {})
+        screening = d.get("screening", "")
+        if not _is_event_cinema(f["title"], screening, d.get("categories"), None):
+            continue
+        special_events.append({
+            "title": f["title"],
+            "slug": f["slug"],
+            "poster": d.get("poster_url"),
+            "screening": screening or "Event Cinema",
+            "min_date": f["release_date"],
+        })
+        _se_slugs.add(f["slug"])
+    special_events.sort(key=lambda f: (f.get("screening", ""), f.get("min_date", date.min)))
+
     html = build_index_html(enabled_cinemas, enriched_by_cinema, stats=stats,
-                            now_showing_live=now_showing_films,
+                            now_showing_live=now_showing_hollywood,
                             special_events=special_events,
                             new_slugs=new_slugs)
     _atomic_write_text(out_dir / "index.html", html)

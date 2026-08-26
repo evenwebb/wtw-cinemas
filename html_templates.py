@@ -566,6 +566,11 @@ def build_index_html(
 
     today = date.today()
     coming_soon = [f for f in all_films_list if f["release_date"] > today]
+    # Don't duplicate special events (opera/ballet/theatre/concert/etc.) that
+    # are already surfaced in their own section below Now Showing.
+    if special_events:
+        _special_slugs = {f["slug"] for f in special_events}
+        coming_soon = [f for f in coming_soon if f["slug"] not in _special_slugs]
 
     cinema_slugs = list(enabled_cinemas.keys())
     cinema_names = list(enabled_cinemas.values())
@@ -662,7 +667,7 @@ def build_index_html(
             poster = se.get("poster") or ""
             slug = se["slug"]
             title = se["title"]
-            screening = se.get("screening", "")
+            screening = se.get("screening", "") or "Event Cinema"
             banner_class = screening.lower().replace(" ", "-").replace("&", "")
             se_cards.append(
                 f'<a href="films/{slug}.html" class="ns-poster-card">\n'
@@ -847,10 +852,11 @@ def build_index_html(
         + calendar_promo +
         (
             f'    <nav class="quick-nav" aria-label="Jump to section">\n'
-            f'      <a href="#now-showing-live">Now Showing</a>\n'
-            f'      <a href="#coming-soon">Coming Soon</a>\n'
-            f'      <a href="#subscribe">Subscribe</a>\n'
-            f'    </nav>\n\n'
+            + f'      <a href="#now-showing-live">Now Showing</a>\n'
+            + (f'      <a href="#special-events">Special Events</a>\n' if special_events else '')
+            + f'      <a href="#coming-soon">Coming Soon</a>\n'
+            + f'      <a href="#subscribe">Subscribe</a>\n'
+            + f'    </nav>\n\n'
         ) +
         '    <div class="cinema-filter" role="group" aria-label="Filter by cinema">\n'
         f'        {filter_html}'
