@@ -463,6 +463,8 @@ CSS = _SHARED_CSS + """
 #coming-soon.poster-view .fc-poster{width:100%;height:auto;aspect-ratio:2/3;border-radius:12px}
 #coming-soon.poster-view .fc-info{display:none}
 #coming-soon.poster-view .fc-poster img{border-radius:12px}
+#coming-soon .fc-airing-date{display:none}
+#coming-soon.poster-view .fc-airing-date{display:block;margin-top:0.55rem;text-align:center;font-size:0.82rem;font-weight:600;color:var(--text-muted)}
 /* Calendar promo banner */
 .calendar-promo{display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.55rem 1rem;background:rgba(20,18,16,0.72);border-bottom:1px solid var(--border);text-decoration:none;margin:0;position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:0}
 .calendar-promo:hover{border-bottom-color:var(--accent);box-shadow:0 2px 15px var(--accent-glow)}
@@ -634,6 +636,9 @@ def build_index_html(
             )
         showings_html = "\n".join(showing_lines)
 
+        rd = f["release_date"]
+        airing_str = rd.strftime("%a %d %b") if rd.year == today.year else rd.strftime("%a %d %b %Y")
+
         meta_html = "".join(f"      {p}\n" for p in meta_parts)
         synopsis_html = f'    <p class="fc-synopsis">{_esc(overview[:280])} <a href="films/{slug}.html">More →</a></p>\n' if overview else ''
 
@@ -641,6 +646,7 @@ def build_index_html(
             f'<article class="film-card-full" data-date="{f["release_date"].isoformat()}" data-cinemas="{_esc(cinemas_data)}">\n'
             + scrn_banner +
             f'  <div class="fc-poster">{poster_html}</div>\n'
+            f'  <div class="fc-airing-date">{airing_str}</div>\n'
             f'  <div class="fc-info">\n'
             f'    <h3><a href="films/{slug}.html">{_esc(f["title"])}{" <span class=\"new-badge\">New</span>" if new_slugs and slug in new_slugs else ""}{scrn_badge}</a></h3>\n'
             f'    <div class="fc-meta">\n'

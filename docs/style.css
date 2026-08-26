@@ -175,6 +175,8 @@ footer a:hover{color:var(--gold-bright)}
 #coming-soon.poster-view .fc-poster{width:100%;height:auto;aspect-ratio:2/3;border-radius:12px}
 #coming-soon.poster-view .fc-info{display:none}
 #coming-soon.poster-view .fc-poster img{border-radius:12px}
+#coming-soon .fc-airing-date{display:none}
+#coming-soon.poster-view .fc-airing-date{display:block;margin-top:0.55rem;text-align:center;font-size:0.82rem;font-weight:600;color:var(--text-muted)}
 /* Calendar promo banner */
 .calendar-promo{display:flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.55rem 1rem;background:rgba(20,18,16,0.72);border-bottom:1px solid var(--border);text-decoration:none;margin:0;position:fixed;top:0;left:0;right:0;z-index:50;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:0}
 .calendar-promo:hover{border-bottom-color:var(--accent);box-shadow:0 2px 15px var(--accent-glow)}
