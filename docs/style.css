@@ -298,9 +298,9 @@ body{position:relative;background:var(--bg)}
 .cinema-table tbody td{padding:0.5rem 0.5rem;border-bottom:1px solid var(--border);vertical-align:middle}
 @media(min-width:600px){.cinema-table tbody td{padding:0.6rem 0.75rem}}
 .cinema-table tbody tr:hover{background:var(--accent-dim)}
-.cinema-table tr.day-separator>td{border:none;padding:0;height:8px;background:transparent}
+.cinema-table tr.day-separator>td{border:none;padding:0;height:12px;background:transparent}
 .cinema-table tr.day-separator:hover{background:transparent}
-.cinema-table tr.day-separator>td::before{content:"";display:block;height:1px;margin:0 0.5rem;background:linear-gradient(90deg,transparent,var(--border),transparent)}
+.cinema-table tr.day-separator>td::before{content:"";display:block;height:1px;margin:0;background:rgba(226,114,60,0.28)}
 tr.nearest-cinema-row{background:rgba(226,114,60,0.06)}
 tr.nearest-cinema-row:first-child{border-top:2px solid var(--accent)}
 tr.nearest-cinema-row:last-of-type{border-bottom:2px solid var(--accent)}

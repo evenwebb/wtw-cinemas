@@ -10,35 +10,33 @@ X-WR-CALDESC:Upcoming movie premieres at WTW Cinemas Wadebridge
 X-WR-TIMEZONE:Europe/London
 BEGIN:VEVENT
 UID:256bd96773e5174a1ce89c8ee5efb2d073c108a0@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20260828
 DTEND;VALUE=DATE:20260829
 SUMMARY:One Night Only @ WTW Wadebridge
 DESCRIPTION:One Night Only (1h 42min)\n★★★☆☆\nComedy\, Romance\n\nTwo love-
  starved strangers crash into each other on the one night of the year when 
  single people are allowed to have sex.\n\nStarring: Monica Barbaro\, Callu
- m Turner\, Maya Hawke\, King Princess\, Molly Ringwald\, LeVar Burton\n\nF
- ilm release at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co
- .uk/wadebridge/film/5665/one-night-only\n\nFilm details: https://evenwebb.
- github.io/wtw-cinemas/films/one-night-only.html
+ m Turner\, Maya Hawke\n\nFilm release at WTW Cinemas Wadebridge\nBook tick
+ ets: https://wtwcinemas.co.uk/wadebridge/film/5665/one-night-only\n\nFilm 
+ details: https://evenwebb.github.io/wtw-cinemas/films/one-night-only.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5665/one-night-only
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:3fc1c8e61ff96bee329ce265050d974cb1aeb5f9@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20260828
 DTEND;VALUE=DATE:20260829
 SUMMARY:Coyote vs. Acme @ WTW Wadebridge
 DESCRIPTION:Coyote vs. Acme (1h 43min)\n★★★★☆\nComedy\, Adventure\, Family\
  n\nAfter Acme products fail him one too many times in his dogged pursuit o
  f the Roadrunner\, Wile E. Coyote decides to hire a billboard lawyer to su
- e the Acme Corporation.\n\nStarring: Will Forte\, Lana Condor\, John Cena\
- , Tone Bell\, Eric Bauza\, P.J. Byrne\n\nFilm release at WTW Cinemas Wadeb
- ridge\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/5673/coyote-
- vs-acme-with-subtitles\n\nFilm details: https://evenwebb.github.io/wtw-cin
- emas/films/coyote-vs-acme.html
+ e the Acme Corporation.\n\nStarring: Lana Condor\, Tone Bell\, Will Forte\
+ n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinema
+ s.co.uk/wadebridge/film/5673/coyote-vs-acme-with-subtitles\n\nFilm details
+ : https://evenwebb.github.io/wtw-cinemas/films/coyote-vs-acme.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5673/coyote-vs-acme-with-subti
  tles
@@ -46,60 +44,57 @@ SEQUENCE:11
 END:VEVENT
 BEGIN:VEVENT
 UID:800aec343dc45bb1c6b892a03f11c3839549f6d2@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20260828
 DTEND;VALUE=DATE:20260829
 SUMMARY:Tony @ WTW Wadebridge
 DESCRIPTION:Tony (1h 46min)\n★★★★☆\nDrama\, Comedy\n\nA 19-year-old Anthony
   Bourdain travels to Provincetown and stumbles into the chaotic world of a
   restaurant kitchen\, setting off a summer that will shape the course of h
- is life.\n\nStarring: Dominic Sessa\, Antonio Banderas\, Emilia Jones\, Le
- o Woodall\, Stavros Halkias\, Michael Jibrin\n\nFilm release at WTW Cinema
- s Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/5649/
- tony\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/tony.ht
- ml
+ is life.\n\nStarring: Dominic Sessa\, Antonio Banderas\, Emilia Jones\n\nF
+ ilm release at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co
+ .uk/wadebridge/film/5649/tony\n\nFilm details: https://evenwebb.github.io/
+ wtw-cinemas/films/tony.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5649/tony
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9159bdce11aacde98c738b5e5767bc913e42dcf4@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20260828
 DTEND;VALUE=DATE:20260829
 SUMMARY:Coyote vs. Acme @ WTW Wadebridge
 DESCRIPTION:Coyote vs. Acme (1h 43min)\n★★★★☆\nComedy\, Adventure\, Family\
  n\nAfter Acme products fail him one too many times in his dogged pursuit o
  f the Roadrunner\, Wile E. Coyote decides to hire a billboard lawyer to su
- e the Acme Corporation.\n\nStarring: Will Forte\, Lana Condor\, John Cena\
- , Tone Bell\, Eric Bauza\, P.J. Byrne\n\nFilm release at WTW Cinemas Wadeb
- ridge\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/5638/coyote-
- vs-acme\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/coyo
- te-vs-acme.html
+ e the Acme Corporation.\n\nStarring: Will Forte\, Lana Condor\, Tone Bell\
+ n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinema
+ s.co.uk/wadebridge/film/5638/coyote-vs-acme\n\nFilm details: https://evenw
+ ebb.github.io/wtw-cinemas/films/coyote-vs-acme.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5638/coyote-vs-acme
 SEQUENCE:12
 END:VEVENT
 BEGIN:VEVENT
 UID:311da15c2ad78ccd9534056db13ddcec270aa2ab@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20260830
 DTEND;VALUE=DATE:20260831
 SUMMARY:The Spin @ WTW Wadebridge
 DESCRIPTION:The Spin (1h 32min)\n★★★☆☆\nComedy\, Music\n\nA struggling reco
  rd store owner travels down south to Cork with his best friend in a bid to
   save his shop from closure.\n\nStarring: Tara Lynne O'Neill\, Brenock O'C
- onnor\, Owen Colgan\, Kimberly Wyatt\, Maura Higgins\, Leah O'Rourke\n\nFi
- lm release at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co.
- uk/wadebridge/film/5630/the-spin\n\nFilm details: https://evenwebb.github.
- io/wtw-cinemas/films/the-spin.html
+ onnor\, Owen Colgan\n\nFilm release at WTW Cinemas Wadebridge\nBook ticket
+ s: https://wtwcinemas.co.uk/wadebridge/film/5630/the-spin\n\nFilm details:
+  https://evenwebb.github.io/wtw-cinemas/films/the-spin.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5630/the-spin
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:977932fb6972ff467330f97507826a96c0be49cd@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20260903
 DTEND;VALUE=DATE:20260904
 SUMMARY:La Traviata on Sydney Harbour @ WTW Wadebridge
@@ -126,7 +121,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:4ae3252f9372752f79e5f0a50d014728d77c431d@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20260904
 DTEND;VALUE=DATE:20260905
 SUMMARY:The Death of Robin Hood @ WTW Wadebridge
@@ -134,18 +129,17 @@ DESCRIPTION:The Death of Robin Hood (2h 3min)\n★★★☆☆\nAdventure\, Dram
  ction\n\nGrappling with his past after a life of crime and murder\, Robin 
  Hood finds himself gravely injured after a battle he thought would be his 
  last. In the hands of a mysterious woman\, he is offered a chance at salva
- tion.\n\nStarring: Hugh Jackman\, Jodie Comer\, Bill Skarsgård\, Murray Ba
- rtlett\, Noah Jupe\, Jade Croot\n\nFilm release at WTW Cinemas Wadebridge\
- nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/5671/the-death-of-
- robin-hood\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/t
- he-death-of-robin-hood.html
+ tion.\n\nStarring: Hugh Jackman\, Jodie Comer\, Bill Skarsgård\n\nFilm rel
+ ease at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wad
+ ebridge/film/5671/the-death-of-robin-hood\n\nFilm details: https://evenweb
+ b.github.io/wtw-cinemas/films/the-death-of-robin-hood.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5671/the-death-of-robin-hood
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9f4a0a13652cfe95c4d2663886e3989edda72a4f@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260906
 SUMMARY:Star Trek IV: The Voyage Home @ WTW Wadebridge
@@ -153,11 +147,10 @@ DESCRIPTION:Star Trek IV: The Voyage Home (1h 58min)\n★★★★☆\nScience F
  n\, Adventure\n\nWhen a huge alien probe enters the galaxy and begins to v
  aporize Earth's oceans\, Kirk and his crew must travel back in time in ord
  er to bring back whales and save the planet.\n\nStarring: William Shatner\
- , Leonard Nimoy\, DeForest Kelley\, James Doohan\, George Takei\, Walter K
- oenig\n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: https://wtw
- cinemas.co.uk/wadebridge/film/5645/star-trek-iv-the-voyage-home\n\nFilm de
- tails: https://evenwebb.github.io/wtw-cinemas/films/star-trek-iv-the-voyag
- e-home.html
+ , Leonard Nimoy\, DeForest Kelley\n\nFilm release at WTW Cinemas Wadebridg
+ e\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/5645/star-trek-i
+ v-the-voyage-home\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/
+ films/star-trek-iv-the-voyage-home.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5645/star-trek-iv-the-voyage-h
  ome
@@ -165,48 +158,46 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:58701b57b78c62cfdf6e840b7d8976615225df55@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20260909
 DTEND;VALUE=DATE:20260910
 SUMMARY:Pressure @ WTW Wadebridge
-DESCRIPTION:Pressure (1h 41min)\n★★★★☆\nThriller\, History\, War\n\nIn the 
+DESCRIPTION:Pressure (1h 40min)\n★★★★☆\nThriller\, History\, War\n\nIn the 
  tense 72 hours before D-Day\, and the fate of the free world hanging in th
  e balance\, General Dwight D. Eisenhower and Captain James Stagg face an i
  mpossible choice—launch the largest and most dangerous seaborne invasion i
  n history or risk losing the war altogether.\n\nStarring: Andrew Scott\, B
- rendan Fraser\, Kerry Condon\, Chris Messina\, Damian Lewis\, Tamsin Topol
- ski\n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: https://wtwci
- nemas.co.uk/wadebridge/film/5580/pressure\n\nFilm details: https://evenweb
- b.github.io/wtw-cinemas/films/pressure.html
+ rendan Fraser\, Kerry Condon\n\nFilm release at WTW Cinemas Wadebridge\nBo
+ ok tickets: https://wtwcinemas.co.uk/wadebridge/film/5580/pressure\n\nFilm
+  details: https://evenwebb.github.io/wtw-cinemas/films/pressure.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5580/pressure
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b775ef4e3d9503ea7a0749ee77a999e44616d8e9@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20260911
 DTEND;VALUE=DATE:20260912
 SUMMARY:Practical Magic 2 @ WTW Wadebridge
-DESCRIPTION:Practical Magic 2 (1h 50min)\nRomance\, Fantasy\, Comedy\n\nThe
-  Owens sisters must confront the dark curse that threatens to unravel thei
- r family once and for all.\n\nStarring: Sandra Bullock\, Nicole Kidman\, J
- oey King\, Maisie Williams\, Xolo Maridueña\, Lee Pace\n\nFilm release at 
- WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebridge/
- film/5657/practical-magic-2\n\nFilm details: https://evenwebb.github.io/wt
- w-cinemas/films/practical-magic-2.html
+DESCRIPTION:Practical Magic 2 (2h 6min)\nRomance\, Fantasy\, Comedy\n\nThe 
+ Owens sisters must confront the dark curse that threatens to unravel their
+  family once and for all.\n\nStarring: Sandra Bullock\, Nicole Kidman\, Jo
+ ey King\n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: https://w
+ twcinemas.co.uk/wadebridge/film/5657/practical-magic-2\n\nFilm details: ht
+ tps://evenwebb.github.io/wtw-cinemas/films/practical-magic-2.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5657/practical-magic-2
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f18fbad629804c31020bde1b7df5345cf4112ece@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20260915
 DTEND;VALUE=DATE:20260916
 SUMMARY:Alex Lewis Mountain Plus Q&A With Director Simon Ratigan @ WTW Wade
  bridge
-DESCRIPTION:Alex Lewis Mountain Plus Q&A With Director Simon Ratigan (1h 35
+DESCRIPTION:Alex Lewis Mountain Plus Q&A With Director Simon Ratigan (2h 10
  min)\nDocumentary\n\nQuadruple amputee Alex Lewis sets out to prove to his
   son that anything is possible by attempting to cross the Simien Mountain 
  wilderness and climb Ethiopia's highest peak using the world's first solar
@@ -222,7 +213,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:29ee127a88e520f38e2da8439ab6d9374db3fd88@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20260915
 DTEND;VALUE=DATE:20260916
 SUMMARY:James McNeill Whistler - Exhibition On Screen @ WTW Wadebridge
@@ -246,20 +237,20 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f2525b517ec6a0b63e5911f405f636003ee127d0@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20260917
 DTEND;VALUE=DATE:20260918
 SUMMARY:THE TRANSFORMERS: THE MOVIE 40TH ANNIVERSARY @ WTW Wadebridge
-DESCRIPTION:THE TRANSFORMERS: THE MOVIE 40TH ANNIVERSARY (1h 25min)\n★★★★☆\
+DESCRIPTION:THE TRANSFORMERS: THE MOVIE 40TH ANNIVERSARY (1h 36min)\n★★★★☆\
  nAnimation\, Science Fiction\, Action\, Adventure\, Family\n\nThe Autobots
   must stop a colossal planet-consuming robot who goes after the Autobot Ma
  trix of Leadership. At the same time\, they must defend themselves against
-  an all-out attack from the Decepticons.\n\nStarring: Judd Nelson\, Peter 
- Cullen\, Frank Welker\, Leonard Nimoy\, Orson Welles\, Casey Kasem\n\nFilm
-  release at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co.uk
- /wadebridge/film/5656/the-transformers-the-movie-40th-anniversary\n\nFilm 
- details: https://evenwebb.github.io/wtw-cinemas/films/the-transformers-the
- -movie-40th-anniversary.html
+  an all-out attack from the Decepticons.\n\nStarring: Peter Cullen\,  Fran
+ k Welker\,  Orson Welles\,  Judd Nelson\,  Leonard Nimoy\,  Eric Idle\n\nF
+ ilm release at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co
+ .uk/wadebridge/film/5656/the-transformers-the-movie-40th-anniversary\n\nFi
+ lm details: https://evenwebb.github.io/wtw-cinemas/films/the-transformers-
+ the-movie-40th-anniversary.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5656/the-transformers-the-movi
  e-40th-anniversary
@@ -267,7 +258,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:acb7029a4faa779cd7ac15d216ee60f243fcd491@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
 SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom @ WTW Wadebridge
@@ -276,11 +267,10 @@ DESCRIPTION:Shaun the Sheep: The Beast of Mossy Bottom (1h 20min)\nAnimatio
  Farm\, excitement turns to dismay when the clumsy Farmer ruins the pumpkin
   patch. Shaun tries fixing it with science experiments\, but things go wro
  ng when a wild beast appears in the woods.\n\nStarring: Justin Fletcher\, 
- John Sparkes\, Kate Harbour\, Nina Sosanya\, Paul Whitehouse\, Roman Kemp\
- n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinema
- s.co.uk/wadebridge/film/5581/shaun-the-sheep-the-beast-of-mossy-bottom\n\n
- Film details: https://evenwebb.github.io/wtw-cinemas/films/shaun-the-sheep
- -the-beast-of-mossy-bottom.html
+ John Sparkes\, Kate Harbour\n\nFilm release at WTW Cinemas Wadebridge\nBoo
+ k tickets: https://wtwcinemas.co.uk/wadebridge/film/5581/shaun-the-sheep-t
+ he-beast-of-mossy-bottom\n\nFilm details: https://evenwebb.github.io/wtw-c
+ inemas/films/shaun-the-sheep-the-beast-of-mossy-bottom.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5581/shaun-the-sheep-the-beast
  -of-mossy-bottom
@@ -288,7 +278,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ae0b0aeeb8006257996f8dfb36c6b4e86fb904a4@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
 SUMMARY:National Theatre Live: The Misanthrope @ WTW Wadebridge
@@ -302,11 +292,10 @@ DESCRIPTION:National Theatre Live: The Misanthrope (2h 30min)\nDrama\, Come
  oman for daring to speak her mind. Award-winner Sandra Oh is the Misanthro
  pe in Martin Crimp's cutting new version of Molière's dark comedy\, direct
  ed by National Theatre Director Indhu Rubasingham.\n\nStarring: Sandra Oh\
- , Paul Chahidi\, Abigail Cruttenden\, Imogen Elliott\, Rina Fatania\, Fred
- die MacBruce\n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: http
- s://wtwcinemas.co.uk/wadebridge/film/5599/national-theatre-live-the-misant
- hrope\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/nation
- al-theatre-live-the-misanthrope.html
+ n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinema
+ s.co.uk/wadebridge/film/5599/national-theatre-live-the-misanthrope\n\nFilm
+  details: https://evenwebb.github.io/wtw-cinemas/films/national-theatre-li
+ ve-the-misanthrope.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5599/national-theatre-live-the
  -misanthrope
@@ -314,62 +303,60 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:376363fd8b4598e9390d7ecf4457e22ecc1649e1@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
 SUMMARY:Digger @ WTW Wadebridge
 DESCRIPTION:Digger (1h 46min)\nComedy\n\nThe most powerful man in the world
   embarks on a frantic mission to prove he is humanity's savior before the 
- disaster he's unleashed destroys everything.\n\nStarring: Tom Cruise\, Riz
-  Ahmed\, John Goodman\, Sandra Hüller\, Michael Stuhlbarg\, Jesse Plemons\
- n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinema
- s.co.uk/wadebridge/film/5583/digger\n\nFilm details: https://evenwebb.gith
- ub.io/wtw-cinemas/films/digger.html
+ disaster he's unleashed destroys everything.\n\nStarring: Tom Cruise\, San
+ dra Hüller\, John Goodman\n\nFilm release at WTW Cinemas Wadebridge\nBook 
+ tickets: https://wtwcinemas.co.uk/wadebridge/film/5583/digger\n\nFilm deta
+ ils: https://evenwebb.github.io/wtw-cinemas/films/digger.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5583/digger
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:a32b5987a8f99a89b2e716bc3b84d5e966cbe075@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
 SUMMARY:Queen: Budapest @ WTW Wadebridge
-DESCRIPTION:Queen: Budapest (22 min)\nDrama\n\nNikki Holiday\, a drag queen
-  cabaret star\, tries to fill the void in her life after her plans to star
- t a family fall apart.\n\nStarring: Ryan Eggold\, Bobby Campo\, Angela Bul
- lock\, Evan Peters\, Barry Papick\n\nFilm release at WTW Cinemas Wadebridg
- e\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/5674/queen-budap
- est\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/queen-bu
- dapest.html
+DESCRIPTION:Queen: Budapest (1h 37min)\nDrama\n\nNikki Holiday\, a drag que
+ en cabaret star\, tries to fill the void in her life after her plans to st
+ art a family fall apart.\n\nStarring: Freddie Mercury\, Brian May\, Roger 
+ Taylor\n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: https://wt
+ wcinemas.co.uk/wadebridge/film/5674/queen-budapest\n\nFilm details: https:
+ //evenwebb.github.io/wtw-cinemas/films/queen-budapest.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5674/queen-budapest
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:fb1c5c75ade45e3de67b010a966a4feb11fc3991@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:Hadestown: The Musical @ WTW Wadebridge
-DESCRIPTION:Hadestown: The Musical (2h 21min)\n★★★★☆\nDrama\, Fantasy\, Rom
+DESCRIPTION:Hadestown: The Musical (2h 22min)\n★★★★☆\nDrama\, Fantasy\, Rom
  ance\n\nThe tragic love of Orpheus and Eurydice is intertwined with the co
  mplex relationship of Hades and Persephone. Eurydice\, struggling with pov
  erty\, is lured to the industrial underworld of Hadestown by Hades\, while
   Orpheus\, a struggling musician\, ventures down below to bring her back. 
  (Filmed live at the Lyric Theatre\, London\, featuring the core five origi
- nal Broadway cast members.)\n\nStarring: Reeve Carney\, Eva Noblezada\, An
- dré De Shields\, Patrick Page\, Amber Gray\, Bella Brown\n\nFilm release a
- t WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebridg
- e/film/5653/hadestown-the-musical\n\nFilm details: https://evenwebb.github
- .io/wtw-cinemas/films/hadestown-the-musical.html
+ nal Broadway cast members.)\n\nStarring: Mara Isaacs\, Dale Franzen\, Hunt
+ er Arnold\, Brett Sullivan\, Natalie Daniels-Browne\n\nFilm release at WTW
+  Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebridge/fil
+ m/5653/hadestown-the-musical\n\nFilm details: https://evenwebb.github.io/w
+ tw-cinemas/films/hadestown-the-musical.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5653/hadestown-the-musical
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:7b464e63519f6fd5f1b009b8bec4b96c3ff93b8f@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Forgotten Island @ WTW Wadebridge
@@ -380,38 +367,36 @@ DESCRIPTION:Forgotten Island (1h 49min)\nAdventure\, Animation\, Comedy\, F
  cover that the memories of their entire friendship are the price for retur
  ning home\, Jo and Raissa will race to find a way to leave the island befo
  re they forget each other forever.\n\nStarring: H.E.R.\, Liza Soberano\, D
- ave Franco\, Lea Salonga\, Manny Jacinto\, Jenny Slate\n\nFilm release at 
- WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebridge/
- film/5643/forgotten-island\n\nFilm details: https://evenwebb.github.io/wtw
- -cinemas/films/forgotten-island.html
+ ave Franco\n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: https:
+ //wtwcinemas.co.uk/wadebridge/film/5643/forgotten-island\n\nFilm details: 
+ https://evenwebb.github.io/wtw-cinemas/films/forgotten-island.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5643/forgotten-island
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:de0be0ffa48df7e23c795b08b1fa7312a1416bcb@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Street Fighter @ WTW Wadebridge
-DESCRIPTION:Street Fighter (1h 42min)\n★★☆☆☆\nAction\, Comedy\, Fantasy\n\n
- Colonel Guile and various other martial arts heroes fight against the tyra
- nny of dictator M. Bison and his cohorts.\n\nStarring: Jean-Claude Van Dam
- me\, Raúl Juliá\, Kylie Minogue\, Byron Mann\, Damian Chapa\, Ming-Na Wen\
- n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinema
- s.co.uk/wadebridge/film/5582/street-fighter\n\nFilm details: https://evenw
- ebb.github.io/wtw-cinemas/films/street-fighter.html
+DESCRIPTION:Street Fighter\n★★☆☆☆\nAction\, Comedy\, Fantasy\n\nColonel Gui
+ le and various other martial arts heroes fight against the tyranny of dict
+ ator M. Bison and his cohorts.\n\nStarring: Andrew Koji\, Noah Centineo\, 
+ Callina Liang\n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: htt
+ ps://wtwcinemas.co.uk/wadebridge/film/5582/street-fighter\n\nFilm details:
+  https://evenwebb.github.io/wtw-cinemas/films/street-fighter.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5582/street-fighter
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:009f56f2391a795f162830efc8e87d5911a21364@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Macbeth - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
-DESCRIPTION:Macbeth - Royal Ballet & Opera 26-27 Season (1h 47min)\n★★★★☆\n
+DESCRIPTION:Macbeth - Royal Ballet & Opera 26-27 Season (3h 30min)\n★★★★☆\n
  Drama\n\nMacbeth\, the Thane of Glamis\, receives a prophecy from a trio o
  f witches that one day he will become King of Scotland. Consumed by ambiti
  on and spurred to action by his wife\, Macbeth commits a treasonous act an
@@ -428,18 +413,18 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:bde707976116149cf570b3d56c8f14e3f96a4095@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Fallen Angels by Noël Coward @ WTW Wadebridge
-DESCRIPTION:Fallen Angels by Noël Coward (1h 38min)\n★★★★☆\nAction\, Romanc
+DESCRIPTION:Fallen Angels by Noël Coward (1h 50min)\n★★★★☆\nAction\, Romanc
  e\, Crime\n\nAn indifferent hitman\, his infatuated business partner and a
  n ex-convict search for love and meaning as their lives cross paths in Hon
- g Kong.\n\nStarring: Leon Lai Ming\, Michele Reis\, Takeshi Kaneshiro\, Ch
- arlie Yeung Choi-Nei\, Karen Mok Man-Wai\, Chan Man-Lei\n\nFilm release at
-  WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebridge
- /film/5635/fallen-angels-by-nol-coward\n\nFilm details: https://evenwebb.g
- ithub.io/wtw-cinemas/films/fallen-angels-by-no-l-coward.html
+ g Kong.\n\nStarring: Rose Byrne\, Kelli O'Hara\, Tracee Chimo\, Mark Consu
+ elos\, Christopher Fitzgeral\, Aasif Mandv\n\nFilm release at WTW Cinemas 
+ Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/5635/fa
+ llen-angels-by-nol-coward\n\nFilm details: https://evenwebb.github.io/wtw-
+ cinemas/films/fallen-angels-by-no-l-coward.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5635/fallen-angels-by-nol-cowa
  rd
@@ -447,7 +432,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8282d8cfcf26313b4f3e10f43534892282baac16@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:Manon - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
@@ -474,7 +459,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:1519e7b45dc6f12cb321d1be190b4c3583e3934b@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:National Theatre Live: Golden Boy @ WTW Wadebridge
@@ -490,11 +475,10 @@ DESCRIPTION:National Theatre Live: Golden Boy (3h)\nDrama\n\n1930s New York
  choose a side. Sam Yates directs Josh O'Connor in this searing revival of 
  Clifford Odets' knockout American classic. Brought to life with a live str
  ing quartet\, this propulsive drama explores ambition\, identity\, and the
-  high price of success.\n\nStarring: Josh O'Connor\, Jason Barnett\, Richa
- rd Fleeshman\, David Ganly\, Patrick Martins\, Oliver Ryan\n\nFilm release
-  at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebri
- dge/film/5651/national-theatre-live-golden-boy\n\nFilm details: https://ev
- enwebb.github.io/wtw-cinemas/films/national-theatre-live-golden-boy.html
+  high price of success.\n\nStarring: Josh O’Connor\n\nFilm release at WTW 
+ Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film
+ /5651/national-theatre-live-golden-boy\n\nFilm details: https://evenwebb.g
+ ithub.io/wtw-cinemas/films/national-theatre-live-golden-boy.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5651/national-theatre-live-gol
  den-boy
@@ -502,28 +486,27 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:a83c2225b0846ac01a271b3c2c9da2bc0ee11b0f@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Wild Horse Nine @ WTW Wadebridge
-DESCRIPTION:Wild Horse Nine (1h 58min)\nComedy\, Crime\, Thriller\n\nShortl
- y before the 1973 Chilean coup\, CIA agents Chris and Lee are dispatched f
- rom Santiago to Easter Island by their bureau chief\, MJ. Amongst the Isla
- nd's iconic statues\, and as the longtime partners wrestle with their dark
-  pasts and present conspiracies\, Chris's newfound bond with a pair of reb
- ellious students threatens to send everyone’s trip to this remote paradise
-  sideways.\n\nStarring: John Malkovich\, Sam Rockwell\, Steve Buscemi\, Pa
- rker Posey\, Tom Waits\, Mariana di Girolamo\n\nFilm release at WTW Cinema
- s Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/5585/
- wild-horse-nine\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/fi
- lms/wild-horse-nine.html
+DESCRIPTION:Wild Horse Nine\nComedy\, Crime\, Thriller\n\nShortly before th
+ e 1973 Chilean coup\, CIA agents Chris and Lee are dispatched from Santiag
+ o to Easter Island by their bureau chief\, MJ. Amongst the Island's iconic
+  statues\, and as the longtime partners wrestle with their dark pasts and 
+ present conspiracies\, Chris's newfound bond with a pair of rebellious stu
+ dents threatens to send everyone’s trip to this remote paradise sideways.\
+ n\nStarring: John Malkovich\, Sam Rockwell\, Steve Buscemi\n\nFilm release
+  at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebri
+ dge/film/5585/wild-horse-nine\n\nFilm details: https://evenwebb.github.io/
+ wtw-cinemas/films/wild-horse-nine.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5585/wild-horse-nine
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:259ec131692e586d7bb556e861d573a23cbf7b5f@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Carmen - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
@@ -547,7 +530,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:23d5c901aec69131de7785a68a90fa98def64c02@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:GIANT - The Play @ WTW Wadebridge
@@ -557,18 +540,17 @@ DESCRIPTION:GIANT - The Play (2h 16min)\nDrama\n\nSet in the summer of 1983
  le to contain the fallout from his public denunciation of Israel and defen
  ce of the Palestinians in a review of a book on the 1982 Lebanon war. Film
  ed live onstage at the Harold Pinter Theatre in London's West End in 2025.
- \n\nStarring: John Lithgow\, Elliot Levey\, Aya Cash\, Rachael Stirling\, 
- Tessa Bonham Jones\, Richard Hope\n\nFilm release at WTW Cinemas Wadebridg
- e\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/5619/giant-the-p
- lay\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/giant-th
- e-play.html
+ \n\nStarring: Aya Cash\, Elliot Levey\, John Lithgow\, Rachael Stirling\n\
+ nFilm release at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.
+ co.uk/wadebridge/film/5619/giant-the-play\n\nFilm details: https://evenweb
+ b.github.io/wtw-cinemas/films/giant-the-play.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5619/giant-the-play
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:95b124defaef04405fa08e6c30df4971be9deba4@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:The Hunger Games: Sunrise on the Reaping @ WTW Wadebridge
@@ -576,11 +558,10 @@ DESCRIPTION:The Hunger Games: Sunrise on the Reaping\nScience Fiction\, Act
  ion\, Adventure\n\nReturn to the world of Panem 24 years before the events
   of The Hunger Games\, starting on the morning of the reaping of the 50th 
  Hunger Games\, also known as the Second Quarter Quell.\n\nStarring: Joseph
-  Zada\, Ralph Fiennes\, Jesse Plemons\, Mckenna Grace\, Whitney Peak\, Ell
- e Fanning\n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: https:/
- /wtwcinemas.co.uk/wadebridge/film/5586/the-hunger-games-sunrise-on-the-rea
- ping\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/the-hun
- ger-games-sunrise-on-the-reaping.html
+  Zada\, Mckenna Grace\, Jesse Plemons\n\nFilm release at WTW Cinemas Wadeb
+ ridge\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/5586/the-hun
+ ger-games-sunrise-on-the-reaping\n\nFilm details: https://evenwebb.github.
+ io/wtw-cinemas/films/the-hunger-games-sunrise-on-the-reaping.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5586/the-hunger-games-sunrise-
  on-the-reaping
@@ -588,24 +569,23 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9e6609fe0148e68c89acc8c353ee07d0beb9a6e0@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Focker-In-Law @ WTW Wadebridge
 DESCRIPTION:Focker-In-Law\nComedy\, Romance\n\nHenry\, son of Greg and Pam 
  Focker\, faces family chaos when he decides to marry a strong-willed woman
-  who appears to be his complete mismatch.\n\nStarring: Ben Stiller\, Rober
- t De Niro\, Ariana Grande\, Skyler Gisondo\, Owen Wilson\, Blythe Danner\n
- \nFilm release at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas
- .co.uk/wadebridge/film/5587/fockerinlaw\n\nFilm details: https://evenwebb.
- github.io/wtw-cinemas/films/focker-in-law.html
+  who appears to be his complete mismatch.\n\nStarring: Robert De Niro\, Be
+ n Stiller\, Ariana Grande\n\nFilm release at WTW Cinemas Wadebridge\nBook 
+ tickets: https://wtwcinemas.co.uk/wadebridge/film/5587/fockerinlaw\n\nFilm
+  details: https://evenwebb.github.io/wtw-cinemas/films/focker-in-law.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5587/fockerinlaw
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:32e0d9e7b556fde8fa9ddc736c1bb5f2f871acb7@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:The Nutcracker - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
@@ -628,26 +608,25 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ae259c1820ed07e4967fb77493b68b29a9d7edc7@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:The Cat in the Hat @ WTW Wadebridge
-DESCRIPTION:The Cat in the Hat (1h 22min)\n★★★☆☆\nFantasy\, Adventure\, Fam
- ily\, Comedy\n\nDuring a rainy day\, and while their mother is out\, Conra
- d and Sally\, and their pet fish\, are visited by the mischievous Cat in t
- he Hat. Fun soon turns to mayhem\, and the siblings must figure out how to
-  rid themselves of the maniacal Cat.\n\nStarring: Mike Myers\, Dakota Fann
- ing\, Spencer Breslin\, Kelly Preston\, Alec Baldwin\, Amy Hill\n\nFilm re
- lease at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wa
- debridge/film/5584/the-cat-in-the-hat\n\nFilm details: https://evenwebb.gi
- thub.io/wtw-cinemas/films/the-cat-in-the-hat.html
+DESCRIPTION:The Cat in the Hat\n★★★☆☆\nFantasy\, Adventure\, Family\, Comed
+ y\n\nDuring a rainy day\, and while their mother is out\, Conrad and Sally
+ \, and their pet fish\, are visited by the mischievous Cat in the Hat. Fun
+  soon turns to mayhem\, and the siblings must figure out how to rid themse
+ lves of the maniacal Cat.\n\nStarring: Bill Hader\, Xochitl Gomez\, Quinta
+  Brunson\n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: https://
+ wtwcinemas.co.uk/wadebridge/film/5584/the-cat-in-the-hat\n\nFilm details: 
+ https://evenwebb.github.io/wtw-cinemas/films/the-cat-in-the-hat.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5584/the-cat-in-the-hat
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ea5a9ae4f3515a6c41449349cf9ce6a5d57e0e51@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Andre Rieu's 2026 Christmas Concert Let It Snow @ WTW Wadebridge
@@ -664,43 +643,41 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:654c91c1336c58188b76a1e4db75a9912088802b@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Avengers: Doomsday @ WTW Wadebridge
-DESCRIPTION:Avengers: Doomsday (2h 45min)\nScience Fiction\, Action\, Adven
- ture\n\nBeloved heroes from three distinct universes are set on a deadly c
- ollision course and face an existential threat unlike anything they've eve
- r encountered.\n\nStarring: Robert Downey Jr.\, Chris Evans\, Chris Hemswo
- rth\, Pedro Pascal\, Paul Rudd\, Anthony Mackie\n\nFilm release at WTW Cin
- emas Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/55
- 88/avengers-doomsday\n\nFilm details: https://evenwebb.github.io/wtw-cinem
- as/films/avengers-doomsday.html
+DESCRIPTION:Avengers: Doomsday\nScience Fiction\, Action\, Adventure\n\nBel
+ oved heroes from three distinct universes are set on a deadly collision co
+ urse and face an existential threat unlike anything they've ever encounter
+ ed.\n\nStarring: Robert Downey Jr.\, Chris Evans\, Chris Hemsworth\n\nFilm
+  release at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co.uk
+ /wadebridge/film/5588/avengers-doomsday\n\nFilm details: https://evenwebb.
+ github.io/wtw-cinemas/films/avengers-doomsday.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5588/avengers-doomsday
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8b09939e190b28f8b45a450ab67b2dbd2b5de919@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Dune: Part Three @ WTW Wadebridge
-DESCRIPTION:Dune: Part Three (2h 25min)\nScience Fiction\, Adventure\n\nEmp
- eror Paul Atreides faces the fallout from his ascent to power as political
-  plots and a galaxy-wide holy war endanger the future only he can see.\n\n
- Starring: Timothée Chalamet\, Zendaya\, Jason Momoa\, Florence Pugh\, Rebe
- cca Ferguson\, Isaach de Bankolé\n\nFilm release at WTW Cinemas Wadebridge
- \nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/5589/dune-part-th
- ree\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/dune-par
- t-three.html
+DESCRIPTION:Dune: Part Three\nScience Fiction\, Adventure\n\nEmperor Paul A
+ treides faces the fallout from his ascent to power as political plots and 
+ a galaxy-wide holy war endanger the future only he can see.\n\nStarring: T
+ imothée Chalamet\, Zendaya\, Jason Momoa\n\nFilm release at WTW Cinemas Wa
+ debridge\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/5589/dune
+ -part-three\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/
+ dune-part-three.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5589/dune-part-three
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:d57df00005ba739cee61d719e3e33f88fb670a63@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Jumanji: Open World @ WTW Wadebridge
@@ -708,17 +685,16 @@ DESCRIPTION:Jumanji: Open World\nAdventure\, Comedy\, Fantasy\n\nOur heroes
   have escaped the ever-changing jungles of Jumanji before\, but this time 
  the game comes to us - as Jumanji breaks free of its console\, unleashing 
  its chaos into our world.\n\nStarring: Dwayne Johnson\, Kevin Hart\, Jack 
- Black\, Karen Gillan\, Awkwafina\, Alex Wolff\n\nFilm release at WTW Cinem
- as Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/5590
- /jumanji-open-world\n\nFilm details: https://evenwebb.github.io/wtw-cinema
- s/films/jumanji-open-world.html
+ Black\n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: https://wtw
+ cinemas.co.uk/wadebridge/film/5590/jumanji-open-world\n\nFilm details: htt
+ ps://evenwebb.github.io/wtw-cinemas/films/jumanji-open-world.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5590/jumanji-open-world
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:e946202c3d79e6b82fe3dcdbdbb3fc21048e609e@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20270119
 DTEND;VALUE=DATE:20270120
 SUMMARY:Renoir & Love - Exhibition On Screen @ WTW Wadebridge
@@ -740,13 +716,13 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9103b988c7486fd82cbbdafcb54e2d25babb2825@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270127
 SUMMARY:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season @ WTW Wad
  ebridge
-DESCRIPTION:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season (2h 2
- 0min)\n★★★★★\n\nGiancarlo Del Monaco’s atmospheric production brings to co
+DESCRIPTION:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season (3h 1
+ 5min)\n★★★★★\n\nGiancarlo Del Monaco’s atmospheric production brings to co
  lorful life a 19th-century mining camp during the California Gold Rush. At
   the center of the action is the good-hearted bar owner Minnie\, sung by B
  arbara Daniels\, who takes a motherly interest in the miners. Plácido Domi
@@ -769,7 +745,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:561f682c0c18af56edaad91535c9c258ba76003a@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 SUMMARY:Götterdämmerung - Royal Ballet & Opera 26-27 Season @ WTW Wadebridg
@@ -798,7 +774,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8a425195a90364c9afb77d5e7aabfc1fdb6802d9@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20270223
 DTEND;VALUE=DATE:20270224
 SUMMARY:Così Fan Tutte - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
@@ -827,7 +803,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:90b7dba09378dd2d2a02950b9857a9b76935acbe@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20270323
 DTEND;VALUE=DATE:20270324
 SUMMARY:Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Seaso
@@ -848,11 +824,11 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5020767395f525964cf68b2a2f14235211fb48ac@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20270422
 DTEND;VALUE=DATE:20270423
 SUMMARY:Swan Lake - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
-DESCRIPTION:Swan Lake - Royal Ballet & Opera 26-27 Season (3h 30min)\n\nCla
+DESCRIPTION:Swan Lake - Royal Ballet & Opera 26-27 Season (3h 25min)\n\nCla
  ssical ballet's most powerful tale of love\, treachery and forgiveness ret
  urns to the Royal Opera House stage\n\nStarring: Matthew Ball\, Yasmine Na
  ghdi\n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: https://wtwc
@@ -866,11 +842,11 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0d381b6f83ecf059f6b8cf4d4cc1d1314cba8361@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20270505
 DTEND;VALUE=DATE:20270506
 SUMMARY:Tosca - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
-DESCRIPTION:Tosca - Royal Ballet & Opera 26-27 Season (3h 30min)\nMusic\n\n
+DESCRIPTION:Tosca - Royal Ballet & Opera 26-27 Season (3h 15min)\nMusic\n\n
  In war-torn Rome\, Floria Tosca and Mario Cavaradossi live for each other 
  and for their art. But when Cavaradossi helps an escaped prisoner\, the lo
  vers make a deadly enemy in the form of Baron Scarpia\, Chief of Police. A
@@ -889,15 +865,15 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0f9467c209ba97b79605fee9149fe794b2e844b8@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20270511
 DTEND;VALUE=DATE:20270512
 SUMMARY:Monet - Exhibition On Screen @ WTW Wadebridge
-DESCRIPTION:Monet - Exhibition On Screen (2 min)\n\nPart of paraconsistent 
- sequence series.\n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: 
- https://wtwcinemas.co.uk/wadebridge/film/5550/monet-exhibition-on-screen\n
- \nFilm details: https://evenwebb.github.io/wtw-cinemas/films/monet-exhibit
- ion-on-screen.html
+DESCRIPTION:Monet - Exhibition On Screen (1h 30min)\n\nPart of paraconsiste
+ nt sequence series.\n\nFilm release at WTW Cinemas Wadebridge\nBook ticket
+ s: https://wtwcinemas.co.uk/wadebridge/film/5550/monet-exhibition-on-scree
+ n\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/monet-exhi
+ bition-on-screen.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5550/monet-exhibition-on-scree
  n
@@ -905,7 +881,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:389f8f13806597cf250c31d49ba3b7bef6262567@wtw-cinemas
-DTSTAMP:20260826T102451Z
+DTSTAMP:20260826T110322Z
 DTSTART;VALUE=DATE:20270525
 DTEND;VALUE=DATE:20270526
 SUMMARY:Romeo And Juliet - Royal Ballet & Opera 26-27 Season @ WTW Wadebrid

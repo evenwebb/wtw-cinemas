@@ -1639,7 +1639,10 @@ def main() -> None:
             # Only rewrite film pages that got poster updates
             for slug in updated_slugs:
                 page = film_pages[slug]
-                film_showtimes = showtimes_by_slug.get(slug, [])
+                film_showtimes = sorted(
+                    showtimes_by_slug.get(slug, []),
+                    key=lambda s: (s["date"], s["time"], s.get("cinema_name", ""))
+                )
                 page_html = build_film_page(page["title"], slug, page["details"], page["cinemas"],
                     showtimes=film_showtimes or None)
                 _atomic_write_text(films_dir / f"{slug}.html", page_html)
