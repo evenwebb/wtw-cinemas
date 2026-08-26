@@ -101,7 +101,7 @@ footer a:hover{color:var(--gold-bright)}
 .ns-poster-card{display:block;text-decoration:none;border-radius:12px;overflow:hidden;transition:transform 0.2s,box-shadow 0.2s;background:var(--surface);border:1px solid var(--border)}
 .ns-poster-card:hover{transform:translateY(-4px);box-shadow:0 8px 25px rgba(0,0,0,0.4);border-color:var(--accent)}
 .ns-poster-wrap{position:relative;aspect-ratio:2/3;overflow:hidden;background:var(--surface-2)}
-.ns-poster-wrap img{width:100%;height:100%;object-fit:cover;display:block}
+.ns-poster-wrap img{width:100%;height:100%;object-fit:contain;display:block;background:var(--surface-2)}
 .ns-poster-wrap .ns-no-poster{width:100%;height:100%;display:flex;align-items:flex-start;justify-content:flex-start;text-align:left;font-family:var(--font-display);font-weight:600;font-size:0.95rem;line-height:1.35;color:var(--text);padding:0.75rem;background:linear-gradient(160deg,var(--accent-dim),rgba(226,114,60,0.05) 55%,var(--surface-2));box-sizing:border-box}
 .ns-title{display:block;padding:0.5rem 0.6rem;font-size:0.78rem;font-weight:600;color:var(--text);line-height:1.3;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center}
 .ns-event-tag{display:block;font-size:0.62rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;padding:0.1rem 0.6rem 0.4rem;text-align:center}
@@ -114,7 +114,7 @@ footer a:hover{color:var(--gold-bright)}
 .film-card-full .fc-poster{width:90px;height:135px;flex-shrink:0;border-radius:10px;overflow:hidden;background:var(--surface-2)}
 @media(min-width:480px){.film-card-full .fc-poster{width:130px;height:195px}}
 @media(min-width:768px){.film-card-full .fc-poster{width:170px;height:255px}}
-.film-card-full .fc-poster img{width:100%;height:100%;object-fit:cover;display:block}
+.film-card-full .fc-poster img{width:100%;height:100%;object-fit:contain;display:block;background:var(--surface-2)}
 .film-card-full .fc-poster .no-poster-sm{width:100%;height:100%;display:flex;align-items:flex-start;justify-content:flex-start;text-align:left;font-weight:700;font-size:0.8rem;line-height:1.25;color:var(--text);padding:0.6rem;background:linear-gradient(160deg,var(--accent-dim),rgba(226,114,60,0.05) 55%,var(--surface-2));border-radius:10px;box-sizing:border-box}
 .film-card-full .fc-info{display:flex;flex-direction:column;gap:0.5rem;min-width:0}
 .film-card-full .fc-info h3{font-size:1.1rem;font-weight:700;line-height:1.3;margin:0;display:flex;align-items:center;gap:0.5rem;flex-wrap:wrap}
@@ -244,7 +244,7 @@ body{position:relative;background:var(--bg)}
 @media(max-width:680px){.film-layout{flex-direction:column;align-items:center;text-align:center}}
 .film-poster{flex-shrink:0;width:250px;position:sticky;top:1.5rem}
 @media(max-width:680px){.film-poster{width:200px;position:static}}
-.film-poster img{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:14px;box-shadow:0 12px 45px rgba(0,0,0,0.6);display:block}
+.film-poster img{width:100%;aspect-ratio:2/3;object-fit:contain;border-radius:14px;box-shadow:0 12px 45px rgba(0,0,0,0.6);display:block;background:var(--surface-2)}
 .film-poster .no-poster{width:100%;aspect-ratio:2/3;background:linear-gradient(160deg,var(--accent-dim),rgba(226,114,60,0.05) 55%,var(--surface-2));border-radius:14px;display:flex;align-items:flex-start;justify-content:flex-start;text-align:left;font-family:var(--font-display);font-weight:600;font-size:1.05rem;line-height:1.3;color:var(--text);padding:1rem;box-sizing:border-box;border:1px dashed var(--border)}
 .film-details{flex:1;min-width:0}
 .film-details h1{font-family:var(--font-display);font-size:clamp(1.7rem,5vw,2.6rem);font-weight:600;line-height:1.05;margin-bottom:0.6rem;color:var(--text);letter-spacing:-0.01em}
