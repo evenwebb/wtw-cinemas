@@ -25,7 +25,7 @@
       <h1>What's on at WTW Cinemas</h1>
       <p class="tagline">Browse and discover upcoming film premieres across all WTW Cinemas. Ratings, trailers, and booking links - all in one place.</p>
       <span class="hero-stat">55 films across 4 cinemas</span>
-      <div class="hero-updated">Last updated 2026-08-26 13:28 BST</div>
+      <div class="hero-updated">Last updated 2026-08-26 13:59 BST</div>
     </header>
 
     <a href="#subscribe" class="calendar-promo">
@@ -703,7 +703,7 @@
         <span aria-hidden="true">·</span>
         <a href="https://github.com/evenwebb/">evenwebb</a>
       </div>
-      <p class="footer-updated">Last updated: 2026-08-26 13:28 BST</p>
+      <p class="footer-updated">Last updated: 2026-08-26 13:59 BST</p>
     </footer>
   </div>
 <script>
@@ -761,30 +761,6 @@ document.querySelectorAll(".show-btn").forEach(function(btn){btn.addEventListene
   })();
   </script>
   <script>
-  // Nearest cinema highlight
-  (function(){
-    var cinemas={"St Austell":{lat:50.338,lng:-4.795},"Newquay":{lat:50.414,lng:-5.075},"Wadebridge":{lat:50.517,lng:-4.835},"Truro":{lat:50.263,lng:-5.051}};
-    if(!navigator.geolocation)return;
-    navigator.geolocation.getCurrentPosition(function(pos){
-      var best=null,bestDist=Infinity;
-      for(var cn in cinemas){
-        var c=cinemas[cn];
-        var d=Math.sqrt(Math.pow(c.lat-pos.coords.latitude,2)+Math.pow(c.lng-pos.coords.longitude,2));
-        if(d<bestDist){bestDist=d;best=cn;}
-      }
-      if(best){
-        var btns=document.querySelectorAll(".cinema-filter button");
-        var slug=best.toLowerCase().replace(/\s+/g,"-");
-        for(var i=0;i<btns.length;i++){
-          if(btns[i].getAttribute("data-cinema")===slug){
-            btns[i].classList.add("nearest");
-            btns[i].setAttribute("title","Nearest cinema: "+best);
-            break;
-          }
-        }
-      }
-    },function(){},{timeout:5000,maximumAge:3600000});
-  })();
   // View toggle for Now Showing and Coming Soon
   function setupViewToggle(toggleId,sectionId,defaultPoster){
     var toggle=document.getElementById(toggleId);

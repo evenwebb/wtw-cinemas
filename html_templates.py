@@ -440,8 +440,6 @@ CSS = _SHARED_CSS + """
 .cinema-filter button{font-family:inherit;font-size:0.82rem;font-weight:500;padding:0.45rem 1rem;border-radius:100px;border:1px solid var(--border);background:var(--surface);color:var(--text-muted);cursor:pointer;transition:all var(--transition)}
 .cinema-filter button:hover{color:var(--accent);border-color:var(--accent)}
 .cinema-filter button.active{background:var(--accent-dim);color:var(--accent);border-color:var(--accent)}
-.cinema-filter button.nearest{border-color:var(--amber);color:var(--amber);background:rgba(251,191,36,0.1)}
-.cinema-filter button.nearest::after{content:" ★"}
 .view-toggle-btn{font-family:inherit;font-size:0.78rem;font-weight:500;padding:0.35rem 0.85rem;border-radius:100px;border:1px solid var(--border);background:var(--surface);color:var(--text-muted);cursor:pointer;transition:all var(--transition)}
 .view-toggle-btn:hover{color:var(--accent);border-color:var(--accent)}
 /* Now Showing card/list toggle */
@@ -949,32 +947,6 @@ def build_index_html(
         '  })();\n'
         '  </script>\n'
         '  <script>\n'
-        '  // Nearest cinema highlight\n'
-        '  (function(){\n'
-        '    var cinemas={'
-        + ",".join(f'"{c["name"]}":{{lat:{c["lat"]},lng:{c["lng"]}}}' for c in [{"name":"St Austell","lat":50.338,"lng":-4.795},{"name":"Newquay","lat":50.414,"lng":-5.075},{"name":"Wadebridge","lat":50.517,"lng":-4.835},{"name":"Truro","lat":50.263,"lng":-5.051}])
-        + '};\n'
-        '    if(!navigator.geolocation)return;\n'
-        '    navigator.geolocation.getCurrentPosition(function(pos){\n'
-        '      var best=null,bestDist=Infinity;\n'
-        '      for(var cn in cinemas){\n'
-        '        var c=cinemas[cn];\n'
-        '        var d=Math.sqrt(Math.pow(c.lat-pos.coords.latitude,2)+Math.pow(c.lng-pos.coords.longitude,2));\n'
-        '        if(d<bestDist){bestDist=d;best=cn;}\n'
-        '      }\n'
-        '      if(best){\n'
-        '        var btns=document.querySelectorAll(".cinema-filter button");\n'
-        '        var slug=best.toLowerCase().replace(/\\s+/g,"-");\n'
-        '        for(var i=0;i<btns.length;i++){\n'
-        '          if(btns[i].getAttribute("data-cinema")===slug){\n'
-        '            btns[i].classList.add("nearest");\n'
-        '            btns[i].setAttribute("title","Nearest cinema: "+best);\n'
-        '            break;\n'
-        '          }\n'
-        '        }\n'
-        '      }\n'
-        '    },function(){},{timeout:5000,maximumAge:3600000});\n'
-        '  })();\n'
         '  // View toggle for Now Showing and Coming Soon\n'
         '  function setupViewToggle(toggleId,sectionId,defaultPoster){\n'
         '    var toggle=document.getElementById(toggleId);\n'
@@ -1284,11 +1256,6 @@ body{position:relative;background:var(--bg)}
 .cinema-table tr.day-separator>td{border:none;padding:0;height:12px;background:transparent}
 .cinema-table tr.day-separator:hover{background:transparent}
 .cinema-table tr.day-separator>td::before{content:"";display:block;height:1px;margin:0;background:rgba(226,114,60,0.28)}
-tr.nearest-cinema-row{background:rgba(226,114,60,0.06)}
-tr.nearest-cinema-row:first-child{border-top:2px solid var(--accent)}
-tr.nearest-cinema-row:last-of-type{border-bottom:2px solid var(--accent)}
-tr.nearest-cinema-row td:first-child{border-left:3px solid var(--accent)}
-.nearest-cinema-label{font-size:0.78rem;font-weight:600;color:var(--accent);padding:0.4rem 0.6rem;margin-bottom:0.25rem;display:flex;align-items:center;gap:0.3rem;background:rgba(226,114,60,0.08);border-radius:8px}
 .cinema-table .date-cell{font-weight:600;color:var(--accent);white-space:nowrap;font-size:0.78rem}
 @media(min-width:600px){.cinema-table .date-cell{font-size:inherit}}
 .cinema-table .time-cell{font-weight:500;color:var(--text);font-variant-numeric:tabular-nums}
@@ -1592,45 +1559,6 @@ def build_film_page(
             'tagClose.addEventListener("click",function(){tagPopup.hidden=true});\n'
             'tagOverlay.addEventListener("click",function(){tagPopup.hidden=true});\n'
             'document.addEventListener("keydown",function(e){if(e.key==="Escape")tagPopup.hidden=true});\n'
-            '</script>\n'
-            '<script>\n'
-            '// Nearest cinema highlight - reorder showtime rows\n'
-            '(function(){\n'
-            'var coords={'
-            + ",".join(f'"{s}":{{lat:{lat},lng:{lng}}}' for s, lat, lng in [("st-austell",50.338,-4.795),("newquay",50.414,-5.075),("wadebridge",50.517,-4.835),("truro",50.263,-5.051)])
-            + '};\n'
-            'if(!navigator.geolocation)return;\n'
-            'navigator.geolocation.getCurrentPosition(function(pos){\n'
-            'var best=null,bestDist=Infinity;\n'
-            'for(var cn in coords){\n'
-            'var c=coords[cn];\n'
-            'var d=Math.sqrt(Math.pow(c.lat-pos.coords.latitude,2)+Math.pow(c.lng-pos.coords.longitude,2));\n'
-            'if(d<bestDist){bestDist=d;best=cn;}\n'
-            '}\n'
-            'if(!best)return;\n'
-            'var tbody=document.querySelector(".cinema-table tbody");\n'
-            'var rows=document.querySelectorAll("tr[data-film-cinema]");\n'
-            'var topRows=[],otherRows=[];\n'
-            'for(var i=0;i<rows.length;i++){\n'
-            'var r=rows[i];\n'
-            'if(r.getAttribute("data-film-cinema")===best){\n'
-            'r.classList.add("nearest-cinema-row");\n'
-            'topRows.push(r);\n'
-            '}else{otherRows.push(r);}\n'
-            '}\n'
-            'if(topRows.length){\n'
-            'var frag=document.createDocumentFragment();\n'
-            'for(var j=0;j<topRows.length;j++)frag.appendChild(topRows[j]);\n'
-            'for(var k=0;k<otherRows.length;k++)frag.appendChild(otherRows[k]);\n'
-            'tbody.appendChild(frag);\n'
-            'var label=document.createElement("div");\n'
-            'label.className="nearest-cinema-label";\n'
-            'label.textContent="★ Nearest cinema: "+(best.charAt(0).toUpperCase()+best.slice(1).replace(/-/g," "));\n'
-            'var table=document.querySelector(".cinema-table-wrap");\n'
-            'table.parentNode.insertBefore(label,table);\n'
-            '}\n'
-            '},function(){},{timeout:5000,maximumAge:3600000});\n'
-            '})();\n'
             '</script>\n'
         )
     cinema_html = (

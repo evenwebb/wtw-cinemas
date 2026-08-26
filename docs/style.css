@@ -152,8 +152,6 @@ footer a:hover{color:var(--gold-bright)}
 .cinema-filter button{font-family:inherit;font-size:0.82rem;font-weight:500;padding:0.45rem 1rem;border-radius:100px;border:1px solid var(--border);background:var(--surface);color:var(--text-muted);cursor:pointer;transition:all var(--transition)}
 .cinema-filter button:hover{color:var(--accent);border-color:var(--accent)}
 .cinema-filter button.active{background:var(--accent-dim);color:var(--accent);border-color:var(--accent)}
-.cinema-filter button.nearest{border-color:var(--amber);color:var(--amber);background:rgba(251,191,36,0.1)}
-.cinema-filter button.nearest::after{content:" ★"}
 .view-toggle-btn{font-family:inherit;font-size:0.78rem;font-weight:500;padding:0.35rem 0.85rem;border-radius:100px;border:1px solid var(--border);background:var(--surface);color:var(--text-muted);cursor:pointer;transition:all var(--transition)}
 .view-toggle-btn:hover{color:var(--accent);border-color:var(--accent)}
 /* Now Showing card/list toggle */
@@ -301,11 +299,6 @@ body{position:relative;background:var(--bg)}
 .cinema-table tr.day-separator>td{border:none;padding:0;height:12px;background:transparent}
 .cinema-table tr.day-separator:hover{background:transparent}
 .cinema-table tr.day-separator>td::before{content:"";display:block;height:1px;margin:0;background:rgba(226,114,60,0.28)}
-tr.nearest-cinema-row{background:rgba(226,114,60,0.06)}
-tr.nearest-cinema-row:first-child{border-top:2px solid var(--accent)}
-tr.nearest-cinema-row:last-of-type{border-bottom:2px solid var(--accent)}
-tr.nearest-cinema-row td:first-child{border-left:3px solid var(--accent)}
-.nearest-cinema-label{font-size:0.78rem;font-weight:600;color:var(--accent);padding:0.4rem 0.6rem;margin-bottom:0.25rem;display:flex;align-items:center;gap:0.3rem;background:rgba(226,114,60,0.08);border-radius:8px}
 .cinema-table .date-cell{font-weight:600;color:var(--accent);white-space:nowrap;font-size:0.78rem}
 @media(min-width:600px){.cinema-table .date-cell{font-size:inherit}}
 .cinema-table .time-cell{font-weight:500;color:var(--text);font-variant-numeric:tabular-nums}

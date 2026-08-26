@@ -93,43 +93,6 @@ tagClose.addEventListener("click",function(){tagPopup.hidden=true});
 tagOverlay.addEventListener("click",function(){tagPopup.hidden=true});
 document.addEventListener("keydown",function(e){if(e.key==="Escape")tagPopup.hidden=true});
 </script>
-<script>
-// Nearest cinema highlight - reorder showtime rows
-(function(){
-var coords={"st-austell":{lat:50.338,lng:-4.795},"newquay":{lat:50.414,lng:-5.075},"wadebridge":{lat:50.517,lng:-4.835},"truro":{lat:50.263,lng:-5.051}};
-if(!navigator.geolocation)return;
-navigator.geolocation.getCurrentPosition(function(pos){
-var best=null,bestDist=Infinity;
-for(var cn in coords){
-var c=coords[cn];
-var d=Math.sqrt(Math.pow(c.lat-pos.coords.latitude,2)+Math.pow(c.lng-pos.coords.longitude,2));
-if(d<bestDist){bestDist=d;best=cn;}
-}
-if(!best)return;
-var tbody=document.querySelector(".cinema-table tbody");
-var rows=document.querySelectorAll("tr[data-film-cinema]");
-var topRows=[],otherRows=[];
-for(var i=0;i<rows.length;i++){
-var r=rows[i];
-if(r.getAttribute("data-film-cinema")===best){
-r.classList.add("nearest-cinema-row");
-topRows.push(r);
-}else{otherRows.push(r);}
-}
-if(topRows.length){
-var frag=document.createDocumentFragment();
-for(var j=0;j<topRows.length;j++)frag.appendChild(topRows[j]);
-for(var k=0;k<otherRows.length;k++)frag.appendChild(otherRows[k]);
-tbody.appendChild(frag);
-var label=document.createElement("div");
-label.className="nearest-cinema-label";
-label.textContent="★ Nearest cinema: "+(best.charAt(0).toUpperCase()+best.slice(1).replace(/-/g," "));
-var table=document.querySelector(".cinema-table-wrap");
-table.parentNode.insertBefore(label,table);
-}
-},function(){},{timeout:5000,maximumAge:3600000});
-})();
-</script>
     </div>
     <footer>
       <p>An open source fan-made project. Not affiliated with WTW Cinemas.</p>
@@ -138,7 +101,7 @@ table.parentNode.insertBefore(label,table);
         <span aria-hidden="true"> · </span>
         <a href="../">All premieres</a>
       </div>
-      <p class="footer-updated">Last updated: 2026-08-26 13:28 BST</p>
+      <p class="footer-updated">Last updated: 2026-08-26 13:59 BST</p>
     </footer>
   </div>
 </body>
