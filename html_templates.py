@@ -30,7 +30,7 @@ __all__ = [
     "_format_runtime_display", "_stars_from_rating", "_esc",
     "build_index_html", "build_cinema_page", "build_film_page",
     "_cert_span", "_youtube_embed_url", "_extract_bbfc",
-    "write_style_css",
+    "write_style_css", "write_robots_txt",
 ]
 
 LONDON_TZ = ZoneInfo("Europe/London")
@@ -675,7 +675,7 @@ def build_index_html(
             banner_class = screening.lower().replace(" ", "-").replace("&", "")
             se_cards.append(
                 f'<a href="films/{slug}.html" class="ns-poster-card">\n'
-                f'  <div class="ns-poster-wrap">{f"<img src=\"{_esc(poster)}\">" if poster else f"<div class=\"ns-no-poster\">{_esc(title[:30])}</div>"}</div>\n'
+                f'  <div class="ns-poster-wrap">{f"<img src=\"{_esc(poster)}\" alt=\"{_esc(title)}\" loading=\"lazy\" decoding=\"async\">" if poster else f"<div class=\"ns-no-poster\">{_esc(title[:30])}</div>"}</div>\n'
                 f'  <span class="ns-title">{_esc(title)}</span>\n'
                 f'  <span class="ns-event-tag {_esc(banner_class)}">{_esc(screening)}</span>\n'
                 f'</a>'
@@ -825,6 +825,17 @@ def build_index_html(
         '</script>\n'
     )
 
+    # First film with art becomes the homepage share image
+    index_og = ""
+    for f in all_films_list:
+        poster = f["details"].get("poster_url") or ""
+        if poster:
+            index_og = _absolute_poster_url(poster)
+            break
+
+    og_image_html = f'  <meta property="og:image" content="{_esc(index_og)}">\n' if index_og else ''
+    twitter_image_html = f'  <meta name="twitter:image" content="{_esc(index_og)}">\n' if index_og else ''
+
     return (
         '<!DOCTYPE html>\n<html lang="en">\n<head>\n'
         '  <meta charset="utf-8">\n'
@@ -834,8 +845,10 @@ def build_index_html(
         '  <meta property="og:title" content="What\'s on at WTW Cinemas">\n'
         '  <meta property="og:description" content="Browse upcoming film premieres at WTW Cinemas in Cornwall. Ratings, trailers, and booking links.">\n'
         '  <meta property="og:type" content="website">\n'
+        + og_image_html +
         f'  <link rel="canonical" href="{SITE_BASE_URL}/">\n'
         '  <meta name="twitter:card" content="summary">\n'
+        + twitter_image_html +
         '  <link rel="icon" href="data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><text y=\'.9em\' font-size=\'90\'>🎬</text></svg>">\n'
         '  <link rel="icon" media="(prefers-color-scheme: dark)" href="data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><text y=\'.9em\' font-size=\'90\'>🎥</text></svg>">\n'
         '  <link rel="preconnect" href="https://fonts.googleapis.com">\n'
@@ -1040,13 +1053,29 @@ def build_cinema_page(
 
     now_london = format_london_timestamp()
 
+    cinema_og = ""
+    for nf in now_showing_films:
+        if cinema_info["name"] not in nf.get("cinemas", []):
+            continue
+        if nf.get("poster"):
+            cinema_og = f"{SITE_BASE_URL}/posters/{nf['slug']}.jpg"
+            break
+    og_image_html = f'  <meta property="og:image" content="{_esc(cinema_og)}">\n' if cinema_og else ''
+    twitter_image_html = f'  <meta name="twitter:image" content="{_esc(cinema_og)}">\n' if cinema_og else ''
+
     return (
         '<!DOCTYPE html>\n<html lang="en">\n<head>\n'
         '  <meta charset="utf-8">\n'
         '  <meta name="viewport" content="width=device-width, initial-scale=1">\n'
         f'  <title>What\'s on at WTW {cinema_info["name"]}</title>\n'
         f'  <meta name="description" content="Now showing and coming soon at WTW Cinemas {cinema_info["name"]}.">\n'
-        f'  <link rel="canonical" href="{SITE_BASE_URL}/">\n'
+        + og_image_html +
+        f'  <meta property="og:title" content="What\'s on at WTW {cinema_info["name"]}">\n'
+        f'  <meta property="og:description" content="Now showing and coming soon at WTW Cinemas {cinema_info["name"]}.">\n'
+        f'  <meta property="og:type" content="website">\n'
+        f'  <link rel="canonical" href="{SITE_BASE_URL}/{cinema_id}.html">\n'
+        '  <meta name="twitter:card" content="summary">\n'
+        + twitter_image_html +
         '  <link rel="icon" href="data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><text y=\'.9em\' font-size=\'90\'>🎬</text></svg>">\n'
         '  <link rel="icon" media="(prefers-color-scheme: dark)" href="data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><text y=\'.9em\' font-size=\'90\'>🎥</text></svg>">\n'
         '  <link rel="preconnect" href="https://fonts.googleapis.com">\n'
@@ -1072,15 +1101,33 @@ def build_cinema_page(
     )
 
 
-def generate_sitemap(film_slugs: List[str], cinema_ids: List[str]) -> str:
+def generate_sitemap(film_slugs: List[str], cinema_ids: List[str], lastmod: str = "") -> str:
     """Generate sitemap.xml for SEO."""
     base = SITE_BASE_URL
-    urls = [f"  <url><loc>{base}/</loc></url>"]
+    lm = lastmod or date.today().isoformat()
+    urls = [f"  <url><loc>{base}/</loc><lastmod>{lm}</lastmod></url>"]
     for slug in film_slugs:
-        urls.append(f"  <url><loc>{base}/films/{slug}.html</loc></url>")
+        urls.append(f"  <url><loc>{base}/films/{slug}.html</loc><lastmod>{lm}</lastmod></url>")
     for cid in cinema_ids:
-        urls.append(f"  <url><loc>{base}/{cid}.html</loc></url>")
+        urls.append(f"  <url><loc>{base}/{cid}.html</loc><lastmod>{lm}</lastmod></url>")
     return '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(urls) + '\n</urlset>'
+
+
+def _absolute_poster_url(poster: str) -> str:
+    """Social scrapers reject relative og:image URLs, so prefix the site base."""
+    if not poster:
+        return ""
+    return poster if poster.startswith("http") else f"{SITE_BASE_URL}/{poster.lstrip('/')}"
+
+
+def write_robots_txt(out_dir: Path) -> None:
+    content = (
+        "User-agent: *\n"
+        "Allow: /\n\n"
+        f"Sitemap: {SITE_BASE_URL}/sitemap.xml\n"
+    )
+    (out_dir / "robots.txt").write_text(content, encoding="utf-8")
+    logger.info("Wrote %s/robots.txt", out_dir)
 
 
 # ── Film detail pages ───────────────────────────────────────────────────────────
@@ -1389,7 +1436,7 @@ def build_film_page(
 
     # Poster column
     poster_col = (
-        f'<div class="film-poster"><img src="{_esc(poster_src)}" alt="{_esc(film_title)}" loading="lazy"></div>'
+        f'<div class="film-poster"><img src="{_esc(poster_src)}" alt="{_esc(film_title)}" decoding="async" fetchpriority="high"></div>'
         if poster
         else f'<div class="film-poster"><div class="no-poster">{_esc(film_title)}</div></div>'
     )
@@ -1585,7 +1632,9 @@ def build_film_page(
         f'    </div>\n'
     ) if table_rows else ''
 
-    og_image = f'  <meta property="og:image" content="{_esc(poster)}">\n' if poster else ''
+    og_poster = _absolute_poster_url(poster)
+    og_image = f'  <meta property="og:image" content="{_esc(og_poster)}">\n' if og_poster else ''
+    twitter_image = f'  <meta name="twitter:image" content="{_esc(og_poster)}">\n' if og_poster else ''
     twitter_card = 'summary_large_image' if poster else 'summary'
 
     return (
@@ -1600,6 +1649,7 @@ def build_film_page(
         f'  {og_image}'
         f'  <meta property="og:url" content="{SITE_BASE_URL}/films/{film_slug}.html">\n'
         f'  <meta name="twitter:card" content="{twitter_card}">\n'
+        f'  {twitter_image}'
         '  <link rel="icon" href="data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><text y=\'.9em\' font-size=\'90\'>🎬</text></svg>">\n'
         '  <link rel="icon" media="(prefers-color-scheme: dark)" href="data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><text y=\'.9em\' font-size=\'90\'>🎥</text></svg>">\n'
         '  <link rel="preconnect" href="https://fonts.googleapis.com">\n'

@@ -47,6 +47,8 @@ CACHE_EXPIRY_DAYS = 7
 TMDB_CACHE_FILE = ".tmdb_cache.json"
 TMDB_CACHE_DAYS = 30
 TMDB_DELAY_SEC = 0.2
+# TMDb ratings from fewer votes swing wildly (a 3-vote film can show 10/10)
+MIN_TMDB_VOTES = 30
 MIN_SYNOPSIS_LENGTH = 50
 MAX_SYNOPSIS_LENGTH = 500
 SYNOPSIS_SKIP_TERMS = ["cookie", "privacy", "terms", "wheelchair", "audio description"]
@@ -971,6 +973,22 @@ def _pick_best_tmdb_result(results: List[Dict], search_title: str, release_year:
     return best if best_score >= 30 else None
 
 
+def _apply_poster_fallback(details: dict) -> None:
+    """Prefer TMDb art for the display poster.
+
+    When TMDb has no poster_path the site's event banner would otherwise
+    serve as the poster. A TMDb backdrop is a still from the film itself,
+    so it makes the better stand-in. Leave non-TMDb posters in place when
+    no backdrop exists; templates already crop banners to portrait.
+    """
+    poster = (details.get("poster_url") or "").strip()
+    backdrop = (details.get("backdrop_url") or "").strip()
+    if not backdrop:
+        return
+    if not poster or "image.tmdb.org" not in poster:
+        details["poster_url"] = backdrop
+
+
 def enrich_film_tmdb(
     film_title: str,
     film_url: str,
@@ -995,7 +1013,9 @@ def enrich_film_tmdb(
         if key in cache:
             entry = cache[key]
             va = entry.get("vote_average")
-            if va is not None and float(va) == 0.0:
+            if va is None or float(va) == 0.0:
+                va = None
+            elif entry.get("vote_count", MIN_TMDB_VOTES) < MIN_TMDB_VOTES:
                 va = None
             return {
                 "overview": entry.get("overview") or "",
@@ -1004,6 +1024,9 @@ def enrich_film_tmdb(
                 "director": entry.get("director") or "",
                 "cast": entry.get("cast") or "",
                 "poster_url": entry.get("poster_url") or "",
+                "poster_large_url": entry.get("poster_large_url") or "",
+                "backdrop_url": entry.get("backdrop_url") or "",
+                "runtime": entry.get("runtime") or "",
                 "trailer_url": entry.get("trailer_url") or "",
                 "imdb_id": entry.get("imdb_id") or "",
             }
@@ -1027,7 +1050,7 @@ def enrich_film_tmdb(
         safe_url = re.sub(r"api_key=[^&]+", "api_key=***", url)
         raise RuntimeError(f"TMDb request failed: {safe_url}")
     empty_result = {
-        "overview": "", "genres": [], "vote_average": None,
+        "overview": "", "genres": [], "vote_average": None, "vote_count": 0,
         "director": "", "cast": "",
         "poster_url": "", "poster_large_url": "", "backdrop_url": "",
         "runtime": "", "trailer_url": "", "imdb_id": "",
@@ -1128,7 +1151,8 @@ def enrich_film_tmdb(
         result = {
             "overview": overview,
             "genres": genres,
-            "vote_average": vote_average if vote_count > 0 else None,
+            "vote_average": vote_average if vote_count >= MIN_TMDB_VOTES else None,
+            "vote_count": vote_count,
             "director": director_str,
             "cast": cast_str,
             "poster_url": poster_url,
@@ -1157,6 +1181,7 @@ from html_templates import (
     _compute_fingerprint, _load_fingerprint, _save_fingerprint,
     _download_cert_images, _download_poster, _health_check, _save_sequence_state,
     write_style_css, make_ics_event, ICAL_NEWLINE, generate_sitemap,
+    write_robots_txt,
 )
 
 
@@ -1288,9 +1313,11 @@ def main() -> None:
             for field in _CACHE_FIELDS:
                 val = tc.get(field)
                 if val and not fdetails.get(field):
-                    if field == "vote_average" and float(val) == 0.0:
-                        continue
+                    if field == "vote_average":
+                        if float(val) == 0.0 or tc.get("vote_count", MIN_TMDB_VOTES) < MIN_TMDB_VOTES:
+                            continue
                     fdetails[field] = val
+            _apply_poster_fallback(fdetails)
             all_films[i] = (rd, title, cname, furl, fdetails, cid)
 
     if api_key:
@@ -1332,6 +1359,7 @@ def main() -> None:
                         val = extra.get(field)
                         if val or (field == "vote_average" and val is not None):
                             fdetails[field] = val
+                    _apply_poster_fallback(fdetails)
                     all_films[i] = (rd, t, cname, furl, fdetails, cid)
         # Also enrich unique whats-on films not already in unique_by_key
         whats_on_unique: Dict[str, Tuple[str, str]] = {}
@@ -1474,7 +1502,8 @@ def main() -> None:
         poster = ""
         # Check TMDb cache first (now includes whats-on enrichments)
         if slug in tmdb_cache:
-            poster = tmdb_cache[slug].get("poster_url", "") or ""
+            tc = tmdb_cache[slug]
+            poster = tc.get("poster_url", "") or tc.get("backdrop_url", "") or ""
         # Also check all_films detail
         if not poster:
             for rd, t, cname, furl, fdetails, cid in all_films:
@@ -1598,13 +1627,18 @@ def main() -> None:
                 val = tc.get(field)
                 if not val:
                     continue
-                if field == "vote_average" and float(val) == 0.0:
-                    continue
+                if field == "vote_average":
+                    if float(val) == 0.0 or tc.get("vote_count", MIN_TMDB_VOTES) < MIN_TMDB_VOTES:
+                        continue
                 # Always prefer TMDb poster/backdrop over WTW CDN backdrops
                 if field in ("poster_url", "poster_large_url", "backdrop_url"):
                     page["details"][field] = val
                 elif not page["details"].get(field):
                     page["details"][field] = val
+
+    # One normalization pass covers every detail page (coming-soon + whats-on)
+    for slug, page in film_pages.items():
+        _apply_poster_fallback(page["details"])
 
     for slug, page in film_pages.items():
         film_showtimes = sorted(
@@ -1737,6 +1771,7 @@ def main() -> None:
     sitemap = generate_sitemap(film_slugs, list(enabled_cinemas.keys()))
     _atomic_write_text(out_dir / "sitemap.xml", sitemap)
     logger.info("Wrote sitemap.xml with %d URLs", len(film_slugs) + len(enabled_cinemas) + 1)
+    write_robots_txt(out_dir)
 
     # ── Save fingerprint ─────────────────────────────────────────────────────
     _save_fingerprint(fp)
