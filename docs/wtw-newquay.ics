@@ -10,58 +10,61 @@ X-WR-CALDESC:Upcoming movie premieres at WTW Cinemas Newquay
 X-WR-TIMEZONE:Europe/London
 BEGIN:VEVENT
 UID:57fce2f49b697d2ad161f3529a4dd3fd13575355@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20260828
 DTEND;VALUE=DATE:20260829
 SUMMARY:One Night Only @ WTW Newquay
 DESCRIPTION:One Night Only (1h 42min)\n★★★☆☆\nComedy\, Romance\n\nTwo love-
  starved strangers crash into each other on the one night of the year when 
  single people are allowed to have sex.\n\nStarring: Monica Barbaro\, Callu
- m Turner\, Maya Hawke\n\nFilm release at WTW Cinemas Newquay\nBook tickets
- : https://wtwcinemas.co.uk/newquay/film/5665/one-night-only\n\nFilm detail
- s: https://evenwebb.github.io/wtw-cinemas/films/one-night-only.html
+ m Turner\, Maya Hawke\, King Princess\, Molly Ringwald\, LeVar Burton\n\nF
+ ilm release at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk
+ /newquay/film/5665/one-night-only\n\nFilm details: https://evenwebb.github
+ .io/wtw-cinemas/films/one-night-only.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5665/one-night-only
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:65573c037a6fa6a615fe5a800a68806eb5a0e206@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20260828
 DTEND;VALUE=DATE:20260829
 SUMMARY:Coyote vs. Acme @ WTW Newquay
 DESCRIPTION:Coyote vs. Acme (1h 43min)\n★★★★☆\nComedy\, Adventure\, Family\
  n\nAfter Acme products fail him one too many times in his dogged pursuit o
  f the Roadrunner\, Wile E. Coyote decides to hire a billboard lawyer to su
- e the Acme Corporation.\n\nStarring: Lana Condor\, Tone Bell\, Will Forte\
- n\nFilm release at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.c
- o.uk/newquay/film/5673/coyote-vs-acme-with-subtitles\n\nFilm details: http
- s://evenwebb.github.io/wtw-cinemas/films/coyote-vs-acme.html
+ e the Acme Corporation.\n\nStarring: Will Forte\, Lana Condor\, John Cena\
+ , Tone Bell\, Eric Bauza\, P.J. Byrne\n\nFilm release at WTW Cinemas Newqu
+ ay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5673/coyote-vs-acm
+ e-with-subtitles\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/f
+ ilms/coyote-vs-acme.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5673/coyote-vs-acme-with-subtitle
  s
-SEQUENCE:9
+SEQUENCE:11
 END:VEVENT
 BEGIN:VEVENT
 UID:5ae25d2def34f147eddb35b269b835e7484ac0c5@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20260828
 DTEND;VALUE=DATE:20260829
 SUMMARY:Coyote vs. Acme @ WTW Newquay
 DESCRIPTION:Coyote vs. Acme (1h 43min)\n★★★★☆\nComedy\, Adventure\, Family\
  n\nAfter Acme products fail him one too many times in his dogged pursuit o
  f the Roadrunner\, Wile E. Coyote decides to hire a billboard lawyer to su
- e the Acme Corporation.\n\nStarring: Will Forte\, Lana Condor\, Tone Bell\
- n\nFilm release at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.c
- o.uk/newquay/film/5638/coyote-vs-acme\n\nFilm details: https://evenwebb.gi
- thub.io/wtw-cinemas/films/coyote-vs-acme.html
+ e the Acme Corporation.\n\nStarring: Will Forte\, Lana Condor\, John Cena\
+ , Tone Bell\, Eric Bauza\, P.J. Byrne\n\nFilm release at WTW Cinemas Newqu
+ ay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5638/coyote-vs-acm
+ e\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/coyote-vs-
+ acme.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5638/coyote-vs-acme
-SEQUENCE:10
+SEQUENCE:12
 END:VEVENT
 BEGIN:VEVENT
 UID:344228b148bcff34e0ec04e836897c0ad698156f@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20260904
 DTEND;VALUE=DATE:20260905
 SUMMARY:The Death of Robin Hood @ WTW Newquay
@@ -69,17 +72,18 @@ DESCRIPTION:The Death of Robin Hood (2h 3min)\n★★★☆☆\nAdventure\, Dram
  ction\n\nGrappling with his past after a life of crime and murder\, Robin 
  Hood finds himself gravely injured after a battle he thought would be his 
  last. In the hands of a mysterious woman\, he is offered a chance at salva
- tion.\n\nStarring: Hugh Jackman\, Jodie Comer\, Bill Skarsgård\n\nFilm rel
- ease at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/newqua
- y/film/5671/the-death-of-robin-hood\n\nFilm details: https://evenwebb.gith
- ub.io/wtw-cinemas/films/the-death-of-robin-hood.html
+ tion.\n\nStarring: Hugh Jackman\, Jodie Comer\, Bill Skarsgård\, Murray Ba
+ rtlett\, Noah Jupe\, Jade Croot\n\nFilm release at WTW Cinemas Newquay\nBo
+ ok tickets: https://wtwcinemas.co.uk/newquay/film/5671/the-death-of-robin-
+ hood\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/the-dea
+ th-of-robin-hood.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5671/the-death-of-robin-hood
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8a90a6a022d89aa37601f3e046b4259217c8e907@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260906
 SUMMARY:Star Trek IV: The Voyage Home @ WTW Newquay
@@ -87,51 +91,54 @@ DESCRIPTION:Star Trek IV: The Voyage Home (1h 58min)\n★★★★☆\nScience F
  n\, Adventure\n\nWhen a huge alien probe enters the galaxy and begins to v
  aporize Earth's oceans\, Kirk and his crew must travel back in time in ord
  er to bring back whales and save the planet.\n\nStarring: William Shatner\
- , Leonard Nimoy\, DeForest Kelley\n\nFilm release at WTW Cinemas Newquay\n
- Book tickets: https://wtwcinemas.co.uk/newquay/film/5645/star-trek-iv-the-
- voyage-home\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/
- star-trek-iv-the-voyage-home.html
+ , Leonard Nimoy\, DeForest Kelley\, James Doohan\, George Takei\, Walter K
+ oenig\n\nFilm release at WTW Cinemas Newquay\nBook tickets: https://wtwcin
+ emas.co.uk/newquay/film/5645/star-trek-iv-the-voyage-home\n\nFilm details:
+  https://evenwebb.github.io/wtw-cinemas/films/star-trek-iv-the-voyage-home
+ .html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5645/star-trek-iv-the-voyage-home
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:cd1e36ecad3e9dfe01b1206a124c90ced22549c0@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20260909
 DTEND;VALUE=DATE:20260910
 SUMMARY:Pressure @ WTW Newquay
-DESCRIPTION:Pressure (1h 40min)\n★★★★☆\nThriller\, History\, War\n\nIn the 
+DESCRIPTION:Pressure (1h 41min)\n★★★★☆\nThriller\, History\, War\n\nIn the 
  tense 72 hours before D-Day\, and the fate of the free world hanging in th
  e balance\, General Dwight D. Eisenhower and Captain James Stagg face an i
  mpossible choice—launch the largest and most dangerous seaborne invasion i
  n history or risk losing the war altogether.\n\nStarring: Andrew Scott\, B
- rendan Fraser\, Kerry Condon\n\nFilm release at WTW Cinemas Newquay\nBook 
- tickets: https://wtwcinemas.co.uk/newquay/film/5580/pressure\n\nFilm detai
- ls: https://evenwebb.github.io/wtw-cinemas/films/pressure.html
+ rendan Fraser\, Kerry Condon\, Chris Messina\, Damian Lewis\, Tamsin Topol
+ ski\n\nFilm release at WTW Cinemas Newquay\nBook tickets: https://wtwcinem
+ as.co.uk/newquay/film/5580/pressure\n\nFilm details: https://evenwebb.gith
+ ub.io/wtw-cinemas/films/pressure.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5580/pressure
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:d0b70021d26856b4d0572a4cc8cea6ad9f675e10@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20260911
 DTEND;VALUE=DATE:20260912
 SUMMARY:Practical Magic 2 @ WTW Newquay
-DESCRIPTION:Practical Magic 2 (2h 6min)\nRomance\, Fantasy\, Comedy\n\nThe 
- Owens sisters must confront the dark curse that threatens to unravel their
-  family once and for all.\n\nStarring: Sandra Bullock\, Nicole Kidman\, Jo
- ey King\n\nFilm release at WTW Cinemas Newquay\nBook tickets: https://wtwc
- inemas.co.uk/newquay/film/5657/practical-magic-2\n\nFilm details: https://
- evenwebb.github.io/wtw-cinemas/films/practical-magic-2.html
+DESCRIPTION:Practical Magic 2 (1h 50min)\nRomance\, Fantasy\, Comedy\n\nThe
+  Owens sisters must confront the dark curse that threatens to unravel thei
+ r family once and for all.\n\nStarring: Sandra Bullock\, Nicole Kidman\, J
+ oey King\, Maisie Williams\, Xolo Maridueña\, Lee Pace\n\nFilm release at 
+ WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5
+ 657/practical-magic-2\n\nFilm details: https://evenwebb.github.io/wtw-cine
+ mas/films/practical-magic-2.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5657/practical-magic-2
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b67f90d533ccac16de7432573de95bd7a16384d3@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20260912
 DTEND;VALUE=DATE:20260913
 SUMMARY:Raiders of the Lost Ark - 45th Anniversary @ WTW Newquay
@@ -140,10 +147,11 @@ DESCRIPTION:Raiders of the Lost Ark - 45th Anniversary (1h 55min)\n★★★★�
  ho just happens to be a celebrated archaeologist – is hired by the governm
  ent to locate the legendary Ark of the Covenant\, he finds himself up agai
  nst the entire Nazi regime.\n\nStarring: Harrison Ford\, Karen Allen\, Pau
- l Freeman\n\nFilm release at WTW Cinemas Newquay\nBook tickets: https://wt
- wcinemas.co.uk/newquay/film/5664/raiders-of-the-lost-ark-45th-anniversary\
- n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/raiders-of-t
- he-lost-ark-45th-anniversary.html
+ l Freeman\, John Rhys-Davies\, Ronald Lacey\, Wolf Kahler\n\nFilm release 
+ at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/fil
+ m/5664/raiders-of-the-lost-ark-45th-anniversary\n\nFilm details: https://e
+ venwebb.github.io/wtw-cinemas/films/raiders-of-the-lost-ark-45th-anniversa
+ ry.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5664/raiders-of-the-lost-ark-45th
  -anniversary
@@ -151,20 +159,20 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:43163baaf9f2dabc18aa7bd3a2203473264492c9@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20260917
 DTEND;VALUE=DATE:20260918
 SUMMARY:THE TRANSFORMERS: THE MOVIE 40TH ANNIVERSARY @ WTW Newquay
-DESCRIPTION:THE TRANSFORMERS: THE MOVIE 40TH ANNIVERSARY (1h 36min)\n★★★★☆\
+DESCRIPTION:THE TRANSFORMERS: THE MOVIE 40TH ANNIVERSARY (1h 25min)\n★★★★☆\
  nAnimation\, Science Fiction\, Action\, Adventure\, Family\n\nThe Autobots
   must stop a colossal planet-consuming robot who goes after the Autobot Ma
  trix of Leadership. At the same time\, they must defend themselves against
-  an all-out attack from the Decepticons.\n\nStarring: Peter Cullen\,  Fran
- k Welker\,  Orson Welles\,  Judd Nelson\,  Leonard Nimoy\,  Eric Idle\n\nF
- ilm release at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk
- /newquay/film/5656/the-transformers-the-movie-40th-anniversary\n\nFilm det
- ails: https://evenwebb.github.io/wtw-cinemas/films/the-transformers-the-mo
- vie-40th-anniversary.html
+  an all-out attack from the Decepticons.\n\nStarring: Judd Nelson\, Peter 
+ Cullen\, Frank Welker\, Leonard Nimoy\, Orson Welles\, Casey Kasem\n\nFilm
+  release at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/ne
+ wquay/film/5656/the-transformers-the-movie-40th-anniversary\n\nFilm detail
+ s: https://evenwebb.github.io/wtw-cinemas/films/the-transformers-the-movie
+ -40th-anniversary.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5656/the-transformers-the-movie-4
  0th-anniversary
@@ -172,19 +180,20 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:cb96582fc5ad6db52f68f684f51617c548085fbe@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
 SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom @ WTW Newquay
-DESCRIPTION:Shaun the Sheep: The Beast of Mossy Bottom\nAnimation\, Comedy\
- , Science Fiction\, Family\n\nOn Halloween Eve at Mossy Bottom Farm\, exci
- tement turns to dismay when the clumsy Farmer ruins the pumpkin patch. Sha
- un tries fixing it with science experiments\, but things go wrong when a w
- ild beast appears in the woods.\n\nStarring: Justin Fletcher\, John Sparke
- s\, Kate Harbour\n\nFilm release at WTW Cinemas Newquay\nBook tickets: htt
- ps://wtwcinemas.co.uk/newquay/film/5581/shaun-the-sheep-the-beast-of-mossy
- -bottom\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/shau
- n-the-sheep-the-beast-of-mossy-bottom.html
+DESCRIPTION:Shaun the Sheep: The Beast of Mossy Bottom (1h 20min)\nAnimatio
+ n\, Comedy\, Science Fiction\, Family\n\nOn Halloween Eve at Mossy Bottom 
+ Farm\, excitement turns to dismay when the clumsy Farmer ruins the pumpkin
+  patch. Shaun tries fixing it with science experiments\, but things go wro
+ ng when a wild beast appears in the woods.\n\nStarring: Justin Fletcher\, 
+ John Sparkes\, Kate Harbour\, Nina Sosanya\, Paul Whitehouse\, Roman Kemp\
+ n\nFilm release at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.c
+ o.uk/newquay/film/5581/shaun-the-sheep-the-beast-of-mossy-bottom\n\nFilm d
+ etails: https://evenwebb.github.io/wtw-cinemas/films/shaun-the-sheep-the-b
+ east-of-mossy-bottom.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5581/shaun-the-sheep-the-beast-of
  -mossy-bottom
@@ -192,7 +201,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:53779e6c655af4d22196aa02023fabe1b88fdcdf@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
 SUMMARY:National Theatre Live: The Misanthrope @ WTW Newquay
@@ -206,10 +215,11 @@ DESCRIPTION:National Theatre Live: The Misanthrope (2h 30min)\nDrama\, Come
  oman for daring to speak her mind. Award-winner Sandra Oh is the Misanthro
  pe in Martin Crimp's cutting new version of Molière's dark comedy\, direct
  ed by National Theatre Director Indhu Rubasingham.\n\nStarring: Sandra Oh\
- n\nFilm release at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.c
- o.uk/newquay/film/5599/national-theatre-live-the-misanthrope\n\nFilm detai
- ls: https://evenwebb.github.io/wtw-cinemas/films/national-theatre-live-the
- -misanthrope.html
+ , Paul Chahidi\, Abigail Cruttenden\, Imogen Elliott\, Rina Fatania\, Fred
+ die MacBruce\n\nFilm release at WTW Cinemas Newquay\nBook tickets: https:/
+ /wtwcinemas.co.uk/newquay/film/5599/national-theatre-live-the-misanthrope\
+ n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/national-the
+ atre-live-the-misanthrope.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5599/national-theatre-live-the-mi
  santhrope
@@ -217,76 +227,79 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0d13e5a47ac64d56d38a478ffeb04e5019e003ee@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
 SUMMARY:Digger @ WTW Newquay
 DESCRIPTION:Digger (1h 46min)\nComedy\n\nThe most powerful man in the world
   embarks on a frantic mission to prove he is humanity's savior before the 
- disaster he's unleashed destroys everything.\n\nStarring: Tom Cruise\, San
- dra Hüller\, John Goodman\n\nFilm release at WTW Cinemas Newquay\nBook tic
- kets: https://wtwcinemas.co.uk/newquay/film/5583/digger\n\nFilm details: h
- ttps://evenwebb.github.io/wtw-cinemas/films/digger.html
+ disaster he's unleashed destroys everything.\n\nStarring: Tom Cruise\, Riz
+  Ahmed\, John Goodman\, Sandra Hüller\, Michael Stuhlbarg\, Jesse Plemons\
+ n\nFilm release at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.c
+ o.uk/newquay/film/5583/digger\n\nFilm details: https://evenwebb.github.io/
+ wtw-cinemas/films/digger.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5583/digger
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0f23a324dbd35d65bdab43648169289b88306d4c@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
 SUMMARY:Queen: Budapest @ WTW Newquay
-DESCRIPTION:Queen: Budapest (1h 37min)\nDrama\n\nNikki Holiday\, a drag que
- en cabaret star\, tries to fill the void in her life after her plans to st
- art a family fall apart.\n\nStarring: Freddie Mercury\, Brian May\, Roger 
- Taylor\n\nFilm release at WTW Cinemas Newquay\nBook tickets: https://wtwci
- nemas.co.uk/newquay/film/5674/queen-budapest\n\nFilm details: https://even
- webb.github.io/wtw-cinemas/films/queen-budapest.html
+DESCRIPTION:Queen: Budapest (22 min)\nDrama\n\nNikki Holiday\, a drag queen
+  cabaret star\, tries to fill the void in her life after her plans to star
+ t a family fall apart.\n\nStarring: Ryan Eggold\, Bobby Campo\, Angela Bul
+ lock\, Evan Peters\, Barry Papick\n\nFilm release at WTW Cinemas Newquay\n
+ Book tickets: https://wtwcinemas.co.uk/newquay/film/5674/queen-budapest\n\
+ nFilm details: https://evenwebb.github.io/wtw-cinemas/films/queen-budapest
+ .html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5674/queen-budapest
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8122138e54dd5075f13cd26f4b61847fb5f68c8f@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:Hadestown: The Musical @ WTW Newquay
-DESCRIPTION:Hadestown: The Musical (2h 22min)\n★★★★☆\nDrama\, Fantasy\, Rom
+DESCRIPTION:Hadestown: The Musical (2h 21min)\n★★★★☆\nDrama\, Fantasy\, Rom
  ance\n\nThe tragic love of Orpheus and Eurydice is intertwined with the co
  mplex relationship of Hades and Persephone. Eurydice\, struggling with pov
  erty\, is lured to the industrial underworld of Hadestown by Hades\, while
   Orpheus\, a struggling musician\, ventures down below to bring her back. 
  (Filmed live at the Lyric Theatre\, London\, featuring the core five origi
- nal Broadway cast members.)\n\nStarring: Mara Isaacs\, Dale Franzen\, Hunt
- er Arnold\, Brett Sullivan\, Natalie Daniels-Browne\n\nFilm release at WTW
-  Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5653
- /hadestown-the-musical\n\nFilm details: https://evenwebb.github.io/wtw-cin
- emas/films/hadestown-the-musical.html
+ nal Broadway cast members.)\n\nStarring: Reeve Carney\, Eva Noblezada\, An
+ dré De Shields\, Patrick Page\, Amber Gray\, Bella Brown\n\nFilm release a
+ t WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/film
+ /5653/hadestown-the-musical\n\nFilm details: https://evenwebb.github.io/wt
+ w-cinemas/films/hadestown-the-musical.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5653/hadestown-the-musical
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:7bbb719a6f79ad493a097d501e6acecb77ac5c01@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Street Fighter @ WTW Newquay
-DESCRIPTION:Street Fighter\n★★☆☆☆\nAction\, Comedy\, Fantasy\n\nColonel Gui
- le and various other martial arts heroes fight against the tyranny of dict
- ator M. Bison and his cohorts.\n\nStarring: Andrew Koji\, Noah Centineo\, 
- Callina Liang\n\nFilm release at WTW Cinemas Newquay\nBook tickets: https:
- //wtwcinemas.co.uk/newquay/film/5582/street-fighter\n\nFilm details: https
- ://evenwebb.github.io/wtw-cinemas/films/street-fighter.html
+DESCRIPTION:Street Fighter (1h 42min)\n★★☆☆☆\nAction\, Comedy\, Fantasy\n\n
+ Colonel Guile and various other martial arts heroes fight against the tyra
+ nny of dictator M. Bison and his cohorts.\n\nStarring: Jean-Claude Van Dam
+ me\, Raúl Juliá\, Kylie Minogue\, Byron Mann\, Damian Chapa\, Ming-Na Wen\
+ n\nFilm release at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.c
+ o.uk/newquay/film/5582/street-fighter\n\nFilm details: https://evenwebb.gi
+ thub.io/wtw-cinemas/films/street-fighter.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5582/street-fighter
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5e010fda2b4be4e6a1267a728e77863cbbdde9e0@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Forgotten Island @ WTW Newquay
@@ -297,20 +310,21 @@ DESCRIPTION:Forgotten Island (1h 49min)\nAdventure\, Animation\, Comedy\, F
  cover that the memories of their entire friendship are the price for retur
  ning home\, Jo and Raissa will race to find a way to leave the island befo
  re they forget each other forever.\n\nStarring: H.E.R.\, Liza Soberano\, D
- ave Franco\n\nFilm release at WTW Cinemas Newquay\nBook tickets: https://w
- twcinemas.co.uk/newquay/film/5643/forgotten-island\n\nFilm details: https:
- //evenwebb.github.io/wtw-cinemas/films/forgotten-island.html
+ ave Franco\, Lea Salonga\, Manny Jacinto\, Jenny Slate\n\nFilm release at 
+ WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5
+ 643/forgotten-island\n\nFilm details: https://evenwebb.github.io/wtw-cinem
+ as/films/forgotten-island.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5643/forgotten-island
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f122737e6b6a7b2f0e998436f10adf11f640303b@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Macbeth - Royal Ballet & Opera 26-27 Season @ WTW Newquay
-DESCRIPTION:Macbeth - Royal Ballet & Opera 26-27 Season (3h 30min)\n★★★★☆\n
+DESCRIPTION:Macbeth - Royal Ballet & Opera 26-27 Season (1h 47min)\n★★★★☆\n
  Drama\n\nMacbeth\, the Thane of Glamis\, receives a prophecy from a trio o
  f witches that one day he will become King of Scotland. Consumed by ambiti
  on and spurred to action by his wife\, Macbeth commits a treasonous act an
@@ -327,25 +341,25 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:979a660aaefeec037d4296642661dd99489a2e0c@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Fallen Angels by Noël Coward @ WTW Newquay
-DESCRIPTION:Fallen Angels by Noël Coward (1h 50min)\n★★★★☆\nAction\, Romanc
+DESCRIPTION:Fallen Angels by Noël Coward (1h 38min)\n★★★★☆\nAction\, Romanc
  e\, Crime\n\nAn indifferent hitman\, his infatuated business partner and a
  n ex-convict search for love and meaning as their lives cross paths in Hon
- g Kong.\n\nStarring: Rose Byrne\, Kelli O'Hara\, Tracee Chimo\, Mark Consu
- elos\, Christopher Fitzgeral\, Aasif Mandv\n\nFilm release at WTW Cinemas 
- Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5635/fallen-a
- ngels-by-nol-coward\n\nFilm details: https://evenwebb.github.io/wtw-cinema
- s/films/fallen-angels-by-no-l-coward.html
+ g Kong.\n\nStarring: Leon Lai Ming\, Michele Reis\, Takeshi Kaneshiro\, Ch
+ arlie Yeung Choi-Nei\, Karen Mok Man-Wai\, Chan Man-Lei\n\nFilm release at
+  WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/
+ 5635/fallen-angels-by-nol-coward\n\nFilm details: https://evenwebb.github.
+ io/wtw-cinemas/films/fallen-angels-by-no-l-coward.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5635/fallen-angels-by-nol-coward
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:54fdea381517cf456b9ec0bd7286788af82a8c3b@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:Manon - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -372,7 +386,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:e116868a85aae4135fcbb928352d65a9da0bb536@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:National Theatre Live: Golden Boy @ WTW Newquay
@@ -388,10 +402,11 @@ DESCRIPTION:National Theatre Live: Golden Boy (3h)\nDrama\n\n1930s New York
  choose a side. Sam Yates directs Josh O'Connor in this searing revival of 
  Clifford Odets' knockout American classic. Brought to life with a live str
  ing quartet\, this propulsive drama explores ambition\, identity\, and the
-  high price of success.\n\nStarring: Josh O’Connor\n\nFilm release at WTW 
- Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5651/
- national-theatre-live-golden-boy\n\nFilm details: https://evenwebb.github.
- io/wtw-cinemas/films/national-theatre-live-golden-boy.html
+  high price of success.\n\nStarring: Josh O'Connor\, Jason Barnett\, Richa
+ rd Fleeshman\, David Ganly\, Patrick Martins\, Oliver Ryan\n\nFilm release
+  at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/fi
+ lm/5651/national-theatre-live-golden-boy\n\nFilm details: https://evenwebb
+ .github.io/wtw-cinemas/films/national-theatre-live-golden-boy.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5651/national-theatre-live-golden
  -boy
@@ -399,27 +414,28 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:48661bb4668d3d3a019208349c084744ce5fc49e@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Wild Horse Nine @ WTW Newquay
-DESCRIPTION:Wild Horse Nine\nComedy\, Crime\, Thriller\n\nShortly before th
- e 1973 Chilean coup\, CIA agents Chris and Lee are dispatched from Santiag
- o to Easter Island by their bureau chief\, MJ. Amongst the Island's iconic
-  statues\, and as the longtime partners wrestle with their dark pasts and 
- present conspiracies\, Chris's newfound bond with a pair of rebellious stu
- dents threatens to send everyone’s trip to this remote paradise sideways.\
- n\nStarring: John Malkovich\, Sam Rockwell\, Steve Buscemi\n\nFilm release
-  at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/fi
- lm/5585/wild-horse-nine\n\nFilm details: https://evenwebb.github.io/wtw-ci
- nemas/films/wild-horse-nine.html
+DESCRIPTION:Wild Horse Nine (1h 58min)\nComedy\, Crime\, Thriller\n\nShortl
+ y before the 1973 Chilean coup\, CIA agents Chris and Lee are dispatched f
+ rom Santiago to Easter Island by their bureau chief\, MJ. Amongst the Isla
+ nd's iconic statues\, and as the longtime partners wrestle with their dark
+  pasts and present conspiracies\, Chris's newfound bond with a pair of reb
+ ellious students threatens to send everyone’s trip to this remote paradise
+  sideways.\n\nStarring: John Malkovich\, Sam Rockwell\, Steve Buscemi\, Pa
+ rker Posey\, Tom Waits\, Mariana di Girolamo\n\nFilm release at WTW Cinema
+ s Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5585/wild-h
+ orse-nine\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/wi
+ ld-horse-nine.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5585/wild-horse-nine
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b3f7ae6f4c3719476c734b90998ced9e9f267cab@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Carmen - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -443,7 +459,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:1d52954d5a767132c77e7c36672dc0631aadfe4b@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:GIANT - The Play @ WTW Newquay
@@ -453,17 +469,18 @@ DESCRIPTION:GIANT - The Play (2h 16min)\nDrama\n\nSet in the summer of 1983
  le to contain the fallout from his public denunciation of Israel and defen
  ce of the Palestinians in a review of a book on the 1982 Lebanon war. Film
  ed live onstage at the Harold Pinter Theatre in London's West End in 2025.
- \n\nStarring: Aya Cash\, Elliot Levey\, John Lithgow\, Rachael Stirling\n\
- nFilm release at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.
- uk/newquay/film/5619/giant-the-play\n\nFilm details: https://evenwebb.gith
- ub.io/wtw-cinemas/films/giant-the-play.html
+ \n\nStarring: John Lithgow\, Elliot Levey\, Aya Cash\, Rachael Stirling\, 
+ Tessa Bonham Jones\, Richard Hope\n\nFilm release at WTW Cinemas Newquay\n
+ Book tickets: https://wtwcinemas.co.uk/newquay/film/5619/giant-the-play\n\
+ nFilm details: https://evenwebb.github.io/wtw-cinemas/films/giant-the-play
+ .html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5619/giant-the-play
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c1479b9c4d124a4f482cc3565b7def71c2e6444f@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:The Hunger Games: Sunrise on the Reaping @ WTW Newquay
@@ -471,10 +488,11 @@ DESCRIPTION:The Hunger Games: Sunrise on the Reaping\nScience Fiction\, Act
  ion\, Adventure\n\nReturn to the world of Panem 24 years before the events
   of The Hunger Games\, starting on the morning of the reaping of the 50th 
  Hunger Games\, also known as the Second Quarter Quell.\n\nStarring: Joseph
-  Zada\, Mckenna Grace\, Jesse Plemons\n\nFilm release at WTW Cinemas Newqu
- ay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5586/the-hunger-ga
- mes-sunrise-on-the-reaping\n\nFilm details: https://evenwebb.github.io/wtw
- -cinemas/films/the-hunger-games-sunrise-on-the-reaping.html
+  Zada\, Ralph Fiennes\, Jesse Plemons\, Mckenna Grace\, Whitney Peak\, Ell
+ e Fanning\n\nFilm release at WTW Cinemas Newquay\nBook tickets: https://wt
+ wcinemas.co.uk/newquay/film/5586/the-hunger-games-sunrise-on-the-reaping\n
+ \nFilm details: https://evenwebb.github.io/wtw-cinemas/films/the-hunger-ga
+ mes-sunrise-on-the-reaping.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5586/the-hunger-games-sunrise-on-
  the-reaping
@@ -482,23 +500,24 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:7098710e36e892e80dbfdb672656fab4310aa867@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Focker-In-Law @ WTW Newquay
 DESCRIPTION:Focker-In-Law\nComedy\, Romance\n\nHenry\, son of Greg and Pam 
  Focker\, faces family chaos when he decides to marry a strong-willed woman
-  who appears to be his complete mismatch.\n\nStarring: Robert De Niro\, Be
- n Stiller\, Ariana Grande\n\nFilm release at WTW Cinemas Newquay\nBook tic
- kets: https://wtwcinemas.co.uk/newquay/film/5587/fockerinlaw\n\nFilm detai
- ls: https://evenwebb.github.io/wtw-cinemas/films/focker-in-law.html
+  who appears to be his complete mismatch.\n\nStarring: Ben Stiller\, Rober
+ t De Niro\, Ariana Grande\, Skyler Gisondo\, Owen Wilson\, Blythe Danner\n
+ \nFilm release at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co
+ .uk/newquay/film/5587/fockerinlaw\n\nFilm details: https://evenwebb.github
+ .io/wtw-cinemas/films/focker-in-law.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5587/fockerinlaw
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0b4b7f23ff7d9bded898f133b19a35dfec6df9e6@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:The Nutcracker - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -521,25 +540,26 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5bfefb2977887c7a6c8f0c590693eed8ddfa49ca@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:The Cat in the Hat @ WTW Newquay
-DESCRIPTION:The Cat in the Hat\n★★★☆☆\nFantasy\, Adventure\, Family\, Comed
- y\n\nDuring a rainy day\, and while their mother is out\, Conrad and Sally
- \, and their pet fish\, are visited by the mischievous Cat in the Hat. Fun
-  soon turns to mayhem\, and the siblings must figure out how to rid themse
- lves of the maniacal Cat.\n\nStarring: Bill Hader\, Xochitl Gomez\, Quinta
-  Brunson\n\nFilm release at WTW Cinemas Newquay\nBook tickets: https://wtw
- cinemas.co.uk/newquay/film/5584/the-cat-in-the-hat\n\nFilm details: https:
- //evenwebb.github.io/wtw-cinemas/films/the-cat-in-the-hat.html
+DESCRIPTION:The Cat in the Hat (1h 22min)\n★★★☆☆\nFantasy\, Adventure\, Fam
+ ily\, Comedy\n\nDuring a rainy day\, and while their mother is out\, Conra
+ d and Sally\, and their pet fish\, are visited by the mischievous Cat in t
+ he Hat. Fun soon turns to mayhem\, and the siblings must figure out how to
+  rid themselves of the maniacal Cat.\n\nStarring: Mike Myers\, Dakota Fann
+ ing\, Spencer Breslin\, Kelly Preston\, Alec Baldwin\, Amy Hill\n\nFilm re
+ lease at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/newqu
+ ay/film/5584/the-cat-in-the-hat\n\nFilm details: https://evenwebb.github.i
+ o/wtw-cinemas/films/the-cat-in-the-hat.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5584/the-cat-in-the-hat
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c77fa32b09d34cc4a118bcdedc77403f564b40ec@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Andre Rieu's 2026 Christmas Concert Let It Snow @ WTW Newquay
@@ -556,41 +576,43 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:744a6a063776624f07c93b55bffc8287e735befa@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Avengers: Doomsday @ WTW Newquay
-DESCRIPTION:Avengers: Doomsday\nScience Fiction\, Action\, Adventure\n\nBel
- oved heroes from three distinct universes are set on a deadly collision co
- urse and face an existential threat unlike anything they've ever encounter
- ed.\n\nStarring: Robert Downey Jr.\, Chris Evans\, Chris Hemsworth\n\nFilm
-  release at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/ne
- wquay/film/5588/avengers-doomsday\n\nFilm details: https://evenwebb.github
- .io/wtw-cinemas/films/avengers-doomsday.html
+DESCRIPTION:Avengers: Doomsday (2h 45min)\nScience Fiction\, Action\, Adven
+ ture\n\nBeloved heroes from three distinct universes are set on a deadly c
+ ollision course and face an existential threat unlike anything they've eve
+ r encountered.\n\nStarring: Robert Downey Jr.\, Chris Evans\, Chris Hemswo
+ rth\, Pedro Pascal\, Paul Rudd\, Anthony Mackie\n\nFilm release at WTW Cin
+ emas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5588/ave
+ ngers-doomsday\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/fil
+ ms/avengers-doomsday.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5588/avengers-doomsday
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:485f7542e162d37a2ede58eb3985196e381e12aa@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Dune: Part Three @ WTW Newquay
-DESCRIPTION:Dune: Part Three\nScience Fiction\, Adventure\n\nEmperor Paul A
- treides faces the fallout from his ascent to power as political plots and 
- a galaxy-wide holy war endanger the future only he can see.\n\nStarring: T
- imothée Chalamet\, Zendaya\, Jason Momoa\n\nFilm release at WTW Cinemas Ne
- wquay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5589/dune-part-
- three\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/dune-p
- art-three.html
+DESCRIPTION:Dune: Part Three (2h 25min)\nScience Fiction\, Adventure\n\nEmp
+ eror Paul Atreides faces the fallout from his ascent to power as political
+  plots and a galaxy-wide holy war endanger the future only he can see.\n\n
+ Starring: Timothée Chalamet\, Zendaya\, Jason Momoa\, Florence Pugh\, Rebe
+ cca Ferguson\, Isaach de Bankolé\n\nFilm release at WTW Cinemas Newquay\nB
+ ook tickets: https://wtwcinemas.co.uk/newquay/film/5589/dune-part-three\n\
+ nFilm details: https://evenwebb.github.io/wtw-cinemas/films/dune-part-thre
+ e.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5589/dune-part-three
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:44e65ff4d37973e4a79973e99e18d1f78b0fd4ab@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Jumanji: Open World @ WTW Newquay
@@ -598,22 +620,23 @@ DESCRIPTION:Jumanji: Open World\nAdventure\, Comedy\, Fantasy\n\nOur heroes
   have escaped the ever-changing jungles of Jumanji before\, but this time 
  the game comes to us - as Jumanji breaks free of its console\, unleashing 
  its chaos into our world.\n\nStarring: Dwayne Johnson\, Kevin Hart\, Jack 
- Black\n\nFilm release at WTW Cinemas Newquay\nBook tickets: https://wtwcin
- emas.co.uk/newquay/film/5590/jumanji-open-world\n\nFilm details: https://e
- venwebb.github.io/wtw-cinemas/films/jumanji-open-world.html
+ Black\, Karen Gillan\, Awkwafina\, Alex Wolff\n\nFilm release at WTW Cinem
+ as Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5590/juman
+ ji-open-world\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/film
+ s/jumanji-open-world.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5590/jumanji-open-world
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:32d4e5f38a17949d5cc00ed101bf8137f4bf9b8d@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270127
 SUMMARY:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season @ WTW New
  quay
-DESCRIPTION:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season (3h 1
- 5min)\n★★★★★\n\nGiancarlo Del Monaco’s atmospheric production brings to co
+DESCRIPTION:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season (2h 2
+ 0min)\n★★★★★\n\nGiancarlo Del Monaco’s atmospheric production brings to co
  lorful life a 19th-century mining camp during the California Gold Rush. At
   the center of the action is the good-hearted bar owner Minnie\, sung by B
  arbara Daniels\, who takes a motherly interest in the miners. Plácido Domi
@@ -636,7 +659,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f6d39d9a60ae9727e36a26ae835afb5039c78136@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 SUMMARY:Götterdämmerung - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -664,7 +687,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8c8c4a85ce8eb65d740c2af8023c81beb387a7d4@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20270223
 DTEND;VALUE=DATE:20270224
 SUMMARY:Così Fan Tutte - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -693,7 +716,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:35f9e1444906984f7df24b2ed7df3a14a78d5fab@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20270323
 DTEND;VALUE=DATE:20270324
 SUMMARY:Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Seaso
@@ -714,11 +737,11 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:701819a4b21ac4e8d68fa43f21d0034a8ebc098b@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20270422
 DTEND;VALUE=DATE:20270423
 SUMMARY:Swan Lake - Royal Ballet & Opera 26-27 Season @ WTW Newquay
-DESCRIPTION:Swan Lake - Royal Ballet & Opera 26-27 Season (3h 25min)\n\nCla
+DESCRIPTION:Swan Lake - Royal Ballet & Opera 26-27 Season (3h 30min)\n\nCla
  ssical ballet's most powerful tale of love\, treachery and forgiveness ret
  urns to the Royal Opera House stage\n\nStarring: Matthew Ball\, Yasmine Na
  ghdi\n\nFilm release at WTW Cinemas Newquay\nBook tickets: https://wtwcine
@@ -732,11 +755,11 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:6f4f84b6ff4e1df32063b367bf43c083f29865b9@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20270505
 DTEND;VALUE=DATE:20270506
 SUMMARY:Tosca - Royal Ballet & Opera 26-27 Season @ WTW Newquay
-DESCRIPTION:Tosca - Royal Ballet & Opera 26-27 Season (3h 15min)\nMusic\n\n
+DESCRIPTION:Tosca - Royal Ballet & Opera 26-27 Season (3h 30min)\nMusic\n\n
  In war-torn Rome\, Floria Tosca and Mario Cavaradossi live for each other 
  and for their art. But when Cavaradossi helps an escaped prisoner\, the lo
  vers make a deadly enemy in the form of Baron Scarpia\, Chief of Police. A
@@ -755,7 +778,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9ab5660140c194f5f9dcb84a73142f3ae94588cd@wtw-cinemas
-DTSTAMP:20260826T100547Z
+DTSTAMP:20260826T102451Z
 DTSTART;VALUE=DATE:20270525
 DTEND;VALUE=DATE:20270526
 SUMMARY:Romeo And Juliet - Royal Ballet & Opera 26-27 Season @ WTW Newquay
