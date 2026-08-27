@@ -978,15 +978,17 @@ def _apply_poster_fallback(details: dict) -> None:
 
     When TMDb has no poster_path the site's event banner would otherwise
     serve as the poster. A TMDb backdrop is a still from the film itself,
-    so it makes the better stand-in. Leave non-TMDb posters in place when
-    no backdrop exists; templates already crop banners to portrait.
+    so it makes the better stand-in. Site banners are landscape promo
+    graphics; they never fit the 2/3 portrait frames, so drop any
+    remaining non-TMDb art and let templates render the title tile.
     """
     poster = (details.get("poster_url") or "").strip()
     backdrop = (details.get("backdrop_url") or "").strip()
-    if not backdrop:
-        return
     if not poster or "image.tmdb.org" not in poster:
         details["poster_url"] = backdrop
+    large = (details.get("poster_large_url") or "").strip()
+    if large.startswith("http") and "image.tmdb.org" not in large:
+        details["poster_large_url"] = ""
 
 
 def enrich_film_tmdb(
@@ -1534,10 +1536,9 @@ def main() -> None:
     # ── Enrich now-showing films with TMDb posters ───────────────────────────
     for f in now_showing_films:
         slug = f["slug"]
-        if slug in tmdb_cache:
-            tc = tmdb_cache[slug]
-            if tc.get("poster_url"):
-                f["poster"] = tc["poster_url"]
+        tc = tmdb_cache.get(slug) or {}
+        # Only TMDb art is usable in the portrait poster frames
+        f["poster"] = (tc.get("poster_url") or "").strip()
 
     # ── Per-film detail pages ────────────────────────────────────────────────
     films_dir = out_dir / "films"
@@ -1751,6 +1752,13 @@ def main() -> None:
                 _atomic_write_text(films_dir / f"{slug}.html", page_html)
     finally:
         poster_sess.close()
+
+    # Drop posters for films whose art was dropped this run
+    if Path(POSTERS_DIR).is_dir():
+        wanted = {slug for slug, page in film_pages.items() if page["details"].get("poster_url")}
+        for orphan in Path(POSTERS_DIR).glob("*.jpg"):
+            if orphan.stem not in wanted:
+                orphan.unlink()
 
     # ── Cert images ──────────────────────────────────────────────────────────
     _download_cert_images()
