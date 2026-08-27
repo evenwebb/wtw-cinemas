@@ -165,12 +165,13 @@ footer a:hover{color:var(--gold-bright)}
 .ns-list-cinemas{font-size:0.78rem;color:var(--text-muted)}
 .ns-list-next{font-size:0.78rem;color:var(--accent);font-weight:500;margin-left:auto}
 /* Coming Soon poster toggle */
-#coming-soon.poster-view .film-browse-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0.75rem}
-@media(min-width:480px){#coming-soon.poster-view .film-browse-grid{grid-template-columns:repeat(3,1fr);gap:1rem}}
-@media(min-width:768px){#coming-soon.poster-view .film-browse-grid{grid-template-columns:repeat(4,1fr);gap:1.25rem}}
-@media(min-width:1024px){#coming-soon.poster-view .film-browse-grid{grid-template-columns:repeat(5,1fr);gap:1.5rem}}
-@media(min-width:1280px){#coming-soon.poster-view .film-browse-grid{grid-template-columns:repeat(6,1fr);gap:1.75rem}}
-#coming-soon.poster-view .film-card-full{display:flex;flex-direction:column;padding:0.55rem;background:var(--surface);border:1px solid var(--border);border-radius:12px;transition:transform 0.2s,box-shadow 0.2s,border-color var(--transition)}
+/* minmax(0,1fr): plain 1fr lets min-content of long titles blow tracks out to uneven widths */
+#coming-soon.poster-view .film-browse-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0.75rem}
+@media(min-width:480px){#coming-soon.poster-view .film-browse-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}}
+@media(min-width:768px){#coming-soon.poster-view .film-browse-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:1.25rem}}
+@media(min-width:1024px){#coming-soon.poster-view .film-browse-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:1.5rem}}
+@media(min-width:1280px){#coming-soon.poster-view .film-browse-grid{grid-template-columns:repeat(6,minmax(0,1fr));gap:1.75rem}}
+#coming-soon.poster-view .film-card-full{display:flex;flex-direction:column;min-width:0;padding:0.55rem;background:var(--surface);border:1px solid var(--border);border-radius:12px;transition:transform 0.2s,box-shadow 0.2s,border-color 0.2s}
 #coming-soon.poster-view .film-card-full:hover{transform:translateY(-4px);box-shadow:0 8px 25px rgba(0,0,0,0.4);border-color:rgba(226,114,60,0.4)}
 #coming-soon.poster-view .fc-poster{order:0;width:100%;height:auto;aspect-ratio:2/3;border-radius:10px}
 #coming-soon.poster-view .fc-poster img{border-radius:10px}
