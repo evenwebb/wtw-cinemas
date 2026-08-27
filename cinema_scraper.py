@@ -1516,6 +1516,9 @@ def main() -> None:
         # Fallback to cinema poster from whats-on data
         if not poster:
             poster = wf_list[0].get("poster_url", "") or ""
+        # Site banners are landscape promo art; unusable in portrait frames
+        if "image.tmdb.org" not in poster:
+            poster = ""
         now_showing_films.append({
             "title": wf_list[0]["title"],
             "slug": slug,
