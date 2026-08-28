@@ -1310,9 +1310,10 @@ body{position:relative;background:var(--bg)}
 .cinema-table tbody td{padding:0.5rem 0.5rem;border-bottom:1px solid var(--border);vertical-align:middle}
 @media(min-width:600px){.cinema-table tbody td{padding:0.6rem 0.75rem}}
 .cinema-table tbody tr:hover{background:var(--accent-dim)}
-.cinema-table tr.day-separator>td{border:none;padding:0;height:12px;background:transparent}
+.cinema-table tr.day-separator>td{border:none;padding:0.55rem 0.25rem 0.3rem;background:transparent}
 .cinema-table tr.day-separator:hover{background:transparent}
-.cinema-table tr.day-separator>td::before{content:"";display:block;height:1px;margin:0;background:rgba(226,114,60,0.28)}
+.cinema-table .day-sep-label{display:flex;align-items:center;gap:0.7rem;font-size:0.72rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent)}
+.cinema-table .day-sep-label::before,.cinema-table .day-sep-label::after{content:"";flex:1;height:1px;background:rgba(226,114,60,0.28)}
 .cinema-table .date-cell{font-weight:600;color:var(--accent);white-space:nowrap;font-size:0.78rem}
 @media(min-width:600px){.cinema-table .date-cell{font-size:inherit}}
 .cinema-table .time-cell{font-weight:500;color:var(--text);font-variant-numeric:tabular-nums}
@@ -1479,7 +1480,10 @@ def build_film_page(
         for st in showtimes:
             rd = st["date"]
             if prev_rd is not None and rd != prev_rd:
-                table_rows.append('<tr class="day-separator" aria-hidden="true"><td colspan="4"></td></tr>')
+                table_rows.append(
+                    f'<tr class="day-separator"><td colspan="4">'
+                    f'<span class="day-sep-label">{rd.strftime("%a %d %b")}</span></td></tr>'
+                )
             prev_rd = rd
             rd_str = rd.strftime("%a %d %b")
             cinema_name = st['cinema_name']
@@ -1523,7 +1527,10 @@ def build_film_page(
         first_date = True
         for rd in sorted(showings_by_date.keys()):
             if not first_date:
-                table_rows.append('<tr class="day-separator" aria-hidden="true"><td colspan="3"></td></tr>')
+                table_rows.append(
+                    f'<tr class="day-separator"><td colspan="3">'
+                    f'<span class="day-sep-label">{rd.strftime("%a %d %b")}</span></td></tr>'
+                )
             first_date = False
             cinemas_on_date = sorted(showings_by_date[rd])
             rd_short = rd.strftime("%a %d %b")
