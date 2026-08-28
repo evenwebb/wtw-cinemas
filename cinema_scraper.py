@@ -425,9 +425,39 @@ def _atomic_write_bytes(path: Path, content: bytes) -> None:
 _film_cache_lock = threading.Lock()
 _tmdb_cache_lock = threading.Lock()
 
+# Run-scoped soup cache keyed by full per-cinema film URL. Each cinema's
+# page for the same film lists that cinema's own schedule, so the
+# per-cinema URL (not the shared base URL) is the cache key.
+_film_page_cache: Dict[str, Any] = {}
+_film_page_lock = threading.Lock()
+
+
+def fetch_film_page_soup(
+    film_url: str, session: Optional[requests.Session] = None
+) -> Optional[Any]:
+    """Fetch a film detail page once per run; returns parsed soup or None."""
+    url = get_base_film_url(film_url)
+    with _film_page_lock:
+        if url in _film_page_cache:
+            return _film_page_cache[url]
+    try:
+        resp = fetch_with_retries(film_url, session=session)
+    except requests.RequestException as e:
+        logger.warning("Network error for %s: %s", film_url, e)
+        with _film_page_lock:
+            _film_page_cache[url] = None
+        return None
+    soup = BeautifulSoup(resp.text, "html.parser")
+    with _film_page_lock:
+        _film_page_cache[url] = soup
+    return soup
+
 
 def fetch_film_details(
-    film_url: str, cache: Dict[str, dict], session: Optional[requests.Session] = None
+    film_url: str,
+    cache: Dict[str, dict],
+    session: Optional[requests.Session] = None,
+    soup: Optional[Any] = None,
 ) -> Dict[str, str]:
     """Fetch runtime, cast, synopsis from a film page. Uses cache when available."""
     details: Dict[str, str] = {"runtime": "", "cast": "", "synopsis": "", "director": "", "title": ""}
@@ -444,9 +474,10 @@ def fetch_film_details(
             return c
 
     try:
-        logger.info("Fetching film: %s", film_url)
-        resp = fetch_with_retries(film_url, session=session)
-        soup = BeautifulSoup(resp.text, "html.parser")
+        if soup is None:
+            logger.info("Fetching film: %s", film_url)
+            resp = fetch_with_retries(film_url, session=session)
+            soup = BeautifulSoup(resp.text, "html.parser")
 
         # Title: from <title> tag or <h1>
         if soup.title:
@@ -678,10 +709,13 @@ def scrape_cinema_whats_on(
     cinema_name: str,
     session: Optional[requests.Session] = None,
 ) -> List[Dict[str, Any]]:
-    """Scrape a cinema's whats-on page for films with full multi-date showtime schedules.
+    """Scrape a cinema's whats-on page for showing films, then read the
+    full multi-date schedule for each film from its per-cinema film page.
 
-    Current site structure (2026): Hero slider (.row.blurb) contains film titles.
-    Showtime blocks are in #film_section .poster-film-content with .singlefilmperfs.
+    The whats-on page only inlines today's performances in #film_section,
+    and films with future-only schedules can be absent from it, so
+    showtimes come from the film pages, which server-render the complete
+    schedule for that cinema.
     """
     url = CINEMAS[cinema_id]["whats_on_url"]
     logger.info("Scraping whats-on: %s (%s)", url, cinema_name)
@@ -690,104 +724,62 @@ def scrape_cinema_whats_on(
 
     films: List[Dict[str, Any]] = []
     today_scrape = date.today()
-
-    # Step 1: Extract hero slider data — (title, film_url)
-    hero_entries: List[Tuple[str, str]] = []  # (title, film_url)
-    for blurb in soup.select(".row.blurb"):
-        h1 = blurb.select_one("h1")
-        film_link = blurb.select_one("a[href*='/film/']")
-        if h1 and film_link:
-            title = h1.get_text(strip=True)
-            if title and not any(skip in title.lower() for skip in (
-                "looking ahead", "gaming", "private cinema",
-                "onscreen magazine", "book the cinema",
-            )):
-                furl = film_link.get("href", "")
-                if furl and not furl.startswith("http"):
-                    furl = WTW_BASE_URL + furl
-                hero_entries.append((title, furl))
-
-    # Step 2: Build hero runtime lookup by fetching film detail pages (cached)
-    hero_runtimes: Dict[int, Tuple[str, str, Dict[str, str]]] = {}  # runtime → (title, film_url, details)
     local_cache = load_cache()
-    for hero_title, hero_url in hero_entries:
-        details = fetch_film_details(hero_url, local_cache, session=session)
-        if details:
-            rt_str = details.get("runtime", "")
-            rt_match = re.search(r"(\d+)", str(rt_str))
-            if rt_match:
-                rt = int(rt_match.group(1))
-                if rt > 1 and rt not in hero_runtimes:
-                    hero_runtimes[rt] = (hero_title, hero_url, details)
 
-    # Step 3: Get film items from #film_section
-    film_items = soup.select("#film_section .poster-film-content")
-    if not film_items:
-        logger.warning("No .poster-film-content nodes on whats-on page for %s", cinema_name)
+    # Enumerate showing films from the result_listing poster grid, where
+    # each film's title and link render together.
+    entries: List[Tuple[str, str]] = []  # (title, film_url)
+    seen_urls = set()
+    for a in soup.select("#film_section a.result_listing[href*='/film/']"):
+        furl = a.get("href", "")
+        if not furl:
+            continue
+        if not furl.startswith("http"):
+            furl = WTW_BASE_URL + furl
+        furl = get_base_film_url(furl)
+        if furl in seen_urls:
+            continue
+        title_el = a.select_one(".poster-title")
+        img_el = a.select_one("img")
+        title = (title_el.get_text(strip=True) if title_el else "") or (
+            img_el.get("alt", "").strip() if img_el else ""
+        )
+        title = TITLE_CLEAN_RE.sub("", title).replace("\u2013", "-").replace("\u2014", "-")
+        if not title or any(skip in title.lower() for skip in (
+            "looking ahead", "gaming", "private cinema",
+            "onscreen magazine", "book the cinema",
+        )):
+            continue
+        seen_urls.add(furl)
+        entries.append((title, furl))
+
+    if not entries:
+        logger.warning("No result_listing film links on whats-on page for %s", cinema_name)
         return films
 
-    for item in film_items:
-        # Runtime and starring from film section
-        runtime = 0
-        starring = ""
-        rt_div = item.select_one(".running-time")
-        if rt_div:
-            rt_text = rt_div.get_text(" ", strip=True)
-            star_match = re.search(r"Starring:\s*(.+?)\s*(?:Running\s*Time:|$)", rt_text)
-            if star_match:
-                starring = star_match.group(1).strip()
-            rt_match = re.search(r"Running\s*Time:\s*(\d+)\s*minutes?", rt_text, re.IGNORECASE)
-            if rt_match:
-                runtime = int(rt_match.group(1))
-
-        # Match film section to hero slider by runtime
-        title = ""
-        film_url = ""
-        page_synopsis = ""
-        poster_url = ""
-        if runtime > 1 and runtime in hero_runtimes:
-            title, film_url, details = hero_runtimes[runtime]
-            page_synopsis = details.get("synopsis", "")
-            # Extract poster from the matching hero slider blurb
-            for blurb in soup.select(".row.blurb"):
-                h1 = blurb.select_one("h1")
-                if h1 and h1.get_text(strip=True) == title:
-                    poster_img = blurb.select_one(".movie-slide-pic img")
-                    if poster_img:
-                        poster_url = poster_img.get("src", "")
-                    break
-        elif starring:
-            # Fallback: match by first actor name in hero blurb text
-            first_actor = starring.split(",")[0].strip().lower()
-            if len(first_actor) > 3:
-                for blurb in soup.select(".row.blurb"):
-                    blurb_text = blurb.get_text(" ", strip=True).lower()
-                    if first_actor in blurb_text:
-                        h1 = blurb.select_one("h1")
-                        fl = blurb.select_one("a[href*='/film/']")
-                        if h1:
-                            title = h1.get_text(strip=True)
-                        if fl:
-                            film_url = fl.get("href", "")
-                            if film_url and not film_url.startswith("http"):
-                                film_url = WTW_BASE_URL + film_url
-                        break
-
-        if not title:
+    for title, furl in entries:
+        page_soup = fetch_film_page_soup(furl, session=session)
+        if page_soup is None:
+            logger.warning("Film page unavailable: %s", furl)
             continue
-
-        title = TITLE_CLEAN_RE.sub("", title)
-        title = title.replace("–", "-").replace("—", "-")
-
+        details = fetch_film_details(furl, local_cache, session=session, soup=page_soup)
+        # Real title from the film page beats the poster grid label
+        title = TITLE_CLEAN_RE.sub("", details.get("title") or title)
+        title = title.replace("\u2013", "-").replace("\u2014", "-")
         if any(skip in title.lower() for skip in (
             "looking ahead", "gaming", "private cinema",
-            "onscreen magazine", "book the cinema"
+            "onscreen magazine", "book the cinema",
         )):
             continue
 
-        # BBFC cert
+        showtimes = parse_film_page_showtimes(page_soup, cinema_id, cinema_name, today_scrape)
+        if not showtimes:
+            logger.info("  %s: no showtimes on film page, skipping", title)
+            continue
+
+        # BBFC cert from the film page header
         bbfc = ""
-        cert_img = item.select_one(".film-certificate img")
+        cert_img = page_soup.select_one("header img[src*='filmcerts']")
         if cert_img:
             cert_src = cert_img.get("src", "")
             for cert_name, cert_file in CERT_IMAGES.items():
@@ -795,138 +787,137 @@ def scrape_cinema_whats_on(
                     bbfc = cert_name
                     break
 
-        # Film detail URL — try from poster link or find from page links
-        film_url = ""
-        film_link = item.select_one("a[href*='/film/']")
-        if film_link:
-            film_url = film_link.get("href", "")
-        if film_url and not film_url.startswith("http"):
-            film_url = WTW_BASE_URL + film_url
+        # Portrait poster from the film page
+        poster_url = ""
+        poster_img = page_soup.select_one("img.poster")
+        if poster_img:
+            poster_url = poster_img.get("src", "")
 
-        # Showtimes: .singlefilmperfs blocks
-        showtimes: List[Dict[str, Any]] = []
+        runtime = 0
+        rt_match = re.search(r"(\d+)", str(details.get("runtime", "")))
+        if rt_match:
+            runtime = int(rt_match.group(1))
 
-        for perf_block in item.select(".singlefilmperfs"):
-            # Get the date from the parent chain
-            date_span = None
-            parent = perf_block
-            for _ in range(10):
-                if not parent:
-                    break
-                date_span = parent.select_one(".firstdateshow")
-                if date_span:
-                    break
-                parent = parent.parent
-
-            if not date_span:
-                continue
-
-            date_text = date_span.get_text(strip=True)
-            if not date_text:
-                continue
-
-            parsed_date = parse_uk_date(date_text, today_scrape)
-            if not parsed_date:
-                continue
-
-            # Time from .perfbtn
-            time_btn = perf_block.select_one(".perfbtn")
-            time_text = ""
-            if time_btn:
-                time_parts = []
-                for child in time_btn.children:
-                    if isinstance(child, str):
-                        time_parts.append(child.strip())
-                time_text = "".join(time_parts).strip()
-                time_match = re.search(r"(\d{1,2}:\d{2})", time_text)
-                time_text = time_match.group(1) if time_match else ""
-
-            if not time_text:
-                continue
-
-            # Screen
-            screen = 1
-            for li in perf_block.select(".hiddenbox-items li"):
-                li_text = li.get_text(strip=True)
-                screen_match = re.search(r"Screen:\s*(\d+)", li_text)
-                if screen_match:
-                    screen = int(screen_match.group(1))
-                    break
-
-            # Booking URL — skip sold-out/disabled showings (javascript:void(0);)
-            booking_url = ""
-            book_link = perf_block.select_one("a.hiddenbox-wrapper-link")
-            if book_link and "disabled" not in book_link.get("class", []):
-                href = book_link.get("href", "")
-                if href and not href.startswith("javascript:"):
-                    booking_url = href
-                    if not booking_url.startswith("http"):
-                        booking_url = WTW_BASE_URL + booking_url
-
-            # Accessibility tags from CSS classes
-            cls_list = perf_block.get("class", [])
-            tags = []
-            if "icon-2d" in cls_list:
-                tags.append("2D")
-            elif "icon-3d" in cls_list:
-                tags.append("3D")
-            if "ccap" in cls_list:
-                tags.append("Subtitles")
-            if "audio-des" in cls_list:
-                tags.append("Audio Description")
-            if "wc" in cls_list:
-                tags.append("Wheelchair access")
-            if "strobe-lgt" in cls_list:
-                tags.append("Strobe Light warning")
-            if "autism-friendly" in cls_list:
-                tags.append("Autism Friendly")
-            if "laser" in cls_list:
-                tags.append("Laser Projection")
-            if "kids-club" in cls_list:
-                tags.append("Kids Club")
-            if "silver-screen" in cls_list:
-                tags.append("Silver Screen")
-            if "parent-baby" in cls_list:
-                tags.append("Parent & Baby")
-            if "event-cinema" in cls_list:
-                tags.append("Event cinema")
-            if "fls-period" in cls_list:
-                tags.append("FLS")
-
-            showtimes.append({
-                "date": parsed_date,
-                "time": time_text,
-                "screen": screen,
-                "booking_url": booking_url,
-                "tags": tags or ["2D"],
-                "cinema_name": cinema_name,
-            })
-
-        if showtimes:
-            seen_st = set()
-            unique_st = []
-            for st in showtimes:
-                key = (st["date"], st["time"], st["screen"])
-                if key not in seen_st:
-                    seen_st.add(key)
-                    unique_st.append(st)
-            unique_st.sort(key=lambda s: (s["date"], s["time"]))
-
-            films.append({
-                "title": title,
-                "film_url": film_url,
-                "cinema_id": cinema_id,
-                "cinema_name": cinema_name,
-                "showtimes": unique_st,
-                "runtime": runtime,
-                "starring": starring,
-                "bbfc": bbfc,
-                "synopsis": page_synopsis,
-                "poster_url": poster_url,
-            })
+        films.append({
+            "title": title,
+            "film_url": furl,
+            "cinema_id": cinema_id,
+            "cinema_name": cinema_name,
+            "showtimes": showtimes,
+            "runtime": runtime,
+            "starring": details.get("cast", ""),
+            "bbfc": bbfc,
+            "synopsis": details.get("synopsis", ""),
+            "poster_url": poster_url,
+        })
 
     logger.info("  whats-on %s: %d films with showtimes", cinema_name, len(films))
     return films
+
+
+def _showtime_tags(*cls_lists) -> List[str]:
+    """Map performance CSS classes to accessibility/format tags."""
+    tags: List[str] = []
+    classes = {c for lst in cls_lists for c in lst}
+    if "icon-3d" in classes:
+        tags.append("3D")
+    elif "icon-2d" in classes:
+        tags.append("2D")
+    if "ccap" in classes:
+        tags.append("Subtitles")
+    # Film pages split audio-des into two classes: "audio des"
+    if "audio-des" in classes or ("audio" in classes and "des" in classes):
+        tags.append("Audio Description")
+    if "wc" in classes:
+        tags.append("Wheelchair access")
+    if "strobe-lgt" in classes:
+        tags.append("Strobe Light warning")
+    if "autism-friendly" in classes:
+        tags.append("Autism Friendly")
+    if "laser" in classes:
+        tags.append("Laser Projection")
+    if "kids-club" in classes:
+        tags.append("Kids Club")
+    if "silver-screen" in classes:
+        tags.append("Silver Screen")
+    if "parent-baby" in classes:
+        tags.append("Parent & Baby")
+    if "event-cinema" in classes:
+        tags.append("Event cinema")
+    if "fls-period" in classes:
+        tags.append("FLS")
+    return tags or ["2D"]
+
+
+def parse_film_page_showtimes(
+    soup: Any,
+    cinema_id: str,
+    cinema_name: str,
+    scrape_date: date,
+) -> List[Dict[str, Any]]:
+    """Parse the complete multi-date schedule from a film detail page.
+
+    Each .date-row holds the date span and the .perfbtn blocks for that
+    date; the page server-renders every scheduled date, unlike the
+    whats-on page which only inlines today's performances.
+    """
+    showtimes: List[Dict[str, Any]] = []
+    for perf in soup.select(".perfbtn"):
+        date_row = perf.find_parent(class_="date-row")
+        if not date_row:
+            continue
+        date_span = date_row.find("span")
+        if not date_span:
+            continue
+        parsed_date = parse_uk_date(date_span.get_text(" ", strip=True), scrape_date)
+        if not parsed_date:
+            continue
+
+        time_match = re.search(
+            r"(\d{1,2}:\d{2})",
+            "".join(child.strip() for child in perf.children if isinstance(child, str)),
+        )
+        if not time_match:
+            continue
+
+        screen = 1
+        for li in perf.select(".hiddenbox-items li"):
+            m = re.search(r"Screen:\s*(\d+)", li.get_text(strip=True))
+            if m:
+                screen = int(m.group(1))
+                break
+
+        booking_url = ""
+        book_link = perf.select_one("a.hiddenbox-wrapper-link")
+        if book_link and "disabled" not in book_link.get("class", []):
+            href = book_link.get("href", "")
+            if href and not href.startswith("javascript:"):
+                booking_url = href if href.startswith("http") else WTW_BASE_URL + href
+
+        cls_lists: List[List[str]] = []
+        perf_block = perf.find_parent(class_="singlefilmperfs")
+        if perf_block:
+            cls_lists.append(perf_block.get("class", []))
+        cls_lists.extend(li.get("class", []) for li in perf.select(".hiddenbox-icons li"))
+
+        showtimes.append({
+            "date": parsed_date,
+            "time": time_match.group(1),
+            "screen": screen,
+            "booking_url": booking_url,
+            "tags": _showtime_tags(*cls_lists),
+            "cinema_name": cinema_name,
+        })
+
+    seen_st = set()
+    unique_st = []
+    for st in showtimes:
+        key = (st["date"], st["time"], st["screen"])
+        if key not in seen_st:
+            seen_st.add(key)
+            unique_st.append(st)
+    unique_st.sort(key=lambda s: (s["date"], s["time"]))
+    return unique_st
 
 
 # ── TMDb enrichment ────────────────────────────────────────────────────────────
