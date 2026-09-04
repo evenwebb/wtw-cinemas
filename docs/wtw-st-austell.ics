@@ -9,27 +9,8 @@ X-WR-CALNAME:WTW St Austell Movie Premieres
 X-WR-CALDESC:Upcoming movie premieres at WTW Cinemas St Austell
 X-WR-TIMEZONE:Europe/London
 BEGIN:VEVENT
-UID:7f7cfba7f6f9fd62fe2e6c445ce72056e744920e@wtw-cinemas
-DTSTAMP:20260903T140040Z
-DTSTART;VALUE=DATE:20260904
-DTEND;VALUE=DATE:20260905
-SUMMARY:The Death of Robin Hood @ WTW St Austell
-DESCRIPTION:The Death of Robin Hood (2h 3min)\n★★★☆☆\nAdventure\, Drama\, A
- ction\n\nGrappling with his past after a life of crime and murder\, Robin 
- Hood finds himself gravely injured after a battle he thought would be his 
- last. In the hands of a mysterious woman\, he is offered a chance at salva
- tion.\n\nStarring: Hugh Jackman\, Jodie Comer\, Bill Skarsgård\, Murray Ba
- rtlett\, Noah Jupe\, Jade Croot\n\nFilm release at WTW Cinemas St Austell\
- nBook tickets: https://wtwcinemas.co.uk/st-austell/film/5671/the-death-of-
- robin-hood\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/t
- he-death-of-robin-hood.html
-LOCATION:WTW Cinemas St Austell
-URL:https://wtwcinemas.co.uk/st-austell/film/5671/the-death-of-robin-hood
-SEQUENCE:0
-END:VEVENT
-BEGIN:VEVENT
 UID:88c24305f84a03598b5f8c94695ce14b08fd5eb5@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260906
 SUMMARY:Star Trek IV: The Voyage Home @ WTW St Austell
@@ -49,7 +30,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:cd25b269a1270c5b8b30d31bb298bc76543afae8@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20260905
 DTEND;VALUE=DATE:20260906
 SUMMARY:The Hunger Games @ WTW St Austell
@@ -68,7 +49,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:dd7b58cb1a3592106dcf11dca222190d92c212e7@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20260909
 DTEND;VALUE=DATE:20260910
 SUMMARY:Pressure @ WTW St Austell
@@ -87,7 +68,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:75d3b3a1a78aeadb2b9bf6195207d471c0f18586@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20260910
 DTEND;VALUE=DATE:20260911
 SUMMARY:Oasis: Don't Look Back in Anger @ WTW St Austell
@@ -107,7 +88,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:15c1b71483b11d4560660497c56147b5defe6786@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20260911
 DTEND;VALUE=DATE:20260912
 SUMMARY:Practical Magic 2 @ WTW St Austell
@@ -124,7 +105,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:955c8af53e6a8ad0a1e12405861e04f866af972f@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20260912
 DTEND;VALUE=DATE:20260913
 SUMMARY:Raiders of the Lost Ark - 45th Anniversary @ WTW St Austell
@@ -145,20 +126,20 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b2d587ef14b6f99e605174d26bf0f361e0284ff6@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20260912
 DTEND;VALUE=DATE:20260913
 SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom @ WTW St Austell
 DESCRIPTION:Shaun the Sheep: The Beast of Mossy Bottom (1h 20min)\nAnimatio
- n\, Comedy\, Science Fiction\, Family\n\nOn Halloween Eve at Mossy Bottom 
- Farm\, excitement turns to dismay when the clumsy Farmer ruins the pumpkin
-  patch. Shaun tries fixing it with science experiments\, but things go wro
- ng when a wild beast appears in the woods.\n\nStarring: Justin Fletcher\, 
- John Sparkes\, Kate Harbour\, Nina Sosanya\, Paul Whitehouse\, Roman Kemp\
- n\nFilm release at WTW Cinemas St Austell\nBook tickets: https://wtwcinema
- s.co.uk/st-austell/film/5581/shaun-the-sheep-the-beast-of-mossy-bottom\n\n
- Film details: https://evenwebb.github.io/wtw-cinemas/films/shaun-the-sheep
- -the-beast-of-mossy-bottom.html
+ n\, Comedy\, Family\, Adventure\, Horror\n\nOn Halloween Eve at Mossy Bott
+ om Farm\, excitement turns to dismay when the clumsy Farmer ruins the pump
+ kin patch. Shaun tries fixing it with science experiments\, but things go 
+ wrong when a wild beast appears in the woods.\n\nStarring: Justin Fletcher
+ \, John Sparkes\, Kate Harbour\, Nina Sosanya\, Paul Whitehouse\, Roman Ke
+ mp\n\nFilm release at WTW Cinemas St Austell\nBook tickets: https://wtwcin
+ emas.co.uk/st-austell/film/5581/shaun-the-sheep-the-beast-of-mossy-bottom\
+ n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/shaun-the-sh
+ eep-the-beast-of-mossy-bottom.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5581/shaun-the-sheep-the-beast
  -of-mossy-bottom
@@ -166,7 +147,7 @@ SEQUENCE:1
 END:VEVENT
 BEGIN:VEVENT
 UID:9cfe29d00bb6d688e5ea019342ccb8cf4772517c@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20260917
 DTEND;VALUE=DATE:20260918
 SUMMARY:THE TRANSFORMERS: THE MOVIE 40TH ANNIVERSARY @ WTW St Austell
@@ -187,7 +168,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f3fc235b48192e99dcd124d689be8c21451eb220@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
 SUMMARY:Resident Evil @ WTW St Austell
@@ -204,7 +185,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:1036f7487e5086c78150dedc3879a075f1bc559c@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
 SUMMARY:National Theatre Live: The Misanthrope @ WTW St Austell
@@ -230,7 +211,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c6dd6e6771e03881cffea2c09c7043f4a8da6522@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 SUMMARY:Heart of the Beast @ WTW St Austell
@@ -247,8 +228,29 @@ URL:https://wtwcinemas.co.uk/st-austell/film/5682/heart-of-the-beast
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
+UID:bebcf4c459b07517c4980ab6f855ea77f1533830@wtw-cinemas
+DTSTAMP:20260904T135245Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:Avengers: Endgame Encore @ WTW St Austell
+DESCRIPTION:Avengers: Endgame Encore (3h 1min)\n★★★★☆\nAdventure\, Science 
+ Fiction\, Action\n\nAfter the devastating events of Avengers: Infinity War
+ \, the universe is in ruins due to the efforts of the Mad Titan\, Thanos. 
+ With the help of remaining allies\, the Avengers must assemble once more i
+ n order to undo Thanos' actions and restore order to the universe once and
+  for all\, no matter what consequences may be in store.\n\nStarring: Rober
+ t Downey Jr.\, Chris Evans\, Mark Ruffalo\, Chris Hemsworth\, Scarlett Joh
+ ansson\, Jeremy Renner\n\nFilm release at WTW Cinemas St Austell\nBook tic
+ kets: https://wtwcinemas.co.uk/st-austell/film/5685/avengers-endgame-encor
+ e\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/avengers-e
+ ndgame-encore.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/st-austell/film/5685/avengers-endgame-encore
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
 UID:91b87fe5930fced571d86fc7108b0cb81a1abf16@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
 SUMMARY:Digger @ WTW St Austell
@@ -265,7 +267,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:07f1aea0a012a66f341f28f4ba162a1fe2ec5d1f@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
 SUMMARY:Queen: Budapest @ WTW St Austell
@@ -284,7 +286,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c1bca075301a5f540a5b60ead2ab79f75dba66b2@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:Hadestown: The Musical @ WTW St Austell
@@ -305,7 +307,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c29431b23591a4f9a9fbf18b02cd695dcd907851@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Forgotten Island @ WTW St Austell
@@ -326,7 +328,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ea4730cfbea987f162cdb96204b7cd66891d4866@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Street Fighter @ WTW St Austell
@@ -346,7 +348,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:35b81ba7d021cdb992e698eb1b5348e9d115c82f@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Macbeth - Royal Ballet & Opera 26-27 Season @ WTW St Austell
@@ -367,7 +369,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5d3cd7ce9961ebf7eda33da15fedffb8085c1985@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Fallen Angels by Noël Coward @ WTW St Austell
@@ -386,7 +388,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:63f70690497b3c65fded8d88f55b70c928ff36f4@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:Manon - Royal Ballet & Opera 26-27 Season @ WTW St Austell
@@ -413,7 +415,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:2a51ca19a83af56c9064a422c4e86eed70ec83be@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:National Theatre Live: Golden Boy @ WTW St Austell
@@ -441,7 +443,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:d37300144c2a8f58c137480bc2c490325dc943ec@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Wild Horse Nine @ WTW St Austell
@@ -451,18 +453,18 @@ DESCRIPTION:Wild Horse Nine (1h 58min)\nComedy\, Crime\, Thriller\n\nShortl
  nd's iconic statues\, and as the longtime partners wrestle with their dark
   pasts and present conspiracies\, Chris's newfound bond with a pair of reb
  ellious students threatens to send everyone’s trip to this remote paradise
-  sideways.\n\nStarring: John Malkovich\, Sam Rockwell\, Steve Buscemi\, Pa
- rker Posey\, Tom Waits\, Mariana di Girolamo\n\nFilm release at WTW Cinema
- s St Austell\nBook tickets: https://wtwcinemas.co.uk/st-austell/film/5585/
- wild-horse-nine\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/fi
- lms/wild-horse-nine.html
+  sideways.\n\nStarring: John Malkovich\, Sam Rockwell\, Steve Buscemi\, Ma
+ riana di Girolamo\, Ailín Salas\, Tom Waits\n\nFilm release at WTW Cinemas
+  St Austell\nBook tickets: https://wtwcinemas.co.uk/st-austell/film/5585/w
+ ild-horse-nine\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/fil
+ ms/wild-horse-nine.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5585/wild-horse-nine
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c327ec635ea9b70af2b86faaddd4172d4043f385@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Carmen - Royal Ballet & Opera 26-27 Season @ WTW St Austell
@@ -486,7 +488,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f2b5b85db995e1d7eb1444af6f0839095de77306@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:GIANT - The Play @ WTW St Austell
@@ -507,7 +509,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:3a3f5a10a6cc459a1044d66728b132801f3852ff@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:The Hunger Games: Sunrise on the Reaping @ WTW St Austell
@@ -527,7 +529,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:36deef46b001f035f9acd675b456c9caa83086c3@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Focker-In-Law @ WTW St Austell
@@ -544,7 +546,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c5673731d89cc7ea29a0a7aa9477d744d852c871@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:The Nutcracker - Royal Ballet & Opera 26-27 Season @ WTW St Austell
@@ -567,7 +569,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:bb743c363da82b476a08e6940ee2473669b218bc@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:The Cat in the Hat @ WTW St Austell
@@ -586,7 +588,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:7e364522678fd77e4c78de7b2b60825a81500de0@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Andre Rieu's 2026 Christmas Concert Let It Snow @ WTW St Austell
@@ -603,7 +605,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:10c6948bd827c8cc4ae928a3c66eed5292a63c60@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Avengers: Doomsday @ WTW St Austell
@@ -621,7 +623,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:4f7a591e7eb312c7a038c26b128a2bbe1f6db7d1@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Dune: Part Three @ WTW St Austell
@@ -639,7 +641,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f3b3a728fc272813833fe407fb87b95660d72741@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Jumanji: Open World @ WTW St Austell
@@ -657,7 +659,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:70e531dcc22782b1a5735bac959610c861b6bf01@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270127
 SUMMARY:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season @ WTW St 
@@ -686,7 +688,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0af7f0515d41b03da6676d84c3f362b8fe957d9e@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 SUMMARY:Götterdämmerung - Royal Ballet & Opera 26-27 Season @ WTW St Austel
@@ -715,7 +717,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:e4049a9a6347e16284feb4fbbd411ccd842f6ba6@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20270223
 DTEND;VALUE=DATE:20270224
 SUMMARY:Così Fan Tutte - Royal Ballet & Opera 26-27 Season @ WTW St Austell
@@ -744,7 +746,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:db437e16e6910ec40f2fb1475481d5b9d903cd7d@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20270323
 DTEND;VALUE=DATE:20270324
 SUMMARY:Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Seaso
@@ -765,7 +767,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:bfe5163f3b754ee36a208d486f4ccce2fef5691c@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20270422
 DTEND;VALUE=DATE:20270423
 SUMMARY:Swan Lake - Royal Ballet & Opera 26-27 Season @ WTW St Austell
@@ -783,7 +785,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:dd25e59f78018f2808c990617123f4ab67a08153@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20270505
 DTEND;VALUE=DATE:20270506
 SUMMARY:Tosca - Royal Ballet & Opera 26-27 Season @ WTW St Austell
@@ -806,7 +808,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:2f13f113479402885d114bfa74461352f749d4b1@wtw-cinemas
-DTSTAMP:20260903T140040Z
+DTSTAMP:20260904T135245Z
 DTSTART;VALUE=DATE:20270525
 DTEND;VALUE=DATE:20270526
 SUMMARY:Romeo And Juliet - Royal Ballet & Opera 26-27 Season @ WTW St Auste
