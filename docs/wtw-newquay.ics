@@ -10,7 +10,7 @@ X-WR-CALDESC:Upcoming movie premieres at WTW Cinemas Newquay
 X-WR-TIMEZONE:Europe/London
 BEGIN:VEVENT
 UID:43163baaf9f2dabc18aa7bd3a2203473264492c9@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20260917
 DTEND;VALUE=DATE:20260918
 SUMMARY:THE TRANSFORMERS: THE MOVIE 40TH ANNIVERSARY @ WTW Newquay
@@ -31,7 +31,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ab799ef610db4f5ece75938fddc49a7c3e1cf55c@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
 SUMMARY:Resident Evil @ WTW Newquay
@@ -48,7 +48,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c7c2f9595e892cf205c314555260fdba4d822980@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
 SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom AUTISM FRIENDLY SCREENIN
@@ -70,8 +70,29 @@ URL:https://wtwcinemas.co.uk/newquay/film/5694/shaun-the-sheep-the-beast-of
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
+UID:bebebb24a37fc8dce75e010fe04d969e760b0eae@wtw-cinemas
+DTSTAMP:20260914T160321Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260919
+SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom @ WTW Newquay
+DESCRIPTION:Shaun the Sheep: The Beast of Mossy Bottom (1h 20min)\nAnimatio
+ n\, Comedy\, Family\, Adventure\, Horror\n\nOn Halloween Eve at Mossy Bott
+ om Farm\, excitement turns to dismay when the clumsy Farmer ruins the pump
+ kin patch. Shaun tries fixing it with science experiments\, but things go 
+ wrong when a wild beast appears in the woods.\n\nStarring: Justin Fletcher
+ \, John Sparkes\, Kate Harbour\, Nina Sosanya\, Paul Whitehouse\, Roman Ke
+ mp\n\nFilm release at WTW Cinemas Newquay\nBook tickets: https://wtwcinema
+ s.co.uk/newquay/film/5699/shaun-the-sheep-the-beast-of-mossy-bottom-with-s
+ ubtitles\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/sha
+ un-the-sheep-the-beast-of-mossy-bottom.html
+LOCATION:WTW Cinemas Newquay
+URL:https://wtwcinemas.co.uk/newquay/film/5699/shaun-the-sheep-the-beast-of
+ -mossy-bottom-with-subtitles
+SEQUENCE:1
+END:VEVENT
+BEGIN:VEVENT
 UID:53779e6c655af4d22196aa02023fabe1b88fdcdf@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
 SUMMARY:National Theatre Live: The Misanthrope @ WTW Newquay
@@ -97,7 +118,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:e05273dbcbca857e3e5574b8a45bf9e43b74d53b@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 SUMMARY:Heart of the Beast @ WTW Newquay
@@ -115,27 +136,27 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:a1a72880d1e6a1c301670dcaa7ac6f0716336120@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 SUMMARY:Avengers: Endgame Encore @ WTW Newquay
-DESCRIPTION:Avengers: Endgame Encore (3h 3min)\n\nThe epic conclusion to th
- e Infinity Saga returns to cinemas with AVENGERS: ENDGAME ENCORE.\n\nAft
- er devastating events wiped out half the world's population\, the remainin
- g heroes struggle to move forward. Ultimately\, they must come together to
-  restore order and harmony in the universe and bring their loved ones back
-  in a dramatic showdown against Thanos.\n\nStarring: Robert Downey Jr.\, C
- hris Evans\, Mark Ruffalo\n\nFilm release at WTW Cinemas Newquay\nBook tic
- kets: https://wtwcinemas.co.uk/newquay/film/5685/avengers-endgame-encore\n
- \nFilm details: https://evenwebb.github.io/wtw-cinemas/films/avengers-endg
- ame-encore.html
+DESCRIPTION:Avengers: Endgame Encore (3h 5min)\n\nThe epic conclusion to th
+ e Infinity Saga returns to theaters as Avengers Endgame:Encore. After deva
+ stating events wiped out half the world's population\, the remaining heroe
+ s struggle to move forward. Ultimately\, they must come together to restor
+ e order and harmony in the universe and bring their loved ones back in a d
+ ramatic showdown against Thanos\n\nStarring: Robert Downey Jr.\, Chris Eva
+ ns\, Mark Ruffalo\, Chris Hemsworth\, Scarlett Johansson\, Jeremy Renner\n
+ \nFilm release at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co
+ .uk/newquay/film/5685/avengers-endgame-encore\n\nFilm details: https://eve
+ nwebb.github.io/wtw-cinemas/films/avengers-endgame-encore.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5685/avengers-endgame-encore
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:42733d5d0a31e31749c68a0f2533500b17fd87ee@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 SUMMARY:Sense and Sensibility @ WTW Newquay
@@ -158,7 +179,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b076de3e0be17094233b8f3ba74e03e91b946793@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261002
 SUMMARY:500 Miles @ WTW Newquay
@@ -176,7 +197,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0d13e5a47ac64d56d38a478ffeb04e5019e003ee@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
 SUMMARY:Digger @ WTW Newquay
@@ -193,7 +214,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:93a2ffc8b1ae8b7fd4bc723e1e86ef3f4e5107a5@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261004
 DTEND;VALUE=DATE:20261005
 SUMMARY:Casino Royale - 20th Anniversary @ WTW Newquay
@@ -216,7 +237,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0f23a324dbd35d65bdab43648169289b88306d4c@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
 SUMMARY:Queen: Budapest @ WTW Newquay
@@ -234,7 +255,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8122138e54dd5075f13cd26f4b61847fb5f68c8f@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:Hadestown: The Musical @ WTW Newquay
@@ -255,7 +276,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:7bbb719a6f79ad493a097d501e6acecb77ac5c01@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Street Fighter @ WTW Newquay
@@ -275,7 +296,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5e010fda2b4be4e6a1267a728e77863cbbdde9e0@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Forgotten Island @ WTW Newquay
@@ -284,7 +305,7 @@ DESCRIPTION:Forgotten Island (1h 49min)\nAnimation\, Adventure\, Fantasy\,
  ol graduates and best friends Jo and Raissa stumble upon a mysterious port
  al that transports them to the fantastical island of Nakali. When they dis
  cover that the memories of their entire friendship are the price for retur
- ning home\, Jo and Raissa will race to find a way to leave the island befo
+ ning home\, Jo and Raissa must race to find a way to leave the island befo
  re they forget each other forever.\n\nStarring: H.E.R.\, Liza Soberano\, D
  ave Franco\, Lea Salonga\, Manny Jacinto\, Jenny Slate\n\nFilm release at 
  WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5
@@ -296,7 +317,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f122737e6b6a7b2f0e998436f10adf11f640303b@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Macbeth - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -317,7 +338,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:979a660aaefeec037d4296642661dd99489a2e0c@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Fallen Angels by Noël Coward @ WTW Newquay
@@ -335,7 +356,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:54fdea381517cf456b9ec0bd7286788af82a8c3b@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:Manon - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -362,7 +383,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:e116868a85aae4135fcbb928352d65a9da0bb536@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:National Theatre Live: Golden Boy @ WTW Newquay
@@ -390,7 +411,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:48661bb4668d3d3a019208349c084744ce5fc49e@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Wild Horse Nine @ WTW Newquay
@@ -411,7 +432,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b3f7ae6f4c3719476c734b90998ced9e9f267cab@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Carmen - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -435,7 +456,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:1d52954d5a767132c77e7c36672dc0631aadfe4b@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:GIANT - The Play @ WTW Newquay
@@ -456,7 +477,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c1479b9c4d124a4f482cc3565b7def71c2e6444f@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:The Hunger Games: Sunrise on the Reaping @ WTW Newquay
@@ -476,7 +497,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:7098710e36e892e80dbfdb672656fab4310aa867@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Focker-In-Law @ WTW Newquay
@@ -492,8 +513,28 @@ URL:https://wtwcinemas.co.uk/newquay/film/5587/fockerinlaw
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
+UID:1ab695e16b23c5a0d14145776a2c2472bfc34173@wtw-cinemas
+DTSTAMP:20260914T160321Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Hexed @ WTW Newquay
+DESCRIPTION:Hexed (1h 30min)\nAdventure\, Animation\, Family\, Fantasy\n\nA
+ n impulsive and unconventional teenage girl named Billie discovers secret 
+ magical abilities which\, once unleashed\, hurtle her into a spectacle-fil
+ led journey out of suburbia and into a vast witch realm called Hexe. Force
+ d to team up with her cautious mother\, Alice\, they uncover family myster
+ ies that could change the world of witches forever.\n\nStarring: Hailee St
+ einfeld\, Rashida Jones\, Tracey Ullman\, Stephen Fry\, Jodie Foster\, Wal
+ ton Goggins\n\nFilm release at WTW Cinemas Newquay\nBook tickets: https://
+ wtwcinemas.co.uk/newquay/film/5698/hexed\n\nFilm details: https://evenwebb
+ .github.io/wtw-cinemas/films/hexed.html
+LOCATION:WTW Cinemas Newquay
+URL:https://wtwcinemas.co.uk/newquay/film/5698/hexed
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
 UID:0b4b7f23ff7d9bded898f133b19a35dfec6df9e6@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:The Nutcracker - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -516,7 +557,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5bfefb2977887c7a6c8f0c590693eed8ddfa49ca@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:The Cat in the Hat @ WTW Newquay
@@ -535,7 +576,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c77fa32b09d34cc4a118bcdedc77403f564b40ec@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Andre Rieu's 2026 Christmas Concert Let It Snow @ WTW Newquay
@@ -552,7 +593,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:7edba74056498f6afb93a8b9beb82786d9f5ee70@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261215
 DTEND;VALUE=DATE:20261216
 SUMMARY:See It First - Dune: Part Three @ WTW Newquay
@@ -570,7 +611,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:744a6a063776624f07c93b55bffc8287e735befa@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Avengers: Doomsday @ WTW Newquay
@@ -588,7 +629,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:485f7542e162d37a2ede58eb3985196e381e12aa@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Dune: Part Three @ WTW Newquay
@@ -606,7 +647,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:44e65ff4d37973e4a79973e99e18d1f78b0fd4ab@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Jumanji: Open World @ WTW Newquay
@@ -624,7 +665,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:32d4e5f38a17949d5cc00ed101bf8137f4bf9b8d@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270127
 SUMMARY:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season @ WTW New
@@ -652,7 +693,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f6d39d9a60ae9727e36a26ae835afb5039c78136@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 SUMMARY:Götterdämmerung - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -680,7 +721,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8c8c4a85ce8eb65d740c2af8023c81beb387a7d4@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20270223
 DTEND;VALUE=DATE:20270224
 SUMMARY:Così Fan Tutte - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -709,7 +750,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:35f9e1444906984f7df24b2ed7df3a14a78d5fab@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20270323
 DTEND;VALUE=DATE:20270324
 SUMMARY:Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Seaso
@@ -730,7 +771,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:701819a4b21ac4e8d68fa43f21d0034a8ebc098b@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20270422
 DTEND;VALUE=DATE:20270423
 SUMMARY:Swan Lake - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -748,7 +789,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:6f4f84b6ff4e1df32063b367bf43c083f29865b9@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20270505
 DTEND;VALUE=DATE:20270506
 SUMMARY:Tosca - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -771,7 +812,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9ab5660140c194f5f9dcb84a73142f3ae94588cd@wtw-cinemas
-DTSTAMP:20260913T135928Z
+DTSTAMP:20260914T160321Z
 DTSTART;VALUE=DATE:20270525
 DTEND;VALUE=DATE:20270526
 SUMMARY:Romeo And Juliet - Royal Ballet & Opera 26-27 Season @ WTW Newquay
