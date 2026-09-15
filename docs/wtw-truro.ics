@@ -9,50 +9,8 @@ X-WR-CALNAME:WTW Truro Movie Premieres
 X-WR-CALDESC:Upcoming movie premieres at WTW Cinemas Truro
 X-WR-TIMEZONE:Europe/London
 BEGIN:VEVENT
-UID:a524958bc591972538afa4b734df0a10e9b33c61@wtw-cinemas
-DTSTAMP:20260914T160321Z
-DTSTART;VALUE=DATE:20260915
-DTEND;VALUE=DATE:20260916
-SUMMARY:James McNeill Whistler - Exhibition On Screen @ WTW Truro
-DESCRIPTION:James McNeill Whistler - Exhibition On Screen (1h 30min)\nDocum
- entary\n\nTate Britain is now holding the first major retrospective of Whi
- stler in three decades. This blockbuster exhibition promises to reawaken t
- he world to just how important Whistler is to art history\, uniting world-
- famous masterpieces with rarely seen works. Exhibition on Screen will brin
- g these stunning works and the incredible story behind them to cinemas aro
- und the world while the exhibition is still running\, bringing this truly 
- global artist to a global audience. This will be an unmissable chance to g
- et to know this visually spectacular artist and the influence he has had o
- n those who followed.\n\nFilm release at WTW Cinemas Truro\nBook tickets: 
- https://wtwcinemas.co.uk/truro/film/5548/james-mcneill-whistler-exhibition
- -on-screen\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/j
- ames-mcneill-whistler-exhibition-on-screen.html
-LOCATION:WTW Cinemas Truro
-URL:https://wtwcinemas.co.uk/truro/film/5548/james-mcneill-whistler-exhibit
- ion-on-screen
-SEQUENCE:0
-END:VEVENT
-BEGIN:VEVENT
-UID:48539f8ff78750436c507f764cbcc6680e39d4bb@wtw-cinemas
-DTSTAMP:20260914T160321Z
-DTSTART;VALUE=DATE:20260915
-DTEND;VALUE=DATE:20260916
-SUMMARY:Super Nature @ WTW Truro
-DESCRIPTION:Super Nature (1h 22min)\nDocumentary\n\nWe’re invited on a jour
- ney across 25 different countries\, with people embracing both abundance a
- nd loss\, to feel a sense of togetherness with our fellow dwellers on eart
- h\, human and non-human. Celebrating all we have and reflecting on all we 
- have to lose\, Super Nature proposes a new way of seeing.\n\nFilm release 
- at WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film/56
- 80/super-nature\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/fi
- lms/super-nature.html
-LOCATION:WTW Cinemas Truro
-URL:https://wtwcinemas.co.uk/truro/film/5680/super-nature
-SEQUENCE:0
-END:VEVENT
-BEGIN:VEVENT
 UID:612a7631672945917938ca85e5ddc231c98aca10@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20260917
 DTEND;VALUE=DATE:20260918
 SUMMARY:THE TRANSFORMERS: THE MOVIE 40TH ANNIVERSARY @ WTW Truro
@@ -73,24 +31,24 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:202a9433c466c514165470e2fc1ee3f7910abd14@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
 SUMMARY:Resident Evil @ WTW Truro
-DESCRIPTION:Resident Evil (1h 33min)\nHorror\, Thriller\, Adventure\n\nMedi
- cal courier Bryan unwittingly finds himself fighting for survival as one f
- ateful\, horrifying night collapses around him in chaos.\n\nStarring: Aust
- in Abrams\, Zach Cherry\, Kali Reis\, Paul Walter Hauser\, Johnno Wilson\n
- \nFilm release at WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co.u
- k/truro/film/5683/resident-evil\n\nFilm details: https://evenwebb.github.i
- o/wtw-cinemas/films/resident-evil.html
+DESCRIPTION:Resident Evil (1h 33min)\nHorror\, Thriller\n\nMedical courier 
+ Bryan unwittingly finds himself fighting for survival as one fateful\, hor
+ rifying night collapses around him in chaos.\n\nStarring: Austin Abrams\, 
+ Zach Cherry\, Kali Reis\, Paul Walter Hauser\, Johnno Wilson\, Shaun W. Lo
+ eser\n\nFilm release at WTW Cinemas Truro\nBook tickets: https://wtwcinema
+ s.co.uk/truro/film/5683/resident-evil\n\nFilm details: https://evenwebb.gi
+ thub.io/wtw-cinemas/films/resident-evil.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5683/resident-evil
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8264a114b930c703490c0517c69d70fa3fba6979@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
 SUMMARY:Whisper of the Heart - Anime Season @ WTW Truro
@@ -110,13 +68,13 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:7cfa3727f81b19aa5fbcf48564dbdc283bb312e3@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
 SUMMARY:Shaun the Sheep: The Beast of Mossy Bottom AUTISM FRIENDLY SCREENIN
  G @ WTW Truro
 DESCRIPTION:Shaun the Sheep: The Beast of Mossy Bottom AUTISM FRIENDLY SCRE
- ENING (1h 20min)\nAnimation\, Comedy\, Family\, Adventure\, Horror\n\nOn H
+ ENING (1h 21min)\nAnimation\, Comedy\, Family\, Adventure\, Horror\n\nOn H
  alloween Eve at Mossy Bottom Farm\, excitement turns to dismay when the cl
  umsy Farmer ruins the pumpkin patch. Shaun tries fixing it with science ex
  periments\, but things go wrong when a wild beast appears in the woods.\n\
@@ -133,24 +91,24 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:3819068eb9d89d5db14547d9af9bf0bba1487eb1@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20260918
 DTEND;VALUE=DATE:20260919
 SUMMARY:Resident Evil @ WTW Truro
-DESCRIPTION:Resident Evil (1h 33min)\nHorror\, Thriller\, Adventure\n\nMedi
- cal courier Bryan unwittingly finds himself fighting for survival as one f
- ateful\, horrifying night collapses around him in chaos.\n\nStarring: Aust
- in Abrams\, Zach Cherry\, Kali Reis\, Paul Walter Hauser\, Johnno Wilson\n
- \nFilm release at WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co.u
- k/truro/film/5697/resident-evil-with-subtitles\n\nFilm details: https://ev
- enwebb.github.io/wtw-cinemas/films/resident-evil.html
+DESCRIPTION:Resident Evil (1h 33min)\nHorror\, Thriller\n\nMedical courier 
+ Bryan unwittingly finds himself fighting for survival as one fateful\, hor
+ rifying night collapses around him in chaos.\n\nStarring: Austin Abrams\, 
+ Zach Cherry\, Kali Reis\, Paul Walter Hauser\, Johnno Wilson\, Shaun W. Lo
+ eser\n\nFilm release at WTW Cinemas Truro\nBook tickets: https://wtwcinema
+ s.co.uk/truro/film/5697/resident-evil-with-subtitles\n\nFilm details: http
+ s://evenwebb.github.io/wtw-cinemas/films/resident-evil.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5697/resident-evil-with-subtitles
 SEQUENCE:1
 END:VEVENT
 BEGIN:VEVENT
 UID:152788c567dee23f0956e4f03ba2ead00b714bb5@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20260922
 DTEND;VALUE=DATE:20260923
 SUMMARY:National Theatre Live: The Misanthrope @ WTW Truro
@@ -176,7 +134,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:249ab02e8a688e2f1a36516f22b3d33036182eb1@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 SUMMARY:Heart of the Beast @ WTW Truro
@@ -194,27 +152,28 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:eb8bcf772e5180b1e28594abcf3598556a60a87e@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 SUMMARY:Avengers: Endgame Encore @ WTW Truro
-DESCRIPTION:Avengers: Endgame Encore (3h 5min)\n\nThe epic conclusion to th
- e Infinity Saga returns to theaters as Avengers Endgame:Encore. After deva
- stating events wiped out half the world's population\, the remaining heroe
- s struggle to move forward. Ultimately\, they must come together to restor
- e order and harmony in the universe and bring their loved ones back in a d
- ramatic showdown against Thanos\n\nStarring: Robert Downey Jr.\, Chris Eva
- ns\, Mark Ruffalo\, Chris Hemsworth\, Scarlett Johansson\, Jeremy Renner\n
- \nFilm release at WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co.u
- k/truro/film/5685/avengers-endgame-encore\n\nFilm details: https://evenweb
- b.github.io/wtw-cinemas/films/avengers-endgame-encore.html
+DESCRIPTION:Avengers: Endgame Encore (3h 1min)\n★★★★☆\nAdventure\, Science 
+ Fiction\, Action\n\nAfter the devastating events of Avengers: Infinity War
+ \, the universe is in ruins due to the efforts of the Mad Titan\, Thanos. 
+ With the help of remaining allies\, the Avengers must assemble once more i
+ n order to undo Thanos' actions and restore order to the universe once and
+  for all\, no matter what consequences may be in store.\n\nStarring: Rober
+ t Downey Jr.\, Chris Evans\, Mark Ruffalo\, Chris Hemsworth\, Scarlett Joh
+ ansson\, Jeremy Renner\n\nFilm release at WTW Cinemas Truro\nBook tickets:
+  https://wtwcinemas.co.uk/truro/film/5685/avengers-endgame-encore\n\nFilm 
+ details: https://evenwebb.github.io/wtw-cinemas/films/avengers-endgame-enc
+ ore.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5685/avengers-endgame-encore
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ea0bf3651d132bed626d8b2d9286b9f5bdf0a567@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20260925
 DTEND;VALUE=DATE:20260926
 SUMMARY:Sense and Sensibility @ WTW Truro
@@ -236,12 +195,30 @@ URL:https://wtwcinemas.co.uk/truro/film/5689/sense-and-sensibility
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
+UID:02b894ad9a1beebb78153717cfa9a2f917923479@wtw-cinemas
+DTSTAMP:20260915T143445Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:Verity @ WTW Truro
+DESCRIPTION:Verity (1h 57min)\nMystery\, Thriller\n\nLowen Ashleigh is hire
+ d by Jeremy Crawford to ghostwrite novels for his bestselling author wife 
+ Verity\, who is unable to finish following an accident. Lowen gradually un
+ covers Verity's disturbing truths while residing at the Crawfords' home to
+  work.\n\nStarring: Dakota Johnson\, Anne Hathaway\, Josh Hartnett\, Ismae
+ l Cruz Cordova\, Brady Wagner\, Irina Dvorovenko\n\nFilm release at WTW Ci
+ nemas Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film/5700/verity
+ \n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/verity.html
+LOCATION:WTW Cinemas Truro
+URL:https://wtwcinemas.co.uk/truro/film/5700/verity
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
 UID:6d383612fb7dbfaafa912804f938b0c7dcfd6cab@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
 SUMMARY:Digger @ WTW Truro
-DESCRIPTION:Digger (2h 8min)\nComedy\n\nThe most powerful man in the world 
+DESCRIPTION:Digger (2h 9min)\nComedy\n\nThe most powerful man in the world 
  embarks on a frantic mission to prove he is humanity's savior before the d
  isaster he's unleashed destroys everything.\n\nStarring: Tom Cruise\, Riz 
  Ahmed\, John Goodman\, Sandra Hüller\, Michael Stuhlbarg\, Jesse Plemons\n
@@ -254,7 +231,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:aad1dc6c7f293937fd8baa6526a3175c41a0e541@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261004
 DTEND;VALUE=DATE:20261005
 SUMMARY:Clue - Pat's Film Club @ WTW Truro
@@ -274,7 +251,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:be7887382efbeacf72b0f8f0a0991faa8c9813c2@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261004
 DTEND;VALUE=DATE:20261005
 SUMMARY:The Rocky Horror Picture Show - Pat's Film Club @ WTW Truro
@@ -296,7 +273,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f5e15f8463c4091c13348d1f8799c9d6fee7c3e1@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
 SUMMARY:Queen: Budapest @ WTW Truro
@@ -314,7 +291,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:47a9a4e0c36a7a9d110dbe2b0147cc8871a92a37@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261008
 DTEND;VALUE=DATE:20261009
 SUMMARY:The Perfect Storm - 35mm season @ WTW Truro
@@ -333,7 +310,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:dc2eb771c771b5bc376ece1f70be4908431be944@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:Hadestown: The Musical @ WTW Truro
@@ -354,7 +331,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:d2d2fa6323ec4de574e8188fecc532fdc5a8dc93@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:Radio On - 35mm Season @ WTW Truro
@@ -371,7 +348,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f1eef5090296094ee072d284bfdbb45883f99887@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Forgotten Island @ WTW Truro
@@ -392,7 +369,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:391d97cb254857a4b4e5294af7465ae168ffae1d@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Street Fighter @ WTW Truro
@@ -412,7 +389,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b1498524f818c8bafba99ba7683c151cbed1f4ce@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Macbeth - Royal Ballet & Opera 26-27 Season @ WTW Truro
@@ -433,7 +410,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0a6524d6a73fa9e9108f7932b0759deb406379c3@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Fallen Angels by Noël Coward @ WTW Truro
@@ -451,7 +428,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:359b0495186c19385a52ea785133db3aa3021ef3@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:Manon - Royal Ballet & Opera 26-27 Season @ WTW Truro
@@ -478,7 +455,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:45528aa3271c6cfdd796aef18cccac418b3c40b4@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:National Theatre Live: Golden Boy @ WTW Truro
@@ -506,7 +483,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b0c0bc36e7c4f34228ea54d417daedf78d7e25bb@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Wild Horse Nine @ WTW Truro
@@ -527,7 +504,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:64ea87602f87d072d2d0318119ca3c7e94d96cff@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Carmen - Royal Ballet & Opera 26-27 Season @ WTW Truro
@@ -551,7 +528,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:46ed7f6c0ac0fd95fb1bd4b5efd24ce56a3196c3@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261115
 DTEND;VALUE=DATE:20261116
 SUMMARY:Apocalypse Now - Pat's Film Club @ WTW Truro
@@ -572,7 +549,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:4bc87df5415ab0599f3ee753918b01e6684d5ea4@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:GIANT - The Play @ WTW Truro
@@ -593,7 +570,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:08edf96402bd4f0943e2245ee4aac1aacd2a5b98@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:The Hunger Games: Sunrise on the Reaping @ WTW Truro
@@ -613,7 +590,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9ce114aba1b264edd66634d77589d3c71d0a1c17@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Focker-In-Law @ WTW Truro
@@ -630,7 +607,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:fce50ac254362b2192545a60dc87699626c92654@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Hexed @ WTW Truro
@@ -650,7 +627,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:727a776ef1c4a5b15f2ffe14793b66db96352bef@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:The Nutcracker - Royal Ballet & Opera 26-27 Season @ WTW Truro
@@ -673,7 +650,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:bd3c65fd99f7626e754695c0b177a9107cb1b34d@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:The Cat in the Hat @ WTW Truro
@@ -692,7 +669,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5c27427b3ccba5c8d8e71d4d48528cb7597e1574@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Andre Rieu's 2026 Christmas Concert Let It Snow @ WTW Truro
@@ -709,7 +686,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:1d65d1814368ca21d140f9e0f6266c16f7f796fc@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261215
 DTEND;VALUE=DATE:20261216
 SUMMARY:See It First - Dune: Part Three @ WTW Truro
@@ -727,7 +704,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:161a2195ec75d6fc0a8c8c2c809914343eda2fcf@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Avengers: Doomsday @ WTW Truro
@@ -745,7 +722,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f1356a13c50941bd0a6bba7d2da4ededb664d64e@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Dune: Part Three @ WTW Truro
@@ -763,7 +740,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:20d3ee12c72add5bbadd8869276908216019eddf@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Jumanji: Open World @ WTW Truro
@@ -781,7 +758,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:e593256b89ee65e907dcf0323751724107f58316@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20270119
 DTEND;VALUE=DATE:20270120
 SUMMARY:Renoir & Love - Exhibition On Screen @ WTW Truro
@@ -803,7 +780,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:81068bb6566a42b37cee550b74b54646f1e9fbbf@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270127
 SUMMARY:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season @ WTW Tru
@@ -831,7 +808,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5a355359eb90afdf50230d9a220ee7597034e660@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 SUMMARY:Götterdämmerung - Royal Ballet & Opera 26-27 Season @ WTW Truro
@@ -859,7 +836,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:818a8655cbdc6a27fc37ef655d4205d23259582a@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20270223
 DTEND;VALUE=DATE:20270224
 SUMMARY:Così Fan Tutte - Royal Ballet & Opera 26-27 Season @ WTW Truro
@@ -888,7 +865,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b20decd0830713fb922fe47e26b79135c3fb67d4@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20270323
 DTEND;VALUE=DATE:20270324
 SUMMARY:Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Seaso
@@ -909,7 +886,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8b7441118300fd153816b47696db2d14f05735b5@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20270422
 DTEND;VALUE=DATE:20270423
 SUMMARY:Swan Lake - Royal Ballet & Opera 26-27 Season @ WTW Truro
@@ -927,7 +904,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:62ad9a3e4ae7f83555ab0fe3c1eae7ef83f86d7b@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20270505
 DTEND;VALUE=DATE:20270506
 SUMMARY:Tosca - Royal Ballet & Opera 26-27 Season @ WTW Truro
@@ -950,7 +927,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:854f1fd21d92ec61dda7dc121fb7a635cadddd34@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20270511
 DTEND;VALUE=DATE:20270512
 SUMMARY:Monet - Exhibition On Screen @ WTW Truro
@@ -965,7 +942,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:93a18ed5faecc85ba95f74e974c66c8f8d8812b8@wtw-cinemas
-DTSTAMP:20260914T160321Z
+DTSTAMP:20260915T143445Z
 DTSTART;VALUE=DATE:20270525
 DTEND;VALUE=DATE:20270526
 SUMMARY:Romeo And Juliet - Royal Ballet & Opera 26-27 Season @ WTW Truro
