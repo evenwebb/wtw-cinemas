@@ -9,26 +9,8 @@ X-WR-CALNAME:WTW St Austell Movie Premieres
 X-WR-CALDESC:Upcoming movie premieres at WTW Cinemas St Austell
 X-WR-TIMEZONE:Europe/London
 BEGIN:VEVENT
-UID:f5baf753eaba4b071d9489ec7f46dfed36702180@wtw-cinemas
-DTSTAMP:20261004T150347Z
-DTSTART;VALUE=DATE:20261007
-DTEND;VALUE=DATE:20261008
-SUMMARY:Other Mommy @ WTW St Austell
-DESCRIPTION:Other Mommy (1h 33min)\nHorror\n\nYoung Bela forms a relationsh
- ip with a sinister entity in her home that looks uncannily like her own mo
- ther\, drawing her into a terrifying and increasingly dark world.\n\nStarr
- ing: Jessica Chastain\, Arabella Olivia Clark\, Jay Duplass\, Dichen Lachm
- an\, Arian Moayed\, Karen Allen\n\nFilm release at WTW Cinemas St Austell\
- nBook tickets: https://wtwcinemas.co.uk/st-austell/film/5724/other-mommy\n
- \nFilm details: https://evenwebb.github.io/wtw-cinemas/films/other-mommy.h
- tml
-LOCATION:WTW Cinemas St Austell
-URL:https://wtwcinemas.co.uk/st-austell/film/5724/other-mommy
-SEQUENCE:0
-END:VEVENT
-BEGIN:VEVENT
 UID:07f1aea0a012a66f341f28f4ba162a1fe2ec5d1f@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
 SUMMARY:Queen: Budapest @ WTW St Austell
@@ -47,7 +29,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:4b7af0711d47e35090ffbad8b436842db6ca6efd@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
 SUMMARY:The Social Reckoning @ WTW St Austell
@@ -66,25 +48,43 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0ceee9d34e9c2878a06a2b02d88b240c3ea2da68@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
 SUMMARY:The Uprising @ WTW St Austell
-DESCRIPTION:The Uprising (2h 8min)\n★★★★☆\nHistory\, Drama\n\nAs war and pl
- ague devastate 14th-century England\, a humble peasant ignites a rebellion
- \, uniting an army of commoners to defy the King’s might in a desperate fi
- ght for justice and survival.\n\nStarring: Andrew Garfield\, Jamie Bell\, 
- Stephen Dillane\, Woody Norman\, Tom Hollander\, Cosmo Jarvis\n\nFilm rele
- ase at WTW Cinemas St Austell\nBook tickets: https://wtwcinemas.co.uk/st-a
- ustell/film/5715/the-uprising\n\nFilm details: https://evenwebb.github.io/
- wtw-cinemas/films/the-uprising.html
+DESCRIPTION:The Uprising (2h 8min)\n★★★★☆\nHistory\, Drama\, Action\n\nAs w
+ ar and plague devastate 14th-century England\, a humble peasant ignites a 
+ rebellion\, uniting an army of commoners to defy the King’s might in a des
+ perate fight for justice and survival.\n\nStarring: Andrew Garfield\, Jami
+ e Bell\, Stephen Dillane\, Woody Norman\, Tom Hollander\, Cosmo Jarvis\n\n
+ Film release at WTW Cinemas St Austell\nBook tickets: https://wtwcinemas.c
+ o.uk/st-austell/film/5715/the-uprising\n\nFilm details: https://evenwebb.g
+ ithub.io/wtw-cinemas/films/the-uprising.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5715/the-uprising
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
+UID:df2ae67ea3c2eedf50924f3c5145b9e25b70e35f@wtw-cinemas
+DTSTAMP:20261005T185759Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:Other Mommy @ WTW St Austell
+DESCRIPTION:Other Mommy (1h 33min)\nHorror\n\nYoung Bela forms a relationsh
+ ip with a sinister entity in her home that looks uncannily like her own mo
+ ther\, drawing her into a terrifying and increasingly dark world.\n\nStarr
+ ing: Jessica Chastain\, Arabella Olivia Clark\, Jay Duplass\, Dichen Lachm
+ an\, Arian Moayed\, Karen Allen\n\nFilm release at WTW Cinemas St Austell\
+ nBook tickets: https://wtwcinemas.co.uk/st-austell/film/5724/other-mommy\n
+ \nFilm details: https://evenwebb.github.io/wtw-cinemas/films/other-mommy.h
+ tml
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/st-austell/film/5724/other-mommy
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
 UID:c1bca075301a5f540a5b60ead2ab79f75dba66b2@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
 SUMMARY:Hadestown: The Musical @ WTW St Austell
@@ -105,7 +105,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:d333c2c8883caeccd21de7fae6c22398d0959c1d@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
 SUMMARY:Tuner @ WTW St Austell
@@ -122,28 +122,28 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c29431b23591a4f9a9fbf18b02cd695dcd907851@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Forgotten Island @ WTW St Austell
 DESCRIPTION:Forgotten Island (1h 49min)\n★★★★☆\nAnimation\, Adventure\, Fan
- tasy\, Comedy\n\nWhile celebrating their last night together\, high school
-  graduates and best friends Jo and Raissa stumble upon a mysterious portal
-  that transports them to the fantastical island of Nakali. When they disco
- ver that the memories of their entire friendship are the price for returni
- ng home\, Jo and Raissa must race to find a way to leave the island before
-  they forget each other forever.\n\nStarring: H.E.R.\, Liza Soberano\, Dav
- e Franco\, Jenny Slate\, Manny Jacinto\, Lea Salonga\n\nFilm release at WT
- W Cinemas St Austell\nBook tickets: https://wtwcinemas.co.uk/st-austell/fi
- lm/5643/forgotten-island\n\nFilm details: https://evenwebb.github.io/wtw-c
- inemas/films/forgotten-island.html
+ tasy\, Comedy\, Family\n\nWhile celebrating their last night together\, hi
+ gh school graduates and best friends Jo and Raissa stumble upon a mysterio
+ us portal that transports them to the fantastical island of Nakali. When t
+ hey discover that the memories of their entire friendship are the price fo
+ r returning home\, Jo and Raissa must race to find a way to leave the isla
+ nd before they forget each other forever.\n\nStarring: H.E.R.\, Liza Sober
+ ano\, Dave Franco\, Jenny Slate\, Manny Jacinto\, Lea Salonga\n\nFilm rele
+ ase at WTW Cinemas St Austell\nBook tickets: https://wtwcinemas.co.uk/st-a
+ ustell/film/5643/forgotten-island\n\nFilm details: https://evenwebb.github
+ .io/wtw-cinemas/films/forgotten-island.html
 LOCATION:WTW Cinemas St Austell
 URL:https://wtwcinemas.co.uk/st-austell/film/5643/forgotten-island
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ea4730cfbea987f162cdb96204b7cd66891d4866@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
 SUMMARY:Street Fighter @ WTW St Austell
@@ -163,7 +163,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:35b81ba7d021cdb992e698eb1b5348e9d115c82f@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Macbeth - Royal Ballet & Opera 26-27 Season @ WTW St Austell
@@ -184,7 +184,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5d3cd7ce9961ebf7eda33da15fedffb8085c1985@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Fallen Angels by Noël Coward @ WTW St Austell
@@ -203,7 +203,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:427971309d2733f7b0112f3700bafe91dc9ee47d@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Tony @ WTW St Austell
@@ -221,7 +221,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0b18f145811c2102b491a1619076bbf3a69e7f95@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Ghosts: The Possession of Button House @ WTW St Austell
@@ -238,8 +238,29 @@ URL:https://wtwcinemas.co.uk/st-austell/film/5714/ghosts-the-possession-of-
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
+UID:6fdaa4b3616b4a1d75eb337669382016ce4df2d6@wtw-cinemas
+DTSTAMP:20261005T185759Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Clayface @ WTW St Austell
+DESCRIPTION:Clayface (1h 48min)\nHorror\, Thriller\, Science Fiction\n\nMat
+ t Hagen's meteoric rise from Gotham street kid to Hollywood leading man is
+  tragically cut short when a local crime boss's actions leave him horribly
+  disfigured. Abandoned by his team and with nothing left\, Matt seeks out 
+ a cutting edge treatment that miraculously returns him to his former self…
+  but also unexpectedly affects his grip on reality\, spiraling him down a 
+ destructive path of all-consuming revenge.\n\nStarring: Tom Rhys Harries\,
+  Naomi Ackie\, Eddie Marsan\, Max Minghella\, David Dencik\, Francesca Cor
+ ney\n\nFilm release at WTW Cinemas St Austell\nBook tickets: https://wtwci
+ nemas.co.uk/st-austell/film/5727/clayface\n\nFilm details: https://evenweb
+ b.github.io/wtw-cinemas/films/clayface.html
+LOCATION:WTW Cinemas St Austell
+URL:https://wtwcinemas.co.uk/st-austell/film/5727/clayface
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
 UID:63f70690497b3c65fded8d88f55b70c928ff36f4@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:Manon - Royal Ballet & Opera 26-27 Season @ WTW St Austell
@@ -266,7 +287,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c5bb8b43fa1888beb77f0c1becc998c55d3c7589@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Ozzy & Black Sabbath: Back to the Beginning @ WTW St Austell
@@ -285,7 +306,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:305a76692af0e34cedfb1b852764912eb417ac2b@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Hocus Pocus @ WTW St Austell
@@ -304,7 +325,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:db06d2a667bc496dc9d392e8fb1cc08171a71f9e@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
 SUMMARY:Monster House @ WTW St Austell
@@ -323,7 +344,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:2a51ca19a83af56c9064a422c4e86eed70ec83be@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:National Theatre Live: Golden Boy @ WTW St Austell
@@ -352,7 +373,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:97a24bebe54dadbda9aa3fb2366028dfce5fbb6f@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:It's Always the End of the World @ WTW St Austell
@@ -374,7 +395,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:d37300144c2a8f58c137480bc2c490325dc943ec@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Wild Horse Nine @ WTW St Austell
@@ -395,7 +416,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c327ec635ea9b70af2b86faaddd4172d4043f385@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Carmen - Royal Ballet & Opera 26-27 Season @ WTW St Austell
@@ -419,7 +440,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ad11bb2fe29a4f684d2e2e6b596efcd55d372928@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:I Play Rocky @ WTW St Austell
@@ -438,7 +459,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f2b5b85db995e1d7eb1444af6f0839095de77306@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:GIANT - The Play @ WTW St Austell
@@ -459,7 +480,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:3a3f5a10a6cc459a1044d66728b132801f3852ff@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:The Hunger Games: Sunrise on the Reaping @ WTW St Austell
@@ -479,7 +500,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ba20a9da39004fd1b0208a6dfcf17f616cf6d326@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Cbeebies Panto: Treasure Island @ WTW St Austell
@@ -501,7 +522,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:e17b16dfd4dfe7b40d46c825053aa8df4a403365@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
 SUMMARY:Doctor Who: The Satan Pit @ WTW St Austell
@@ -520,7 +541,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:36deef46b001f035f9acd675b456c9caa83086c3@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Focker-In-Law @ WTW St Austell
@@ -537,7 +558,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9a964023e47fee07246c396fcc09e3a07be444a9@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Hexed @ WTW St Austell
@@ -554,7 +575,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c5673731d89cc7ea29a0a7aa9477d744d852c871@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:The Nutcracker - Royal Ballet & Opera 26-27 Season @ WTW St Austell
@@ -577,7 +598,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:bb743c363da82b476a08e6940ee2473669b218bc@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:The Cat in the Hat @ WTW St Austell
@@ -596,7 +617,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:7e364522678fd77e4c78de7b2b60825a81500de0@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Andre Rieu's 2026 Christmas Concert Let It Snow @ WTW St Austell
@@ -613,7 +634,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:14d91a50e9ced5622a535836754b2f2379eb5161@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261215
 DTEND;VALUE=DATE:20261216
 SUMMARY:See It First - Dune: Part Three @ WTW St Austell
@@ -632,7 +653,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:10c6948bd827c8cc4ae928a3c66eed5292a63c60@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Avengers: Doomsday @ WTW St Austell
@@ -650,7 +671,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:365d40e0a98777e238825a79e5d4ba52445d40ff@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Dune: Part Three @ WTW St Austell
@@ -673,7 +694,7 @@ SEQUENCE:1
 END:VEVENT
 BEGIN:VEVENT
 UID:f3b3a728fc272813833fe407fb87b95660d72741@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Jumanji: Open World @ WTW St Austell
@@ -691,7 +712,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:70e531dcc22782b1a5735bac959610c861b6bf01@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270127
 SUMMARY:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season @ WTW St 
@@ -720,7 +741,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0af7f0515d41b03da6676d84c3f362b8fe957d9e@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 SUMMARY:Götterdämmerung - Royal Ballet & Opera 26-27 Season @ WTW St Austel
@@ -749,7 +770,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:e4049a9a6347e16284feb4fbbd411ccd842f6ba6@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20270223
 DTEND;VALUE=DATE:20270224
 SUMMARY:Così Fan Tutte - Royal Ballet & Opera 26-27 Season @ WTW St Austell
@@ -778,7 +799,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:db437e16e6910ec40f2fb1475481d5b9d903cd7d@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20270323
 DTEND;VALUE=DATE:20270324
 SUMMARY:Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Seaso
@@ -802,7 +823,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:bfe5163f3b754ee36a208d486f4ccce2fef5691c@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20270422
 DTEND;VALUE=DATE:20270423
 SUMMARY:Swan Lake - Royal Ballet & Opera 26-27 Season @ WTW St Austell
@@ -820,7 +841,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:dd25e59f78018f2808c990617123f4ab67a08153@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20270505
 DTEND;VALUE=DATE:20270506
 SUMMARY:Tosca - Royal Ballet & Opera 26-27 Season @ WTW St Austell
@@ -843,7 +864,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:2f13f113479402885d114bfa74461352f749d4b1@wtw-cinemas
-DTSTAMP:20261004T150347Z
+DTSTAMP:20261005T185759Z
 DTSTART;VALUE=DATE:20270525
 DTEND;VALUE=DATE:20270526
 SUMMARY:Romeo And Juliet - Royal Ballet & Opera 26-27 Season @ WTW St Auste
