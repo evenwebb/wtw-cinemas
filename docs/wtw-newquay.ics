@@ -9,129 +9,26 @@ X-WR-CALNAME:WTW Newquay Movie Premieres
 X-WR-CALDESC:Upcoming movie premieres at WTW Cinemas Newquay
 X-WR-TIMEZONE:Europe/London
 BEGIN:VEVENT
-UID:7bbb719a6f79ad493a097d501e6acecb77ac5c01@wtw-cinemas
-DTSTAMP:20261015T143310Z
-DTSTART;VALUE=DATE:20261016
-DTEND;VALUE=DATE:20261017
-SUMMARY:Street Fighter @ WTW Newquay
-DESCRIPTION:Street Fighter (2h)\nAction\, Fantasy\n\nIn 1993\, estranged St
- reet Fighters Ryu and Ken Masters are thrown back into combat when the mys
- terious Chun-Li recruits them for the next World Warrior Tournament: a bru
- tal clash of fists\, fate\, and fury. But behind this battle royale lies a
-  deadly conspiracy that forces them to face off against each other and the
-  demons of their past. And if they don't\, it's GAME OVER!\n\nStarring: An
- drew Koji\, Noah Centineo\, Callina Liang\, Joe Anoa'i\, David Dastmalchia
- n\, Cody Rhodes\n\nFilm release at WTW Cinemas Newquay\nBook tickets: http
- s://wtwcinemas.co.uk/newquay/film/5582/street-fighter\n\nFilm details: htt
- ps://evenwebb.github.io/wtw-cinemas/films/street-fighter.html
-LOCATION:WTW Cinemas Newquay
-URL:https://wtwcinemas.co.uk/newquay/film/5582/street-fighter
-SEQUENCE:0
-END:VEVENT
-BEGIN:VEVENT
-UID:9e744548f2f4d53e92fde0437c3d38f361ac6ea3@wtw-cinemas
-DTSTAMP:20261015T143310Z
-DTSTART;VALUE=DATE:20261016
-DTEND;VALUE=DATE:20261017
-SUMMARY:Forgotten Island @ WTW Newquay
-DESCRIPTION:Forgotten Island (1h 49min)\n★★★★☆\nAnimation\, Adventure\, Fan
- tasy\, Comedy\, Family\n\nWhile celebrating their last night together\, hi
- gh school graduates and best friends Jo and Raissa stumble upon a mysterio
- us portal that transports them to the fantastical island of Nakali. When t
- hey discover that the memories of their entire friendship are the price fo
- r returning home\, Jo and Raissa must race to find a way to leave the isla
- nd before they forget each other forever.\n\nStarring: H.E.R.\, Liza Sober
- ano\, Dave Franco\, Jenny Slate\, Manny Jacinto\, Lea Salonga\n\nFilm rele
- ase at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay
- /film/5739/forgotten-island-with-subtitles\n\nFilm details: https://evenwe
- bb.github.io/wtw-cinemas/films/forgotten-island.html
-LOCATION:WTW Cinemas Newquay
-URL:https://wtwcinemas.co.uk/newquay/film/5739/forgotten-island-with-subtit
- les
-SEQUENCE:1
-END:VEVENT
-BEGIN:VEVENT
-UID:ab2f3842b4ac9f641bccf8846cdb1f2f0daf2e42@wtw-cinemas
-DTSTAMP:20261015T143310Z
-DTSTART;VALUE=DATE:20261016
-DTEND;VALUE=DATE:20261017
-SUMMARY:Street Fighter @ WTW Newquay
-DESCRIPTION:Street Fighter (2h)\nAction\, Fantasy\n\nIn 1993\, estranged St
- reet Fighters Ryu and Ken Masters are thrown back into combat when the mys
- terious Chun-Li recruits them for the next World Warrior Tournament: a bru
- tal clash of fists\, fate\, and fury. But behind this battle royale lies a
-  deadly conspiracy that forces them to face off against each other and the
-  demons of their past. And if they don't\, it's GAME OVER!\n\nStarring: An
- drew Koji\, Noah Centineo\, Callina Liang\, Joe Anoa'i\, David Dastmalchia
- n\, Cody Rhodes\n\nFilm release at WTW Cinemas Newquay\nBook tickets: http
- s://wtwcinemas.co.uk/newquay/film/5740/street-fighter-with-subtitles\n\nFi
- lm details: https://evenwebb.github.io/wtw-cinemas/films/street-fighter.ht
- ml
-LOCATION:WTW Cinemas Newquay
-URL:https://wtwcinemas.co.uk/newquay/film/5740/street-fighter-with-subtitle
- s
-SEQUENCE:1
-END:VEVENT
-BEGIN:VEVENT
-UID:4c628f73b14f0ada2a2189ae824be1bccf9972b7@wtw-cinemas
-DTSTAMP:20261015T143310Z
-DTSTART;VALUE=DATE:20261016
-DTEND;VALUE=DATE:20261017
-SUMMARY:Other Mommy @ WTW Newquay
-DESCRIPTION:Other Mommy (1h 33min)\n★★★☆☆\nHorror\n\nYoung Bela forms a rel
- ationship with a sinister entity in her home that looks uncannily like her
-  own mother\, drawing her into a terrifying and increasingly dark world.\n
- \nStarring: Jessica Chastain\, Jay Duplass\, Arabella Olivia Clark\, Karen
-  Allen\, Arian Moayed\, Dichen Lachman\n\nFilm release at WTW Cinemas Newq
- uay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5724/other-mommy\
- n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/other-mommy.
- html
-LOCATION:WTW Cinemas Newquay
-URL:https://wtwcinemas.co.uk/newquay/film/5724/other-mommy
-SEQUENCE:0
-END:VEVENT
-BEGIN:VEVENT
-UID:5e010fda2b4be4e6a1267a728e77863cbbdde9e0@wtw-cinemas
-DTSTAMP:20261015T143310Z
-DTSTART;VALUE=DATE:20261016
-DTEND;VALUE=DATE:20261017
-SUMMARY:Forgotten Island @ WTW Newquay
-DESCRIPTION:Forgotten Island (1h 49min)\n★★★★☆\nAnimation\, Adventure\, Fan
- tasy\, Comedy\, Family\n\nWhile celebrating their last night together\, hi
- gh school graduates and best friends Jo and Raissa stumble upon a mysterio
- us portal that transports them to the fantastical island of Nakali. When t
- hey discover that the memories of their entire friendship are the price fo
- r returning home\, Jo and Raissa must race to find a way to leave the isla
- nd before they forget each other forever.\n\nStarring: H.E.R.\, Liza Sober
- ano\, Dave Franco\, Jenny Slate\, Manny Jacinto\, Lea Salonga\n\nFilm rele
- ase at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay
- /film/5643/forgotten-island\n\nFilm details: https://evenwebb.github.io/wt
- w-cinemas/films/forgotten-island.html
-LOCATION:WTW Cinemas Newquay
-URL:https://wtwcinemas.co.uk/newquay/film/5643/forgotten-island
-SEQUENCE:2
-END:VEVENT
-BEGIN:VEVENT
 UID:e70b9ac07a8989b70cd2275397adf0dd4d6c49f6@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261017
 DTEND;VALUE=DATE:20261018
 SUMMARY:Tad and The Magic Lamp @ WTW Newquay
-DESCRIPTION:Tad and The Magic Lamp (1h 34min)\nAnimation\, Comedy\, Family\
- n\nTadeo\, his girlfriend Sara\, and his friends Momia\, Jeff\, and Belzon
- i embark on an adventure after Tadeo accidentally unleashes an ancient spe
- ll.\n\nStarring: Óscar Barberán\, Michelle Jenner\, Luis Posada\, Joseph B
- alderrama\, Trevor White\n\nFilm release at WTW Cinemas Newquay\nBook tick
- ets: https://wtwcinemas.co.uk/newquay/film/5732/tad-and-the-magic-lamp\n\n
- Film details: https://evenwebb.github.io/wtw-cinemas/films/tad-and-the-mag
- ic-lamp.html
+DESCRIPTION:Tad and The Magic Lamp (1h 34min)\n★★★★☆\nAnimation\, Comedy\, 
+ Family\n\nTadeo\, his girlfriend Sara\, and his friends Momia\, Jeff\, and
+  Belzoni embark on an adventure after Tadeo accidentally unleashes an anci
+ ent spell.\n\nStarring: Óscar Barberán\, Michelle Jenner\, Luis Posada\, J
+ oseph Balderrama\, Trevor White\n\nFilm release at WTW Cinemas Newquay\nBo
+ ok tickets: https://wtwcinemas.co.uk/newquay/film/5732/tad-and-the-magic-l
+ amp\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/tad-and-
+ the-magic-lamp.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5732/tad-and-the-magic-lamp
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f122737e6b6a7b2f0e998436f10adf11f640303b@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
 SUMMARY:Macbeth - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -151,8 +48,26 @@ URL:https://wtwcinemas.co.uk/newquay/film/5555/macbeth-royal-ballet-opera-2
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
+UID:9205eb32e931ea56bce3aaa00d1bd5167b4dad45@wtw-cinemas
+DTSTAMP:20261016T142543Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:Klara and the Sun @ WTW Newquay
+DESCRIPTION:Klara and the Sun (1h 57min)\nScience Fiction\, Drama\, Comedy\
+ n\nAn Artificial Friend named Klara finds a deep bond with a troubled youn
+ g girl\, bringing light and hope to a grieving family through her unwaveri
+ ng devotion and innocent wonder.\n\nStarring: Jenna Ortega\, Mia Tharia\, 
+ Amy Adams\, Natasha Lyonne\, Aran Murphy\, Rachel House\n\nFilm release at
+  WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/
+ 5748/klara-and-the-sun\n\nFilm details: https://evenwebb.github.io/wtw-cin
+ emas/films/klara-and-the-sun.html
+LOCATION:WTW Cinemas Newquay
+URL:https://wtwcinemas.co.uk/newquay/film/5748/klara-and-the-sun
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
 UID:979a660aaefeec037d4296642661dd99489a2e0c@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Fallen Angels by Noël Coward @ WTW Newquay
@@ -170,7 +85,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:606bebd488f77f3720e5efaee06ef0a30c320adf@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
 SUMMARY:Tony @ WTW Newquay
@@ -187,7 +102,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:d12420ea393fdce39a2664c3aae4aee21d0b5a1a@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Clayface @ WTW Newquay
@@ -208,7 +123,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:3d7d7d45f2722ca50cc5c473f217f68fb7f60aec@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
 SUMMARY:Derek vs Derek @ WTW Newquay
@@ -225,8 +140,27 @@ URL:https://wtwcinemas.co.uk/newquay/film/5734/derek-vs-derek
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
+UID:7d44e989b8151da078d09f739b30e5889c4e0d9e@wtw-cinemas
+DTSTAMP:20261016T142543Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Wildwood @ WTW Newquay
+DESCRIPTION:Wildwood (2h 10min)\nAnimation\, Adventure\, Fantasy\n\nPrue an
+ d her classmate Curtis are drawn into a magical forest filled with enchant
+ ed creatures\, loyal allies\, and formidable adversaries as they embark on
+  a desperate quest to rescue Prue's abducted baby brother from a murder of
+  crows led by a mysterious woman named Alexandra.\n\nStarring: Peyton Eliz
+ abeth Lee\, Jacob Tremblay\, Carey Mulligan\, Mahershala Ali\, Angela Bass
+ ett\, Awkwafina\n\nFilm release at WTW Cinemas Newquay\nBook tickets: http
+ s://wtwcinemas.co.uk/newquay/film/5749/wildwood\n\nFilm details: https://e
+ venwebb.github.io/wtw-cinemas/films/wildwood.html
+LOCATION:WTW Cinemas Newquay
+URL:https://wtwcinemas.co.uk/newquay/film/5749/wildwood
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
 UID:883a7be88ecb46b4755990c5cb9249217a7a9cdf@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261024
 DTEND;VALUE=DATE:20261025
 SUMMARY:Coco @ WTW Newquay
@@ -248,7 +182,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:54fdea381517cf456b9ec0bd7286788af82a8c3b@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:Manon - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -275,7 +209,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:958d378f2182c2b529120c5af6db6c15cf2ed74b@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:Ozzy & Black Sabbath: Back to the Beginning @ WTW Newquay
@@ -294,7 +228,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:db5a2def71a72192bef58f6e55e1504fa68f0bdd@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Hocus Pocus @ WTW Newquay
@@ -313,7 +247,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:2462a9376374ce6c0ef89d04f56eb1b014598aa2@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Primetime @ WTW Newquay
@@ -331,7 +265,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:fb21acb32dd23a49893ac36d7f16b436546534cb@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:Wicker @ WTW Newquay
@@ -351,7 +285,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:3eec2d45b1c87afe4d8188fd1c5ba47d0c108c25@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261031
 DTEND;VALUE=DATE:20261101
 SUMMARY:Monster House @ WTW Newquay
@@ -370,7 +304,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:3ca816f77fbfc1652683c62f39fe0eba53029bdd@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:How Deep Is Your Love @ WTW Newquay
@@ -387,7 +321,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:cdb0ab24c569cbcd6acb36a5a5e45610c8348c74@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:Ghosts: The Possession of Button House @ WTW Newquay
@@ -405,7 +339,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:e116868a85aae4135fcbb928352d65a9da0bb536@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:National Theatre Live: Golden Boy @ WTW Newquay
@@ -434,7 +368,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c92163bfbd1bd8660118b0ecbf814381434d5018@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:It's Always the End of the World @ WTW Newquay
@@ -456,7 +390,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:375095f90697dcab9ae6f073802a9b82604fad29@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261105
 DTEND;VALUE=DATE:20261106
 SUMMARY:Godzilla Minus Zero @ WTW Newquay
@@ -476,7 +410,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:48661bb4668d3d3a019208349c084744ce5fc49e@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:Wild Horse Nine @ WTW Newquay
@@ -497,7 +431,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:1f6cd4dd85269216e5c2cd6a20b61b816973c970@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261106
 DTEND;VALUE=DATE:20261107
 SUMMARY:George Michael: The Faith Tour @ WTW Newquay
@@ -517,7 +451,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b3f7ae6f4c3719476c734b90998ced9e9f267cab@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261110
 DTEND;VALUE=DATE:20261111
 SUMMARY:Carmen - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -541,7 +475,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:62fd0c085a15db52aed4d20ca0dd26a7e086204f@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261113
 DTEND;VALUE=DATE:20261114
 SUMMARY:I Play Rocky @ WTW Newquay
@@ -560,7 +494,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:932fa19c28e8907993b98bb8267c556d29e083eb@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261114
 DTEND;VALUE=DATE:20261115
 SUMMARY:Festive Fun with Peppa @ WTW Newquay
@@ -581,7 +515,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:1d52954d5a767132c77e7c36672dc0631aadfe4b@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:GIANT - The Play @ WTW Newquay
@@ -602,7 +536,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c1479b9c4d124a4f482cc3565b7def71c2e6444f@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261120
 DTEND;VALUE=DATE:20261121
 SUMMARY:The Hunger Games: Sunrise on the Reaping @ WTW Newquay
@@ -622,7 +556,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:4fb606ddd41cbde9e72d63b00991c591154578d7@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Cbeebies Panto: Treasure Island @ WTW Newquay
@@ -644,7 +578,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b5cf4b82d6acb6c91a539350833f8e3b50b73945@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
 SUMMARY:Doctor Who: The Satan Pit @ WTW Newquay
@@ -663,7 +597,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:7098710e36e892e80dbfdb672656fab4310aa867@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Focker-In-Law @ WTW Newquay
@@ -680,7 +614,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:1bba2578c47ab325307be6f8f20e98c7d811fe98@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
 SUMMARY:Andrew Lloyd Webber's Starlight Express - Live On Stage @ WTW Newqu
@@ -689,11 +623,11 @@ DESCRIPTION:Andrew Lloyd Webber's Starlight Express - Live On Stage (2h 30m
  in)\nMusic\n\nAndrew Lloyd Webber's\, 'Starlight Express' races back onto 
  the stage in a spectacular new production\, where trains come to life\, dr
  eams are on the line\, and only one can become champion.\n\nStarring: Jeev
- an Braich\, Kayna Montecillo\, Jade Marvin\, Al Knott\n\nFilm release at W
- TW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/57
- 41/andrew-lloyd-webbers-starlight-express-live-on-stage\n\nFilm details: h
- ttps://evenwebb.github.io/wtw-cinemas/films/andrew-lloyd-webber-s-starligh
- t-express-live-on-stage.html
+ an Braich\, Kayna Montecillo\, Jade Marvin\, Olivia Ringrose\, Asher Forth
+ \, Sophie Naglik\n\nFilm release at WTW Cinemas Newquay\nBook tickets: htt
+ ps://wtwcinemas.co.uk/newquay/film/5741/andrew-lloyd-webbers-starlight-exp
+ ress-live-on-stage\n\nFilm details: https://evenwebb.github.io/wtw-cinemas
+ /films/andrew-lloyd-webber-s-starlight-express-live-on-stage.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5741/andrew-lloyd-webbers-starlig
  ht-express-live-on-stage
@@ -701,7 +635,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:1ab695e16b23c5a0d14145776a2c2472bfc34173@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Hexed @ WTW Newquay
@@ -721,7 +655,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0b4b7f23ff7d9bded898f133b19a35dfec6df9e6@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:The Nutcracker - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -744,7 +678,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5bfefb2977887c7a6c8f0c590693eed8ddfa49ca@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:The Cat in the Hat @ WTW Newquay
@@ -763,7 +697,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c77fa32b09d34cc4a118bcdedc77403f564b40ec@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Andre Rieu's 2026 Christmas Concert Let It Snow @ WTW Newquay
@@ -780,7 +714,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:7edba74056498f6afb93a8b9beb82786d9f5ee70@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261215
 DTEND;VALUE=DATE:20261216
 SUMMARY:See It First - Dune: Part Three @ WTW Newquay
@@ -798,7 +732,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:744a6a063776624f07c93b55bffc8287e735befa@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Avengers: Doomsday @ WTW Newquay
@@ -816,7 +750,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ef88d4ef1eafdf0c4b9446b04ff564acf536adb5@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Dune: Part Three @ WTW Newquay
@@ -839,7 +773,7 @@ SEQUENCE:1
 END:VEVENT
 BEGIN:VEVENT
 UID:44e65ff4d37973e4a79973e99e18d1f78b0fd4ab@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Jumanji: Open World @ WTW Newquay
@@ -857,7 +791,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:d623748fdfdffb770a06284a285c314a1a8ef0bb@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20270114
 DTEND;VALUE=DATE:20270115
 SUMMARY:National Theatre Live: Hay Fever @ WTW Newquay
@@ -876,7 +810,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:32d4e5f38a17949d5cc00ed101bf8137f4bf9b8d@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270127
 SUMMARY:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season @ WTW New
@@ -904,7 +838,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f6d39d9a60ae9727e36a26ae835afb5039c78136@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 SUMMARY:Götterdämmerung - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -932,7 +866,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:7de2723200cdd816aecc45d87f3b10f19ef9699e@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20270218
 DTEND;VALUE=DATE:20270219
 SUMMARY:National Theatre Live: The Motive and the Cue @ WTW Newquay
@@ -954,7 +888,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8c8c4a85ce8eb65d740c2af8023c81beb387a7d4@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20270223
 DTEND;VALUE=DATE:20270224
 SUMMARY:Così Fan Tutte - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -983,7 +917,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:35f9e1444906984f7df24b2ed7df3a14a78d5fab@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20270323
 DTEND;VALUE=DATE:20270324
 SUMMARY:Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Seaso
@@ -1004,7 +938,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:701819a4b21ac4e8d68fa43f21d0034a8ebc098b@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20270422
 DTEND;VALUE=DATE:20270423
 SUMMARY:Swan Lake - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -1022,7 +956,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:6f4f84b6ff4e1df32063b367bf43c083f29865b9@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20270505
 DTEND;VALUE=DATE:20270506
 SUMMARY:Tosca - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -1045,7 +979,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9ab5660140c194f5f9dcb84a73142f3ae94588cd@wtw-cinemas
-DTSTAMP:20261015T143310Z
+DTSTAMP:20261016T142543Z
 DTSTART;VALUE=DATE:20270525
 DTEND;VALUE=DATE:20270526
 SUMMARY:Romeo And Juliet - Royal Ballet & Opera 26-27 Season @ WTW Newquay
