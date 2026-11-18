@@ -9,28 +9,8 @@ X-WR-CALNAME:WTW Newquay Movie Premieres
 X-WR-CALDESC:Upcoming movie premieres at WTW Cinemas Newquay
 X-WR-TIMEZONE:Europe/London
 BEGIN:VEVENT
-UID:22845c235b45559fc61af3bb0fbfc2938e1c1739@wtw-cinemas
-DTSTAMP:20261117T185230Z
-DTSTART;VALUE=DATE:20261118
-DTEND;VALUE=DATE:20261119
-SUMMARY:The Hunger Games: Sunrise on the Reaping @ WTW Newquay
-DESCRIPTION:The Hunger Games: Sunrise on the Reaping (2h 39min)\nScience Fi
- ction\, Action\, Adventure\n\nReturn to the world of Panem 24 years before
-  the events of The Hunger Games\, starting on the morning of the reaping o
- f the 50th Hunger Games\, also known as the Second Quarter Quell.\n\nStarr
- ing: Joseph Zada\, Mckenna Grace\, Ralph Fiennes\, Jesse Plemons\, Glenn C
- lose\, Whitney Peak\n\nFilm release at WTW Cinemas Newquay\nBook tickets: 
- https://wtwcinemas.co.uk/newquay/film/5586/the-hunger-games-sunrise-on-the
- -reaping\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/the
- -hunger-games-sunrise-on-the-reaping.html
-LOCATION:WTW Cinemas Newquay
-URL:https://wtwcinemas.co.uk/newquay/film/5586/the-hunger-games-sunrise-on-
- the-reaping
-SEQUENCE:1
-END:VEVENT
-BEGIN:VEVENT
 UID:1d52954d5a767132c77e7c36672dc0631aadfe4b@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:GIANT - The Play @ WTW Newquay
@@ -50,8 +30,30 @@ URL:https://wtwcinemas.co.uk/newquay/film/5619/giant-the-play
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
+UID:75c8b32dce50d7ee91f5078572ffcf82f9f6394c@wtw-cinemas
+DTSTAMP:20261118T183147Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:The Hunger Games: Sunrise on the Reaping Parent & Baby Screening @ 
+ WTW Newquay
+DESCRIPTION:The Hunger Games: Sunrise on the Reaping Parent & Baby Screenin
+ g (2h 39min)\nScience Fiction\, Action\, Adventure\n\nReturn to the world 
+ of Panem 24 years before the events of The Hunger Games\, starting on the 
+ morning of the reaping of the 50th Hunger Games\, also known as the Second
+  Quarter Quell.\n\nStarring: Joseph Zada\, Mckenna Grace\, Ralph Fiennes\,
+  Jesse Plemons\, Glenn Close\, Whitney Peak\n\nFilm release at WTW Cinemas
+  Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5780/the-hun
+ ger-games-sunrise-on-the-reaping-parent-baby-screening\n\nFilm details: ht
+ tps://evenwebb.github.io/wtw-cinemas/films/the-hunger-games-sunrise-on-the
+ -reaping-parent-baby-screening.html
+LOCATION:WTW Cinemas Newquay
+URL:https://wtwcinemas.co.uk/newquay/film/5780/the-hunger-games-sunrise-on-
+ the-reaping-parent-baby-screening
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
 UID:4fb606ddd41cbde9e72d63b00991c591154578d7@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Cbeebies Panto: Treasure Island @ WTW Newquay
@@ -73,7 +75,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b5cf4b82d6acb6c91a539350833f8e3b50b73945@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
 SUMMARY:Doctor Who: The Satan Pit @ WTW Newquay
@@ -92,7 +94,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:7098710e36e892e80dbfdb672656fab4310aa867@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Focker-In-Law @ WTW Newquay
@@ -112,7 +114,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:1bba2578c47ab325307be6f8f20e98c7d811fe98@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
 SUMMARY:Andrew Lloyd Webber's Starlight Express - Live On Stage @ WTW Newqu
@@ -133,7 +135,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:1ab695e16b23c5a0d14145776a2c2472bfc34173@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Hexed @ WTW Newquay
@@ -153,7 +155,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0b4b7f23ff7d9bded898f133b19a35dfec6df9e6@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:The Nutcracker - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -176,7 +178,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5bfefb2977887c7a6c8f0c590693eed8ddfa49ca@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:The Cat in the Hat @ WTW Newquay
@@ -195,7 +197,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c77fa32b09d34cc4a118bcdedc77403f564b40ec@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Andre Rieu's 2026 Christmas Concert Let It Snow @ WTW Newquay
@@ -212,7 +214,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:7edba74056498f6afb93a8b9beb82786d9f5ee70@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20261215
 DTEND;VALUE=DATE:20261216
 SUMMARY:See It First - Dune: Part Three @ WTW Newquay
@@ -230,7 +232,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:744a6a063776624f07c93b55bffc8287e735befa@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Avengers: Doomsday @ WTW Newquay
@@ -248,7 +250,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ef88d4ef1eafdf0c4b9446b04ff564acf536adb5@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Dune: Part Three @ WTW Newquay
@@ -270,26 +272,43 @@ URL:https://wtwcinemas.co.uk/newquay/film/5589/dune-part-three
 SEQUENCE:1
 END:VEVENT
 BEGIN:VEVENT
+UID:e6e3d5616c086f2b5f283ddb78cea1b5908ccc04@wtw-cinemas
+DTSTAMP:20261118T183147Z
+DTSTART;VALUE=DATE:20261221
+DTEND;VALUE=DATE:20261222
+SUMMARY:The Angry Birds Movie 3 @ WTW Newquay
+DESCRIPTION:The Angry Birds Movie 3 (1h 36min)\nAdventure\, Animation\, Com
+ edy\, Family\n\nRed faces his greatest challenge yet—surviving fatherhood…
+  while saving the world.\n\nStarring: Jason Sudeikis\, Josh Gad\, Danny Mc
+ Bride\, Rachel Bloom\, Emma Myers\, Walker Scobell\n\nFilm release at WTW 
+ Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5781/
+ the-angry-birds-movie-3\n\nFilm details: https://evenwebb.github.io/wtw-ci
+ nemas/films/the-angry-birds-movie-3.html
+LOCATION:WTW Cinemas Newquay
+URL:https://wtwcinemas.co.uk/newquay/film/5781/the-angry-birds-movie-3
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
 UID:44e65ff4d37973e4a79973e99e18d1f78b0fd4ab@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Jumanji: Open World @ WTW Newquay
-DESCRIPTION:Jumanji: Open World\nAdventure\, Comedy\, Fantasy\n\nOur heroes
-  have escaped the ever-changing jungles of Jumanji before\, but this time 
- the game comes to us—as Jumanji breaks free of its console\, unleashing it
- s chaos into our world.\n\nStarring: Dwayne Johnson\, Kevin Hart\, Jack Bl
- ack\, Karen Gillan\, Awkwafina\, Alex Wolff\n\nFilm release at WTW Cinemas
-  Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5590/jumanji
- -open-world\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/
- jumanji-open-world.html
+DESCRIPTION:Jumanji: Open World (2h 6min)\nAdventure\, Comedy\, Fantasy\n\n
+ Our heroes have escaped the ever-changing jungles of Jumanji before\, but 
+ this time the game comes to us—as Jumanji breaks free of its console\, unl
+ eashing its chaos into our world.\n\nStarring: Dwayne Johnson\, Kevin Hart
+ \, Jack Black\, Karen Gillan\, Alex Wolff\, Morgan Turner\n\nFilm release 
+ at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/fil
+ m/5590/jumanji-open-world\n\nFilm details: https://evenwebb.github.io/wtw-
+ cinemas/films/jumanji-open-world.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5590/jumanji-open-world
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:d623748fdfdffb770a06284a285c314a1a8ef0bb@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20270114
 DTEND;VALUE=DATE:20270115
 SUMMARY:National Theatre Live: Hay Fever @ WTW Newquay
@@ -320,7 +339,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:32d4e5f38a17949d5cc00ed101bf8137f4bf9b8d@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270127
 SUMMARY:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season @ WTW New
@@ -343,7 +362,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:444857168daf4ba7175f701df1ff0a3460600002@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20270129
 DTEND;VALUE=DATE:20270130
 SUMMARY:Elsinore @ WTW Newquay
@@ -362,7 +381,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f6d39d9a60ae9727e36a26ae835afb5039c78136@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 SUMMARY:Götterdämmerung - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -390,7 +409,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:73066a18ac879f30ff31f906298696434f4b74d9@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20270205
 DTEND;VALUE=DATE:20270206
 SUMMARY:Ice Age: Boiling Point @ WTW Newquay
@@ -410,7 +429,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:29d6236bd9f411c2fbbc0ec913a0d1ea97d8575c@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20270212
 DTEND;VALUE=DATE:20270213
 SUMMARY:Narnia: The Magician's Nephew @ WTW Newquay
@@ -429,7 +448,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:7de2723200cdd816aecc45d87f3b10f19ef9699e@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20270218
 DTEND;VALUE=DATE:20270219
 SUMMARY:National Theatre Live: The Motive and the Cue @ WTW Newquay
@@ -451,7 +470,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8c8c4a85ce8eb65d740c2af8023c81beb387a7d4@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20270223
 DTEND;VALUE=DATE:20270224
 SUMMARY:Così Fan Tutte - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -480,27 +499,28 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:249513a8e2c357e97e044bc1ef7adbe134840537@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20270305
 DTEND;VALUE=DATE:20270306
 SUMMARY:Gatto @ WTW Newquay
-DESCRIPTION:Gatto\nAnimation\, Comedy\, Crime\, Family\n\nAfter years of ma
- neuvering the canal-ridden\, superstitious city of Venice\, Italy\, a scra
- ppy black cat named Nero begins to question whether he’s lived the right l
- ives. Indebted to Rocco\, a ruthless local feline mob boss\, Nero finds hi
- mself in a quandary and is forced to forge a truly unexpected friendship t
- hat may finally lead him to his purpose—unless Venice gets the better of h
- im first.\n\nStarring: Mark Ruffalo\, Laurence Fishburne\, Enrico Casarosa
- \, Bianca Babaşa\, Sherry Cola\, John Turturro\n\nFilm release at WTW Cine
- mas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5759/gatt
- o\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/gatto.html
+DESCRIPTION:Gatto (1h 38min)\nAnimation\, Comedy\, Crime\, Family\n\nAfter 
+ years of maneuvering the canal-ridden\, superstitious city of Venice\, Ita
+ ly\, a scrappy black cat named Nero begins to question whether he’s lived 
+ the right lives. Indebted to Rocco\, a ruthless local feline mob boss\, Ne
+ ro finds himself in a quandary and is forced to forge a truly unexpected f
+ riendship that may finally lead him to his purpose—unless Venice gets the 
+ better of him first.\n\nStarring: Mark Ruffalo\, Laurence Fishburne\, Enri
+ co Casarosa\, Bianca Babaşa\, Sherry Cola\, John Turturro\n\nFilm release 
+ at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/fil
+ m/5759/gatto\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films
+ /gatto.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5759/gatto
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8af76cf3f5065a91e8701cb8d060aef71888d230@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20270319
 DTEND;VALUE=DATE:20270320
 SUMMARY:Sonic the Hedgehog 4 @ WTW Newquay
@@ -517,7 +537,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:35f9e1444906984f7df24b2ed7df3a14a78d5fab@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20270323
 DTEND;VALUE=DATE:20270324
 SUMMARY:Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Seaso
@@ -538,7 +558,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:701819a4b21ac4e8d68fa43f21d0034a8ebc098b@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20270422
 DTEND;VALUE=DATE:20270423
 SUMMARY:Swan Lake - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -556,7 +576,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:38e9a9c1970f1c5b0e1d62869e7fd7f2641638d9@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20270430
 DTEND;VALUE=DATE:20270501
 SUMMARY:The Legend of Zelda @ WTW Newquay
@@ -573,7 +593,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:6f4f84b6ff4e1df32063b367bf43c083f29865b9@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20270505
 DTEND;VALUE=DATE:20270506
 SUMMARY:Tosca - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -596,7 +616,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9ab5660140c194f5f9dcb84a73142f3ae94588cd@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20270525
 DTEND;VALUE=DATE:20270526
 SUMMARY:Romeo And Juliet - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -621,7 +641,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:a0658e8ad1f9778327e85abb1d485ceeeda4ee12@wtw-cinemas
-DTSTAMP:20261117T185230Z
+DTSTAMP:20261118T183147Z
 DTSTART;VALUE=DATE:20270630
 DTEND;VALUE=DATE:20270701
 SUMMARY:Shrek 5 @ WTW Newquay
