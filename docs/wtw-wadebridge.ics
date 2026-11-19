@@ -9,51 +9,8 @@ X-WR-CALNAME:WTW Wadebridge Movie Premieres
 X-WR-CALDESC:Upcoming movie premieres at WTW Cinemas Wadebridge
 X-WR-TIMEZONE:Europe/London
 BEGIN:VEVENT
-UID:23d5c901aec69131de7785a68a90fa98def64c02@wtw-cinemas
-DTSTAMP:20261118T183147Z
-DTSTART;VALUE=DATE:20261119
-DTEND;VALUE=DATE:20261120
-SUMMARY:GIANT - The Play @ WTW Wadebridge
-DESCRIPTION:GIANT - The Play (2h 16min)\nDrama\n\nSet in the summer of 1983
- \, just before the release of The Witches\, Giant imagines a tense meeting
-  between Roald Dahl and his American and British publishers as they scramb
- le to contain the fallout from his public denunciation of Israel and defen
- ce of the Palestinians in a review of a book on the 1982 Lebanon war. Film
- ed live onstage at the Harold Pinter Theatre in London's West End in 2025.
- \n\nStarring: John Lithgow\, Elliot Levey\, Aya Cash\, Rachael Stirling\, 
- Tessa Bonham Jones\, Richard Hope\n\nFilm release at WTW Cinemas Wadebridg
- e\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/5619/giant-the-p
- lay\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/giant-th
- e-play.html
-LOCATION:WTW Cinemas Wadebridge
-URL:https://wtwcinemas.co.uk/wadebridge/film/5619/giant-the-play
-SEQUENCE:0
-END:VEVENT
-BEGIN:VEVENT
-UID:d456847b1899f0b74e31a64335170e9830d18421@wtw-cinemas
-DTSTAMP:20261118T183147Z
-DTSTART;VALUE=DATE:20261120
-DTEND;VALUE=DATE:20261121
-SUMMARY:The Hunger Games: Sunrise on the Reaping Parent & Baby Screening @ 
- WTW Wadebridge
-DESCRIPTION:The Hunger Games: Sunrise on the Reaping Parent & Baby Screenin
- g (2h 39min)\nScience Fiction\, Action\, Adventure\n\nReturn to the world 
- of Panem 24 years before the events of The Hunger Games\, starting on the 
- morning of the reaping of the 50th Hunger Games\, also known as the Second
-  Quarter Quell.\n\nStarring: Joseph Zada\, Mckenna Grace\, Ralph Fiennes\,
-  Jesse Plemons\, Glenn Close\, Whitney Peak\n\nFilm release at WTW Cinemas
-  Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/5780/t
- he-hunger-games-sunrise-on-the-reaping-parent-baby-screening\n\nFilm detai
- ls: https://evenwebb.github.io/wtw-cinemas/films/the-hunger-games-sunrise-
- on-the-reaping-parent-baby-screening.html
-LOCATION:WTW Cinemas Wadebridge
-URL:https://wtwcinemas.co.uk/wadebridge/film/5780/the-hunger-games-sunrise-
- on-the-reaping-parent-baby-screening
-SEQUENCE:0
-END:VEVENT
-BEGIN:VEVENT
 UID:b229840b46497e9acf137cdb78f6384b202eb186@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Cbeebies Panto: Treasure Island @ WTW Wadebridge
@@ -75,7 +32,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:3c476d2397955bfa75ca7c4ce94f5c1ed3b04e86@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:NAZA @ WTW Wadebridge
@@ -92,7 +49,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:aa1db8ed4d3d0584bcd72babdc88119a1410d135@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
 SUMMARY:Doctor Who: The Satan Pit @ WTW Wadebridge
@@ -111,7 +68,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9e6609fe0148e68c89acc8c353ee07d0beb9a6e0@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Focker-In-Law @ WTW Wadebridge
@@ -131,7 +88,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:dfcba525cb756a237b0bae1e4c477eb7e7783bf1@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
 SUMMARY:Andrew Lloyd Webber's Starlight Express - Live On Stage @ WTW Wadeb
@@ -152,7 +109,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c9b8f4aa1ebeba05686086ec3358ab350cc39c96@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Hexed @ WTW Wadebridge
@@ -172,7 +129,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:32e0d9e7b556fde8fa9ddc736c1bb5f2f871acb7@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:The Nutcracker - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
@@ -195,26 +152,26 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ae259c1820ed07e4967fb77493b68b29a9d7edc7@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:The Cat in the Hat @ WTW Wadebridge
-DESCRIPTION:The Cat in the Hat (1h 48min)\nAnimation\, Fantasy\, Adventure\
- , Family\, Comedy\n\nAssigned his toughest mission yet\, the Cat must chee
- r up siblings Gabby and Sebastian as they adjust to life in a new town. Kn
- own for pushing boundaries\, this agent of chaos must prove himself or ris
- k losing his magical hat forever.\n\nStarring: Bill Hader\, Xochitl Gomez\
- , Tiago Martinez\, Matt Berry\, Quinta Brunson\, Bowen Yang\n\nFilm releas
- e at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebr
- idge/film/5584/the-cat-in-the-hat\n\nFilm details: https://evenwebb.github
- .io/wtw-cinemas/films/the-cat-in-the-hat.html
+DESCRIPTION:The Cat in the Hat (1h 48min)\n★★★☆☆\nAnimation\, Fantasy\, Adv
+ enture\, Family\, Comedy\n\nAssigned his toughest mission yet\, the Cat mu
+ st cheer up siblings Gabby and Sebastian as they adjust to life in a new t
+ own. Known for pushing boundaries\, this agent of chaos must prove himself
+  or risk losing his magical hat forever.\n\nStarring: Bill Hader\, Xochitl
+  Gomez\, Tiago Martinez\, Matt Berry\, Quinta Brunson\, Bowen Yang\n\nFilm
+  release at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co.uk
+ /wadebridge/film/5584/the-cat-in-the-hat\n\nFilm details: https://evenwebb
+ .github.io/wtw-cinemas/films/the-cat-in-the-hat.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5584/the-cat-in-the-hat
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ea5a9ae4f3515a6c41449349cf9ce6a5d57e0e51@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Andre Rieu's 2026 Christmas Concert Let It Snow @ WTW Wadebridge
@@ -231,7 +188,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:654c91c1336c58188b76a1e4db75a9912088802b@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Avengers: Doomsday @ WTW Wadebridge
@@ -249,7 +206,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5ae7d4881702693a9355d4cf060bf3ca4c28783a@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Dune: Part Three @ WTW Wadebridge
@@ -272,7 +229,7 @@ SEQUENCE:1
 END:VEVENT
 BEGIN:VEVENT
 UID:1e1c45698042ddb5e68b774e862f5f3a527edd76@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20261221
 DTEND;VALUE=DATE:20261222
 SUMMARY:The Angry Birds Movie 3 @ WTW Wadebridge
@@ -289,7 +246,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:d57df00005ba739cee61d719e3e33f88fb670a63@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Jumanji: Open World @ WTW Wadebridge
@@ -307,7 +264,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9bf194c331b0e5badd29c5ca6acac3da38983639@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20270114
 DTEND;VALUE=DATE:20270115
 SUMMARY:National Theatre Live: Hay Fever @ WTW Wadebridge
@@ -338,7 +295,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:e946202c3d79e6b82fe3dcdbdbb3fc21048e609e@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20270119
 DTEND;VALUE=DATE:20270120
 SUMMARY:Renoir & Love - Exhibition On Screen @ WTW Wadebridge
@@ -360,7 +317,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9103b988c7486fd82cbbdafcb54e2d25babb2825@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270127
 SUMMARY:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season @ WTW Wad
@@ -383,7 +340,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b0f7758cdec69ab14013c1e402094d7da5128e02@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20270129
 DTEND;VALUE=DATE:20270130
 SUMMARY:Elsinore @ WTW Wadebridge
@@ -402,7 +359,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:561f682c0c18af56edaad91535c9c258ba76003a@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 SUMMARY:Götterdämmerung - Royal Ballet & Opera 26-27 Season @ WTW Wadebridg
@@ -431,7 +388,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c627e67fb77b6d72de3773c76ded9f2a92f3fdf1@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20270205
 DTEND;VALUE=DATE:20270206
 SUMMARY:Ice Age: Boiling Point @ WTW Wadebridge
@@ -440,18 +397,17 @@ DESCRIPTION:Ice Age: Boiling Point (1h 43min)\nAdventure\, Animation\, Fami
  id\, Diego\, Ellie\, Buck\, acorn-obsessed Scrat – this time joined by Bab
  y Scrat and the enormous Jurassic Scrat – and the rest of the herd to visi
  t never before-seen corners of the treacherous Lost World.\n\nStarring: Ra
- y Romano\, John Leguizamo\, Denis Leary\, Simon Pegg\, Queen Latifah\, Sea
- nn William Scott\n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: 
- https://wtwcinemas.co.uk/wadebridge/film/5757/ice-age-boiling-point\n\nFil
- m details: https://evenwebb.github.io/wtw-cinemas/films/ice-age-boiling-po
- int.html
+ y Romano\, John Leguizamo\, Denis Leary\, Simon Pegg\, Queen Latifah\, Ash
+ ley Park\n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: https://
+ wtwcinemas.co.uk/wadebridge/film/5757/ice-age-boiling-point\n\nFilm detail
+ s: https://evenwebb.github.io/wtw-cinemas/films/ice-age-boiling-point.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5757/ice-age-boiling-point
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:d5880b3ec502cac347c627ca58c3b58f309ccc1a@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20270212
 DTEND;VALUE=DATE:20270213
 SUMMARY:Narnia: The Magician's Nephew @ WTW Wadebridge
@@ -471,7 +427,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:94046208213e649f1c4e4c75e8c523b87423883a@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20270218
 DTEND;VALUE=DATE:20270219
 SUMMARY:National Theatre Live: The Motive and the Cue @ WTW Wadebridge
@@ -493,7 +449,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8a425195a90364c9afb77d5e7aabfc1fdb6802d9@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20270223
 DTEND;VALUE=DATE:20270224
 SUMMARY:Così Fan Tutte - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
@@ -522,7 +478,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:75ac1128e4acaf721dbe0eb069d47f11ad976331@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20270305
 DTEND;VALUE=DATE:20270306
 SUMMARY:Gatto @ WTW Wadebridge
@@ -543,24 +499,28 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:1d885e0d63dd3db3757fa2fc870d22b1469d6b4a@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20270319
 DTEND;VALUE=DATE:20270320
 SUMMARY:Sonic the Hedgehog 4 @ WTW Wadebridge
 DESCRIPTION:Sonic the Hedgehog 4 (2h)\nComedy\, Action\, Family\, Science F
- iction\n\nThe fourth installment in the Sonic the Hedgehog film franchise.
-  Plot TBA.\n\nStarring: Ben Schwartz\, Jim Carrey\, Kristen Bell\, Idris E
- lba\, Keanu Reeves\, James Marsden\n\nFilm release at WTW Cinemas Wadebrid
- ge\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/5760/sonic-the-
- hedgehog-4\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/s
- onic-the-hedgehog-4.html
+ iction\n\nWhen a new threat emerges from a fractured timeline\, Team Sonic
+  finds themselves facing an adventure unlike anything they've encountered 
+ before. With the Chaos Emeralds scattered across different periods in time
+ \, Sonic—alongside new friends and old—must journey through the past\, pre
+ sent\, and future to recover them before a dangerous alternate timeline be
+ comes reality.\n\nStarring: Ben Schwartz\, Jim Carrey\, Kristen Bell\, Idr
+ is Elba\, Keanu Reeves\, James Marsden\n\nFilm release at WTW Cinemas Wade
+ bridge\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/5760/sonic-
+ the-hedgehog-4\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/fil
+ ms/sonic-the-hedgehog-4.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5760/sonic-the-hedgehog-4
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:90b7dba09378dd2d2a02950b9857a9b76935acbe@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20270323
 DTEND;VALUE=DATE:20270324
 SUMMARY:Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Seaso
@@ -581,7 +541,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5020767395f525964cf68b2a2f14235211fb48ac@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20270422
 DTEND;VALUE=DATE:20270423
 SUMMARY:Swan Lake - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
@@ -599,7 +559,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:2e14adb556693912d965465f73875eef7c6aa064@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20270430
 DTEND;VALUE=DATE:20270501
 SUMMARY:The Legend of Zelda @ WTW Wadebridge
@@ -616,7 +576,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0d381b6f83ecf059f6b8cf4d4cc1d1314cba8361@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20270505
 DTEND;VALUE=DATE:20270506
 SUMMARY:Tosca - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
@@ -639,7 +599,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0f9467c209ba97b79605fee9149fe794b2e844b8@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20270511
 DTEND;VALUE=DATE:20270512
 SUMMARY:Monet - Exhibition On Screen @ WTW Wadebridge
@@ -658,7 +618,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:389f8f13806597cf250c31d49ba3b7bef6262567@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20270525
 DTEND;VALUE=DATE:20270526
 SUMMARY:Romeo And Juliet - Royal Ballet & Opera 26-27 Season @ WTW Wadebrid
@@ -684,7 +644,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5c4bc8c394564f028e6747e08e5eec8074c556d5@wtw-cinemas
-DTSTAMP:20261118T183147Z
+DTSTAMP:20261119T184533Z
 DTSTART;VALUE=DATE:20270630
 DTEND;VALUE=DATE:20270701
 SUMMARY:Shrek 5 @ WTW Wadebridge
