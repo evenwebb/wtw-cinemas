@@ -10,7 +10,7 @@ X-WR-CALDESC:Upcoming movie premieres at WTW Cinemas Wadebridge
 X-WR-TIMEZONE:Europe/London
 BEGIN:VEVENT
 UID:b229840b46497e9acf137cdb78f6384b202eb186@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Cbeebies Panto: Treasure Island @ WTW Wadebridge
@@ -32,7 +32,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:3c476d2397955bfa75ca7c4ce94f5c1ed3b04e86@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261122
 DTEND;VALUE=DATE:20261123
 SUMMARY:NAZA @ WTW Wadebridge
@@ -49,7 +49,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:aa1db8ed4d3d0584bcd72babdc88119a1410d135@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
 SUMMARY:Doctor Who: The Satan Pit @ WTW Wadebridge
@@ -67,8 +67,29 @@ URL:https://wtwcinemas.co.uk/wadebridge/film/5712/doctor-who-the-satan-pit
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
+UID:d6358af206a7e83437660f36f76f4efa26a90f53@wtw-cinemas
+DTSTAMP:20261120T180636Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Focker-In-Law @ WTW Wadebridge
+DESCRIPTION:Focker-In-Law (1h 45min)\nComedy\, Romance\n\nHenry\, son of Gr
+ eg and Pam Focker\, aims to marry Olivia\, a strong-willed former hostage 
+ negotiator who appears to be his complete mismatch. To Greg's shock\, step
+ dad Jack Byrnes takes a liking to Olivia\, and her unprecedented rise into
+  his Circle of Trust sparks chaos in the family before Jack's 80th birthda
+ y party.\n\nStarring: Ben Stiller\, Robert De Niro\, Ariana Grande\, Skyle
+ r Gisondo\, Owen Wilson\, Blythe Danner\n\nFilm release at WTW Cinemas Wad
+ ebridge\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/5784/focke
+ rinlaw-with-subtitles\n\nFilm details: https://evenwebb.github.io/wtw-cine
+ mas/films/focker-in-law.html
+LOCATION:WTW Cinemas Wadebridge
+URL:https://wtwcinemas.co.uk/wadebridge/film/5784/fockerinlaw-with-subtitle
+ s
+SEQUENCE:1
+END:VEVENT
+BEGIN:VEVENT
 UID:9e6609fe0148e68c89acc8c353ee07d0beb9a6e0@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Focker-In-Law @ WTW Wadebridge
@@ -84,11 +105,11 @@ DESCRIPTION:Focker-In-Law (1h 45min)\nComedy\, Romance\n\nHenry\, son of Gr
  r-in-law.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5587/fockerinlaw
-SEQUENCE:0
+SEQUENCE:2
 END:VEVENT
 BEGIN:VEVENT
 UID:dfcba525cb756a237b0bae1e4c477eb7e7783bf1@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
 SUMMARY:Andrew Lloyd Webber's Starlight Express - Live On Stage @ WTW Wadeb
@@ -108,8 +129,28 @@ URL:https://wtwcinemas.co.uk/wadebridge/film/5741/andrew-lloyd-webbers-star
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
+UID:f9b1f5f360d6157da62a1a0ded827a91674cf5b3@wtw-cinemas
+DTSTAMP:20261120T180636Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Hexed @ WTW Wadebridge
+DESCRIPTION:Hexed (1h 43min)\nAdventure\, Animation\, Family\, Fantasy\, Co
+ medy\n\nAn impulsive and unconventional teenage girl named Billie discover
+ s secret magical abilities which\, once unleashed\, hurtle her into a spec
+ tacle-filled journey out of suburbia and into a vast witch realm called He
+ xe. Forced to team up with her cautious mother\, Alice\, they uncover fami
+ ly mysteries that could change the world of witches forever.\n\nStarring: 
+ Hailee Steinfeld\, Rashida Jones\, Jodie Foster\, Walton Goggins\, Tracey 
+ Ullman\, Stephen Fry\n\nFilm release at WTW Cinemas Wadebridge\nBook ticke
+ ts: https://wtwcinemas.co.uk/wadebridge/film/5785/hexed-with-subtitles\n\n
+ Film details: https://evenwebb.github.io/wtw-cinemas/films/hexed.html
+LOCATION:WTW Cinemas Wadebridge
+URL:https://wtwcinemas.co.uk/wadebridge/film/5785/hexed-with-subtitles
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
 UID:c9b8f4aa1ebeba05686086ec3358ab350cc39c96@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Hexed @ WTW Wadebridge
@@ -125,11 +166,11 @@ DESCRIPTION:Hexed (1h 43min)\nAdventure\, Animation\, Family\, Fantasy\, Co
  ttps://evenwebb.github.io/wtw-cinemas/films/hexed.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5698/hexed
-SEQUENCE:0
+SEQUENCE:1
 END:VEVENT
 BEGIN:VEVENT
 UID:32e0d9e7b556fde8fa9ddc736c1bb5f2f871acb7@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:The Nutcracker - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
@@ -152,7 +193,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ae259c1820ed07e4967fb77493b68b29a9d7edc7@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:The Cat in the Hat @ WTW Wadebridge
@@ -171,7 +212,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ea5a9ae4f3515a6c41449349cf9ce6a5d57e0e51@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Andre Rieu's 2026 Christmas Concert Let It Snow @ WTW Wadebridge
@@ -188,7 +229,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:654c91c1336c58188b76a1e4db75a9912088802b@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Avengers: Doomsday @ WTW Wadebridge
@@ -206,7 +247,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5ae7d4881702693a9355d4cf060bf3ca4c28783a@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Dune: Part Three @ WTW Wadebridge
@@ -229,7 +270,7 @@ SEQUENCE:1
 END:VEVENT
 BEGIN:VEVENT
 UID:1e1c45698042ddb5e68b774e862f5f3a527edd76@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261221
 DTEND;VALUE=DATE:20261222
 SUMMARY:The Angry Birds Movie 3 @ WTW Wadebridge
@@ -246,7 +287,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:d57df00005ba739cee61d719e3e33f88fb670a63@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Jumanji: Open World @ WTW Wadebridge
@@ -264,7 +305,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9bf194c331b0e5badd29c5ca6acac3da38983639@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270114
 DTEND;VALUE=DATE:20270115
 SUMMARY:National Theatre Live: Hay Fever @ WTW Wadebridge
@@ -295,7 +336,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:e946202c3d79e6b82fe3dcdbdbb3fc21048e609e@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270119
 DTEND;VALUE=DATE:20270120
 SUMMARY:Renoir & Love - Exhibition On Screen @ WTW Wadebridge
@@ -317,7 +358,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9103b988c7486fd82cbbdafcb54e2d25babb2825@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270127
 SUMMARY:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season @ WTW Wad
@@ -340,7 +381,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b0f7758cdec69ab14013c1e402094d7da5128e02@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270129
 DTEND;VALUE=DATE:20270130
 SUMMARY:Elsinore @ WTW Wadebridge
@@ -359,7 +400,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:561f682c0c18af56edaad91535c9c258ba76003a@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 SUMMARY:Götterdämmerung - Royal Ballet & Opera 26-27 Season @ WTW Wadebridg
@@ -388,7 +429,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c627e67fb77b6d72de3773c76ded9f2a92f3fdf1@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270205
 DTEND;VALUE=DATE:20270206
 SUMMARY:Ice Age: Boiling Point @ WTW Wadebridge
@@ -407,7 +448,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:d5880b3ec502cac347c627ca58c3b58f309ccc1a@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270212
 DTEND;VALUE=DATE:20270213
 SUMMARY:Narnia: The Magician's Nephew @ WTW Wadebridge
@@ -427,7 +468,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:94046208213e649f1c4e4c75e8c523b87423883a@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270218
 DTEND;VALUE=DATE:20270219
 SUMMARY:National Theatre Live: The Motive and the Cue @ WTW Wadebridge
@@ -449,7 +490,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8a425195a90364c9afb77d5e7aabfc1fdb6802d9@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270223
 DTEND;VALUE=DATE:20270224
 SUMMARY:Così Fan Tutte - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
@@ -478,28 +519,28 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:75ac1128e4acaf721dbe0eb069d47f11ad976331@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270305
 DTEND;VALUE=DATE:20270306
 SUMMARY:Gatto @ WTW Wadebridge
-DESCRIPTION:Gatto (1h 38min)\nAnimation\, Comedy\, Crime\, Family\n\nAfter 
- years of maneuvering the canal-ridden\, superstitious city of Venice\, Ita
- ly\, a scrappy black cat named Nero begins to question whether he’s lived 
- the right lives. Indebted to Rocco\, a ruthless local feline mob boss\, Ne
- ro finds himself in a quandary and is forced to forge a truly unexpected f
- riendship that may finally lead him to his purpose—unless Venice gets the 
- better of him first.\n\nStarring: Mark Ruffalo\, Laurence Fishburne\, Enri
- co Casarosa\, Bianca Babaşa\, Sherry Cola\, John Turturro\n\nFilm release 
- at WTW Cinemas Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebrid
- ge/film/5759/gatto\n\nFilm details: https://evenwebb.github.io/wtw-cinemas
- /films/gatto.html
+DESCRIPTION:Gatto\nAnimation\, Comedy\, Crime\, Family\n\nAfter years of ma
+ neuvering the canal-ridden\, superstitious city of Venice\, Italy\, a scra
+ ppy black cat named Nero begins to question whether he’s lived the right l
+ ives. Indebted to Rocco\, a ruthless local feline mob boss\, Nero finds hi
+ mself in a quandary and is forced to forge a truly unexpected friendship t
+ hat may finally lead him to his purpose—unless Venice gets the better of h
+ im first.\n\nStarring: Mark Ruffalo\, Laurence Fishburne\, Enrico Casarosa
+ \, Bianca Babaşa\, Sherry Cola\, John Turturro\n\nFilm release at WTW Cine
+ mas Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/575
+ 9/gatto\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/gatt
+ o.html
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5759/gatto
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:1d885e0d63dd3db3757fa2fc870d22b1469d6b4a@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270319
 DTEND;VALUE=DATE:20270320
 SUMMARY:Sonic the Hedgehog 4 @ WTW Wadebridge
@@ -520,7 +561,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:90b7dba09378dd2d2a02950b9857a9b76935acbe@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270323
 DTEND;VALUE=DATE:20270324
 SUMMARY:Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Seaso
@@ -541,17 +582,23 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5020767395f525964cf68b2a2f14235211fb48ac@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270422
 DTEND;VALUE=DATE:20270423
 SUMMARY:Swan Lake - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
-DESCRIPTION:Swan Lake - Royal Ballet & Opera 26-27 Season (3h 30min)\n\nCla
- ssical ballet's most powerful tale of love\, treachery and forgiveness ret
- urns to the Royal Opera House stage\n\nStarring: Matthew Ball\, Yasmine Na
- ghdi\n\nFilm release at WTW Cinemas Wadebridge\nBook tickets: https://wtwc
- inemas.co.uk/wadebridge/film/5563/swan-lake-royal-ballet-opera-2627-season
- \n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/swan-lake-r
- oyal-ballet-opera-26-27-season.html
+DESCRIPTION:Swan Lake - Royal Ballet & Opera 26-27 Season (3h 25min)\n\nPri
+ ncess Odette is bound by a curse\, turned into a swan by the evil sorcerer
+  Von Rothbart. The spell can only be broken by a pledge of eternal love. W
+ hen she meets Prince Siegfried\, he is immediately enamoured by her fragil
+ e beauty and pledges to free her. But freedom is not promised for Odette a
+ s Von Rothbart conspires to thwart the lovers' plans.\nLiam Scarlett's pr
+ oduction for The Royal Ballet brings together Tchaikovsky's towering score
+  and John Macfarlane's picturesque designs to create an enduring ballet sp
+ ectacle of love\, treachery and forgiveness.\n\nFilm release at WTW Cinema
+ s Wadebridge\nBook tickets: https://wtwcinemas.co.uk/wadebridge/film/5563/
+ swan-lake-royal-ballet-opera-2627-season\n\nFilm details: https://evenwebb
+ .github.io/wtw-cinemas/films/swan-lake-royal-ballet-opera-26-27-season.htm
+ l
 LOCATION:WTW Cinemas Wadebridge
 URL:https://wtwcinemas.co.uk/wadebridge/film/5563/swan-lake-royal-ballet-op
  era-2627-season
@@ -559,7 +606,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:2e14adb556693912d965465f73875eef7c6aa064@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270430
 DTEND;VALUE=DATE:20270501
 SUMMARY:The Legend of Zelda @ WTW Wadebridge
@@ -576,7 +623,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0d381b6f83ecf059f6b8cf4d4cc1d1314cba8361@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270505
 DTEND;VALUE=DATE:20270506
 SUMMARY:Tosca - Royal Ballet & Opera 26-27 Season @ WTW Wadebridge
@@ -599,7 +646,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0f9467c209ba97b79605fee9149fe794b2e844b8@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270511
 DTEND;VALUE=DATE:20270512
 SUMMARY:Monet - Exhibition On Screen @ WTW Wadebridge
@@ -618,7 +665,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:389f8f13806597cf250c31d49ba3b7bef6262567@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270525
 DTEND;VALUE=DATE:20270526
 SUMMARY:Romeo And Juliet - Royal Ballet & Opera 26-27 Season @ WTW Wadebrid
@@ -644,7 +691,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5c4bc8c394564f028e6747e08e5eec8074c556d5@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270630
 DTEND;VALUE=DATE:20270701
 SUMMARY:Shrek 5 @ WTW Wadebridge

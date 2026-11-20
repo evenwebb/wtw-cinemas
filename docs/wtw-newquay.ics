@@ -10,7 +10,7 @@ X-WR-CALDESC:Upcoming movie premieres at WTW Cinemas Newquay
 X-WR-TIMEZONE:Europe/London
 BEGIN:VEVENT
 UID:4fb606ddd41cbde9e72d63b00991c591154578d7@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261121
 DTEND;VALUE=DATE:20261122
 SUMMARY:Cbeebies Panto: Treasure Island @ WTW Newquay
@@ -32,7 +32,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b5cf4b82d6acb6c91a539350833f8e3b50b73945@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261123
 DTEND;VALUE=DATE:20261124
 SUMMARY:Doctor Who: The Satan Pit @ WTW Newquay
@@ -50,8 +50,28 @@ URL:https://wtwcinemas.co.uk/newquay/film/5712/doctor-who-the-satan-pit
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
+UID:e3d639553b7ef8888269358b86bd665cd3d22070@wtw-cinemas
+DTSTAMP:20261120T180636Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Focker-In-Law @ WTW Newquay
+DESCRIPTION:Focker-In-Law (1h 45min)\nComedy\, Romance\n\nHenry\, son of Gr
+ eg and Pam Focker\, aims to marry Olivia\, a strong-willed former hostage 
+ negotiator who appears to be his complete mismatch. To Greg's shock\, step
+ dad Jack Byrnes takes a liking to Olivia\, and her unprecedented rise into
+  his Circle of Trust sparks chaos in the family before Jack's 80th birthda
+ y party.\n\nStarring: Ben Stiller\, Robert De Niro\, Ariana Grande\, Skyle
+ r Gisondo\, Owen Wilson\, Blythe Danner\n\nFilm release at WTW Cinemas New
+ quay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5784/fockerinlaw
+ -with-subtitles\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/fi
+ lms/focker-in-law.html
+LOCATION:WTW Cinemas Newquay
+URL:https://wtwcinemas.co.uk/newquay/film/5784/fockerinlaw-with-subtitles
+SEQUENCE:1
+END:VEVENT
+BEGIN:VEVENT
 UID:7098710e36e892e80dbfdb672656fab4310aa867@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261125
 DTEND;VALUE=DATE:20261126
 SUMMARY:Focker-In-Law @ WTW Newquay
@@ -67,11 +87,11 @@ DESCRIPTION:Focker-In-Law (1h 45min)\nComedy\, Romance\n\nHenry\, son of Gr
  aw.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5587/fockerinlaw
-SEQUENCE:0
+SEQUENCE:2
 END:VEVENT
 BEGIN:VEVENT
 UID:1bba2578c47ab325307be6f8f20e98c7d811fe98@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
 SUMMARY:Andrew Lloyd Webber's Starlight Express - Live On Stage @ WTW Newqu
@@ -91,10 +111,30 @@ URL:https://wtwcinemas.co.uk/newquay/film/5741/andrew-lloyd-webbers-starlig
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
-UID:1ab695e16b23c5a0d14145776a2c2472bfc34173@wtw-cinemas
-DTSTAMP:20261119T184533Z
+UID:c3dd3547f1196cf87b28ffcb55b1b87201ef827a@wtw-cinemas
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
+SUMMARY:Hexed @ WTW Newquay
+DESCRIPTION:Hexed (1h 43min)\nAdventure\, Animation\, Family\, Fantasy\, Co
+ medy\n\nAn impulsive and unconventional teenage girl named Billie discover
+ s secret magical abilities which\, once unleashed\, hurtle her into a spec
+ tacle-filled journey out of suburbia and into a vast witch realm called He
+ xe. Forced to team up with her cautious mother\, Alice\, they uncover fami
+ ly mysteries that could change the world of witches forever.\n\nStarring: 
+ Hailee Steinfeld\, Rashida Jones\, Jodie Foster\, Walton Goggins\, Tracey 
+ Ullman\, Stephen Fry\n\nFilm release at WTW Cinemas Newquay\nBook tickets:
+  https://wtwcinemas.co.uk/newquay/film/5785/hexed-with-subtitles\n\nFilm d
+ etails: https://evenwebb.github.io/wtw-cinemas/films/hexed.html
+LOCATION:WTW Cinemas Newquay
+URL:https://wtwcinemas.co.uk/newquay/film/5785/hexed-with-subtitles
+SEQUENCE:0
+END:VEVENT
+BEGIN:VEVENT
+UID:b8f030ebf5126e3de55ec68424caaffbd41cb025@wtw-cinemas
+DTSTAMP:20261120T180636Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
 SUMMARY:Hexed @ WTW Newquay
 DESCRIPTION:Hexed (1h 43min)\nAdventure\, Animation\, Family\, Fantasy\, Co
  medy\n\nAn impulsive and unconventional teenage girl named Billie discover
@@ -108,11 +148,11 @@ DESCRIPTION:Hexed (1h 43min)\nAdventure\, Animation\, Family\, Fantasy\, Co
  /evenwebb.github.io/wtw-cinemas/films/hexed.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5698/hexed
-SEQUENCE:0
+SEQUENCE:1
 END:VEVENT
 BEGIN:VEVENT
 UID:0b4b7f23ff7d9bded898f133b19a35dfec6df9e6@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:The Nutcracker - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -135,7 +175,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5bfefb2977887c7a6c8f0c590693eed8ddfa49ca@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:The Cat in the Hat @ WTW Newquay
@@ -154,7 +194,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c77fa32b09d34cc4a118bcdedc77403f564b40ec@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Andre Rieu's 2026 Christmas Concert Let It Snow @ WTW Newquay
@@ -171,7 +211,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:7edba74056498f6afb93a8b9beb82786d9f5ee70@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261215
 DTEND;VALUE=DATE:20261216
 SUMMARY:See It First - Dune: Part Three @ WTW Newquay
@@ -189,7 +229,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:744a6a063776624f07c93b55bffc8287e735befa@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Avengers: Doomsday @ WTW Newquay
@@ -207,7 +247,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ef88d4ef1eafdf0c4b9446b04ff564acf536adb5@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Dune: Part Three @ WTW Newquay
@@ -230,7 +270,7 @@ SEQUENCE:1
 END:VEVENT
 BEGIN:VEVENT
 UID:e6e3d5616c086f2b5f283ddb78cea1b5908ccc04@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261221
 DTEND;VALUE=DATE:20261222
 SUMMARY:The Angry Birds Movie 3 @ WTW Newquay
@@ -247,7 +287,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:44e65ff4d37973e4a79973e99e18d1f78b0fd4ab@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Jumanji: Open World @ WTW Newquay
@@ -265,7 +305,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:d623748fdfdffb770a06284a285c314a1a8ef0bb@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270114
 DTEND;VALUE=DATE:20270115
 SUMMARY:National Theatre Live: Hay Fever @ WTW Newquay
@@ -296,7 +336,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:547f052acae49aabe1bdbbcf7d0ae862d08c3a4a@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270121
 DTEND;VALUE=DATE:20270122
 SUMMARY:THE GEORGE GREENOUGH EXPERIENCE SHOW @ WTW Newquay
@@ -314,7 +354,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:32d4e5f38a17949d5cc00ed101bf8137f4bf9b8d@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270127
 SUMMARY:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season @ WTW New
@@ -337,7 +377,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:444857168daf4ba7175f701df1ff0a3460600002@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270129
 DTEND;VALUE=DATE:20270130
 SUMMARY:Elsinore @ WTW Newquay
@@ -356,7 +396,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:f6d39d9a60ae9727e36a26ae835afb5039c78136@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 SUMMARY:Götterdämmerung - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -384,7 +424,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:73066a18ac879f30ff31f906298696434f4b74d9@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270205
 DTEND;VALUE=DATE:20270206
 SUMMARY:Ice Age: Boiling Point @ WTW Newquay
@@ -403,7 +443,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:29d6236bd9f411c2fbbc0ec913a0d1ea97d8575c@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270212
 DTEND;VALUE=DATE:20270213
 SUMMARY:Narnia: The Magician's Nephew @ WTW Newquay
@@ -422,7 +462,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:7de2723200cdd816aecc45d87f3b10f19ef9699e@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270218
 DTEND;VALUE=DATE:20270219
 SUMMARY:National Theatre Live: The Motive and the Cue @ WTW Newquay
@@ -444,7 +484,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8c8c4a85ce8eb65d740c2af8023c81beb387a7d4@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270223
 DTEND;VALUE=DATE:20270224
 SUMMARY:Così Fan Tutte - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -473,28 +513,27 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:249513a8e2c357e97e044bc1ef7adbe134840537@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270305
 DTEND;VALUE=DATE:20270306
 SUMMARY:Gatto @ WTW Newquay
-DESCRIPTION:Gatto (1h 38min)\nAnimation\, Comedy\, Crime\, Family\n\nAfter 
- years of maneuvering the canal-ridden\, superstitious city of Venice\, Ita
- ly\, a scrappy black cat named Nero begins to question whether he’s lived 
- the right lives. Indebted to Rocco\, a ruthless local feline mob boss\, Ne
- ro finds himself in a quandary and is forced to forge a truly unexpected f
- riendship that may finally lead him to his purpose—unless Venice gets the 
- better of him first.\n\nStarring: Mark Ruffalo\, Laurence Fishburne\, Enri
- co Casarosa\, Bianca Babaşa\, Sherry Cola\, John Turturro\n\nFilm release 
- at WTW Cinemas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/fil
- m/5759/gatto\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films
- /gatto.html
+DESCRIPTION:Gatto\nAnimation\, Comedy\, Crime\, Family\n\nAfter years of ma
+ neuvering the canal-ridden\, superstitious city of Venice\, Italy\, a scra
+ ppy black cat named Nero begins to question whether he’s lived the right l
+ ives. Indebted to Rocco\, a ruthless local feline mob boss\, Nero finds hi
+ mself in a quandary and is forced to forge a truly unexpected friendship t
+ hat may finally lead him to his purpose—unless Venice gets the better of h
+ im first.\n\nStarring: Mark Ruffalo\, Laurence Fishburne\, Enrico Casarosa
+ \, Bianca Babaşa\, Sherry Cola\, John Turturro\n\nFilm release at WTW Cine
+ mas Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5759/gatt
+ o\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/gatto.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5759/gatto
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8af76cf3f5065a91e8701cb8d060aef71888d230@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270319
 DTEND;VALUE=DATE:20270320
 SUMMARY:Sonic the Hedgehog 4 @ WTW Newquay
@@ -515,7 +554,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:35f9e1444906984f7df24b2ed7df3a14a78d5fab@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270323
 DTEND;VALUE=DATE:20270324
 SUMMARY:Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Seaso
@@ -536,17 +575,22 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:701819a4b21ac4e8d68fa43f21d0034a8ebc098b@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270422
 DTEND;VALUE=DATE:20270423
 SUMMARY:Swan Lake - Royal Ballet & Opera 26-27 Season @ WTW Newquay
-DESCRIPTION:Swan Lake - Royal Ballet & Opera 26-27 Season (3h 30min)\n\nCla
- ssical ballet's most powerful tale of love\, treachery and forgiveness ret
- urns to the Royal Opera House stage\n\nStarring: Matthew Ball\, Yasmine Na
- ghdi\n\nFilm release at WTW Cinemas Newquay\nBook tickets: https://wtwcine
- mas.co.uk/newquay/film/5563/swan-lake-royal-ballet-opera-2627-season\n\nFi
- lm details: https://evenwebb.github.io/wtw-cinemas/films/swan-lake-royal-b
- allet-opera-26-27-season.html
+DESCRIPTION:Swan Lake - Royal Ballet & Opera 26-27 Season (3h 25min)\n\nPri
+ ncess Odette is bound by a curse\, turned into a swan by the evil sorcerer
+  Von Rothbart. The spell can only be broken by a pledge of eternal love. W
+ hen she meets Prince Siegfried\, he is immediately enamoured by her fragil
+ e beauty and pledges to free her. But freedom is not promised for Odette a
+ s Von Rothbart conspires to thwart the lovers' plans.\nLiam Scarlett's pr
+ oduction for The Royal Ballet brings together Tchaikovsky's towering score
+  and John Macfarlane's picturesque designs to create an enduring ballet sp
+ ectacle of love\, treachery and forgiveness.\n\nFilm release at WTW Cinema
+ s Newquay\nBook tickets: https://wtwcinemas.co.uk/newquay/film/5563/swan-l
+ ake-royal-ballet-opera-2627-season\n\nFilm details: https://evenwebb.githu
+ b.io/wtw-cinemas/films/swan-lake-royal-ballet-opera-26-27-season.html
 LOCATION:WTW Cinemas Newquay
 URL:https://wtwcinemas.co.uk/newquay/film/5563/swan-lake-royal-ballet-opera
  -2627-season
@@ -554,7 +598,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:38e9a9c1970f1c5b0e1d62869e7fd7f2641638d9@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270430
 DTEND;VALUE=DATE:20270501
 SUMMARY:The Legend of Zelda @ WTW Newquay
@@ -571,7 +615,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:6f4f84b6ff4e1df32063b367bf43c083f29865b9@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270505
 DTEND;VALUE=DATE:20270506
 SUMMARY:Tosca - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -594,7 +638,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9ab5660140c194f5f9dcb84a73142f3ae94588cd@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270525
 DTEND;VALUE=DATE:20270526
 SUMMARY:Romeo And Juliet - Royal Ballet & Opera 26-27 Season @ WTW Newquay
@@ -619,7 +663,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:a0658e8ad1f9778327e85abb1d485ceeeda4ee12@wtw-cinemas
-DTSTAMP:20261119T184533Z
+DTSTAMP:20261120T180636Z
 DTSTART;VALUE=DATE:20270630
 DTEND;VALUE=DATE:20270701
 SUMMARY:Shrek 5 @ WTW Newquay
