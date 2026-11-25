@@ -9,28 +9,8 @@ X-WR-CALNAME:WTW Truro Movie Premieres
 X-WR-CALDESC:Upcoming movie premieres at WTW Cinemas Truro
 X-WR-TIMEZONE:Europe/London
 BEGIN:VEVENT
-UID:9ce114aba1b264edd66634d77589d3c71d0a1c17@wtw-cinemas
-DTSTAMP:20261124T202621Z
-DTSTART;VALUE=DATE:20261125
-DTEND;VALUE=DATE:20261126
-SUMMARY:Focker-In-Law @ WTW Truro
-DESCRIPTION:Focker-In-Law (1h 45min)\nComedy\, Romance\n\nHenry\, son of Gr
- eg and Pam Focker\, aims to marry Olivia\, a strong-willed former hostage 
- negotiator who appears to be his complete mismatch. To Greg's shock\, fath
- er-in-law Jack Byrnes takes a liking to Olivia\, and her unprecedented ris
- e into his Circle of Trust sparks chaos in the family before Jack's 80th b
- irthday party.\n\nStarring: Ben Stiller\, Robert De Niro\, Ariana Grande\,
-  Skyler Gisondo\, Owen Wilson\, Blythe Danner\n\nFilm release at WTW Cinem
- as Truro\nBook tickets: https://wtwcinemas.co.uk/truro/film/5587/fockerinl
- aw\n\nFilm details: https://evenwebb.github.io/wtw-cinemas/films/focker-in
- -law.html
-LOCATION:WTW Cinemas Truro
-URL:https://wtwcinemas.co.uk/truro/film/5587/fockerinlaw
-SEQUENCE:0
-END:VEVENT
-BEGIN:VEVENT
 UID:be74879a11b4d265a3383d1fb9116378aa221d7a@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20261126
 DTEND;VALUE=DATE:20261127
 SUMMARY:Andrew Lloyd Webber's Starlight Express - Live On Stage @ WTW Truro
@@ -50,7 +30,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:fce50ac254362b2192545a60dc87699626c92654@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20261127
 DTEND;VALUE=DATE:20261128
 SUMMARY:Hexed @ WTW Truro
@@ -60,8 +40,8 @@ DESCRIPTION:Hexed (1h 43min)\nAdventure\, Animation\, Family\, Fantasy\, Co
  tacle-filled journey out of suburbia and into a vast witch realm called He
  xe. Forced to team up with her cautious mother\, Alice\, they uncover fami
  ly mysteries that could change the world of witches forever.\n\nStarring: 
- Hailee Steinfeld\, Rashida Jones\, Jodie Foster\, Walton Goggins\, Tracey 
- Ullman\, Stephen Fry\n\nFilm release at WTW Cinemas Truro\nBook tickets: h
+ Hailee Steinfeld\, Rashida Jones\, Jodie Foster\, Walton Goggins\, Henry W
+ inkler\, Dan Stevens\n\nFilm release at WTW Cinemas Truro\nBook tickets: h
  ttps://wtwcinemas.co.uk/truro/film/5698/hexed\n\nFilm details: https://eve
  nwebb.github.io/wtw-cinemas/films/hexed.html
 LOCATION:WTW Cinemas Truro
@@ -70,7 +50,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:727a776ef1c4a5b15f2ffe14793b66db96352bef@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20261201
 DTEND;VALUE=DATE:20261202
 SUMMARY:The Nutcracker - Royal Ballet & Opera 26-27 Season @ WTW Truro
@@ -93,7 +73,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:e47fbe3d6971e641ecce1b230a47eacac1bb7437@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20261203
 DTEND;VALUE=DATE:20261204
 SUMMARY:82: The Ben Nevis Log Challenge (Mandown) inc. Q&A @ WTW Truro
@@ -113,7 +93,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:bd3c65fd99f7626e754695c0b177a9107cb1b34d@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:The Cat in the Hat @ WTW Truro
@@ -132,28 +112,28 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:31ec80b8fe0dceb459e0f09ef2829374a0618135@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20261204
 DTEND;VALUE=DATE:20261205
 SUMMARY:Violent Night 2 @ WTW Truro
-DESCRIPTION:Violent Night 2 (1h 50min)\nAction\, Comedy\, Fantasy\n\nWhen S
- anta forgets the true meaning of Christmas\, he finds himself in the heart
-  of a lively mall community in desperate need of his help. Sapped of his m
- agic\, he’ll need another way to take on the goons threatening the mall\, 
- and time is running out. Santa has to rediscover his faith in goodness and
-  call in some last-minute reinforcements from the one person no baddie wan
- ts to tangle with: Mrs. Claus.\n\nStarring: David Harbour\, Kristen Bell\,
-  Daniela Melchior\, Jared Harris\, Joe Pantoliano\, Maxwell Jacob Friedman
- \n\nFilm release at WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co
- .uk/truro/film/5787/violent-night-2\n\nFilm details: https://evenwebb.gith
- ub.io/wtw-cinemas/films/violent-night-2.html
+DESCRIPTION:Violent Night 2 (1h 50min)\nAction\, Comedy\n\nWhen Santa forge
+ ts the true meaning of Christmas\, he finds himself in the heart of a live
+ ly mall community in desperate need of his help. Sapped of his magic\, he’
+ ll need another way to take on the goons threatening the mall\, and time i
+ s running out. Santa has to rediscover his faith in goodness and call in s
+ ome last-minute reinforcements from the one person no baddie wants to tang
+ le with: Mrs. Claus.\n\nStarring: David Harbour\, Kristen Bell\, Daniela M
+ elchior\, Jared Harris\, Joe Pantoliano\, Maxwell Jacob Friedman\n\nFilm r
+ elease at WTW Cinemas Truro\nBook tickets: https://wtwcinemas.co.uk/truro/
+ film/5787/violent-night-2\n\nFilm details: https://evenwebb.github.io/wtw-
+ cinemas/films/violent-night-2.html
 LOCATION:WTW Cinemas Truro
 URL:https://wtwcinemas.co.uk/truro/film/5787/violent-night-2
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5c27427b3ccba5c8d8e71d4d48528cb7597e1574@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20261205
 DTEND;VALUE=DATE:20261206
 SUMMARY:Andre Rieu's 2026 Christmas Concert Let It Snow @ WTW Truro
@@ -170,7 +150,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:9f2792df56bdbd241051ed8e1ebf2c5d2dd33ba4@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20261206
 DTEND;VALUE=DATE:20261207
 SUMMARY:The Wizard of Oz - Pat's Film Club @ WTW Truro
@@ -191,7 +171,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:1d65d1814368ca21d140f9e0f6266c16f7f796fc@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20261215
 DTEND;VALUE=DATE:20261216
 SUMMARY:See It First - Dune: Part Three @ WTW Truro
@@ -209,7 +189,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:161a2195ec75d6fc0a8c8c2c809914343eda2fcf@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20261216
 DTEND;VALUE=DATE:20261217
 SUMMARY:Avengers: Doomsday @ WTW Truro
@@ -227,7 +207,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:497bbe1bfa0f5d37b3d35c75cda4d2fdce1beb18@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20261218
 DTEND;VALUE=DATE:20261219
 SUMMARY:Dune: Part Three @ WTW Truro
@@ -250,7 +230,7 @@ SEQUENCE:1
 END:VEVENT
 BEGIN:VEVENT
 UID:6d5370c29b8ab1a1fd194b48c0ad45ae112ec8b1@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20261221
 DTEND;VALUE=DATE:20261222
 SUMMARY:The Angry Birds Movie 3 @ WTW Truro
@@ -267,7 +247,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:20d3ee12c72add5bbadd8869276908216019eddf@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20261223
 DTEND;VALUE=DATE:20261224
 SUMMARY:Jumanji: Open World @ WTW Truro
@@ -285,7 +265,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:2e952fefd5c3f6b20ab41258e4df7e0b7293f85c@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20270114
 DTEND;VALUE=DATE:20270115
 SUMMARY:National Theatre Live: Hay Fever @ WTW Truro
@@ -316,7 +296,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:e593256b89ee65e907dcf0323751724107f58316@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20270119
 DTEND;VALUE=DATE:20270120
 SUMMARY:Renoir & Love - Exhibition On Screen @ WTW Truro
@@ -338,7 +318,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:81068bb6566a42b37cee550b74b54646f1e9fbbf@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20270126
 DTEND;VALUE=DATE:20270127
 SUMMARY:La Fanciulla Del West - Royal Ballet & Opera 26-27 Season @ WTW Tru
@@ -369,7 +349,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:0bf1029176605394d06438c3d0e16b7aab57a359@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20270128
 DTEND;VALUE=DATE:20270129
 SUMMARY:Onwards and Sideways @ WTW Truro
@@ -389,7 +369,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b5da0ac87028e32ca0b1cea2e5c242cd9c95910e@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20270129
 DTEND;VALUE=DATE:20270130
 SUMMARY:Elsinore @ WTW Truro
@@ -408,7 +388,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:5a355359eb90afdf50230d9a220ee7597034e660@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 SUMMARY:Götterdämmerung - Royal Ballet & Opera 26-27 Season @ WTW Truro
@@ -436,7 +416,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:4709a025afd1b1f4afb02b49a982cb0977272d6f@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20270205
 DTEND;VALUE=DATE:20270206
 SUMMARY:Ice Age: Boiling Point @ WTW Truro
@@ -455,7 +435,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:01c017eb1c47497ec52ca52e548f60862e05b8f5@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20270212
 DTEND;VALUE=DATE:20270213
 SUMMARY:Narnia: The Magician's Nephew @ WTW Truro
@@ -474,7 +454,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:c2565c65a3b5ab28cfb5613c66cb911865d54e3e@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20270218
 DTEND;VALUE=DATE:20270219
 SUMMARY:National Theatre Live: The Motive and the Cue @ WTW Truro
@@ -496,7 +476,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:818a8655cbdc6a27fc37ef655d4205d23259582a@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20270223
 DTEND;VALUE=DATE:20270224
 SUMMARY:Così Fan Tutte - Royal Ballet & Opera 26-27 Season @ WTW Truro
@@ -525,7 +505,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b330651b4171ec64cbc026d9113cae38298fe86f@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20270305
 DTEND;VALUE=DATE:20270306
 SUMMARY:Gatto @ WTW Truro
@@ -545,7 +525,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:ecaa74767d4489b44f71eb4bfd4e1d3a3928ed68@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20270319
 DTEND;VALUE=DATE:20270320
 SUMMARY:Sonic the Hedgehog 4 @ WTW Truro
@@ -562,7 +542,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:b20decd0830713fb922fe47e26b79135c3fb67d4@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20270323
 DTEND;VALUE=DATE:20270324
 SUMMARY:Alice's Adventures In Wonderland - Royal Ballet & Opera 26-27 Seaso
@@ -583,7 +563,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:8b7441118300fd153816b47696db2d14f05735b5@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20270422
 DTEND;VALUE=DATE:20270423
 SUMMARY:Swan Lake - Royal Ballet & Opera 26-27 Season @ WTW Truro
@@ -606,7 +586,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:730cfb44246a6b9eb749fc0a1da8d0f943d89e85@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20270430
 DTEND;VALUE=DATE:20270501
 SUMMARY:The Legend of Zelda @ WTW Truro
@@ -623,7 +603,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:62ad9a3e4ae7f83555ab0fe3c1eae7ef83f86d7b@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20270505
 DTEND;VALUE=DATE:20270506
 SUMMARY:Tosca - Royal Ballet & Opera 26-27 Season @ WTW Truro
@@ -646,7 +626,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:854f1fd21d92ec61dda7dc121fb7a635cadddd34@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20270511
 DTEND;VALUE=DATE:20270512
 SUMMARY:Monet - Exhibition On Screen @ WTW Truro
@@ -664,7 +644,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:93a18ed5faecc85ba95f74e974c66c8f8d8812b8@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20270525
 DTEND;VALUE=DATE:20270526
 SUMMARY:Romeo And Juliet - Royal Ballet & Opera 26-27 Season @ WTW Truro
@@ -688,7 +668,7 @@ SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 UID:37e4fd4bdecceba302b948a5a8faa86cd9a5e45b@wtw-cinemas
-DTSTAMP:20261124T202621Z
+DTSTAMP:20261125T194029Z
 DTSTART;VALUE=DATE:20270630
 DTEND;VALUE=DATE:20270701
 SUMMARY:Shrek 5 @ WTW Truro
